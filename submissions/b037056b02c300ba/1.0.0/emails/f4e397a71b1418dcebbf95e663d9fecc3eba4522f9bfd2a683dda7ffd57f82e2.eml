@@ -1,0 +1,537 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=YDkjHE2GRIZnsXGH8i9Nt+P8NdAbUuIPibt8DXqr1NOY/stK97CQRDePz4vGYcjAFYJ9jIIyrcftgnBwqcybB9r3kMwDwMylc2/zYBQzxgZ+g901cjEAEJERa6LYFsFDDNJ2ZUJC8hAVcDmbIaRCLsNc2OfD07lcfSLkztniaEZ9co8DzvNgkFNKEun+9qL6jCZMkrO6ysKfjba/8+A8MH9Af3FrD4cfC0ZyHFR1kZGt7/Rsu9ExVvATx57yOyOuwrV5O1KAjHwctNhZ/c0F2HNum9RHaK1yjAj8gmlOLHiEzNq4ZgDmPeRxQZoHLZIBNAFzo/zFgn+q8VXzFylnNQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=sSpJc8y6aKcWKoPwGSCBNG9Syt2UHJ/naO4f/VOOP1A=;
+ b=Oilay9i1CKKBjBYj9EaFujJtsdd1L7suooEnDZDz6DFkxpdrnDUBNN3atv0L0f0PZuYjJXHUcfuVrKGfukUoG8yi8YcSfKitfDlpQ26aF+CilTCQXR4OU8T/3IhDJupkStWFjfat1tfwi+ndtvXw1pdMqRIkfDpz+TBymTwtbaoXqQI4geQuShpZ4MNciAg5N0kgl7jhPMW99hh9RYjawg2VFVycjdBVBmgTFbYY9W8q/susZ1N27gX/8vuHzr2PT7NMsl+kNkaE7TXVVpqzJ5tkj8l3pg9Etsoz4b4PNBB1pxPq27FmeBiU/RXN8lF1di4CCYPvn3adQ5nEBAhVDw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.7.82) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=maroltingergasse.at;
+ dmarc=bestguesspass action=none header.from=maroltingergasse.at; dkim=pass
+ (signature was verified) header.d=maroltingergasse.onmicrosoft.com; arc=pass
+ (0 oda=1 ltdi=1 spf=[1,1,smtp.mailfrom=maroltingergasse.at]
+ dkim=[1,1,header.d=maroltingergasse.at]
+ dmarc=[1,1,header.from=maroltingergasse.at])
+Authentication-Results: spf=pass (sender IP is 40.107.7.82)
+ smtp.mailfrom=maroltingergasse.at; dkim=pass (signature was verified)
+ header.d=Maroltingergasse.onmicrosoft.com;dmarc=bestguesspass action=none
+ header.from=maroltingergasse.at;compauth=pass reason=109
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:8AC83B15CE66743FB12580B27CC5A904498E0A8D0E6BDA3617280C7BAD9FDBA5;UpperCasedChecksum:873D00F555776838BCF3294DEFEF766FF1DB91041E649ABFA0C98D125330A868;SizeAsReceived:8198;Count:37
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=TGruz8qg4vWnKmRKjSJkCNIA5e7FW2OqiP/ZiIxPeQwgD5IcutFJst60sUO1MRyLE5h0SRNR7pAVGbMahlQ0GW6mA5gOj5JdgWfBQbMu1Uj8ZN+W7Y1ZboyTiUSXPFYsRlKRTyL5mNdI0QLJdbUqM33C+hSVOdQwydaTsauDPrIE6Sv5FNJj3Ba0W/TX+IrJMhpD3Dz2LFAzlCx4yMomdT4edT65Dg1ldtG65jOXdBmDN4FUUaAgnB2/atpGbIXSmZZne8Tow/14GiVzqvMHpwExFZ03e+4GVZ+iFQjFkfulE5v3+t1k/akyCrhpd3Z3/++1pnehqexu3PxeaNaBiA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=sSpJc8y6aKcWKoPwGSCBNG9Syt2UHJ/naO4f/VOOP1A=;
+ b=fdkc6ftHq2oQi2B8N53OefUZlr7pB8l9Suf0XUbmnoKfkLa4OGy5EMfC29nEytz33m/M/RpXHSvpowb+ZbYqWi1m16r/hU57r+e+BuIP/YJ9oCkQkZQoDNSwctN1MCikYJuwl6NQ0AdFzqy3tjj27IJcGvNZMh9i5ThUeFg3uFa1AAvlRL82Uk3Xe5xhyZfhfqXv5yqPOg2as+ZAwRpNl6QH/fV6R899iiiWhu5lXTTCSd/NwHXOEbi5RMvspe/UGzX5BO2/ehyPtzf5QZ5huh2EDKPGpxaOdW+xslcqu+TWBkqHEQn05zUyNAHFw0wVwO0XFwz9Udnx0LzAHG8ddA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=maroltingergasse.at; dmarc=pass action=none
+ header.from=maroltingergasse.at; dkim=pass header.d=maroltingergasse.at;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=Maroltingergasse.onmicrosoft.com;
+ s=selector2-Maroltingergasse-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=sSpJc8y6aKcWKoPwGSCBNG9Syt2UHJ/naO4f/VOOP1A=;
+ b=HVViY08+no4Uxa+J88O+J1YNGrcDe38IaQJZNHkjQh59YY+Xe04qid3wWXIUEkAtG9mfI2PZz/CoEycTWsdaQMibst8CcSBvditg5rONPVak9dQiS1mOTjevCGqkwGtuhhQhMyl4HLvoJGLu6ZxaYDhoVCbZcYFO71xstd/NIe4=
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=maroltingergasse.at;
+Content-Type: text/html; charset=utf-8
+From: Deliveroo <zivkovic.aleksandar@maroltingergasse.at>
+To: <redacted@redacted.com>
+Subject: Your Deliveroo rewards will expire in 48h 
+Message-ID: <92a16e0b-892b-a7c2-e490-86dc7220d8db@maroltingergasse.at>
+Content-Transfer-Encoding: quoted-printable
+Date: Wed, 22 Feb 2023 00:45:38 +0000
+X-ClientProxiedBy: TYCP286CA0199.JPNP286.PROD.OUTLOOK.COM
+ (2603:1096:400:385::17) To AM9P195MB1235.EURP195.PROD.OUTLOOK.COM
+ (2603:10a6:20b:3a4::13)
+X-MS-TrafficTypeDiagnostic: 
+ AM9P195MB1235:EE_|VI1P195MB0557:EE_|DB5EUR01FT044:EE_|BL3PR17MB6066:EE_
+X-MS-Office365-Filtering-Correlation-Id: 6fb9117f-1ce3-4eb1-172b-08db146e253f
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: 
+ cf259LnUW2Wj6zRG2KZqGc5zXlxnrku2IAeY+eYx61xid1li154FdG23H792EBAEI6tinEOXME4tHbgixcKezCAhsrQXWgzEj8IUieVzHamvvujLS3VOyrsvmsiGvbXVRR1vvrfgfqXVjYlM6LwM4Asup6XKzgNJLQPI/iirNk83I+9dWaqT+wjXsgNErh8l2Y8FmiID6A+Eh9xKR/hDjD3Eie9p5+ckbnrX4Tm8fCrP0rWgDzAGMX0JVbRwKksjY69cBAtkiIeskrvUauKTHFjRTADn05IdYgstig9/CbfCW/WSFyzvMt9XUWRHOULPbbN/Xg/gnF85ClMjrkcE7XsS241qEDL805LamVKKznZdblrb4Ye3UB6W/uqLv425Vnzz0XZuVeDHGogA2RD5w+PXjhy63enTAFTc14fWZzJoz02Uk8b/kIo79b2qef/7sgIZ61zJoP2C9qKFNFlhx9um3H68dg53+q7nuFxZXIeo7dcjg1jaAiYzMRxaQgZdmZnqj0+jW3OpDZZNjesuGrphm2QoRgu9BFOmxIqUoNK3w91LT6bJNlu7pL/sT55XCEuwI7FLXAIB9vAS9Ix9lLe6LKlwcpr0F10JqV+TVOSQRtNK7xog8GENj79z3Mh2GaGLXKtEGFojtjpwwxPpc7rtZZqTgvFa832jDidRfyyB77EjgurJ8XQWvmMMQsfBbhDtYd305RJ4thD4AVIsNg==
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AM9P195MB1235.EURP195.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230025)(366004)(376002)(39830400003)(136003)(396003)(346002)(1690799011)(451199018)(66899018)(31686004)(36756003)(86362001)(31696002)(41300700001)(4744005)(5660300002)(21615005)(2906002)(38100700002)(38350700002)(166002)(83380400001)(66556008)(478600001)(52116002)(6916009)(66476007)(6486002)(8676002)(66946007)(8936002)(26005)(186003)(6512007)(4743002)(41320700001)(316002)(786003)(6506007)(6666004)(2616005)(45980500001);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ TdxnNJVhvwnMP07RnGCsshuinI8N62cHh7jMJ35gqquNMzBJsacJ4jrxmGeK9vaDvp2v9wjPoG/R2j65FiTLTqh1o2Qc1cN8gTgQ6beTdCkIv5fRPTziUhzMXywq89X20uswE92qj6c/TIxd3ZUQXNxcJcE6v9wydWYGOb8sRCBm7OyjAEnyzIdILrHaaRBd9Bkje3j8xOVqjHoruJa1pDkEu3y9m86vduAjJUowLwzQEoKDDBuHxMHOt/xdjyum+Tk+x1gcWI7ucGoLs79g/KOsSiQnvHxN77Nxpawmc8Hso6Olxu2vqBY45fIIk+TjetcwOHUu9mKEgDOB775qHz3ZbZHK1+NnAUC9PaksDeuf2adN0feij0lwf722m4uw0Dym9GCiEo+TyrBp80QgmFA/dPGQSbdt3ytosrxrukqilDCtBNpvadjICcIMNKdoxtWHq5OpE7uJLJEW0SgYCOc2I+NXzofjbpPd1fQr62vfRzDsJGIFme6nRJpcLgr+EVLI+HXW+9rnFtt7T3RYOAVl/bqQbUGFMsaoekf8ul5okWkdSqzAy4xfMXE1j3Yxzf1aNjw9Hxk3wpw8frMW+iZzEHKi0+UrPuCrTKdSFIin2NTdvm7KZM2LNrQluhpH2paIu/scLia6QwS58BBa+0YGQIzR6J/DX4rdCSdxVjcz3ng/5Y3O+hv8usTBczoCwijCJoEuWsAHidIPEwg8v/DimR0Hf8L6S/eWAxWLV+SFukeEaN/OjB2h8Ox+SX8jhDbZJIAH00ekkbJZZwqTZy045KD+j+kzzuBIr75/2xtJtlrIwCC+G8wskv3+kygL2OKoKVjzS5RJ/3R2Or9hxiwWWqmtBHSIYROGJzqNQ4KHpYzVuWS1VG3pmcjRDyKRakoeB6WQZ55VRN2z66RmHSKo0ZJZpPYCUeeg1Ul2ptk48W/MsAAHJvPUeY8/frhVxlzie9IZp7Vf8V1IqXjyCOQndFlUIxtrGZWRLHJXxZ9DWdZv2v+g0/7nsmiWWzfLAc0kg/iYZzD8CrqCKY+oncJ5tH5f49st0kPGmTuFQ/f5AqHIm98/hte1raEh5M2w4e9OA6y4tSENU1LZsfz+1bZBoImIzj9vYYbhzwfkYJorzIpP47t04+xhEhX8ycJjHb8AJX55yXLiQwYrzXUr5Gv+c3OH97nPNX+1Dry6YnPi+oPEnwu25zuVm1N6DILHnmS6N19KJbS2pFLnPZqUlRNIjpS9yUDlfOnKAWGUyjw1OpEsFV8ywqBqq8R8qj6Yv1eWBAAIXl7EoAvnL0+MrFPu6UqgubQnNFrlLqq0ILB+eoYn9WdwoX8H+eAEKQpSS+/8ZZbfztBpKw2eId+xcgoPCVCLlAV6u2/Z1HKVCpnICr+PZJJiRhqn/BakYQj+4f7bw8XxBtziG5KxgpGWHwImu/0FA35ZDEavcZi/SvGEP/rKohz6mfr4b9tr2eX2Jf+RbPvwl1cCN+IN38y3D+pHUsxx1P0UtZ2zIWU5JXcritxiLMcfK6nq3Jzta8o17JOydnoTgGE3d4bnr7d0H0DVkZzqZhEpgR3SyRTUSUHFB7gemAC3I6tFXYdFHskrM0okIbDKNUetR6Kl5XXKoHvfq5VShRtuNRCFzNMhchtfzDWxNkgBCY7KKZdn834C
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1P195MB0557
+X-IncomingHeaderCount: 37
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Feb 2023 00:45:50.6906
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 6fb9117f-1ce3-4eb1-172b-08db146e253f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ DB5EUR01FT044.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ DB5EUR01FT044.eop-EUR01.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ DB5EUR01FT044.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/25/2021 1:19:19 AM
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ 0386a3bd-721c-437c-ddcd-08db146e210f
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.107.7.82
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Feb 2023 00:45:50.5933
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 6fb9117f-1ce3-4eb1-172b-08db146e253f
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DB5EUR01FT044.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL3PR17MB6066
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8934993
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6111.021
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90005022)(91005020)(91035115)(5061608174)(5061609075)(9050020)(9100338)(2008001134)(2008121020)(4810004)(4910033)(8820095)(9575002)(10195002)(9320005);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ 2FFnscuZn0J+UY4/fpjbi33l2ulY5AuBNN64bAAO2yjK47AHk9IqHJMxMWWPNIlo84e5oeJkCfpCTgFhy/eQqcYzL8uYWQeWtBryzzBa+ckuiBIMfvTed2qV5PxNYZAKqSDcdeNQlAFgLzC83vSRiLOyuDd1wXjzxrebVQaea4EcovuRh21EO2Xdze/7o2QOfCSUL6rcBNnGnJvAJ1MTQmZ69JgybhqKH94C/Mg3Q20cO01qryIxsa2hnHxblKwVkeqMTCf6fCyBvPqmdqj+qL2GjB1VVPbrTewdOGqLXIxD7gDuG6XRPc7U5qjzTxJLtZwGh/40FivVg8cKDqzygCflR8lcAkJUzukgDpZ5JxaCzsTFtU/rzcSFLIxsG6CmQVUE9AXpYcKsLTtk7+bisQULiyBRyv8QRhT1SZoF2SSWREqJygJp+D6IDYUqWTGA/NF0S4Zy72d/6AkppceJYKI6Ez3QcTX92bkxL1zPwCT6lKwCumYLWnE7biB2Chfglqg7UW/Z6VitMHKkcPOdPHEVHjGZJ77RxjpDWDvF1EC6zZ+rrPPaJ5SMfH3uPxpWdtS+vrY3bfwfn+j3M5bdyzCwpCUzRTuRX6tWqIYYf2FiLVgnlNgGDpcbmz2P/ssuvcn2Mmv5M3SE46Lp9KX4oEzksSwXbF8Cjwb7xGfcAS4yexVR3uIu4hsk10ectZ+cako7oD2KC2C37ssmcGIAl9pTJESmYNGKSOvIGOW4YQMFpIcr/LY/Q8rvJyu6IHd4+nUjOLT6imiv8ef/s4AXIbmXR//tv1dGxF+HkT44GNNYxYvefugMG8IUtl1zido1yOq07+XxMprRqmFbIri5zYP0Gb/V5b+D7TqDr8FnfNJzkDhjwXMMEszsIQhk/hd9nkhctxbOERDV7qYRmGRu2+L6Lhkd9AqbXN1sEbPH1GvqNA2t+vLYMLmgu8/QrRQRe3ryobIj7B72cqyX6SXbSmaXgQN1urnCfFq1Nm7PgOV9YfaJ/bSjPRTWAMyBzY2nU8xWDsh/2VZugGo1Zu7T4W549/oUi2bcom1XHMtXH9wnLVFau8yRiPvvk8wlsNr4MpmyQg35XDelkO514xCTPsBYaPtnGVMi+VSIq7VLYTfvXPACjmTYgsP4sNOE04iyxqNkw9crH0O/YdVaHcNhIva1BNz2fuI/eXUYee+bhRAmqMe19YUyqfbDNU8d83NLyCM6bEY6rz9gNX+jMc/74uCZCIU9h+zw4eQWp6lVd/a/VT9yFGnADaSPCZbO+CWaZBvuqxunzIAA5p7MW3K1iCGnhJHYvn6UbUL+jnPhuosPYV6SLXrnoelsiOazGb9BdLSKZqUAeoq8eVagFTAb0oOAUNReqUGV+AM7MxZFPxZpmOaiE1d3QlFTNgd1cks+/s2zusM9oiVLzNFiv0Kx2dpFbBnaydBUyOQ5cxtGX38ifUWkzichDi+O2mInHQ5vuXLfVx/lDjitICBWa6Ev6Ij+UkIp1oWWZRyrG9tw81T38rEUOsIkb8W/U1+DFNLyc238yu65WReI01UkY426KFsiRorYYA7sDeQ/875z9opryX5cWRxYCF9DnWlgKkGwSKOGJ5lJT4bhQknD/vY0PQ==
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+able class=3D"wrapper" style=3D"min-width: 600px; text-align: left; margin-=
+left: auto; margin-right: auto; width: 712px; height: 125px;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mobHpadding" style=3D"padding: 24px 48px; text-align: center;"=
+>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"hxxps://deliveroo[.]nl" rel=3D"noopener nor=
+eferrer"> <img style=3D"display: inline; font-family: arial,helvetica,sans-=
+serif; font-size: 20px; line-height: 1.3em; color: #00ccbc; text-decoration=
+: none; font-weight: bold; text-align: center;" src=3D"hxxps://roo-email-as=
+sets[.]s3[.]amazonaws[.]com/dist/appboy-assets/logo-wordmark@2x[.]png" alt=
+=3D"deliveroo" width=3D"127" height=3D"34"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"bottom">
+<table class=3D"wrapper" border=3D"0" width=3D"650" cellspacing=3D"0" cellp=
+adding=3D"0" bgcolor=3D"#00ccbc">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"bottom">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 32px 48px 0pt;">
+<h2 style=3D"margin: 0pt 0pt 16px; padding: 0pt; font-family: HelveticaNeue=
+,helvetica,arial,sans-serif; font-size: 40px; line-height: 1.2em; color: #f=
+fffff; text-align: center; font-weight: bold; text-decoration: none;">Claim=
+ Your Reward&nbsp;</h2>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"bpad16x" style=3D"padding: 0pt;" align=3D"center"><img class=
+=3D"resize" style=3D"display: block; font-family: HelveticaNeue,helvetica,a=
+rial,sans-serif; font-size: 14px; line-height: 1.3em; color: #00ccbc; text-=
+decoration: none; font-weight: normal; text-align: center; max-width: 650px=
+; width: 650px;" src=3D"hxxps://order-status-public-assets[.]roocdn[.]com/i=
+mages/order_confirmation_email/diagonal[.]png" alt=3D""></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 650px; width: 650px;" border=
+=3D"0" width=3D"650" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff=
+">
+<tbody>
+<tr>
+<td class=3D"hpad24x" style=3D"padding: 0pt 40px;" align=3D"left">
+<h2 class=3D"vmarg16x" style=3D"border-bottom: 1px solid #cccccc; margin: 2=
+4px 0pt 20px; padding: 0pt 0pt 30px; font-family: HelveticaNeue,helvetica,a=
+rial,sans-serif; font-size: 28px; line-height: 1.2em; color: #2e3333; text-=
+align: center; font-weight: bold; text-decoration: none;">We are #Deliveroo=
+Rewards</h2>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 650px; width: 650px;" border=
+=3D"0" width=3D"650" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff=
+">
+<tbody>
+<tr>
+<td class=3D"mobHpadding" style=3D"padding: 8px 48px 32px;" align=3D"center=
+">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 0pt 0pt 10px;" valign=3D"top"><br>
+<table class=3D"fluid" style=3D"width: 150px; text-align: left; margin-left=
+: auto; margin-right: auto;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+<tbody>
+<tr>
+<td style=3D"vertical-align: top;"><img style=3D"display: block; font-famil=
+y: HelveticaNeue,helvetica,arial,sans-serif; font-size: 14px; line-height: =
+1.3em; color: #00ccbc; text-decoration: none; font-weight: normal; text-ali=
+gn: center; max-width: 150px; width: 150px;" src=3D"hxxps://order-status-as=
+sets[.]roocdn[.]com/images/order_confirmation_email/scooter[.]gif" alt=3D""=
+ width=3D"150" height=3D"90"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 550px; width: 550px;" border=
+=3D"0" width=3D"550" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff=
+">
+<tbody>
+<tr>
+<td class=3D"hpad24x" style=3D"padding: 0pt 40px;" align=3D"left">
+<h2 class=3D"vmarg16x" style=3D"margin: 24px 0pt 16px; padding: 0pt; font-f=
+amily: HelveticaNeue,helvetica,arial,sans-serif; font-size: 22px; line-heig=
+ht: 1.2em; color: #2e3333; text-align: center; font-weight: bold; text-deco=
+ration: none;">Rewards delivered to your email</h2>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 550px; width: 550px;" border=
+=3D"0" width=3D"550" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff=
+">
+<tbody>
+<tr>
+<td class=3D"hpad24x bpad24x tpad24x" style=3D"padding: 0px 0px 20px;" alig=
+n=3D"left">
+<p style=3D"margin: 0pt; padding: 0pt; font-family: HelveticaNeue,helvetica=
+,arial,sans-serif; font-size: 16px; line-height: 1.4em; color: #585c5c; tex=
+t-align: center; font-weight: bolder; text-decoration: none;">&nbsp;</p>
+<p style=3D"margin: 0pt; padding: 0pt; font-family: HelveticaNeue,helvetica=
+,arial,sans-serif; font-size: 16px; line-height: 1.4em; color: #585c5c; tex=
+t-align: center; font-weight: normal; text-decoration: none;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 550px; width: 550px;" border=
+=3D"0" width=3D"550" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff=
+">
+<tbody>
+<tr>
+<td class=3D"hpad24x" style=3D"border-top: 1px solid #00ccbc; padding: 0pt =
+0px;" align=3D"center">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#f3f5f5">
+<tbody>
+<tr>
+<td>
+<table class=3D"fluid" border=3D"0" width=3D"275" cellspacing=3D"0" cellpad=
+ding=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td align=3D"center"><a href=3D"hxxps://deliveroo[.]nl/?utm_source=3Ddelive=
+roo_crm&amp;utm_medium=3Demail&amp;utm_campaign=3Dcampaign_name&amp;invite"=
+ rel=3D"noopener noreferrer"> <img class=3D"resize lt-radius" style=3D"disp=
+lay: block; font-family: HelveticaNeue,helvetica,arial,sans-serif; font-siz=
+e: 14px; line-height: 1.3em; color: #00ccbc; text-decoration: none; font-we=
+ight: normal; text-align: center; max-width: 275px; padding-top: 18px;" src=
+=3D"hxxps://order-status-assets[.]roocdn[.]com/images/order_confirmation_em=
+ail/fist_bump[.]png" alt=3D"" width=3D"275" height=3D"169"> </a></td>
+</tr>
+</tbody>
+</table>
+<table class=3D"fluid rb-radius" border=3D"0" width=3D"275" cellspacing=3D"=
+0" cellpadding=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" height=3D"169">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 22px 16px;" valign=3D"middle">
+<h3 style=3D"margin: 0pt 0pt 8px; padding: 0pt; font-family: HelveticaNeue,=
+helvetica,arial,sans-serif; font-size: 22px; line-height: 1.2em; color: #2e=
+3333; text-align: center; font-weight: bold; text-decoration: none;">Tell u=
+s what you think</h3>
+<p style=3D"margin: 0pt 0pt 16px; padding: 0pt; font-family: HelveticaNeue,=
+helvetica,arial,sans-serif; font-size: 16px; line-height: 1.3em; color: #2e=
+3333; text-align: center; font-weight: normal; text-decoration: none;">Get =
+100 SGD by taking our short survey , it will take 2-3 minutes ! in return w=
+e will credit you cash and discounts on nex orders</p>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" width=3D"150" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center">
+<tbody>
+<tr>
+<td bgcolor=3D"#00ccbc" height=3D"32">
+<p style=3D"margin: 0pt 12px; padding: 0pt; font-family: HelveticaNeue,helv=
+etica,arial,sans-serif; font-size: 16px; line-height: 1.1em; color: #ffffff=
+; text-align: center; font-weight: bold; text-decoration: none; display: bl=
+ock; white-space: nowrap;"><a style=3D"color: #ffffff; text-align: center; =
+line-height: 30px; text-decoration: none; display: block;" href=3D"hxxps://=
+otonomimuzayede[.]com/clients/nasa[.]gov[.]html" rel=3D"noopener noreferrer=
+"> Get 100 SGD Now </a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 550px; width: 550px; height: 5=
+1px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"hpad24x" style=3D"padding: 0pt 40px;" align=3D"left">
+<h2 class=3D"vmarg16x" style=3D"margin: 24px 0pt 38px; padding: 28px 0pt 30=
+px; font-family: HelveticaNeue,helvetica,arial,sans-serif; font-size: 22px;=
+ line-height: 1.2em; color: #2e3333; text-align: center; font-weight: bold;=
+ text-decoration: none;">Here's your Survey ID <br> Order ID #5819</h2>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 600px; width: 600px;" border=
+=3D"0" width=3D"600" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mobHpadding" style=3D"padding: 30px 48px 0pt;" align=3D"center=
+">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 0pt 0pt 32px;" align=3D"center">
+<table class=3D"section" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table class=3D"wrapper" style=3D"min-width: 600px; width: 600px;" border=
+=3D"0" width=3D"600" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"mobHpadding" style=3D"padding: 32px 48px 24px;" align=3D"cente=
+r">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding: 0pt 12px 0pt 0pt;"><a href=3D"hxxps://deliveroo[.]co[=
+.]uk/app?platform=3Dios" rel=3D"noopener noreferrer"> <img class=3D"app" st=
+yle=3D"display: block; font-family: HelveticaNeue,helvetica,arial,sans-seri=
+f; font-size: 14px; line-height: 1.1em; color: #2e3333; text-decoration: no=
+ne; font-weight: normal; text-align: left;" src=3D"hxxps://roo-email-assets=
+[.]s3[.]amazonaws[.]com/dist/appboy-assets/template/page-1@3x[.]png" alt=3D=
+"Download on the App Store" width=3D"135" height=3D"40"> </a></td>
+<td><a href=3D"hxxps://deliveroo[.]co[.]uk/app?platform=3Dandroid" rel=3D"n=
+oopener noreferrer"> <img class=3D"app" style=3D"display: block; font-famil=
+y: HelveticaNeue,helvetica,arial,sans-serif; font-size: 14px; line-height: =
+1.1em; color: #2e3333; text-decoration: none; font-weight: normal; text-ali=
+gn: left;" src=3D"hxxps://roo-email-assets[.]s3[.]amazonaws[.]com/dist/appb=
+oy-assets/template/google-play-badge-copy@3x[.]png" alt=3D"Get it on Google=
+ Play" width=3D"128" height=3D"40"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td width=3D"30"><a href=3D"hxxps://www[.]facebook[.]com/deliveroo[.]uk" re=
+l=3D"noopener noreferrer"> <img style=3D"display: block; font-family: arial=
+,helvetica,sans-serif; font-size: 14px; line-height: 1.3em; color: #00ccbc;=
+ text-decoration: none; font-weight: bold; text-align: left;" src=3D"hxxps:=
+//roo-email-assets[.]s3[.]amazonaws[.]com/dist/appboy-assets/facebook@2x[.]=
+png" alt=3D"facebook" width=3D"30" height=3D"30"> </a></td>
+<td style=3D"padding: 0pt 30px;"><a href=3D"hxxps://instagram[.]com/deliver=
+oo" rel=3D"noopener noreferrer"> <img style=3D"display: block; font-family:=
+ arial,helvetica,sans-serif; font-size: 14px; line-height: 1.3em; color: #0=
+0ccbc; text-decoration: none; font-weight: bold; text-align: left;" src=3D"=
+hxxps://roo-email-assets[.]s3[.]amazonaws[.]com/dist/appboy-assets/instagra=
+m@2x[.]png" alt=3D"instagram" width=3D"30" height=3D"30"> </a></td>
+<td width=3D"30"><a href=3D"hxxps://twitter[.]com/Deliveroo" rel=3D"noopene=
+r noreferrer"> <img style=3D"display: block; font-family: arial,helvetica,s=
+ans-serif; font-size: 14px; line-height: 1.3em; color: #00ccbc; text-decora=
+tion: none; font-weight: bold; text-align: left;" src=3D"hxxps://roo-email-=
+assets[.]s3[.]amazonaws[.]com/dist/appboy-assets/twitter@2x[.]png" alt=3D"t=
+witter" width=3D"30" height=3D"30"> </a></td>
+</tr>
+</tbody>
+</table>
+<p style=3D"margin: 12px 0pt 0pt; padding: 0pt; font-family: arial,helvetic=
+a,sans-serif; font-size: 9px; line-height: 14px; color: #585c5c; text-align=
+: center; font-weight: normal; text-decoration: none;">&nbsp;</p>
+<p style=3D"margin: 12px 0pt 0pt; padding: 0pt; font-family: arial,helvetic=
+a,sans-serif; font-size: 9px; line-height: 14px; color: #585c5c; text-align=
+: center; font-weight: normal; text-decoration: none;">&nbsp;</p>
+<p style=3D"margin: 12px 0pt 0pt; padding: 0pt; font-family: arial,helvetic=
+a,sans-serif; font-size: 9px; line-height: 14px; color: #585c5c; text-align=
+: center; font-weight: normal; text-decoration: none;">=C2=A9&nbsp; 2022 De=
+liveroo</p>
+<p style=3D"margin: 24px 0pt 0pt; padding: 0pt; font-family: arial,helvetic=
+a,sans-serif; font-size: 9px; line-height: 14px; color: #585c5c; text-align=
+: center; font-weight: normal; text-decoration: none;"><a style=3D"color: #=
+585c5c; text-decoration: underline; font-weight: normal; line-height: 14px;=
+">Terms</a>&nbsp;&nbsp; <a style=3D"color: #585c5c; text-decoration: underl=
+ine; font-weight: normal; line-height: 14px;">Privacy</a>&nbsp;&nbsp; <a st=
+yle=3D"color: #585c5c; text-decoration: underline; font-weight: normal; lin=
+e-height: 14px;">About</a> &nbsp;&nbsp; <a style=3D"color: #585c5c; text-de=
+coration: underline; font-weight: normal; line-height: 14px;">Careers</a></=
+p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>

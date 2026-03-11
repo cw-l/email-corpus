@@ -1,0 +1,625 @@
+Authentication-Results: spf=none (sender IP is 209.85.210.74)
+ smtp.mailfrom=seehusen.org; dkim=fail (signature did not verify)
+ header.d=google.com;dkim=fail (signature did not verify)
+ header.d=seehusen-org.20230601.gappssmtp.com;dmarc=none action=none
+ header.from=seehusen.org;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:FD2693645E80D2FBC262149AD61F9D374D97C358F9E6E5D2AB92922884833927;UpperCasedChecksum:60FC0DEA62B9127734BF71E26EAC330C309EE7AF34A2896C33C5F12D40C2350A;SizeAsReceived:3329;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1771431554; x=1772036354; darn=hotmail.sg;
+        h=from:subject:date:message-id:sender:reply-to:mime-version:from:to
+         :cc:subject:date:message-id:reply-to;
+        bh=T83shTVCwgbRtlbJ3nZ+1uWwWGzsx2fKTobMFiaRQKc=;
+        b=wBodWRfSspp5aXCLusFbY9nQn1eq6dvmNdwqPyx3h5QvZ7f7jgiu96GV/MKom+6mHd
+         D1/m4AQwDserHL4OlOaVdtW1xHdb0TwAEZDpO/QIJqRZ69oS6Kwk7b7buWINk8mYJUbB
+         ssSKIROjarfKTuAY6cBauudnLgiLaiYSY7fBlh8+PAwQMXlJD5+HCqeJ5iKh2ckPJcpS
+         HkP3YARhux2vJdNMvwqSCsvytHR+CO0axbT5sYchxTqw6zZdoM6lBge+DHJ5dwb4Q8UI
+         zw7eY4I1pz+PZMw66/WBCSOuWxT9iqm0pHYjc3PDPkx5y100dOa7tr2D1Ycs0SWjxQGs
+         XBVw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=seehusen-org.20230601.gappssmtp.com; s=20230601; t=1771431554;
+ x=1772036354; darn=hotmail.sg;
+        h=from:subject:date:message-id:sender:reply-to:mime-version:from:to
+         :cc:subject:date:message-id:reply-to;
+        bh=T83shTVCwgbRtlbJ3nZ+1uWwWGzsx2fKTobMFiaRQKc=;
+        b=KYOgGMJ01mIW+IiUpWbwpqloR1ISzM3ffIjL9eWHiB03EH4uO0qaeO530KfeeoMLwe
+         tKdPJA7brzTIihUgae4rF61jLbJgrxckMHwMpjRX5IjNgJQ4w8hy/wePGks+p+uqnU7B
+         g3fOmpHHBC9L8BeOR77aoJS85lXiUVnYeMwJ/JtrElT6iuDFwA7MPj41fHhm7GgJofkP
+         gkJG647xH+QARUzU57L0y+/tRu2UH7MYeSXIFDTorcN9zJPCKyplwBMR9xeCAW/GkWI7
+         0pcw7j9NFMI0GfXl8IzEOh5p87KyExsCcOK2vX1t2Jm/y/DXFuArMLOO4pZSdKv6vMkC
+         kk3w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1771431554; x=1772036354;
+        h=from:subject:date:message-id:sender:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=T83shTVCwgbRtlbJ3nZ+1uWwWGzsx2fKTobMFiaRQKc=;
+        b=ZE7U7vYrxME6xq0iYSH4WfptE+Kev5xa6kA2LLYjIYQGSQpJGHJEY2Mju5IGZhw8V2
+         jTtL292+ZpMR0rlmdo06QMvlitZwXyc5O3+Zl7/Hf7qDuxk/t57byFheEpp/LnuPhoOt
+         6n9bQgnByyz+5eI20rpwKGaJ3LZ5PYwxb5CJWz3dmmWImNjzL848qCrC3sseWlnxotsk
+         PGAZexToyuwCcpriqpLFGRcAqG9SGDIryzOF2F6w/rDq+7vJ1/zQ7PJuWdvrqX65JVwu
+         cyyqvYIBbgw165GV9Al+QYfMDuM/mG+UeYd+EdKspSU75gLjkiPDGf3JLdOLThn+iP/n
+         2fdA==
+X-Forwarded-Encrypted: i=1;
+ AJvYcCXR7i8c4XXLXDYdwpeCebY9JHa8aGYnB4vi9fXEHorK/UAgb+P5riOQGbC0WMHAivcPwiWgYSl8AIfqBGo=@hotmail.sg
+X-Gm-Message-State: AOJu0YzqgjzJSm6jPjnM9c9D0Ebs4WlkdUpl00ojKukH3HKlRXpeMRy5
+	Ko7vrkROyir3AS/AYBkYR6yMMnAKUhz226R5HtzR+NfJk3VzVCs+p/4S88rGcqPV8Qu2i8Tr+wK
+	PXjZKXQ5S+M55Sgdk85yYuW4SJCpDAs7hIcvywY0Ryc55nw==
+Reply-To: Mostafa Taylor <hyomartini24@seehusen.org>
+Sender: Google Calendar <calendar-notification@google.com>
+Message-ID: <calendar-6294fe83-875f-41b9-b8cd-50f7a7a8b348@google.com>
+Date: Wed, 18 Feb 2026 16:19:14 +0000
+Subject: Customer Support Notice, Bill validation milestone logged
+From: Mostafa Taylor <hyomartini24@seehusen.org>
+Content-Type: multipart/alternative; boundary="00000000000089870f064b1b8c3b"
+X-IncomingHeaderCount: 15
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Feb 2026 16:19:14.8949
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 4397041d-dab8-459b-7cd5-08de6f097571
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS1PEPF00017095:EE_|LV8P220MB2019:EE_|LV8P220MB1356:EE_
+To: Undisclosed recipients:;
+X-MS-Exchange-Organization-AuthSource: 
+ DS1PEPF00017095.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 4397041d-dab8-459b-7cd5-08de6f097571
+X-MS-DelayedDelivery: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.210.74
+X-SID-Result: NONE
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|13020799006|5019299006|21090799003|22090799003|9800799015|70000799015|9000799056|34130799006|46080799006|29080799006|32020799003|58200799021|45200799018|970799060|9020799016|84100799003|69000799018|461199028|27070799003|51300799021|87000799018|2700799029|26130799006|17301999023|1370799030|1380799030|1360799030|440099028|3412199025|18021999003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Feb 2026 16:19:14.8781
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 4397041d-dab8-459b-7cd5-08de6f097571
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS1PEPF00017095.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8P220MB2019
+X-MS-Exchange-Transport-EndToEndLatency: 09:09:36.6399172
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9632.007
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9525003)(10145025)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ dYatd7eMdYWPQhpeJVnp5ZYnU7IlHFzVHb5Eejuq3OMz5gsWzwtQsMVi0ikUcUZxGz5sd+l33uJlPWhMNrXAYdUT62hwN5pYhH2Yo268AbEeHaJ0Vk1grcpxDQUVSRjoWLIOaBvyzD2/5S+YXT5xmvFwOnR31Z682EV9aq1phRU9VdzsKf/nXLO6pDjnsiYZtMXVL6nNfbOir5gHLWcCyyBsr8OwwXwTW2nIxqPnY/1E1W5QnyLCxgWf1KBW7OdcbIw/VAX7bGbqeZ1DZFffv6k8Qw0PfQOGHXvVVIig5+1qnYcIZbmxvf9aUTXISPXamV+U8QlvOc3CZAgsI0B3fJs/sitQ9wcf30k+zUpxUh/r4N7kcwioK26gKPv0crp6PXQmzHfJJw3WGbr4MW2fCa5GgT6Vu7DOhiskFwCVGPHcVlpG5Fu9frNCrrtlCy7iaAeNHhv82p84N1QrUay7GvR45zGAQkzFrKCQyNbLqI1Gd3Q+TP4WiPRYv+XBW1AMD7Xcs4wY+BqtJJlknbldsokHGXOyfkqvJMenfSSB/EOy3hrxwvimmQI3apjuj7+zfyubx+I051da8VTGXvJHLxra+FJ3d34+aIB51D3Znq86TMDBZKwqU7HiI40tbezxBstgAjQbJdedVyRymSRUgOa5OLOQM1V4+UQ4yFe0QwPCfkwIz1pxJfJ/Xe/Qld+zr+vfwAZqbGZFvmh2XFcqfDZ/cutbEQfAtCnX2VzBy7fzC3hGs3O+x4HUJyxeUCb1XTY31VJEMDMy+Ucj4z9PGn6eoJXrU+5Hc6X6s3dp8ZB1/RXLGtQYmUjry6GD/2pIPzq8nltVBLyhTmyjmzQ50sEo/B6YbBFoHgZwP89lnsl91I+HueHAMc+Cn510wjW3q+e628Zt7/sXaA9HFrXLE/luQxtZ8YDkrBysP46SNfES7SmZfZ2QTXF1D6OzrkA8j9AvNhvmodnTfynF48aNsWJLBLaPpbph/yV7i8YjZCq6N2PtebC88CcHhXVx5PPZVx1glUIWARdFGnt4hvip49RqWw+1OBAUv7fSVk2j33fFD0jjYyxDnYwGM8x10E2PD0q4BLGqecK/2n7w7Z2p3kmM7VWhaeiCjzKapkVfoL6ynhCkSgpcbxYgkSvdZWTghSpwrYZwwPP9LWb94n10mE/+Walq72IAL+IcPnvZvBhlVttfv75wOaw/+N74FiQQLkUMYzjkYcYPWyiysqSleqn3yXEWYNdV9jvzEcnDrgv9wbcRpGEmdILv/TPm/h0hcXjmkaGaqN08XColwnINkRwfZnbBO3aSYnyT3C7OWLr1TLKo5POdHopOQdAiuLHmNXU0ZKbtWzva32P/KNEWKHm0AMOcvWgOHCsT5Sg+6+spu5blRoRyO7XZ2GoFTqfZ/GdbrVcQO6oY1LHCfBPkusL3VsNDSne6mhjr0sOVhwUatvxbjHY9xsat4UHbRCghYLw4LXzYqAh2hLJVzSO5lsnsJKS05eseihh5A3NnJXPAWHvkr8ZzK7539NH6uD4QkYMSgOUxRrr3NfsHeyq3kenlui+7t119uNOyRF49mfJppnsHBjeatxagzm50FG0kwUwFVSC2PttLlRVNKTq5NGxj/AwNiEvwmJXVQH/dCF5+IbBkj2ZRsbPC5zlDcF2YTUzmuOMUVylUMEkbxuZElFuBCR/YfXqVyQ6BO7hwHYJvLaHaPhJyXEIIUvV8Ogxxr5nofgEGiqLSVT55JVcaBIFLMSWuto7ZabhnFgZHCMigG5DQclSAGkVta/QAnBDGM1ql7K6nIWar+bgvbuUum1/KjjJc5dvnYW7CygD4oz9OnwFAhmZ6DOWldLr32SkQ2vuH+mBUSVtm/RzateCqAt3Z9+FTo/EfdItrpV5zoZHdIi/BStB6kK1sheyBjgU6CCDmPJyTx79xOOxT1UxKdJOGs4ukqUlFNal1P0mXw134XawCCd+rncKNIjqVj5v87V4Ll6bO0HzPW+p/OEmWQ/T2/Hx6J5evhZppE62YqrJa20QCbXuyC6Z1B/hMCoY2FWLQABNmynuwOtNmCVZBzBY8f1IvWidGfb9wHYRhqWSBeJUDKLKmUby7ON0TggKkuo0Gft5I5C2sxf6wqRZvJ5nycWFUNpZ3JNNFNCyGqpeS/bP1X0pfOq6Yjz9JEN/YW78+faVWi4/3QwRIa+r001j/hy9mPDm9M/qpoloauGOpAPkmguCkc5h8OWzCeeIdiJIt16hTuvXaCSsfCNeb814gKwBc9vCe0QEsq8ThyhyFpg604Tl1UUK1FsPDniiEfDp+QeTM/Od6xvNakVvirScwFI22T9PqJWkkuSp64i73ZI3X+fGUzNKYyryW7JMquQI5+Jg5GmIqkE9NChMnctKgz4VXf2JAi3uzv5zuHjDTLerwtEobCVmrJ2E+wIxGYjGIz5ddUG7xPJtLpCR/h+TEh/T3SGdHh+E1jU1GfVlHEBtCJdvamWjnXTR6s8NI6AyNaVBs5cpW5xLIrfeuFG53qh+jsBYrXNWjEBH+6OPP5nt3tmsvMHfhogj2ynbAGLTpBab+QUWw/MB1iVEUKXEyADwChifVmFFDLb1EtllBvlgafC8iETVkkAJDrVgdaNgGXjI0bnl5jHLLS96O4hEFCJ1pGbcxPf/iejDJ5pG3Qf6kAn0WV+gu5McBmY6ewlSg0j4RQc1FI8NK6/VkCCgBaZ8RL2pxGugVPkqJReDhgFWpj+b1oUJURDIkWTFXfrVQDnhbeCI0dRKv+ulrXNg/fXTXs4BgA7cQ/pKhd/3ndMEaYmx7TWQyjca6nsM7yizb6+re28bppCnCL240nbm05Bke58bpMF6mAYqCquHMPjznmxlANNqyOjXUk++4IArCSCwDTpA3xo4lLTYJGFumVG+wxfz97i8Obx/gwNOwhnR7TQGVqF/oDP1mcTPwthlQvsv33DoCPr++4r6rwKRdrrhx3DlTN1tpduTvZWMIH7Oe+AH7c8qKM+wIbelWDS2Vx0WI4pytfmWgVQuSDPXlnR4xraqWluA2FR1bqQi9T9sCWyoK8WzvSKP/r/95H63LfP7uYpj7p+CHhdMYR7RO0BieiFXr06C2XgAgNWLa/6UzjlYt2ju2NWpv6xHYbQPT3UqR5Dl3VSO90rAK9LTCVo+uBbHQo74o+5MjRwEWapic+vOmo7yyXfGoixSmfeHmHd7CGvty4VX3UGCZh2t5m6HgdZkok7WJYfrJ3yb6dneNknF/qEeTbhOA9cpJl39+f8x3H5L1sN9g5ZW6xuSl810n6Ro4Hp7ePyiCPI2Zyf5JIrOJ8mZkglFsxP/x
+MIME-Version: 1.0
+
+--00000000000089870f064b1b8c3b
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+Q3VzdG9tZXIgU3VwcG9ydCBOb3RpY2UsIEJpbGwgdmFsaWRhdGlvbiBtaWxlc3RvbmUgbG9nZ2Vk
+DQoNCkN1c3RvbWVyIFN1cHBvcnQgTm90aWNlLCBCaWxsIHZhbGlkYXRpb24gbWlsZXN0b25lIGxv
+Z2dlZA0KVGh1cnNkYXkgRmViIDE5LCAyMDI2IOKLhSAxMjoxOWFtDQpFYXN0ZXJuIFRpbWUgLSBO
+ZXcgWW9yaw0KDQoNCg0KR2VlayBTcXVhZCBCaWxsIERhdGU6IFRodXJzZGF5LCAxOSBGZWJydWFy
+eSAyMDI2QmlsbCBubzogOTY1NTg0NS1NUlFZb3VyICANCnN1YnNjcmlwdGlvbiBjb250aW51ZXMg
+YXMgZXhwZWN0ZWRDdXN0b21lciBTdXBwb3J0IE5vdGljZSxZb3VyIEdlZWsgU3F1YWQgIA0Kc3Vi
+c2NyaXB0aW9uIHJlbmV3YWwgaGFzIGJlZW4gcHJvY2Vzc2VkIGF1dG9tYXRpY2FsbHkgZm9yIDQg
+WWVhcnMuVGhlICANCmNoYXJnZSBvZiAkNDY0Ljk5IHdpbGwgYmUgY3JlZGl0ZWQgd2l0aGluIDEy
+IGhvdXJzLiBGb3IgYXNzaXN0YW5jZSwgY2FsbCAgDQooODYzKS0zMzgtMzQyMS5PcmRlciBBbmFs
+eXRpY3MgRGFzaGJvYXJkSXRlbTotIFByZW1pdW0gVG90YWwgIA0KQWNjZXNzUXVhbnRpdHk6LSAz
+eFN1YnNjcmlwdGlvbiBMZW5ndGg6LSA0IFllYXJzUGF5bWVudCBNb2RlOi0gIA0KQ29uZmlybWVk
+Q2hhcmdlZCBBbW91bnQ6LSAkIDQ2NC45OVlvdSBhcmUgcmVjZWl2aW5nIHRoaXMgZW1haWwgYXMg
+cGFydCBvZiAgDQp5b3VyIGFjdGl2ZSBzZXJ2aWNlIGFncmVlbWVudC5UbyBjYW5jZWwgYXV0by1y
+ZW5ld2FsLCBjb250YWN0ICANCig4NjMpLTMzOC0zNDIxLlJlY2VpdmVkIHdpdGggdGhhbmtzLFNo
+ZWlsYSBJbmNpb0NvcHlyaWdodCDCqTIwMjYuIEFsbCByaWdodHMgIA0KcmVzZXJ2ZWQuMjE5IEVh
+c3QgUmFpbHJvYWQgU3RyZWV0IFNhbnRhIENydXogQ2EgOTUwNjItMjEwNSBVcw0KDQpPcmdhbml6
+ZXINCk1vc3RhZmEgVGF5bG9yDQpoeW9tYXJ0aW5pMjRAc2VlaHVzZW4ub3JnDQoNCkd1ZXN0cw0K
+KEd1ZXN0IGxpc3QgaGFzIGJlZW4gaGlkZGVuIGF0IG9yZ2FuaXplcidzIHJlcXVlc3QpDQoNCg==
+
+--00000000000089870f064b1b8c3b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:=
+office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title><!--[if !mso]><meta http-equiv=3D"X-UA-Compatible" content=3D"=
+IE=3Dedge"><![endif]--><meta name=3D"viewport" content=3D"width=3Ddevice-wi=
+dth,initial-scale=3D1"><meta name=3D"color-scheme" content=3D"light dark"><=
+meta name=3D"supported-color-schemes" content=3D"light dark">
+    <style>
+      body, html {
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      .ReadMsgBody {
+        width: 100%;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+
+      .ExternalClass * {
+        line-height: 100%;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      p {
+        display: block;
+        margin: 13px 0;
+      }
+    </style>
+    <!--[if !mso]><!-->
+    <style>
+      @media only screen and (max-width:580px) {
+        @-ms-viewport {
+          width: 320px;
+        }
+
+        @viewport {
+          width: 320px;
+        }
+      }
+    </style>
+    <!--<![endif]-->
+    <!--[if mso]>
+          <xml>
+          <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+          </xml>
+          <![endif]-->
+    <!--[if lte mso 11]>
+          <style>
+            .outlook-group-fix { width:100% !important; }
+          </style>
+    <![endif]-->
+
+    <!--[if !mso]><!-- -->
+  <style>body, html {font-family:Roboto,Helvetica,Arial,sans-serif;}@font-f=
+ace {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUA=
+MQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  src: url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUA=
+MQXC89YmC2DPNWub2bVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUA=
+MQXC89YmC2DPNWuYjalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Extended';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/materialiconsextended/v154/kJEjBvgX7BgnkSr=
+UwT8UnLVc38YydejYY-oE_LvM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Google Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/googlematerialicons/v144/Gw6kwdfw6UnXLJCcm=
+afZyFRXb3BL9rvi0QZG3g.otf) format('opentype');
+}
+
+.google-material-icons {
+  font-family: 'Google Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+@font-face {
+  font-family: 'Google Material Icons Filled';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/googlematerialiconsfilled/v118/WWXFlimHYg6=
+HKI3TavMkbKdhBmDvgach8TVpeGsuueSZJH4.otf) format('opentype');
+}
+
+.google-material-icons-filled {
+  font-family: 'Google Material Icons Filled';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owps=
+.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94Yt=
+zCwM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154t=
+zCwM.ttf) format('truetype');
+}
+</style><!--<![endif]-->
+      <style>
+        .body-container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      </style>
+ =20
+      <style>
+        u+.body .body-container,
+        body[data-outlook-cycle] .body-container,
+        #MessageViewBody .body-container {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      </style>
+ =20
+    <style>
+      @media only screen and (min-width:580px) {
+        .column-per-37 {
+          width: 37% !important;
+          max-width: 37%;
+        }
+
+        .column-per-63 {
+          width: 63% !important;
+          max-width: 63%;
+        }
+      }
+    </style>
+ =20
+    <style>
+      .appointment-buttons th {
+        display: block;
+        clear: both;
+        float: left;
+        margin-top: 12px;
+      }
+
+      .appointment-buttons th a {
+        float: left;
+      }
+
+      #MessageViewBody .appointment-buttons th {
+       margin-top: 24px;
+      }
+    </style>
+ =20
+    <style>
+      @media only screen and (max-width:580px) {
+        table.full-width-mobile {
+          width: 100% !important;
+        }
+
+        td.full-width-mobile {
+          width: auto !important;
+        }
+      }
+    </style>
+    <style>
+      .main-container-inner,
+      .info-bar-inner {
+        padding: 12px 16px !important;
+      }
+
+      .main-column-table-ltr {
+        padding-right: 0 !important;
+      }
+
+      .main-column-table-rtl {
+        padding-left: 0 !important;
+      }
+
+      @media only screen and (min-width:580px) {
+        .main-container-inner {
+          padding: 24px 32px !important;
+        }
+
+        .info-bar-inner {
+          padding: 12px 32px !important;
+        }
+
+        .main-column-table-ltr {
+          padding-right: 32px !important;
+        }
+
+        .main-column-table-rtl {
+          padding-left: 32px !important;
+        }
+
+        .appointment-buttons th {
+          display: table-cell;
+          clear: none;
+        }
+      }
+
+      .primary-text {
+        color: #3c4043 !important;
+      }
+
+      .secondary-text,
+      .phone-number a {
+        color: #70757a !important;
+      }
+
+      .accent-text {
+        color: #1a73e8 !important;
+      }
+
+      .accent-text-dark {
+        color: #185abc !important;
+      }
+
+      .grey-button-text,
+      .attachment-chip a {
+        color: #5f6368 !important;
+      }
+
+      .primary-button {
+        background-color: #1a73e8 !important;
+      }
+
+      .primary-button-text {
+        color: #fff !important;
+      }
+
+      .underline-on-hover:hover {
+        text-decoration: underline !important;
+      }
+
+      .grey-infobar-text {
+        color: #202124 !important;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .primary-text:not([class^=3D"x_"]) {
+          color: #e8eaed !important;
+        }
+
+        .secondary-text:not([class^=3D"x_"]),
+        .phone-number:not([class^=3D"x_"]) a {
+          color: #9aa0a6 !important;
+        }
+
+        .grey-button-text:not([class^=3D"x_"]),
+        .attachment-chip:not([class^=3D"x_"]) a {
+          color: #bdc1c6 !important;
+        }
+
+        .accent-text:not([class^=3D"x_"]),
+        .hairline-button-text:not([class^=3D"x_"]) {
+          color: #8ab4f8 !important;
+        }
+
+        .primary-button:not([class^=3D"x_"]) {
+          background-color: #8ab4f8 !important;
+        }
+
+        .primary-button-text:not([class^=3D"x_"]) {
+          color: #202124 !important;
+        }
+      }
+    </style>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .cse-banner:not([class^=3D"x_"]) {
+          background-color: #3c4043 !important; /* Google Grey 800 */
+        }
+
+        .encryption-icon:not([class^=3D"x_"]) {
+          /* WARNING: This causes the whole style tag to get stripped in Gm=
+ail. */
+          background-image: url('hxxps://fonts[.]gstatic[.]com/s/i/googlema=
+terialiconsfilled/encrypted/v3/gm_grey200-24dp/2x/gm_filled_encrypted_gm_gr=
+ey200_24dp[.]png') !important;
+        }
+      }
+    </style>
+    <!--[if !mso]><!-->
+    <style>
+      .prevent-link a {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    </style>
+    <!--<![endif]-->
+
+    <!--[if mso | IE]>
+      <style>
+        .main-container-inner {
+          padding: 24px 32px !important;
+        }
+
+        .info-bar-inner {
+          padding: 12px 32px !important;
+        }
+
+        .cse-banner .encryption-icon {
+          /* We use the IE workaround instead. */
+          background-image: none !important;
+        }
+
+        .cse-banner .encryption-icon .ms-fallback {
+          display: block !important;
+        }
+
+        /* NB: Some MS clients ignore dark-scheme styling and apply their o=
+wn, so there's nothing we can do to help there. */
+        @media (prefers-color-scheme: dark) {
+          .cse-banner:not([class^=3D"x_"]) .encryption-icon .ms-fallback {
+            display: none !important;
+          }
+
+          .cse-banner:not([class^=3D"x_"]) .encryption-icon .ms-fallback-da=
+rk {
+            display: block !important;
+          }
+        }
+      </style>
+    <![endif]-->
+  </head><body class=3D"body"><span itemscope=3D"" itemtype=3D"hxxp://schem=
+a[.]org/InformAction"><span style=3D"display:none" itemprop=3D"about" items=
+cope=3D"" itemtype=3D"hxxp://schema[.]org/EmailMessage"><meta itemprop=3D"d=
+escription" content=3D"Mostafa Taylor: Customer Support Notice, Bill valida=
+tion milestone logged"></span><span itemprop=3D"object" itemscope=3D"" item=
+type=3D"hxxp://schema[.]org/Event"><meta itemprop=3D"eventStatus" content=
+=3D"hxxp://schema[.]org/EventScheduled"><span itemprop=3D"publisher" itemsc=
+ope=3D"" itemtype=3D"hxxp://schema[.]org/Organization"><meta itemprop=3D"na=
+me" content=3D"Google Calendar"></span><meta itemprop=3D"eventId/googleCale=
+ndar" content=3D"9ECdkbcXI4sfP0uGdxguEs1Z83"><span style=3D"display: none; =
+font-size: 1px; color: #fff; line-height: 1px; height: 0; max-height: 0; wi=
+dth: 0; max-width: 0; opacity: 0; overflow: hidden;" itemprop=3D"name">Cust=
+omer Support Notice, Bill validation milestone logged</span><span aria-hidd=
+en=3D"true"><time itemprop=3D"startDate" datetime=3D"20260219T051906Z"></ti=
+me><time itemprop=3D"endDate" datetime=3D"20260219T051906Z"></time></span><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+" align=3D"center" style=3D"width:100%;" class=3D"body-container"><tbody><t=
+r><td style=3D"" class=3D"" align=3D"left"><!--[if mso | IE]><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation"><tr><td he=
+ight=3D"16" style=3D"height:16px;"><![endif]--><div style=3D"height:16px;" =
+aria-hidden=3D"true"> &nbsp; </div><!--[if mso | IE]></td></tr></table><![e=
+ndif]--><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation" align=3D"center" style=3D"width:100%;" class=3D""><tbody><tr><td=
+ style=3D"" class=3D"" align=3D"left"><span itemscope=3D"" itemtype=3D"hxxp=
+://schema[.]org/EmailMessage"><p itemprop=3D"description">Customer Support =
+Notice, Bill validation milestone logged</p></span></td></tr></tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion" align=3D"center" style=3D"width:100%;" class=3D""><tbody><tr><td style=
+=3D"border: solid 1px #dadce0; border-radius: 8px; direction: rtl; font-siz=
+e: 0; padding: 24px 32px; text-align: left; vertical-align: top;" class=3D"=
+main-container-inner"><!--[if mso | IE]><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation"><tr><![endif]--><div class=3D"" =
+style=3D"font-size: 13px; text-align: left; direction: ltr; display: inline=
+-block; vertical-align: top; width: 100%;overflow: hidden; word-wrap: break=
+-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation" width=3D"100%" class=3D"main-column-table-ltr" style=3D"padding-=
+right: 32px; padding-left: 0;;table-layout: fixed;"><tbody><tr><td class=3D=
+"main-column-td" style=3D"padding:0; vertical-align:top;"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"=
+ style=3D"table-layout: fixed;"><tr><td style=3D"font-size: 0; padding: 0; =
+text-align: left; word-break: break-word;;padding-bottom:2px;"><div style=
+=3D"font-family: 'Google Sans', Roboto, sans-serif;font-weight: 400; font-s=
+ize: 22px; line-height: 28px;color: #3c4043; text-decoration: none;" class=
+=3D"primary-text" role=3D"presentation"><span itemprop=3D"name">Customer Su=
+pport Notice, Bill validation milestone logged</span></div></td></tr><tr><t=
+d style=3D"font-size: 0; padding: 0; text-align: left; word-break: break-wo=
+rd;;padding-bottom:24px;"><div style=3D"font-family: Roboto, sans-serif;fon=
+t-style: normal; font-weight: 400; font-size: 14px; line-height: 20px; lett=
+er-spacing: 0.2px;color: #3c4043; text-decoration: none;" class=3D"primary-=
+text" role=3D"presentation"><span aria-hidden=3D"true"><time itemprop=3D"st=
+artDate" datetime=3D"20260219T051906Z"></time><time itemprop=3D"endDate" da=
+tetime=3D"20260219T051906Z"></time></span><span>Thursday Feb 19, 2026 =E2=
+=8B=85 12:19am (Eastern Time - New York)</span></div></td></tr><tr><td styl=
+e=3D"font-size: 0; padding: 0; text-align: left; word-break: break-word;;pa=
+dding-bottom:24px;"><div style=3D"font-family: Roboto, sans-serif;font-styl=
+e: normal; font-weight: 400; font-size: 14px; line-height: 20px; letter-spa=
+cing: 0.2px;color: #3c4043; text-decoration: none;" class=3D"primary-text" =
+role=3D"presentation"><span><div><p>Geek Squad Bill Date: Thursday, 19 Febr=
+uary 2026<br>Bill no: 9655845-MRQ</p><p><strong>Your subscription continues=
+ as expected</strong></p><p><strong>Customer Support Notice</strong>,</p><p=
+>Your Geek Squad subscription renewal has been processed automatically for =
+4 Years.</p><p>The charge of $464.99 will be credited within 12 hours. For =
+assistance, call <strong>(863)-338-3421</strong>.</p><p><strong>Order Analy=
+tics Dashboard</strong></p><p>Item:- Premium Total Access<br>Quantity:- 3x<=
+br>Subscription Length:- 4 Years<br>Payment Mode:- Confirmed<br>Charged Amo=
+unt:- $ 464.99</p><p>You are receiving this email as part of your active se=
+rvice agreement.</p><p>To cancel auto-renewal, contact <strong>(863)-338-34=
+21</strong>.</p><p>Received with thanks,<br>Sheila Incio</p><p>Copyright =
+=C2=A92026. All rights reserved.<br>219 East Railroad Street Santa Cruz Ca =
+95062-2105 Us</p></div></span><meta itemprop=3D"description" content=3D"Gee=
+k Squad Bill Date: Thursday, 19 February 2026Bill no: 9655845-MRQYour subsc=
+ription continues as expectedCustomer Support Notice,Your Geek Squad subscr=
+iption renewal has been processed automatically for 4 Years.The charge of $=
+464.99 will be credited within 12 hours. For assistance, call (863)-338-342=
+1.Order Analytics DashboardItem:- Premium Total AccessQuantity:- 3xSubscrip=
+tion Length:- 4 YearsPayment Mode:- ConfirmedCharged Amount:- $ 464.99You a=
+re receiving this email as part of your active service agreement.To cancel =
+auto-renewal, contact (863)-338-3421.Received with thanks,Sheila IncioCopyr=
+ight =C2=A92026. All rights reserved.219 East Railroad Street Santa Cruz Ca=
+ 95062-2105 Us"></div></td></tr><tr><td style=3D"font-size: 0; padding: 0; =
+text-align: left; word-break: break-word;;padding-bottom:24px;"><div style=
+=3D"font-family: Roboto, sans-serif;font-style: normal; font-weight: 400; f=
+ont-size: 14px; line-height: 20px; letter-spacing: 0.2px;color: #3c4043; te=
+xt-decoration: none;" class=3D"primary-text" role=3D"presentation"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"padding-bottom: 4px;"><tr><td><h2 class=3D"primary-text" style=3D"font-=
+size: 14px;color: #3c4043; text-decoration: none;font-weight: 700;-webkit-f=
+ont-smoothing: antialiased;margin: 0; padding: 0;">Guests</h2></td></tr></t=
+able>(Guest list has been hidden at organizer's request)</div></td></tr></t=
+able></td></tr></tbody></table></div><!--[if mso | IE]></tr></table><![endi=
+f]--></td></tr></tbody></table></td></tr></tbody></table></span></span></bo=
+dy></html>
+--00000000000089870f064b1b8c3b--

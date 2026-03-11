@@ -1,0 +1,201 @@
+Authentication-Results: spf=pass (sender IP is 209.85.167.200)
+ smtp.mailfrom=dfsgdfs-398b5.firebaseapp.com; dkim=pass (signature was
+ verified) header.d=firebaseapp.com;dmarc=permerror action=none
+ header.from=dfsgdfs-398b5.firebaseapp.com;compauth=pass reason=111
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:A2DD0A34F6A153D10313726D68A3110B8352404D634DFBDF490FEB565EF6EBB0;UpperCasedChecksum:0611BBEC0FFCE83F9160D1E726DE3359F4D851711E8AF408D171838EF592C6A0;SizeAsReceived:2364;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=firebaseapp.com; s=20230601; t=1773090549; x=1773695349;
+ darn=hotmail.sg;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Jy5q84aW1pLd6WGRFjeYPcMYz1T7LVAhsGB3K6E0cs8=;
+        b=V8hJ0h8pObYGStbe68CbIKC47yT9GdkeSx6gF0X7ZwXKXIDpoEU0xHzD2ScuViVx0h
+         tPty+BwFbCzn1WhdMlayx49LmuuslYS/lLC6TfdHv85nGxMvcx+P+UQEzl2KD8tKM2rV
+         Hk9AyVA0fptDoDP2j2frCpTFi7KPJj2uGPVXiPhq80TqRapnb7p5pStyqBjNWOJ8Dsd5
+         EvoykoCGWOT8XiLcifrYtm/75wbKq4HOf2wh+vIkjhtTCHUoI2otyQwtl7UZn7m/Zo21
+         hutYyB510sqQ7LlA/Lf/hI1U8jWtEJ6gSlRMh86NQW72ru+6hflB7mAg4ZvGaWtqo0Rx
+         2E+Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1773090549; x=1773695349;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Jy5q84aW1pLd6WGRFjeYPcMYz1T7LVAhsGB3K6E0cs8=;
+        b=nW3ayeYfHT5YzH9rk4y2PY1z4LPUDkEMIFOJZ0GV8dwasm62zF0uI9B7sBpPQsg+4V
+         JP0Av+Avn3UmPdu1O+ILPrD7mO1mY+Pgt+SQlPLCC7EK5BdrUunwV4PYLpdeqrZdKbAn
+         sZrRt6qP0Kv6DjS78peGlpXokaT63xD8arDo/poeZeOYwa9fW+JqbWQGJqAhE84vS3uI
+         FSXe3KFy/mg5o3Z4IQLdB6gknpGyf0ZNzZ2SSAkg9qoIQM1NBG5EOQPtUZ/DozkYqL0v
+         iZV3pJHpVKrL9rHwRFGG4spdNdw+WRYQ8+mlwaJgqb1/KUSr1r5jF3eGL9RrcAbDmM49
+         IgBw==
+X-Gm-Message-State: AOJu0Yz1NzsYX+S7j9MrdlxCThhQmAz3g5ofvlTlqAoy5R6IWHKr3/kI
+	AirW2qVPjj9hHrbrL5vXP+RVMJ4Ui4zUPfGvjas4E0Zn+XFLjSCudA/8dXkXEV81YfUUTrLQCYh
+	5yYI1v4ZjYA==
+Message-ID: <000000000000512494064c9dd01e@google.com>
+Date: Mon, 09 Mar 2026 21:09:08 +0000
+Subject: 
+ =?utf-8?q?=F0=9F=94=90_URGENT=3A_2FA_Mandatory_-_Protect_Your_Wallet_by_31/1?=
+ =?utf-8?q?2/2025?=
+From: " MetaMask " <noreply@dfsgdfs-398b5.firebaseapp.com>
+To: redacted@redacted.com
+Content-Type: multipart/alternative; boundary="00000000000051247e064c9dd01b"
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Mar 2026 21:09:09.4924
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 04edcb21-787e-40aa-aeb0-08de7e201b47
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL02EPF0001A104:EE_|SA1P220MB1947:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL02EPF0001A104.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/9/2026 3:07:06 PM
+X-MS-Office365-Filtering-Correlation-Id: 04edcb21-787e-40aa-aeb0-08de7e201b47
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.167.200
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|60050799006|2700799029|13020799006|461199028|70000799015|7009299003|9109299003|1680799066|9800799015|87000799018|51300799021|46080799006|9020799019|10300799038|69000799018|9400799043|58200799021|34130799006|970799060|32020799003|45200799018|5139299004|9000799056|4302099013|440099028|3412199025|30041999003|1370799030|1360799030|1380799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Mar 2026 21:09:09.4591
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 04edcb21-787e-40aa-aeb0-08de7e201b47
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL02EPF0001A104.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1947
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2237022
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9678.017
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10010005)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--00000000000051247e064c9dd01b
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+TWV0YU1hc2sNCg0K8J+UkCBTZWN1cml0eTogMkZBIE1hbmRhdG9yeSBBQ1RJT04gUkVRVUlSRUQN
+Cg0KSGVsbG8sDQoNCldlJ3JlIHN0ZXBwaW5nIHVwIHlvdXIgc2VjdXJpdHkuDQoNCg0KQXMgcGFy
+dCBvZiBvdXIgY29udGludWVkIGNvbW1pdG1lbnQgdG8ga2VlcGluZyB5b3VyIGRpZ2l0YWwgYXNz
+ZXRzIHNhZmUsICANCjItRmFjdG9yIEF1dGhlbnRpY2F0aW9uICgyRkEpIHdpbGwgc29vbiBiZWNv
+bWUgbWFuZGF0b3J5IGZvciBhbGwgTWV0YU1hc2sgIA0KYWNjb3VudHMuDQoNClRoaXMgaXMgYSBt
+YWpvciBzZWN1cml0eSBlbmhhbmNlbWVudCBkZXNpZ25lZCB0byBwcm90ZWN0IHlvdXIgd2FsbGV0
+IGZyb20gIA0KdW5hdXRob3JpemVkIGFjY2Vzcy4NCg0K4o+wIERlYWRsaW5lOiAzMS8wMy8yMDI2
+IEFmdGVyIHRoaXMgZGF0ZSwgYWNjZXNzIHRvIGtleSB3YWxsZXQgZmVhdHVyZXMgd2lsbCAgDQpi
+ZSByZXN0cmljdGVkIHVudGlsIDJGQSBpcyBlbmFibGVkLg0KDQoNCg0KRW5hYmxlIDJGQSBOb3cg
+4oaSDQoNCg0KVGhhbmsgeW91IGZvciBiZWluZyBhIHBhcnQgb2YgdGhlIE1ldGFNYXNrIGNvbW11
+bml0eS4gWW91ciBzZWN1cml0eSBpcyBvdXIgIA0KdG9wIHByaW9yaXR5Lg0KDQpTdGF5IHNlY3Vy
+ZSwNClRoZSBNZXRhTWFzayBUZWFtDQoNClRoaXMgaXMgYSBzZWN1cml0eSBub3RpZmljYXRpb24g
+ZnJvbSBNZXRhTWFzay4gwqkgMjAyNiBNZXRhTWFzaw0KDQoNCg0K
+
+--00000000000051247e064c9dd01b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>MetaMask 2FA Security Notice</title>
+</head>
+<body style=3D"margin: 0; padding: 20px; background-color: #f4f4f4; font-fa=
+mily: Arial, Helvetica, sans-serif;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100=
+%; max-width: 520px; margin: 0 auto; background-color: #ffffff; border-coll=
+apse: collapse; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 16px=
+; overflow: hidden; font-family: Arial, Helvetica, sans-serif;">
+	<tbody>
+		<tr>
+			<td style=3D"padding: 32px 30px;">
+			<div style=3D"margin-bottom: 24px; text-align: center;"><img alt=3D"Meta=
+Mask" src=3D"hxxps://freelogopng[.]com/images/all_img/1683020772metamask-lo=
+go-png[.]png" style=3D"height: 48px; width: auto; max-width: 280px; display=
+: inline-block;"></div>
+
+			<div style=3D"margin-bottom: 28px; background-color: #fef6e7; padding: 1=
+4px 18px; border-radius: 40px; border-left: 4px solid #f6851b;"><span style=
+=3D"font-weight: 700; font-size: 16px; color: #1e1e1e; letter-spacing: 0.3p=
+x;">=F0=9F=94=90 Security: 2FA Mandatory</span> <span style=3D"float: right=
+; background-color: #f6851b; color: white; padding: 4px 12px; border-radius=
+: 30px; font-size: 13px; font-weight: 600;">ACTION REQUIRED</span></div>
+
+			<p style=3D"color: #1e1e1e; font-size: 16px; line-height: 1.5; margin: 0=
+ 0 16px 0; font-weight: 400;">Hello,</p>
+
+			<p style=3D"color: #1e1e1e; font-size: 16px; line-height: 1.5; margin: 0=
+ 0 20px 0; font-weight: 400;">We're stepping up your security.</p>
+
+			<div style=3D"background-color: #f9fafc; padding: 20px; border-radius: 1=
+6px; margin-bottom: 24px; border: 1px solid #e9ebf0;">
+			<p style=3D"color: #2b2b2b; font-size: 15px; line-height: 1.5; margin: 0=
+ 0 16px 0;">As part of our continued commitment to keeping your digital ass=
+ets safe, <span style=3D"color: #f6851b; font-weight: 700;">2-Factor Authen=
+tication (2FA)</span> will soon become mandatory for all <span style=3D"col=
+or: #f6851b; font-weight: 700;">MetaMask accounts</span>.</p>
+
+			<p style=3D"color: #2b2b2b; font-size: 15px; line-height: 1.5; margin: 0=
+ 0 16px 0;">This is a major security enhancement designed to protect your w=
+allet from unauthorized access.</p>
+
+			<div style=3D"background-color: #fff2e5; padding: 14px 16px; border-radi=
+us: 12px; margin: 16px 0 4px 0; border: 1px solid #ffd8b5;"><span style=3D"=
+font-weight: 700; color: #d13b00; font-size: 16px; display: block; margin-b=
+ottom: 6px;">=E2=8F=B0 Deadline: 31/03/2026</span> <span style=3D"color: #5=
+e5e5e; font-size: 14px;">After this date, access to key wallet features wil=
+l be restricted until 2FA is enabled.</span></div>
+			</div>
+
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin:=
+ 28px 0 30px 0;" width=3D"100%">
+				<tbody>
+					<tr>
+						<td align=3D"center"><a href=3D"hxxps://u20993664[.]ct[.]sendgrid[.]n=
+et/ls/click?upn=3Du001[.]EoUuycmzOzB7iY6mIj-2BdPeYutkkLwKKhmSz8lPJA8BlMsYmN=
+fHFgOh3QkRVLUpbF_jIE_vo2-2B0iZUn5WtE25bxOAIhfvftZXtzuxGGJDCHGkLmVCWu0YwIkwr=
+tylnRHNKplfmEzSzvddE87wWC4085VZB4rcRsuqPM8PjwzqoTyg8IqrVmX2oU4kbe7gvCF6L0wm=
+8ErBhQnlbDznbQwOB1S0ToBhFUGpPlfipsLdtwlldCMMUKMv7iEt5BuG7xW-2BP-2B6SNtIJXrK=
+RpdIozJfA6LfCpTg-3D-3D" style=3D"display: inline-block; background: linear-=
+gradient(135deg, #f6851b 0%, #e4761b 100%); color: #ffffff; text-decoration=
+: none; padding: 16px 40px; border-radius: 40px; font-size: 17px; font-weig=
+ht: 600; letter-spacing: 0.5px; box-shadow: 0 6px 14px rgba(246, 133, 27, 0=
+.25); border: 1px solid #d96c0f;">Enable 2FA Now =E2=86=92</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p style=3D"color: #1e1e1e; font-size: 15px; line-height: 1.5; margin: 0=
+ 0 12px 0;">Thank you for being a part of the MetaMask community. Your secu=
+rity is our top priority.</p>
+
+			<p style=3D"color: #1e1e1e; font-size: 15px; line-height: 1.5; margin: 0=
+ 0 4px 0;">Stay secure,<br>
+			<span style=3D"font-weight: 600; color: #f6851b;">The MetaMask Team</spa=
+n></p>
+
+			<div style=3D"margin-top: 32px; padding-top: 20px; border-top: 1px solid=
+ #eaeef2; font-size: 12px; color: #7c7f85; text-align: center;"><span style=
+=3D"color: #7c7f85;">This is a security notification from MetaMask. =C2=A9 =
+2026&nbsp;MetaMask</span></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style=3D"height: 1px; max-height: 1px; overflow: hidden; display: none=
+;">&nbsp;</div>
+</body>
+</html>
+
+--00000000000051247e064c9dd01b--

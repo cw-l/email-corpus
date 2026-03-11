@@ -1,0 +1,174 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=sCQveaZ7y7v5ADpaD+aulqYtYr8fJINOvEkfbAXZPOxBHZzw17yLQd4z3oWqCyoTk9N1FV1zKt+jnPX1659Pq3BIqDN2EYVbwnLDg0Cbc1gHy3Fk/rlkSNbCtC2T/5Iurqde2/6PFBJC/NjkjRjc6eLzKgv5S73lrtuJoRdinkXadUA/jgWaoay6PthWFB3hfJNkQlxRgrcARToXbnPSiHZFpeKFYhJKDAP8jF9aVJI9S4DGTpvwWDTR9IH5NfJr6n6vzVLH9aKhnS6TO/vT82PXBo5yOfi7iHTzkC44cZTHFGBN8u4dFmi18zxQUmjaiYDpyldMZWD995C2SHn8tA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=WQ68kvWJiFGaIcbWNIGh5J1TSY8zdJcSzCKWZYO/4lQ=;
+ b=yeA0j2wNKXjDpBF0kqBki+YXqcESY56H4QIONuwAnmUzOpizLlzVH9sF0YYK59MHLcrnleg2dIzdrLlXWuJ7R31mo1EHEYlxaSu1RHqbWLWllzKPBaiB8Mp1VlTDECnm2726ZL7kDRpq2fF5ZqKJdtkPn/be+fyb4EFnThYRkJ4hvYZLjXdC3wan5cTzpDffKOP6BHm5Pi4ldMLriqlXZVBPApluCEFMZH8TxiOqbj3TPM2PDVhnRIu4q0nlTs5E/JUowERP1gXWLWfN8wJFZHCItKaHELUEEKhpl6FDqSNdYDoOLbz5iEfJV2/Yrw+449P2qUZWcgI2DjMcUnNCRw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 209.85.160.194) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=dlit.mtt.ac.th;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=dlit.mtt.ac.th;
+ dkim=pass (signature was verified)
+ header.d=dlit-mtt-ac-th.20230601.gappssmtp.com; arc=pass (0 oda=0 ltdi=1)
+Authentication-Results: spf=pass (sender IP is 209.85.160.194)
+ smtp.mailfrom=dlit.mtt.ac.th; dkim=pass (signature was verified)
+ header.d=dlit-mtt-ac-th.20230601.gappssmtp.com;dmarc=pass action=none
+ header.from=dlit.mtt.ac.th;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:41320CBBD44F209D99838B2150269F6361F9EEE0767658F00ADD8C43F14D09FF;UpperCasedChecksum:72007B6615156F930E70B2DB432BBA1F312FD8940A6BE28381DFE1DD45DFA065;SizeAsReceived:4234;Count:20
+ARC-Seal: i=1; a=rsa-sha256; t=1770618966; cv=none;
+        d=google.com; s=arc-20240605;
+        b=cJLJY+QkGthv79PCoL0lDWNSvH4NODi7VxcwgnxBxlJFmbGZ68GRbiBWucVmMd8j+J
+         iPpZbO8KpluumNgq48Fy6yZGElItwVICTZm9HzGJhTYfviDOIGFd5QNwu110z2W8S+l2
+         ByZXSSbEmVu5eepwwR+s/3Mg+tClFbDyajoSX1QciKSXfeGnMLsPVnk+TZXeK/+myPQ4
+         NYii6PXLG+luQqAYalAio54qEhhrs7NNbYNsw7ulUylp9EGMLkuiJVg8wg3pQFFN09V2
+         GakWNKH7StUckYd1ZZPYbnKHAXKX8tyMmPugE+IDX+0ORhPyr3OeXsfDGNqUvJWYyTPi
+         +F+A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=WQ68kvWJiFGaIcbWNIGh5J1TSY8zdJcSzCKWZYO/4lQ=;
+        fh=StRl6R+0pJ8tLev27n8zZR31+CRdV5dcCDePcqMTUyo=;
+        b=QBmZkobuH/xiQACKeGtbp6hfuCZQ4IvtVxfrZBXLAJTm7vWo75h7rLZqu5YbpZ94xD
+         pCvAoV5vozbkAipVbEJcUZ67TQlpXBdGrRw2RyTKv0LJkSzrRZ8JxNzmvxTbYkybZsIX
+         c5AboehYDESFe2FEmcMe4YPV+arUH9v0mJGJT4sLOFXv/t58Yc0KMhgohUVzYoKJhlwk
+         OGBfm0hEmKe9CiD0W/VBbIF/E8OOJMQ41yGJTYiQQ3963MeGd7GXot5qwfpoX3/oXI9a
+         2L+FjhDptZrKZqbEhGXcPyAKf5wFkpd1cwrmtchREbJvmw2ase+V04f2XYm7LoLTBZS5
+         MqRg==;
+        darn=hotmail.sg
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=dlit-mtt-ac-th.20230601.gappssmtp.com; s=20230601; t=1770618966;
+ x=1771223766; darn=hotmail.sg;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=WQ68kvWJiFGaIcbWNIGh5J1TSY8zdJcSzCKWZYO/4lQ=;
+        b=GNWB+2FLwRQTJ5HJc2GuvLrwugZVnv4jyTuOsh54cfSdUkje+qecixeVv8E/CqHElo
+         MeHciUkzDzGcFDGGPOUxeZcYnD/hNoQlGC2HTGjmotlYfeRRWZ5hgOXeeGjUk7LnQ6PN
+         vZ8YvOqAplqBFC+3TA5kqi6/FPJYWQain8w576itttijbRIOJo8C5RcZPm31o7sxBWkM
+         FLecT6GyC6C74n6Xeb3kohttSO0r7ec4hdQDFsYS6YZ2/l/G7c5mj8oKHPkHnOrttoIH
+         dlXkCWnqes5LjhzT0/hS4l8l/vlfmXzRPwgYRPZHBnNEUplnIlg16kWWHXg9ugG4HgHW
+         2kfQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1770618966; x=1771223766;
+        h=to:subject:message-id:date:from:reply-to:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=WQ68kvWJiFGaIcbWNIGh5J1TSY8zdJcSzCKWZYO/4lQ=;
+        b=gemderUj0zE27CLsQe4af6EzACmKM24gXCl/e6WV6gd6B5pCXRFvoJkw4o5MvIOUPs
+         /wi8elfwVICR77FcKlkPy3uhGsaZikrESyCyoOSJ75mcOx4+CJQOqG2WXAnX9YbiqqbY
+         Cz1x2Ax/WD/V5lbmxLBU8R10XWc/l1a95qzuQYtEGi7hxwOgTR+zcG8Hw01/nGcGmAs6
+         LT5LxWY5T52TClDKm/tDDsT1uEpQBtYVMuVzf+dX6hDv4Mmg24MNBb4yj6cGkzKv/M5T
+         qL1VEoYCnaAKqlic97ATjWWi1OIlHUEOP3lBVoZsEWMruLlurQwjp3khHsnTZnvBnx/a
+         ldVQ==
+X-Forwarded-Encrypted: i=1;
+ AJvYcCW1fe7rPBAFO6MWE1WdDuSkoH2bWSxsvke8VShZnU1kLkwjEO2ld+2KNT1RrlbjVO0q1l+ZXREfyV6ACXc=@hotmail.sg
+X-Gm-Message-State: AOJu0YwV0xzIgq9TPd6rzBdFV8IIfJoQw6tBzhog0l7hSPQPUBzmV6k5
+	3EkkdQ4qwyVzEoNhWley3iVIi5pN4QveBTFqwTtWCJ6biSPi+iQcqtkeiWT1x+tslJwZOeTvSbd
+	jMKpVZ6xjXb/E6iGhlCSUL5Pe+e3CuhHVke6yfj1/CA==
+X-Gm-Gg: AZuq6aIDNZHSvFH/TJ2AAQ6H4noRYLP3X9XikW8LzqKT1EMTvRzMVXDHtXYhxE4zwlR
+	2CLjVWlPxMf6EbU+J9WJsgqQIqPxOYDmngsRp1W9XeiJoUOP1NVZQbctcBZYl/DCnYvDjVB5Vfv
+	frJ50qB6QPsNN6JBQmK06Ry95KrSwn5Jj2I7Eq2o51sy6YkwcRMuhs+M7tHSeHg6JAAhGSRNboH
+	X87//KMgwu6dizKwYXqSAQJ0iysWEAibivqX+eAFVLU8Lu/850VrptIQ1E82ilAcyX3MIs9pbFf
+	Tw==
+Reply-To: fdy3215@gmail.com
+From: Capt William <33124@dlit.mtt.ac.th>
+Date: Mon, 9 Feb 2026 09:35:52 +0300
+X-Gm-Features: AZwV_QhCd34XTAPWjmXMGInbfcwdmu_gmKdUCvBzg6aVysoGqZ9PVBhe0-3GYRg
+Message-ID: 
+ <CAJFivM9tEoOui_gqYF7yva2PUtBjBDvcJsgkwcV-3H3fYb4qjg@mail.gmail.com>
+Subject: CAN I TRUST YOU?
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="00000000000077b43f064a5e5a10"
+BCC: <redacted@redacted.com>
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Feb 2026 06:36:06.6526
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ a3335a0c-3a77-47b8-a56e-08de67a5811b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL02EPF0001A0FD:EE_|SA1P220MB1368:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL02EPF0001A0FD.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: a3335a0c-3a77-47b8-a56e-08de67a5811b
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.160.194
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|461199028|9020799016|2700799029|970799060|46080799006|32020799003|34130799006|3412199025|440099028|30041999003|26104999006|1370799030|1380799030|1360799030|1370599021|4720999032;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Feb 2026 06:36:06.6264
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ a3335a0c-3a77-47b8-a56e-08de67a5811b
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL02EPF0001A0FD.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1368
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6254070
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9587.013
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10160021)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--00000000000077b43f064a5e5a10
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Friend,
+
+I am Capt.William D Swenson, an officer in the US Army, and also a West
+Point Graduate, serving in the Military with the 82nd Airborne Division
+Peacekeeping force deployed From Iraq.
+
+We were moved to Syria from Iraq as the last batch just left, and I really
+need your help in assisting me with the safe keeping of a huge fund sealed
+in two military trunk boxes which I registered with the GLOBAL EXPRESS
+SECURITY & DELIVERY SERVICE.
+
+I hope you can be trusted? You will be rewarded handsomely if you could
+help me secure the funds until I conclude my service here. If you can be
+trusted, i will explain further when i get a response from you, kindly
+contact me in this my private email address below:
+captwilliamsdswensom@gmail.com
+
+
+God Bless you.
+
+Captain Williams D Swenson
+
+--00000000000077b43f064a5e5a10
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Dear Friend,<br><br>I am Capt.William D Swenson, an officer =
+in the US Army, and also a West Point Graduate, serving in the Military wit=
+h the 82nd Airborne Division Peacekeeping force deployed From Iraq.<br><br>=
+We were moved to Syria from Iraq as the last batch just left, and I really =
+need your help in assisting me with the safe keeping of a huge fund sealed =
+in two military trunk boxes which I registered with the GLOBAL EXPRESS SECU=
+RITY &amp; DELIVERY SERVICE.<br><br>I hope you can be trusted? You will be =
+rewarded handsomely if you could help me secure the funds until I conclude =
+my service here. If you can be trusted, i will explain further when i get a=
+ response from you, kindly contact me in this my private email address belo=
+w: <a href=3D"mailto:captwilliamsdswensom@gmail.com">captwilliamsdswensom@g=
+mail.com</a><br><br><br>God Bless you.<br><br>Captain Williams D Swenson<br=
+><br><br><br></div>
+
+--00000000000077b43f064a5e5a10--

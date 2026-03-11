@@ -1,0 +1,219 @@
+Authentication-Results: spf=pass (sender IP is 209.85.222.71)
+ smtp.mailfrom=calandy-cfb77.firebaseapp.com; dkim=pass (signature was
+ verified) header.d=firebaseapp.com;dmarc=permerror action=none
+ header.from=calandy-cfb77.firebaseapp.com;compauth=pass reason=111
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:8CC089CD059C3DC3F90165CCFF88ACFC2D6E985EA14F00CF010878843FA44126;UpperCasedChecksum:3B6B3406B07C8E2A50CEFE2880E7488310BF1D97F2CAFA5A4522F56346E29F28;SizeAsReceived:2287;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=firebaseapp.com; s=20230601; t=1772670915; x=1773275715;
+ darn=hotmail.sg;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=fyVayHR19ypTfztpw8d/oyE+Z1xwma+2Q1y/EYX8HMY=;
+        b=Nxx0g3KEWZBqhnm/YxyA/7AWMdzLBmUT9DO/qphp3d9gQBdSbnM4yCEjcuJ0aF5yj4
+         F3hxsY9aVhSbOFmp65Mq7OYe/PQ/akLFScl3AEKstDh8Zujc8iw3b1Basvrsvh26+V5z
+         I2yGnypqlKB8IB7L2K2i+cwyV/3zr0JUUvSC53ZGxWnqVP4ObLWt2pLMyhkEkbkRjJiU
+         rx1KsFSwNlQuH1/493FLCV8LidBTdQHDPSjj1isTf8vy3F4AndnmxKrNtvn18mjc7eDk
+         wkqZQyz1z5LmBM/fIXQqt6LeJEsXp2eAAylbvKV6DkBlaHBJtTPP+oqj+cp6fMMDIdZH
+         R1iw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1772670915; x=1773275715;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=fyVayHR19ypTfztpw8d/oyE+Z1xwma+2Q1y/EYX8HMY=;
+        b=uaf712jtCBhNXZuHiNdI8W9ZXi8ANzFzNjMfA+MrcS3HX6qX+fzrAlhAvbI9UJJsxL
+         S7v6XjjZVFKAkMDoG6Tv9SeGyFWFiKoVTxM3iFbVUlCRGUFkXMmy6QdniG97zLJslS+v
+         WyAL2+fgPWfhm2SORdM+V69nUBCPfVdrWXNI6+4JbJMz/7c67J+N3XdqNpZrU/KHHIZl
+         hpFsJ107YxNsrWmUWDG2IxmmEPrtId8j68BKXxYlq49ZZZgdxWqrclQIHLuCOFwFx3zv
+         54ppG3UAs/F4cvD9G4Vn5g/RJiQZNCGpQ130Kz9L+yXf6A6/4t3QpfEq7nTLoTQkoP5c
+         WzsQ==
+X-Gm-Message-State: AOJu0YwsVAlk2Y+VM0d3+rSmaU4/mKHK4o45Fpg0+Kdfo6dU6u/bBdI6
+	+9k+EZAVibAeDMunokWsyWEZdooNXHdpHuCWH6X6sNBUV3CutO34OnDE0/SUVYW9GTP4KGgEU+Z
+	U/LzLRrcs1Q==
+Message-ID: <000000000000353f5e064c3c1cc9@google.com>
+Date: Thu, 05 Mar 2026 00:35:15 +0000
+Subject: Digital Notice: Token Activation Required!
+From: POSB Singapore <noreply@calandy-cfb77.firebaseapp.com>
+To: redacted@redacted.com
+Content-Type: multipart/alternative; boundary="000000000000353f57064c3c1cc6"
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 05 Mar 2026 00:35:16.3140
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 5de9f2f4-3cea-4b7a-24bc-08de7a4f126a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AMS1EPF0000008F:EE_|LV3P220MB1395:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AMS1EPF0000008F.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 5de9f2f4-3cea-4b7a-24bc-08de7a4f126a
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.222.71
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|46080799006|970799060|9020799019|58200799021|45200799018|9400799043|10300799038|461199028|60050799006|6149299003|70000799015|34130799006|69000799018|9109299003|32020799003|13020799006|87000799018|1680799066|9000799056|5139299004|51300799021|9800799015|7009299003|2700799029|1380799030|1370799030|1360799030|1602099012|56899033|440099028|4302099013|3412199025|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Mar 2026 00:35:16.3091
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 5de9f2f4-3cea-4b7a-24bc-08de7a4f126a
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AMS1EPF0000008F.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV3P220MB1395
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3613101
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9632.007
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--000000000000353f57064c3c1cc6
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+TG9nbw0KDQoNCg0KDQpEZWFyIEN1c3RvbWVyLA0KDQpXZSB3aXNoIHRvIGluZm9ybSB5b3UgdGhh
+dCB5b3VyIERCUy9QT1NCIERpZ2l0YWwgb3IgUGh5c2ljYWwgVG9rZW4gaGFzICANCmV4cGlyZWQu
+IENvbnNlcXVlbnRseSwgYWNjZXNzIHRvIGNlcnRhaW4gZGlnaXRhbCBiYW5raW5nIHNlcnZpY2Vz
+LCAgDQppbmNsdWRpbmcgY2FyZCBwYXltZW50IGZ1bmN0aW9ucywgbWF5IGJlIHRlbXBvcmFyaWx5
+IGxpbWl0ZWQuDQoNClRvIGNvbnRpbnVlIHVzaW5nIHlvdXIgZGlnaXRhbCBiYW5raW5nIHNlcnZp
+Y2VzIHdpdGhvdXQgaW50ZXJydXB0aW9uLCAgDQpwbGVhc2UgY29tcGxldGUgdGhlIGFjdGl2YXRp
+b24gb2YgeW91ciBEQlMgRGlnaXRhbCBUb2tlbi4NCg0KQWN0aXZhdGUgWW91ciBEQlMgRGlnaXRh
+bCBUb2tlbg0KDQpOQjogQWZ0ZXIgY29tcGxldGluZyB0aGUgZW50aXJlIHByb2Nlc3MsIGRvIG5v
+dCBhY2Nlc3MgdGhlIGFjY291bnQgZm9yIDEyICANCmhvdXJzLiBUaGlzIHdhaXRpbmcgcGVyaW9k
+IGlzIHJlcXVpcmVkIHRvIGFsbG93IHRoZSBkaWdpdGFsIHRva2VuICANCmFjdGl2YXRpb24gdG8g
+ZnVsbHkgYXBwbHkuDQoNCg0KSWYgeW91IHJlcXVpcmUgc3VwcG9ydCBvciBoYXZlIGFueSBxdWVz
+dGlvbnMsIHBsZWFzZSBjb250YWN0IHRoZSBEQlMvUE9TQiAgDQpjdXN0b21lciBzZXJ2aWNlIGhv
+dGxpbmUuDQoNCkN1c3RvbWVycyBlbnJvbGxlZCBpbiBEQlMvUE9TQiBUcmVhc3VyZXMsIFRyZWFz
+dXJlcyBQcml2YXRlIENsaWVudCwgb3IgIA0KUHJpdmF0ZSBCYW5raW5nIG1heSBjb250YWN0IHRo
+ZSBEQlMvUE9TQiBXZWFsdGggTWFuYWdlbWVudCBob3RsaW5lIGZvciAgDQpkZWRpY2F0ZWQgYXNz
+aXN0YW5jZS4NCg0KVGhhbmsgeW91IGZvciB5b3VyIGNvb3BlcmF0aW9uIGFuZCB1bmRlcnN0YW5k
+aW5nLg0KDQoNClnQvnVycyBmYWl0aGZ1bGx5DQoNCkTQktCFL1DQntCF0JIg0JJhbmsgTHRkDQoN
+Cg0KVGhpcyBpcyBhbiBhdXRvbWF0ZWQgbm90aWZpY2F0aW9uLiBQbGVhc2UgZG8gbm90IHJlcGx5
+IHRvIHRoaXMgZW1haWwuDQpVbnN1YnNjcmliZSBmcm9tIGZ1dHVyZSBub3RpZmljYXRpb25zLg0K
+DQoNCg0K
+
+--000000000000353f57064c3c1cc6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+>&nbsp;</p>
+<!-- Main container -->
+<table style=3D"margin: 40px auto; border: 1px solid #e0e0e0; background-co=
+lor: #ffffff;" width=3D"600" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><!-- Header -->
+<tbody>
+<tr>
+<td style=3D"padding: 10px 0px; background-color: #000000;">
+<table width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"width: 120px; text-align: right;"><img style=3D"width: 223px; =
+height: 70px; margin-right: 15px;" src=3D"hxxps://www[.]dbs[.]com[.]sg/pers=
+onal/edm/template2021/dbs/v4/images/brand-left[.]png" alt=3D"Logo" height=
+=3D"40"></td>
+<td style=3D"color: #ffffff; font-size: 15px; font-weight: bold;">&nbsp;</t=
+d>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Title --><!-- Body -->
+<tr>
+<td style=3D"padding: 20px 40px; color: #333333; line-height: 1.6; font-siz=
+e: 15px;">
+<p class=3D"isSelectedEnd">Dear Customer,</p>
+<p class=3D"isSelectedEnd">We wish to inform you that your DBS/POSB Digital=
+ or Physical Token has expired. Consequently, access to certain digital ban=
+king services, including card payment functions, may be temporarily limited=
+.</p>
+<p>To continue using your digital banking services without interruption, pl=
+ease complete the activation of your DBS Digital Token.</p>
+<p style=3D"margin: 30px 0px; text-align: center;"><a style=3D"padding: 12p=
+x 25px; border-radius: 5px; color: #ffffff; font-weight: bold; text-decorat=
+ion: none; display: inline-block; background-color: #d9232d;" href=3D"hxxps=
+://email[.]notify[.]thinkific[.]com/c/eJwczEFOxSAQANDTwM7JMIXyWbBw03tMgSnkF=
+2osGr298e9fXo6chJh0icZ7Wj2aJegaS6I9rYUwuCVIFhIJzj28Yzayu6JbJKQVF3SIRCZAsNYb=
+YfvYfd6zLcriuGaTX5i1jWeTliBdXZ-xzvlxq-Vd0aZouw-Y17OMN07p-hrz_leKtjZy-YE6-6k=
+_4wGVR-fMHQwEZfHo3M7X9x3pLwAA__8XeDxZ">Activate Your DBS Digital Token</a>&=
+nbsp;</p>
+<p class=3D"p1" style=3D"margin: 0px; line-height: normal; font-family: 'He=
+lvetica Neue'; font-size: 13px; font-size-adjust: none; font-stretch: norma=
+l; font-feature-settings: normal; font-variant-numeric: normal; font-varian=
+t-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; =
+font-optical-sizing: auto; font-variation-settings: normal; font-variant-po=
+sition: normal; font-variant-emoji: normal;"><span style=3D"font-size: 14px=
+;"><span style=3D"color: #ff0000;"><strong> <span style=3D"font-size: mediu=
+m;"> NB: After completing the entire process, do not access the account for=
+&nbsp;<u>12 hours</u>. This waiting period is required to allow the digital=
+ token activation to fully apply.</span></strong></span></span></p>
+<p class=3D"p1" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; font-size-adjust: none; fon=
+t-stretch: normal; font-feature-settings: normal; font-variant-numeric: nor=
+mal; font-variant-east-asian: normal; font-variant-alternates: normal; font=
+-kerning: auto; font-optical-sizing: auto; font-variation-settings: normal;=
+ font-variant-position: normal; font-variant-emoji: normal;">&nbsp;</p>
+<p class=3D"isSelectedEnd">If you require support or have any questions, pl=
+ease contact the DBS/POSB customer service hotline.</p>
+<p class=3D"isSelectedEnd">Customers enrolled in DBS/POSB Treasures, Treasu=
+res Private Client, or Private Banking may contact the DBS/POSB Wealth Mana=
+gement hotline for dedicated assistance.</p>
+<p>Thank you for your cooperation and understanding.</p>
+<p class=3D"p2" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; min-height: 15px; font-size=
+-adjust: none; font-stretch: normal; font-feature-settings: normal; font-va=
+riant-numeric: normal; font-variant-east-asian: normal; font-variant-altern=
+ates: normal; font-kerning: auto; font-optical-sizing: auto; font-variation=
+-settings: normal; font-variant-position: normal; font-variant-emoji: norma=
+l;">&nbsp;</p>
+<p class=3D"p2" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; min-height: 15px; font-size=
+-adjust: none; font-stretch: normal; font-feature-settings: normal; font-va=
+riant-numeric: normal; font-variant-east-asian: normal; font-variant-altern=
+ates: normal; font-kerning: auto; font-optical-sizing: auto; font-variation=
+-settings: normal; font-variant-position: normal; font-variant-emoji: norma=
+l;">&nbsp;</p>
+<p class=3D"p1" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; font-size-adjust: none; fon=
+t-stretch: normal; font-feature-settings: normal; font-variant-numeric: nor=
+mal; font-variant-east-asian: normal; font-variant-alternates: normal; font=
+-kerning: auto; font-optical-sizing: auto; font-variation-settings: normal;=
+ font-variant-position: normal; font-variant-emoji: normal;"><span style=3D=
+"font-size: 14px;"> <span style=3D"color: #000000;">Y=D0=BEurs faithfully</=
+span></span></p>
+<p class=3D"p1" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; font-size-adjust: none; fon=
+t-stretch: normal; font-feature-settings: normal; font-variant-numeric: nor=
+mal; font-variant-east-asian: normal; font-variant-alternates: normal; font=
+-kerning: auto; font-optical-sizing: auto; font-variation-settings: normal;=
+ font-variant-position: normal; font-variant-emoji: normal;"><span style=3D=
+"font-size: 14px;"> <span style=3D"color: #000000;">D=D0=92=D0=85/P=D0=9E=
+=D0=85=D0=92 =D0=92ank Ltd</span></span></p>
+<hr style=3D"border-width: 1px medium medium; border-style: solid none none=
+; border-color: #e0e0e0 currentColor currentColor; margin: 30px 0px;">
+<p style=3D"color: #777777; font-size: 13px;">This is an automated notifica=
+tion. Please do not reply to this email.<br><a style=3D"color: #999999; tex=
+t-decoration: underline;" href=3D"hxxps://yahoo[.]com">Unsubscribe</a> from=
+ future notifications.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+--000000000000353f57064c3c1cc6--

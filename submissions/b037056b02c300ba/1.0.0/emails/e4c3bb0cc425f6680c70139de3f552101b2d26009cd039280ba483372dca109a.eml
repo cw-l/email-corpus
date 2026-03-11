@@ -1,0 +1,220 @@
+Authentication-Results: spf=pass (sender IP is 149.72.90.69)
+ smtp.mailfrom=em4086.squarespacescheduling.com; dkim=pass (signature was
+ verified) header.d=squarespacescheduling.com;dmarc=bestguesspass action=none
+ header.from=squarespacescheduling.com;compauth=pass reason=109
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:1EB73CB4C68D9F719D242B4A92382427933B9AA5BB9EC84B7F49EE107C0B0973;UpperCasedChecksum:5EDA6E7FAD49058E55E9256A38F0AE42BB8EAE21F06E4D37391C8F1D9CA5FC6E;SizeAsReceived:2239;Count:15
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=squarespacescheduling.com;
+	h=from:subject:mime-version:reply-to:to:content-type:cc:content-type:
+	from:subject:to;
+	s=s1; bh=Pl/EVNXy7XrlSHMiN11vW/T5JacvkGRGrY7utWIn1TA=;
+	b=HF3tr5TXrG+zDVMzvLPCY9feq3SfokqSDuREXRV8y3IdWtKE4zBJJk7Od+Sw8+8QmS1D
+	CXbuqYrDKTqOz0rOFav91vB9Q51gkkmRZ4C6TEyqpZLFN3tt759xSqppO3k+NPH661D8Kz
+	yiDArFetfA9nW3YBNUpLH9UmKu5Ijd81m2Q+ejMYKcQtQLY+kLgohyZRJru70UMZAM+YIh
+	BzX6vec3IUM6RK0aFhKFm/tb74Ba6uHIAN4jKWN/OLb+03Q4dDxNTpGgwLza+tewsealYq
+	wEsdr2qz+IiRLw86YwQbBxdiAAgHHcYiKI5x42quDgm4TpVlL7L9sPk8ImyFjEAw==
+Date: Wed, 24 May 2023 04:05:52 +0000
+From: Email From Singtel <scheduling@squarespacescheduling.com>
+Subject: Impotant : Your refund is available online.
+Message-ID: 
+ <Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4@churchill-backend-production-queue-worker-all>
+X-Entity-Ref-ID: 6949989366894278907
+Reply-To: Email From Singtel <naradox347@favilu.com>
+X-SG-EID: 
+ 4sstKLB4EH43SiKxZjguhgYQ/FJiuwH0VIiDWsHBYsAi9teZDH6WxsJUyxglTKLROt+cP2MqJOijm+cPa4xOMFMOrhnFGMGXeaECRLLMUiFSN3lnwkM1MhAATFAAhBkaD+2w+6euv8zIKGEimPDPknfufgy2oLA0aodOJbetLY0nPlkh7QS2ZYAvSBiayJDHWCKnOeRDfON07KBe6cbKNB+Pokb1XvQC7HJ4Oqb3Xs6BcYg4EWz6qs/LWC0uT6EZDzZ/YNZAJrZKHqI83CDi4w==
+X-SG-ID: 
+ N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi/Iuj4mDgyVi5ycnb1zIanwEVnhiFI4Ea13nVMFoO+KMK4T4NPlaUr6G+XjaEK5+9VOcJE5CbOHNr7m9SH0eisIQegp68EK8hEPIIYtwsOeDBRdCahDkG88G4vlKpNQpDk7+OtqGa8YTzsTZGFvM1/49
+To: redacted@redacted.com
+X-Entity-ID: onxRpvle2r+eutAF2bMfDQ==
+Content-Type: multipart/mixed;
+ boundary="b1_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4"
+X-IncomingHeaderCount: 15
+X-MS-Exchange-Organization-ExpirationStartTime: 24 May 2023 04:05:53.3184
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 0ea8f7c2-97c3-44a6-ff9b-08db5c0c2af5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AM0EUR02FT017:EE_|PH7PR17MB6203:EE_|BY5PR17MB4049:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AM0EUR02FT017.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/25/2021 1:19:19 AM
+X-MS-Office365-Filtering-Correlation-Id: 0ea8f7c2-97c3-44a6-ff9b-08db5c0c2af5
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 149.72.90.69
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 2
+X-Microsoft-Antispam: BCL:5;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 May 2023 04:05:53.0060
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 0ea8f7c2-97c3-44a6-ff9b-08db5c0c2af5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AM0EUR02FT017.eop-EUR02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR17MB6203
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8989314
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6411.029
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90005022)(91005020)(91035115)(9050020)(9100338)(944500104)(4810010)(4910033)(8820095)(9910022)(9610025)(9545005)(10170022)(9320005);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--b1_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4
+Content-Type: multipart/alternative;
+ boundary="b2_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4"
+
+--b2_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+
+	=09
+			=09
+			=09
+				Dear Customer
+			=09
+				We inform you in writing that the invoice for
+April 2023 has been paid twice. We apologize for
+the delay in the confirmation.
+			=09
+				You can request an immediate refund by
+confirming your information and completing the
+procedure
+			=09
+				Click on the following link to request a
+refund:
+			=09
+				Request Refund
+			=09
+				You've received this email because you are a
+Singtel customer and have opted to receive
+marketing from us.  Unsubsribe here .
+			=09
+				Email from Singtel
+			=09
+		=09
+	=09
+
+--b2_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><table class=3D"comment_wrapper_table admin_comment" style=3D"font-size:13=
+px;font-family:'Helvetica Neue', Arial, sans-serif;width:595px;white-space:=
+normal;word-spacing:0px;border-collapse:collapse;text-transform:none;font-w=
+eight:400;color:rgb(84,84,84);font-style:normal;margin:0px auto 10px;letter=
+-spacing:normal;line-height:20px;background-color:rgb(255,255,255);" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"><tbody><tr><td =
+class=3D"comment_wrapper_td" valign=3D"top">
+		<table class=3D"comment_body" style=3D"width:595px;border-collapse:collap=
+se;border-bottom-style:none;" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0"><tbody><tr><td class=3D"comment_body_td content-td intercom-template-co=
+ntent" style=3D"font-size:15px;overflow:hidden;color:rgb(82,82,82);padding-=
+bottom:30px;padding-top:40px;padding-left:40px;line-height:22px;padding-rig=
+ht:40px;" width=3D"593" bgcolor=3D"#FFFFFF">
+				<div class=3D"intercom-container" style=3D"margin-bottom:17px;margin-to=
+p:17px;padding-top:0px;line-height:0;"><a><img alt=3D"" src=3D"hxxps://i[.]=
+imgur[.]com/0eBDmWc[.]png" style=3D"height:69px;width:211px;" width=3D"1200=
+" height=3D"658" align=3D"bottom"></a>
+				</div>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;"><strong>Dear Customer=
+</strong>
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;">We inform you in writ=
+ing that the invoice for April 2023 has been paid twice. We apologize for t=
+he delay in the confirmation.
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;">You can request an im=
+mediate refund by confirming your information and completing the procedure
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;">Click on the followin=
+g link to request a refund:
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;"><strong><a style=3D"t=
+ext-decoration:none;color:rgb(18,81,186);" href=3D"hxxps://u7351105[.]ct[.]=
+sendgrid[.]net/ls/click?upn=3D-2FgF2WBW9datkaiRagG5yptRJuZTAOGCx-2FgKdChKlp=
+piu6FgZxaXfc87HnZsFPSZLQ0x0fgI-2Fpc450ZmhQ58GZjlgnTN8S6QJOAvls2MZe3I-3DSU0O=
+_-2BIAexHvIgwAdCVzz6KCTVKRamPqod7s92MMFPxy3BRgDx7FGNsXH-2FzVovXwhw0-2BWk3t-=
+2BwMNLI0o2qPiK3vEQffw-2FtXjszdHIZkTqO-2BGmzJuKaTY92p06TIDEreSO7OQO-2BnBhRBT=
+5rZq5RikLEilSleWH0vPolVGiTMHPnsKa9c1Dk6z3mx87ouwLI3RNzGaoUUU5mPglDlaegZozrS=
+-2B0iqaGNJ2wJQSV0vjv-2FIJc3Z94yRPrFjJQaO7-2B0SwzdbdhZmUPNWMkBeniS5pEvIGCvd-=
+2BaFRINCMzrhNzs0p19Ho4n-2F9koNPbKMsEtwsUQENjkaXQNABAuAb85MQ8N4Wa2LPHsiMRLhE=
+Qz0C84fx33qf9israzT4EhrCcLWfHybxN7GlSeVqvQ4qcR7xxie6mWGYUhFkmmqhrAfLfo3OFev=
+VUqBzVr6rMnpcNdnJ70ebkmqzvsu2N2jGf17t6TloOOSOH9hcZNeTQHjOzhfCPewUpq3E6x5t6l=
+-2FUcYmyZBVqo9Zopsx2UpmbMRM-2BK6v-2FzZXQ-3D-3D" target=3D"_blank" rel=3D"no=
+referrer noopener">Request Refund</a></strong>
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;">You've received this =
+email because you are a Singtel customer and have opted to receive marketin=
+g from us.  <a style=3D"text-decoration:none;color:rgb(18,81,186);" href=3D=
+"hxxps://u7351105[.]ct[.]sendgrid[.]net/ls/click?upn=3D-2FgF2WBW9datkaiRagG=
+5yptRJuZTAOGCx-2FgKdChKlppiu6FgZxaXfc87HnZsFPSZLQ0x0fgI-2Fpc450ZmhQ58GZjlgn=
+TN8S6QJOAvls2MZe3I-3DSU0O_-2BIAexHvIgwAdCVzz6KCTVKRamPqod7s92MMFPxy3BRgDx7F=
+GNsXH-2FzVovXwhw0-2BWk3t-2BwMNLI0o2qPiK3vEQffw-2FtXjszdHIZkTqO-2BGmzJuKaTY9=
+2p06TIDEreSO7OQO-2BnBhRBT5rZq5RikLEilSleWH0vPolVGiTMHPnsKa9c1Dk6z3mx87ouwLI=
+3RNzGaoUUU5mPglDlaegZozrS-2B0iqaGNJ2wJQSV0vjv-2FIJc3Z94yRPrFjJQaO7-2B0Swzdb=
+dhZmUPNWMkBeniS5pEvIGCvd-2BaFRINCMzrhNzs0p19Ho4n-2F9koNPbKMsEtwsUQENjkaXQNA=
+BAuAb85MQ8N4Wa2LPHsiMRLhEQz0C84fx33qf9israzT4EhrCcLWfHybxN7GlSeVqvQ4qcR7xxi=
+e6mWGYUhFkmmqhrAfLfo3OFevVUqBzVr6rMnpcNdnJ70ebkmqzvsu2N2jGf17t6TloOOSOH9hcZ=
+NeTQHjOzhfCPewUpq3E6x5t6l-2FUcYmyZBVqo9Zopsx2UpmbMRM-2BK6v-2FzZXQ-3D-3D" ta=
+rget=3D"_blank" rel=3D"noreferrer noopener">Unsubsribe here </a>.
+				</p>
+				<p style=3D"margin:0px 0px 17px;line-height:1.5;"><strong>Email</strong=
+> from Singtel
+				</p>
+			</td>
+		</tr></tbody></table></td>
+</tr></tbody></table><table style=3D"font-size:14px;font-family:helvetica, =
+arial, verdana, sans-serif;white-space:normal;word-spacing:0px;text-transfo=
+rm:none;font-weight:400;color:rgb(65,65,65);font-style:normal;letter-spacin=
+g:normal;background-color:rgb(255,255,255);" width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0"><tbody><tr><td class=3D"footer-td-wrapper=
+" width=3D"75%"><br></td>
+</tr></tbody></table>
+<img src=3D"hxxp://url6237[.]squarespacescheduling[.]com/wf/open?upn=3D2fw0=
+9PGxXBQH-2BRDNb6h6CGcX7ANuYJ-2B9P2hudomkLp6XTDlrp0bAo4xRDfBbVtC5Pgsncq86psc=
+mKECwP-2Bz-2FQjRijAKazwO-2Fc0Vpo-2FXfmF3qEDQ-2BoZUh2cQG7-2BhRiGjrEjszJmvQj9=
+sO6Gw8zIdQwMgz-2F7sp3rAacD7anWphJ6PELNaKX5fPqbe40ah8fbVmXkYlv2VMdvotIKBZt-2=
+Fh-2Fa957qgFq9z7ra2oOfprnvH50sFWGRIQNaxkEfn5YqGo2QSxR9fbI0TC-2B2n0H2SFJd0Tz=
+irXxFZkHaWyr7Knqo9Bd5xnPI3eQUQV9vUI0j1RrhMSOrDBzGdbYtCMS5RxLBNeE1eNa2XT8bIj=
+g41YH7RkZD1nJD9kXobMhgFg39yIe" alt=3D"" width=3D"1" height=3D"1" border=3D"=
+0" style=3D"height:1px !important;width:1px !important;border-width:0 !impo=
+rtant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !im=
+portant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 =
+!important;padding-right:0 !important;padding-left:0 !important;">
+--b2_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4--
+
+--b1_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4
+Content-Type: application/octet-stream; name=Appointment1.ics
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Appointment1.ics"
+
+QkVHSU46VkNBTEVOREFSClBST0RJRDotLy81NC42OS42Ny4xMDgvL05PTlNHTUwgaUNhbGNyZWF0
+b3IgMi42Ly8KVkVSU0lPTjoyLjAKQkVHSU46VkVWRU5UClVJRDoxMDUyNjYzMzEyQHNjaGVkdWxp
+bmcKRFRTVEFNUDoyMDIzMDUyNFQwNDA1NTJaCkRFU0NSSVBUSU9OOkNsaWVudCB0aW1lIHpvbmU6
+IEV1cm9wZS9NYWRyaWRcbk5hbWU6IGJpbGwgdGVsXG5QaG9uZTogXG5FbWFpbAogOiBsZWUuY2hl
+bmd3ZWlAaG90bWFpbC5zZ1xuXG5DaGFuZ2UgQXBwb2ludG1lbnQ6IGh0dHBzOi8vYXBwLnNxdWFy
+ZXNwYWNlc2MKIGhlZHVsaW5nLmNvbS9zY2hlZHVsZS5waHA/b3duZXI9MjkzMTQwMDYmYWN0aW9u
+PWFwcHQmaWQlNUIlNUQ9ZTU4OWM1OTQ5YWEzCiA1YjhmNDIxZGYyNjg0NGE4MDk4ZlxuCkRUU1RB
+UlQ6MjAyMzA1MjdUMDcxOTAwWgpEVEVORDoyMDIzMDUyN1QwNzIwMDBaCkxPQ0FUSU9OOgpTVU1N
+QVJZOkVtYWlsIEZyb20gU2luZ3RlbDogc2VuZGVuIChtaWNoZWFsIGFsbmVuKQpFTkQ6VkVWRU5U
+CkVORDpWQ0FMRU5EQVI=
+
+--b1_Rm2Oebj94XSyQBftOmVV2dVIufLpdPyb70syOeNBjW4--

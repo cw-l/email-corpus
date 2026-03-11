@@ -1,0 +1,458 @@
+Authentication-Results: spf=pass (sender IP is 24.110.76.216)
+ smtp.mailfrom=noreply.hibob.com; dkim=pass (signature was verified)
+ header.d=hibob.com;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=hibob.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:5AF60ADAE905428998B1D5887D1E6B44B11847CCC60A360715A12CEC78C3197A;UpperCasedChecksum:51CE65F921D089EADE964FAAD723D698B68BE5A00F7F32651ED20AD7901CAC77;SizeAsReceived:1585;Count:14
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=tmj4fw2togrubskkokiq334cu4x7kij4; d=hibob.com; t=1771654709;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=Oo35Uv7mj4T+Nc58NDpNByAYy0FM9SE1/ag6VHkpf2Q=;
+	b=SI8ASkprpwpqHb6Ht3rVezqdUm3rciDVkdnv5XB+fCFKBerc6gaTyg1xjVeK7ev+
+	1eQU4HG9DjFRckSZlMJoiDNftJ9PcceJEw+YaXUCTB8G8K1Wp+5duRc7pUIM1wX5Pv/
+	7v5wi0yCGXZYyp+IBuTxc1jhdA7xV5vdcs7B30+E=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn; d=amazonses.com; t=1771654709;
+	h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=Oo35Uv7mj4T+Nc58NDpNByAYy0FM9SE1/ag6VHkpf2Q=;
+	b=O0uJv4HQc4+MwxYUspIL4bCe1jOI9Q/nRNIf7QiJJcTEtZyZVWABE2ydCEZuS5al
+	IQVZbgFoz0ecT+yhBaSlqMLJ2w5vpNztr41zaLjRaPU2/ToawhA5srIlwcq8/zW+dnw
+	d4m6ocHzm1aeiI+Gbo2cL7s9e6t22d4E4frQ5gWs=
+Date: Sat, 21 Feb 2026 06:18:29 +0000
+From: "Singpass Support (via Bob)" <notifications@hibob.com>
+Reply-To: "Singpass Support (via Bob)"
+ <reply+81a8d261-643a-44b5-b55e-e78ab6117b32@in.hibob.com>
+To: redacted@redacted.com
+Message-ID: 
+ <0102019c7ed98180-d9814b07-3f13-450b-9c4d-e548ff5ead17-000000@eu-west-1.amazonses.com>
+Subject: Action Required: Refund Processing Failed
+Content-Type: multipart/mixed;
+	boundary="----=_Part_139124_2097598743.1771654709505"
+X-COMPANY-ID: 86192
+X-EMAIL-MESSAGE-ID: 81a8d261-643a-44b5-b55e-e78ab6117b32
+Feedback-ID: 
+ ::1.eu-west-1.sg63jSoyzCr6GDl2Et/1SgoY574lvVllC+IFEJVKsxE=:AmazonSES
+X-SES-Outgoing: 2026.02.21-24.110.76.216
+X-IncomingHeaderCount: 14
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Feb 2026 06:24:42.9574
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ fe770f9a-f72d-479a-086f-08de7111e68d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DU6PEPF00009523:EE_|SA1P220MB1655:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DU6PEPF00009523.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: fe770f9a-f72d-479a-086f-08de7111e68d
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 24.110.76.216
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: 
+ BCL:4;ARA:1444111002|461199028|10300799038|1290799033|9400799043|6019299003|970799060|58200799021|16002599021|1680799066|47200799024|9000799056|4302099013|440099028|3412199025|30041999003|18021999003|1122599022|1380799030|1360799030|1370799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Feb 2026 06:24:42.9331
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ fe770f9a-f72d-479a-086f-08de7111e68d
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DU6PEPF00009523.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1655
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4344937
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9632.007
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ +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
+MIME-Version: 1.0
+
+------=_Part_139124_2097598743.1771654709505
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en" dir=3D"ltr"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"color-scheme" content=3D"light dark">
+    <meta name=3D"supported-color-schemes" content=3D"light dark">
+    <style type=3D"text/css">
+        /* Prevent email clients from inverting logo colors in dark mode */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+        @media (prefers-color-scheme: dark) {
+            .logo-img {
+                filter: none !important;
+            }
+        }
+        /* Gmail dark mode specific - prevent auto color inversion */
+        u + .body .logo-img,
+        [data-ogsc] .logo-img {
+            filter: none !important;
+        }
+        a{
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body style=3D"margin: 0; padding: 0; font-family: 'Montserrat', 'Rubik', '=
+Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px=
+; font-weight: 400; line-height: 150%; color: #242424;">
+
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"width: 100%; border-collapse: collapse;">
+
+    <tr>
+        <td align=3D"center" style=3D"padding: 0;">
+
+            <table role=3D"presentation" width=3D"600" cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" bgcolor=3D"#faf7f2" style=3D"width: 100%; max-=
+width: 600px; margin: 0 auto; border-collapse: collapse; background-color: =
+#faf7f2;text-align:left;">
+                <tr>
+                    <td height=3D"130" style=3D"padding: 0; height: 130px; =
+line-height: 100%;">
+                        <img width=3D"100%" height=3D"130" border=3D"0" alt=
+=3D"" style=3D"display: block; border: 0; outline: none; text-decoration: n=
+one; width: 100%; height: 130px;" src=3D"hxxps://media-process[.]hibob[.]co=
+m/image/upload/q_auto,f_auto,c_limit,h_1600,w_1600/hibob/private-image/8619=
+2/images/0b227c72-c347-4892-b6c2-a3af507fc414?token=3DX19jbGRfdG9rZW5fXz1le=
+HA9NDkyNTIzNTE1MX5hY2w9KiUyZmhpYm9iJTJmcHJpdmF0ZS1pbWFnZSUyZjg2MTkyJTJmaW1h=
+Z2VzJTJmMGIyMjdjNzItYzM0Ny00ODkyLWI2YzItYTNhZjUwN2ZjNDE0Kn5obWFjPWQyM2M1ODc=
+3ZTM1ZDlkMjMwZTY0MWNiOTRjYTUwZjgxYzAwOGM1NmU0NWJiNWRlMjJiOGJlNjhlNzBlNmI5Yj=
+g=3D&amp;vendor=3Dcloudinary">
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"padding: 0;">
+                        <table role=3D"presentation" border=3D"0" cellpaddi=
+ng=3D"24" cellspacing=3D"0" style=3D"width: 100%; border-collapse: collapse=
+;">
+                            <tr>
+                                <td style=3D"padding: 24px 24px 8px 24px; l=
+ine-height: 100%;">
+                                    <img class=3D"logo-img" border=3D"0" al=
+t=3D"" height=3D"48" style=3D"display: block; border: 0; outline: none; tex=
+t-decoration: none; width: auto; height: 48px;" src=3D"hxxps://media-proces=
+s[.]hibob[.]com/image/upload/q_auto,f_auto,c_limit,h_100,w_100/hibob/privat=
+e-image/86192/images/8ae07142-bef5-4d7f-ba4b-37e6734a2b59?token=3DX19jbGRfd=
+G9rZW5fXz1leHA9NDkyNTIzNTE3MH5hY2w9KiUyZmhpYm9iJTJmcHJpdmF0ZS1pbWFnZSUyZjg2=
+MTkyJTJmaW1hZ2VzJTJmOGFlMDcxNDItYmVmNS00ZDdmLWJhNGItMzdlNjczNGEyYjU5Kn5obWF=
+jPTc4NDkzZDAwMzYzMjhhMzk2NmMyOTNjYzIyZTEyMjkxZWUyZDkyNWZlMTdkNTM1ZjZjOTgxYT=
+hhZTdmZmExYjE=3D&amp;vendor=3Dcloudinary">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=3D"padding: 24px;">
+                                    <h1 style=3D"line-height: 120%; font-we=
+ight: 700; color: #242424; font-family: 'Gotham SSm A', 'Gotham SSm B', 'He=
+lvetica'; font-size: 24px; margin: 0;">
+                                        Action Required: Refund Processing =
+Failed
+                                    </h1>
+
+                                    <h2 style=3D"line-height: 120%; font-we=
+ight: 500; color: #6c6c6c; font-family: 'Montserrat', 'Rubik', 'Open Sans',=
+ 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0=
+;">
+                                       =20
+                                    </h2>
+
+                                    <br>
+
+                                    <div style=3D"color: #242424; font-fami=
+ly: 'Montserrat', 'Rubik', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,=
+ sans-serif;">
+                                        <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"background-color: #f5f5f5; p=
+adding: 20px 0;">
+        <tr>
+            <td align=3D"center">
+                <table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" style=3D"max-width: 600px; background-color: #ffffff; box-shadow=
+: 0 2px 8px rgba(0,0,0,0.1);">
+                   =20
+                    <!-- Red Header -->
+                    <tr>
+                        <td style=3D"background-color: #c42127; padding: 20=
+px; text-align: center;">
+                            <svg width=3D"139" height=3D"24" viewBox=3D"0 0=
+ 616 107" fill=3D"none" xmlns=3D"hxxp://www[.]w3[.]org/2000/svg" style=3D"d=
+isplay: inline-block; vertical-align: middle;">
+                                <path d=3D"M34.2 78.5c19 0 30.6-9.9 30.6-25=
+.3 0-10.8-6.6-18.1-20.2-21.1l-13.3-3c-5.1-1.2-7.8-2.8-7.8-5.8s2.5-4.9 8.2-4=
+.9c6.9 0 14.1 3.3 19 7.8L61.9 9.7c-5.4-4.8-16.5-9-30.3-9C13.8.7 1.8 9.5 1.8=
+ 24.5c0 10.9 6.1 18.9 19.2 21.9l13.3 3.1c6.6 1.5 8.7 3.4 8.7 6 0 3.3-2.7 5.=
+1-8.8 5.1-7.2 0-15.9-3-22.9-9L0 68c5.2 4.8 17.2 10.5 34.2 10.5ZM87 26c7.3 0=
+ 13-5.7 13-13S94.3 0 87 0 74 5.7 74 13c-.1 7.3 5.6 13 13 13ZM72.9 77h28.2l-=
+6-46.6c-4.5 1.3-11.7 1.3-16.2 0l-6 46.6Zm41.4 0h22.5V36.7c0-9.9 4.8-16 14.1=
+-16 8.8 0 13.5 5.1 13.5 16V77h22.5V31c0-20.1-10-30.4-27.3-30.4-9.9 0-17.4 3=
+.9-22.8 11.5V7.3c0-3.3-1.9-5.2-5.2-5.2h-17.2V77h-.1ZM255.6 7.2v4.5C250.5 4.=
+1 242.4.5 232.8.5c-18.1 0-33.9 15.9-33.9 37.2 0 21.3 15.7 37.2 33.9 37.2 9.=
+6 0 17.4-3 22.8-9.7V70c0 10.2-6.7 17.5-18.3 17.5-10.3 0-18.3-4.3-23.2-9.1l-=
+11.7 17.4c7.5 6.7 19.9 10.6 34.9 10.6 22.5 0 40.8-11.2 40.8-39.4V2.1h-17.2c=
+-3.4-.1-5.3 1.8-5.3 5.1Zm-16.8 47.9c-9.4 0-17.1-7.6-17.1-17.4 0-9.7 7.6-17.=
+4 17.1-17.4 10.2 0 17.5 7.6 17.5 17.4 0 9.7-7.3 17.4-17.5 17.4Zm102.4 23.4c=
+19.5 0 35.2-15.9 35.2-39S360.7.5 341.2.5c-10.2 0-18.6 3.6-24.1 11.2V7.2c0-3=
+.3-1.9-5.2-5.2-5.2h-17.2v102.6h22.5V68.8c5.7 6.7 13.8 9.7 24 9.7Zm-6-19.8c-=
+10.6 0-18.9-7.9-18.9-19.2 0-11.2 8.2-19.2 18.9-19.2 10.5 0 18.4 7.9 18.4 19=
+.2.1 11.2-7.9 19.2-18.4 19.2Zm86.1 19.8c10.2 0 18.6-3.6 24.1-11.2V77H468V2h=
+-17.2c-3.3 0-5.2 1.9-5.2 5.2v4.5C440.1 4.1 431.7.5 421.5.5c-19.5 0-35.2 15.=
+9-35.2 39s15.5 39 35 39Zm6-19.8c-10.5 0-18.4-7.9-18.4-19.2 0-11.2 7.9-19.2 =
+18.4-19.2 10.6 0 18.9 7.9 18.9 19.2 0 11.2-8.2 19.2-18.9 19.2Zm86.3 19.8c19=
+ 0 30.6-9.9 30.6-25.3 0-10.8-6.6-18.1-20.2-21.1l-13.3-3c-5.1-1.2-7.8-2.8-7.=
+8-5.8s2.5-4.9 8.2-4.9c6.9 0 14.1 3.3 19 7.8l11.2-16.5c-5.4-4.8-16.5-9-30.3-=
+9-17.8 0-29.8 8.8-29.8 23.8 0 10.9 6.1 18.9 19.2 21.9l13.3 3.1c6.6 1.5 8.7 =
+3.4 8.7 6 0 3.3-2.7 5.1-8.8 5.1-7.2 0-15.9-3-22.9-9l-11.2 16.5c5.1 4.7 17.1=
+ 10.4 34.1 10.4Zm71.1 0c19 0 30.6-9.9 30.6-25.3 0-10.8-6.6-18.1-20.2-21.1l-=
+13.3-3c-5.1-1.2-7.8-2.8-7.8-5.8s2.5-4.9 8.2-4.9c6.9 0 14.1 3.3 19 7.8l11.2-=
+16.5c-5.4-4.8-16.5-9-30.3-9-17.8 0-29.8 8.8-29.8 23.8 0 10.9 6.1 18.9 19.2 =
+21.9l13.3 3.1c6.6 1.5 8.7 3.4 8.7 6 0 3.3-2.7 5.1-8.8 5.1-7.2 0-15.9-3-22.9=
+-9l-11.2 16.5c5.1 4.7 17.1 10.4 34.1 10.4Z" fill=3D"#fff"></path>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <!-- Warning Icon -->
+                    <tr>
+                        <td style=3D"padding: 30px 30px 10px 30px; text-ali=
+gn: center;">
+                            <div style=3D"width: 60px; height: 60px; backgr=
+ound-color: #ff9800; border-radius: 50%; margin: 0 auto; display: flex; ali=
+gn-items: center; justify-content: center;">
+                                <span style=3D"color: white; font-size: 30p=
+x;">=E2=9A=A0=EF=B8=8F</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Title -->
+                    <tr>
+                        <td style=3D"padding: 0 30px;">
+                            <h1 style=3D"margin: 0 0 10px 0; color: #e65100=
+; font-size: 22px; font-weight: 700; text-align: center;">
+                                Refund Failed =E2=80=93 Missing Payment Det=
+ails
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <!-- Message -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 20px 30px;">
+                            <p style=3D"margin: 0 0 15px 0; color: #555; fo=
+nt-size: 15px; line-height: 1.6; text-align: center;">
+                                We attempted to process your refund of <str=
+ong>SGD $450.00</strong> but were unable to complete the transfer because w=
+e do not have your payment details on file.
+                            </p>
+                            <p style=3D"margin: 0; color: #555; font-size: =
+15px; line-height: 1.6; text-align: center;">
+                                Please add your payment details below to re=
+ceive your refund.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Refund Details -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 20px 30px;">
+                            <div style=3D"background-color: #f9f9f9; border=
+: 1px solid #e0e0e0; border-radius: 6px; padding: 18px; text-align: center;=
+">
+                                <div style=3D"font-size: 20px; font-weight:=
+ 700; color: #c42127; margin-bottom: 8px;">SGD $450.00</div>
+                                <div style=3D"font-size: 13px; color: #555;=
+">Reference: REF-2026-8912-4567</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Action Button -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 20px 30px; text-align:=
+ center;">
+                            <a href=3D"hxxps://email[.]notify[.]thinkific[.=
+]com/c/eJwcyrFuxCAMANCvga2R7XBABoYu9x8GYmGVC1VKWvXvT8r8Xk1chJjsnjB4DD5ijLYl=
+weqgbjWDB4Dimfb1UQIL5FBydlYTAT0QaCOAFcICIhE3JhLMmTkaB8eYKv_LbHp8qWhZynjZntq=
+c3z9m_TT0NPTM_dpZTweIL9Z-nzM17vzHxoEe46P0cdUbfhO9AwAA__-zpTW1" style=3D"dis=
+play: inline-block; padding: 12px 30px; background-color: #c42127; color: #=
+ffffff; text-decoration: none; border-radius: 4px; font-size: 15px; font-we=
+ight: 600;">
+                                Add Payment Details Now
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- Steps -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 20px 30px;">
+                            <div style=3D"font-size: 13px; color: #555; lin=
+e-height: 1.7; text-align: center;">
+                                <p style=3D"margin: 0 0 12px 0; font-weight=
+: 600; color: #333;">What to do next:</p>
+                                <div style=3D"margin-bottom: 6px;">1. Click=
+ the button above</div>
+                                <div style=3D"margin-bottom: 6px;">2. Sign =
+in with Singpass</div>
+                                <div style=3D"margin-bottom: 6px;">3. Add y=
+our payment method</div>
+                                <div>4. Your refund will be sent within 5=
+=E2=80=937 business days</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Deadline Notice -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 25px 30px;">
+                            <div style=3D"background-color: #fff8e1; border=
+: 1px solid #ffd54f; border-radius: 4px; padding: 12px; text-align: center;=
+">
+                                <p style=3D"margin: 0; color: #e65100; font=
+-size: 12px; font-weight: 600;">
+                                    =E2=8F=B0 Please complete within 14 day=
+s to receive your refund
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style=3D"background-color: #2c2c2c; padding: 20=
+px; text-align: center;">
+                            <p style=3D"margin: 0 0 8px 0; color: #ffffff; =
+font-size: 12px; font-weight: 600;">Singpass</p>
+                            <p style=3D"margin: 0 0 8px 0; color: #cccccc; =
+font-size: 11px;">
+                                Need help? Contact: support@singpass.gov.sg
+                            </p>
+                            <p style=3D"margin: 0; color: #999999; font-siz=
+e: 10px;">
+                                =C2=A9 2026 Government of Singapore
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       =20
+                                    </div>
+                                   =20
+                                </td>
+                            </tr>
+
+                           =20
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td align=3D"center" style=3D"padding: 0;">
+            <table role=3D"presentation" width=3D"600" cellpadding=3D"24" c=
+ellspacing=3D"0" border=3D"0" style=3D"width: 100%; max-width: 600px; margi=
+n: 0 auto; border-collapse: collapse; text-align: center;">
+                <tr>
+                    <td align=3D"center" style=3D"padding: 24px; text-align=
+: center; line-height: 100%; font-family: 'Montserrat', 'Rubik', 'Open Sans=
+', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                        <img border=3D"0" width=3D"56" height=3D"24" alt=3D=
+"" style=3D"display: inline-block; border: 0; outline: none; text-decoratio=
+n: none; width: 56px; height: 24px;" src=3D"hxxps://images[.]hibob[.]com/em=
+ails/Hibob-footer-logo[.]png">
+                        <br>
+                        <span style=3D"color: #6c6c6c; font-size: 11px; fon=
+t-weight: 400;">
+              HiBob Ltd. 2026
+            </span>
+                        <br>
+                        <a style=3D"color: #1e75f5; font-size: 11px; font-w=
+eight: 700;" href=3D"hxxps://www[.]hibob[.]com">www[.]hibob[.]com</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
+------=_Part_139124_2097598743.1771654709505--
