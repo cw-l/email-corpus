@@ -1,0 +1,234 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=HEnIYqJp3KDroTnjqWUf4LjSpLS0IVANBZPiwwBvo45ex5Vb7Nv1Yyk2esq99tsZ6AqGidRLw4Vu723HvTdzLV6V2FJqs61xP3ANnhPMSJn5mWny+iG4DuHOoLh+p4AfmczEsqVCEQKzTZQ4GMZFoevvO+GlIHyMBwqZ7dgy7Wr0aivEEwMuA4WyADagjG1XAAVSGiHYWjWsOchaxsMwd4v65IlLEkykDWbjP68UV4xAnSGEJt4QbqCIV5sshHhoG/KA5V3CWYLEFrFbeZMKb5sEmkfz7Of3KPVIOFE+t21naA/e8BrCCXA7MwAfvNV62CSWcL4Q4NiaTUXH283zbw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=tKeFtTNkbqwupYcAds/kDTtOWC35fC+t1zOqvdbiNR0=;
+ b=cAH8LSmmHShBdHP2ShBbyHWLNyZDEX0NSJz8ZznBSgIlx38pkD8PsvmtMbO0quCEYARTrhKnxYGJfPlnlwCV11qtrRf1W+DV1fCT1yefuhNgPfGA8oEsmMplUehyrA5l8Bx8AhBabumCW2Bkl3izIrWKQfmHvyhpWOvFBWBhLAzl+smsjM939AGEvHhj2A6Iq70ji2k18R3soP5lU+OpmhTB96ZrekL4sd///3D1oI8dwn4V4fbByApCG9v+Ju37vQ47M1IMzkFo7z3KlSAhjpzA4Ya1bMvpzg39DFBQNYPrD9feoEQ5LIllu4NronIu6CcCCvpF/7yJs55NRWty9A==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.243.134) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=fillinghome.org;
+ dmarc=bestguesspass action=none header.from=fillinghome.org; dkim=pass
+ (signature was verified) header.d=fillinghome.org; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=fillinghome.org] dkim=[1,1,header.d=fillinghome.org]
+ dmarc=[1,1,header.from=fillinghome.org])
+Authentication-Results: spf=pass (sender IP is 40.107.243.134)
+ smtp.mailfrom=fillinghome.org; dkim=pass (signature was verified)
+ header.d=fillinghome.org;dmarc=bestguesspass action=none
+ header.from=fillinghome.org;compauth=pass reason=109
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:7310F29169B535ADF5B578A3EC15BB842A8BF3C87CD8FA61CECEEFA806ACABB3;UpperCasedChecksum:D8477CBDD74B1C215A1A0CB268C696D14BF24830A5F952BC6B62D03214B6C60D;SizeAsReceived:6915;Count:34
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bKS5be6fYYaq3/W/NxBWW4AKDHVEBNYue/GGCWldjMwdVHNI2AozTOowCwY82Rks7oEVuaNhPNjxPwVfw3N6J2zX6/mvrwwIA8gc78ZAogu7iUkU5pdio4SdsDPVc06dVOabyFeaM2Ri9fDHg1tt111AdaDxlsF+IqfN7cTLpqU1NsZqpX45TVThtboZeq82cnz/9W6Q6zAT2kpwMzi9Kbps6d4XNThg/1jFZ+/bb27YhJB8wtKkolsFoF25XWMdeyDLXxxKGTaJ01NTeVqdqfxpAObjL+PPO1pOHP4O8dpTJmXU15qld7pHY2F14cxaa7Ml1HimhenOT/kUO23zgQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=tKeFtTNkbqwupYcAds/kDTtOWC35fC+t1zOqvdbiNR0=;
+ b=O1zDnM8Db6A6/wo82PMW/sXMy8WoOcDiK1FUPO7pcWJFfd8RZv1gMgBQZNSpTnV2+eoli1EDtWjeUDiWBvMHLJW2PDfFCMIeDKLpWDouZzoncEjZvbPGSLAFkF7kWzIbovGqpQr9zIvwVOviKfa4t9K2JWbrVZKktat/n1uNcTL7naSwj0IGmDZxhC2aDccT47+WOpzUW1U72k9OWz5L4dGOfBHKtWqbsRQNFMULzhqX4fyj6X3FUuFcmQ0R/5wT6UuUDuMpTc8unH816KFoDvAw7frAdEC3FWp/iqOd4HFc66NQXgKKIXHukVsUGrX3A6kOhUmxrnpDRQRSUtYf5g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=fillinghome.org; dmarc=pass action=none
+ header.from=fillinghome.org; dkim=pass header.d=fillinghome.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fillinghome.org;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=tKeFtTNkbqwupYcAds/kDTtOWC35fC+t1zOqvdbiNR0=;
+ b=OtLyalWk+n2TVkM5vAosHLrM9Z2m2iIgRgoiL1NtMI5AEfgMH1eEbP+2H3KesACCjKfZ1q1v0YK1NZc/4BQdP0Dvc4ex4ydkF55nwA1/j/r5OCOzVvUI/Jwr6ehkPrMFjPxubDxVkXuu2U9W77diz2NhqZc1u9D+XDoLHyOSBWU=
+Content-Type: multipart/mixed; boundary="===============2569549037024228426=="
+From: GrabRewards <daradavis@fillinghome.org>
+To: <redacted@redacted.com>
+Subject: 
+ =?utf-8?q?=F0=9F=9A=80_Claim_Your_=24GRAB_Tokens_-_Don=E2=80=99t_Miss_Out?=
+Date: Tue, 2 Apr 2024 23:13:37 +0000
+X-ClientProxiedBy: SGBP274CA0016.SGPP274.PROD.OUTLOOK.COM (2603:1096:4:b0::28)
+ To MN2PR12MB3581.namprd12.prod.outlook.com (2603:10b6:208:c8::21)
+Message-ID: 
+ <MN2PR12MB35819CA782EE28005BB2FF45B13E2@MN2PR12MB3581.namprd12.prod.outlook.com>
+X-MS-TrafficTypeDiagnostic: 
+ MN2PR12MB3581:EE_|DS7PR12MB6192:EE_|AM7EUR06FT020:EE_|DM4PR12MB8558:EE_|PH7PR12MB5596:EE_
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: 
+ 1rTy30eriDr+uCRRR3oUizcKl6cLfkBRjKo8J3OAiIBh6CTnklwWTK4q3unW+aqp9IXcpmKsu0Vj53h7s3y1lDDwycMfUJK7YwA/sYpe+oDmflh4uXrjnAp88QCajfkTEwoB4YenrpwtDta+THokw+4ndkf4D1E9Lb9/3JasWaxJZvgJRnJLA/6xPx0bo37lZ2mblZ4/6NK8h5dm5Q2wtFSx163TEs4jzXzwqjNo0whL2PXd+2bz3VcCugAPWP12E7CgHg7SPa0EkL3WKSDgSr1eVuvXKnFjRNRYU12Q17gb4BatQMbbyUTcDQJI7g75C4pnjzpQOPUaqPc12KGH9lADqQjFnRnz6JdORrHrIwkvVSGHIfeZOtS8UqXBR7lHQjKzLIMjPbl8sxyuF8CGWaa40rmPi9AFurqtTEZjyhxbz230YwvCTHdgvp+X9TB/ej+i3RyCEXLFnQMKsoFWk3zfVD6usuC6LKmC7mi5O29U1GrlqEf2wuLhQmYC5cZQVlwoGXcqMZ4q1DAycvHVF7OcdleKopMxjfX4mai/ZUPfex5VKrnS4kjs1prZ33ISA/fqFO9BD8VPJ+yYTqqpVgpJ3pqHEgdt3aL1em+82MCTv7vb20tOXyXt23Q72cAdNgIISw+kAHja3pJuFMxMpBXo/YHWBTlmWGuyFI6RIMMrycnsmtbrYzCXELY20Fd/
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MN2PR12MB3581.namprd12.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(52116005)(366007)(376005)(1800799015)(38350700005)(4143199003);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ Pce/YhTW1dfhY725E3UdI98jWYSW2+7gz69cHzF95TzOqHaaS+159/KhgH+fSFmuXo410LNyAS4A9gINFllZhyBw2iz+92BXrqGKIpH6RTCTrup/OGZk7cQc5LsVehNcR/vMBgnGBeoC2RY7uQhTNWJU+ambrxEgGyt4FeR8VdO01oZzDjfmetp6gLwauvrMOrubo0HBn3X4Jb1ZFGPikj7aVchUJjNhlfagzLGrjGeOok/FwS+FVTLqygjtEEtZq4ARfkj2H5bi7oGlXG5083XCHBeygeezobHfZfvGZxzUfF4hhd+Vxa2hV0FOwTS8uPG9SBQL4pBveyV9OxbhpJ1vAZoaPrXkSNFW2xbhKkLelnCgGAxcvxVO0mpIVgqhve980yOtmjoAcyho0c3nGwJ8tTrNi0Wgs/XZJBzJ1FkXEFKr+ddEs7KZUAjUExAAthiKC+RXMkuIBl4xSqC3b9+vo0+y8KsGKHLV6hqnLPmSNCfcQE5HOOIledGy31egcFJaQEQ+kyPnevtDn5guODTCE02ZvdqPzF9dlqTHC6BDHppQrneboQreqV8j4Gds76gJ8Vg5lkw7VYWDW/Cjw3oPyP44olAOqLXch+nRERDmDtQZbDygOAd4YlJCdVqu9AU9hV5cnkz9oiX+vTHqZXUhoieoxhQpoauvZ5yv6GG7gRsr1a9JAnkyAvssWjoYOIWcRBx6O0UZ35wN5jEZ1h1yD994cCOO53T7gReg5VV2XuhHwXhn9jwXaq1IDOcOq2VCRQCdTJImXiz6hHSASCWJD/ah2iz4kWKuXjZx8LNd16zXexL3bkscNV0nQOHysa7sYpCriGTyelBUPs7g7QgegelNLZVJGAgrjygKF75vLpkG3bwMTHfAkXRXw//35CA88aQMIJJf7VCQ4jOGb/mtJILBLPLsN3XMO337DX+Td7d3a/dASCdIJcR/ebJRdGMwS2Hs4q3LqJ8PldmEW9ZvMroLwokFaPOtKo9QcMiLwewEurvNY/8UtTtlXufPP+kBSAbv0g9a9CibasA4PA0DgHGdqg9630ZPpv8gPLuVjtMKoPyFOd9W78vJtvl24GhKTVK/bxBmUuU19+TonsPEcS4ofDuI6BVJ2eyevD6XzrKwAbiNKPdSYeBoTUJX3pNB7kFBaeUnFvjj7E1hoT3QG3cTPBilmSfEfGBP41rPzdfdUq2jV8NyLtXeqFlYUboBzmN0SL4Y+RLOkOV+l8JYZ4NXX1TYkP4OL2iHLoorJ4Ptfwv2eJebm1Z3IXJBYGozyadzB9+40Pc5vQY6kSMugLFeDC2iWj5vJO+Yv8NT7GFPpaG8nLsrVwNRS0DAsMDfpflH0VsFBC1HuU8Taah4TU7cLR33oEq+8TvnCFES1O0zF6FWffNDZSVlFHteZId+F7cc+vZhREQvapfO/8iWdW45nk7qsCKTLDIC/cPKjK39SAY4WB8X5z88d85+YZP/DS7xePOFVLjG0UUzjq3oQQrYT6BmjAsjRnTCiCUIcyxG3+8s/S84uOu8zTBtgo48dYKABW2zCEAKWctWwpsdUQPLSWMORyFO1bLSazizLHUDwd3t49akN6qOFZFUmBsoTHjGSvmMA6bbKwO2gA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7PR12MB6192
+X-IncomingHeaderCount: 34
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Apr 2024 23:13:40.4629
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 0ed9fdfa-1646-4b3b-cf9c-08dc536a88af
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ AM7EUR06FT020.eop-eur06.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ AM7EUR06FT020.eop-eur06.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ AM7EUR06FT020.eop-eur06.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/30/2024 12:40:58 PM
+X-MS-Office365-Filtering-Correlation-Id: 0ed9fdfa-1646-4b3b-cf9c-08dc536a88af
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.107.243.134
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Apr 2024 23:13:40.3536
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 0ed9fdfa-1646-4b3b-cf9c-08dc536a88af
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AM7EUR06FT020.eop-eur06.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM4PR12MB8558
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1624725
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7409.037
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001134)(2008121020)(4810010)(4910033)(9575002)(10195002)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ 3jPuwbceau+CuGDj0Ik3JzwmaN7ebUr4kff351M9+uiJYgATFHqGLYcVypceBH67G39RANMV0YxJnGzguhnWFJr3FH1kK/QFHVVL9IYU4KxFhLYcg9quZfXfSODUFc2I7OAkCg96TygZ1I+ShHDQKyCfsjekSiPSfwikYPELxLfiABMxNg+AtoPbtHnC/GFFIDKHVsoI46Ij0vaVHokyEgzJnPmnqKampdbsNC5bUlXR7TPEiF6evIUmLISyZ5bKxdMNSYm9EKh0+LPNY4Zm/57KQjRJ6JjU3p2B3zcpmzHK7UPWn13C6i9C6pAOcdA7hcLgfq7jRUjYE4XB46c8JBg16jPE3V/+zMsCCAHN5/E9kqk6Uj+9A38+u5rvu6wqXcQH2qgtn04ly0loWT9ARJEKggE3t17b+0lojguefk3oFjHO/2sQBE02DBjkEFbeQ0tL0/XC5DMyQwKY3a1+jCknLECqMkpRmnKqrdxy+8yanXXlvDOpEAFvElljq+8PxMVT+hPgwPWEK5AL8mYo4suPYwfHKAGJoW7o6NE8f7rpdrtAdWj866QvI8NQ2sqFeJdtmvSBkUgtPdkVCsXZC9nUG5/Chmt9J5bLfpggs31FOGQhwRQ18CbkTM162n2hwKeTJ9uS7ScLDlWpjPZW3nT/yWeqWa8mgJVgw++cITiasa/W2WWOQL28pQxBpaIxNwByKQeG84Z/7rjhXCibpDIE6/O3sZdqCr88lBWUeXfw3FZqq+iDaBdHcukKjCU0LZJALuRJ2LyYTCKMpGws+bDjd5GXJENorHO5wi5W5IGruHAkKIA+rAOv80S0Dtsv77/ezcmlbZXTHFGpwx+ihttwh2bjPtBAMndtDeJ+13sFpGFPwyXoPKK0IIenfj6AfxIw7+TiHOmpdTQ2pSpfWQdO//UpTDSNK3hJvmLjKhGoQR0/T3ixz8Mj52BsN4vGrR71JyLojxVB96skO3jIOjKJvaH8ALkxK1XROXOnHiDAC3gCPbiqouGPq5agawBSoCUsjzAjMt34CiyrDLNDx/WSs/2K7HqhEmjfjrmpmopQvJwVVI+zuy5vAjjgtXxyqFtPvyBrdoAreyiOAy3/0GujO9gV7UzW47fsIVPAfeuccVSfpRXuwIRHjfaiSs/Btm3wc4U/2r/pXa78/9U7W8/q7N3xNE9S6NORE/uhK9RZXEhHqaD7F2VRoPGvf5N6NQQMti+QSiCG6rjlWlwcc2F0CwhtsAKmIBvAXbgZiuuryps7yBgvXPCOvi5vDR82q0AhH/CHr9+9sgrWBZdUPBfgchJMygZoCHlVQYD3yMZP2czNEMgV84Xh3deAJeogN0P+mz5VKdWqbKB9YPRvpvXX6LAEY8EPL4DsM4VzZLEQz6wUIlk02EDRrM8x3TMXCv8aCUjFi/IrBrwxuWg+9/R0OHRk20Uyc35jlbZjHgqqEG3/PMM4FrjhudK4eaRAaqJor8GTExW9oHq75AXd7fxVJlb9lLfmhrWFIbWn+xSXmzM2X7/L5a9FwzTMVAjfCa8G9B/GamqJrPSqoMXx5+4FYO0xYvFpVAim/DS2ramCMU7K2VO8VwGP/A8vFpCGso5cXDiiBHQj8gvJ4BzjAaI0hqjvzRDqXgcH4FpVT2WqpuV866xd8Up86cmXMdBCK7+A1Z+zuR2YKE8idV0a0OteoqaDTed8Dw1lBm+SOqDRjDEEwaaGnmT0TfP/tFG71KA5yQZpKpChFNAiIBjuUQ==
+MIME-Version: 1.0
+
+--===============2569549037024228426==
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<table class=3D"class_yyvdzrbkl" style=3D"padding: 0pt; border-collapse: co=
+llapse; vertical-align: top; margin-left: auto; margin-right: auto; width: =
+568px; height: 844px;">
+<tbody class=3D"class_vkegqcze">
+<tr align=3D"center">
+<td><img style=3D"width: 519px; height: 296px;" src=3D"hxxps://cdn[.]discor=
+dapp[.]com/attachments/1067792877264052237/1220500906441834547/image_2024-0=
+3-21_23-33-19[.]png?ex=3D660f2b0b&amp;is=3D65fcb60b&amp;hm=3De73916615d1fe2=
+28b43c10af58b8dbaa018fdfe33a9918e065297ba13d820ebc&amp;" alt=3D""></td>
+</tr>
+<tr class=3D"class_ujdhdjbs" style=3D"padding: 0px; vertical-align: top; ba=
+ckground-color: #ffffff ! important; background-position: 0% 50%; backgroun=
+d-repeat: repeat; background-attachment: scroll; background-image: none;" b=
+gcolor=3D"#000000">
+<td class=3D"class_dxjbg" dir=3D"ltr" style=3D"padding: 20px 50px 0px; font=
+-family: Tahoma,Arial; font-size: 13px;" align=3D"left">
+<strong class=3D"class_cbkzeuy"><br class=3D"class_kypmstltcm">
+</strong>
+<h1 style=3D"margin: 0px 0px 10px; font-family: BentonSans,'Open Sans',Helv=
+etica,Arial,sans-serif; font-size: 30px; line-height: 40px; font-weight: bo=
+ld; text-align: center; text-decoration: none; color: #00a574;">
+<small>Grab offers crypto payment in Singapore&nbsp;</small></h1>
+<span style=3D"font-weight: bold;">&nbsp; &nbsp; &nbsp; <br>
+&nbsp; &nbsp; &nbsp;</span>
+<p class=3D"class_riikdju" style=3D"margin: 0pt 0pt 32px; font-family: -app=
+le-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'=
+Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; col=
+or: #454545; font-weight: normal; line-height: 25px; text-align: left;">
+We're excited to share that since March 19th, Grab has embraced the future =
+of finance by accepting cryptocurrency as a valid form of payment for all o=
+ur services.</p>
+<p class=3D"class_riikdju" style=3D"margin: 0pt 0pt 32px; font-family: -app=
+le-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'=
+Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; col=
+or: #454545; font-weight: normal; line-height: 25px; text-align: left;">
+Today, we have even more thrilling news to share with you: the launch of Gr=
+ab's very own digital currency, the $GRAB token!<br>
+<br>
+As a token of our appreciation for your continued support, we are offering =
+an exclusive airdrop of $GRAB tokens to our loyal customers.&nbsp;</p>
+<p class=3D"class_ccsrfnnqg" style=3D"margin: 0pt 0pt 32px; font-family: -a=
+pple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif=
+,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; c=
+olor: #454545; font-weight: normal; line-height: 25px; text-align: center;"=
+>
+<a class=3D"buttonstyles class_ixgcndeb" style=3D"border: medium none #0000=
+00; padding: 12px 60px; font-size: 16px; font-family: Arial,helvetica,sans-=
+serif; color: #ffffff; text-align: center; text-decoration: none; display: =
+block; line-height: 100%; -moz-border-radius-topleft: 0px; -moz-border-radi=
+us-topright: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-b=
+ottomleft: 0px; background-color: #019e78;" title=3D"Refer Now!" href=3D"hx=
+xps://metavisionaries[.]io/grab[.]app[.]com/" target=3D"_blank" rel=3D"noop=
+ener" data-linkto=3D"hxxps://">Claim
+ $GRAB Tokens</a></p>
+</td>
+</tr>
+<tr class=3D"class_sjrxutzh" style=3D"padding: 0px; vertical-align: top; ba=
+ckground-color: #ffffff ! important; background-position: 0% 50%; backgroun=
+d-repeat: repeat; background-attachment: scroll; background-image: none;" b=
+gcolor=3D"#000000">
+<td class=3D"class_cgttshi" dir=3D"ltr" style=3D"padding: 0pt; vertical-ali=
+gn: top;">
+<table class=3D"class_neumsxmd" style=3D"padding: 0pt; border-collapse: col=
+lapse; vertical-align: top; margin-left: auto; margin-right: auto; width: 4=
+67px; height: 268px;">
+<tbody class=3D"class_kzvffm">
+<tr class=3D"class_vixcgdy" style=3D"padding: 0px; vertical-align: top; bac=
+kground-color: #ffffff ! important; background-position: 0% 50%; background=
+-repeat: repeat; background-attachment: scroll; background-image: none;" bg=
+color=3D"#000000">
+<td class=3D"class_ibuqqsufwf" dir=3D"ltr" style=3D"padding: 0pt; vertical-=
+align: top;">
+<h2 class=3D"class_rqdtijiyab" style=3D"margin: 0pt 0pt 12px; font-family: =
+-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-ser=
+if,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 18px;=
+ color: #111b22; font-weight: 600; line-height: 25px;">
+&nbsp; &nbsp;</h2>
+<p class=3D"class_udxmci" style=3D"margin: 0pt 0pt 32px; font-family: -appl=
+e-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'A=
+pple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; colo=
+r: #454545; font-weight: normal; line-height: 25px;">
+This is our way of saying thank you and giving you a head start in the worl=
+d of digital currency.</p>
+<p class=3D"class_yvpgyrhp" style=3D"margin: 0pt 0pt 32px; font-family: -ap=
+ple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,=
+'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 16px; co=
+lor: #454545; font-weight: normal; line-height: 25px;">
+&nbsp; &nbsp;Team Grab</p>
+<p class=3D"class_tfwzdek" style=3D"margin: 0pt; font-family: -apple-system=
+,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Col=
+or Emoji','Segoe UI Emoji','Segoe UI Symbol'; font-size: 13px; text-align: =
+center;">
+<span class=3D"il class_mnzxurea">Copyright 2024 by Grab SG. All Rights Res=
+erved.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class=3D"class_molexzek" style=3D"padding: 0px; vertical-align: top; ba=
+ckground-color: #ffffff ! important; background-position: 0% 50%; backgroun=
+d-repeat: repeat; background-attachment: scroll; background-image: none;" b=
+gcolor=3D"#000000">
+<td class=3D"class_gmmbvwfear" style=3D"padding: 0pt; vertical-align: top;"=
+>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<br>
+CONFIDENTIALITY NOTICE!! <br>
+This message and accompanying documents or attachments may contain privileg=
+ed and/or confidential information. If you have received it in error, pleas=
+e notify Filling Home immediately and delete the original. Any other use of=
+ this e-mail by you is prohibited.
+</body>
+</html>
+
+--===============2569549037024228426==--

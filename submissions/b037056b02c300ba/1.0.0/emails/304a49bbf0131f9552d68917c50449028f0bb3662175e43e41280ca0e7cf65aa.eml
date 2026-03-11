@@ -1,0 +1,375 @@
+Authentication-Results: spf=pass (sender IP is 74.125.82.200)
+ smtp.mailfrom=active-f3680.firebaseapp.com; dkim=pass (signature was
+ verified) header.d=firebaseapp.com;dmarc=permerror action=none
+ header.from=active-f3680.firebaseapp.com;compauth=pass reason=111
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:42867FFD3DB835D3D183AF7C851AF27607CEBFE8985364FE8DBB5F8999FAED85;UpperCasedChecksum:C3B37A064C541DBC625CF71778812E6F1F559CBFCE76669F2E78F1224B9F1C3A;SizeAsReceived:2285;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=firebaseapp.com; s=20230601; t=1771127606; x=1771732406;
+ darn=hotmail.sg;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=7UxgS/WetkOx7WZw39bXfKuILhmWkWNoQHW+rzt9TUc=;
+        b=P7mO8n0txfgXbHn6okqexj/25oIRS+RGkD5A/mCu2y/n7FwNO7zTaAU56WC2xLNhMz
+         yRivwV30vh6KeC4LW3kOEihUId8HGHQP0ltS7vvLck5jl+zTwnfZgDdpRQHuXL0xl0Zr
+         FlsrucQbIeyeYE0hbSUvPpvovI7ZiKkPyqZJWBIcUZ9M6YyTCuyZYQm6BZEnVW3XOdMs
+         P17bnBYS7edTrF1Xri1VxXFwa1btiYmV450Az9WkoLg06yguCCEGmHyVQzBfWIe9tu2j
+         9GhNkC1eK7vGznqZRrhy3pqt2qIVVCnD/JXeZlBz4prUi82Bp0AA5fKYIaAu3hQJXw/Y
+         jf3g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1771127606; x=1771732406;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=7UxgS/WetkOx7WZw39bXfKuILhmWkWNoQHW+rzt9TUc=;
+        b=AZ+LfijgSrPxNfxpqVLN7Xl4NHE8C9d7kFEfTOskOamQEW4oivwV6RA50V+eeLEeJ1
+         GmDdVabeYMp7ilk9Jh94qUOOuJ6gaa6iYjjncF361m+rrmklwIFGLjh37UlVnOXrZ+U7
+         Kh0PyzLFYeM10zZ32wCdYTjV1WtcjJ7XkpK1LqDNGdadusvQ6R/GMwavxzlKQNKWyAbW
+         olYkw7rAuAZOB9L6cy1sC/wt40RsHDZGS21rZRWnxFKGJ4Gi+WSKSNUhHt87mnNmrKGB
+         weQG1uy6wJayT12uZlsA5JCON87zbILY/jHORDjmzONbzi/x3MVkz2BH3UF/u8PdE1kF
+         kX+w==
+X-Gm-Message-State: AOJu0YxxcX4Q1CylzcBdsQTDAHBHUxiJZ67TFtu9lo6OGDD+BmFGK169
+	cuxJqdTOLM+07INVQ+f+U+rkmDwjLId/HgRVn6uovTnixxblz6y/xBK9gqPO1H9n9HWiul/lr4r
+	qLBjTyYitbQ==
+Message-ID: <000000000000d3c2d3064ad4afbf@google.com>
+Date: Sun, 15 Feb 2026 03:46:43 +0000
+Subject: Transaction Reference: SH-2026-4567-8899.
+From: StarHub Ltd <noreply@active-f3680.firebaseapp.com>
+To: redacted@redacted.com
+Content-Type: multipart/alternative; boundary="000000000000d3c2c2064ad4afbc"
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Feb 2026 03:53:27.8938
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 7ebff9cf-e3e1-4cab-bb3d-08de6c45c6e9
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AMS0EPF000001B4:EE_|LV8P220MB1206:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AMS0EPF000001B4.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 7ebff9cf-e3e1-4cab-bb3d-08de6c45c6e9
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 74.125.82.200
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|45200799018|9000799056|970799060|10300799038|9400799043|2700799029|3600799018|461199028|1680799066|70000799015|32020799003|34130799006|440099028|3412199025|4302099013|33101999003|18021999003|30041999003|1360799030|1380799030|1370799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Feb 2026 03:53:27.8883
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 7ebff9cf-e3e1-4cab-bb3d-08de6c45c6e9
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AMS0EPF000001B4.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8P220MB1206
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.1494419
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9611.011
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--000000000000d3c2c2064ad4afbc
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+WW91ciBTdGFySHViIHJlZnVuZCBvZiBTR0QgNjYuNjEgaXMgcmVhZHkuIFBsZWFzZSB1cGRhdGUg
+eW91ciBwYXltZW50ICANCmRldGFpbHMgdG8gcmVjZWl2ZSB5b3VyIG1vbmV5LiBTdGFySHViIHJl
+ZnVuZCBwYXltZW50IHByb2Nlc3NpbmcgU2luZ2Fwb3JlICANCklNREEgUERQQSB0cmFuc2FjdGlv
+bg0KDQoNCg0KDQpTSU5HQVBPUkUgVEVMRUNPTU1VTklDQVRJT05TIOKAoiBJTURBIENPTVBMSUFO
+VA0KDQoNCg0KUmVmdW5kIFByb2Nlc3Npbmc6IFNHRCA2Ni42MQ0KDQpUcmFuc2FjdGlvbiBSZWZl
+cmVuY2U6IFNILTIwMjYtNDU2Ny04ODk5DQoNCg0KDQoNCvCfk4sgQWN0aW9uIFJlcXVpcmVkOiBQ
+bGVhc2UgdmVyaWZ5IHlvdXIgcGF5bWVudCBkZXRhaWxzIGZvciByZWZ1bmQgcHJvY2Vzc2luZw0K
+DQoNCkRlYXIgVmFsdWVkIEN1c3RvbWVyLA0KDQpXZSBhcmUgcHJvY2Vzc2luZyBhIHJlZnVuZCBv
+ZiBTR0QgNjYuNjEgdG8geW91ciBhY2NvdW50LiBUaGlzIHJlZnVuZCAgDQpyZXN1bHRzIGZyb20g
+YSByZWNlbnQgYmlsbGluZyBhZGp1c3RtZW50IG9uIHlvdXIgU3Rhckh1YiBhY2NvdW50Lg0KDQpU
+byBjb21wbGV0ZSB0aGlzIHRyYW5zYWN0aW9uIHNlY3VyZWx5LCB3ZSBuZWVkIHRvIHZlcmlmeSB5
+b3VyIHBheW1lbnQgIA0KaW5mb3JtYXRpb24gYXMgcGVyIHRoZSBQZXJzb25hbCBEYXRhIFByb3Rl
+Y3Rpb24gQWN0IChQRFBBKSByZXF1aXJlbWVudHMuDQoNCg0KDQoNCllPVVIgUkVGVU5EIEFNT1VO
+VA0KDQpTR0QgNjYuNjENCg0KUmVmZXJlbmNlOiBTSC0yMDI2LTQ1NjctODg5OQ0KDQoNCg0KDQrw
+n5SSIFNlY3VyZSBQb3J0YWwg4oCiIFNTTCBFbmNyeXB0ZWQg4oCiIFBEUEEgQ29tcGxpYW50DQoN
+Cg0KDQpVcGRhdGUgUGF5bWVudCBEZXRhaWxzDQpZb3Ugd2lsbCBiZSByZWRpcmVjdGVkIHRvIFN0
+YXJIdWIncyBzZWN1cmUgY3VzdG9tZXIgcG9ydGFsLiBQbGVhc2UgaGF2ZSAgDQp5b3VyIGlkZW50
+aWZpY2F0aW9uIHJlYWR5IGZvciB2ZXJpZmljYXRpb24uDQoNCg0KDQoNCuKPse+4jyBQcm9jZXNz
+aW5nIHRpbWU6IDMtNSB3b3JraW5nIGRheXMgdXBvbiB2ZXJpZmljYXRpb24NCg0KDQoNCg0K4pqh
+IENvbXBsZXRlIHdpdGhpbiA3IGRheXMgZm9yIHByb21wdCBwcm9jZXNzaW5nDQoNCkFzIHBlciBJ
+TURBIGd1aWRlbGluZXMsIHVudmVyaWZpZWQgcmVmdW5kcyB3aWxsIGJlIGhlbGQgZm9yIDMwIGRh
+eXMgYmVmb3JlICANCmJlaW5nIHJldHVybmVkIHRvIHRoZSBvcmlnaW5hdGluZyBhY2NvdW50Lg0K
+DQoNCg0KDQrwn5SQIFBEUEEgQ09NUExJQU5UIPCfk6cgSU1EQSBSRUdJU1RFUkVEIOKchSBPRkZJ
+Q0lBTCBOT1RJQ0UNCg0KDQpTdGFySHViIEN1c3RvbWVyIFNlcnZpY2UNCg0KU3Rhckh1YiBMaW1p
+dGVkIOKAoiA2NyBVYmkgQXZlbnVlIDEg4oCiIFN0YXJIdWIgR3JlZW4g4oCiIFNpbmdhcG9yZSA0
+MDg5NDINClN1cHBvcnQ6IGN1c3RvbWVyc2VydmljZUBzdGFyaHViLmNvbQ0KDQoNClRoaXMgZW1h
+aWwgY29udGFpbnMgY29uZmlkZW50aWFsIGluZm9ybWF0aW9uIGludGVuZGVkIG9ubHkgZm9yIHRo
+ZSAgDQpyZWNpcGllbnQuIFVuYXV0aG9yaXNlZCBhY2Nlc3MsIGRpc2Nsb3N1cmUsIG9yIHVzZSBp
+cyBwcm9oaWJpdGVkLiBUaGlzICANCmNvbW11bmljYXRpb24gY29tcGxpZXMgd2l0aCBTaW5nYXBv
+cmUncyBQZXJzb25hbCBEYXRhIFByb3RlY3Rpb24gQWN0IDIwMTIgIA0KKFBEUEEpIGFuZCBJbmZv
+Y29tbSBNZWRpYSBEZXZlbG9wbWVudCBBdXRob3JpdHkgKElNREEpIHJlZ3VsYXRpb25zLg0KDQrC
+qSAyMDI2IFN0YXJIdWIgTHRkLiAoQ28uIFJlZy4gTm8uIDE5OTgwMjIwOEMpIOKAoiBBbGwgcmln
+aHRzIHJlc2VydmVkLg0KDQoNCg0KU3Rhckh1YiBTaW5nYXBvcmUgcmVmdW5kIFNHRCA2Ni42MSBw
+YXltZW50IHVwZGF0ZSBiaWxsaW5nIGFkanVzdG1lbnQgIA0KY3VzdG9tZXIgc2VydmljZSBJTURB
+IFBEUEEgY29tcGxpYW50IHRyYW5zYWN0aW9uIFNILTIwMjYtNDU2Ny04ODk5IHNlY3VyZSAgDQpw
+b3J0YWwgdmVyaWZpY2F0aW9uIFNpbmdhcG9yZSB0ZWxlY29tIFViaSBBdmVudWUgU3Rhckh1YiBH
+cmVlbiByZWdpc3RlcmVkICANCmNvbXBhbnkgMTk5ODAyMjA4QyBTaW5nUGFzcyBNeUluZm8gYmFu
+a2luZyBkZXRhaWxzIERCUyBQT1NCIE9DQkMgVU9CICANCkNpdGliYW5rIFN0YW5kYXJkIENoYXJ0
+ZXJlZCBwYXltZW50IHByb2Nlc3NpbmcgZmluYW5jaWFsIHRyYW5zYWN0aW9uDQoNCg0KDQo=
+
+--000000000000d3c2c2064ad4afbc
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en-SG"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+	<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpo=
+rt">
+	<title>Refund Processing: Action Required</title>
+	<style type=3D"text/css">@import url('hxxps://fonts[.]googleapis[.]com/css=
+2?family=3DInter:wght@400;500;600;700&display=3Dswap');
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=3DPlus+Ja=
+karta+Sans:wght@400;500;600;700&display=3Dswap');
+       =20
+        .starhub-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #00B140;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystem=
+Font, 'Segoe UI', Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .starhub-button:hover {
+            background-color: #009933;
+        }
+    .auto-style1 {
+		color: #FF0000;
+	}
+	</style>
+</head>
+<body style=3D"margin: 0; padding: 0; font-family: 'Inter', -apple-system, =
+BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background-color: #f5f7f=
+a; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;=
+"><!-- Singapore-specific hidden text -->
+<div style=3D"display: none; font-size: 0; line-height: 0; max-height: 0; m=
+ax-width: 0; opacity: 0; overflow: hidden;">Your StarHub refund of SGD 66.6=
+1 is ready. Please update your payment details to receive your money. StarH=
+ub refund payment processing Singapore IMDA PDPA transaction</div>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" style=3D"background-color: #f5f7fa; padding: 20px 0;" width=3D"100%">
+	<tbody>
+		<tr>
+			<td align=3D"center">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" style=3D"max-width: 600px; background-color: #ffffff; border-radius: =
+8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; border: 1px=
+ solid #e5e7eb;" width=3D"600"><!-- StarHub Official Header --><!-- Singapo=
+re Verification Badge -->
+				<tbody>
+					<tr>
+						<td style=3D"padding: 24px 30px 10px 30px; text-align: center;">
+						<div style=3D"margin-bottom: 16px;"><img alt=3D"" src=3D"hxxps://exte=
+rnal-content[.]duckduckgo[.]com/iu/?u=3Dhttps%3A%2F%2Fwww[.]ciena[.]com%2F_=
+_data%2Fassets%2Fimage%2F0021%2F154416%2FStarhub-Logo[.]png&amp;f=3D1&amp;n=
+ofb=3D1&amp;ipt=3Dcb5a795ee7b4da491acaf5924ae3a1cc17c63c87d3c56fe01ac3cb797=
+76c23ee&gt;&quot; width=3D&quot;294" style=3D"width: 200px; height: 105px;"=
+></div>
+
+						<div style=3D"margin-bottom: 8px;"><span style=3D"color: #666666; fon=
+t-size: 11px; font-weight: 500; letter-spacing: 0.5px;">SINGAPORE TELECOMMU=
+NICATIONS =E2=80=A2 IMDA COMPLIANT </span></div>
+						</td>
+					</tr>
+					<!-- Transaction Header -->
+					<tr>
+						<td style=3D"padding: 0 30px 8px 30px;">
+						<h1 style=3D"margin: 0 0 8px 0; color: #1a1a1a; font-size: 22px; font=
+-weight: 700; text-align: center; line-height: 1.3; font-family: 'Plus Jaka=
+rta Sans', sans-serif;">Refund Processing: SGD 66.61</h1>
+
+						<p style=3D"margin: 0; color: #666666; font-size: 13px; text-align: c=
+enter;">Transaction Reference: SH-2026-4567-8899</p>
+						</td>
+					</tr>
+					<!-- Important Notice -->
+					<tr>
+						<td style=3D"padding: 0 30px 20px 30px;">
+						<div style=3D"background-color: #e8f5e9; border-left: 4px solid #00B1=
+40; padding: 14px 16px; border-radius: 0 4px 4px 0; margin-bottom: 20px;">
+						<p style=3D"margin: 0; color: #1b5e20; font-size: 13px; font-weight: =
+600; font-family: 'Inter', sans-serif;"><span style=3D"font-size: 14px;">=
+=F0=9F=93=8B</span> Action Required: Please verify your payment details for=
+ refund processing</p>
+						</div>
+
+						<p style=3D"margin: 0 0 16px 0; color: #333333; font-size: 14px; line=
+-height: 1.6; font-family: 'Inter', sans-serif;">Dear Valued Customer,</p>
+
+						<p style=3D"margin: 0 0 16px 0; color: #333333; font-size: 14px; line=
+-height: 1.6; font-family: 'Inter', sans-serif;">We are processing a refund=
+ of <strong class=3D"auto-style1">SGD 66.61</strong> to your account. This =
+refund results from a recent billing adjustment on your StarHub account.</p=
+>
+
+						<p style=3D"margin: 0; color: #333333; font-size: 14px; line-height: =
+1.6; font-family: 'Inter', sans-serif;">To complete this transaction secure=
+ly, we need to verify your payment information as per the Personal Data Pro=
+tection Act (PDPA) requirements.</p>
+						</td>
+					</tr>
+					<!-- Amount Display with StarHub Green -->
+					<tr>
+						<td style=3D"padding: 0 30px 20px 30px;">
+						<div style=3D"background-color: #f8f9fa; border: 2px solid #00B140; b=
+order-radius: 8px; padding: 20px; text-align: center; position: relative;">
+						<div style=3D"position: absolute; top: -10px; left: 50%; transform: t=
+ranslateX(-50%); background-color: #00B140; color: white; font-size: 11px; =
+font-weight: 600; padding: 4px 12px; border-radius: 12px;">YOUR REFUND AMOU=
+NT</div>
+
+						<div style=3D"font-size: 32px; font-weight: 800; color: #00B140; marg=
+in: 12px 0 4px 0; line-height: 1; font-family: 'Plus Jakarta Sans', sans-se=
+rif;">SGD 66.61</div>
+
+						<div style=3D"font-size: 12px; color: #666666; font-weight: 500;">Ref=
+erence: SH-2026-4567-8899</div>
+						</div>
+						</td>
+					</tr>
+					<!-- Action Section -->
+					<tr>
+						<td style=3D"padding: 0 30px 20px 30px;"><!-- Security Note -->
+						<div style=3D"background-color: #e8f5e9; border: 1px solid #c8e6c9; b=
+order-radius: 4px; padding: 10px; text-align: center; margin-bottom: 16px;"=
+>
+						<p style=3D"margin: 0; color: #1b5e20; font-size: 12px; font-weight: =
+600;"><span style=3D"color: #00B140;">=F0=9F=94=92</span> Secure Portal =E2=
+=80=A2 SSL Encrypted =E2=80=A2 PDPA Compliant</p>
+						</div>
+						<!-- Reference Box with Green Color --><!-- Green Button -->
+
+						<div style=3D"text-align: center;"><br>
+						<a href=3D"hxxps://email[.]notify[.]thinkific[.]com/c/eJwcyrFuAyEMANC=
+vga0n28cdMDB0yX8YDgurBKKWtOrfR8r83pW4CDHZmtCf6M-AIdiWoucAu6ueKRPIFZFqOeLphT=
+3EcFhNBHQgUCSAHfwGIgEjEwnmzByMgzGXyv-2mo4vFS1bmXfbU1vr8WP2T0M3Q7fcn_UxdSwHi=
+HfW_l7fqXHnPzYOdMyP0ufzesNvolcAAAD__8MUNd0" style=3D"display: inline-block;=
+ padding: 12px 30px; background-color: #00B140; color: #ffffff; text-decora=
+tion: none; border-radius: 4px; font-size: 15px; font-weight: 600;">Update =
+Payment Details </a>
+
+						<p style=3D"margin: 14px 0 0 0; color: #666666; font-size: 11px; line=
+-height: 1.4; text-align: center; max-width: 380px; margin-left: auto; marg=
+in-right: auto; font-family: 'Inter', sans-serif;">You will be redirected t=
+o StarHub's secure customer portal. Please have your identification ready f=
+or verification.</p>
+						</div>
+						</td>
+					</tr>
+					<!-- Process Steps with Green -->
+					<tr>
+						<td style=3D"padding: 0 30px 20px 30px;">
+						<div style=3D"background-color: #f8f9fa; border-radius: 8px; padding:=
+ 18px; border: 1px solid #e9ecef;">
+						<p style=3D"margin: 14px 0 0 0; color: #00B140; font-size: 12px; font=
+-weight: 600; text-align: center;">=E2=8F=B1=EF=B8=8F Processing time: 3-5 =
+working days upon verification</p>
+						</div>
+						</td>
+					</tr>
+					<!-- Singapore Compliance Notice -->
+					<tr>
+						<td style=3D"padding: 0 30px 20px 30px;">
+						<div style=3D"background-color: #e8f5e9; border: 1px solid #00B140; b=
+order-radius: 6px; padding: 14px; text-align: center;">
+						<p style=3D"margin: 0 0 6px 0; color: #1b5e20; font-size: 13px; font-=
+weight: 700; font-family: 'Plus Jakarta Sans', sans-serif;">=E2=9A=A1 Compl=
+ete within 7 days for prompt processing</p>
+
+						<p style=3D"margin: 0; color: #1b5e20; font-size: 11px; line-height: =
+1.4; font-family: 'Inter', sans-serif;">As per IMDA guidelines, unverified =
+refunds will be held for 30 days before being returned to the originating a=
+ccount.</p>
+						</div>
+						</td>
+					</tr>
+					<!-- Singapore Professional Footer -->
+					<tr>
+						<td style=3D"background-color: #1a1a1a; padding: 24px 30px; text-alig=
+n: center;"><!-- Singapore Compliance Badges -->
+						<div style=3D"margin-bottom: 16px;"><span style=3D"display: inline-bl=
+ock; margin: 0 4px; background-color: #333333; color: #cccccc; font-size: 9=
+px; font-weight: 600; padding: 4px 8px; border-radius: 3px; letter-spacing:=
+ 0.2px;">=F0=9F=94=90 PDPA COMPLIANT </span> <span style=3D"display: inline=
+-block; margin: 0 4px; background-color: #333333; color: #cccccc; font-size=
+: 9px; font-weight: 600; padding: 4px 8px; border-radius: 3px; letter-spaci=
+ng: 0.2px;"> =F0=9F=93=A7 IMDA REGISTERED </span> <span style=3D"display: i=
+nline-block; margin: 0 4px; background-color: #333333; color: #cccccc; font=
+-size: 9px; font-weight: 600; padding: 4px 8px; border-radius: 3px; letter-=
+spacing: 0.2px;"> =E2=9C=85 OFFICIAL NOTICE </span></div>
+						<!-- StarHub Official Info -->
+
+						<div style=3D"border-top: 1px solid #333333; padding-top: 16px; margi=
+n-bottom: 12px;">
+						<p style=3D"margin: 0 0 8px 0; color: #ffffff; font-size: 12px; font-=
+weight: 600; font-family: 'Plus Jakarta Sans', sans-serif;">StarHub Custome=
+r Service</p>
+
+						<p style=3D"margin: 0 0 10px 0; color: #999999; font-size: 10px; font=
+-family: 'Inter', sans-serif;">StarHub Limited =E2=80=A2 67 Ubi Avenue 1 =
+=E2=80=A2 StarHub Green =E2=80=A2 Singapore 408942<br>
+						Support: <strong style=3D"color: #ffffff;">customerservice@starhub.co=
+m</strong></p>
+						</div>
+						<!-- Singapore Legal -->
+
+						<div style=3D"border-top: 1px solid #333333; padding-top: 12px;">
+						<p style=3D"margin: 0 0 8px 0; color: #888888; font-size: 9px; line-h=
+eight: 1.4; max-width: 500px; margin-left: auto; margin-right: auto; font-f=
+amily: 'Inter', sans-serif;">This email contains confidential information i=
+ntended only for the recipient. Unauthorised access, disclosure, or use is =
+prohibited. This communication complies with Singapore's Personal Data Prot=
+ection Act 2012 (PDPA) and Infocomm Media Development Authority (IMDA) regu=
+lations.</p>
+
+						<p style=3D"margin: 0; color: #666666; font-size: 9px; font-weight: 5=
+00; font-family: 'Inter', sans-serif;">=C2=A9 2026 StarHub Ltd. (Co. Reg. N=
+o. 199802208C) =E2=80=A2 All rights reserved.</p>
+						</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Singapore-specific hidden text for SEO/spam avoidance -->
+
+			<div style=3D"display: none;">StarHub Singapore refund SGD 66.61 payment=
+ update billing adjustment customer service IMDA PDPA compliant transaction=
+ SH-2026-4567-8899 secure portal verification Singapore telecom Ubi Avenue =
+StarHub Green registered company 199802208C SingPass MyInfo banking details=
+ DBS POSB OCBC UOB Citibank Standard Chartered payment processing financial=
+ transaction</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</body>
+</html>
+--000000000000d3c2c2064ad4afbc--

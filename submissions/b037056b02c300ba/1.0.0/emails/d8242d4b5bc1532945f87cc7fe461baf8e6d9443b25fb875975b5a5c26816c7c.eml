@@ -1,0 +1,421 @@
+Authentication-Results: spf=pass (sender IP is 203.59.1.107)
+ smtp.mailfrom=iinet.net.au; dkim=pass (signature was verified)
+ header.d=iinet.net.au;dmarc=pass action=none
+ header.from=iinet.net.au;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:4CB955596ECC3DD58D3661B5F27788F0547B0641382F7A10EE0AFC3AA45BB650;UpperCasedChecksum:69ECFC2E75933DD9B05895554626FC71099CD9A364770B2BE91DE11971EC7CC8;SizeAsReceived:2456;Count:17
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=iinet.net.au; q=dns/txt; s=iiesa; t=1707449132;
+  x=1738985132;
+  h=message-id:mime-version:from:to:reply-to:subject:date;
+  bh=o7SubDnUANhvRHK1eWVugDPGRuQb9uqPv2VqZXMiQS8=;
+  b=NU2lyG+zEmfUpboJPC1Vgn8lggbusW7O8dPhUIHPDvTZ6utwkmST5bPd
+   sKqdyhe2n4Vk3LqUgRnzPEC9DTU/doGqYaWVnjnV2pu/TJHBh5Y1MCk7z
+   ioDke2Nwl+IK9jwSrZat29or6ASJDXduAEKaQIharnvDCkuw02v+fS20n
+   JeAYBKJ1nW6pnhOVaPXrr6JYYAVzYFTrpCxmEjMvoVXEwFByG17ltXQSB
+   YvGBAIPMItJWb48dBVp0WDqXVr6kLR4vepUbRMbVSEhhtR5RyF/rptuXV
+   69lkyeOW4SEju0E1qKbG6upoDJiTJY8NQY7KDK40lf7N8IO7XLTKpivJH
+   Q==;
+IronPort-SDR: 65c59aea_VfFGEQVk6G2mWwXYDeQvbdL4x0rSjulaUUNtHxmnbhNoLSX
+ zsbyMxonEiptAChkVzNCaeebo/xG74yUSnM0YuA==
+Message-Id: <7FA6O1EV-JUSX-B4NA-5BF3-TW673O2YZALC@iInET.NeT.aU>
+From: MetaMask <support@iinet.net.au>
+To: Recepients <admine@sdmis.fr>
+Reply-To: billinG@ideniinet.net.au
+Subject: Upgrade your wallet account !
+Date: Fri, 9 Feb 2024 03:23:21 -0800
+Content-Type: multipart/alternative;
+	boundary="--=BOUNDARY_29323_DVMR_LRVT_FDCX_WXQA"
+X-atmailcloud-spam-action: no action
+X-atmailcloud-spam-report: Action: no action
+X-Cm-Analysis: v=2.4 cv=dK9g2sVb c=1 sm=1 tr=0 ts=65c59aae
+ a=feFy8OH8SARyhqdy9HA+FA==:117 a=feFy8OH8SARyhqdy9HA+FA==:17
+ a=k7vzHIieQBIA:10 a=x7bEGLp0ZPQA:10 a=g8TUdU_LZmEA:10
+ a=v82YwT0Dd1VFajEJav8A:9 a=_6GpL_ENAAAA:8 a=J5ksVrt2b_pSGuLD3EkA:9
+ a=QEXdDO2ut3YA:10 a=_IF9YEFhAAAA:20 a=ubu_diAfAAAA:20 a=4d2D4LtiAAAA:8
+ a=65h-eln4rGjaXqMDJz0A:9 a=VByatauc8v370hMQ:21 a=_W_S_7VecoQA:10
+ a=WHmRLe1k5ywA:10 a=hJnrvW8ITIrk0Oi8sSDQ:22 a=bA3UWDv6hWIuX7UZL3qL:22
+ a=ZT_8zCgGubuJgGonBfBE:22 a=akb8aAirPTMPLDi_iZ8j:22
+X-Cm-Envelope: 
+ MS4xfGWzn4v+vT3VZDeU7XYZX2ezWyQOA77zPI8Bkb6bDpXCTgcZCcFwGw6AmPDWHazybehQaqJW69DeBHtaTbjdgKPGsBh46NHSZ48sRZPzxReuIZChv7iw
+ QEZlk0yk6g9g2BvCvvvbVOxYArFhkzHt9AXX+Yp3VsE0Vx4qaa1nWaj97bAq4mI/srSat8CFcyWiew==
+X-IncomingHeaderCount: 17
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Feb 2024 03:25:31.9216
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 41463e0d-fe0e-48a2-ea53-08dc291ec582
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DB8EUR05FT025:EE_|PH0PR14MB6544:EE_|DS0PR12MB8042:EE_|PH7PR12MB5596:EE_
+X-MS-Office365-Filtering-Correlation-Id: 41463e0d-fe0e-48a2-ea53-08dc291ec582
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 203.59.1.107
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 2
+X-Microsoft-Antispam: BCL:6;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Feb 2024 03:25:09.1552
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 41463e0d-fe0e-48a2-ea53-08dc291ec582
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DB8EUR05FT025.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR14MB6544
+X-MS-Exchange-Organization-AuthSource: 
+ DB8EUR05FT025.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:27.7583661
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7270.016
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(4810010)(4910033)(9910022)(9610028)(9545005)(10170022)(9320005)(120001);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+----=BOUNDARY_29323_DVMR_LRVT_FDCX_WXQA
+Content-Type: text/plain; charset="utf-8"; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi,
+
+
+
+ Attention all crypto holders: Due to the dramatic increase in our
+platform users, some wallets still need to manually perform the new
+upgrade. You must upgrade your wallets before&nbsp;Friday, 09&nbsp;in
+order to keep your assets secure and accessible.
+
+
+
+ Suppose I didn't upgrade my wallet=E2=80=94what would happen?
+
+
+
+ You will lose all of your cryptocurrencies if you neglect to update
+your wallet.
+
+
+
+
+
+
+
+
+
+ Upgrade My Wallet Now &nbsp; &nbsp;
+
+
+
+
+
+
+
+
+
+ Thank you for choosing us as your preferred cryptocurrency wallet. If
+you have any questions or concerns,
+
+
+
+ our support team is available 24/7 to assist you.
+
+
+
+
+
+
+
+
+
+
+
+Virus-free.www.avast.com
+
+ &nbsp; &nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;
+
+
+
+ &nbsp;
+
+
+
+
+----=BOUNDARY_29323_DVMR_LRVT_FDCX_WXQA
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<table class=3D"x_x_x_x_x_x_row x_x_x_x_x_x_row-3" style=3D"FONT-SIZE: 15px=
+; FONT-FAMILY: &quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quo=
+t;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;=
+Helvetica Neue&quot;, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; T=
+EXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36) !important; FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-=
+COLOR: rgb(255,255,255); font-stretch: inherit; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant=
+-east-asian: inherit; font-variant-alternates: inherit; font-optical-sizing=
+: inherit; font-kerning: inherit; font-feature-settings: inherit; font-vari=
+ation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" align=3D"center" =
+border=3D"0">
+<tbody>
+<tr height=3D"952">
+<td style=3D"WHITE-SPACE: normal !important">
+<table class=3D"x_x_x_x_x_x_row-content x_x_x_x_x_x_stack" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"590" align=3D"center" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_x_x_x_column x_x_x_x_x_x_column-1" style=3D"WHITE-SPACE:=
+ normal !important" width=3D"100%">
+<table class=3D"x_x_x_x_x_x_paragraph_block x_x_x_x_x_x_block-1" cellspacin=
+g=3D"0" cellpadding=3D"20" width=3D"100%" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_x_x_x_pad" style=3D"WHITE-SPACE: normal !important">
+<div style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline;=
+ BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
+G-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<p><strong><img style=3D"HEIGHT: 347px; WIDTH: 490px" border=3D"0" hspace=
+=3D"0" alt=3D"" src=3D"hxxps://i[.]gyazo[.]com/9b52151904b39fde93bcaac80a86=
+a302[.]png" width=3D"1397" align=3D"baseline" height=3D"930"></strong></p>
+<p><strong>Hi,</strong></p>
+<p>Attention all crypto holders: Due to the dramatic increase in our platfo=
+rm users, some wallets still need to manually perform the new upgrade. You =
+must upgrade your wallets before&nbsp;<strong>Friday, 09&nbsp;</strong>in o=
+rder to keep your assets secure and accessible.</p>
+<p><strong>Suppose I didn't upgrade my wallet=E2=80=94what would happen?</s=
+trong></p>
+<p>You will lose all of your cryptocurrencies if you neglect to update your=
+ wallet.</p></div></td></tr></tbody></table>
+<table class=3D"x_x_x_x_x_x_button_block x_x_x_x_x_x_block-2" cellspacing=
+=3D"0" cellpadding=3D"10" width=3D"100%" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_x_x_x_pad" style=3D"WHITE-SPACE: normal !important">
+<div class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-TOP: 0px; BORDER-RIGHT=
+: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTO=
+M: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px" align=3D"center"><span style=3D"BORDER-TOP: 0px; BORDE=
+R-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDIN=
+G-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGI=
+N: 0px; PADDING-RIGHT: 0px" dir=3D"ltr"><a style=3D"FONT-SIZE: 17px; TEXT-D=
+ECORATION: none; BORDER-TOP: 0px; FONT-FAMILY: Ubuntu, Helvetica, Arial, sa=
+ns-serif, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: =
+baseline; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: normal; CO=
+LOR: rgb(255,255,255) !important; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; PA=
+DDING-LEFT: 26px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: inline-block; LIN=
+E-HEIGHT: 21px; PADDING-RIGHT: 26px; BACKGROUND-COLOR: rgb(20,18,231); font=
+-stretch: inherit; border-radius: 24px; font-optical-sizing: inherit; font-=
+kerning: inherit; font-feature-settings: inherit; font-variation-settings: =
+inherit; background-size: initial; background-origin: initial; background-c=
+lip: initial" href=3D"hxxps://fanlink[.]to/uPwjysn" rel=3D"noopener norefer=
+rer" target=3D"_blank" data-linkindex=3D"0" data-auth=3D"NotApplicable"><sp=
+an style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; B=
+ORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-=
+LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"><strong><span=
+ style=3D"FONT-SIZE: 17px; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RI=
+GHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BO=
+TTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0=
+px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit=
+; font-kerning: inherit; font-feature-settings: inherit; font-variation-set=
+tings: inherit">Upgrade My Wallet Now</span></strong></span></a></span></di=
+v>
+<div aria-hidden=3D"true" class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-T=
+OP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" align=3D"center">&nbsp;</div>
+<div aria-hidden=3D"true" class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-T=
+OP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" align=3D"center">&nbsp;</div>
+<div class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-TOP: 0px; BORDER-RIGHT=
+: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTO=
+M: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px" align=3D"center">
+<table role=3D"presentation" style=3D"FONT-SIZE: 15px; FONT-FAMILY: inherit=
+; WIDTH: 600px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: co=
+llapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36) !impor=
+tant; FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; fo=
+nt-stretch: inherit; font-variant-ligatures: normal; font-variant-caps: nor=
+mal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-=
+variant-alternates: inherit; font-optical-sizing: inherit; font-kerning: in=
+herit; font-feature-settings: inherit; font-variation-settings: inherit; te=
+xt-decoration-style: initial; text-decoration-color: initial" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" border=3D"0">
+<tbody>
+<tr>
+<td style=3D"FONT-SIZE: 0px; WHITE-SPACE: normal !important; BORDER-COLLAPS=
+E: collapse; PADDING-BOTTOM: 9px; DIRECTION: ltr; TEXT-ALIGN: center; PADDI=
+NG-TOP: 9px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<div style=3D"FONT-SIZE: 13px; BORDER-TOP: 0px; FONT-FAMILY: Ubuntu, Helvet=
+ica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER=
+-BOTTOM: 0px; COLOR: rgb(0,0,0) !important; PADDING-BOTTOM: 0px; TEXT-ALIGN=
+: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px;=
+ LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-=
+sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; fon=
+t-variation-settings: inherit">
+<p style=3D"FONT-SIZE: 11px; FONT-FAMILY: Ubuntu, Helvetica, Arial; TEXT-AL=
+IGN: center; MARGIN: 0px; DISPLAY: block"><span style=3D"BORDER-TOP: 0px; F=
+ONT-FAMILY: &quot;Open Sans&quot;, sans-serif; BORDER-RIGHT: 0px; VERTICAL-=
+ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
+0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inh=
+erit; font-feature-settings: inherit; font-variation-settings: inherit">Tha=
+nk you for choosing us as your preferred cryptocurrency wallet. If you have=
+ any questions or concerns,</span></p>
+<p style=3D"FONT-SIZE: 11px; FONT-FAMILY: Ubuntu, Helvetica, Arial; TEXT-AL=
+IGN: center; MARGIN: 0px; DISPLAY: block"><span style=3D"BORDER-TOP: 0px; F=
+ONT-FAMILY: &quot;Open Sans&quot;, sans-serif; BORDER-RIGHT: 0px; VERTICAL-=
+ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
+0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inh=
+erit; font-feature-settings: inherit; font-variation-settings: inherit">our=
+ support team is available 24/7 to assist you.</span></p></div></td></tr></=
+tbody></table><br aria-hidden=3D"true" style=3D"FONT-SIZE: 15px; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR=
+: rgb(36,36,36) !important; FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETT=
+ER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-=
+variant-caps: normal; text-decoration-style: initial; text-decoration-color=
+: initial">
+<table style=3D"FONT-SIZE: 15px; BORDER-TOP: rgb(211,212,222) 1px solid; FO=
+NT-FAMILY: inherit; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE=
+: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36) !i=
+mportant; FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; font-stretch: inherit; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; f=
+ont-variant-alternates: inherit; font-optical-sizing: inherit; font-kerning=
+: inherit; font-feature-settings: inherit; font-variation-settings: inherit=
+; text-decoration-style: initial; text-decoration-color: initial">
+<tbody>
+<tr>
+<td style=3D"WIDTH: 55px; WHITE-SPACE: normal !important; BORDER-COLLAPSE: =
+collapse; PADDING-TOP: 13px"><a style=3D"TEXT-DECORATION: none; BORDER-TOP:=
+ 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADD=
+ING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px" href=3D"hxxps://www[.]avast[.]com/sig-email?u=
+tm_medium=3Demail&amp;utm_source=3Dlink&amp;utm_campaign=3Dsig-email&amp;ut=
+m_content=3Demailclient" rel=3D"noopener noreferrer" target=3D"_blank" data=
+-linkindex=3D"1" data-auth=3D"NotApplicable"><img style=3D"TEXT-DECORATION:=
+ none; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-A=
+LIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; OUTLINE-WIDTH: medium; PADDING=
+-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BOR=
+DER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 15px; PADDING-RIGHT: 0px; font-str=
+etch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-fe=
+ature-settings: inherit; font-variation-settings: inherit" src=3D"hxxps://s=
+-install[.]avcdn[.]net/ipm/preview/icons/icon-envelope-tick-round-orange-an=
+imated-no-repeat-v1[.]gif" width=3D"46" height=3D"29" data-imagetype=3D"Ext=
+ernal"></a></td>
+<td style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif; WI=
+DTH: 470px; WHITE-SPACE: normal !important; BORDER-COLLAPSE: collapse; COLO=
+R: rgb(65,66,78) !important; PADDING-TOP: 12px; LINE-HEIGHT: 18px">Virus-fr=
+ee.<a style=3D"TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; V=
+ERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(68,83,234) !importa=
+nt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: =
+0px; MARGIN: 0px; PADDING-RIGHT: 0px" href=3D"hxxp://www[.]avast[.]com" rel=
+=3D"noopener noreferrer" target=3D"_blank" data-linkindex=3D"2" data-auth=
+=3D"NotApplicable">www.avast.com</a></td></tr></tbody></table></div>
+<div aria-hidden=3D"true" class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-T=
+OP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" align=3D"center">&nbsp;</div>
+<div aria-hidden=3D"true" class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-T=
+OP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" align=3D"center">&nbsp;</div></td=
+></tr></tbody></table>
+<table class=3D"x_x_x_x_x_x_divider_block x_x_x_x_x_x_block-3" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_x_x_x_pad" style=3D"WHITE-SPACE: normal !important">
+<div class=3D"x_x_x_x_x_x_alignment" style=3D"BORDER-TOP: 0px; BORDER-RIGHT=
+: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTO=
+M: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px" align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"35%" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_x_x_x_divider_inner" style=3D"WHITE-SPACE: normal !impor=
+tant"></td></tr></tbody></table></div></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table>
+<p aria-hidden=3D"true" style=3D"FONT-SIZE: 15px; FONT-FAMILY: &quot;Segoe =
+UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -=
+apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-=
+serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-W=
+EIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2=
+; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: =
+0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-tex=
+t-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-st=
+yle: initial; text-decoration-color: initial">&nbsp;</p>
+<p>&nbsp;</p>
+</html>
+
+----=BOUNDARY_29323_DVMR_LRVT_FDCX_WXQA--

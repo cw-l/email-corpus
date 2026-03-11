@@ -1,0 +1,121 @@
+Authentication-Results: spf=pass (sender IP is 193.201.76.65)
+ smtp.mailfrom=privat.dk; hotmail.sg; dkim=pass (signature was verified)
+ header.d=privat.dk;hotmail.sg; dmarc=pass action=none
+ header.from=privat.dk;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:4BC6E770E57E4B7210D81A0EFF73E0606C6E7842FCB9D24DBD80B89DADB1E3A9;UpperCasedChecksum:F71D48BC2895875DDA880D1D689D7EF5939099ACA233D113C747F9C4472848B4;SizeAsReceived:2873;Count:18
+X-mail-filterd: 
+ {"version":"1.2.1","queueID":"4FtZdH0chkz18VV2T","contextId":"c0264329-7ae8-4ca9-9979-54ef794220c4"}
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=privat.dk; s=sela;
+ t=1622417955; h=From:To:Date:Subject; bh=EX5MIiW6ApAhqotW3O/IUejZz+MIqRinhwT5
+  8L9ya8s=; b=mFvrvaFBZ9gyWUntsaFGu9W9YzgPt6UBQZm9ZxSkeuRE7w6ZTzN4yAd/17dhiNJd
+  IQW4K2T82gGMEotpXHa4YKDK0bZmzTB8C6hJhXLhoGGIl+vHLa/zhxa0ppZTzM9vESfPHfVB15+H
+  hg97J1RWhk1UBbyIC4FITmHjeVccstkxcVCMBBYmo9gAnr5h+igcMIRArFCxQkgCwg3iqbmriPPu
+  OIZwl41cH8HcKH3aSiv0ap8pmzMgut/cto6Bf+IDPkpEfD9B4cWO4OXwDVTy2WlkEQ5N5wbzi9yx
+  ueIW8JaB/GZAmZn4OHBOtJtD48CW8exV9CtNPXperGuFtuR4uQ==
+X-mail-filterd: 
+ {"version":"1.2.1","queueID":"4FtZdG6KWHz18VV2P","contextId":"a0301a41-6fc3-4870-a1ce-ac30b98615d4"}
+X-yse-mailing: LEGIT
+X-yse-spamrating: 50
+X-yse-spam: not-spam
+X-yse-spamcause: OK,
+ (51)(0000)gggruggvucftvghtrhhoucdtuddrgeduledrvdelvddgvdegucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuvfffvedpggftfgfpufgfuefuveftkfeugfdpqfgfvfenuceurghilhhouhhtmecufedttdenucfqnhhlhicuohhnvgcuphgrrhhtucdlhedumdenucfjughrpefhvfffufggtgfksegrtderredttdejnecuhfhrohhmpedfufhinhhgrfhoshfvfdcuoehinhhsrghfrhhsthesphhrihhvrghtrdgukheqnecuggftrfgrthhtvghrnhepuefghfduhffghfejudduhfegheffheeluedvhfdvffehhedtteekleetieetgfeknecuffhomhgrihhnpeifvggshhhoshhtihhnghhhuhgsrdgtohhmnecukfhppeekfedrudefjedriedrudehgeenucevlhhushhtvghrufhiiigvpedufeenucfrrghrrghmpehhvghlohepfffguffmvffqrfeggefktffmpfelpdhinhgvthepkeefrddufeejrdeirdduheegpdhmrghilhhfrhhomhepihhnshgrfhhrshhtsehprhhivhgrthdrughkpdhrtghpthhtoheplhgvvgdrtghhvghnghifvghisehhohhtmhgrihhlrdhsgh
+Authentication-Results-Original: yousee.as8677.net; auth=pass (LOGIN)
+ smtp.auth=insafrst@privat.dk
+From: "SingPosT" <insafrst@privat.dk> 
+To: "redacted@redacted.com" <redacted@redacted.com>
+Date: Mon, 31 May 2021 01:39:14 +0200
+Subject: Shipping SGOS-PRV2105000044
+Content-Type: multipart/alternative;
+	boundary="_=aspNetEmail=_39dc04949b0f4aeb9d2d125a84cdd415"
+Message-ID: <DESKTOP44IRKN9f21e22dea6fd41289e5ea383ce6c9ab6@DESKTOP44IRKN9>
+X-IncomingHeaderCount: 18
+X-MS-Exchange-Organization-ExpirationStartTime: 30 May 2021 23:39:15.5340
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ b4d7ba3f-0740-49cf-9116-08d923c422e0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ HE1EUR04FT033.eop-eur04.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/30/2021 6:27:13 AM
+X-MS-Office365-Filtering-Correlation-Id: b4d7ba3f-0740-49cf-9116-08d923c422e0
+X-MS-TrafficTypeDiagnostic: HE1EUR04HT078:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.201.76.65
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 May 2021 23:39:15.4630
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b4d7ba3f-0740-49cf-9116-08d923c422e0
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ HE1EUR04FT033.eop-eur04.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HE1EUR04HT078
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0747557
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4173.029
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000282)(90000117)(90005022)(91005020)(91035115)(91045095)(9000001)(9010001)(9050020)(9100293)(5061607266)(5061608174)(4900115)(2008001114)(2008000189)(2008120379)(2008019284)(2008021020)(58390106)(98390106)(8390246)(8377080)(8391040)(4920090)(6515079)(4950131)(4990090);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ KA79XwRVJUVZQkday8+dMAu+/HS0OZuaAR41h9Zco/QGGJuiVFnBez6vqttj+B6z/vnPDXap8nR1Nd/mN9lC9A91fH8D7WLNDg8hByOlg9wYP6vps6ISxT7+96yrgrHu3bpbWXBiALfUjSwgFhGuVPleVzTkkfVV0ynmhkwi7IixH2jk7bQ9ahnJT0fuqORfCa5OCfkmBCnJTeXtNqKvTSp9PQw8+3/fvZ6X+aH9jY12PptjSj9SLtheFSJTZ0cop+6EMJIHkIVzD5W4cKsJaHm9ojbnjfVJc8mOdOydzPj7dzdWPupCwHO6Jz4AUlASXwrSh1tPC1PbuKRO9gTeFsCoZjWMBqKEWw0fJ2J+qocIEilPa+M5CoLgEHiwXGyXBuY6sQx1S99TZGJhYtZ9kG7RTb3nm9ZMIZ2RodMTMGJ9z8ztI48t1Rl+m5bNBPdt7+Vn5n67Bu6R2IXDMgjO/bS/jMO6xBsPMyjEifoF1+NeTTZPO0WEGMWFVtKe2CSrzzhq9tzdqF35+eUYtpR7hwErHTjoszM7MT7i844AgXeohIYBghoWDMvsVrhJKlTN/9InLPX/coFWm0VRUJoUjZz0waCWApQCQRFAjHappSSUH9xpl/ofHORTefPvjIWSad8ZRziY6nvBTeiFTEWd1Z6Vvcms9uQYiEDsKf/O24JL0B4sxJh7mof2HR11Z+605v4Q0vZPEP03POjuZGqMBWqB27b2p4Xgr5i/twt+gVurZ2KhqXdJcvhh82kU0oI2SoKs6GThMLJxd5y9fc5UdgfAQw1K/ysX9Mvr5WkfDZeRVnHORdwJZDCp6LoAuMqvsOaeM5pT+jiI0rdN4+xsvmbX3pa2kwuRPR+7tFsg3q1kM10o1pc74zSDJBGQtCcqN5TOjRH9zBQpFgUWYAqqFsreoiZCJCcLiwaNAJRLo4AmgO36rzMW3D4LG4/R8hlyduKUMbgxbZUbaU7qFhsEvKBfkT87Rc/K+LKLDHlIjnoPUqq+cB78vBq4U8kiaSSUKfg52NyE9Hot21Y3v6W4981fRCZ+e6IcRsET+uBWXNqTnib/Gb43wb+Dq8ppFZ6yjbq0Z+HYkwFx9MarVYdzV4Zhz5F6Ei2EWubxdTUtgpmPf4qs6z71A6sT5Q+h6psa1W/XwP1tkJOA6EdnkabJEXQOJYAItNs2DYF9oh5dpEXnvSeSUwM3Lsv4kcCkkLxjmpn9kf8u/lwIuZsvxrDmBTejjO+2X4+cpo0xcVCotx59ErxMjxmOBNpVidf5ctuB8j2LT+nlEM/Ts/laN+nSeqYaUS0+0qnUm/q/WgEIZe6fTkGx2v9eEEaksLwge3B4MLHg1phLR8CjYeG6acbMgybgn04JACuDvFx0gYplnnsCngDoof13oTxhgvqmgfWRg6SrNK1deOOSRej0Mk+boo1FWn7lLoWt6uX66t30oQ39MmQuDE4men8UQbljDeovXOdIvuLlP4CtnXkY9WAJd+KiwCZKPkjJUr3/wad9p8eoduMR/Q/2e+ICx3tlfmTSk4TF6Fy24H3rSrRldWXDqA==
+MIME-Version: 1.0
+
+--_=aspNetEmail=_39dc04949b0f4aeb9d2d125a84cdd415
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">Dear=20
+Customer,</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">Package=20
+- SG / 558557965954.</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">We=E2=80=99ve=20
+recently checked your delivery,</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">And=20
+we noticed that its still on hold in our post due to non-payment of 2.99=20
+SGD,</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">In=20
+order to receive your delivery we ask you for the second time to pay your=20
+fees.</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">can=20
+now view your bill and make payment via&nbsp;<a style=3D"COLOR: #196ad4" hr=
+ef=3D"hxxps://secure58[.]webhostinghub[.]com/~lisbox5/boe" rel=3D"nofollow =
+noopener noreferrer" target=3D"_blank">Singapore Post</a>, or=20
+click&nbsp;<a style=3D"COLOR: #196ad4" href=3D"hxxps://secure58[.]webhostin=
+ghub[.]com/~lisbox5/boe" rel=3D"nofollow noopener noreferrer" target=3D"_bl=
+ank">here</a>.</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">&nbsp;</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">This=20
+is a system-generated e-mail. Please do not reply to this email.</p>
+<p style=3D"FONT-SIZE: 11pt; MARGIN-BOTTOM: 1em; FONT-FAMILY: Calibri; COLO=
+R: #222222; LINE-HEIGHT: 14px">Thank=20
+you.</p></body></html>
+
+
+--_=aspNetEmail=_39dc04949b0f4aeb9d2d125a84cdd415--

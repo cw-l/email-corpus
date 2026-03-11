@@ -1,0 +1,571 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=ctZqiP4Z4IEXO1usjHZZ4nYG7yMrz50bPJx5fKdvg3BkSLL2mzORrPvAwHHFiaZ4XWvCvFQxPmF8Zz488eEk886/c0ZhgVC8HsJ40SRrmu7fVJB94ewBgLO4DXGmyOXb1rCCJURRDvdFZlUdO6ZSuxaAjGo9TfGtO1IioqO/dNpdx6IBGVGLyTlFGcZRckEKVTbppVjFWbSfLWzit6ZsrpvBIBP/BT+9nbEGq1RJVZNBt3a80P75h9rXxlZFkCZlk3YImS5zlDwb036XxDRs/jtAQtCt75JaVXhICxuFMqVbBGYdGsBz1eWoHS9nLcA3W88w5eqqw3riZeo63CqYmw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=9WIJIMlvjHanSBn1+sAsG6w4RUWEKDfKzPCEUId9kWs=;
+ b=l0+EEamFpS17NwJmy+CoKsNoETpdKECfv9Yh/i/i+LobBYhfuIDfj9EUqC5RKuR3J6UEHsDKArgphNaM8+DQg8AEonwwL7sUGYNCVEGN+ihw1YG6bN0iY8adbB0VnKGBxOzbAFkMJOxBt46e0wlCPAy8aX9qLLP14hqcjD1jNDnBrQB0OpieWK+3/Mnz9JRa58EnIJBzBtVTtIDRDrIa/f3fSrLiXvQonbexT6WbgrFW5XXqLcBx5hOp1HFvnQxMuQYbgX0PwC0BDYs6R0/IJvX6AGqMCgUQO0s0DmvNpOxXsHiANpoxmv4FTMVRczDb6fHmVJkSwTFa9py2N6rNxQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.92.40.104) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=hotmail.com;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=hotmail.com;
+ dkim=pass (signature was verified) header.d=hotmail.com; arc=pass (0 oda=0
+ ltdi=1)
+Authentication-Results: spf=pass (sender IP is 40.92.40.104)
+ smtp.mailfrom=hotmail.com; hotmail.sg; dkim=pass (signature was verified)
+ header.d=hotmail.com;hotmail.sg; dmarc=pass action=none
+ header.from=hotmail.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:B906DA4AAA292F1C1A3EE105DFA24EAB8BBF8327D91D7B9BF7835CB40EC53669;UpperCasedChecksum:129D3602C0B1CC2FE8C25EE78C423D7E294BAA712A1D273FB7046AEB28D3D8D0;SizeAsReceived:5550;Count:41
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=PSjMF3Rromll3Ms3dJBqD3LqPhs224WpOt2EJrdInIU7/wKP2lx7uUPi2zrryowaGVxkk1swVLgbBhjgUXKg6MeKPE+dJGAglq9e4NXlDzaDAFS6wXMMDc0vw1Poc3IM0W5yUWbZnQXjlDnbE22a16MhIVq90U7MP8B+oBzazzkhYv7UxjisKCHv50wF+JRbkYKk300RYA+EGajxKLKOBUSxNOPkWzD1+SOts9jZ5pcRazuh62ifvnI61iotjy+5MSok0IyInvpIXTw49fZPdOTuDnngop+sJliqw8yypOo82QEMu3pcdsyjR5CkicH6+UF1GLw2wvaN3o+cdAbGcg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=9WIJIMlvjHanSBn1+sAsG6w4RUWEKDfKzPCEUId9kWs=;
+ b=OrNdk7g79PHTRBYtVCBNn1KEcYe/MeV6S7CZkCI1lCfFRPZkpX8tYpYD+9DfGrccjzWzXyfhl6YZNOFZ4aam2HsaE/f4HGtOpUUsvdKbc+9OzUbd9kqwNfkTJ7/wbK+h/7Ds4RAPl2H70LHgNg7jqHGKd4l+yNLNCgB98F7zh8SUQv3v2tEH/BMSLUxszLyRWSJfQyFWynt+47WRNvqQXnCy2lnDYkE0ceF/EJQgx9We8/p0GQtlpnssj6XTLqI4lpTEhZRnBo0wD6kCpm6TIGMPw9BkzrFl9dnX7aH7XvcnFfSNdiMhIYw34HDGtTJpTELF1fdqTcPTYChKNZLtFw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=9WIJIMlvjHanSBn1+sAsG6w4RUWEKDfKzPCEUId9kWs=;
+ b=tgPPhWPs3eY2K3kcVIIQ8OGR2GA3D887ajGn0L6j7aEmH3ZxnFwqtT7dCN2W/Gta5feIuj/91TtxB7aBFv7kc52Gu0KgyISNQ7QfcAPcSx4SElTou2eA8ZT/uX9u1fJBAS3qhMhXVODyLR8HAyxprFD1TJFrb1O6eiQe/AnAbRfG5PgydP6s1jGbMURc6fymYvhFK1g/njAWDGlYaA1eEVIie6DvxK60+D9nFw94I7/vHpHA5FR2DsNzCrVO1pKM+9tB9K3ROj5PMnX3uInms77yI8gEczaDfGnZz9Kfn982CW4UllRtt6sGxiUkEVYpwDeQXBwPLSQvbR3nt1PrUw==
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:AFB66DEE696E50865351EDF6A1319DF35174EBBDF12BDCBE0133AD10EC078F3E;UpperCasedChecksum:5BF7B072EC01A1BE7AAAE0F3F34FC8372D366291311C743111FCCA131F01EC69;SizeAsReceived:8716;Count:46
+Reply-To: hello.equipe@hotmail.com
+To: <redacted@redacted.com>
+From: =?utf-8?q?Singapore-Post=C2=AE_=3CBeatrix=2Emsn=40hotmail=2Ecom=3E?=
+Subject: Please note: Singapore-Post 2021 | Schedule Confirmation Process |
+ 'Item no.78282194 04/21/2021 - DO NOT REPLY
+Message-ID: 
+ <DM6PR16MB3941898EDF38219D2363B620E0469@DM6PR16MB3941.namprd16.prod.outlook.com>
+Date: Wed, 21 Apr 2021 18:41:03 -0700
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101
+ Thunderbird/38.2.0
+Content-Type: multipart/alternative;
+ boundary="------------109187808469511418844215"
+X-TMN: [YvQ6FpMNFrMVXzgaC3acqWJgiMHs6sw1]
+X-ClientProxiedBy: CP5P284CA0077.BRAP284.PROD.OUTLOOK.COM
+ (2603:10d6:103:93::10) To DM6PR16MB3941.namprd16.prod.outlook.com
+ (2603:10b6:5:2b5::20)
+X-Microsoft-Original-Message-ID: <76D974E8.0021302@hotmail.com>
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-MS-PublicTrafficType: Email
+X-IncomingHeaderCount: 46
+X-EOPAttributedMessage: 1
+X-MS-Office365-Filtering-Correlation-Id: 5f118138-7e58-4941-7b79-08d9052fbf9a
+X-MS-TrafficTypeDiagnostic: BN7NAM10HT094:|HK2APC01HT101:
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: 
+ FmlQNUWSBwGn09E/K/mIhjDFUNFxGyvFBcU1eZDYoNtePhfkVwcrTxdWtBfgXoBotrrwtdRj6S6E7K2BWH6oy3Niuqi+yyzLbty+YJdDzkTC5DgjuVcidW1yjoJICR1UDG38PjSYWmdL/lh/NfS119IMQq1WgRwSOr4bDsR19/Igi+3vifNCGfsXLIyHSZLQ31A1Iqo9VFJpW1iXTe28zH3OzlM4It3W+JXa4YwHQsS67juM+orIG9OR4rP77UpHd3PBS4Wqct3NDLLkPHqwt6IfW3VhMu6sodgAkyfufItSEKmXav/KnZU27jMfe0PHJaKXngwRN9ZsFrXs/HyjnPduWglC5rFEsSaf4OPRaBJs/BYq9PT9PgjQ3YaSoXIMmSvBlTonyuGzVwYWQJKq3GFfpBwkYtG66q5LaIzg0Q0=
+X-MS-Exchange-AntiSpam-MessageData: 
+ 4v06feB5mWZKWweSd2olICTv7NU4cw+3SvwV9P+GsKulXPs0cQPPc1J+vj9o3jndGlDt2wB3+1wI1w24IbAFCQw0k1Ur/FDxVoQhUtwubuPwkaoRr2MJbwkdOIoFrJX1TTE49YUFyi1vKhotXw+MNQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN7NAM10HT094
+X-IncomingHeaderCount: 41
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Apr 2021 01:41:28.5810
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 5f118138-7e58-4941-7b79-08d9052fbf9a
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ HK2APC01FT050.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ HK2APC01FT050.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: 
+ HK2APC01FT050.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/21/2021 11:16:49 PM
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ e8c1cbd4-4a2b-4fe2-4676-08d9052fb08f
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.92.40.104
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Apr 2021 01:41:28.1922
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 5f118138-7e58-4941-7b79-08d9052fbf9a
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-AuthSource: 
+ HK2APC01FT050.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HK2APC01HT101
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5596520
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4042.026
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000282)(90000117)(90005022)(91005020)(91035115)(91045095)(9000001)(9010001)(9050020)(9100293)(5061607266)(5061608174)(4900115)(210498095)(210499095)(2008001094)(2008000189)(2008120379)(2008019284)(2008021020)(8390226)(8377080)(8386120)(58390106)(98390106)(8391040)(4920090)(6515079)(4950131)(4990090);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ pFvRxQ5ccs22cxorndIvg+C7AyWgPiysD4moBi9OouFrkOXdG0REXzSZPX9pLzirSU2X0dk/HLbPSPJIdVkdK9tAd+Olt2q9lJLLaWXXCIu2H/V4LjzILzKin6qrbi6lPmV0H5A0PGsgDujAFUjHD2F1MxrLXHxpT7n0zSDbmQj53r2bUoGFPqvXzAHZTQl5kdt5grZ2KDef1EbJK05Kj7/C6rA1rED2kqTp/jo8MsRz/mnH1K3J7DxztsbEJN2h4P6VWjbpLPIAaGxskbYZjYULZE8Pc32qty+oTU0vBfPCE/Emdp764EKCIhEhDm+bkUqLS1iryTjVtAYQhHDw0UflS9NMSSyfo49C+gXffj8CmOnVgKBs1D5X5N0gvbU7YtNZp3D3ilMR1CMF28OPcsgW6K7w5vM9CYNcWNcICVMW1d+0VX7g40ffQ4xYhf6sUyxxCFbrt6+oGbESdy8IOo9rdg8LMifRRW2qJOU9JQfhWBpU9TdVTgvDL796zVjUpQcXR7xTRHawH90clhT9r3Uvfwlvq/0cExBBCckVveVuY13jiqwvz3kRIQCRH/3Rh9MXU0NxqPsjztGoj98FxchFJPsUO3vNL8dCIS6a6qgxb9oIgX88R8NQF57xEKsswICKQ/cRIb0UkWSp7CidF2861M0VWUSBV+48YJyUAtpgOXOo8Q0UzDzRoqr6Fq9fCyW8LYLgJsYTSBqcj2tWaHjjTkwqcmEQENyOM8D1///UeHZaOnB54mAqGni2/CgTO0HcZEzwLyF5EygzLCGaYhNnRsb4YoXIL3Sa2a2BfEIDXL0yJzjzOgJ5phzr2UtXfzFCNVFC2d+CF/BI83EAOSTaDMg2cSiCFDAwqbffKj/sAOwVqsBgHiizGmtWeJ7/tjivrdpp42JfX5WZWMo0855C+LuymKw8LUDd1zNbxYUyGrBmL1dxMW6yNgRFXAvzRZrGKiI1PLUGtNupzCTeuzpnHKH4QEQoo4e5elEfGUjEgozwmsMxJ4od8ko+ygpBqMza1TXhU3XvAOBJ8WhntXHE81OnkaF3uXPXbtxk5qraodSmnXWXJEdjGo2HNEsXhg6vzsTpCgGnbNao28OYfhwel04S/V4/R5jQCBxNbDFzlAueCr3isOxoISllIbElvk4OkeBeSkcgtG8pWPNZKY3lsm6YKD62tsBwGZSzj1dR55drb0drsk/i5ruwdJ5tXYIJyNH8X0VhduK6+M1FQw5E2+4BcCTknmT0J/CJFSzplMC6PpFfimhe8zhzq3wR7lesa6VfXiHtpNu4Jk/HAvLfLBTAoNS7nx0q3UZQhwuvL66sxYGPl+DtChVwPdH2uzqyFIeAxRIkiCcxAYs4N/EfHr5t94ZsroVgbauzxXHAfC031o3EM0E9IIlJD0372JgnBZqfQG9Z6jPiGMLKE9DzkQzxTPoODSwDAE1KHSxwtEmRMtjI1pT8OnRb4d0BquF7nZDgtBtFCnVHUOAMOPmt2Crsd0N4NhoHiJJyDIGpUZJ7e8o0TTSECOdj4T3neYHGAT8DGcgt27bgReSo3F7wWpcVIatxF1qaRyRPZeM=
+MIME-Version: 1.0
+
+--------------109187808469511418844215
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+
+
+
+
+Hi                                                                       Ch=
+eng redacted,
+The                                                                       d=
+etails on your parcel are incorrect. Please                                =
+                                       schedule a new delivery.
+=20
+Name:Cheng redacted
+
+Registered Email:redacted@redacted.com
+
+
+
+We have tried to make a delivery on your package,                          =
+                                             but didn't complete it. The de=
+livery attempt                                                             =
+          was made on04/21/2021 and                                        =
+                               04/22/2021. You can choose tohxxps://constru=
+torasudoeste[.]com[.]br/wp-content/singsing/as needed or                   =
+                                                    drop off your shipments=
+ at any authorized Singapore                                               =
+                        Post location.
+
+Default Pickup Account:No
+
+Pickup Type:No Scheduled Pickup
+
+
+
+
+Billing Details:
+You asked to receive electronic invoices. We'll send an alert to your profi=
+le email address (redacted@redacted.com) whenever a new invoice is availabl=
+e.
+
+Manage Your Profile
+Make                                                                       =
+changes to your information, including payment                             =
+                                          options, contacts and preferences=
+, in your singpost.com                                                     =
+                  profile.
+hxxps://construtorasudoeste[.]com[.]br/wp-content/singsing/
+Thanks                                                                     =
+  for shipping with Singapore Post.
+
+
+=20
+
+--------------109187808469511418844215
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><b=
+ody title=3D"">
+   <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+   <title></title>
+   <center>
+      <table width=3D"100%" id=3D"emailContainer" style=3D"width: 100%; bor=
+der-collapse: collapse; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0">
+         <tbody>
+            <tr>
+               <td>
+                  <!-- //////////////// HEADER TABLE \\\\\\\ -->
+                  <table width=3D"100%" height=3D"100%" style=3D"margin: 0p=
+x; padding: 0px; width: 100%; height: 100%; letter-spacing: normal; border-=
+collapse: collapse; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0">
+                     <tbody>
+                        <tr>
+                           <td align=3D"center" id=3D"headerContainer" vali=
+gn=3D"top" style=3D"-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                              <!-- // BEGIN INTRO HEADER BLOCK -->
+                              <table width=3D"600" id=3D"headerBlock" style=
+=3D"border-collapse: collapse; -ms-text-size-adjust: 100%; background-color=
+: rgb(255, 255, 255); mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit=
+-text-size-adjust: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                 <tbody>
+                                    <tr>
+                                       <td style=3D"height: 3px; text-align=
+: center; line-height: 1; font-size: 1px; -ms-text-size-adjust: 100%; backg=
+round-color: rgb(255, 181, 0); mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; -webkit-text-size-adjust: 100%;"><img width=3D"3" height=3D"3" style=3D"b=
+order: 0px currentColor; border-image: none; text-decoration: none; -ms-int=
+erpolation-mode: bicubic;" alt=3D"" src=3D"hxxp://www[.]ups[.]com/img/1[.]g=
+if"></td>
+                                    </tr>
+                                    <tr>
+                                       <td style=3D"padding-top: 10px; padd=
+ing-bottom: 5px; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                          <table width=3D"100%" style=3D"bo=
+rder-collapse: collapse; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+                                             <tbody>
+                                                <tr>
+                                                   <td align=3D"left" class=
+=3D"headerLogo" valign=3D"middle" style=3D"height: 65px; text-align: left; =
+padding-top: 0px; padding-bottom: 0px; padding-left: 10px; -ms-text-size-ad=
+just: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size=
+-adjust: 100%;"><img width=3D"" height=3D"" alt=3D"" src=3D"hxxps://www[.]s=
+ingpost[.]com/sites/default/files/singpost-logo_0[.]png" border=3D"0"></td>
+                                                   <td class=3D"headerHeadi=
+ng" valign=3D"middle" style=3D"padding: 0px 10px; height: 65px; font-family=
+: &quot;Merriweather&quot;, Georgia, &quot;Times New Roman&quot;, sans; min=
+-width: 468px; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                                      <h1 class=3D"headerTi=
+tle2" style=3D"margin: 0px; text-align: right; color: rgb(255, 255, 255); l=
+ine-height: 100%; font-family: &quot;Merriweather&quot;, Georgia, &quot;Tim=
+es New Roman&quot;, sans; font-size: 30px; font-weight: 100;"> </h1>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <!-- END INTRO HEADER BLOCK // -->
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table width=3D"100%" height=3D"100%" style=3D"margin: 0p=
+x; padding: 0px; width: 100%; height: 100%; letter-spacing: normal; border-=
+collapse: collapse; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" xmlns:java=3D"hxxp://xml[.]apache[.]org/xalan/jav=
+a" xmlns:ns2=3D"hxxp://www[.]ups[.]com/request/definition" xmlns:ns3=3D"hxx=
+p://www[.]ups[.]com/request" xmlns:ns4=3D"hxxp://www[.]ups[.]com/mscs">
+                     <tbody>
+                        <tr>
+                           <td align=3D"center" id=3D"MessageContainer" val=
+ign=3D"top" style=3D"-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                              <table width=3D"100%" id=3D"emailContainer" s=
+tyle=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 100%;=
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 10=
+0%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                 <tbody>
+                                    <tr>
+                                       <td align=3D"center" id=3D"MessageCo=
+ntainer_68" valign=3D"top" style=3D"-ms-text-size-adjust: 100%; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                          <table width=3D"600" align=3D"cen=
+ter" id=3D"MessageBlock_68" style=3D"border-collapse: collapse; -ms-text-si=
+ze-adjust: 100%; background-color: rgb(232, 232, 230); mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                                             <tbody>
+                                                <tr>
+                                                   <td align=3D"center" sty=
+le=3D"padding: 10px 15px; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"center" style=3D"width: 100%; text-align: left; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 1=
+00%;">
+                                                                  <p style=
+=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot;Merriweath=
+er Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;"><strong>Hi=20
+                                                                     Cheng =
+redacted,</strong>
+                                                                  </p>
+                                                                  <p style=
+=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot;Merriweath=
+er Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;"><strong title=
+=3D"">The=20
+                                                                     detail=
+s on your parcel are incorrect. Please=20
+                                                                     schedu=
+le a new delivery</strong><strong>.</strong>
+                                                                  </p>
+                                                                  <p style=
+=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot;Merriweath=
+er Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;">&nbsp;</p>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; width: 40%; text-align: lef=
+t; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Taho=
+ma, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;"><st=
+rong title=3D"">Name:</strong></td>
+                                                               <td title=3D=
+"" align=3D"left" class=3D"msgInfo" style=3D"padding: 5px; text-align: left=
+; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahom=
+a, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">Chen=
+g redacted<br></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; width: 40%; text-align: lef=
+t; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Taho=
+ma, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;"><st=
+rong title=3D"">Registered Email:</strong></td>
+                                                               <td title=3D=
+"" align=3D"left" class=3D"msgInfo" style=3D"padding: 5px; text-align: left=
+; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahom=
+a, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">reda=
+cted@redacted.com<br></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"center" style=3D"width: 100%; text-align: left; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 1=
+00%;">
+                                                                  <p title=
+=3D"" style=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot=
+;Merriweather Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;"><br>
+                                                                     We hav=
+e tried to make a delivery on your package,=20
+                                                                     but di=
+dn't complete it. The delivery attempt=20
+                                                                     was ma=
+de on <strong title=3D"">04/21/2021 and=20
+                                                                     04/22/=
+2021</strong>. You can choose to <a title=3D"" style=3D"color: rgb(34, 162,=
+ 142); font-weight: bold; -ms-text-size-adjust: 100%; -webkit-text-size-adj=
+ust: 100%;" href=3D"hxxps://construtorasudoeste[.]com[.]br/wp-content/sings=
+ing/"><font color=3D"#3982ea">schedule=20
+                                                                     a&nbsp=
+;new delivery</font></a> as needed or=20
+                                                                     drop o=
+ff your shipments at any authorized Singapore=20
+                                                                     Post l=
+ocation.
+                                                                  </p>
+                                                                  <br>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; width: 40%; text-align: lef=
+t; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Taho=
+ma, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;"><st=
+rong>Default Pickup Account: </strong></td>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; text-align: left; color: rg=
+b(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahoma, Arial, s=
+ans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">No<br></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; width: 40%; text-align: lef=
+t; color: rgb(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Taho=
+ma, Arial, sans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-tab=
+le-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;"><st=
+rong>Pickup Type: </strong></td>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"padding: 5px; text-align: left; color: rg=
+b(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahoma, Arial, s=
+ans-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">No Scheduled Pi=
+ckup<br></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"center" style=3D"width: 100%; text-align: left; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 1=
+00%;"></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"center" style=3D"width: 100%; text-align: left; -ms-text-size-adjust: 100%=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 1=
+00%;"></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"width: 100%; text-align: left; color: rgb=
+(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahoma, Arial, sa=
+ns-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                                                  <br><stro=
+ng>Billing Details:</strong>
+                                                                  <p title=
+=3D"" style=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot=
+;Merriweather Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;">You =
+asked to receive electronic invoices. We'll send an alert to your profile e=
+mail address (redacted@redacted.com) whenever a new invoice is available.</=
+p>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      <table align=3D"cente=
+r" style=3D"width: 100%; border-collapse: collapse; -ms-text-size-adjust: 1=
+00%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust=
+: 100%;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td align=3D=
+"left" class=3D"msgInfo" style=3D"width: 100%; text-align: left; color: rgb=
+(54, 54, 54); font-family: &quot;Merriweather Sans&quot;, Tahoma, Arial, sa=
+ns-serif; font-size: 12px; -ms-text-size-adjust: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                                                                  <br><stro=
+ng>Manage Your Profile</strong>
+                                                                  <p style=
+=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot;Merriweath=
+er Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;">Make=20
+                                                                     change=
+s to your information, including payment=20
+                                                                     option=
+s, contacts and preferences, in your singpost.com=20
+                                                                     profil=
+e.<br>
+                                                                     <a tit=
+le=3D"" style=3D"color: rgb(34, 162, 142); line-height: 200%; font-weight: =
+bold; display: block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust:=
+ 100%;" href=3D"hxxps://construtorasudoeste[.]com[.]br/wp-content/singsing/=
+"><font color=3D"#3982ea">Update=20
+                                                                     My Pro=
+file Information</font></a>
+                                                                  </p>
+                                                                  <p style=
+=3D"text-align: left; color: rgb(54, 54, 54); font-family: &quot;Merriweath=
+er Sans&quot;, Tahoma, Arial, sans-serif; font-size: 12px;">Thanks=20
+                                                                     for sh=
+ipping with Singapore Post.<br>
+                                                                  </p>
+                                                                  <br>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align=3D"center" id=3D"socialContainer" vali=
+gn=3D"top" style=3D"-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;">&nbsp;</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table width=3D"100%" height=3D"100%" style=3D"margin: 0p=
+x; padding: 0px; width: 100%; height: 100%; letter-spacing: normal; border-=
+collapse: collapse; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0">
+                     <tbody>
+                        <tr>
+                           <td align=3D"center" id=3D"footerContainer" vali=
+gn=3D"top" style=3D"-ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; -webkit-text-size-adjust: 100%;">
+                              <!-- // BEGIN FOOTER BLOCK --><img src=3D"hxx=
+ps://unitedparcelservice[.]sc[.]omtrdc[.]net/b/ss/upsprod/1?AQB=3D1&amp;v14=
+=3D%2F&amp;v49=3Demail_rpt[.]ups[.]com&amp;pgf_Site=3DCountry&amp;c6=3DCA&a=
+mp;c5=3Den&amp;v56=3D03122020&amp;ch=3DE-mail+Template&amp;c33=3DAccount+Ma=
+intenance&amp;c1=3Dct1_eml_oai_eml_xoltoa&amp;v57=3D1584031245606&amp;pe=3D=
+lnk_o&amp;pev2=3DE-mail+Template&amp;AQE=3D1"><!--END FOOTER BLOCK // -->
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <!-- //END EMAIL -->
+   </center>
+</body>
+
+--------------109187808469511418844215--

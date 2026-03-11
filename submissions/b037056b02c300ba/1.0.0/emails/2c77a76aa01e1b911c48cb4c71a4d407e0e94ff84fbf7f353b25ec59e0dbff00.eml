@@ -1,0 +1,211 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=SrGb5htAW4uz1j17AiJ3nzNXK+PnzsNi0YYELE5+7He9WZsD1nZbK2htQmeYQ4iptVz4W//RZuczKOMQPvF/wxn5K1+RBEfDf4Rtaj6bIQPR9kHcVYOVSb0llpJvsxKobGyIqBjx/sQShU+71iSSPevV8xvlvDN4SxWJDf8y0UdfaMzuv/Qf/VV454mZCtwy64Y5/ar7llaPcZrEuKg0lUQygk2s9zZxikuZm1iuH5CuA9/jSkrmFvNXRiHbwW02CJX+txILJNTqHrMipS32wa/LQU096PwTQ9j5ukdyF7pYbmyZDxk3+28PJFfUYnt/S9aPy8+QTM1z0JQ8KSLXIw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LAmiGHFaco1/sDFuWxWOBdt4htsYhK88tm6qyieHOlA=;
+ b=g/iC/UEuDcGS7m4VsZOBo/5V0cujtDlgvbJjBaYbx2MuN9aguiYWc7aXibjBbyXrkOzg3FvDp0ZV5OcSRp1fmPJvIubP90UaP481qhwSokcmgQTkGpdLFzqIX0h1tGuCR05OYINOPrt++bS7WX1lsi6Y1lBkUdlPnZ/da9b1gBAlN+aPPkq7u4iXsvUCqltWD8Gj794AEQ0Fj8qolIVsCtAZEJWzlQz0JFaDyapsgDxCiqSttgxnYVAt5ku6vIKnEwHwDxWglPJEld35SoK5kG3eXxy8/hyGJ921R+inNcOzrEEtHQV7kK5LWpoK5lDE0rJJmWYD579zhMBG4HvycA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.102.46) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=uce.edu.ec;
+ dmarc=pass (p=reject sp=reject pct=100) action=none header.from=uce.edu.ec;
+ dkim=pass (signature was verified) header.d=uce.edu.ec; arc=pass (0 oda=1
+ ltdi=1 spf=[1,1,smtp.mailfrom=uce.edu.ec] dkim=[1,1,header.d=uce.edu.ec]
+ dmarc=[1,1,header.from=uce.edu.ec])
+Authentication-Results: spf=pass (sender IP is 40.107.102.46)
+ smtp.mailfrom=uce.edu.ec; hotmail.sg; dkim=pass (signature was verified)
+ header.d=uce.edu.ec;hotmail.sg; dmarc=pass action=none
+ header.from=uce.edu.ec;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:D55283F4D3586002D0ED168BE5289EEB6CB21B2DECAAAF016E59B6C30F2C244A;UpperCasedChecksum:F34B5FC9FD0FD4878FC14EF0BD2456E7FCA1954E215C18AE665C6CEA80144920;SizeAsReceived:6133;Count:42
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=NSgNo3NOW2B+iqX05hIkX5d3x+aYNKDRbc4Fin3BLCXds51VtGBkRtGlk57kiFZpn2y8n2b3Z2ptfcB1lAAZ9EcN60UEsKq8x1IPWasyEfZXj2sPOTxgfCKHdY49MpMHAevIVeub86VPpaEHpjRV3y4F0icEjEgo2FWBeZfwVUdUjHDWEaQ6TZqgc6UzweAPyoGQzks03hntFuKcMcMsd76UdDyS8VEDpxI4GsNjg5SaNnOZ6gBZw6qjESWMBZjAnsxzjdQihImeUC6tYmZCS0zgFV55VYDiSOnIHMFMPI5z/RkVGA+CDARx9UtsqGrpabYnlCMHWCr2jTUYL2miNw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LAmiGHFaco1/sDFuWxWOBdt4htsYhK88tm6qyieHOlA=;
+ b=NfMUNMRy1LSJy6zA1P5rSATOdPwnro3966gSOQGxg+VvJgFAkltk7OT9NMdQoTJd50MnxaxT6oTNodsfKk6DN5sFSaT374BNatFT5I67jKz636xzR9bcWP3ltqO0DSNnGvv9M2/w2rAEOSE9o4ULjyfzZFYDdtWg6MqbqsSZW2Q/wXwx6/APXxbK4yozm+RRXZHaTdOmfID8S/SM8t+IQs03JqVjupEPrhuymWGabrXw6qyvmLDVs/lNzpfEE31gKUvtqYhfYJm/iI7/cwwCFJgX1sUT6N/uwiDyfirf+t6V+VMu/nGJgOorKSXJKtNEXcBKhUubwxpLTiA2of/PwQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=uce.edu.ec; dmarc=pass action=none header.from=uce.edu.ec;
+ dkim=pass header.d=uce.edu.ec; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=uce.edu.ec;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LAmiGHFaco1/sDFuWxWOBdt4htsYhK88tm6qyieHOlA=;
+ b=LihesWHyXExlaOwcD9eoQT2xeqlGa7Gx41IzOL5+ELimkQDsijQUmLeREUYZ8d8u/CUAez3ksetqGwoUoYvNlo2O/3f7f8bVY/LZjrtDdYk58ZYPLOXeklNiqPeDcG8UvPnlkRiN2/m5wD5vKGqUVNI53HmXeU2rX2vwlp/T5qGQlhLe7dxSsD7OjyzsdXvcMqA+BU71xaORXKQ/9638ZXcbWmTb4yFvUKGIfMIrCAQX3sKfTNVk1IeWyjOUDH3Eh7TCUny/tppYaceI18EoKNX0niqLYRdiJXr4tvKQcBSIRCeQjgD97XboglCaqWgAoueXYrTUlC84fg45mIvHIw==
+From: ERICK SEBASTIAN MORA LARA <esmora@uce.edu.ec>
+To: "info@mailxl.eu" <info@mailxl.eu>
+Subject: Re: Partnership agreement!
+Thread-Topic: Re: Partnership agreement!
+Thread-Index: 
+ AdackBaFeR4SJy+cRmeFTfGSlLq0XAAAB4dQAAABu2AAAAAn0AAAAUjwAAAAC5AAAAAdMAAAADAgAAAAKYAAAAA7oAAAAAhgAAAARSAAAAAKEAAAAAmwAAAAI0AAAAAtoAAAAAvwAAAARJAAAAALsAAAAAlwAAAAGXAAAAAu0AAAAAnwAAAACTAAAAAeYAAAAFNQAAAAJQAAAABQMAAAAEhAAAAADpAAAAAZAAAAAB3AAAAAHIAAAAAv4AAAAAtwAAAACaAAAABhAAAAABiAAAAAXOAAAAA9MAAAABWwAAAADLAAAAAJcAAAAI3gAAAAJxAAAAAmcAAAAAugAAAAC2A=
+Date: Wed, 7 Oct 2020 10:05:54 +0000
+Message-ID: 
+ <SJ0PR05MB73756FEFCBF3D8DE866B0739FC0A0@SJ0PR05MB7375.namprd05.prod.outlook.com>
+Accept-Language: es-EC, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Authentication-Results-Original: mailxl.eu; dkim=none (message not signed)
+ header.d=none;mailxl.eu; dmarc=none action=none header.from=uce.edu.ec;
+x-originating-ip: [45.92.228.46]
+x-ms-publictraffictype: Email
+X-MS-Office365-Filtering-Correlation-Id: f8087c69-1801-4de9-5195-08d86aa895f9
+x-ms-traffictypediagnostic: BYAPR05MB6630:|PU1APC01HT041:
+x-microsoft-antispam-prvs: 
+ <BYAPR05MB663024D743483C71972BBA5DFC0A0@BYAPR05MB6630.namprd05.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:7691;
+x-ms-exchange-senderadcheck: 1
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: 
+ PvXvmJh3KvGZeN8WtUtUFcxdAQsTY42dz/nrThMXgvguYTx2bxLX4jSGIemlc85JsfU6YapgJZm4Ex1cYjJvKZz95Jaus4pSSthZz+k/8GcTsbD2l3TdRhUrwKhfEKYO8i0XjfRJhHw6/IJiyE5rqdC/vOy5iOQokxNs+LhetBYZWg5AQ+rADknREYUzIcRBxULllyxwv85k4bDf+S5xBfTOfQshAvDfieGHqw9cKEjNyNRWWP06NCZbHB8Cegth+dyaKuWPI9K7JD2/yhOtb3DVLp5Zy+zZDBh9VoAPDRBDtdjvrPIcnqZKEaC01lyCcJZgdFkZtzJdRjtcrlBdzgCg1yaAoT7Q0g0Deapcm+z/IOUbUW5mkIHkmLGDNulO
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR05MB7375.namprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(39860400002)(346002)(376002)(136003)(396003)(366004)(5660300002)(9686003)(186003)(26005)(52536014)(86362001)(6916009)(478600001)(71200400001)(6506007)(558084003)(33656002)(7416002)(8936002)(7406005)(7366002)(7336002)(83730400001)(65686005)(2906002)(8676002)(7116003)(7696005)(66556008)(66946007)(316002)(66476007)(3480700007)(76116006)(55016002)(786003)(66446008)(64756008)(563604002);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-Original: 
+ JmV0DnLFWzL/DobVlVGU83UsEvSoMZx0vSgZnGxcqbrH+5hC52ardoXi5GJLN5u1XL7UevTWkFp1NjhBQW/rsoIFCFk0yKMPum4PsyVIrwTn8Ey2LujeFIgU4QfMk2JGimDdNjiDFJqWf+BXGaTBnRP19WQRyk0bhTqDnlGyccrmIMguPALzp3Acg3f+niuLKKEj1rAia18dqXyCqA2NaWwJDoRuZlPgqmtLOvsyyFkJgAgAGhGZRYBN9NOArIItp5qWCBjWyYWvIZrCFc5IDMmJ0KzeKZ/giiKh56GDcA3ukKE8igl7YtvHOW9TNsJvVLDCrbIKrmtCJfnBkzNu2JD04lhJJU0EEzSV0niBnvRF2FGUQ9C3A2TjizeAd+Q6msoDX91RTPRCdWDTUTSN1png/Kh8YIsTlLuNIZOP8zH14kZp128sKnlFejCYy0m51Wzhs5H30Pw29scERfxGzXIuvKYWcs6b1cX4gevkwclmEVtNOTCMyEYkNjjInP7kGy76o2nGxZbisZjLCBwL/edsFdVQcOvfpR9kERKUCwysx9EEHH+WEbAVIXKjnz3XNd97IRGySZ5PIyNsU6aqu8VOrvuNluO0XEY/uCnNrR3H7Wj5sfpKVgOoAWxkFeuqZwaYzY+pM3TuWHFNXGBBnw==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR05MB73756FEFCBF3D8DE866B0739FC0A0SJ0PR05MB7375namp_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR05MB6630
+X-IncomingHeaderCount: 42
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Oct 2020 10:05:57.6119
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ f8087c69-1801-4de9-5195-08d86aa895f9
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ PU1APC01FT056.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ PU1APC01FT056.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: 
+ PU1APC01FT056.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/7/2020 9:00:17 AM
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ e3083ca9-5170-4c91-c657-08d86aa89493
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.107.102.46
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Oct 2020 10:05:57.2541
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ f8087c69-1801-4de9-5195-08d86aa895f9
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ PU1APC01FT056.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT041
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8407966
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3455.021
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000282)(90000117)(90005022)(91005020)(91035115)(9000001)(9010001)(9050020)(9100082)(5061607266)(5061608174)(4900115)(2008001094)(2008000189)(2008019284)(2008120284)(8390226)(8377080)(98390106)(58390106)(8391040)(4920090)(6515079)(4950131)(4990090);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ 8+576/jyXbvb9BtlRkuDzh7cnuxZQ7joJaPaggc391gekmVRC4lbAf4nY/4b7YahQRi3q2POFy8jVBKLfQfWGQ/BtpkuPg5QF1hwLsXHnDMerJ1S+aCaLY6qnAYm6qGjH0JPsuK3fdnvewL1CKDidkO+/X13wgAvrgkKUzpGQVykiK/rsQC3A4U/403QOXhXrHVV5URVG2RCcOaUawTnfIW6r3Ausb6BifQ891zfMD4peQ7HwyG2akove88zaPfI8eTyQKl3hszJP82nPJRjs8iHWgNwLhCY9AM4s2WOVbeQm6Fj1QdOz+qASfTQq3WEfHb5In/zAs4qNXlveS2pqWSpr+PezADODGW/p/DC1ZQOeh7KadrDJiJGy9I+bkuRE/ryW2LsXg7d5+i4dXx9wl2IcEl12Kx5iC4vRsnepq9bEq7AZaVjwDmzpGBKubqtEjypqoL7YwfzCio1pvmepPj1wI0kBghCTLC+wt/WVKqX4HtHqOSbgzEYmoVyEROd5kzVdmEoz5PndtqQuakIua/nhnu9M0UzhAPqOHODQDCOiHH0KQ/Zi2eEgIZMxTlab95ejhvqjgV+1pmjz2ynundVu8i80ePbzIVWjk8sJ6nWxpHmQ13045R/QFFKul1+UkyXAsMwF9GUBDvZLfKDjL9McFgYTTDCp0a0MKuENtWWqtwDtjZwn44NDpIQ49hiv+iE6aXlu/NR0jpfA5jVelR68xHzd/uvgaN6b9/UYJemiTZuopx9ehtNhLkrx3fKu/gIF5uRzMvsaIJiAVRSZbRh2TcLhOH+IY5o+thSjcHmrh/dXBKWiKqYn05MhaqmgcF9X+F/usO7vsqjEuof+MiV5/Oi3G2Yf3RAlmZd8A/VngHCCAy3HTdBPFSzzudjRU+ggVFn8GRLUgjsUGOZSxkWDATFU43Hp/NMgVptkrmhuzmQEjeXbJvM3aKD0DSEF0g1jD/67J4lEujGLuudh4Fbg9zdZwoh/THLxk/FT9U=
+MIME-Version: 1.0
+
+--_000_SJ0PR05MB73756FEFCBF3D8DE866B0739FC0A0SJ0PR05MB7375namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello there!
+
+I am writing to you because I want to reach a partnership agreement with yo=
+u and get 30% for your cooperation.
+
+Please contact me via email ( fran@mtazzo.com<mailto:fran@mtazzo.com> ) for=
+ detailed information.
+
+Thank you.
+
+--_000_SJ0PR05MB73756FEFCBF3D8DE866B0739FC0A0SJ0PR05MB7375namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"hxxp://schemas[.]microsoft[.]com/office/2004/12/omml" xmlns=3D"h=
+xxp://www[.]w3[.]org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-GB" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;">Hello there!<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;">I am writing to you because I want to r=
+each a partnership agreement with you and get 30% for your cooperation.<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;">Please contact me via email (
+<a href=3D"mailto:fran@mtazzo.com">fran@mtazzo.com</a> ) for detailed infor=
+mation.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;">Thank you.<o:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR05MB73756FEFCBF3D8DE866B0739FC0A0SJ0PR05MB7375namp_--

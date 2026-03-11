@@ -1,0 +1,388 @@
+Authentication-Results: spf=pass (sender IP is 167.89.19.251)
+ smtp.mailfrom=emailer.rezdy.com; dkim=pass (signature was verified)
+ header.d=rezdy.com;dmarc=temperror action=none
+ header.from=parcel.singpost.sg;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:2BAEDD5CD5CFDB8C4BFA3308B7994B006FEA355E7C0E6475735785DB74D208A7;UpperCasedChecksum:FEB9C0537E5A4B1BF32DA459FC4E9CA4CCB8137E0857115F1F627349DBA69D7D;SizeAsReceived:1948;Count:13
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rezdy.com;
+	h=from:subject:mime-version:to:content-type;
+	s=s1; bh=8e5pLFW7mD2vf5T1I0L87Kg2/vxBRHqn1/+qqavG1x4=;
+	b=bT3rc6hArHCa84cuH6/gs1UPSgJj4vyGS2gQ9uperyGrmCZh+2okVrrRPf499OY08DVt
+	WXGnDvdWrdB6N6YgIgv64+hywcpdAe6I/i5JY9hhTvnF/uQeLQS/3SXQSdlV/WOCwCrGoi
+	v5Wuo+Oji/BVCSF+oAjS0AhMEX474c5S6G6LRmubMw+xFM+L3NkKjrigjIZ7MQxCjJFCq2
+	6sXrTmAwO1jVRs37TmbQMisyPgzbDSwq2eZi7A+pBIi+3r0aeEm4exHYPpFPcT3lf5aNTs
+	YJYPKmUyNFo6c2uCMOi9exJyWvJzIkotNIjT+Kr8B+x4S7DEjA1A7g56BDE9ZoxA==
+Date: Mon, 29 Nov 2021 09:36:55 +0000
+From: "track@parcel.singpost.sg" <track@parcel.singpost.sg>
+Message-ID: <769030421.12779.1638178614985@rezdy.com>
+Subject: lmportant : Reference Number : SG87562542 ls waiting !
+X-SG-EID: 
+ 4GfZRk2H+Yeeehmti7zadn55FMZvMpwbeFVWrOeMSWhZaql1VjfXXyRlh/IgriwUpIGq9R5Q3C2C5H9sH0g4TD0gV6OJ7YEZEsMwixMCtRnwxV/PoiFSTEivBRWbE3gtpkDYHa3AL4ylDAMeooVGMxazOS9WLfIroHKw/+5fl9OFTqBruhlfbdkIMxjvrC0KB+kj/Q4EIc1tRw/7Og27doH1T5mmj48gRNObSTlchGiSwo9ZtIy1zAi2TVtjV9GTYyUbZrj0Kt2tbg7sn9ziuA==
+X-SG-ID: 
+ N2C25iY2uzGMFz6rgvQsb0sMFLLLMx7NZlpn1Sgfo9gJMQ6eoR7F6ztsi4sDGau4VDiw/Vw6h8rw0G6q0oeAV4/RrdoinE55s6Po/xsRJLa9h3kz6WHjlDmidtZjdIkJ
+To: redacted@redacted.com
+X-Entity-ID: v5CKGuFmKm+Qwb0zcwQx8w==
+Content-Type: multipart/alternative;
+	boundary="----=_Part_12778_776311191.1638178614985"
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Nov 2021 09:36:56.7565
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 86f22824-9688-4fba-5d48-08d9b31bc903
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ VI1EUR05FT032.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/25/2021 1:19:19 AM
+X-MS-Office365-Filtering-Correlation-Id: 86f22824-9688-4fba-5d48-08d9b31bc903
+X-MS-TrafficTypeDiagnostic: PH0PR17MB5568:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 167.89.19.251
+X-SID-Result: NONE
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Nov 2021 09:36:56.3827
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 86f22824-9688-4fba-5d48-08d9b31bc903
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ VI1EUR05FT032.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR17MB5568
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.0724088
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4734.024
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:I;ENG:(5062000285)(90000117)(90005022)(91005020)(91035115)(5061607266)(5061608174)(9050020)(9100337)(2008001134)(2008000189)(2008120379)(2008019284)(2008021020)(2021050021)(8390246)(8377080)(8386120)(210498285)(210499095)(210410095)(4910010)(9575001)(9320001)(4920091)(6515079)(4960005)(4950132)(4990091);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTE7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ trEAbCI0K3X+AHCffNW7mbAXKwh15xz6jryKZ4bulhrp8waXy+b70I50dByuP8MuAZuV8Y9yJoPMKBnvNcC2qg1qyrh6FuD4ugM9Unmmo74NaYiZXxvufpyIurA5hWwJ+wD1i+vlTR3SsbOM3FZNnwclov09r+zC5SLVJdD+76l8HpVlfjxzjM6IJ4+DslGfyLtLdIDlImUcsLCrLmF5T0w1Ta0QLnP5clmOLx99GFKINf+rvrWbaLPIknNlezCQjxUywE5w6e0ew+N9526renqGtLkv8WhnxvMR6HKJ1OCQ0dWQorhnhiiDnyIIquOpIWfhkv+xDQfuwIG3Se424j7ITJCCbbqqG6QQoxPGlP/b0QAv/vbiS6+n8EYHb7NAxueQeIAh7s2nhvyxRs5iwktgVDZNTvl5ulaZzIutIKDc7cNxqs6nnu5EiN4/1KX0E8GmIcP+HGh475Icfsi1xtW8k9XAo54lO6Ty7XEd8ncMCWEg+U8yTmVlvRRYDyxydxIiZifPg0lDdUyhf/R3tRjEnMF2pMq7/tmCFm2cXeBTaZHnws31HMexuDS0udm0ed0IeKMBQoBc3Z01ZmvTFdLRm2JsuHjEaymL/YdeHz+E+8vyETlPEEwP1sK02VldxZU/+TmLwl+YxEhi+gUz6HY/Un0azfuCzTQljW7zURweegBRLsrJ6R1SzfTxnn0YlllQvs6K1JnM2C5DAXy2U1vEWhz5K7j2lPJcAlGmOkPv2wkP5T8ThG5VOyjNCbjjFEddZJAM0mxXVOmF6Vi4TwkNum07kz/opCpIAHK5gsfCHjGzH+1ewsreTNxn2XcKMuYMEaTPqiFO4J0J2EoiBzIWGt9WJeTL77TpzPAPL7udLB/m5ZelZuJr1fLpM4CF7qEkpGCrNd/KKvslIyzVxAwjTqWJX86P5Q2F0qAb3hcfmPFuWuI/Ns1ozBHHXYodCzdR/cUSI/0dQIT+cgIYeuSUJ0N9y6GxcwS6lKDE8NPIcQ1W1P/zVTVz+rdKA+FHyVyRqOqPwSzVPDrvA9PTGy6xO2MlELORxRc52gfokEVxESJ3sJ8zApqzdwjCDke3nZGvqd96lgufFwSw58Cw8VhEYrvb0azgcRnLeCjDbLRzLIjVShstlpzJvhgvM4JRJ+/ptqTKT9SwMse0MyEfxyT/U8LXbMgz1F8nfOKseiPmOJjGJhjNzO0aurzDfbh9MTmNnUA1Dt/ypA8zgIkb14zhE5Bi1ai8aw11a5LEwe0=
+MIME-Version: 1.0
+
+------=_Part_12778_776311191.1638178614985
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+
+<a rel="nofollow" target="_blank" href="hxxps://osuwavin[.]myhostpoint[.]ch/sg"><img alt="" src="hxxps://7bd14b04c98c0005099749963006b1eca98083ea488f4b9b1d8e348ff1c8fd[.]s3[.]ap-southeast-2[.]amazonaws[.]com/leatherthief/8xlEOdhWm8mRZiX4CXhwwv2NMSt0p8GZco2Hrr6J[.]png" title="Image: hxxps://7bd14b04c98c0005099749963006b1eca98083ea488f4b9b1d8e348ff1c8fd[.]s3[.]ap-southeast-2[.]amazonaws[.]com/leatherthief/8xlEOdhWm8mRZiX4CXhwwv2NMSt0p8GZco2Hrr6J[.]png" width="513"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+------=_Part_12778_776311191.1638178614985
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width">
+    <title>lmportant : Reference Number : SG87562542 ls waiting !</title>
+
+
+    <!--[if !mso]><!-- -->
+    <link href="hxxps://fonts[.]googleapis[.]com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+
+    <title>lmportant : Reference Number : SG87562542 ls waiting !</title>
+
+    <!--[if !mso]><!-- -->
+    <script type="application/ld+json">
+    [
+        ]
+    </script>
+    <!-- Google Schema for Google Now cards, do not show in outlook -->
+    <!--<![endif]-->
+
+    <style>
+        @media screen {
+        @import url(hxxps://fonts[.]googleapis[.]com/css?family=Lato:400,700,300);
+        }
+
+        body {
+            font-family: "Lato", Arial;
+            color: #2c3d4f;
+            background: #fff;
+            font-weight: 400;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        #background_table {
+            margin: 0;
+            padding: 0;
+            width: 100%!important;
+            line-height: 100%!important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 300;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        h1 {
+            line-height: 1;
+        }
+
+        h2 strong,
+        h3 strong {
+            font-weight: 700;
+        }
+
+        small {
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #2c3d4f;
+            text-align: center;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        table td[class="column"],
+        table td[class="column-info"] {
+            height: 320px;
+            width: 320px;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        table[class="gift_table"],
+        table[class="header_table"],
+        table[class="subheader_table"],
+        table[class="table"] {
+            width: 640px;
+        }
+
+        table[class="table"] td {
+            padding: 0 15px;
+            border-color: #fff;
+        }
+
+        table[class="table"] td p {
+            margin: 5px 0;
+        }
+
+        table[class="header_table"] td {
+            padding: 15px 30px; border-color: #fff;
+        }
+
+        table[class="subheader_table"] {
+            border-collapse: separate;
+        }
+
+        table[class="table"] td {
+            padding: 5px 0px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table[class="gift_table"] {
+                width: 320px!important;
+            }
+            table td[class="column"] {
+                width: 100%!important;
+                display: block!important;
+            }
+            table td[class="column-info"] {
+                width: 100%!important;
+                display: block!important;
+                height: auto;
+            }
+        }
+
+
+        @media print {
+        @import url(hxxps://fonts[.]googleapis[.]com/css?family=Lato:400,700,300);
+            body {
+                background-color: #fff !important;
+                margin: 0;
+            }
+            .hidden-print {
+                display: none !important;
+            }
+            #background_table {
+                background-color: #fff !important;
+            }
+            table[class="header_table"],
+            table[class="subheader_table"],
+            table[class="table"],
+            table[class="footer_table"] {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            table[class="header_table"] tr,
+            table[class="subheader_table"] tr,
+            table[class="table"] tr {
+                position: relative;
+            }
+
+			table[class="subheader_table order_summary"] {
+            	border-collapse: separate !important;
+            	border-spacing: 10px !important;
+            	width: calc(100% + 20px) !important;
+            	margin-left: -10px;
+            }
+            table td[class="items-overview"] {
+                background: white !important;
+                color: black !important;
+            }
+
+            table > tbody > tr > td > a > img {
+                page-break-inside: avoid !important;
+            }
+
+            h1,h2,h3,h4,h5,h6,p,a,small,td {
+                color: #000000 !important;
+            }
+
+            small {
+                color: gray !important;
+            }
+
+            table {
+                border-collapse: collapse !important;
+                border:none !important;
+                height: auto !important;
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                width: 100% !important;
+            }
+
+            table > tbody > tr > td {
+                padding: 2px 0 !important;
+            }
+            
+            p {
+            	margin-bottom: 5px !important;
+            }
+        }
+
+        @media print and (orientation:portrait) {
+            table[class="gift_table"] {
+                width: 320px!important;
+            }
+            table td[class="column"] {
+                width: 100%!important;
+                display: block!important;
+            }
+            table td[class="column-info"] {
+                width: 100%!important;
+                display: block!important;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+<body style="margin: 0; background-color: #ecf0f1;" margin="0">
+
+<table width="100%" bgcolor="#ecf0f1" cellpadding="0" cellspacing="0" border="0" id="background_table">
+    <tbody>
+    <tr>
+        <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; padding-top: 0px;">
+
+
+			
+			
+
+
+            
+
+            
+
+            
+
+            <table width="640" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="header_table">
+                <tbody>
+                <tr>
+                    <td style="font-family: 'Lato', Helvetica, Arial, sans-serif; padding:15px 30px; width: 420px; text-align: left; vertical-align: top;">
+                                                    <p style="line-height:1.68;"><a rel="nofollow" target="_blank" href="hxxps://emailclick[.]rezdy[.]com/ls/click?upn=chldBU3S50Wo4xTVHvLjHTZdnD7ge6S-2Fkrv4q2eq52Z-2BpJ38kKSDYDsvonAfPMy1eRan_jIW4B13NfqS3cLl0TdrVDHG8-2FvFGp258Jnn-2FHwQVM7lNki4I-2BSYHMCSJerxo-2FAfa016sWoDMO3-2Bh1hyjaMQayMkBlN0zyL2RBusVvm6syFq4sGUV2pmDnTWUU5RfZfFjuTEdHL41xkE3-2FgoBZx-2FajBfxgtutQ9XI-2Bo8-2FzYR20JkAu5S7XnKNk29JE4XRvc23uqPyiIGTRSGvfXuZJljl4QXtcVsQv-2Fm09orBv9J38xLvxXSllMsZ-2FlkhoPvgt0eux8ylZhMteLYBqW16l-2Fjc2jfSZHfd7mbtWuJu1YUsjPLiwAn4ZEOxvvwqaW-2FgnwVl"><img alt="" src="hxxps://7bd14b04c98c0005099749963006b1eca98083ea488f4b9b1d8e348ff1c8fd[.]s3[.]ap-southeast-2[.]amazonaws[.]com/leatherthief/8xlEOdhWm8mRZiX4CXhwwv2NMSt0p8GZco2Hrr6J[.]png" title="Image: hxxps://7bd14b04c98c0005099749963006b1eca98083ea488f4b9b1d8e348ff1c8fd[.]s3[.]ap-southeast-2[.]amazonaws[.]com/leatherthief/8xlEOdhWm8mRZiX4CXhwwv2NMSt0p8GZco2Hrr6J[.]png" width="513"></a></p>
+                        
+                        
+                        
+                                                    <p style="line-height:1.68;"></p>
+                        
+                                            </td>
+                                    </tr>
+                </tbody>
+            </table>
+
+            
+            
+
+            
+            
+            
+            
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<img src="hxxps://emailclick[.]rezdy[.]com/wf/open?upn=2fw09PGxXBQH-2BRDNb6h6CGcX7ANuYJ-2B9P2hudomkLp5Rd4sooMKpld6WGH-2F8FJEz7x2Tslxbn6m-2B9OZg-2BwI-2Be9H6rQjw3E3ixAR5lIpvfFwIz3is-2FGd0qDiJXaUHAwk2nVyou6JLX9mxBFlF-2FRed31bRAcvZy68bGCerNTPxlVTxjBmVwt7-2FxHecn5OS5MwNLhu9DN3rR1BSVexYVzDfqqj8giCPZFinljknalv6R5gmczTOuiZh9OYHyRz0i7qWeLp1nMlEnVT76hO3aI1VatgMmKvzE3iCS8L6Dr10pvu1yP0Dshd9IhQCO8kSkF8D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"></body>
+
+</html>
+------=_Part_12778_776311191.1638178614985--

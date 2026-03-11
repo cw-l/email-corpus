@@ -1,0 +1,221 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=NlSC90+YNyIAh6dxMH+/sCUfCDKZUP8nG9Ui6dkLbuqucVjCEKKGaDNzcWcPG0t1LBfqjyvrTltYMpDgE9gO0uhwwH5hPsQPSBGTzFekYMAjLZba660LQRxDJTfXs0D8lnmwa9I3YcjK7MZ3LF8rGQFMYKmV5fW0PCNxdWBQ86LT+0Mkkih5iXMgYX9MmKNGVLb8DIqewOBnVE48amv4EkAGOL6dUu/g8jdTgGfbiRaY/sVaJ9/jPCvH48U5yEMrg1mPl9UsZ3YqQTm12FUxtT0ctcxpKJu5TZeGprI2dVTVzxHRp5HYwt5BzJU0A/pvkoIdu96pmQdt2Uu6mtaKkQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=4MKtAq70G+nOaEwacQBSGNTZ4vim1gcrSyVJVqGxxN4=;
+ b=kTl0JFYLoK0pzbw+Tt4xxXJLwDXGJMMNEv/BE7tcG7l67Kn/a0ALdbit2jDIubhZTOfDDZ/M/+77squTy5b/6iBQy3VjdA/tm8z71dbcknFH3+UpQicHC6/nP+PWCxVPJGY0+eBKcbl7aYy0dBg4uPubQS7ibutENajkgPN2dEVYBncb9wBLgJC4ZPfaaUy7ZmHq8+uPySFslosfuGUiSaDhp/3OosL0Dgiw9OvhNtCo5YwI0zPte3LfzyIakF24eZJSuxaLjV69fFwf5EirggPFjOEel2IEtaSuw96mWoGwbkD0qbScb2t4ofgXd4q6msX8LZ8TKq786HcprkoJIg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 209.85.210.67) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=wisut.ac.th;
+ dmarc=bestguesspass action=none header.from=wisut.ac.th; dkim=pass (signature
+ was verified) header.d=wisut-ac-th.20230601.gappssmtp.com; arc=pass (0 oda=0
+ ltdi=1)
+Authentication-Results: spf=pass (sender IP is 209.85.210.67)
+ smtp.mailfrom=wisut.ac.th; dkim=pass (signature was verified)
+ header.d=wisut-ac-th.20230601.gappssmtp.com;dmarc=bestguesspass action=none
+ header.from=wisut.ac.th;compauth=pass reason=109
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:53BACA5A50D5E9A23AA826A0705D982A1C6001CD23CE868371A0113DE4AE4487;UpperCasedChecksum:F60D962A230D8A086605397C942752CD82388987171B012426BA75DA0C0F5120;SizeAsReceived:4249;Count:20
+ARC-Seal: i=1; a=rsa-sha256; t=1772607501; cv=none;
+        d=google.com; s=arc-20240605;
+        b=gnrw/2FC8Myo6Qs9IaDRF94Utgq6Hs+wAG6jkn2G9hm1tz8IeXtytnE+5a/8ZJaLi0
+         PQWJKnvC8dLS8aW3FluVMn9qupvGqgrguUWwyMDCLdETrpFHFS4h3lFnKZKrYrR21gsn
+         5YWCMxozazC+1TCD6bahzZCxg5P8DQntjdy0a0+hDF2OUq7/0GVhTEwnW7HhxhJ2ip/n
+         OahW+vdkUIOTHZfii7UiwqlWAZGErJs/PZK7azDqaq4jWSoTs73J0YKCy3zdnnpvSYDe
+         JkO6XUHx1Zoow/Ix9jyR46d0B4qGbgXP0+QS9mlQi5soRcb19zk/2m13CdkuPywdlH6C
+         G0CQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=4MKtAq70G+nOaEwacQBSGNTZ4vim1gcrSyVJVqGxxN4=;
+        fh=IHRKjkeMZsWyXapx3tAkC/Dpoy6Hqd+VgCiSwp+idGo=;
+        b=AEeqTYv/LEFYFvMRYckRITPTaG3cqnqsecbrr03Pcya+6rxKFG+gDJG8zMHGQzVaKi
+         2WL27eeYqd6kYVeSJctNUc4zRGGU8pLyVcuZfLVKvrXtWBCYeAtPweNhhB+TTK0HeEns
+         MNYtPjo0UCIzL7oPvGgtoXN5JfvgAdqLBt08tSu4NqnGznFZ3l4/7laJsAmazatuIrzR
+         71pM6L7+9p4c7BLlOaNrrTD6zp2CsVwRZ6WhUl32sB4RwmmMkpRhOhoF58GtPQnvunfK
+         NrtfM+H/jj/pg+F3ImvzdNKUhdPV1N9obGF3exCEetS4zLRyDUHROYtaPRNLtqT1LUu0
+         aBaA==;
+        darn=hotmail.sg
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=wisut-ac-th.20230601.gappssmtp.com; s=20230601; t=1772607501;
+ x=1773212301; darn=hotmail.sg;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=4MKtAq70G+nOaEwacQBSGNTZ4vim1gcrSyVJVqGxxN4=;
+        b=wI2pNk5pzsvxzbO3u67z1fQ+ny5tdpimmz9klN1QQ9YIy4KF52N9ZvLHBM8Bo6xUEJ
+         PiKCBDcT1O3KToWUoleIrYIQ+9GdWTKOGDWhPYKsu+7XNyBchJIf7maR8ORpG9FMjdq3
+         mPkxXkEBTWqMsQJXQCp2EtNmVgVdwrlahgtIHY3zAskDHGJ2MC7XMahl9XgID1zb2PU8
+         ruT9oN6ApZv60UIsZMhSRzXsvurZuaROqxJIMutufQXKuIQLXYOBaKdHumD+a+U9+z3G
+         OWeXu0H65kRwMZiw+jZxHBvkb4hB4WRTqi+r5reRCZRdnedC9f1daiOhIzBtN+s1EQAT
+         idXg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1772607501; x=1773212301;
+        h=to:subject:message-id:date:from:reply-to:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=4MKtAq70G+nOaEwacQBSGNTZ4vim1gcrSyVJVqGxxN4=;
+        b=U24xgkLc9bJJ+FlYPUFTt2zRTURlWYUyK1kwiOy3ko9saxE2IzB+sAZ6hRRXnp8n34
+         T6VHIGRSzUMRl/27l0zRQ+mlQw7D+zq4+VrRlJbDmoNRsqpt/8sawpPw2MvnFw3Y/P47
+         8drduGKxiLA3hpmmkb55Mc1987rFBMjbg6t+4LMKxmKUX9CS03BcWKrk2xQByVCuXoft
+         z5BmQcZ+1pfT7cZmEC5YmNLB9yh4wS+i+38Gq0GaWdwbfADJJipX9hP4s5vPgQcg9Td5
+         m7ZAfc52QgoWBo6TCop4jQUs03qPFgM4kGgv8VcurFJK+bK1BHnYIHEzhSKLIEbaXXRf
+         XkFg==
+X-Forwarded-Encrypted: i=1;
+ AJvYcCWGSRz4cIcJLT3dEnu53NRew0C9MySz0Tk71klThNTlmvodmbmf58Q8ruQsPIA8SMGizsDjGrSrazPi038=@hotmail.sg
+X-Gm-Message-State: AOJu0YyEi+ay+moRDMbD/2KP1tNktnB8G01YO7U81BfpYo4e80NJ2uA4
+	Eo9KloNd/xk0Ee4oye5utPRJAPcTKF39Hu5kXEz+LjX7QO0tyRXrUZztEmuSHoAhEgLCWZEAMqC
+	JGirRYooMM6tweDMC+IuggmOvxxO4IxlYYGx3DSlRkQ==
+X-Gm-Gg: ATEYQzx5KAFrXemKW3hQD9A871nHaaC6t861DTx4iVrgfAyecXiIHLg1fGn790tHs3A
+	XVERRhv7qt1jN+j4UsOyxX+hIsmpuKqP8jA12VLS9kzXDnVugG2LvdiPAJPKSOSkPMgqP/2h1dp
+	fa6vtzNnd4fgcyNo7gEerDcODNLgM7+2QSkOjn2i2jSfKYEpf+qo4n/OuMAknM2w5yMJQhSXM3f
+	5DcEs+eD37husciZB7yzsCWd6X8i4XAR9NLsosxMKn+uP6A2cNcoiS8ygPCjlwiq3xRYTgkzDS5
+	ZQA2NZfphYKOBg==
+Reply-To: fdy3215@gmail.com
+From: Mrs Cecilia Ralph <29764@wisut.ac.th>
+Date: Wed, 4 Mar 2026 09:58:03 +0300
+X-Gm-Features: AaiRm50bdirLYrffo09ORBXd8bUMVGXGElPh-zDwOOJmWXbrw_SWbXUz-B0lV4s
+Message-ID: 
+ <CAMhPCoEJ+bLD8wRLYR1Wjx9SMP1=J-iB-oyZk88MA5nyfcuLgQ@mail.gmail.com>
+Subject: Congratulations to you
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="0000000000006aa373064c2d5899"
+BCC: <redacted@redacted.com>
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Mar 2026 06:58:22.1434
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ a66812c4-bf7f-4880-9da5-08de79bb6c9f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SN1PEPF0002BA51:EE_|DM8P220MB0455:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SN1PEPF0002BA51.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: a66812c4-bf7f-4880-9da5-08de79bb6c9f
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.210.67
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|46080799006|970799060|9020799019|34130799006|6019299003|29090799004|3069299007|32020799003|60050799003|36030799006|23130799006|2700799029|461199028|1380799030|30041999003|1360799030|1370799030|1370599021|22015499006|3412199025|440099028|26104999006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Mar 2026 06:58:22.1181
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ a66812c4-bf7f-4880-9da5-08de79bb6c9f
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SN1PEPF0002BA51.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM8P220MB0455
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9799867
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9632.007
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--0000000000006aa373064c2d5899
+Content-Type: text/plain; charset="UTF-8"
+
+My dear beneficiary,
+
+The International Monetary Fund (IMF) compensates a few lucky winners with
+an amount of ($2.7 million USD) as done every year and you are lucky that
+your email address was found in the list as one of the few lucky
+beneficiaries. The WESTERN UNION has been appointed by this agency (IMF) to
+send you the compensation fund via WESTERN UNION MONEY TRANSFER SERVICE. We
+have AGREED and CONCLUDED to make your payment through WESTERN UNION MONEY
+TRANSFER, $10,000 USD per payment, and you will receive as many times as
+you can daily, until the total amount of $2.7 million USD is fully
+transferred to you. They will not be able to send the payment with your
+email address alone or without re-confirming your complete information, so
+we want you to contact Mr. Jerry Campbell of the WESTERN UNION with your
+full information, to enable him to send your compensation fund to you.
+
+The Director of Administrator's Trust Fund has already signed your payment
+and you must contact Western Union to ensure that your FUND is transferred
+to you as soon as you send them the required information to avoid any false
+CLAIMS. As per the requirement of the WESTERN UNION Office, You will be
+receiving your funds in installment of $10,000.00 per payment until the
+complete amount ($2.7 million) is fully transferred to you. To avoid any
+wrong transfer, please contact them now and provide to them the following
+information.
+
+Your Full Names:
+Cell/Telephone Numbers:
+Home or Office Address:
+Your Country:
+A Copy Of Your Identification:
+
+Listen very carefully, tell Mr. Jerry Campbell that the International
+Monetary Fund (IMF) advised you to contact him. He is expecting your
+message. Below is his contact information.
+
+Director Mr. Jerry Campbell
+
+Email: wumt.paydeptt@gmail.com
+
+Telephone Number: +256-751-998-494
+Whats-App: +256-751-998-494
+
+Please, do not forget to update me as soon as you start receiving your
+payment. Also note that the only fee you will have to pay them is your
+payment account ACTIVATION fee only. As soon as you send them your complete
+information as stated above, including the activation fee, they will start
+sending your funds to you without any delay.
+
+Best Regards
+Mrs Cecilia Ralph
+
+--0000000000006aa373064c2d5899
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">My dear beneficiary,<br><br>The International Monetary Fund =
+(IMF) compensates a few lucky winners with an amount of ($2.7 million USD) =
+as done every year and you are lucky that your email address was found in t=
+he list as one of the few lucky beneficiaries. The WESTERN UNION has been a=
+ppointed by this agency (IMF) to send you the compensation fund via WESTERN=
+ UNION MONEY TRANSFER SERVICE. We have AGREED and CONCLUDED to make your pa=
+yment through WESTERN UNION MONEY TRANSFER, $10,000 USD per payment, and yo=
+u will receive as many times as you can daily, until the total amount of $2=
+.7 million USD is fully transferred to you. They will not be able to send t=
+he payment with your email address alone or without re-confirming your comp=
+lete information, so we want you to contact Mr. Jerry Campbell of the WESTE=
+RN UNION with your full information, to enable him to send your compensatio=
+n fund to you.<br><br>The Director of Administrator's Trust Fund has alread=
+y signed your payment and you must contact Western Union to ensure that you=
+r FUND is transferred to you as soon as you send them the required informat=
+ion to avoid any false CLAIMS. As per the requirement of the WESTERN UNION =
+Office, You will be receiving your funds in installment of $10,000.00 per p=
+ayment until the complete amount ($2.7 million) is fully transferred to you=
+. To avoid any wrong transfer, please contact them now and provide to them =
+the following information.<br><br>Your Full Names:<br>Cell/Telephone Number=
+s:<br>Home or Office Address:<br>Your Country:<br>A Copy Of Your Identifica=
+tion:<br><br>Listen very carefully, tell Mr. Jerry Campbell that the Intern=
+ational Monetary Fund (IMF) advised you to contact him. He is expecting you=
+r message. Below is his contact information.<br><br>Director Mr. Jerry Camp=
+bell<br><br>Email: <a href=3D"mailto:wumt.paydeptt@gmail.com">wumt.paydeptt=
+@gmail.com</a><br><br>Telephone Number: +256-751-998-494<br>Whats-App: +256=
+-751-998-494<br><br>Please, do not forget to update me as soon as you start=
+ receiving your payment. Also note that the only fee you will have to pay t=
+hem is your payment account ACTIVATION fee only. As soon as you send them y=
+our complete information as stated above, including the activation fee, the=
+y will start sending your funds to you without any delay.<br><br>Best Regar=
+ds<br>Mrs Cecilia Ralph<br><br><br><br></div>
+
+--0000000000006aa373064c2d5899--

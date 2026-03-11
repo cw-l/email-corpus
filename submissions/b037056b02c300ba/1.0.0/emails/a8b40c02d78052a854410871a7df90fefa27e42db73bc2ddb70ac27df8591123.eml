@@ -1,0 +1,992 @@
+Authentication-Results: spf=pass (sender IP is 192.174.84.127)
+ smtp.mailfrom=rp.onlinedhl-team.intercom-mail.com; dkim=pass (signature was
+ verified) header.d=onlinedhl-team.intercom-mail.com;dmarc=pass action=none
+ header.from=onlinedhl-team.intercom-mail.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:39B35987A9C2226B3355EC0AB9EE764A92B0CB7220A931E0CCAC924329042AA5;UpperCasedChecksum:0E99EEA8F0039C047F1DDE2B370CD55858B9DAD7766FB216BA0036422586DFA5;SizeAsReceived:1791;Count:17
+X-MSFBL: 6AxAX2t4XLvMqqqUMYReFSrfNs94w2zy2e19EE7W7dk=|eyJjdXN0b21lcl9pZCI
+	6IjEiLCJyIjoibGVlLmNoZW5nd2VpQGhvdG1haWwuc2ciLCJ0ZW5hbnRfaWQiOiJ
+	pbnRlcmNvbSIsIm1lc3NhZ2VfaWQiOiI2MjFkOGViZjI2NjIxM2E0M2IyYiIsInN
+	1YmFjY291bnRfaWQiOiIzMTk3NzgifQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=onlinedhl-team.intercom-mail.com; s=intercom; t=1646706574;
+	i=@onlinedhl-team.intercom-mail.com;
+	bh=hY5LXvSN7TNeFIVxhvMVOgqq/rvm5VW52rLTY79RypA=;
+	h=To:Content-Type:Date:Message-ID:Subject:From;
+	b=waLlwtVzr7jmJCHVBvwKXNp2/O4DBq6Mg2JuXPDRiSPj8N+bSwGxZWBWj53MIX+DJ
+	 nKaYsql1MHS+4VaPK7dNQ6qkRVhtOPtVQa492OqYNmuxrf3l6x7vptHIExx9zkvNyY
+	 bxfhZ3IFNgzwAWUzwfT1vBrhYQGRyfd+LpKzxlTk=
+To: redacted@redacted.com
+Content-Type: multipart/alternative;
+ boundary="_----Lr2KXzaLsskYOHZKyJHDDw===_33/B2-20276-E8FB6226"
+X-Mailgun-Variables: 
+ {"app_id":"tavnr5du","conversation_id":"139884","user_id":"6226bf8c7952d9388b31fe0a","intercom_localized_email_content_id":"8929843"}
+Date: Tue, 08 Mar 2022 02:29:33 +0000
+X-Mailgun-Tag: user-personal
+X-Intercom-App-Id: tavnr5du
+X-Intercom-Bin: 300
+Reply-To: "E-mail from OnlineDHL TEAM."
+ <support@onlinedhl-team.intercom-mail.com>
+Message-ID: 
+ <6844fe09-9b2d94fc-1646706573-139884@onlinedhl-team.intercom-mail-300.com>
+X-Report-Abuse: Please report spam or abuse to abuse@intercom.io
+Subject: fw: [DHL]: Your package is awaiting delivery
+From: "E-mail from OnlineDHL TEAM." <support@onlinedhl-team.intercom-mail.com>
+X-Auto-Response-Suppress: OOF, AutoReply
+List-Unsubscribe: 
+ <mailto:unsubscribe_139884_6226bf8c7952d9388b31fe0a@onlinedhl-team.intercom-mail.com>,
+ <https://onlinedhl-team.intercom-mail.com/subscriptions/unsubscribe?app_id=tavnr5du&conversation_id=139884&user_id=6226bf8c7952d9388b31fe0a&source=header>
+X-IncomingHeaderCount: 17
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Mar 2022 02:29:38.0894
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 5ea5c186-bd3a-46af-79d1-08da00ab7e12
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource: 
+ SN1NAM02FT0043.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/25/2021 1:19:19 AM
+X-MS-Office365-Filtering-Correlation-Id: 5ea5c186-bd3a-46af-79d1-08da00ab7e12
+X-MS-TrafficTypeDiagnostic: DM5PR17MB0939:EE_
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 192.174.84.127
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Mar 2022 02:29:37.8863
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 5ea5c186-bd3a-46af-79d1-08da00ab7e12
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SN1NAM02FT0043.eop-nam02.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR17MB0939
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8942242
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5038.027
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000285)(90000117)(90005022)(91005020)(91035115)(5061607266)(5061608174)(9050020)(9100338)(2008001134)(2008000189)(2008120399)(2008019284)(2008021020)(8390246)(8377080)(8386120)(8403086)(210498285)(210499095)(210410095)(4810003)(4910013)(9575002)(10195002)(9320005);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ e7Stx1IEWhri6VAuHPb3uFL6sUlGC/MThkugxPSHQR/22IW8gyJ+9Tb1axcrZrCNb8ENfcvyCNpaI6+81wezhJrBHEwx/d2q203m2+jABltJe2HVW7aK4Rt3XgYiFDjhTeGQFzCWGBDHrnX29fLJouh/1yTFPX8X3p4P60kv0FMzyFo1yJK105rm5c+iHHwTatEEZ6mS/zxC3srog5oPZYeUfE7X5le/NtXQsQ7LBK+ZzlV7EgvgZD65XK4E2kyW+g0399Z3AFO1wCxoapn2m0zWtBJBaW7/gdESgW8Tmbbn99A5IF+witLxmVPvaPD/kqqVtk0/q7bj0bKy5WWi+13gQLBHJ4L4NgM5N75Q3kquJmJgMVoW1QFD3Tgps3nFDQXBaWYdpKRG6gU3nDjMYlJ1XOLrXpG14h3GfX7jZWAr8rHPxhIrgGkJV4tj1+gNji9guwjvgi5kaHWa+c+H+VtDryZDQlN3cTBavZd7TsTyIELV01OvKS8B3PnWosM3yAGbqQEn4wO/WxxcspmpecO3vLCE4490iwMzO4Ve2p7afVQ9JJf1sEGVqC5GOz3yB+TMbbdmHS4tEswfg5bxVbjrBRW/YzNgIeZKA1EWj+WhGt+ybt/UQ51RgseW6SHo8udVjon99KE+yYroB4UKyO9YVelH3DyR781O4iQiSDVMdpKoLFxbJTgBExZ1INVg4O6vamJmdx4Gu/++B1qfFa9J/GC6/0zQANtbAwzojgMNgdd4lm9SSZTv0yLNnqnGvL7RwW5JCXltU8F7Yjrc4xC3zqIDo7ZhPO0xX9hvWyd/lO0ycquvTXbwFBG+zCZK8kHjsTaYMx1NJ+ibbhleJO7hpxRzBzB6Il3DY6zVvH8/Dl2cggk5G4h9biKNBsE36SZL4KF9mMeXu/l3Cw/RjW7QohM7P2aYFf6UNbveRBa8Acuhx8SYKtqR7sBTSudKBvIP4VJPXC04933EaAU3RZGYZsewUsFcriLJpgjifMTj9tG4Qznl1dBEOy8CiBij8U4Mi7OcmB4mtV8gZRg92SQLQSnAD7eTJWDnQ2s4HmSIx4E5vPVC/XxJxBX2MzCFmqN8DB8Brog+tlAyVO8aEy8c0+de+tbZjOWP2eELcT46sIyP6iTUQe5gnLxY1vqBpZjEH4dmwGj5mktBvcutv84aN0+qQ4yr0EmbepbhIRsBQgY1ezvjmvGHWwEsb2+AzaK57uMH9iqLkw6ByRt5L+NDvR1Aj2PoF82aoqUID9wYM7/5Elst+32XFZPOt0vw6/PL3vQhnC4zMxoghXo/IXwhBMvtMjRjj/aP0pyAEqWRCZTRDNXvFjnmgfIlodKdU+15saRTkwtMrPdzrOy2fmUVhFBHldyLn9rfiVmQ0ihS0JkzoGROMh+bMNOqQZW1WUvpK2iZDHQqmJwpBumfF4ngf8igEKqgQ80G+CtEB1yRY/DqI/BMuNPENI0h482kuAWQhsKX/ULz2PJpQelaDGAi+k0y64k/XfytipKTYHmYmShWO9TAwcn5U5tBzLVqx3f3pcJym1MCQxKGHgwHlA==
+MIME-Version: 1.0
+
+--_----Lr2KXzaLsskYOHZKyJHDDw===_33/B2-20276-E8FB6226
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+[Image "ACtC-3cElNBIJg-zc1S6d94MVu6FAqf-3-WH09-UJzHcBFHgyrM_C6m7NUXRXnOwE1U=
+RiFs74SNGXfOto2WrN5CJvr_Ywxk-wnW6mOHib-RqniJCVODQrA7BmLCWVeQR_TYyTqKbWhF4hf=
+VsDvG7STRKXuO8=3Dw600-h114-no"]=20
+ we regret to inform you that your order=20
+ DHL468545215485=20
+ is deferred due to unpaid import duties.(1,99 USD),=20
+ Your Order will be delivered after receipt of payment,=20
+ click here to pay.=20
+ hxxps://dhl[.]com/delivery/Pay/?tid=3DDHL468545215485=20
+ Order number : #DHL468545215485 =EF=BB=BF=20
+ To apologize the inconvenience=20
+ DHL =EF=BB=BFwww.dhl.com=20
+ This message is sent automatically, please do not reply. =EF=BB=BFFor ques=
+tions or more information, please visit www.dhl.com/en/contact-us
+--_----Lr2KXzaLsskYOHZKyJHDDw===_33/B2-20276-E8FB6226
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "hxxp://www[.=
+]w3[.]org/TR/REC-html40/loose[.]dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<style type=3D"text/css">
+  #PreviewIntercomModal .ic_message_content h1,
+  #PreviewIntercomModal .ic_message_content h2 {
+    color: #0072b0 !important;
+  }
+  #PreviewIntercomModal .ic_message_without_image > .ic_message_internals >=
+ .ic_message_content {
+    border-color: #0072b0 !important;
+  }
+  #PreviewIntercomModal .ic_user_comment_body {
+    background-color: #0072b0 !important;
+    border-color: #0072b0 !important;
+  }
+  #PreviewIntercomModal .ic_message_content a {
+    color: #0072b0 !important;
+  }
+  #PreviewIntercomModal .ic_message_content a:hover {
+    color: #0072b0 !important;
+  }
+  #PreviewIntercomModal .ic_user_comment_body {
+    background-color: #0072b0 !important;
+    border-color: #0072b0 !important;
+  }
+  .intercom-h2b-button br {
+    display: none;
+  }
+</style>
+<style type=3D"text/css" data-premailer=3D"ignore">
+  /* styles in here will not be inlined. Use for media queries etc */
+  /* force Outlook to provide a "view in browser" menu link. */
+  #outlook a {padding:0;}
+  /* prevent Webkit and Windows Mobile platforms from changing default font=
+ sizes.*/
+  body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-=
+adjust:100%; margin:0; padding:0;}
+  /* force Hotmail to display emails at full width */
+  .ExternalClass {width:100%;}
+  /* force Hotmail to display normal line spacing. hxxp://www[.]emailonacid=
+[.]com/forum/viewthread/43/ */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass fon=
+t, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+  /* fix a padding issue on Outlook 07, 10 */
+  table td {border-collapse: collapse;}
+  table {
+    table-layout: fixed;
+  }
+
+  @media only screen and (max-width: 480px)
+  {
+    br.hidden { display: block !important; }
+    td.padding_cell { display: none !important; }
+    table.message_footer_table td {
+      font-size: 11px !important;
+    }
+  }
+  @media only screen and (max-device-width: 480px)
+  {
+    br.hidden { display: block !important; }
+    td.padding_cell { display: none !important; }
+    table.message_footer_table td {
+      font-size: 11px !important;
+    }
+  }
+</style>
+
+<style type=3D"text/css" data-premailer=3D"ignore">
+  /* styles in here will not be inlined. Use for media queries etc */
+  /* force Outlook to provide a "view in browser" menu link. */
+  #outlook a {padding:0;}
+  /* prevent Webkit and Windows Mobile platforms from changing default font=
+ sizes.*/
+  body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-=
+adjust:100%; margin:0; padding:0;}
+  /* force Hotmail to display emails at full width */
+  .ExternalClass {width:100%;}
+  /* force Hotmail to display normal line spacing. hxxp://www[.]emailonacid=
+[.]com/forum/viewthread/43/ */
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass fon=
+t, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+  /* fix a padding issue on Outlook 07, 10 */
+  table td {border-collapse: collapse;}
+
+  @media only screen and (max-width: 480px)
+  {
+    br.hidden { display: block !important; }
+    td.padding_cell { display: none !important; }
+    table.message_footer_table td {
+      font-size: 11px !important;
+    }
+  }
+  @media only screen and (max-device-width: 480px)
+  {
+    br.hidden { display: block !important; }
+    td.padding_cell { display: none !important; }
+    table.message_footer_table td {
+      font-size: 11px !important;
+    }
+  }
+</style>
+
+<style type=3D"text/css">
+
+  body {
+    background-color: #f9f9f9;
+  }
+
+  .content-td {
+     background-color: white
+   }
+  .admin_name b {
+    color: #6f6f6f;
+  }
+
+  .date_cell a {
+    color: #999999;
+  }
+
+  .comment_header_td {
+    width: 100%;
+    background: #0071b2;
+    border: none;
+    font-family: 'Helvetica Neue',Arial,sans-serif
+  }
+
+  .content-td {
+    color: #525252;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .content-td h1 {
+    font-size: 26px;
+    line-height: 33px;
+    color: #282F33;
+    margin-bottom: 7px;
+    margin-top: 30px;
+    font-weight: normal;
+  }
+
+  .content-td h1 a {
+    color: #282F33;
+  }
+
+  .content-td h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #282F33;
+    margin: 30px 0 7px;
+  }
+
+  .content-td h2 a {
+    color: #282F33;
+  }
+
+  .content-td h1 + h2 {
+    margin-top: 0 !important;
+  }
+
+  .content-td h2 + h1 {
+    margin-top: 0 !important;
+  }
+
+  .content-td h3 ,
+  .content-td h4 ,
+  .content-td h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .content-td p {
+    margin: 0 0 17px 0;
+    line-height: 1.5;
+  }
+
+  .content-td p img,
+  .content-td h1 img,
+  .content-td h2 img,
+  .content-td li img,
+  .content-td .intercom-h2b-button img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-td a {
+    color: #1251ba;
+  }
+
+  .content-td p.intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .content-td blockquote {
+    margin: 40px 0;
+    font-style: italic;
+    color: #8C8C8C;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 30px;
+    font-family: Georgia, sans-serif;
+    quotes: none;
+  }
+
+  .content-td blockquote a {
+    color: #8C8C8C;
+  }
+
+  .content-td ul {
+    list-style: disc;
+    margin: 0 0 20px 40px;
+    padding: 0;
+  }
+
+  .content-td ol {
+    list-style: decimal;
+    margin: 0 0 20px 40px;
+    padding: 0;
+  }
+
+  .content-td img {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .content-td .intercom-container {
+    margin-bottom: 16px;
+  }
+
+  .content-td div.intercom-container {
+    margin-bottom: 17px;
+    margin-top: 17px;
+    line-height: 0;
+  }
+
+  .content-td table.intercom-responsive-layout-table div.intercom-container=
+,
+  .content-td table.intercom-responsive-layout-table div.embercom-prosemirr=
+or-composer-block-container {
+      margin-top: 0;
+  }
+
+  .content-td hr {
+    border: none;
+    border-top: 1px solid #DDD;
+    border-bottom: 0;
+    margin: 50px 30% 50px 30%;
+  }
+
+  /**/
+  .content-td pre {
+    margin: 0 0 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    overflow: auto;
+  }
+
+  .content-td pre code {
+    font-family: Courier, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  table.intercom-container {
+    margin: 17px 0;
+  }
+  table.intercom-container.intercom-align-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table.intercom-container td {
+    background-color: #0071b2;
+    padding: 12px 35px;
+    border-radius: 3px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+
+  .content-td .intercom-h2b-button {
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0071b2;
+    border: none !important;
+   =20
+  }
+
+  .content-td table.intercom-responsive-layout-table {
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+  }
+
+  .content-td table.intercom-responsive-layout-table td {
+    word-wrap: break-word;
+   =20
+    -moz-hyphens: auto;
+    hyphens: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+    color: #525252;
+    font-size: 15px;
+    vertical-align: top;
+    text-align: left;
+   =20
+  }
+ =20
+  .content-td table.intercom-responsive-layout-table td.columns {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    min-width: none !important;=20
+  }
+
+  a.intercom-h2b-button {
+    background-color: #0E4595;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    color:#fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 20px;
+    text-decoration: none;
+  }
+
+  .content-td .intercom-h2b-button:hover {
+    background-color:#0084d0;
+  }
+
+  .message_footer_table .avatar {
+    -ms-interpolation-mode: bicubic;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: 20px;
+    background-clip: padding-box;
+    border-radius: 20px;
+    display: inline-block;
+    height: 40px;
+    max-width: 100%;
+    outline: none;
+    text-decoration: none;
+    width: 40px;
+  }
+
+  .powered-by-table .powered-by-text a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #999;
+  }
+
+  .main_wrapper {
+    padding: 0 20px;
+  }
+
+  .margin-arrow {
+    display: none;
+   =20
+    visibility:hidden;
+    width:0;
+    height:0;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .content-td > :first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  table.intercom-container td > a.intercom-h2b-button {
+     padding: 0px;
+   }
+
+</style>
+
+<!-- Responsive-->
+<style type=3D"text/css" data-premailer=3D"ignore">
+
+  @media screen and (max-width: 635px) {
+    .main-wrap {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .content-td {
+      padding: 30px 15px !important;
+    }
+    .content-td h1 {
+      margin-bottom: 5px;
+    }
+    .message_footer_table .space {
+      width: 20px !important;
+    }
+
+    .message_footer_table .arrow-wrap {
+      padding-left: 20px !important;
+    }
+
+    .message_footer_table .admin_name b{
+      display: block !important;
+    }
+
+    .main_wrapper {
+      padding: 0;
+    }
+
+    .image-arrow {
+      display: none !important;
+    }
+
+    .margin-arrow {
+      display: table !important;
+      visibility:visible !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: none !important;
+      max-height: none !important;
+      opacity: 1 !important;
+      overflow: visible !important;
+    }
+
+    .comment_body {
+      border-bottom: 1px solid #DDD !important;
+    }
+
+    .footer-td-wrapper {
+      display: block !important;
+      width: 100% !important;
+      text-align: left !important;
+    }
+    .footer-td-wrapper .date_cell {
+      text-align: left !important;
+      padding: 15px 0 0 20px !important;
+    }
+  }
+
+</style>
+
+
+<style type=3D"text/css" data-premailer=3D"ignore">
+  .content-td blockquote + * {
+    margin-top: 20px !important;
+  }
+
+  .ExternalClass .content-td h1 {
+    padding: 20px 0 !important;
+  }
+
+  .ExternalClass .content-td h2 {
+    padding: 0 0 5px !important;
+  }
+
+  .ExternalClass .content-td p {
+    padding: 10px 0 !important;
+  }
+
+.ExternalClass .content-td .intercom-container {
+    padding: 5px 0 !important;
+  }
+
+  .ExternalClass .content-td hr + * {
+    padding-top: 30px !important;
+  }
+
+  .ExternalClass .content-td ol ,
+  .ExternalClass .content-td ul {
+    padding: 0 0 20px 40px !important;
+    margin: 0 !important;
+  }
+
+  .ExternalClass .content-td ol li,
+  .ExternalClass .content-td ul li {
+    padding: 3px 0 !important;
+    margin: 0 !important;
+  }
+  .content-td > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .ExternalClass .content-td > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+</style>
+
+
+
+<style type=3D"text/css">
+  .intercom-align-right {
+  text-align: right !important;
+}
+.intercom-align-center {
+  text-align: center !important;
+}
+.intercom-align-left {
+  text-align: left !important;
+}
+/* Over-ride for RTL */
+.right-to-left .intercom-align-right{
+  text-align: left !important;
+}
+.right-to-left .intercom-align-left{
+  text-align: right !important;
+}
+.right-to-left .intercom-align-left {
+  text-align:right !important;
+}
+.right-to-left li {
+  text-align:right !important;
+  direction: rtl;
+}
+.right-to-left .intercom-align-left img,
+.right-to-left .intercom-align-left .intercom-h2b-button {
+  margin-left: 0 !important;
+}
+.intercom-attachment,
+.intercom-attachments,
+.intercom-attachments td,
+.intercom-attachments th,
+.intercom-attachments tr,
+.intercom-attachments tbody,
+.intercom-attachments .icon,
+.intercom-attachments .icon img {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.intercom-attachments {
+  margin: 10px 0 !important;
+}
+.intercom-attachments .icon,
+.intercom-attachments .icon img {
+  width: 16px !important;
+  height: 16px !important;
+}
+.intercom-attachments .icon {
+  padding-right: 5px !important;
+}
+.intercom-attachment {
+  display: inline-block !important;
+  margin-bottom: 5px !important;
+}
+
+.intercom-interblocks-content-card {
+  width: 334px !important;
+  max-height: 136px !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+  font-size: 16px !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.intercom-interblocks-link,
+.intercom-interblocks-article-card {
+  text-decoration: none !important;
+}
+
+.intercom-interblocks-article-icon {
+  width: 22.5% !important;
+  height: 136px !important;
+  float: left !important;
+  background-color: #fafafa !important;
+  background-image: url('hxxps://onlinedhl-team[.]intercom-mail[.]com/asset=
+s/article_book-1a595be287f73c0d02f548f513bfc831[.]png') !important;
+  background-repeat: no-repeat !important;
+  background-size: 32px !important;
+  background-position: center !important;
+}
+
+.intercom-interblocks-article-text {
+  width: 77.5% !important;
+  float: right !important;
+  background-color: #fff !important;
+}
+
+.intercom-interblocks-link-title,
+.intercom-interblocks-article-title {
+  color: #519dd4 !important;
+  font-size: 15px !important;
+  margin: 16px 18px 12px !important;
+  line-height: 1.3em !important;
+  overflow: hidden !important;
+}
+
+.intercom-interblocks-link-description,
+.intercom-interblocks-article-body {
+  margin: 0 18px 12px !important;
+  font-size: 14px !important;
+  color: #65757c !important;
+  line-height: 1.3em !important;
+}
+
+.intercom-interblocks-link-author,
+.intercom-interblocks-article-author {
+  margin: 10px 15px !important;
+  height: 24px !important;
+  line-height: normal !important;
+}
+
+.intercom-interblocks-link-author-avatar,
+.intercom-interblocks-article-author-avatar {
+  width: 16px !important;
+  height: 16px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  float: left;
+  margin-right: 5px;
+}
+
+.intercom-interblocks-link-author-avatar-image,
+.intercom-interblocks-article-author-avatar-image {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  vertical-align: top !important;
+  font-size: 12px !important;
+}
+
+.intercom-interblocks-link-author-name,
+.intercom-interblocks-article-author-name {
+  color: #74848b !important;
+  margin: 0 0 0 5px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  overflow: hidden !important;
+}
+
+.intercom-interblocks-article-written-by {
+  color: #8897a4 !important;
+  margin: 1px 0 0 5px !important;
+  font-size: 12px !important;
+  overflow: hidden !important;
+  vertical-align: middle !important;
+  float: left !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body class=3D"intercom-template-body" style=3D"background-color: #f9f9f9" =
+bgcolor=3D"#f9f9f9">
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"hxxps://onlinedhl-team[.]intercom-mail[.]=
+com/q/fN828NDIGLLP56msXQr90g~~/AAAAAQA~/RgRkCUSOPVcIaW50ZXJjb21CCmIdjr8mYhO=
+kOytSF2xlZS5jaGVuZ3dlaUBob3RtYWlsLnNnWAQABOEi" alt=3D""></div>
+
+<style type=3D"text/css">
+body {
+background-color: #f9f9f9;
+}
+</style>
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"bgtc perso=
+nal" align=3D"center" style=3D"border-collapse: collapse; line-height: 100%=
+ !important; margin: 0; padding: 0; width: 100% !important">
+  <tbody>
+<tr>
+    <td>
+    <!--[if (gte mso 10)]>
+      <tr>
+      <td>
+      <table style=3D"width: 600px">
+    <![endif]-->
+      <table style=3D"border-collapse: collapse; margin: auto; max-width: 6=
+35px; min-width: 320px; width: 100%" class=3D"main-wrap">
+        <tbody>
+<tr>
+          <td valign=3D"top">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"reply_header_table" style=3D"border-collapse: collapse; color: #c0c0c0;=
+ font-family: 'Helvetica Neue',Arial,sans-serif; font-size: 13px; line-heig=
+ht: 26px; margin: 0 auto 26px; width: 100%">
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td valign=3D"top" class=3D"main_wrapper" style=3D"padding: 0 20p=
+x">
+
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=
+=3D"comment_wrapper_table admin_comment" align=3D"center" style=3D"-webkit-=
+background-clip: padding-box; -webkit-border-radius: 3px; background-clip: =
+padding-box; border-collapse: collapse; border-radius: 3px; color: #545454;=
+ font-family: 'Helvetica Neue',Arial,sans-serif; font-size: 13px; line-heig=
+ht: 20px; margin: 0 auto 10px; width: 100%">
+              <tbody>
+<tr>
+                <td valign=3D"top" class=3D"comment_wrapper_td">
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" c=
+lass=3D"comment_body" style=3D"-webkit-background-clip: padding-box; backgr=
+ound-clip: padding-box; border-bottom-style: none; border-collapse: collaps=
+e; width: 100%">
+                    <tbody>
+<tr>
+                      <td class=3D"comment_body_td content-td intercom-temp=
+late-content" style=3D"-webkit-background-clip: padding-box; -webkit-border=
+-radius: 0 0 3px 3px; background-clip: padding-box; background-color: white=
+; border-radius: 0 0 3px 3px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); =
+color: #525252; font-family: 'Helvetica Neue',Arial,sans-serif; font-size: =
+15px; line-height: 22px; overflow: hidden; padding: 40px 40px 30px" bgcolor=
+=3D"white">
+                       =20
+
+                       =20
+                          <div class=3D"intercom-container" style=3D"line-h=
+eight: 0; margin-bottom: 17px; margin-top: 17px; padding-top: 0"><img src=
+=3D"hxxps://lh3[.]googleusercontent[.]com/pw/ACtC-3cElNBIJg-zc1S6d94MVu6FAq=
+f-3-WH09-UJzHcBFHgyrM_C6m7NUXRXnOwE1URiFs74SNGXfOto2WrN5CJvr_Ywxk-wnW6mOHib=
+-RqniJCVODQrA7BmLCWVeQR_TYyTqKbWhF4hfVsDvG7STRKXuO8=3Dw600-h114-no" style=
+=3D"margin: 0; max-width: 100%"></div>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px"></p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">we regr=
+et to inform you that your order</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px"><b>DHL4=
+68545215485</b></p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">is defe=
+rred due to unpaid import duties.(<b>1,99 USD</b>),</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">Your Or=
+der will be delivered after receipt of payment,</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">click h=
+ere to pay.</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px"><a href=
+=3D"hxxps://onlinedhl-team[.]intercom-clicks[.]com/via/e?ob=3DHl%2B84kQl61h=
+1LHIsfHaIqqEMFGQKe3ya%2BSWsO%2BM9cQDG3qHf6h8GMKZ7Fe%2F1DeNW&amp;h=3De8a7d62=
+d1de67d2378ac0c96bbaacf0110360a9f-tavnr5du_139884" target=3D"_blank" class=
+=3D"intercom-content-link" style=3D"color: #1251ba">hxxps://dhl[.]com/deliv=
+ery/Pay/?tid=3DDHL468545215485</a></p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">Order n=
+umber : #DHL468545215485<br>=EF=BB=BF</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px">To apol=
+ogize the inconvenience</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px"><b>DHL<=
+/b><br>=EF=BB=BFwww.dhl.com</p>
+<p class=3D"no-margin" style=3D"line-height: 1.5; margin: 0 0 17px"><i>This=
+ message is sent automatically, please do not reply.<br>=EF=BB=BFFor questi=
+ons or more information, please visit <a href=3D"hxxps://onlinedhl-team[.]i=
+ntercom-clicks[.]com/via/e?ob=3DO9ONfdfV4W2yqLSHETw14E%2B0%2BEzpVitADaW8HPA=
+Wxvxme5Spw28ho%2FPy4CRpMlSA&amp;h=3D04cf776c3f62dfbbd745ccd6d41ec2b9968c924=
+8-tavnr5du_139884" target=3D"_blank" class=3D"intercom-content-link" style=
+=3D"color: #1251ba">www.dhl.com/en/contact-us</a></i></p>
+                       =20
+
+                       =20
+                      </td>
+                    </tr>
+                   </tbody>
+</table>
+                  </td>
+                 </tr>
+                </tbody>
+</table>
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" cla=
+ss=3D"message_footer_table" align=3D"center" style=3D"border-collapse: coll=
+apse; color: #545454; font-family: 'Helvetica Neue',Arial,sans-serif; font-=
+size: 13px; line-height: 20px; margin: 0 auto; max-width: 100%; width: 100%=
+">
+                  <tbody><tr>
+                  </tr></tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                      <tbody>
+<tr>
+                        <td width=3D"75%" class=3D"footer-td-wrapper">
+                          <table width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" style=3D"border-collapse: collapse; color: #545454; f=
+ont-family: 'Helvetica Neue',Arial,sans-serif; font-size: 13px; line-height=
+: 20px; margin: 0 auto; max-width: 100%; width: 100%" class=3D"message_foot=
+er_table">
+                            <tbody>
+<tr>
+                              <td width=3D"40" class=3D"space">&nbsp;</td>
+                             =20
+                              <td class=3D"admin_name" style=3D"color: #999=
+999">
+                                <b style=3D"color: #6f6f6f">E-mail</b> from=
+ OnlineDHL TEAM.
+
+                              </td>
+                            </tr>
+                          </tbody>
+</table>
+                        </td>
+                        <td width=3D"25%" class=3D"footer-td-wrapper">
+                          <table width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" style=3D"border-collapse: collapse; color: #545454; f=
+ont-family: 'Helvetica Neue',Arial,sans-serif; font-size: 13px; line-height=
+: 20px; margin: 0 auto; max-width: 100%; width: 100%" class=3D"message_foot=
+er_table">
+                            <tbody>
+<tr>
+                              <td valign=3D"middle" align=3D"right" class=
+=3D"date_cell" style=3D"color: #999999; font-size: 11px; text-align: right"=
+>
+
+                               =20
+                                 =20
+                               =20
+                              </td>
+                            </tr>
+<tr>
+                          </tr>
+</tbody>
+</table>
+                        </td>
+                      </tr>
+                    </tbody>
+</table>
+                  </td>
+</tr>
+                </tbody>
+</table>
+              </td>
+            </tr>
+            <tr>
+              <td valign=3D"top" height=3D"20"></td>
+            </tr>
+          </tbody>
+</table>
+          <!--[if (gte mso 10)]>
+            </td>
+            </tr>
+            </table>
+          <![endif]-->
+       =20
+     =20
+   =20
+   =20
+        <table style=3D"border-collapse: collapse; color: #545454; font-fam=
+ily: 'Helvetica Neue',Arial,sans-serif; font-size: 13px; letter-spacing: 0.=
+02em; line-height: 20px; margin: 0 auto; max-width: 100%; width: 100%" clas=
+s=3D"powered-by-table">
+          <tbody>
+<tr>
+            <td class=3D"powered-by-text" style=3D"color: #999999; font-siz=
+e: 11px; padding: 15px 0; text-align: center; width: 100%" align=3D"center"=
+>
+              Powered by <a href=3D"hxxps://onlinedhl-team[.]intercom-mail[=
+.]com/via/e?ob=3D817AV%2BA05yAOlSfMMLVHFsE1Y%2BT3MxgPeliq5Bx1yd2pUIGysWhH6V=
+eI6Eqsfxv5TacCVX3kKL6NApozzw5Ul0VoXqtMp8kXGDPuLd%2Bt%2BRF9myydPd4X2Qgytqq8h=
+cLA&amp;h=3Dc57ca92364372a9666070da2c337026d6449b3dc-tavnr5du_139884" style=
+=3D"color: #999; font-weight: bold; text-decoration: none">Intercom</a><br>
+            </td>
+          </tr>
+        </tbody>
+</table>
+   =20
+
+
+<img src=3D"hxxps://onlinedhl-team[.]intercom-mail[.]com/via/o?h=3De229c0fd=
+042facb635d5db98e821d31f0d45a0ab-tavnr5du_139884" width=3D"1" height=3D"1" =
+style=3D"display: block;" alt=3D"intercom">
+
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"hxxps://onlinedh=
+l-team[.]intercom-mail[.]com/q/LZ7zfKu2ZMbEsg97otK-TQ~~/AAAAAQA~/RgRkCUSOPl=
+cIaW50ZXJjb21CCmIdjr8mYhOkOytSF2xlZS5jaGVuZ3dlaUBob3RtYWlsLnNnWAQABOEi">
+</body>
+</html>
+--_----Lr2KXzaLsskYOHZKyJHDDw===_33/B2-20276-E8FB6226--

@@ -1,0 +1,212 @@
+Authentication-Results: spf=pass (sender IP is 209.85.222.71)
+ smtp.mailfrom=substackss.firebaseapp.com; dkim=pass (signature was verified)
+ header.d=firebaseapp.com;dmarc=permerror action=none
+ header.from=substackss.firebaseapp.com;compauth=pass reason=111
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:97C13A581F08DEB33051F900C96C95D49A564456D6B4A2EEE7AADE8C41B85421;UpperCasedChecksum:25250DE3C3297329C7A18BF7CC192CBED43AF44142D5677DF8D00EE4DB3FC331;SizeAsReceived:2282;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=firebaseapp.com; s=20230601; t=1770873359; x=1771478159;
+ darn=hotmail.sg;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=DFWw16e6Xdk1kShbXqtabSoz2mdATEceFFhLjOdDthY=;
+        b=FiV1ibDkXFivvxXMmHwG4frqbAWqwF4wF9CmIrKHng2w3LeLSYpzMvET0y6/V8ig2y
+         N4IcTTCjIZ88RoQKCWi5gkeCjo9LaElEtmXKwabIVrNIWas50iBAYA4qlAPb8653Q6FI
+         KO3D3zM5N1d04oX7XjsDVxqfAAoIhHJSEMcXRl6HdW6+HcEnJjvxaLFjTuKLww5cF6sZ
+         gB5Dw/nI3QC/iO/yFoehvmJ5JF+mFc/fcdLPZPr9/L+mEblm7WxM9161jteV+K+mfBGC
+         oRCphWTKOhF4JEaaXVXY+o58f4xG20dNtoV/benjmp4io4jfTVQWrwqFNSzf+U0DFowq
+         G85w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1770873359; x=1771478159;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=DFWw16e6Xdk1kShbXqtabSoz2mdATEceFFhLjOdDthY=;
+        b=kHZ0y3+eQXS+1ET3jN7AO+9og6B8NrHsXTD/OEoegEVyA69OGTDYaHIJRHkLO/UwOp
+         YWvWJ3qPOqqYQ1FlEFOBnqIlKIO1ucX01ijq0v2qJ8OsnC640BFUvuFygyenjhfiejX1
+         272yx9hjFGBwQouWuEcbMUdGpvgLi20Q+Ihz162ECEYs3MFd9r9ADQ+C/k+R0zS35YeG
+         xKoNEAZ9laDVedpRzVFsGRU1EAdv6r0HUVwrGTXddOQucZiTBr9KbEhRbbMMEjA+ErbL
+         tXSRkD3WbiyY4kw/jExUPkM/R4Dts8NZKvtsIw/8cr2wPbvekPbDQYC2U70zCY9kApu+
+         638Q==
+X-Gm-Message-State: AOJu0YziiioJyKHG1GZOKlkxjTNiviQgaMirqkkBxuHmC7DaE5KyaXO2
+	xgAt23CKQKu0jWy/d+u1oL4DS8FXgFMvKlabhPNqliC7+68r8JUuZYgq7qERmtLiqkSyuOMo7d8
+	GsTdu8hoy6Q==
+Message-ID: <0000000000008a523d064a99957c@google.com>
+Date: Thu, 12 Feb 2026 05:15:59 +0000
+Subject: Account Notice: Digital Token Update Needed
+From: "DBS/POSB." <noreply@substackss.firebaseapp.com>
+To: redacted@redacted.com
+Content-Type: multipart/alternative; boundary="0000000000008a522a064a999579"
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Feb 2026 05:15:59.8314
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 57eeb5cf-90c9-4bc3-2fa1-08de69f5cf42
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL02EPF00021F6D:EE_|LV3P220MB1272:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL02EPF00021F6D.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 57eeb5cf-90c9-4bc3-2fa1-08de69f5cf42
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.222.71
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|461199028|69000799018|9020799016|58200799021|2700799029|13020799006|51300799021|87000799018|9800799015|970799060|46080799006|9400799043|10300799038|9000799056|70000799015|45200799018|32020799003|1680799066|34130799006|4302099013|440099028|3412199025|30041999003|26104999006|22062799003|1380799030|1360799030|1370799030|56899033|1602099012|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Feb 2026 05:15:59.8055
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 57eeb5cf-90c9-4bc3-2fa1-08de69f5cf42
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL02EPF00021F6D.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV3P220MB1272
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1028342
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9587.013
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--0000000000008a522a064a999579
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Logo
+
+
+
+
+Dear Customer,
+
+We are writing to let you know that the authentication token associated  
+with your DBS/POSB account is no longer valid. As a result, certain online  
+banking services, including card-related transactions, may be temporarily  
+affected.
+
+To ensure uninterrupted access to your digital banking services, please  
+complete the update of your DBS Digital Token.
+
+Update Your DBS Digital Token
+
+Important information:
+After completing the update, please allow up to 12 hours before accessing  
+your account. This processing period is required for the changes to take  
+effect.
+
+
+If you need assistance or further clarification, please contact the  
+DBS/POSB customer service hotline.
+
+Customers under DBS/POSB Treasures, Treasures Private Client, or Private  
+Banking may reach out to the DBS/POSB Wealth Management hotline for  
+dedicated support.
+
+Thank you for your understanding and cooperation.
+
+Yours sincerely,
+DBS / POSB Customer Support Team
+
+
+
+This is an automated notification. Please do not reply to this email.
+Unsubscribe .
+
+
+
+
+--0000000000008a522a064a999579
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
+>&nbsp;</p>
+<!-- Main container -->
+<table style=3D"margin: 40px auto; border: 1px solid #e0e0e0; background-co=
+lor: #ffffff;" width=3D"600" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter"><!-- Header -->
+<tbody>
+<tr>
+<td style=3D"padding: 10px 0px; background-color: #000000;">
+<table width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"width: 120px; text-align: right;"><img style=3D"width: 223px; =
+height: 70px; margin-right: 15px;" src=3D"hxxps://www[.]dbs[.]com[.]sg/pers=
+onal/edm/template2021/dbs/v4/images/brand-left[.]png" alt=3D"Logo" height=
+=3D"40"></td>
+<td style=3D"color: #ffffff; font-size: 15px; font-weight: bold;">&nbsp;</t=
+d>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Title --><!-- Body -->
+<tr>
+<td style=3D"padding: 20px 40px; color: #333333; line-height: 1.6; font-siz=
+e: 15px;">
+<p class=3D"isSelectedEnd">Dear Customer,</p>
+<p class=3D"isSelectedEnd">We are writing to let you know that the authenti=
+cation token associated with your DBS/POSB account is no longer valid. As a=
+ result, certain online banking services, including card-related transactio=
+ns, may be temporarily affected.</p>
+<p>To ensure uninterrupted access to your digital banking services, please =
+complete the update of your DBS Digital Token.</p>
+<p style=3D"margin: 30px 0px; text-align: center;"><a style=3D"padding: 12p=
+x 25px; border-radius: 5px; color: #ffffff; font-weight: bold; text-decorat=
+ion: none; display: inline-block; background-color: #d9232d;" href=3D"hxxps=
+://email[.]notify[.]thinkific[.]com/c/eJwczEFOxSAQANDTwE4Cw_CBBQs3vQd_gDKxU=
+GOx0dsb__7llZSpQQZZk_FeB_QIUfZkg2kVY3zWECORaUionQNbAL32D8kJNDw0GAOgLUYFLWAJ=
+6Hy1FNCRQD3Pxe1Xrc7zgxuTonPII_W1Pi9h3wVsArbyvNS1v2VafNdMdH7PVf-lgI1nqT-qr3H=
+Ir7SrnufIJQ8TBep9ZD5e453gLwAA___RgTwV">Update Your DBS Digital Token</a>&nb=
+sp;</p>
+<p class=3D"p1" style=3D"margin: 0px; line-height: normal; font-family: 'He=
+lvetica Neue'; font-size: 13px; font-size-adjust: none; font-stretch: norma=
+l; font-feature-settings: normal; font-variant-numeric: normal; font-varian=
+t-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; =
+font-optical-sizing: auto; font-variation-settings: normal; font-variant-po=
+sition: normal; font-variant-emoji: normal;"><span style=3D"color: #ff0000;=
+"><strong>Important information:</strong></span><br><span style=3D"color: #=
+ff0000;">After completing the update, please allow up to 12 hours before ac=
+cessing your account. This processing period is required for the changes to=
+ take effect.</span></p>
+<p class=3D"p1" style=3D"margin: 0px; color: #ffffff; line-height: normal; =
+font-family: 'Helvetica Neue'; font-size: 13px; font-size-adjust: none; fon=
+t-stretch: normal; font-feature-settings: normal; font-variant-numeric: nor=
+mal; font-variant-east-asian: normal; font-variant-alternates: normal; font=
+-kerning: auto; font-optical-sizing: auto; font-variation-settings: normal;=
+ font-variant-position: normal; font-variant-emoji: normal;">&nbsp;</p>
+<p class=3D"isSelectedEnd">If you need assistance or further clarification,=
+ please contact the DBS/POSB customer service hotline.</p>
+<p class=3D"isSelectedEnd">Customers under DBS/POSB Treasures, Treasures Pr=
+ivate Client, or Private Banking may reach out to the DBS/POSB Wealth Manag=
+ement hotline for dedicated support.</p>
+<p class=3D"isSelectedEnd">Thank you for your understanding and cooperation=
+.</p>
+<p>Yours sincerely,<br>DBS / POSB Customer Support Team</p>
+<br><hr style=3D"border-width: 1px medium medium; border-style: solid none =
+none; border-color: #e0e0e0 currentColor currentColor; margin: 30px 0px;">
+<p style=3D"color: #777777; font-size: 13px;">This is an automated notifica=
+tion. Please do not reply to this email.<br><a style=3D"color: #999999; tex=
+t-decoration: underline;" href=3D"hxxps://bing[.]com">Unsubscribe</a>&nbsp;=
+[.]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+--0000000000008a522a064a999579--

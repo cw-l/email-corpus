@@ -1,0 +1,286 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=c896LZhKqiCibv3/WPtTaa0UFciWjS5HGyLoKeu4pnPFldgS2HB7YZFB/+NEp/Ki+61QIRCQnUKAEcKLa2nhumJfQwQVT/wcGSyJ8PsGqWpQ4X/VvCYIMJteZMgTRvDWSs1mLkeckKeF5ONLSZDk6dwdfrlmZu8UlFjZ9eYiRHn1q315S4Ckg+RWLEierTP7g5f3ErODOch7DXDX6zO/f1uy3QqyvyF301k1vMd8FMKDdxn/36CW2oMReVYGiEnzKX2gfIt7NwTadB5q8OfD7CRkUuk0sG8z0MGUV576GttiN7U12LR6cWtQLdBIOc4DOsV2nXJLrVnF1GEhVv6hwA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=CuWBYCc+pBwYWu3FxOFK/3kz494UIReLMALO8eZoFXo=;
+ b=bd9atsyX8dSdV75vHsbqeqaur21u+2mWifioCFQaAwbnRRVzJFpMARqFc/6fv2nBwwrIV0eR+xFJ8gXPV4E00+15fsKUajg69Exm0FJO+2yRpmzgKqWiX9xMMyKOgvkZDB4VglnijMjuB+Hy9+oleZMsju1jClzDOQeWejcuJ2tmoTdD/U3xVux/OKOxvqZdUWEl+OGdM4I+z6NcFSdtjrPa7LbzSe0itJz9TRYB2N8/kjq+N5i2louMfWVyjql023DBSdLIWkkFyUMzkpRqOBLp6zZqnukoOBoADf4EBylBmklY9tkPCg7eyGwDUO0g+gnDc/Z2f1kBXOW3btIBww==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.92.20.40) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=hotmail.com;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=hotmail.com;
+ dkim=pass (signature was verified) header.d=hotmail.com; arc=pass (0 oda=0
+ ltdi=1)
+Authentication-Results: spf=pass (sender IP is 40.92.20.40)
+ smtp.mailfrom=hotmail.com; hotmail.sg; dkim=pass (signature was verified)
+ header.d=hotmail.com;hotmail.sg; dmarc=pass action=none
+ header.from=hotmail.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:7583DD5FC39E1C38A795245013B3CB1F9B69594CDF38E9141070515593506491;UpperCasedChecksum:CC306915D07180DAC7E6BB4AE9ABB410BCBA1FC8DFAF971CDCB8E2081FE3A5CF;SizeAsReceived:5625;Count:41
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=FU93ZPkKvDFVyZZUVobvIM3Y1vW1KQ0VX7g8A3AZv4BTRbI5sqDrKJ9xqm/lU1D+3djXHLi7tDGlheppa7JWZB0dHojXPhzKvC3f7oa0o6vofJ8lR/DaA7nYL9V5VE3ZrZ/I5ioTOFc394l3RZJZv4FLiqtY1ss8Yc6ytBKaAeiicR9vsWbQ9KCHh/Nacbw/e30nlkUcJ6HSQZuMOaSOcUE2KCCnxMP4Zmef9hLxFbOTwKBiaMBKUfqt24mx2P8/CH7+T8o3+w8aglFxhBHSFiNEN9Ww22fTsOM7DNIOb7xSent9R4ZROuDAkQX+u3rFYzkQ3kUyPn0ONFp1snZXpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=CuWBYCc+pBwYWu3FxOFK/3kz494UIReLMALO8eZoFXo=;
+ b=E4FjHr3jTQvaabHcp1XeKVMCwOI/bvTunfBRC/5OKLV2Of7HsiUsU8KcZz1jDjQor+3SKmJRdI79zdNisXYPdyLy8wbwYNcfYtvwg5pYs29JWIkIqzmGTl61k9R0J9xVeLmUrczsHhnY0r58Y0fh3Fi9bRa2g0/lnzd6WbESV9Q7H+mvqUergRrheRI+eTxfADl9PDR0HNQrNniWGumESzV3EnbcbqGHEcRmLn+WU2JHMzLvvarNEAmgxYshRXB4nJDZChWB9dEjUn6HoPZJU5nJWrEUr1pn/zTrLMnMhUvW3xkxvZLEpBr5QFEn2hJei+fmIKq89xAKWSh8FSxDJg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=CuWBYCc+pBwYWu3FxOFK/3kz494UIReLMALO8eZoFXo=;
+ b=OjmB5rdW7UgFqok25gXDBZWatqhuVe+KDDQ82qh9Ph03PGvwm3RJ3ZfxKpCn9wfdJiOVoByw9zzeTfK7M7qhir53CE+iBj978S+DoTNRBzcFAh964yaGQp83hpX3enSAVRv+QlgGeC7YDdeefRdTWr6UKD/2KAtPUlVMItDMWXfOtSn5s580IQtEVcg08yrCCfYQzS/6Zexxeq8znr57kS4oowQ0/jVDjD97Y88mMpBZsek+3vOUFKG57xYw54qITCBpdAxim3RNRpcWYXtXaK+FLB5ForEjPu8RONQ2PkHYRAEbjpIifSxUSdMC4m/npN0gz61hvOwgBwrfBrInPA==
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:FE92CBB7EDD25691E0204B228C0C29D6B7222194730104380CAA4F13BDDFEE45;UpperCasedChecksum:49F9D5E00B06F59E379191974212E2C7F6B7AF3300F49896D1E5534DBBCE004A;SizeAsReceived:8796;Count:46
+Reply-To: hello.equipe@hotmail.com
+To: <redacted@redacted.com>
+From: 
+ =?utf-8?q?Singapore-Post=C2=AE_Parcel_Delivery_=3Celieserchaves=40hotmail=2E?=
+ =?utf-8?q?com=3E?=
+Subject: RESCHEDULE PROCESS: Please schedule a new delivery.; -
+ PARCEL/ONLINE-GATEWAY-Number: 573919 Our reference number: 7110 singpost.com
+ order of 2 x "GOV.COM.SG-POST"
+Message-ID: 
+ <SN6PR07MB54381F4ABA267FA5DB758188A4579@SN6PR07MB5438.namprd07.prod.outlook.com>
+Date: Thu, 6 May 2021 20:36:20 -0700
+User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64; rv:38.0) Gecko/20100101
+ Thunderbird/38.0.0
+Content-Type: multipart/alternative;
+ boundary="------------699306592903903571333476"
+X-TMN: [kQ+1Jzy+oro0d1tWwSV2MaFh+Q7tWq+q]
+X-ClientProxiedBy: CP5P284CA0030.BRAP284.PROD.OUTLOOK.COM
+ (2603:10d6:103:94::17) To SN6PR07MB5438.namprd07.prod.outlook.com
+ (2603:10b6:805:b4::31)
+X-Microsoft-Original-Message-ID: <539B11C9.2224679@hotmail.com>
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-MS-PublicTrafficType: Email
+X-IncomingHeaderCount: 46
+X-EOPAttributedMessage: 1
+X-MS-Office365-Filtering-Correlation-Id: a4442b7c-eaa6-4110-22d1-08d911095db2
+X-MS-TrafficTypeDiagnostic: BN8NAM11HT061:|HK2APC01HT197:
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original: 
+ IfOu+qIuIGQ/vcApcyKJvaPWri7OnyZBQOCbGbEZLIoFcpEChfrhycllwShRsQCqTxxdJMI5WQM9wlhrGd8RKZaimsFTOptd7wTx1Gy9ntTJ8hzq/PhHWjHHGMKSPY4vaLxLWSVtrMShe5d1nXxV18EUI34prnV7+0TJkGpk9EqnXZSvpxg+U8+ToAzV6G8HzOfxBuJ9fqSJXwE/kgbKuQer4fpyWQgT1qynC6qrzDBcgnbUxXTZocpGsTiPrVQ+9Fv3xzNpPdqjOl6FEWyOo2Wf8HQoVQpyY3iMClE59LBniBvd+kRLGSNrtPDZsUN7YBxj1iw6vzaFYqMgq3VmFge+ZLqKpjTzauDS13s8jV8PBJrOLZySejuhmmRHWb2oa2EDZ7ZPI4iHHJNSglYeuh6XYE+XDsu3WlwQU5l8Ocg=
+X-MS-Exchange-AntiSpam-MessageData: 
+ WN9V7KLx2fc1PWjqmVmQZpA/8xUOR3UmKEfd7tUxI/GUr6mbW+SrIlpUUY64CKHUWzfJFV6uSz/f7WmL0wuJCXR7n8vwIjA+yQdyQrBDz4vqon8ipl3MBj2xzsUMnhBQG749jB9OhjyrulztIyNScA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8NAM11HT061
+X-IncomingHeaderCount: 41
+X-MS-Exchange-Organization-ExpirationStartTime: 07 May 2021 03:36:57.3969
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ a4442b7c-eaa6-4110-22d1-08d911095db2
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ HK2APC01FT055.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ HK2APC01FT055.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthSource: 
+ HK2APC01FT055.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/6/2021 3:21:07 PM
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ cb404a63-008c-4ecb-abec-08d9110947cc
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 40.92.20.40
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 May 2021 03:36:57.0070
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ a4442b7c-eaa6-4110-22d1-08d911095db2
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-AuthSource: 
+ HK2APC01FT055.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HK2APC01HT197
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0869830
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4108.028
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000282)(90000117)(90005022)(91005020)(91035115)(91045095)(9000001)(9010001)(9050020)(9100293)(5061607266)(5061608174)(4900115)(2008001094)(2008000189)(2008120379)(2008019284)(2008021020)(8390226)(8377080)(8386120)(58390106)(98390106)(8391040)(4920090)(6515079)(4950131)(4990090);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info: 
+ nJ+W7mzX3hSgN7QtHM42hPWZVUd5DaFqVeMl9c4vvkmZnJnzD3+3jTKJrTe70fP9yAZArpzGhS7zfxt+r66NML/W5+1SlkESlzlmLxxrdXjFJRvcf2wosi0PYJEylnBMsx/bCPq8MBAQ910gJfGB3QY/kvcCOfQtmR23HdUR39XlccZDOyWSsyDoL96eVQNeUtSl7JE5r6EzutJzeognbrnWcsDlHyYWGCZPsdl/YepzWRpdD3t5AI1ZhkrKD/uCaNZJXiIQz9tgPI++etA3ZB90w72MCrjL4Z3w+XQpJOEmTYqLCiKClSgB1C3buXpmkn1R/J37S8Ibvbc5RtSj4k16wdRAo/ZWp1xiwbFgfMN6F7UqRtAhMlZbB/Gdi+4XqUBs7pq19weQYT6GSAuNG58xiSUV16xLINiIZZy3LF59sx4p9Tb9B5RYGWKR75Qyk1e5IkFYzFM6Zx4z1deUpwrzX1qgwNz+yf3yUtjza0MnHtN4l32wK9XMtd6olSk19gcKb/W/lKABDNk3bAYT8ga1CrUmrNQ11g7BtWInfItfv9xhMXfzoQwFDKbT5doGivRlULu4/jM/sGzXEtfMFADAw2U46Ud5XDsuxzAo3NVpeIIyUlUN+bUAC0r+dox3Kbxu/PVe0BxIof4BzeB/6WbSek7kqY+KB/W9sAChH6snKyBZHtcUlHiHXzNFY3/RdG9Y+SVFlj+WN2rcti8moGxgQAV8nP0DHVq7JLw6r/LylNi+aU3tW/kXcFraJOgSw4TCrjze+jThOQPwtpAQkWsdxEvpCU/O3onK0GiyUkAnPOO41nElqXaiYTw1HiUuwQFsJJTK5s7lWy+68tZcrctHKoQWQQK5i6rlyOpl9dPbtvAmtwuL4evfLu4AcRewXJoYfAmlps2clYK5CqpXRJaoSEC2aQQm62fEBEwcSpA/0dP1Rndt8sTldESDGRcKggev1gPRBSih8/kq2NnebfOZKM1ujfOuZlSiOQEdkggPngdNxDpbRR9FuxOZ5t1BY6O3x3uuY88JU68Lr4rWBjw52zuCnm9nGy88UN4y7f6vfTUYm4+w9G+r1+iBoHPe0gwkwYUvieUMD159A90cwpjZJ3NlENV8c6jrkh3kX+2yDJFXcrbzyv5wzccVWsq+Jf4lknHFyE4sbQqbe3jDUqCnW9pjKIdXotXo8xjPGEkWLjUUpIWVM/LaDJyY6KUAQl+e3kAB+VeYUOuWjxMyAY7JR4Z7Je+Rsd4BpCJzN8IhkT0N6heu/5xCALGs2+ssX9f5ySBkiIiyQ1rzD1yR8gzjnjNW/3HaisXWzO1m+IZhFggmbSvhuEMc7VHz99c5+I0LzfEyQ3mBqNt/TECzqiQ4it/1ueYmBRGG1nSPquoTbS+GjpCYkEWGxWpGTjjHTSgPu64hAwZuHUDyMEOwDjVr1oe8CKhR6xHjvknMQpWS5lvnZteVCHGGgmGiwyoTiQ/CKtC95gLKf2p2eOx3W66ELrfuIA3ibm5yCmPdDepouUpk/OTpr4E/yxcvZttm
+MIME-Version: 1.0
+
+--------------699306592903903571333476
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+
+
+PARCEL                    DELIVERY FAILED
+
+
+
+
+Hi Cheng redacted,
+The details on your parcel are incorrect. Please schedule                  =
+    a new delivery.
+Registered Email:redacted@redacted.com
+We have tried to make a delivery on your package, but didn't               =
+       complete it. The delivery attempt was made on05/06/2021and05/07/2021=
+. You can choose tohxxps://shunfar[.]com/wwwsitesing/as needed or drop off =
+your shipments                      at any authorized Singapore Post locati=
+on.
+
+
+
+
+=20
+(Additional                          shipping fees may apply)
+Your parcel will be kept in our Singapore Post Access                      =
+      Point until May 08, 2021.
+After this period, it will be returned to the sender.                      =
+      Depending on the package type, the sender may be responsible         =
+                   for the return shipping fees.
+Thanks                          for shipping with Singapore Post.
+
+
+=20
+
+
+
+
+=20
+
+=C2=A9 2021                            Singapore Post Limited. All Rights R=
+eserved.
+
+--------------699306592903903571333476
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"pt"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta content=3D"email=3Dno" name=3D"format-detection"><meta content=3D"date=
+=3Dno" name=3D"format-detection"><style>.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans" rel=3D"stylesheet" type=3D"text/css"></he=
+ad><body bgcolor=3D"#FFFFFF" style=3D"margin: 0; padding: 0;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" lang=3D"pt" styl=
+e=3D"min-width: 348px;" width=3D"100%"><tbody><tr height=3D"32" style=3D"he=
+ight: 32px;"><td></td></tr><tr align=3D"center"><td style=3D"width: 32px;" =
+width=3D"32"></td><td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"max-width: 600px;"><tbody><tr><td><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr>
+                <td align=3D"left"><img height=3D"32" src=3D"hxxps://www[.]=
+singpost[.]com/sites/default/files/singpost-logo_0[.]png" style=3D"display:=
+ block; width: 92px; height: 32px;" width=3D"92"></td>
+                <td align=3D"right"><img height=3D"32" src=3D"hxxps://www[.=
+]singpost[.]com/sites/default/files/logistics2[.]png" style=3D"display: blo=
+ck; width: 32px; height: 32px;" width=3D"32"></td></tr></tbody></table></td=
+></tr><tr height=3D"16"></tr><tr><td><table bgcolor=3D"#4184F3" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"min-width: 332px; max-width:=
+ 600px; border: 1px solid #F0F0F0; border-bottom: 0; border-top-left-radius=
+: 3px; border-top-right-radius: 3px;" width=3D"100%"><tbody><tr><td colspan=
+=3D"3" height=3D"72" style=3D"height: 72px;"></td></tr><tr><td style=3D"wid=
+th: 32px;" width=3D"32"></td>
+                <td style=3D"font-family: Roboto-Regular,Helvetica,Arial,sa=
+ns-serif; font-size: 24px; color: #FFFFFF; line-height: 1.25; min-width: 30=
+0px;">PARCEL=20
+                  DELIVERY FAILED</td>
+                <td style=3D"width: 32px;" width=3D"32"></td></tr><tr><td c=
+olspan=3D"3" height=3D"18" style=3D"height: 18px;"></td></tr></tbody></tabl=
+e></td></tr><tr><td><table bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1=
+px solid #F0F0F0; border-top: 0;" width=3D"100%"><tbody><tr><td colspan=3D"=
+3" height=3D"18" style=3D"height: 18px;"></td></tr><tr><td style=3D"width: =
+32px;" width=3D"32"></td>
+                <td style=3D"font-family: Roboto-Regular,Helvetica,Arial,sa=
+ns-serif; font-size: 13px; color: #202020; line-height: 1.5;">
+                  <p>Hi Cheng redacted,</p>
+                  <p><b>The details on your parcel are incorrect. Please sc=
+hedule=20
+                    a new delivery.</b></p>
+                  <p><b>Registered Email:</b> redacted@redacted.com</p>
+                  <p> We have tried to make a delivery on your package, but=
+ didn't=20
+                    complete it. The delivery attempt was made on <b>05/06/=
+2021</b>=20
+                    and <b>05/07/2021</b>. You can choose to <a data-meta-k=
+ey=3D"disavow" href=3D"hxxps://shunfar[.]com/wwwsitesing/" style=3D"text-de=
+coration: none; color: #4285F4;" target=3D"_blank"><b>SCHEDULE=20
+                    A NEW DELIVERY</b></a> as needed or drop off your shipm=
+ents=20
+                    at any authorized Singapore Post location.</p>
+                </td>
+                <td style=3D"width: 10px;" width=3D"10"></td></tr><tr><td c=
+olspan=3D"3" height=3D"18" style=3D"height: 18px;"></td></tr></tbody></tabl=
+e></td></tr><tr><td><table bgcolor=3D"#FAFAFA" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"min-width: 332px; max-width: 600px; border: 1=
+px solid #F0F0F0; border-bottom: 1px solid #C0C0C0; border-top: 0; border-b=
+ottom-left-radius: 3px; border-bottom-right-radius: 3px;" width=3D"100%"><t=
+body><tr height=3D"16" style=3D"height: 16px;"><td rowspan=3D"3" style=3D"w=
+idth: 32px;" width=3D"32"></td><td></td><td rowspan=3D"3" style=3D"width: 3=
+2px;" width=3D"32"></td></tr><tr><td><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width: 300px;"><tbody><tr>
+                      <td style=3D"font-family: Roboto-Regular,Helvetica,Ar=
+ial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5;padding-b=
+ottom: 4px;">&nbsp;</td>
+                    </tr><tr>
+                      <td style=3D"font-family: Roboto-Regular,Helvetica,Ar=
+ial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5;padding: =
+4px 0;"><b>(Additional=20
+                        shipping fees may apply) </b>=20
+                        <p>Your parcel will be kept in our Singapore Post A=
+ccess=20
+                          Point until May 08, 2021.</p>
+                        <p>After this period, it will be returned to the se=
+nder.=20
+                          Depending on the package type, the sender may be =
+responsible=20
+                          for the return shipping fees. </p>
+                      </td></tr><tr>
+                      <td style=3D"font-family: Roboto-Regular,Helvetica,Ar=
+ial,sans-serif; font-size: 13px; color: #202020; line-height: 1.5; padding-=
+top: 28px;">Thanks=20
+                        for shipping with Singapore Post.</td>
+                    </tr><tr height=3D"16" style=3D"height: 16px;"></tr><tr=
+><td><table style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif=
+; font-size: 12px; color: #B9B9B9; line-height: 1.5;"><tbody><tr>
+                            <td>&nbsp;</td>
+                          </tr></tbody></table></td></tr></tbody></table></=
+td></tr><tr height=3D"32" style=3D"height: 32px;"></tr></tbody></table></td=
+></tr><tr height=3D"16" style=3D"height: 16px;"></tr><tr><td style=3D"max-w=
+idth: 600px; font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-s=
+ize: 10px; color: #BCBCBC; line-height: 1.5;"><table><tbody><tr><td><table =
+style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size:=
+ 10px; color: #666666; line-height: 18px; padding-bottom: 10px"><tbody><tr>
+                      <td>&nbsp;</td>
+                    </tr><tr height=3D"6" style=3D"height: 6px;"></tr><tr><=
+td>
+                        <div style=3D"direction: ltr; text-align: left">=C2=
+=A9 2021=20
+                          Singapore Post Limited. All Rights Reserved.</div=
+>
+                      </td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td><td style=3D"width: 32px;" width=3D"32"></td>=
+</tr><tr height=3D"32" style=3D"height: 32px;"><td></td></tr></tbody></tabl=
+e><img height=3D"1" src=3D"hxxps://notifications[.]googleapis[.]com/email/t=
+/AFG8qyXpydc12QIbQbZ_fLofdZLB6hMBTG2WcwkwC8L1LOICOKhdXCVE7judvd4i5kjQBCxDjx=
+cBwbO2L1WHN8YWgKWj_iM4HoKoo7xBMP5hkHPWZZ2iuDL2MMCfVmArPQH5Z5HhkeQsSBMX3toEF=
+a74wq-odDSZmMpHtdFa_qjWXoUypWl9SKbP09cMDE2F_Nf0NvxTGAUp_NYKTqJDY408QjCkMIKz=
+bgSE0Loj0NTC0ekeNlR0YYvjNg-2_eQ5/a[.]gif" width=3D"1"></body></html>
+
+--------------699306592903903571333476--

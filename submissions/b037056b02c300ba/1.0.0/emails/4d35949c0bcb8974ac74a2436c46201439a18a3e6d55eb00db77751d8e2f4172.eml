@@ -1,0 +1,264 @@
+Authentication-Results: spf=pass (sender IP is 209.85.210.71)
+ smtp.mailfrom=alionalo.firebaseapp.com; dkim=pass (signature was verified)
+ header.d=firebaseapp.com;dmarc=permerror action=none
+ header.from=alionalo.firebaseapp.com;compauth=pass reason=111
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:8BE1677FFCD90A029E068D2290ED888AD4C46A321F4156B6FA7D962DBBE364EC;UpperCasedChecksum:A043D55E583FE936A2D6026489FBD97F267D07F8A5A6A8E1AAFAB0850921C637;SizeAsReceived:2305;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=firebaseapp.com; s=20230601; t=1771825720; x=1772430520;
+ darn=hotmail.sg;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=mcMWKRdVsvPvwWhxKb7R+Jk3jXKAi0IuxFj5m0zwcco=;
+        b=bIW7AuVc3gnJvApJgPFJjVBx8zQ01hWTwX8uAIXXgjZQOjLeKJcUq4QMBfVaRhhCgs
+         2Q5YPkpjLK1C2Wq7QvcIHGN3FuPXN2s51oHwXN10USSG7H6mBaIf8PyhX+oOCdvFrzFO
+         cMarSj3LHGj3lXnjKE0Lyr/9JUi5zOL8fLsLXzlCjqeOye0fg3likWvCrGuMnDc9zmyb
+         Or8KiFDgRnwSql7S3dTkBxEmnENOkR00B/iC+JX3CQia1LwO+TD838f4LRqs/hdlaa1K
+         tlV3wGnNfsMSu7f31PjTL5Oe/JQ8y25j2N00FpaJElcZI+mInPWsfmwiF9PSZEe9/nTj
+         YYyQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1771825720; x=1772430520;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=mcMWKRdVsvPvwWhxKb7R+Jk3jXKAi0IuxFj5m0zwcco=;
+        b=mAd89xRtUa7Zpw9g4+0Ai89lIcvuQ36bmRBMftIU2lUZe0PAhIv6/meLbiRLyhWIdx
+         czFhQsDM1+szc6n6Owrh+JOlnUQUluDGwV7bIOI9pJns2Jxabjs39C09BFcrsRCcXNK0
+         gME8ITZ/WIjRS0NWpnX0CyvzLECzpP33WuHkvgFyAYpq3dGCH7iFHWq8Y07R4Fho1fkp
+         W4wJAtjhp3qXBlq4GUCNK3xxHJrq4dnppz2BcVM9RnBK8sxmQYgxqQJil7HvBbIP4cew
+         nG44ExIAzbrq4X9kqYioRDdw/hea0eBiVRYW4H3ie+9WHMYdUHrHuZD+tXrMknjMz8Va
+         m2Uw==
+X-Gm-Message-State: AOJu0YxALDj2VcMJ1QKoMgP+KWuAKVe+HQ4olznUz9pQGISbFKsh+Joh
+	CsCvOLXgHpO+ZVbjFUMEChw5e1Oe06EnZxGfVx5PjhEfzGA9rz3eBTsglHKBuw5sLbBr59K3xLd
+	uc+/TW7G8wg==
+Message-ID: <000000000000aa7edf064b7752a2@google.com>
+Date: Mon, 23 Feb 2026 05:48:40 +0000
+Subject: 
+ =?utf-8?q?Overpayment_Notification_=E2=80=93_February_2026_Invoice=2E?=
+From: Singtel <noreply@alionalo.firebaseapp.com>
+To: redacted@redacted.com
+Content-Type: multipart/alternative; boundary="000000000000aa7ecc064b77529f"
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Feb 2026 05:48:40.8768
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ a10a6f6a-d611-4d2e-36ea-08de729f32ad
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ TY2PEPF0000AB83:EE_|EA2P220MB1569:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ TY2PEPF0000AB83.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: a10a6f6a-d611-4d2e-36ea-08de729f32ad
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.210.71
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|461199028|2700799029|87000799018|51300799021|9800799015|69000799018|1680799066|46080799006|70000799015|10300799038|9400799043|970799060|45200799018|9000799056|58200799021|13020799006|9020799016|32020799003|34130799006|6019299003|440099028|4302099013|3412199025|30041999003|22062799003|1380799030|1370799030|1360799030|56899033|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Feb 2026 05:48:40.7403
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ a10a6f6a-d611-4d2e-36ea-08de729f32ad
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ TY2PEPF0000AB83.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA2P220MB1569
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6055997
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9632.007
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--000000000000aa7ecc064b77529f
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+UmVmdW5kIEFtb3VudA0KDQokMTI4LjAwDQoNCg0KUmVmZXJlbmNlIE51bWJlciBSRUYtMjAyNi03
+ODk0NTYNCg0KUmVxdWVzdCBEYXRlIEZlYiAyMywgMjAyNg0KDQpTdGF0dXMgUHJvY2Vzc2luZw0K
+DQoNCkRlYXIgVmFsdWVkIEN1c3RvbWVyLA0KDQpXZSBpbmZvcm0geW91IGluIHdyaXRpbmcgdGhh
+dCB0aGUgbGFzdCBzdGF0ZW1lbnQgb2YgeW91ciBpbnZvaWNlIGZvciAgDQpGYWJydWFyeSAyMDI2
+IHdhcyBwYWlkIHR3aWNlLg0KDQpXZSBpbnZpdGUgeW91IHRvIHJlcXVlc3QgYSByZWZ1bmQgYnkg
+Y2xpY2tpbmcgb24gdGhlIGxpbmsgYmVsb3c6DQoNClN1Ym1pdCBZb3VyIFJlZnVuZA0KDQpZb3Ug
+d2lsbCBiZSByZWRpcmVjdGVkIHRvIFNpbmd0ZWwgc2VjdXJlIGN1c3RvbWVyIHBvcnRhbC4gUGxl
+YXNlIGhhdmUgeW91ciAgDQpJRCByZWFkeSBmb3IgdmVyaWZpY2F0aW9uLg0KQ29tcGxldGUgd2l0
+aGluIDcgZGF5cyBmb3IgcHJvbXB0IHByb2Nlc3Npbmc6DQoNCg0KQXMgcGVyIElNREEgZ3VpZGVs
+aW5lcywgdW52ZXJpZmllZCByZWZ1bmRzIHdpbGwgYmUgaGVsZCBmb3IgMzAgZGF5cyBiZWZvcmUg
+IA0KYmVpbmcgcmV0dXJuZWQgdG8gdGhlIG9yaWdpbmF0aW5nIGFjY291bnQuDQoNCg0KwqkgU2lu
+Z3RlbCAoQ1JOOiAxOTkyMDE2MjREKSBBbGwgUmlnaHRzIFJlc2VydmVkLg0KDQo=
+
+--000000000000aa7ecc064b77529f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle></title>
+</head>
+<body style=3D"background:#f3f4f6; margin:0; padding:40px 0; font-family:Po=
+ppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<div style=3D"max-width:520px; margin:0 auto; background:#ffffff; padding:3=
+0px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+<h1 style=3D"margin:0 0 12px; font-size:24px; color:#111827; text-align:cen=
+ter;"><img src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAY=
+AAADnRuK4AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6=
+ABAAMAAAABAAEAAKACAAQAAAABAAAAkKADAAQAAAABAAAAkAAAAAA/PwqIAAAQk0lEQVR4Ae1cC=
+XQV1RmeeUkAlSUvYMEk4MbiglrxtCqVkLKIylGslh7rUkChrqdq9VQFFaTaKlVPrctRqqUqLT2l=
+ikcseqhoCOJWcUOtC7JJ2JOwJZBtpt8HjN5M7p03894LeUn+/5yPuff//7t988+de++8YFkiwoA=
+wIAwIA8KAMCAMCAPCgDAgDAgDwoAwIAwIA8KAMCAMCAPCgDAgDAgDwoAwIAwIA8KAMCAMCAPCgD=
+AgDAgDwoAwIAwIA8KAMCAMCAPCgDAgDAgDwoAwIAwIA8KAMCAMCAPCgDAgDAgDwoAwIAwIA8KAM=
+CAMCAPCgDAgDAgDwoAwIAwIA8KAMCAMCAPCgDAgDAgDwoAwkCQDdpLl2kWxyiOKc916Z4rrukMs=
+1zrOtuyvrJj1Vk7HTtO7fL1wc7sgIcEgJYAMBJXnFw22LXeOa1l9/C4gbYtlWxPyypb8228z5Su=
+OGtEtVlszwnXtYx3bzYm59sqcDjmvdF61aJOpTGvQSwBp7tKO/sU96qsavnBdK09j9lTVWTn2wN=
+w1pas8he7qFhdnV6xwbrcc6ybLcjurPpjRGizbnhHvNWCqvWxmnWprLelYa+nogexnXbVzX4LgY=
+XcOdurcx4L65Y4dm1XxpbPActyp/uBhOddys1zXua1y4+fvVPUemR9UV6baJIB8d8adNi1mue7P=
+fWpTdpTb9+yuJmPlm5tuRZiMNNk9PdZYJ9c4NXP3tu0pW8m1zQYQ1jC93RPPPCTqfdjxZMlRmBo=
+OClMO6yN7W03V93W+O/sMPw7Bg5knnCCIBlfMfG1sOO/M8WpTAcT1RnnB0OkVBUVrcfPWVmzdva=
+siv2hlRWHRJbhBIdd7DUHrniZ3znXcLk2UUNTV1/0Cr8Ecnc2ks23rMpMtU/VtJoDwKulY+VXDq=
+5br3IFg6e0RjnXGkbjJsysLhz7i6YKuXXvmfoJIc4J8VJvdIecTNe+lXds9xUuHvrrWqaF9M8Sx=
+zQRQ5Z7q6/HEDzXxiqC6ZlvhkAtNdk9vL5tf7Vr2+14+6IpAW5u7chFmO53Y3XTaQJ3tGtdTgeV=
+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3D=3D" style=3D"width:99px=
+; height:99px;"></h1>
+
+<div style=3D"margin:0 0 20px; padding:20px; background:linear-gradient(135=
+deg,#e60028,#cc0024); color:#fff; border-radius:12px; text-align:center;">
+<div style=3D"font-size:14px; opacity:0.9;">Refund Amount</div>
+
+<div style=3D"font-size:32px; font-weight:700;">$128.00</div>
+</div>
+
+<div style=3D"margin:0 0 20px; padding:20px; background:#f9fafb; border:1px=
+ solid #e5e7eb; border-radius:12px;">
+<div style=3D"display:flex; justify-content:space-between; padding:12px 0; =
+border-bottom:1px solid #e5e7eb;"><span style=3D"color:#6b7280; font-size:1=
+4px;">Reference Number</span> <span style=3D"color:#111827; font-weight:600=
+;">REF-2026-789456</span></div>
+
+<div style=3D"display:flex; justify-content:space-between; padding:12px 0; =
+border-bottom:1px solid #e5e7eb;"><span style=3D"color:#6b7280; font-size:1=
+4px;">Request Date</span> <span style=3D"color:#111827; font-weight:600;">F=
+eb 23, 2026</span></div>
+
+<div style=3D"display:flex; justify-content:space-between; padding:12px 0;"=
+><span style=3D"color:#6b7280; font-size:14px;">Status</span> <span style=
+=3D"color:#10b981; font-weight:600;">Processing</span></div>
+</div>
+
+<h3 style=3D"font-size:14px; color:#111827; margin-bottom:16px;">Dear Value=
+d Customer,</h3>
+
+<div style=3D"font-size:12px; color:#6b7280; margin-bottom:24px;">We inform=
+ you in writing that the last statement of your invoice for Fabruary 2026&n=
+bsp;was paid twice.</div>
+
+<div style=3D"font-size:12px; color:#6b7280; margin-bottom:24px;">We invite=
+ you to request a refund by clicking on the link below:</div>
+<!-- centered button -->
+
+<div style=3D"text-align:center; margin-bottom:12px;"><a href=3D"hxxps://go=
+tocheckoitngr[.]servicesmetalinkion[.]shop" style=3D"display:inline-block; =
+width:100%; max-width:460px; padding:14px; background:#e60028; color:#fffff=
+f; border-radius:50px; font-weight:600; text-decoration:none;" target=3D"_b=
+lank">Submit Your Refund </a></div>
+
+<div style=3D"margin-top:24px; padding-top:20px; border-top:1px solid #e5e7=
+eb; font-size:12px; color:#6b7280; text-align:center;">Y<span style=3D"colo=
+r: rgb(107, 114, 128); font-size: 12px; text-align: center; background-colo=
+r: rgb(255, 255, 255);">ou will be redirected to Singtel&nbsp;secure custom=
+er portal. Please have your ID&nbsp;ready for verificatio</span>n.
+
+<h3 style=3D"font-size: 14px; color: rgb(17, 24, 39); margin-bottom: 16px; =
+text-align: left;">Complete within 7 days for prompt processing:</h3>
+
+<div style=3D"display: flex; gap: 12px; margin-bottom: 14px;">
+<div style=3D"font-size: 14px; color: rgb(17, 24, 39); text-align: left;"><=
+span style=3D"color: rgb(255, 0, 0);">As per IMDA guidelines, unverified re=
+funds will be held for 30 days before being returned to the originating acc=
+ount.</span></div>
+
+<div style=3D"font-size: 12px; color: rgb(107, 114, 128);">&nbsp;</div>
+</div>
+</div>
+
+<div style=3D"margin-top:24px; padding-top:20px; border-top:1px solid #e5e7=
+eb; font-size:12px; color:#6b7280; text-align:center;">=C2=A9 Singtel (CRN:=
+ 199201624D) All Rights Reserved.</div>
+</div>
+</body>
+</html>
+
+--000000000000aa7ecc064b77529f--

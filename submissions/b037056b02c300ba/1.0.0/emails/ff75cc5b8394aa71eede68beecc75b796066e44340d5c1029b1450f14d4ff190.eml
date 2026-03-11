@@ -1,0 +1,233 @@
+Authentication-Results: spf=pass (sender IP is 101.99.66.184)
+ smtp.mailfrom=1vilt.com; dkim=pass (signature was verified)
+ header.d=1vilt.com;dmarc=pass action=none header.from=1vilt.com;compauth=pass
+ reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:EF417A21FF770AB1446C1281A59C9315A4DB57C8B6215BE10A715835211ADBC5;UpperCasedChecksum:D3AC1E5D25947556ECB62BFAB48DE8E70F2A58F8C4F71ED6B4F41A7B349A102E;SizeAsReceived:833;Count:11
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.1vilt.com CCDAE40539
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=1vilt.com; s=default;
+	t=1772701335; bh=BSKElpfnXuV45EWUIIxFhag2c3k+yO5IFogadsNIbVI=;
+	h=From:Reply-To:To:Subject:Date:From;
+	b=36cuqyqCFnA6g5gpRsJiC1e39VtKXvlx+IiM9cAvpjB4J5r9KaBWJERPHBO3s3aeo
+	 52FpkayGJxdEQlAS+SeNRNYsXE/ymGl5pzwsgVopiUN2CjLhMjZmrcnnmBS0i0pGYm
+	 LkJrEfaV0cLxPa9pSoMZXofQiQueaJOl3qqq0H0o=
+From: "Mark" <mark@1vilt.com>
+Reply-To: mark@1vilt.com
+To: redacted@redacted.com
+Subject: Human plus AI Productivity Tools (8 - 9 April 2026)
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_5A51_0A120409.2BA320C3"
+Date: Thu, 5 Mar 2026 17:02:08 +0800
+Message-ID: <9164204268504144087424@DESKTOP-HF4QG96>
+Disposition-Notification-To: <mark@1vilt.com>
+X-IncomingHeaderCount: 11
+X-MS-Exchange-Organization-ExpirationStartTime: 05 Mar 2026 09:02:18.6839
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 97c5c745-68cc-46ec-6790-08de7a95e78f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL6PEPF0001AB50:EE_|EA2P220MB1023:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL6PEPF0001AB50.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 10/5/2025 1:25:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 97c5c745-68cc-46ec-6790-08de7a95e78f
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 101.99.66.184
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|461199028|46080799006|23130799006|22070799003|32020799003|970799060|1290799033|34130799006|7099299003|2700799029|29090799004|3069299007|10049299003|1360799030|1370799030|1380799030|440099028|3412199025|34101999003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Mar 2026 09:02:17.9690
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 97c5c745-68cc-46ec-6790-08de7a95e78f
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL6PEPF0001AB50.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA2P220MB1023
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6367973
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9678.017
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ +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
+MIME-Version: 1.0
+
+------=_NextPart_001_5A51_0A120409.2BA320C3
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+I hope this email finds you well.
+
+=20
+
+Below are corporate and operations training opportunities for you and your =
+organization, available both in person at Concorde Hotel, Kuala Lumpur, Mal=
+aysia, and virtually via Zoom video conference.
+
+=20
+
+Topic 1 - Human + AI Productivity Tools [8 - 9 April 2026]
+
+The Human+AI Productivity Tools workshop is a practical, hands-on 2-day pro=
+gram designed to help professionals integrate AI into their daily work in a=
+ structured, responsible, and highly productive way. Participants will expl=
+ore how Human+AI collaboration can enhance communication, planning, researc=
+h, documentation, and decision-making =97 while ensuring human oversight, c=
+ritical thinking, and professional judgement remain central to every proces=
+s.
+
+=20
+
+Topic 2 - Organizational Design & Development for Middle Managers [13 - 14 =
+April 2026]
+
+This workshop equips middle managers and senior supervisors with a practica=
+l understanding of organizational design and development, focusing on how s=
+tructure, roles, processes, culture, and performance systems align to suppo=
+rt strategy execution. Participants will explore key organizational design =
+principles, common structural challenges, and modern organizational models,=
+ enabling them to identify misalignment that affects efficiency, accountabi=
+lity, and collaboration.
+
+=20
+
+Topic 3 - Building Organizational Culture & Transformation [4 - 5 May 2026]
+
+This two-day program, Building Organizational Culture & Transformation, is =
+designed for middle and senior managers, transformation leads, and high-pot=
+ential leaders who want to turn culture into a strategic advantage. Partici=
+pants will explore the fundamentals of organizational culture, diagnose cur=
+rent cultural realities, and understand how culture directly impacts strate=
+gy execution, performance, and employee behavior.
+
+=20
+
+Feel free to request brochures for more information.
+
+=20
+
+On the other hand, if you wish to not receive further emails such as this, =
+simply put the word =93remove=94 on the subject and send back to us. Thank =
+you.
+
+=20
+
+=20
+
+Best regards,
+
+Mark
+
+
+------=_NextPart_001_5A51_0A120409.2BA320C3
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body><font size=3D"2" face=3D"Arial, Helvetica, sans-serif">
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">I hope this=
+ email finds you well.</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Below are c=
+orporate&nbsp;and operations training opportunities for you and your organi=
+zation, available both in person at Concorde Hotel, Kuala Lumpur, Malaysia,=
+ and virtually via Zoom video conference.</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><u><span style=3D"FONT-SIZE=
+: 11pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Topic=
+ 1 - Human + AI Productivity Tools</span></u></b><span style=3D"FONT-SIZE: =
+11pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%"> [8 - 9=
+ April 2026]</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 10pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">The Human+A=
+I Productivity Tools workshop is a practical, hands-on 2-day program design=
+ed to help professionals integrate AI into their daily work in a structured=
+, responsible, and highly productive way. Participants will explore how Hum=
+an+AI collaboration can enhance communication, planning, research, document=
+ation, and decision-making =97 while ensuring human oversight, critical thi=
+nking, and professional judgement remain central to every process.</span><o=
+:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><u><span style=3D"FONT-SIZE=
+: 11pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Topic=
+ 2 - Organizational Design &amp; Development for Middle Managers</span></u>=
+</b><span style=3D"FONT-SIZE: 11pt; FONT-FAMILY: &quot;Arial&quot;,sans-ser=
+if; LINE-HEIGHT: 115%"> [13 - 14 April 2026]</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 10pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">This worksh=
+op equips middle managers and senior supervisors with a practical understan=
+ding of organizational design and development, focusing on how structure, r=
+oles, processes, culture, and performance systems align to support strategy=
+ execution. Participants will explore key organizational design principles,=
+ common structural challenges, and modern organizational models, enabling t=
+hem to identify misalignment that affects efficiency, accountability, and c=
+ollaboration.</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 10pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><u><span style=3D"FONT-SIZE=
+: 11pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Topic=
+ 3 - Building Organizational Culture &amp; Transformation</span></u></b><sp=
+an style=3D"FONT-SIZE: 11pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LIN=
+E-HEIGHT: 115%"> [4 - 5 May 2026]</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 10pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">This two-da=
+y program, Building Organizational Culture &amp; Transformation, is designe=
+d for middle and senior managers, transformation leads, and high-potential =
+leaders who want to turn culture into a strategic advantage. Participants w=
+ill explore the fundamentals of organizational culture, diagnose current cu=
+ltural realities, and understand how culture directly impacts strategy exec=
+ution, performance, and employee behavior.</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><u><span style=3D"FONT-SIZE: 1=
+1pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; BACKGROUND: yellow; COLOR: =
+black; LINE-HEIGHT: 115%; mso-color-alt: windowtext">Feel free to request b=
+rochures for more information.</span></u><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">On the othe=
+r hand, if you wish to not receive further emails such as this, simply put =
+the word =93remove=94 on the subject and send back to us. Thank you.</span>=
+<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">&nbsp;</spa=
+n><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Best regard=
+s,</span><o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-SIZE: 11pt=
+; FONT-FAMILY: &quot;Arial&quot;,sans-serif; LINE-HEIGHT: 115%">Mark</span>=
+</p></font></body></html>
+------=_NextPart_001_5A51_0A120409.2BA320C3--
