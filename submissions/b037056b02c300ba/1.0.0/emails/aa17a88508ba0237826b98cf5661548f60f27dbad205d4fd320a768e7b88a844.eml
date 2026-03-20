@@ -1,0 +1,236 @@
+Authentication-Results: spf=pass (sender IP is 23.251.234.50)
+ smtp.mailfrom=send.awaz.world; dkim=pass (signature was verified)
+ header.d=awaz.world;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=bestguesspass action=none
+ header.from=awaz.world;compauth=pass reason=109
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:C6C73659EC34435A1F23631CCB8D82CEE98E5E32817E8026C231E52EDC00DF9F;UpperCasedChecksum:C4027E67F57B14895A1103C79718399E8F9824B30692CA6A95ADC3D3AD235A7A;SizeAsReceived:1613;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=resend;
+	d=awaz.world; t=1773871268;
+	h=Message-ID:From:To:Reply-To:Subject:Date:MIME-Version:Content-Type;
+	bh=hpeJCot4UHXcC1MiPNiL5UI//eGGQJOg0zGKaW4ORnc=;
+	b=NWKVuqhk3X9zUo8HLsNWJAN5yf1Cf8Ixg0Tyu7Wfy6rQmfq1x8kyOUPewdb+OGFQ
+	JRMgi9Ngyg0EZ797B7pnXo3saosUlbYmkOhjxWsxWHbarNNG/tfWyzTTHITac5gqJv2
+	no8uVbZjSm2bik6EwJQqfHb/2rk3N7aZ3yiqEywU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=suwteswkahkjx5z3rgaujjw4zqymtlt2; d=amazonses.com; t=1773871268;
+	h=Message-ID:From:To:Reply-To:Subject:Date:MIME-Version:Content-Type:Feedback-ID;
+	bh=hpeJCot4UHXcC1MiPNiL5UI//eGGQJOg0zGKaW4ORnc=;
+	b=Ez4rGZm74lDyhshA8/+WXxtsqS/dwK1PEVEkqAmtIeG8Gq6Ydym38rwmUl4ESSmd
+	UJRHyqdzMmDnwh09a01cYPsdFxDf6ynvELv4gR8LWyQkIQBuaTTS162r8MFR8LrVgw8
+	ftQyP+3dFi6INi+urZvEitlynebu5v3I8o6Fvtbs=
+Message-ID: 
+ <0106019d02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000000@ap-northeast-1.amazonses.com>
+From: Awaz <amalia@awaz.world>
+To: redacted@redacted.com
+Reply-To: amalia@awaz.world
+Subject: Invitation: Free Whitelabel AI Voice Webinar with Awaz AI's CEO
+Date: Wed, 18 Mar 2026 22:01:08 +0000
+Content-Type: multipart/alternative;
+ boundary="--_NmP-e581460a251138e6-Part_1"
+Feedback-ID: 
+ :1.ap-northeast-1.+Ynej2xAK0UGvLwzjMH/yzrFThm7loZag7n2INIU92R/9r3I3fz21hP8oH7TISlyzr7eJnNpr1p24xULvP5+stkQofI52xvfhdrzNM8wmoSaYHMliUHiE22HccNNUmkZ8b4eo9N5iJyFXUuu2f9HlTsJ1clbHbidbfLBurMV1kTCzw+C2CMsyCzPRusORKIX:1.ap-northeast-1.tL27A1JIpKR2Y51a8BkHZBekDcSR82jwOhKrSwgRw2U=:AmazonSES
+X-SES-Outgoing: 2026.03.18-23.251.234.50
+X-IncomingHeaderCount: 12
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Mar 2026 22:01:09.8920
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 63d7a135-9c16-40f6-9f3c-08de8539dce6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SN1PEPF000252A1:EE_|PH0P220MB0637:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SN1PEPF000252A1.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/17/2026 3:04:36 AM
+X-MS-Office365-Filtering-Correlation-Id: 63d7a135-9c16-40f6-9f3c-08de8539dce6
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 23.251.234.50
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|42200799015|9400799043|970799060|46080799006|34130799006|32020799003|22090799003|3151999006|3069299007|10300799038|5149299006|30140799006|21090799003|56000799018|58200799021|47200799024|119000799006|1290799033|461199028|1680799066|16002599021|5101999024|5139299004|9109299003|7099299003|84100799006|9000799056|2700799029|33080799003|1380799030|56899033|1360799030|1370799030|26001999015|1602099012|22015499006|3412199025|440099028|4302099013|1122599022|18021999003|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Mar 2026 22:01:09.4799
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 63d7a135-9c16-40f6-9f3c-08de8539dce6
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SN1PEPF000252A1.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0P220MB0637
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5417907
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9700.017
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+----_NmP-e581460a251138e6-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+This email requires HTML support.
+----_NmP-e581460a251138e6-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+able role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ width=3D"100%" style=3D"max-width:600px; margin:auto; background-color:#ff=
+ffff;"><tr><td style=3D"font-family:Arial, Helvetica, sans-serif;padding:0;=
+"><!-- Hero Image Placeholder --><img src=3D"hxxps://storage[.]googleapis[.=
+]com/send47-preview-images/artifacts/b802882c-0e49-405d-94a9-bdf64002cc73/f=
+16b09565e7c[.]jpg" width=3D"600" alt=3D"Robotic hand holding smartphone wit=
+h AI chat bubble showing Hi First_name" style=3D"width:100%; max-width:600p=
+x; height:auto; display:block; object-fit: cover;"></td></tr><tr><td style=
+=3D"font-family:Arial, Helvetica, sans-serif;padding: 20px;"><p style=3D"fo=
+nt-family:Arial, Helvetica, sans-serif;color:#111827; font-size:16px; margi=
+n: 0 0 16px 0;"> Hi Cheng, </p><p style=3D"font-family:Arial, Helvetica, sa=
+ns-serif;color:#374151; font-size:16px; line-height:1.6; margin: 0 0 16px 0=
+;"> Does your business ever miss important calls, struggle with slow lead f=
+ollow-up, or experience gaps in booking appointments after hours? These com=
+mon operational challenges can significantly impact your team's efficiency =
+and overall customer experience. </p><p style=3D"font-family:Arial, Helveti=
+ca, sans-serif;color:#374151; font-size:16px; line-height:1.6; margin: 0 0 =
+24px 0;"> We're hosting a free 60-minute live webinar with Awaz AI's CEO, w=
+here we'll show you a practical approach to directly address these issues u=
+sing intelligent AI voice agents. </p><h3 style=3D"color:#111827; font-size=
+:18px; font-weight:600; line-height:1.4; margin: 0 0 16px 0;">A Practical W=
+hitelabel Walkthrough</h3><p style=3D"font-family:Arial, Helvetica, sans-se=
+rif;color:#374151; font-size:16px; line-height:1.6; margin: 0 0 16px 0;"> T=
+his session will provide a clear walkthrough of our Awaz Whitelabel platfor=
+m, illustrating how partners are currently using voice AI agents for essent=
+ial tasks like: </p><ul style=3D"color:#374151; font-size:16px; line-height=
+:1.6; margin: 0 0 16px 20px; padding:0;"><li style=3D"margin-bottom:8px;">M=
+issed-call handling</li><li style=3D"margin-bottom:8px;">Lead follow-up</li=
+><li style=3D"margin-bottom:8px;">Booking and qualification</li><li style=
+=3D"margin-bottom:0;">After-hours coverage</li></ul><p style=3D"font-family=
+:Arial, Helvetica, sans-serif;color:#374151; font-size:16px; line-height:1.=
+6; margin: 0 0 24px 0;"> You don't need a tech team or prior experience to =
+get started. In this session, our CEO will walk you through how to set up y=
+our own branded AI voice platform in minutes. You'll discover how partners =
+are launching their own branded AI voice services to extend offerings to cl=
+ients or efficiently manage communications across their own business locati=
+ons, even if you=E2=80=99re starting from scratch. </p><p style=3D"font-fam=
+ily:Arial, Helvetica, sans-serif;color:#374151; font-size:16px; line-height=
+:1.6; margin: 0 0 24px 0;"> Worth a look? </p><p style=3D"font-family:Arial=
+, Helvetica, sans-serif;margin: 0;"><a href=3D"hxxps://ca2ef0aa82abc609b8e3=
+465792d3184b[.]ap-northeast-1[.]resend-clicks-a[.]com/CL0/https:%2F%2Fvzrzx=
+vofahoeklruedno[.]supabase[.]co%2Ffunctions%2Fv1%2Ftrack-click%3Femail_id=
+=3D094417c5-32c9-4e54-a4eb-ccd5d8b7291a%26contact_id=3D308c6b11-6e0a-4419-9=
+3b8-ab4d7499abf4%26campaign=3Dbf59403d-40cc-4a87-aac8-7553c21ba754%26url=3D=
+https%253A%252F%252Fwww[.]awaz[.]ai%252Fwhitelabel/1/0106019d02f780b9-e18e6=
+d34-45de-44c4-9d9a-dcac8f442720-000000/zORKjmhAh5XZYXQ1UhV2wH7AcJI1iJRVObl7=
+fiVRdis=3D255" target=3D"_blank" style=3D"background-color:#6366F1; color:#=
+ffffff; padding:14px 24px; border-radius:4px; text-decoration:none; display=
+:inline-block; font-size:16px; font-weight:500">Check it out!</a></p></td><=
+/tr><tr><td style=3D"font-family:Arial, Helvetica, sans-serif;padding: 20px=
+;"><p style=3D"font-family:Arial, Helvetica, sans-serif;color:#6b7280; font=
+-size:14px; line-height:1.6; margin: 0;"> =E2=80=94 </p><p style=3D"font-fa=
+mily:Arial, Helvetica, sans-serif;color:#6b7280; font-size:14px; line-heigh=
+t:1.6; margin: 8px 0 0 0;"> Made by my AI email agent =E2=80=94 <a href=3D"=
+hxxps://ca2ef0aa82abc609b8e3465792d3184b[.]ap-northeast-1[.]resend-clicks-a=
+[.]com/CL0/https:%2F%2Fvzrzxvofahoeklruedno[.]supabase[.]co%2Ffunctions%2Fv=
+1%2Ftrack-click%3Femail_id=3D094417c5-32c9-4e54-a4eb-ccd5d8b7291a%26contact=
+_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf4%26campaign=3Dbf59403d-40cc-4a87-=
+aac8-7553c21ba754%26url=3Dhttps%253A%252F%252Fwww[.]send47[.]com/1/0106019d=
+02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000000/fp7Pntn_ov6vUkpm9BsEVe=
+CFXISWIkU2vb9g_3Fcd84=3D255" target=3D"_blank" style=3D"color:#6366F1; text=
+-decoration:none;">Send47</a></p></td></tr></table><div style=3D"margin-top=
+:40px;padding-top:20px;border-top:1px solid #e5e7eb;text-align:center;font-=
+family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"><div=
+ style=3D"font-family:Arial, Helvetica, sans-serif;margin-bottom:16px;"><a =
+href=3D"hxxps://ca2ef0aa82abc609b8e3465792d3184b[.]ap-northeast-1[.]resend-=
+clicks-a[.]com/CL0/https:%2F%2Fvzrzxvofahoeklruedno[.]supabase[.]co%2Ffunct=
+ions%2Fv1%2Ftrack-click%3Femail_id=3D094417c5-32c9-4e54-a4eb-ccd5d8b7291a%2=
+6contact_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf4%26campaign=3Dbf59403d-40=
+cc-4a87-aac8-7553c21ba754%26url=3Dhttps%253A%252F%252Fwww[.]awaz[.]ai%252F/=
+1/0106019d02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000000/aOvDmFOBZKNu=
+ZvS_rE3Mbcvz-xguP5qiTDQROlxDzEs=3D255" target=3D"_blank" rel=3D"noopener no=
+referrer" style=3D"display:inline-block;"><img src=3D"hxxps://vzrzxvofahoek=
+lruedno[.]supabase[.]co/storage/v1/object/public/email-images/brands/1580b2=
+a0-f968-45df-bf23-72ef092ecfda-logo_url-1767781491054[.]png" alt=3D"Awaz.ai=
+" style=3D"display:block;max-height:50px;max-width:180px;height:auto;width:=
+auto;margin:0 auto;"></a></div><div style=3D"font-family:Arial, Helvetica, =
+sans-serif;margin-bottom:16px;"><a href=3D"hxxps://ca2ef0aa82abc609b8e34657=
+92d3184b[.]ap-northeast-1[.]resend-clicks-a[.]com/CL0/https:%2F%2Fvzrzxvofa=
+hoeklruedno[.]supabase[.]co%2Ffunctions%2Fv1%2Ftrack-click%3Femail_id=3D094=
+417c5-32c9-4e54-a4eb-ccd5d8b7291a%26contact_id=3D308c6b11-6e0a-4419-93b8-ab=
+4d7499abf4%26campaign=3Dbf59403d-40cc-4a87-aac8-7553c21ba754%26url=3Dhttps%=
+253A%252F%252Fwww[.]youtube[.]com%252F%2540AwazAI/1/0106019d02f780b9-e18e6d=
+34-45de-44c4-9d9a-dcac8f442720-000000/Nct7duFPg-3UOozfi98hs6pvv3WPZJeTSlbed=
+VfAM2M=3D255" target=3D"_blank" rel=3D"noopener noreferrer" title=3D"YouTub=
+e" style=3D"display:inline-block;margin:0 8px;text-decoration:none;"><img s=
+rc=3D"hxxps://vzrzxvofahoeklruedno[.]supabase[.]co/storage/v1/object/public=
+/email-images/social-icons/youtube[.]png" alt=3D"YouTube" width=3D"24" heig=
+ht=3D"24" style=3D"display:block;border:0;"></a><a href=3D"hxxps://ca2ef0aa=
+82abc609b8e3465792d3184b[.]ap-northeast-1[.]resend-clicks-a[.]com/CL0/https=
+:%2F%2Fvzrzxvofahoeklruedno[.]supabase[.]co%2Ffunctions%2Fv1%2Ftrack-click%=
+3Femail_id=3D094417c5-32c9-4e54-a4eb-ccd5d8b7291a%26contact_id=3D308c6b11-6=
+e0a-4419-93b8-ab4d7499abf4%26campaign=3Dbf59403d-40cc-4a87-aac8-7553c21ba75=
+4%26url=3Dhttps%253A%252F%252Fwww[.]facebook[.]com%252Fgroups%252Fai[.]voic=
+e[.]agent/1/0106019d02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000000/m1=
+XB07vw4klXE-5OlfYTvv-xSOuGS8KivWxhsbnDqiY=3D255" target=3D"_blank" rel=3D"n=
+oopener noreferrer" title=3D"Facebook" style=3D"display:inline-block;margin=
+:0 8px;text-decoration:none;"><img src=3D"hxxps://vzrzxvofahoeklruedno[.]su=
+pabase[.]co/storage/v1/object/public/email-images/social-icons/facebook[.]p=
+ng" alt=3D"Facebook" width=3D"24" height=3D"24" style=3D"display:block;bord=
+er:0;"></a><a href=3D"hxxps://ca2ef0aa82abc609b8e3465792d3184b[.]ap-northea=
+st-1[.]resend-clicks-a[.]com/CL0/https:%2F%2Fvzrzxvofahoeklruedno[.]supabas=
+e[.]co%2Ffunctions%2Fv1%2Ftrack-click%3Femail_id=3D094417c5-32c9-4e54-a4eb-=
+ccd5d8b7291a%26contact_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf4%26campaign=
+=3Dbf59403d-40cc-4a87-aac8-7553c21ba754%26url=3Dhttps%253A%252F%252Fwww[.]l=
+inkedin[.]com%252Fcompany%252Fawaz-ai%252Fposts%252F%253FfeedView%253Dall/1=
+/0106019d02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000000/EIU28dWJnhoQw=
+x_7CQiHDVyQhYeMwokaZG2qy6f_Vq4=3D255" target=3D"_blank" rel=3D"noopener nor=
+eferrer" title=3D"LinkedIn" style=3D"display:inline-block;margin:0 8px;text=
+-decoration:none;"><img src=3D"hxxps://vzrzxvofahoeklruedno[.]supabase[.]co=
+/storage/v1/object/public/email-images/social-icons/linkedin[.]png" alt=3D"=
+LinkedIn" width=3D"24" height=3D"24" style=3D"display:block;border:0;"></a>=
+<a href=3D"hxxps://ca2ef0aa82abc609b8e3465792d3184b[.]ap-northeast-1[.]rese=
+nd-clicks-a[.]com/CL0/https:%2F%2Fvzrzxvofahoeklruedno[.]supabase[.]co%2Ffu=
+nctions%2Fv1%2Ftrack-click%3Femail_id=3D094417c5-32c9-4e54-a4eb-ccd5d8b7291=
+a%26contact_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf4%26campaign=3Dbf59403d=
+-40cc-4a87-aac8-7553c21ba754%26url=3Dhttps%253A%252F%252Fwww[.]instagram[.]=
+com%252Fawaz[.]ai%252F%253Fhl%253Den/1/0106019d02f780b9-e18e6d34-45de-44c4-=
+9d9a-dcac8f442720-000000/8aUiJ7xR3gde6JNZMIeBA2pPC1GZzsoU5dYn4mESW8w=3D255"=
+ target=3D"_blank" rel=3D"noopener noreferrer" title=3D"Instagram" style=3D=
+"display:inline-block;margin:0 8px;text-decoration:none;"><img src=3D"hxxps=
+://vzrzxvofahoeklruedno[.]supabase[.]co/storage/v1/object/public/email-imag=
+es/social-icons/instagram[.]png" alt=3D"Instagram" width=3D"24" height=3D"2=
+4" style=3D"display:block;border:0;"></a></div><div style=3D"font-family:Ar=
+ial, Helvetica, sans-serif;margin-bottom:16px;color:#6b7280;font-size:12px;=
+line-height:1.5;">2261 Market Street STE 10067,<br>San Francisco, CA 94114<=
+/div><div style=3D"font-family:Arial, Helvetica, sans-serif;color:#6b7280;f=
+ont-size:12px;line-height:1.6;"><p style=3D"font-family:Arial, Helvetica, s=
+ans-serif;margin:0 0 8px 0;">Don't want to receive these emails? <a href=3D=
+"hxxps://ca2ef0aa82abc609b8e3465792d3184b[.]ap-northeast-1[.]resend-clicks-=
+a[.]com/CL0/https:%2F%2Fvzrzxvofahoeklruedno[.]supabase[.]co%2Ffunctions%2F=
+v1%2Funsubscribe-contact%3Fcontact_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf=
+4%26campaign_id=3Dbf59403d-40cc-4a87-aac8-7553c21ba754%26email=3Dredacted%2=
+540hotmail[.]sg/1/0106019d02f780b9-e18e6d34-45de-44c4-9d9a-dcac8f442720-000=
+000/VsE4b3C2NQYgWL7Wm7BQsRelQMcmzhHY1HX7NTGAW9M=3D255" style=3D"color:#6366=
+F1;text-decoration:underline;">Unsubscribe</a></p><p style=3D"font-family:A=
+rial, Helvetica, sans-serif;margin:0;color:#9ca3af;">=C2=A9 2026 Awaz.ai. A=
+ll rights reserved.</p></div></div><img src=3D"hxxps://vzrzxvofahoeklruedno=
+[.]supabase[.]co/functions/v1/track-open?email_id=3D094417c5-32c9-4e54-a4eb=
+-ccd5d8b7291a&amp;contact_id=3D308c6b11-6e0a-4419-93b8-ab4d7499abf4&amp;cam=
+paign=3Dbf59403d-40cc-4a87-aac8-7553c21ba754" width=3D"1" height=3D"1" styl=
+e=3D"display:none;"><img alt=3D"" src=3D"hxxp://ca2ef0aa82abc609b8e3465792d=
+3184b[.]ap-northeast-1[.]resend-clicks-a[.]com/CI0/0106019d02f780b9-e18e6d3=
+4-45de-44c4-9d9a-dcac8f442720-000000/35dCGFxN4qhLVFI50IS0KOQU-OWp62Sf8tTW1j=
+qZ0YE=3D255" style=3D"display: none; width: 1px; height: 1px;">
+
+----_NmP-e581460a251138e6-Part_1--
