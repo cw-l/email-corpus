@@ -1,0 +1,314 @@
+Authentication-Results: spf=pass (sender IP is 76.223.180.119)
+ smtp.mailfrom=ap-south-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=fail action=none header.from=awaz.pro;
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:058DFD2652C03EB4290CC0F445094A1B606788D57F421DA8351F1AB97C59136E;UpperCasedChecksum:9BE34E0D90E86CF9DBFABCB472806820DC7DB7CEF0CAE05E4D642DE322FB34A2;SizeAsReceived:1244;Count:13
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=dvogjbaa3ou3tduyzvyu4rj5tkuzdi4h; d=amazonses.com; t=1774494968;
+	h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Feedback-ID;
+	bh=gFFKn2r9sfjfZTO+646tyyuIIdIg04sWjHlc4VRCp0E=;
+	b=CiHGMdmrwNTfoUSxIieIAcaz13okAMy+dlSdwbY+ZUQCy7WhpUx30e6ejfDhaUEc
+	GL/BmD5zJNkpWNEfGDJgzZ1CbGexqCog81KwS7nhlbxGlcD2E+ydCtPi8FEA4tut8n4
+	Nu5qOZO6IVt9JpnOyKTi/K+Tq/PyvESDiBhRDLRU=
+Date: Thu, 26 Mar 2026 03:16:08 +0000
+To: <redacted> <redacted@redacted.com>
+From: "Bernard @ Awaz" <bernard@awaz.pro>
+Reply-To: "Bernard @ Awaz" <bernard@awaz.pro>
+Subject: Turn voice automation into a service you can deliver repeatedly
+Message-ID: 
+ <0109019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000@ap-south-1.amazonses.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: 
+ <https://sendy.digitalinfluencers.co/unsubscribe/HlANtngD5I1TmezIJBiMw8Dd6bVe4he5763ffWH7lOals/fo763BKtyLoMbtGclpm0Qdig/zpPSdYUvxOmoSlR3OBHvOA>
+Content-Type: multipart/alternative;
+	boundary="b1_8c51f665c4ffadec334c2165387f1a57"
+Feedback-ID: 
+ ::1.ap-south-1.FF0cYBeIQ0FUbXruMdxADycetUPzJqWN4cremuzcAZA=:AmazonSES
+X-SES-Outgoing: 2026.03.26-76.223.180.119
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Mar 2026 03:16:11.1829
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ f8ddc4f1-bd6f-43fb-fbc6-08de8ae607d6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH2PEPF00000140:EE_|CO6P220MB0666:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CH2PEPF00000140.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 3/26/2026 2:44:50 AM
+X-MS-Office365-Filtering-Correlation-Id: f8ddc4f1-bd6f-43fb-fbc6-08de8ae607d6
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 76.223.180.119
+X-SID-Result: NONE
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:5;ARA:1444111002|3151999006|21090799003|1290799033|34130799006|970799060|9000799056|32020799003|9109299003|9400799043|18110799089|36140799009|30140799006|58200799021|35120799006|10300799038|47200799024|1680799066|5101999024|60050799006|461199028|29130799006|5099299006|16002599021|5139299004|68400799013|42300799018|56899033|1360799030|1380799030|26001999015|1370799030|1602099012|4302099013|3412199025|4601999015|1122599022|440099028|30041999003|18021999003|2406899039|26020799025;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Mar 2026 03:16:10.4812
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ f8ddc4f1-bd6f-43fb-fbc6-08de8ae607d6
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH2PEPF00000140.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO6P220MB0666
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4597071
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9723.025
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10160021)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--b1_8c51f665c4ffadec334c2165387f1a57
+Content-Type: text/plain; charset=us-ascii
+
+Hi <redacted>,
+
+Delivering voice automation for a single client is an achievement. The real challenge, however, lies in delivering it repeatedly across multiple clients, maintaining quality and efficiency without creating chaos. This is where a systematic approach becomes essential.
+
+Scaling your voice automation services requires standardization. Think of it as a playbook: a clear template, an effective onboarding checklist, consistent outcomes, and robust reporting. This framework ensures predictable, high-quality results every time.
+
+Our Whitelabel solution is built precisely for this model. It empowers you to deliver Awaz.ai's powerful voice automation under your own brand, with dedicated client workspaces. This allows you to manage each client's needs separately while leveraging a unified, repeatable delivery system.
+Your Practical Packaging Approach:
+
+    Define one flagship workflow you can deliver consistently to most clients.
+    Create a baseline AI agent template, only customizing what is absolutely client-specific.
+    Use consistent call outcomes for streamlined performance measurement and reporting.
+    Sync these outcomes into CRM or Google Sheets with API for clean follow-ups and comprehensive client reporting.
+
+To help you master this, our CEO is hosting a free 60-minute Whitelabel webinar. This session will cover key features of the Awaz.ai Whitelabel platform and provide valuable insights into implementing a scalable service delivery model.
+
+Register for the Whitelabel Webinar:
+hxxps://sendy[.]digitalinfluencers[.]co/l/lQl3wjaAZqaZD763eA8Rzc6Q/ZTe8tKq3uq0ZWr6PE9OE2Q/zpPSdYUvxOmoSlR3OBHvOA
+
+We look forward to helping you expand your service offerings with confidence.
+
+
+--b1_8c51f665c4ffadec334c2165387f1a57
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0">
+	<title>Awaz.ai Whitelabel</title>
+	<style type=3D"text/css">body { font-family: Arial, sans-serif; background=
+-color: #f9fafb; margin: 0; padding: 0; -moz-osx-font-smoothing: grayscale;=
+ -webkit-font-smoothing: antialiased; } table { border-collapse: collapse; =
+} td { padding: 0; } .container { width: 100%; max-width: 600px; margin: 20=
+px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; b=
+ox-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, =
+0.06); } .content-padding { padding: 40px; } @media screen and (max-width: =
+600px) { .content-padding { padding: 20px; } .container { margin: 10px auto=
+; } }
+	</style>
+</head>
+<body>
+<center>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"max-width: 600px; width: 100%; background-colo=
+r: #ffffff;">
+	<tbody>
+		<tr>
+			<td style=3D"padding-bottom: 24px;"><a href=3D"hxxps://2zfgr817[.]r[.]ap=
+-south-1[.]awstrack[.]me/L0/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl=
+%2FlQl3wjaAZqaZD763eA8Rzc6Q%2FZTe8tKq3uq0ZWr6PE9OE2Q%2FzpPSdYUvxOmoSlR3OBHv=
+OA/1/0109019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/Y0Maic_4L=
+F6v7Lz7-8E5FRCKzm4=3D252" target=3D"_blank"><img alt=3D"Abstract illustrati=
+on representing scalable voice automation and efficient service delivery." =
+src=3D"hxxps://sendy[.]digitalinfluencers[.]co/uploads/1772614174[.]png" st=
+yle=3D"display: block; width: 100%; max-width: 600px;"></a></td>
+		</tr>
+		<tr>
+			<td class=3D"content-padding">
+			<p style=3D"color:#111827;font-size:16px; margin: 0 0 16px 0;"><span sty=
+le=3D"font-family:Helvetica;"><span style=3D"color:#000000;"><span style=3D=
+"font-size:18px;">Hi <redacted>,</span></span></span></p>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0 0 16=
+px 0;"><span style=3D"color:#000000;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Delivering voice automation for a single =
+client is an achievement. The real challenge, however, lies in delivering i=
+t repeatedly across multiple clients, maintaining quality and efficiency wi=
+thout creating chaos. This is where a systematic approach becomes essential=
+.</span></span></span></p>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0 0 16=
+px 0;"><span style=3D"color:#000000;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Scaling your voice automation services re=
+quires standardization. Think of it as a playbook: a clear template, an eff=
+ective onboarding checklist, consistent outcomes, and robust reporting. Thi=
+s framework ensures predictable, high-quality results every time.</span></s=
+pan></span></p>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0 0 24=
+px 0;"><span style=3D"color:#000000;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Our Whitelabel solution is built precisel=
+y for this model. It empowers you to deliver Awaz.ai's powerful voice autom=
+ation under your own brand, with dedicated client workspaces. This allows y=
+ou to manage each client's needs separately while leveraging a unified, rep=
+eatable delivery system.</span></span></span></p>
+
+			<h3 style=3D"color:#111827;font-size:20px;font-weight:600;line-height:1.=
+4; margin: 0 0 16px 0;"><span style=3D"color:#000000;"><span style=3D"font-=
+family:Helvetica;">Your Practical Packaging Approach:</span></span></h3>
+
+			<ul style=3D"list-style-type: disc; margin: 0; padding-left: 20px; color=
+: #374151; font-size: 16px; line-height: 1.6;">
+				<li style=3D"margin-bottom: 8px;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Define one flagship workflow you can deli=
+ver consistently to most clients.</span></span></li>
+				<li style=3D"margin-bottom: 8px;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Create a baseline AI agent template, only=
+ customizing what is absolutely client-specific.</span></span></li>
+				<li style=3D"margin-bottom: 8px;"><span style=3D"font-size:18px;"><span=
+ style=3D"font-family:Helvetica;">Use consistent call outcomes for streamli=
+ned performance measurement and reporting.</span></span></li>
+				<li><span style=3D"font-size:18px;"><span style=3D"font-family:Helvetic=
+a;">Sync these outcomes into CRM or Google Sheets with API for clean follow=
+-ups and comprehensive client reporting.</span></span></li>
+			</ul>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 24px 0=
+ 24px 0;"><span style=3D"color:#000000;"><span style=3D"font-size:18px;"><s=
+pan style=3D"font-family:Helvetica;">To help you master this, our CEO is ho=
+sting a free 60-minute Whitelabel webinar. This session will cover key feat=
+ures of the Awaz.ai Whitelabel platform and provide valuable insights into =
+implementing a scalable service delivery model.</span></span></span></p>
+
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" style=3D"width: 100%; margin-bottom: 24px;">
+				<tbody>
+					<tr>
+						<td align=3D"center"><strong><span style=3D"font-size:18px;"><span st=
+yle=3D"font-family:Helvetica;"><a href=3D"hxxps://2zfgr817[.]r[.]ap-south-1=
+[.]awstrack[.]me/L0/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl%2FlQl3w=
+jaAZqaZD763eA8Rzc6Q%2FZTe8tKq3uq0ZWr6PE9OE2Q%2FzpPSdYUvxOmoSlR3OBHvOA/2/010=
+9019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/MEn-gS9b0SFwn5wFq=
+M36Kw68oFI=3D252" style=3D"background-color:#6366F1; color:#ffffff; text-de=
+coration:none; padding:14px 24px; border-radius:4px; display:inline-block; =
+font-size:16px; font-weight:500" target=3D"_blank">Register for the Whitela=
+bel Webinar</a></span></span></strong></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0;"><s=
+pan style=3D"font-size:18px;"><span style=3D"color:#000000;">We look forwar=
+d to helping you expand your service offerings with confidence</span>.</spa=
+n></p>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0;">&n=
+bsp;</p>
+
+			<p style=3D"color:#374151;font-size:16px;line-height:1.6; margin: 0;">&n=
+bsp;</p>
+
+			<p style=3D"color: rgb(107, 114, 128); font-size: 14px; margin: 24px 0px=
+ 0px;"><span style=3D"font-family:Helvetica;">&#8212; Made with <a href=3D"=
+hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/L0/https:%2F%2Fsendy[.]di=
+gitalinfluencers[.]co%2Fl%2FlQl3wjaAZqaZD763eA8Rzc6Q%2FzTzLIYNJdlhnPcVNCMld=
+ZA%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d28246a1a-b598087a-fbac-4462-b662-3c7d=
+891540ec-000000/9Cwi0YCoaIkvbf8Pau1m93QTMxU=3D252" style=3D"color:#6366F1; =
+text-decoration:underline;" target=3D"_blank">Send47</a>, make yours <a hre=
+f=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/L0/https:%2F%2Fsendy=
+[.]digitalinfluencers[.]co%2Fl%2FlQl3wjaAZqaZD763eA8Rzc6Q%2F5eNSIG763vgMtbO=
+xrdUKsecQ%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d28246a1a-b598087a-fbac-4462-b6=
+62-3c7d891540ec-000000/RfJwQvOb-gCt2X-lpflb4HxpAf4=3D252" style=3D"color:#6=
+366F1; text-decoration:underline;" target=3D"_blank">here</a>.</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<div style=3D"margin-top:40px;padding-top:20px;border-top:1px solid #e5e7eb=
+;text-align:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',=
+Roboto,sans-serif;">
+<div style=3D"margin-bottom:16px;"><a href=3D"hxxps://2zfgr817[.]r[.]ap-sou=
+th-1[.]awstrack[.]me/L0/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl%2Fl=
+Ql3wjaAZqaZD763eA8Rzc6Q%2Ff763Tq3tSvRcTWE14jcx50QQ%2FzpPSdYUvxOmoSlR3OBHvOA=
+/1/0109019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/R01lLO6M0YD=
+b5MGuvLEdYwfXq3c=3D252" rel=3D"noopener noreferrer" style=3D"display:inline=
+-block;" target=3D"_blank"><img alt=3D"Awaz.ai" src=3D"hxxps://vzrzxvofahoe=
+klruedno[.]supabase[.]co/storage/v1/object/public/email-images/brands/1580b=
+2a0-f968-45df-bf23-72ef092ecfda-logo_url-1767781491054[.]png?v=3D1772613150=
+649&amp;v=3D1772613150649" style=3D"display:block;max-height:50px;max-width=
+:180px;height:auto;width:auto;margin:0 auto;"></a></div>
+
+<div style=3D"margin-bottom:16px;"><a href=3D"hxxps://2zfgr817[.]r[.]ap-sou=
+th-1[.]awstrack[.]me/L0/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl%2Fl=
+Ql3wjaAZqaZD763eA8Rzc6Q%2Fnu5BqhXw54fLGI2bbPopZg%2FzpPSdYUvxOmoSlR3OBHvOA/1=
+/0109019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/ZJLXIlZVJvVZW=
+azex6AEIt-4oh8=3D252" rel=3D"noopener noreferrer" style=3D"display:inline-b=
+lock;margin:0 8px;text-decoration:none;" target=3D"_blank" title=3D"YouTube=
+"><img alt=3D"YouTube" height=3D"24" src=3D"hxxps://vzrzxvofahoeklruedno[.]=
+supabase[.]co/storage/v1/object/public/email-images/social-icons/youtube[.]=
+png?v=3D1772613150649&amp;v=3D1772613150649" style=3D"display:block;border:=
+0;" width=3D"24"></a><a href=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrac=
+k[.]me/L0/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl%2FlQl3wjaAZqaZD76=
+3eA8Rzc6Q%2FEQhuWw4KVjh7lXhZCmPsVg%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d28246=
+a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/HzJ6op7QAc4Wl_dP6qQoZPd6Nsk=
+=3D252" rel=3D"noopener noreferrer" style=3D"display:inline-block;margin:0 =
+8px;text-decoration:none;" target=3D"_blank" title=3D"Facebook"><img alt=3D=
+"Facebook" height=3D"24" src=3D"hxxps://vzrzxvofahoeklruedno[.]supabase[.]c=
+o/storage/v1/object/public/email-images/social-icons/facebook[.]png?v=3D177=
+2613150649&amp;v=3D1772613150649" style=3D"display:block;border:0;" width=
+=3D"24"></a><a href=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/L0=
+/https:%2F%2Fsendy[.]digitalinfluencers[.]co%2Fl%2FlQl3wjaAZqaZD763eA8Rzc6Q=
+%2F3aEX7LSTzh3CK36AbgD3Tg%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d28246a1a-b5980=
+87a-fbac-4462-b662-3c7d891540ec-000000/EPsMOMmaHLItsP8ImU0oREDmTCI=3D252" r=
+el=3D"noopener noreferrer" style=3D"display:inline-block;margin:0 8px;text-=
+decoration:none;" target=3D"_blank" title=3D"LinkedIn"><img alt=3D"LinkedIn=
+" height=3D"24" src=3D"hxxps://vzrzxvofahoeklruedno[.]supabase[.]co/storage=
+/v1/object/public/email-images/social-icons/linkedin[.]png?v=3D177261315064=
+9&amp;v=3D1772613150649" style=3D"display:block;border:0;" width=3D"24"></a=
+><a href=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/L0/https:%2F%=
+2Fsendy[.]digitalinfluencers[.]co%2Fl%2FlQl3wjaAZqaZD763eA8Rzc6Q%2FEhiyhSuD=
+Kn4oxJlvRUN6sQ%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d28246a1a-b598087a-fbac-44=
+62-b662-3c7d891540ec-000000/F8LP3mQ4l8GQbBoognUx4Hsk2eI=3D252" rel=3D"noope=
+ner noreferrer" style=3D"display:inline-block;margin:0 8px;text-decoration:=
+none;" target=3D"_blank" title=3D"Instagram"><img alt=3D"Instagram" height=
+=3D"24" src=3D"hxxps://vzrzxvofahoeklruedno[.]supabase[.]co/storage/v1/obje=
+ct/public/email-images/social-icons/instagram[.]png?v=3D1772613150649&amp;v=
+=3D1772613150649" style=3D"display:block;border:0;" width=3D"24"></a></div>
+
+<div style=3D"margin-bottom:16px;color:#6b7280;font-size:12px;line-height:1=
+.5;">2261 Market Street STE 10067,<br>
+San Francisco, CA 94114</div>
+
+<div style=3D"color:#6b7280;font-size:12px;line-height:1.6;">
+<p style=3D"margin:0 0 8px 0;">Don't want to receive these emails? <a href=
+=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/L0/https:%2F%2Fsendy[=
+.]digitalinfluencers[.]co%2Funsubscribe%2FHlANtngD5I1TmezIJBiMw8Dd6bVe4he57=
+63ffWH7lOals%2Ffo763BKtyLoMbtGclpm0Qdig%2FzpPSdYUvxOmoSlR3OBHvOA/1/0109019d=
+28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/Y5EWNRl9LYP0hgZQYFeJ7A=
+W0cvc=3D252">Unsubscribe here</a></p>
+
+<p style=3D"margin:0;color:#9ca3af;">&copy; 2026 Awaz.ai. All rights reserv=
+ed.</p>
+</div>
+</div>
+<img alt=3D"" src=3D"hxxps://2zfgr817[.]r[.]ap-south-1[.]awstrack[.]me/I0/0=
+109019d28246a1a-b598087a-fbac-4462-b662-3c7d891540ec-000000/FVQIlecbrW_on23=
+to1Ss9cUYghk=3D252" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>
+<img src=3D"hxxps://sendy[.]digitalinfluencers[.]co/t/zpPSdYUvxOmoSlR3OBHvO=
+A/lQl3wjaAZqaZD763eA8Rzc6Q" alt=3D"" style=3D"width:1px;height:1px;">
+
+
+--b1_8c51f665c4ffadec334c2165387f1a57--
