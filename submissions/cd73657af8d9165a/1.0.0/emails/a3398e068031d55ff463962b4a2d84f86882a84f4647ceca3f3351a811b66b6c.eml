@@ -1,0 +1,683 @@
+ARC-Seal: i=2; a=rsa-sha256; t=1775342437; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=Emr8LIu4RLGdEpmK+3qGID6UmcOnfx79vBg3F49Eys4EnlnxmpdMSpJZupMEnU4s74
+         xY9ZLvnAMssE0cWpTDAI9YhcyWfky7s+ZTcUKB3QQmbMnJYjfQmY3XAqwSd3QQBbWc1L
+         G2mR4xE3UY6cv2CAkiIwEv+/Kny65G51ISYewgRl+nn7JPs2QOy242rBTIUw1FmoPO+o
+         iGRba/KU0wEdWq7NFdSiWuZo/PS28COweRYvvCEqyJ4gSIUeasbdfsqlEphvfomncjTb
+         aFoM7ABkJth5lUhHY73VnxcA/HwNa1D7v935aizjoS4O2kPU3oVXfOdXcV/gFtI6AnKi
+         +0Mw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=tm-message-id:tm-mail-jid:original-envelope-id:mime-version:subject
+         :message-id:to:reply-to:from:date:dkim-signature;
+        bh=zH5OeIpS0OjBjz0mIOM6e5293u7yGNxN1lb5HP7KinE=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=kswLVlCwnvpDzC7qlQfxDcFGekkyutHKk6CtF5RwbQNF3rDhV81VR52M/3QFMMztwN
+         KSt4UrTUgjxzVt6rNSUKAguWsSa8Sr2sShBrILayCRAEA68rAqlnWN8GhzkKSM1OBMzj
+         xf9I0187yWLHNxipssBmifkVSj2ogpezlJNgeTJPylwPm541Bu2wrpDUCWsspzn1sAqT
+         kT9Hmxuf9FMo5MmILkqh0+7UlVajnUGeiqQoAbvwmIA80iE1awqYdWNHOy8Xp1S55vvu
+         pis8gMlX6wE05qaQ2RGtRZvsMDpTMclS1Mzuue5Gi4/5hqwsNGmY2turOVM3DkciLmYY
+         sGGg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@zohocalendar.com header.s=1522905413783
+ header.b=pOMCbgZf;
+       arc=pass (i=1 spf=pass spfdomain=sender.zohocalendar.com dkim=pass
+ dkdomain=zohocalendar.com dmarc=pass fromdomain=zohocalendar.com>);
+       spf=pass (google.com: domain of
+ noreply+4a9c8850-3077-11f1-aa87-525400d4bb1c_vt1@sender.zohocalendar.com
+ designates 135.84.80.169 as permitted sender)
+ smtp.mailfrom=noreply+4a9c8850-3077-11f1-aa87-525400d4bb1c_vt1@sender.zohocalendar.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@zohocalendar.com header.s=1522905413783
+ header.b=pOMCbgZf;
+       arc=pass (i=1 spf=pass spfdomain=sender.zohocalendar.com dkim=pass
+ dkdomain=zohocalendar.com dmarc=pass fromdomain=zohocalendar.com>);
+       spf=pass (google.com: domain of
+ noreply+4a9c8850-3077-11f1-aa87-525400d4bb1c_vt1@sender.zohocalendar.com
+ designates 135.84.80.169 as permitted sender)
+ smtp.mailfrom=noreply+4a9c8850-3077-11f1-aa87-525400d4bb1c_vt1@sender.zohocalendar.com
+ARC-Seal: i=1; a=rsa-sha256; t=1775342436; cv=none;
+	d=us.zohomail360.com; s=zohoarc;
+	b=raiyaMb4zdaNuZzWJ0Vlr1PwGbU/nM6XkHfC4sL+nGwNG3x/pHypp6KpO+AbkMKdfR7Edsj4SOx/IMxzJ23/SYcZhIp9tqCbj/M/YWDL0Qs8e6m8xTWdX7aB/Os2oYvpDoyaX0uK7jAlmzxCdkkUuhS/+tYz8l1+G486BJVQf1E=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=us.zohomail360.com; s=zohoarc;
+	t=1775342436;
+ h=Content-Type:Date:Date:From:From:MIME-Version:Message-ID:Reply-To:Reply-To:Subject:Subject:To:To:Message-Id:Cc;
+	bh=zH5OeIpS0OjBjz0mIOM6e5293u7yGNxN1lb5HP7KinE=;
+	b=QjWiWXm8CcgqRyIclfAcN/iMSLW13ZTHNqi5miVfAOUbHLHHAhlqnpQvYbVRaOYMa21FIBUIdcrB3g5XF5OBFd7CL3ePy2flLoQECWvpnZdbHB+1bbMjGHp2kHyiBX8ehBDlXJFOh+S/na4dTyWo+rSy2CV3Gmb27aH9V8omxkQ=
+ARC-Authentication-Results: i=1; mx.us.zohomail360.com;
+	dkim=pass  header.i=zohocalendar.com;
+	spf=pass
+  smtp.mailfrom=noreply+4a9c8850-3077-11f1-aa87-525400d4bb1c_vt1@sender.zohocalendar.com;
+	dmarc=pass header.from=<noreply@zohocalendar.com>
+DKIM-Signature: a=rsa-sha256;
+ b=pOMCbgZf7SUjFzbK44DiibzQaK1kALi3FEayteRC+HnMs4o/e7J+bsIC3gluwVaMjZQGnB5t7g9hjvFErvzidQlbnjB2p2S7PT6vvn7TOeDZoqZLCx2KzSVnKiF4WmUiug+Or00GNXPOvpKxYLcQidsSH2Hgge6MWQ1dOWA9hiA=;
+ c=relaxed/relaxed; s=1522905413783; d=zohocalendar.com; v=1;
+ bh=zH5OeIpS0OjBjz0mIOM6e5293u7yGNxN1lb5HP7KinE=;
+ h=date:from:reply-to:to:message-id:subject:mime-version:content-type:date:from:reply-to:to:message-id:subject;
+Date: Sat, 4 Apr 2026 15:40:34 -0700 (PDT)
+From: <noreply@zohocalendar.com>
+Reply-To: 28adg0005qyy@wnw.ac.th
+To: redacted@redacted.com
+Message-ID: 
+ <zz08011240cad6969c194af1f95438916cb1914e9d2f46b2bf330e453337f82af89251674e363c96b7d78d32dac26e8582b3c2538c5da314d238351811462c1ae77edef44d@sender.zohocalendar.com>
+Subject: Invitation: real hookup sites @ Sat Apr 04, 2026 05:00 pm - 06:00
+ pm (America/Swift_Current)
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_95465515_1735026510.1775342434856"
+Original-Envelope-Id: 
+ 2d6f.3864fd7.m1.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555
+X-JID: 2d6f.3864fd7.m4.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555
+TM-MAIL-JID: 2d6f.3864fd7.m1.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555
+X-App-Message-ID: 
+ 2d6f.3864fd7.m1.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555
+X-Report-Abuse: 
+ <abuse+2d6f.3864fd7.m1.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555@zeptomail.com>
+TM-Message-ID: 
+ <2d6f.3864fd7.m1.4a9c8850-3077-11f1-aa87-525400d4bb1c.19d5aa7b555@sender.zohocalendar.com>
+X-Zoho-Virus-Status: 1
+X-Zoho-AV-Stamp: zmail-av-0.2.2.1.5.2/275.301.27
+X-ZohoMailClient: External
+
+------=_Part_95465515_1735026510.1775342434856
+Content-Type: multipart/alternative;
+	boundary="----=_Part_95465518_2071160774.1775342434857"
+
+------=_Part_95465518_2071160774.1775342434857
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_95465518_2071160774.1775342434857
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/=
+TR/xhtml1/DTD/xhtml1-transitional[.]dtd">
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <title>Invitation Document</title>
+    <script type=3D"application/ld+json">
+        {"@context":"hxxp://schema[.]org","@type":"Event","zmailInternalSer=
+vice":"calendar",    "name":"real hookup sites","startDate":"2026-04-04T23:=
+00:00Z","endDate":"2026-04-05T00:00:00Z",    "potentialAction":[{"@type": "=
+RsvpAction","handler":{"@type": "HttpActionHandler", "url": "hxxps://calend=
+ar[.]zoho[.]com/api/private/json/updateStatus?eid=3Dzz08011230cad6969c194af=
+1f95438916cb1914e9d2f46b2bf330e453337f82af89251674eabb546a6eb3a9183d285ec13=
+745aadef&akey=3Dzz08011230087d68938c12981936a7816058afbb88587b6b9f0762e168a=
+ad6549467e7ec2bc979e74cf27e005823399460eba571b6&calid=3Dzz080112205e8c6b1c8=
+5ed11433099709fc1636ab073a57681a5836092c9b2275f8e950ec2&res=3D1"},"attendan=
+ce": "hxxp://schema[.]org/RsvpAttendance/Yes"},{"@type":"RsvpAction","handl=
+er":{"@type": "HttpActionHandler","url": "hxxps://calendar[.]zoho[.]com/api=
+/private/json/updateStatus?eid=3Dzz08011230cad6969c194af1f95438916cb1914e9d=
+2f46b2bf330e453337f82af89251674eabb546a6eb3a9183d285ec13745aadef&akey=3Dzz0=
+8011230087d68938c12981936a7816058afbb88587b6b9f0762e168aad6549467e7ec2bc979=
+e74cf27e005823399460eba571b6&calid=3Dzz080112205e8c6b1c85ed11433099709fc163=
+6ab073a57681a5836092c9b2275f8e950ec2&res=3D2"},"attendance": "hxxp://schema=
+[.]org/RsvpAttendance/No"},{"@type": "RsvpAction","handler":{"@type": "Http=
+ActionHandler","url": "hxxps://calendar[.]zoho[.]com/api/private/json/updat=
+eStatus?eid=3Dzz08011230cad6969c194af1f95438916cb1914e9d2f46b2bf330e453337f=
+82af89251674eabb546a6eb3a9183d285ec13745aadef&akey=3Dzz08011230087d68938c12=
+981936a7816058afbb88587b6b9f0762e168aad6549467e7ec2bc979e74cf27e00582339946=
+0eba571b6&calid=3Dzz080112205e8c6b1c85ed11433099709fc1636ab073a57681a583609=
+2c9b2275f8e950ec2&res=3D3"},"attendance": "hxxp://schema[.]org/RsvpAttendan=
+ce/Maybe"}],"identifier":"zz08011230cad6969c194af1f95438916cb1914e9d2f46b2b=
+f330e453337f82af89251674eabb546a6eb3a9183d285ec13745aadef"}
+    </script>
+    <style>
+        .zclet__table {
+            border-color: #e5e5e5;
+            background-color: #fff;
+        }
+
+        .zclet__header__title {
+            color: #000000;
+        }
+
+        .zclet__header__info {
+            color: #222222;
+        }
+
+        .zclet__link {
+            color: #004ce6 !important;
+        }
+
+        .zclet__link--email {
+            color: #004ce6 !important;
+        }
+
+        .zclet__container__separator {
+            background-color: #f2f2f2;
+        }
+
+        .zclet__event__label {
+            color: #666666;
+        }
+
+        .zclet__event__text {
+            color: #000000;
+        }
+
+        .zclet__footer__text {
+            color: #808080;
+        }
+
+        .zclet__primary__action {
+            background-color: #184fc4;
+            color: #ffffff !important;
+        }
+
+        .zclet__action--filled {
+            background-color: #184fc4;
+            color: #fff !important;
+        }
+
+        .zclet__action--outline {
+            border-color: #184fc4;
+            color: #184fc4 !important;
+        }
+
+        .zclet__action--link {
+            color: #184fc4 !important;
+        }
+
+        .zclet__event__attachment {
+            background-color: #f7f7f7;
+            color: #4b4b4b !important;
+        }
+
+        .zclet__action__yes {
+            border-color: #e5e5e5;
+            color: #008433 !important;
+        }
+
+        .zclet__action__maybe {
+            border-color: #e5e5e5;
+            color: #cc7429 !important;
+        }
+
+        .zclet__action__no {
+            border-color: #e5e5e5;
+            color: #cc3929 !important;
+        }
+
+        .zclet__action__yes--active {
+            border-color: #008433;
+            color: #008433 !important;
+        }
+
+        .zclet__action__maybe--active {
+            border-color: #cc7429;
+            color: #cc7429 !important;
+        }
+
+        .zclet__action__no--active {
+            border-color: #cc3929;
+            color: #cc3929 !important;
+        }
+
+        .zclet__sep__bg {
+            background-color: #f2f2f2;
+        }
+
+        .zclet__event__conf-wrapper {
+            border-color: #e5e5e5;
+            background-color: #fff;
+        }
+
+        .zclet__label__highlight {
+            color: #cf3e3d;
+        }
+
+        .zclet__event__conf-wrapper {
+            border-color: #e5e5e5;
+            background-color: #fff;
+        }
+
+        .zclet__event__conf-name {
+            color: #000;
+        }
+
+        .zclet__event__conf-link {
+            color: #797979;
+        }
+
+        .zclet__header__info a,
+        .zclet__header__title a,
+        .zclet__event__text a {
+            word-break: break-all !important;
+            overflow-wrap: anywhere;
+        }
+
+        .zclet__event__text a[href] {
+            color: #004ce6 !important;
+            text-decoration: none;
+        }
+
+        .zclet__event__text--loc p {
+            margin: 0;
+        }
+
+        .zclet__event__text--loc p a {
+            color: #004ce6 !important;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellpadding=3D"0" cellspacing=3D"0" class=3D"zclet__table" style=
+=3D"
+        margin: 0px auto;
+        width: 540px;
+        border-width: 1px;
+        border-style: solid;
+        font-family: inherit;
+        font-size: 14px;
+        text-decoration: none;
+        table-layout: fixed;
+        word-break:normal;
+    ">
+        <tbody>
+            <tr>
+                <td colspan=3D"2">
+                    <div class=3D"" style=3D"height: 36px">
+                        <img
+                        src=3D"hxxps://static[.]zohocdn[.]com/calendar/emai=
+l-template-assets/calendar-header-doodle-v1[.]png"
+                        width=3D"100%"
+                        height=3D"100%"
+                    />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3D"2" style=3D"font-size: 14px; line-height: 15=
+px; padding: 0 30px; background-size: 100%">
+                    <table cellpadding=3D"0" cellspacing=3D"0" style=3D"wid=
+th: 100%; border-collapse: collapse">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class=3D"zclet__header__info" style=
+=3D"margin: 0; line-height: 21px">
+                                        <a class=3D"zclet__link--email" hre=
+f=3D"mailto:28adg0005qyy@wnw.ac.th"
+                                            style=3D"text-decoration: none"=
+>
+                                            28adg0005qyy@wnw.ac.th
+                                        </a>
+                                        invites you to be a part of real ho=
+okup sites
+                                    </p>
+                                    <h3 class=3D"zclet__header__title" styl=
+e=3D"
+                                        font-size: 20px;
+                                        margin: 0;
+                                        line-height: 23px;
+                                        font-weight: 500;
+                                        padding: 10px 0px 24px;
+                                        word-break: break-word;
+                                    ">
+                                        real hookup sites
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr style=3D"line-height: 16px">
+                                <td colspan=3D"2">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 24px; v=
+ertical-align: middle">
+                                                    <span
+                                                    style=3D"
+                                                        display: inline-blo=
+ck;
+                                                        padding-right: 10px=
+;
+                                                        width: 14px;
+                                                        height: 14px;
+                                                        vertical-align: -2p=
+x;
+                                                    ">
+                                                    <img src=3D"hxxps://sta=
+tic[.]zohocdn[.]com/calendar/email-template-assets/icon-time-v1[.]png"
+                                                        width=3D"14" height=
+=3D"14"/>
+                                                </span>
+                                                </td>
+                                                <td>
+                                                    <span
+                                                    class=3D"zclet__event__=
+label"
+                                                    style=3D"display: inlin=
+e-block;font-size: 14px;line-height: 16px">
+                                                    Date and time
+                                                </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=3D"2" style=3D"padding: 10px 0p=
+x 24px">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 24px"><=
+/td>
+                                                <td>
+                                                    <span class=3D"zclet__e=
+vent__text"
+                                                    style=3D"font-size: 16p=
+x; line-height: 19px">
+                                                    Sat Apr 04, 2026 05:00 =
+pm - 06:00 pm (America/Swift_Current)=20
+                                                </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style=3D"line-height: 16px">
+                                <td colspan=3D"2" style=3D"padding: 0 0px 0=
+ 2px">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 22px">
+                                                    <span style=3D"
+                                                                    display=
+: inline-block;
+                                                                    padding=
+-right: 8px;
+                                                                    width: =
+14px;
+                                                                    height:=
+ 14px;
+                                                                    vertica=
+l-align: -2px;
+                                                                ">
+                                                    <img src=3D"hxxps://sta=
+tic[.]zohocdn[.]com/calendar/email-template-assets/icon-attachment-v1[.]png=
+"
+                                                        width=3D"7" height=
+=3D"14">
+                                                </span>
+                                                </td>
+                                                <td>
+                                                    <span style=3D"
+                                                                    display=
+: inline-block;
+                                                                    font-si=
+ze: 14px;
+                                                                    line-he=
+ight: 16px;
+                                                                " class=3D"=
+zclet__event__label">
+                                                    Attachments
+                                                </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=3D"2" style=3D"padding: 10px 0p=
+x 14px">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 24px"><=
+/td>
+                                                <td>
+                                                    <div style=3D"line-heig=
+ht: 1">
+                                                        <a href=3D"hxxps://=
+calendar[.]zoho[.]com/zcal/attachment/view/zz080112606a4e217ecbc2ac0dda498e=
+fafbfffbad5a24fb3a11aa225028733b413e927c33497e56882573c7518b06d76ddd183eeb8=
+0985386b5c2e0023ccb18c40376ec85b6a3735f0d76148ce2206e49f40a3e8077b4ce30daaa=
+a53b6bdeb88a77c14e95" title=3D"OPEN MY  PROFILE.docx" style=3D"
+                                                                        fon=
+t-size: 12px;
+                                                                        lin=
+e-height: 14px;
+                                                                        pad=
+ding: 4px 9px;
+                                                                        mar=
+gin-right: 10px;
+                                                                        bor=
+der-radius: 3px;
+                                                                        cur=
+sor: pointer;
+                                                                        dis=
+play: inline-block;
+                                                                        mar=
+gin-bottom: 10px;
+                                                                        tex=
+t-decoration: none;
+                                                                    " class=
+=3D"zclet__event__attachment">
+                                                            OPEN MY  PROFIL=
+E.docx
+                                                        </a>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style=3D"line-height: 16px">
+                                <td colspan=3D"2" style=3D"padding: 0px 0px=
+">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 24px">
+                                                    <span style=3D"
+                                                                    display=
+: inline-block;
+                                                                    padding=
+-right: 10px;
+                                                                    width: =
+10px;
+                                                                    height:=
+ 10px;
+                                                                ">
+                                                    <img src=3D"hxxps://sta=
+tic[.]zohocdn[.]com/calendar/email-template-assets/icon-notes-v1[.]png"
+                                                        width=3D"10" height=
+=3D"10">
+                                                </span>
+                                                </td>
+                                                <td>
+                                                    <span style=3D"
+                                                                    display=
+: inline-block;
+                                                                    font-si=
+ze: 14px;
+                                                                    line-he=
+ight: 16px;
+                                                                " class=3D"=
+zclet__event__label">
+                                                    Description
+                                                </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=3D"2" style=3D"padding: 10px 0p=
+x 24px">
+                                    <table style=3D"width: 100%; border-col=
+lapse: collapse" cellspacing=3D"0"
+                                        cellpadding=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"width: 24px"><=
+/td>
+                                                <td>
+                                                    <div style=3D"
+                                                                    font-si=
+ze: 14px;
+                                                                    line-he=
+ight: 21px;
+                                                                    margin:=
+ 0;
+                                                                    word-br=
+eak: break-word;
+                                                                " class=3D"=
+zclet__event__text">
+                                                        <div>I=E2=80=99LL P=
+ROBABLY SPREAD MY LEGS IN THE NEXT ONE</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan=3D"2">
+                                    <div style=3D"line-height: 24px; paddin=
+g: 0 0px 20px; margin-top: 6px">
+                                        <a href=3D"hxxps://calendar[.]zoho[=
+.]com/invitation/accept?akey=3Dzz08011230087d68938c12981936a7816058afbb8858=
+7b6b9f0762e168aad6549467e7ec2bc979e74cf27e005823399460eba571b6&eid=3Dzz0801=
+1230cad6969c194af1f95438916cb1914e9d2f46b2bf330e453337f82af89251674eabb546a=
+6eb3a9183d285ec13745aadef&calid=3Dzz080112205e8c6b1c85ed11433099709fc1636ab=
+073a57681a5836092c9b2275f8e950ec2" style=3D"
+                                                        text-decoration: no=
+ne;
+                                                        display: inline-blo=
+ck;
+                                                        margin-right: 20px;
+                                                        padding: 10px 16px;
+                                                        border-radius: 4px;
+                                                        line-height: 16px;
+                                                        font-size: 14px;
+                                                    " class=3D"zclet__actio=
+n--filled">
+                                            View event</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan=3D"2" style=3D"padding: 0px 30px">
+                    <div style=3D"height: 1px; max-height: 1px" class=3D"zc=
+let__container__separator">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+------=_Part_95465518_2071160774.1775342434857
+Content-Type: text/calendar;method=REQUEST;charset="UTF-8"
+Content-Class: urn:content-classes:calendarmessage
+Charset: UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+BEGIN:VCALENDAR
+PRODID:-//Zoho Corporation//Zoho Calendar-US//EN
+VERSION:2.0
+X-WR-TIMEZONE:null
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Swift_Current
+BEGIN:STANDARD
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0600
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:real hookup sites
+DESCRIPTION:I=E2=80=99LL PROBABLY SPREAD MY LEGS IN THE NEXT ONE\n
+X-ALT-DESC;FMTTYPE=3Dtext/html:<div>I=E2=80=99LL PROBABLY SPREAD MY LEGS IN=
+ THE NEXT ONE</div>
+DTSTART;TZID=3DAmerica/Swift_Current:20260404T170000
+
+DTEND;TZID=3DAmerica/Swift_Current:20260404T180000
+LOCATION:
+UID:ee6492e0c9954d008023c82acaddb646@zoho.com
+IMPORTANT:0
+CLASS:PUBLIC
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+PRIORITY:0
+CREATED:20260404T224031Z
+LAST-MODIFIED:20260404T224031Z
+DTSTAMP:20260404T224033Z
+ORGANIZER;CN=3DALICIA DEL CARMEN UVALLE DE LOS REYES:MAILTO:28adg0005qyy@wn=
+w.ac.th
+ATTENDEE;CUTYPE=3DINDIVIDUAL;ROLE=3DREQ-PARTICIPANT;RSVP=3DTRUE;PARTSTAT=3D=
+NEEDS-ACTION:MAILTO:redacted@redacted.com
+BEGIN:VALARM
+ACTION:EMAIL
+TRIGGER;VALUE=3DDURATION;RELATED=3DSTART:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
+------=_Part_95465518_2071160774.1775342434857--
+
+------=_Part_95465515_1735026510.1775342434856
+Content-Type: text/calendar; charset=UTF-8; name=event.ics
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=event.ics
+
+QkVHSU46VkNBTEVOREFSClBST0RJRDotLy9ab2hvIENvcnBvcmF0aW9uLy9ab2hvIENhbGVuZGFy
+LVVTLy9FTgpWRVJTSU9OOjIuMApYLVdSLVRJTUVaT05FOm51bGwKQ0FMU0NBTEU6R1JFR09SSUFO
+Ck1FVEhPRDpSRVFVRVNUCkJFR0lOOlZUSU1FWk9ORQpUWklEOkFtZXJpY2EvU3dpZnRfQ3VycmVu
+dApCRUdJTjpTVEFOREFSRApUWk9GRlNFVEZST006LTA2MDAKVFpPRkZTRVRUTzotMDYwMApEVFNU
+QVJUOjE5NzAwMTAxVDAwMDAwMApFTkQ6U1RBTkRBUkQKRU5EOlZUSU1FWk9ORQpCRUdJTjpWRVZF
+TlQKU1VNTUFSWTpyZWFsIGhvb2t1cCBzaXRlcwpERVNDUklQVElPTjpJ4oCZTEwgUFJPQkFCTFkg
+U1BSRUFEIE1ZIExFR1MgSU4gVEhFIE5FWFQgT05FXG4KWC1BTFQtREVTQztGTVRUWVBFPXRleHQv
+aHRtbDo8ZGl2PknigJlMTCBQUk9CQUJMWSBTUFJFQUQgTVkgTEVHUyBJTiBUSEUgTkVYVCBPTkU8
+L2Rpdj4KRFRTVEFSVDtUWklEPUFtZXJpY2EvU3dpZnRfQ3VycmVudDoyMDI2MDQwNFQxNzAwMDAK
+CkRURU5EO1RaSUQ9QW1lcmljYS9Td2lmdF9DdXJyZW50OjIwMjYwNDA0VDE4MDAwMApMT0NBVElP
+TjoKVUlEOmVlNjQ5MmUwYzk5NTRkMDA4MDIzYzgyYWNhZGRiNjQ2QHpvaG8uY29tCklNUE9SVEFO
+VDowCkNMQVNTOlBVQkxJQwpTVEFUVVM6Q09ORklSTUVEClRSQU5TUDpPUEFRVUUKUFJJT1JJVFk6
+MApDUkVBVEVEOjIwMjYwNDA0VDIyNDAzMVoKTEFTVC1NT0RJRklFRDoyMDI2MDQwNFQyMjQwMzFa
+CkRUU1RBTVA6MjAyNjA0MDRUMjI0MDMzWgpPUkdBTklaRVI7Q049QUxJQ0lBIERFTCBDQVJNRU4g
+VVZBTExFIERFIExPUyBSRVlFUzpNQUlMVE86MjhhZGcwMDA1cXl5QHdudy5hYy50aApBVFRFTkRF
+RTtDVVRZUEU9SU5ESVZJRFVBTDtST0xFPVJFUS1QQVJUSUNJUEFOVDtSU1ZQPVRSVUU7UEFSVFNU
+QVQ9TkVFRFMtQUNUSU9OOk1BSUxUTzpyZWRhY3RlZEByZWRhY3RlZC5jb20KQkVHSU46VkFMQVJN
+CkFDVElPTjpFTUFJTApUUklHR0VSO1ZBTFVFPURVUkFUSU9OO1JFTEFURUQ9U1RBUlQ6LVBUMTVN
+CkVORDpWQUxBUk0KRU5EOlZFVkVOVApFTkQ6VkNBTEVOREFSCg==
+
+------=_Part_95465515_1735026510.1775342434856--
