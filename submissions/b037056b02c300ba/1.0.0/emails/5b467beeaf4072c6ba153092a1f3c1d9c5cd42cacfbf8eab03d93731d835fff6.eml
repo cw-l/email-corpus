@@ -1,0 +1,138 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=fBgFbvnVlkHLyCE5OZm1AnY0Z22NqJpi9Kb0i5nfjDiU92+2aLOswsUsuY3/B/OyfeaWfVCOMPTO+C42oah1jgymmD+v+xz7vQm+AzfKIKRkKCgl+/GZKnVEvWWxg/h0DzEkieAK7PZPTxF0blmMIQt2qz7UY9W2gU4/q1TEKMrxmE0MHR2oxkEpDKCgO1Bj30Kqw4TJNHDGPRgiBDD0DS8ToN7nTNDQzps+Sl+h0ZB8yy/a1QvBsGq4w/yQwhsWlm65JdqJMI3D4XI+xmMr9ZXvKbB2+RQIjkvUxho/LOhxPH9woMt8lll1qOURRCpHVNOsNM87cewuoubvq7uE8Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=6b//SJQhgd40BSUREWxv2nMazY9hbOOYmYEmI9ejZrc=;
+ b=oXn1iferj5IqdsD/HF2spf6GgsSjyB/NyvDcZnMsMIS4ItRFLVaXEhHnHvpG029UZESui/JaB9cn7alQLpYBzAMlFheyMWjsZfNJGjzYfzEyyGMAMYss8nXQ+roTqoV7uTaepLx5amHJmxtnH2gIarkC7eZ0USCqPpvYLS5NoSVJLOXBS7YOfgPQV5RweaXY7NZWMTevTorBr922Q6CZ4LCqzsV6//1UT60gVvy9JzZflTqDKftlwoO8NTOHUjsrzMMDKBuJK2cVEgLNy+i6jsmp6O8q+1LWVnfR9T2Mni3r4lYN5rwPjIgY1NA6pYdY614i0EvJrdfZe7iQREBhqQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 52.102.149.9) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=uaa.alaska.edu;
+ dmarc=pass (p=quarantine sp=none pct=100) action=none
+ header.from=uaa.alaska.edu; dkim=pass (signature was verified)
+ header.d=uaa.alaska.edu; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=uaa.alaska.edu]
+ dmarc=[1,1,header.from=uaa.alaska.edu])
+Authentication-Results: spf=pass (sender IP is 52.102.149.9)
+ smtp.mailfrom=uaa.alaska.edu; dkim=pass (signature was verified)
+ header.d=uaa.alaska.edu;dmarc=pass action=none
+ header.from=uaa.alaska.edu;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:4AEF54CFC6765ADA5B8FBADB62600D530CC74D746C0B5599F245ED6AEF92E770;UpperCasedChecksum:246BFC5DD9E22AEF5C8DC42F22C674C03750DB94B38B8DAC0A493DC9E108DD9D;SizeAsReceived:8856;Count:46
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=N5eH+ujIk8xh++/O6jzGZkDXdsAkt0EMdcGlFlAe+haa2k1GtSs01N9RhrV2hXeFpXnWFl6K0DOpzqnauXbuNxpF8xlp3JrSF/+v1to8re3VbfiV7FX4cD34BRrEwav5+KWbTdiNRTRhB4Mz9ASfvglTx9Yh+fdwn1geDOaNzUhPEKyYLFtoHtaNZ7a6gPKvOwts5yK1coGksYD/Brk71+RgnKCmvMc9XewGpTMyGPy4m5TK7qGBgI4fOJ7tBFZNA34rRQ4aUyMGrvzp+AUe9xnuXsw46u2Fe1fUXErLXcUX5lSBp9qX/aJbtXyufu5lOv/Qo84c6c19CPQJPtMcgw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=6b//SJQhgd40BSUREWxv2nMazY9hbOOYmYEmI9ejZrc=;
+ b=WEDcIW2ze3EfL18OuaJZFUKGvfbsDVG5f/3YSTUUYPqO8HIcbpWepf3Jgr/68/39nnlp+oLrfglziN0xZddz8THt0Re+0Rek22R8u/1HqK7IRFz+u8BVDk3nsjGwI1qMIg0Pg4R3ec0UcS4ivOIEMgcJ+WqqFWNokVROUp+6XNMRg7zDP2bUx1O8iJUS93UMFYaUni00LRqz80hi2x3IiTLoc5yytcnowS9iR5x2uzv7XsXFWNHCuDmQhWSz106x7IJqpfmGK2T7eD5C1s7cnGo//bVwtCAOS/7P5ZFGKqtTpuXtZnFY0GN4FRedUdsS9JyWUkSEF/2pkMdZJf1kwQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 137.229.132.10) smtp.rcpttodomain=allianz.com.sg
+ smtp.mailfrom=uaa.alaska.edu; dmarc=pass (p=quarantine sp=none pct=100)
+ action=none header.from=uaa.alaska.edu; dkim=none (message not signed);
+ arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=uaa.alaska.edu;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=6b//SJQhgd40BSUREWxv2nMazY9hbOOYmYEmI9ejZrc=;
+ b=l8yX9uMcRnbLqlaECrYTpnFp0MWmCMQX3mpBiMQAaiYz29prLK63THNvxNkrgU2XebXpS1BQMP3wneuJBCL/Lmh21I4HVy90xloBPfR1ND8xwdCqnVPMcOAlKw73TzpVWsqRWhBIKJgnReaAbypG4Tu4qYsDuzNb4eFjdfp1FSM=
+X-MS-Exchange-Authentication-Results: spf=pass (sender IP is 137.229.132.10)
+ smtp.mailfrom=uaa.alaska.edu; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=uaa.alaska.edu;
+Reply-To: <kocfdr@uaa.alaska.edu>
+From: CITY BASE FINANCE <kocfdr@uaa.alaska.edu>
+Subject: Private Loan Investment Proposal
+Date: Thu, 9 Apr 2026 19:34:51 -0700
+Content-Type: text/html; charset="Windows-1251"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Message-ID: 
+ <e7117e27-a56c-4b83-a94d-9cde52a0b929@ANC-Exchange02.apps.ad.alaska.edu>
+To: Undisclosed recipients:;
+X-EOPAttributedMessage: 1
+X-MS-TrafficTypeDiagnostic: 
+ SJ1PEPF00002326:EE_|SA3PR05MB11121:EE_|BN2PEPF00004FC0:EE_|KL1PR01MB5641:EE_|SJ2P220MB1298:EE_|LV8P220MB1356:EE_
+X-MS-Office365-Filtering-Correlation-Id: 9309520d-ce56-47cf-c44d-08de96a9d47d
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted: 
+ BCL:0;ARA:13230040|32650700020|36860700016|786006|7416014|376014|82310400026|61400799027|16102099003|56012099003|18002099003|27013499003|3613699012|8096899003|2700400020;
+X-Microsoft-Antispam-Message-Info-Original: 
+ zt/Wf+7ajubbvZ//0Yf6vQp1Wu4xcAWJwQ6NPG0vj69xKaRdzRpTqyiUQt8YgUo75hSOy4WWid/mMBkjxftOsmL0YvuFOdVQBCNu6UhM8IUp6H1ihi4wFl5K/hb/GVEgqwZ/rsyaDrVRX74K5Vp98v7IBLaBUbuXt5d64kfyMesVOeGvwG0q0YK7sB6dZ6sEUdGVikIQ8QzW0uEk1l4JuIUzNFIegZxnUy981Jt3q0f4PfQkPGgPYxkjGwIYHjorqWRH6T1oT6JEbwE/KTYDK5DQroD9g1M4vU8aEe3wljqtW+Mne7ioZA4KVBsQU/w3fyfKoU/xftMqLcTxZvk5yv+h+tLgqxHDFmQ78b3OkcPXVXHzzNO/lkv9ReXzpFb7YODoAj7Z6PsfNCMa7u4U+qP9AOQDz9WAF3uThfFGYtvjl2yfPvJSBrI+7aLosLYh23VUPalLgczPxzo/sM7fTTuqjqQJt7KrSGJEOwtOJd5f6D0mb8moQCU2+qFev0vHK0HuS+2bHdLlAOo2tqVnE/hjlEDyW8chFWhv/zM8cGMmLKpq2aXSdc2PYTWY/sRABwT43tKaoMP7NEpwGEMpFK8923caZRpiBsUqRi8HXCOCO4ex1Zde27xadsWKq/Idmfr0EJ7sPld+bniNBTPrYPjGP3KBZ1cK0SjHfkoOEDlUcUvYbBLWbyVm9wox4QKrIu9J0MfqB+BCMecB32vyMqdf9T/M8oQ/LuyCxhlsDw3lKPxnNXvLONKeBtPR3Yyv8mg+n7dLIWQVwiCVRCWgUHQTsCOEa+E0bzUz0/Z01pPR0g3+D/Qrgwxn+SYkPK4ogF2+LWOPjeImuwClSjOT5lKvprheVhcsPCMHZ+f8mPHtM8AtjxmodTrTDEQN96rCx7pzYrCkbCW2Jg+kQCnSxA1znF8uM+JxTRgmkbOE2vWGIzai2+n29EpmTYedQUds/GQ0WdyWJ8B5MZpcvYBdkCg9lsOasOmBg2CoxWux+yX4eRAin9nnSJsMFx0XvvWoLLF2EbYDF9IT15DzY/K5WQ2KOZSlEaW5g3CpH5/TB1BJhggL1srl+HQtTq5qo5fUQXMN4AqyA56vTU8wste0JL3tcCLtCnQsmgHqbA2jlpzmpxf2cu9Y4zV4/ESRT4hc5BTZ8VAOnReNMSNWUQ9eAPPlZIxd7H0fq5JfNER0sJE+9XQpuUQ9zDkIvQPz7u9SsvdttCiaZS4A7XI9mp74BdYH8YLFN7sNsIO9y7Qp9cAOpu7So0Xm+eYkSfQEqaG25PEY80DPXZ1285cR4tpdJxe/wvoysWEG2ngh1dx/px3Ahut2Zfj5DETh735ovvcxKfTe0dgfM+ZRdgIy2xBavnCxPY3J0ogIc64loYgRJmc5m4OPjccRxbnI3J98sXkmMXM1eSewsnF/CXWp0q+yzCvr9p3y2yiWKn2jN7yCFgdx2YUUGh+zf4cdhRuuiS+1qxwL0qSxElsFPZfJBbTeCn7SlvuNCtoy2c53XiEmrsVsiIqGDxYiOHxl8wJe/4DB+zURuj90TZMq61x827b1fw94l2/m0xVPOXs/fr31gbxv6K47mMDk3Bf9oA8O98sG2VxyRF7wIzJEVboTC19c1k/XIuwlPcRJ9q3Q6T8TeNw=
+X-Forefront-Antispam-Report-Untrusted: 
+ CIP:137.229.132.10;CTRY:US;LANG:en;SCL:8;SRV:;IPV:NLI;SFV:SPM;H:owa.alaska.edu;PTR:ErrorRetry;CAT:OSPM;SFS:(13230040)(32650700020)(36860700016)(786006)(7416014)(376014)(82310400026)(61400799027)(16102099003)(56012099003)(18002099003)(27013499003)(3613699012)(8096899003)(2700400020);DIR:OUT;SFP:1501;
+X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-Original-0: 
+ yavb7JiNhBEzudls8pvBmOi0jPWsae5MHXnOWPU+SZ13cTuPKIlp3LZVSOZgvDPAXlQnWewiIt76YaYPDS3SAh30eh9jWb6Yr6np53ai/XcQb4ajT3qhPzylE1u6n8sylFOzP/JwnwAVtYmgc3K64SrurPEFx/8qAqFjkWrSlfCyAI240Ptlk6xgQiau5rfJ2UF2NLCvgbaJFU9Aaoia5x4zXVVwN09M9CT4boby6TbW9SNk5S5cEOLPlFEPn1P01ZBSj6INKad5NhUSsmvOeRO4K+DzX5rr0l8yL+I9W8CjvkrrL23GW1hM6XeVQjIJ3j56Idw0rKvUzK8lrsdrN3YZezQT1FdQXYZPDX3um50bJ3KwFXkOY9a6rHGxXFfGBQA0xpf7kJ4W92WpEfTCr3L2L1O3gfSYvgqUuwx+JNVRDJuhUYfYtyN4SWDpLzDqW8SeeYT5U/m6/3id31dpQBiZ0b2VTanNcBqtYtpdpoHyPR77ETqZbyCRo8s7Kfeo9mKwXiRtIuvql7Gf8nn5kE9EkBWEBWM3q8jUZTFmkHgH07f1ZyRojk0IhSqZAJdoVioLDL/BAv8ECNDz9AN8xg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA3PR05MB11121
+X-IncomingHeaderCount: 46
+X-MS-Exchange-Organization-ExpirationStartTime: 10 Apr 2026 02:35:29.1840
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 9309520d-ce56-47cf-c44d-08de96a9d47d
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Transport-CrossTenantHeadersStripped: 
+ BN2PEPF00004FC0.namprd04.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted: 
+ BN2PEPF00004FC0.namprd04.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id-Prvs: 
+ 0752e2a5-2e2a-4a24-bdc2-08de96a9d125
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 52.102.149.9
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|47200799024|58200799021|46080799006|32060799003|6019299003|13020799006|470799035|39010799012|34130799006|32020799003|970799060|3069299007|15110799015|11020799009|2700799029|67000799015|461199028|29090799004|62400799018|460799366;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 10 Apr 2026 02:35:29.0093
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 9309520d-ce56-47cf-c44d-08de96a9d47d
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: 
+ TenantId=5a6dc059-5067-416e-af81-4b579d900323;Ip=[137.229.132.10];Helo=[owa.alaska.edu]
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN2PEPF00004FC0.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: KL1PR01MB5641
+X-MS-Exchange-Organization-AuthSource: 
+ BN2PEPF00004FC0.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/9/2026 3:13:30 PM
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.4213458
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9769.018
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9525003)(10145025)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><title></title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="5" topmargin="5" rightmargin="5" bottommargin="5">
+<font size="2" color="#000000" face="Arial">
+<div>
+Feeling weighed down by financial commitments? Let CITY BASE FINANCE provide the support you need with fast, flexible loan solutions approved and disbursed within 24 hours. Contact us ( burnettsteven@citybasefinanceandevelopmentlimited.com ) today to get started!</div>
+<div>
+&nbsp;</div>
+<div>
+Regards,</div>
+<div>
+&nbsp;</div>
+<div>
+Burnett Steven</div>
+<div>
+Chief Investment Officer.</div>
+<div>
+City Base Finance Development</div>
+</font>
+</body></html>
