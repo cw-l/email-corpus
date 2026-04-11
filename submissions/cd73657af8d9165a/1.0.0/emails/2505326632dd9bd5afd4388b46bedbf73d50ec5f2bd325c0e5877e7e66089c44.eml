@@ -1,0 +1,1304 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1775610096; cv=none;
+        d=google.com; s=arc-20240605;
+        b=WRKRushQyrET8G1xDv89BK/JckWl1YcTZNlL/+XMiJcEL20nzcfz0ef0grCYfHuBFU
+         fPdA1yWSS3XD9y1gnvctK+UXQ/MM91LyC5WElL4A+xW7BsOKnMx59CKVi/YKW0kQ0d/B
+         sj9etGxE2lpPda85wXSon7gyegTr66Y3c+f4NcO8jLrFkIyzm3/EyWQTEsr8Nz8PNIuD
+         geexugV1oVeN+/dZXVUJkKkQllQZ89X56frL7CLJuIT1mnJ4wxTJIiKTMt8vsqPxtmLt
+         4DiAetMg4UO4AYMMdWVgBz5vX/fdj7USb+JH/HWG0R2X7dOOkEYhGbbo5N/eMbtIRgoN
+         UhEw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=vIPaEBY58fhb+0DiA5Q9aahLPLIzS1LpnDyeC49ThQk=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=dGC3qERuH9Hy8pfipRqqNLYv6X5qmba5HuOqZHCtcniRCnnLaUVZldehZctLn5pHgg
+         hBBtA8tNGJoLzungXVMOL+8E1B/US/Hvh5IuZkE3OnGOQOXYnvOV62BpGV9MMTK1DcYC
+         7/2Guw7FSK5Rt0pnkXc6s7WoS5poI/4HmFFEfXotiYI+rTZjhuZnbMjPix+XhAHWPtY1
+         nRkw28ak2Vcr7gqCHiMcLdC6GoPZChUpODlr92y2Q+qzBrYe959ToeWX3OH0LBKEWL49
+         Y+WQh+ABFKxcTrECGBHotUwhBXjI3XhU1RtZlAyoqpr5AkofLP8RSkEyn6bZxzYSSDY3
+         fNeA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@eettxvcz.isada.cloudbuild.biz header.s=smtp
+ header.b=oydREvrz;
+       spf=pass (google.com: domain of mhojprcwuaifs@isada.cloudbuild.biz
+ designates 159.253.44.48 as permitted sender)
+ smtp.mailfrom=mhojprcwuaifs@isada.cloudbuild.biz
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@eettxvcz.isada.cloudbuild.biz header.s=smtp
+ header.b=oydREvrz;
+       spf=pass (google.com: domain of mhojprcwuaifs@isada.cloudbuild.biz
+ designates 159.253.44.48 as permitted sender)
+ smtp.mailfrom=mhojprcwuaifs@isada.cloudbuild.biz
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=eettxvcz.isada.cloudbuild.biz;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=fsgihvfiygnbkglwaxfej@eettxvcz.isada.cloudbuild.biz;
+ bh=He0WtpD3nddkEBaMeZ4Jnb08dWo=;
+ b=oydREvrzhfedh8+0nJjXWMbp/my2i3UV72f2CzSedaP0ByQKPKKbWTj1oFM6nq7verXP20hrc2l7
+   miaW5/CpKRCjXpYlV9od5Il7OI9XQVtCGbL2OrRzgiInWe8xRgwGOmUOAJ09iXLHqqq/Oc6mAMyM
+   qIw9A/66BL14oB6pkMA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=eettxvcz.isada.cloudbuild.biz;
+ b=p4RuDWYxQrEgLZbiiOpjrHQk4xEIy7V550Wjd5z3JznQHE31RTURX4sKrbSMfrKj8Ej7Cn+9ddQ7
+   7NMSv7y0zRvwBxK3RDUwIE8acWxC+VYWLsh9JJCA+95YNWE4z7rsexmzEG09bJyfExSOQlkxhmR/
+   cqxke1SLGYrVc2yjTMA=;
+Subject: This Tiny Device Is Ending $5,000 Hearing Aid Bills
+From: American Hearing News
+ <nooreplyydy.32.195982@eettxvcz.isada.cloudbuild.biz>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 159.253.44.48
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <ezrypfqgxjfxfhlxqgpjaszmwzbvcy@thbv6687b7u61el9as>
+List-Unsubscribe: <http://parastorage.com/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Tue, 07 Apr 2026 18:36:10 +0000
+Sender: fsgihvfiygnbkglwaxfej@eettxvcz.isada.cloudbuild.biz
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml"
+    xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno, date=3Dno, a=
+ddress=3Dno, email=3Dno">
+    <title>Hearing Aids Gone Cheap =E2=80=93 OmniHear</title>
+    <!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<![endif]-->
+    <style>
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #f0f4f8;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        @media only screen and (max-width: 620px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            .padding-mobile {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .hero-img {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<center>
+<body style=3D"margin:0; padding:0; background-color:#f0f4f8;">
+    <center style=3D"width:100%; background-color:#f0f4f8;">
+
+        <!-- Preheader -->
+        <div
+            style=3D"display:none; font-size:1px; line-height:1px; max-heig=
+ht:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all;">
+            Audiologists are stunned: This AI-powered hearing aid now costs=
+ just $113 for Americans =E2=80=94 and it's selling
+            out fast. See why seniors can't stop talking about it.
+        </div>
+
+        <!-- Email Body -->
+        <table align=3D"center" role=3D"presentation" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" width=3D"600"
+            style=3D"margin:auto;" class=3D"email-container">
+
+            <!-- Top Accent Bar -->
+            <tr>
+                <td style=3D"background-color:#1a4f8a; height:6px; font-siz=
+e:0; line-height:0;">&nbsp;</td>
+            </tr>
+
+            <!-- Header -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:20px 30px; t=
+ext-align:center;" class=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%">
+                        <tr>
+                            <td style=3D"text-align:left;">
+                                <span style=3D"font-family:Georgia, 'Times =
+New Roman', serif; font-size:12px; color:#888888; text-transform:uppercase;=
+ letter-spacing:2px;">Tech Advisory</span>
+                            </td>
+                            <td style=3D"text-align:right;">
+                                <span style=3D"font-family:Georgia, 'Times =
+New Roman', serif; font-size:12px; color:#1a4f8a; font-weight:bold;">OmniHe=
+ar</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:0 30px;" cla=
+ss=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%">
+                        <tr>
+                            <td style=3D"border-top:1px solid #d0dce8; font=
+-size:0; line-height:0;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Headline -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:30px 30px 10=
+px 30px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <h1
+                        style=3D"margin:0; font-family:Georgia, 'Times New =
+Roman', serif; font-size:28px; line-height:36px; color:#1a1a1a; font-weight=
+:normal;">
+                        Big Hearing Aid Brands Are Terrified of<br>
+                        <span style=3D"color:#1a4f8a; font-weight:bold;">Th=
+is $113 Device</span>
+                    </h1>
+                </td>
+            </tr>
+
+            <!-- Subheadline -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:10px 40px 25=
+px 40px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <p
+                        style=3D"margin:0; font-family:Arial, Helvetica, sa=
+ns-serif; font-size:16px; line-height:24px; color:#666666;">
+                        The AI-powered hearing aid that delivers crystal-cl=
+ear sound &mdash; at a fraction of the price
+                        audiologists charge.
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Hero Image -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:0 30px;" cla=
+ss=3D"padding-mobile">
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#4dgTTY3011jxzL71yzswsvblrn32BFOPVQZKEDFYHWR195982SPDD3439=
+U8" style=3D"text-decoration:none;">
+                        <img src=3D"hxxps://i[.]imgur[.]com/4bwwrVB[.]jpeg"=
+ width=3D"540" alt=3D"OmniHear Hearing Aid" style=3D"width:100%; max-width:=
+400px; height:auto; display:block; margin:0 auto; border-radius:8px;" class=
+=3D"fluid hero-img">
+                    </a>
+                </td>
+            </tr>
+
+            <!-- CTA Button 1 -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:30px 30px 15=
+px 30px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" align=3D"center">
+                        <tr>
+                            <td style=3D"background-color:#1a4f8a; border-r=
+adius:6px;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/savelinge/winbridge[.]html#4HBxFe3011tIkT71xbtywepddb32ZSKENUXAQHEPWQP19=
+5982UPKK3439l8"
+                                    style=3D"display:inline-block; padding:=
+16px 44px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-w=
+eight:bold; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">CLA=
+IM
+                                    60% OFF TODAY</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Trust Line -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:0 30px 30px =
+30px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <p style=3D"margin:0; font-family:Arial, Helvetica, san=
+s-serif; font-size:12px; color:#999999;">
+                        16,900+ Five-Star Reviews &bull; Trusted by Audiolo=
+gists &bull; Ships from the US
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:0 30px;" cla=
+ss=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%">
+                        <tr>
+                            <td style=3D"border-top:2px solid #1a4f8a; font=
+-size:0; line-height:0;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Problem Section -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:30px 30px 15=
+px 30px;" class=3D"padding-mobile">
+                    <h2
+                        style=3D"margin:0; font-family:Georgia, 'Times New =
+Roman', serif; font-size:22px; line-height:30px; color:#1a1a1a; font-weight=
+:normal; text-align:center;">
+                        Is Hearing Loss Costing You Life's Best Moments?
+                    </h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:10px 30px 25=
+px 30px;" class=3D"padding-mobile">
+                    <p
+                        style=3D"margin:0; font-family:Arial, Helvetica, sa=
+ns-serif; font-size:15px; line-height:24px; color:#444444;">
+                        If you find yourself asking people to repeat themse=
+lves, missing punchlines, or nodding along in
+                        conversations you can barely follow =E2=80=94 you'r=
+e not alone. Millions of Americans live with
+                        untreated hearing loss, not because they don't want=
+ help, but because traditional hearing aids
+                        cost <strong>$2,000=E2=80=93$7,000</strong>.
+                    </p>
+                    <p
+                        style=3D"margin:16px 0 0 0; font-family:Arial, Helv=
+etica, sans-serif; font-size:15px; line-height:24px; color:#444444;">
+                        That all changed when OmniHear qualified for the <s=
+trong>Hearing Accessibility Program</strong>
+                        =E2=80=94 dropping the price from $2,497 down to ju=
+st <strong>$113</strong> for Americans who act now...
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Product + Features -->
+            <tr>
+                <td style=3D"background-color:#e8eff7; padding:30px;" class=
+=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%">
+                        <tr>
+                            <td class=3D"stack-column" style=3D"vertical-al=
+ign:top; width:45%; padding-right:15px;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/savelinge/winbridge[.]html#4OUcOQ3011CTYs71txhptcsjgq32TKZOBXYGMLOXSQP19=
+5982DQLY3439i8" style=3D"text-decoration:none;">
+                                    <img src=3D"hxxps://i[.]imgur[.]com/5Yq=
+sgjd[.]png" width=3D"230" alt=3D"OmniHear Hearing Aid Device" style=3D"widt=
+h:100%; max-width:230px; height:auto; display:block; border-radius:8px;" cl=
+ass=3D"fluid">
+                                </a>
+                            </td>
+                            <td class=3D"stack-column" style=3D"vertical-al=
+ign:top; width:55%; padding-top:5px;">
+                                <h3
+                                    style=3D"margin:0 0 12px 0; font-family=
+:Georgia, 'Times New Roman', serif; font-size:18px; color:#1a4f8a;">
+                                    How OmniHear Works:</h3>
+                                <table role=3D"presentation" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0">
+                                    <tr>
+                                        <td
+                                            style=3D"padding:0 8px 10px 0; =
+vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#1=
+a4f8a; font-weight:bold;">
+                                            1.</td>
+                                        <td
+                                            style=3D"padding:0 0 10px 0; fo=
+nt-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; c=
+olor:#444444;">
+                                            <strong>Dual Chips Activate</st=
+rong> &mdash; Two processors handle speech
+                                            and noise independently
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style=3D"padding:0 8px 10px 0; =
+vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#1=
+a4f8a; font-weight:bold;">
+                                            2.</td>
+                                        <td
+                                            style=3D"padding:0 0 10px 0; fo=
+nt-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; c=
+olor:#444444;">
+                                            <strong>AI Adapts in Real-Time<=
+/strong> &mdash; Adjusts to your environment
+                                            automatically
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style=3D"padding:0 8px 10px 0; =
+vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#1=
+a4f8a; font-weight:bold;">
+                                            3.</td>
+                                        <td
+                                            style=3D"padding:0 0 10px 0; fo=
+nt-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; c=
+olor:#444444;">
+                                            <strong>Crystal-Clear Sound</st=
+rong> &mdash; Speech delivered with Ultra HD
+                                            clarity
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style=3D"padding:0 8px 0 0; ver=
+tical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#1a4f=
+8a; font-weight:bold;">
+                                            4.</td>
+                                        <td
+                                            style=3D"padding:0; font-family=
+:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444=
+444;">
+                                            <strong>All-Day Comfort</strong=
+> &mdash; Nearly invisible, fits inside or
+                                            behind your ear
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Key Features Banner -->
+            <tr>
+                <td style=3D"background-color:#1a4f8a; padding:25px 30px; t=
+ext-align:center;" class=3D"padding-mobile">
+                    <p
+                        style=3D"margin:0; font-family:Georgia, 'Times New =
+Roman', serif; font-size:18px; color:#ffffff; font-weight:bold; line-height=
+:26px;">
+                        Powered by Cutting-Edge German Audio Engineering
+                    </p>
+                    <p
+                        style=3D"margin:10px 0 0 0; font-family:Arial, Helv=
+etica, sans-serif; font-size:14px; color:#b8d0ee; line-height:22px;">
+                        Dual Processor Technology &bull; Real-Time AI Adapt=
+ation &bull; Ultra HD Sound
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Testimonial -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:30px;" class=
+=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%"
+                        style=3D"background-color:#f0f4f8; border-radius:8p=
+x; border-left:4px solid #1a4f8a;">
+                        <tr>
+                            <td style=3D"padding:25px;">
+                                <p
+                                    style=3D"margin:0; font-family:Georgia,=
+ 'Times New Roman', serif; font-size:16px; line-height:26px; color:#333333;=
+ font-style:italic;">
+                                    "I'd been living in a world of muffled =
+sounds and half-heard conversations for
+                                    years. The moment I put OmniHear in, I =
+could hear my daughter's voice clearly again.
+                                    I caught every word of my grandson's jo=
+ke at dinner!"
+                                </p>
+                                <p
+                                    style=3D"margin:12px 0 0 0; font-family=
+:Arial, Helvetica, sans-serif; font-size:13px; color:#1a4f8a; font-weight:b=
+old;">
+                                    &mdash; James R., 78, Ohio &mdash; Veri=
+fied Customer
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Benefits Row -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:0 30px 10px =
+30px;" class=3D"padding-mobile">
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" width=3D"100%">
+                        <tr>
+                            <td style=3D"text-align:center; width:25%; padd=
+ing:10px 5px;">
+                                <img src=3D"hxxps://i[.]imgur[.]com/qdKHEFT=
+[.]png" width=3D"52" height=3D"52" alt=3D"30-Hour Battery" style=3D"width:5=
+2px; height:52px; display:inline-block;">
+                                <p
+                                    style=3D"margin:8px 0 0 0; font-family:=
+Arial, sans-serif; font-size:11px; color:#444; font-weight:bold;">
+                                    30-Hour Battery</p>
+                                <p style=3D"margin:4px 0 0 0; font-family:A=
+rial, sans-serif; font-size:11px; color:#666;">
+                                    Rechargeable lithium-ion</p>
+                            </td>
+                            <td style=3D"text-align:center; width:25%; padd=
+ing:10px 5px;">
+                                <img src=3D"hxxps://i[.]imgur[.]com/JQo4cxF=
+[.]png" width=3D"52" height=3D"52" alt=3D"Invisible Fit" style=3D"width:52p=
+x; height:52px; display:inline-block;">
+                                <p
+                                    style=3D"margin:8px 0 0 0; font-family:=
+Arial, sans-serif; font-size:11px; color:#444; font-weight:bold;">
+                                    Invisible Fit</p>
+                                <p style=3D"margin:4px 0 0 0; font-family:A=
+rial, sans-serif; font-size:11px; color:#666;">
+                                    Discreet in/behind-ear design</p>
+                            </td>
+                            <td style=3D"text-align:center; width:25%; padd=
+ing:10px 5px;">
+                                <img src=3D"hxxps://i[.]imgur[.]com/SzfDLCg=
+[.]png" width=3D"52" height=3D"52" alt=3D"AI-Powered" style=3D"width:52px; =
+height:52px; display:inline-block;">
+                                <p
+                                    style=3D"margin:8px 0 0 0; font-family:=
+Arial, sans-serif; font-size:11px; color:#444; font-weight:bold;">
+                                    AI-Powered</p>
+                                <p style=3D"margin:4px 0 0 0; font-family:A=
+rial, sans-serif; font-size:11px; color:#666;">
+                                    Real-time sound adaptation</p>
+                            </td>
+                            <td style=3D"text-align:center; width:25%; padd=
+ing:10px 5px;">
+                                <img src=3D"hxxps://i[.]imgur[.]com/VJerCSE=
+[.]png" width=3D"52" height=3D"52" alt=3D"Doctor Designed" style=3D"width:5=
+2px; height:52px; display:inline-block;">
+                                <p
+                                    style=3D"margin:8px 0 0 0; font-family:=
+Arial, sans-serif; font-size:11px; color:#444; font-weight:bold;">
+                                    Audiologist Trusted</p>
+                                <p style=3D"margin:4px 0 0 0; font-family:A=
+rial, sans-serif; font-size:11px; color:#666;">
+                                    Recommended by specialists</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Final CTA -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:20px 30px 15=
+px 30px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <h2
+                        style=3D"margin:0 0 10px 0; font-family:Georgia, 'T=
+imes New Roman', serif; font-size:22px; color:#1a1a1a; font-weight:normal;"=
+>
+                        Limited Time: <span style=3D"color:#c0392b; font-we=
+ight:bold;">Save 60% Today</span>
+                    </h2>
+                    <p
+                        style=3D"margin:0 0 20px 0; font-family:Arial, Helv=
+etica, sans-serif; font-size:14px; color:#666666;">
+                        Regular price $2,497. Now just <strong>$113</strong=
+> through the Hearing Accessibility Program.
+                    </p>
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" align=3D"center">
+                        <tr>
+                            <td style=3D"background-color:#c0392b; border-r=
+adius:6px;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/savelinge/winbridge[.]html#4vmTNW3011wkiJ71sodrjxzlrm32WYXDLQBNUWNZPWY19=
+5982UEED3439x8"
+                                    style=3D"display:inline-block; padding:=
+16px 48px; font-family:Arial, Helvetica, sans-serif; font-size:17px; font-w=
+eight:bold; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">CLA=
+IM
+                                    YOUR DISCOUNT NOW</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Urgency Note -->
+            <tr>
+                <td style=3D"background-color:#ffffff; padding:15px 30px 35=
+px 30px; text-align:center;"
+                    class=3D"padding-mobile">
+                    <p
+                        style=3D"margin:10px 0 0 0; font-family:Arial, Helv=
+etica, sans-serif; font-size:13px; color:#888888; line-height:20px;">
+                        Only <strong>750,000 devices</strong> available thr=
+ough the program &mdash; over 500,000 already
+                        claimed.<br>
+                        <strong style=3D"color:#1a4f8a;">Stock is extremely=
+ limited. Ships fast from within the US.</strong>
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style=3D"background-color:#1c2d3d; padding:25px 30px; t=
+ext-align:center;" class=3D"padding-mobile">
+                    <p
+                        style=3D"margin:0; font-family:Arial, Helvetica, sa=
+ns-serif; font-size:12px; color:#8a9eb0; line-height:20px;">
+                        This email was sent to you because you subscribed t=
+o tech and health updates.<br>
+                        If you no longer wish to receive these emails, plea=
+se <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge/winbridge[.]html=
+#5YtXvx3011VbJP71aazenhaxbu32FFDEBVZPVHFZIGI195982BAJI3439X8"
+                            style=3D"color:#8a9eb0; text-decoration:underli=
+ne;">unsubscribe here</a>.
+                    </p>
+                    <p
+                        style=3D"margin:12px 0 0 0; font-family:Arial, Helv=
+etica, sans-serif; font-size:11px; color:#5a7080;">
+                        This is an advertisement. Individual results may va=
+ry. OmniHear is available online only and not
+                        sold in stores. ADVERTISING DISCLOSURE: This websit=
+e is an advertising marketplace. The owner
+                        has a monetary connection to the products and servi=
+ces advertised on this site.
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+</center>
+</html>
+</a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/savelinge/winbridge[.]html#6J=
+FDnQ3011PgcH71uvsvzegada32AQKOXNKHXVUJSNB195982SGVR3439L8">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+
+
+
+
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object DJGORNXRTMAOVOJSKGBRIAPCESKIPLMMACQXRPLYZJCNDIAAHQEVDEKLCVVM>
+
+Dear HTLFQSXBSMOQATBHVVFGPV igkdjnqybrxupjhqbpdhce,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is ypalzvyrzzaoksqgnluizwp=
+jxadq.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi jcycobejmhmxqaubej,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi wjvsaqoqxvdwceutrbbevapu,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ycscafjgzwcoglhbknshycnuuw
+ Site ID: kawfcbeliaidpwgkfxbphhxpe
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team TOOGQNAVJFWHXJNDZTRFWD
+
+Powered by RCENBHEOIRILALSAADUSCH=20
+
+</title>
+
+Dear LGNAUQWZTELMKWUJFGZMAGQDP rljvilvljwmoepaaigduutfqiy,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is qzxrgvrbxdqjwsszrzjnmzv=
+yz.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood QJOZMMXQOPQMAOKASBPBES,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+ABIGJVUYWIMFIHOGJILIQDBJKGFZNMLUORKCZLELYCDUJSMFMROOBLHGHVWHBGBUDFETVQOKWZR=
+YTJMCNIAGTPPUWDGJXPGVEWHCJWYLSEKYIPLOZNRPWHPGGFGMDULAMNWBXXHUTWYMLUBPMUTUNW=
+HJMNTEKCFGEHPIHNIJLRGAYLRHERKMNUZFRVIQHOYUHBEADXYL
+
+ Hi BZNANIRGIOARUPJGATYGZR,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+jxjwycunmkpbzcmdkhiqpgkwgnalafjogdzrlttnszgtxnpolgukmgoxknsqleneatvbqzrlafc=
+ponhzxxbqdfdyzdhcnlsrjwyknxcaiviaodkinzdgzwrffwhbybavaielxzzxldohmoxkdtrufo=
+kubzvxoxocuowufjqxdiccucdujpdcedmaxhiqebkzkmdylkss
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi XQZYENEBVDUYVMKB8R8ACRO12,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team GMGSXMZBXMVVPYXTFTSBOK
+Powered by IMTYYPIDMZNKCAKQRXGMDA
+
+Login Name: ECWCTQDWZIPPYOODRRLWRV
+Password: GOOUUNJUJRGNWGYIMIDMDH
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: YXG
+Password: VXSKRTBSIROYTFYPRHPXOF
+
+	56O6DVUBJPJARIV7JY EZ4PVITV6Z51FFH 0KZ9WLAGV11C5 Q8TB6WJDXCXY8SGMNJ GHP0PN=
+L7WBJMHKB GREGCXBXDOD2F IHRTOHTJ4I3T9QI9RJ=20
+	QJ6RH37O29SRELVKAI MU5AWOHIH31HM36 LBULWHOFXLEPR JJIBWVJNJZ3GFD0S0C ERLM39=
+7JIIG8EVN JBUJPQUVBWLD4 N4SXJ3WYX63SO4TUEX=20
+	QQOJQTPQA60DER7 KVRQGL372Z4KU QAJDJW1H44IIGLJKOP YRXCECZIFXSMNOU OBK0541ZN=
+HD4G N8EM7IP8ZJJL5B7PU6 CDU58GBACU5XSG6
+	3O3EDXL605SOE IHCQJYXEDX0FPHGFBH 8ETESCQLDSYCBPU 0X1LFDLYXTMN3 0H5CHW621TB=
+TTKKK6I 6DX81X7QKC19A9S LAI2P4XMUHH9J=20
+	KPQ2M3QHPKIZ8V7ZQ5 UKENKR0XJ2F93V8 SN3FCHQEUS6DX 42G6BL35B3SINORA2M 61SXQQ=
+QFF1EPL1T 3PGDN3AFKHBBE 3DJPQD07X8YVLE83JT=20
+	B6CE3W5V2A3E6G1 IQLHPDYN0OADS G8ZGP9HRNE6RE3HLPN PYJO14QQE21CA1U FSS7IYGOI=
+8Z3Y YUMK9KR7RD6TUYJHBN ZQ2DK8OW9PD3I5H=20
+	9ZHGVYA0IMMI4 S0DS7D2UIBAQZ2CD8Z LXW8IY4UFIK10M9 GQOW2I8IITNSG 6QHJU6AGS50=
+JQ9WTNG MN535E9K0P0DIME SUP7L53YLIAVM=20
+	FXJFO48ZD30KLICES1 ZCDGVBITE2PC3FW C8ZHFQ4YCPY2Y VT174F6HIZOBXPEFQG A2RF1R=
+SJ38Q5SWX 4S8C33J9T87DO YAOR6QRZQASLLUGB3Y=20
+	N5UHH0NLT25ULYP C10UOTXLYH2OJ 2DHLT8L56S3V6NJJEP 5DYANCC5VJ4MVQY QJD5H4E2P=
+QL85 2DU0EJZS1CWSI1SS4M RNYGZ33OO0ZMJT2=20
+	QQ1OF071QZEHV BZVNQXNZB88KR9OOAH C48BL1CTLJKYPXR 8ZEJB3UXRWI3B 5VOOPHIG0EL=
+ME7UZSM RM44CI10Q89C89H LCMKMXWRJW5LL=20
+	M086MGAIHVL3TSOL6A LJJXAL72L67QF21 U9L6Z9PYLFC52 I6LOX8G8T4C77IE66D JAU8RR=
+RKVH3L9AI PZDFLYCK1Y2YN RDRE2DURK7ITTU3SMV=20
+	68YF5G9JL7MK695 026P9BK2X271K FGPN2417T1PVTWLENN KZ5QV340FJJ82A8 ODGFGHMEC=
+DWTU 8JFH6VYNZUBMA2V51J RPFB7TCGDH0GS8L=20
+	7ONISVEKMV7VH TW15A08TR8NCVRREDJ 4IAXTOWQNKSYSY0 NYL2AF5KB4PLS 25VZ2E9SN9R=
+SU0EDBK WMQAHKJGLXG7TVE NR6C2BWKB054P=20
+	8T4AVXX6QSFNT38648 ZUVSXGJYSRM72BE I90X9N0CXH8IC IJXQ667NLQ45BA6494 4ITMNE=
+PJ9VJ01ER QQCC8NV9SSOUK EFWMZLTYC7GVVE8NF7=20
+	MNB5E9YQHKVJMSE 5UCL16AZME30B 09SJJYQD1WVWRFW8BI FQ6VI7PRD488OVT U3ALXWLTM=
+4PBC YXBHV5AAPC34HHW4QB XNM7GYEPE1XYQHI=20
+	5VHQ8X2T1RU57 3YTLKH1QZPQLJCR1QU QWUW5AB3K50OLO4 JOJZPI2Q55UZE Z0W3L7FQBK6=
+JH40624 I70FLPNVX61W2W4 5VJ1PDJKAQ9ZG=20
+	XXU3D25IO851DCZUCW ZCC0YUU8AGCJVJG 75BP50BUN36IY OTM8HCPXXP7BDIR85S D8B78Q=
+Z7101U7K4 8ICT6QP9TF1TJ Z5SHC1VJ2U37320YH0=20
+	4ZKA70NB2ZVZ7OX N9OP505GM2LIW QDGJ8CSG90NAAMKTEU UBTFBDVNO9GXO48 2L9TVQ43R=
+AEHX 7E4552BKTKQ1PDL85E ZRZBKSNLY06II89=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+UBFBNIABMWGLSNMJCDDXOYSJFQSJUFNVJIFKDDAWEMUCCXBFULWXYIRTTOGRSNWMFBHBSOWWIJH=
+MFIAVFAHCVYZCWPGUVVDFNZMFKOFHOFRNTKOXZXSARQUBDGHBCHQYSLGTXJSROJOWYICCUXBIFI=
+MDTEWPFMDUKCJJKWPHXUJRQHJVHVQORTFKIRVGPOIMYJPBOWSTA
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to QXNCQMRPHJXBFIDKXWBKG=
+JPBISKKIYYYDWIWPGYVCRWQDBPHXAPXAHKMBGXKOMCRRRZJWMUQXNWGWYIBKVXGWXKEITXNPDAP=
+ORHGUANWWFYEMWYBSWJGRASGMTCVDJEOYWBQMHXHEKMYVIVLSMZQFFNUMAHRKZVFDNPJPFURKNC=
+CTJCGFAECZDONFBFDJVLASCQUAKJJ roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department MGMFGOIIQCRPGUHXUKZXEOHJTPUPDYPIJRNHPPBZXGIPNOAZ=
+DAJZNBYTSPANUDVSZPVBVERXBMZFZDEUWMGHYTIKREMIECDFEOGQQXAKZHJGAONTDLIRCZNZVYJ=
+HACFMBBDSOMOOXZRHVFWXFOQYXBNQPDKWDNJOKDFBWDHTNQRQVRVOEOVVFSRNOIUIKCTABTKRZU=
+JRQ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation MNQIZNZSVWXZUPZ=
+JIODXYCLQRZANTOXMKJMFJTYLZIDJPIAOXKAWCWBQJSERRNODVUDLTNHSRFVUGHVGFPKJMAIAYM=
+RRLBTWIQUHHPKDXXBUSEVUOTSFKALTWBBPJIGCGNNKILUNWXJMHCPZYLDSGNJKTRTVPBURASECO=
+JKEDWJDJCRWJWAPFJOYEBLEIPZPXVQYNGEXF development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will VOWPMNISLHNTYIEVZMFGOSFBTMXRANBKRBIBZOEFVDGHXRXYTSUCFFAMR=
+OPDBGKSUZXBCLHGFQLGGNRIMUASUVQXPHCDJWOFQIYKQPECTQSUSRIBBALCUCRCRPVBKPHBAIBY=
+KDCLTEBSYVUQHCFCBZDDVPJEUDDGUNQPGSAEKEQXRNSBUSHIRSQGODLJQFHXSMXERECSQBPDJTY=
+JLHYPRNUPDQXCUWUGVMBUZBRPQPFBHFPCCFKABRWTFJETVOYJNGVKEMBWDFMJXCHPQLWQQRTBKG=
+MDWOKZSRSYCYJOQOKGGZCIYYHTKJKXIWVPBNBOGIEURBBXORBILPPIRKDXVBYNLLGZZORSYJKJP=
+HDVMSDUSNIHSSZKTBYRUDWIJNDOFBYAXAYHMIHBEWZS  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support WWDIZMr=
+edactedKJXRHGUAPHDXPODJAELNTGSZYDAZOJSRTBKQXRJUNHTSJNAJAZWDVMHXETYWDJEXVNZJ=
+RQVXWTNPDPWOAPHEKDWZNQYKOKVFRCZUQTXGJPRBEZAWTLNEBADHEPPDNNMXNAKNAZFCSABKJVX=
+TXZDDJTAMKYJRXZRECALEDLNMCUEMXILLLKTZDIJBVBTDKKK  to keep delivering qualit=
+y journalism that?s open and independent. Every reader contribution, howeve=
+r big or small, is so valuable. Support The Guardian from as little as $1 ?=
+ and it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
