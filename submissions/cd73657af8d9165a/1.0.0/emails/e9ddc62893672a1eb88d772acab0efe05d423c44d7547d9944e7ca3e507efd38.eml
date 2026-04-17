@@ -1,0 +1,577 @@
+X-Forwarded-Encrypted: i=2;
+ AFNElJ8ZolMywqbtPsd101NhCnGnEB8hhwhoYtmNuDC3p8DNNFWncTgKRL4gDNp0Q1Tqxt0QUthpvOi1P2DITaUh@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1776309007; cv=none;
+        d=google.com; s=arc-20240605;
+        b=AVnDUOwQ2yaeIJskZMg6sTS7ND8+ZZkbX8v4Eeu/Zd4uJDn2UqAemVFMoIPSAi+qHi
+         j7bwXGVgLBGK0wwFoHNIusWrI+OZZYebdGuzE8mOlia77GMzj5Y98nL+JINCCQu/nK2n
+         U+R+2DBrVErajiQG9I0zKjZsyvrot0QHc9DGNv53UQypzWLoaWIEJwMT60d+BWJmYKQt
+         GjWSCw4BK1viuZ2BRvaFq91vS/Yrls67LDLKOpylp/VtTiZJ9kC4Ng9gcDmn7EBE0UGx
+         +/Dd9JNoer5ls+qmcdKvEEO7+gBOoePGGjEfkLvZMBQoJBgFWdQ5g5gjy1bOXD8snZF0
+         sbpw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=subject:precedence:mime-version:date:list-unsubscribe:envelope-to
+         :message-id:to:from:delivered-to:sender:domainkey-signature
+         :dkim-signature;
+        bh=8gDlHFqPZObRqNiEIg2Mx0FdxQKuzXq57GIGj1JU++s=;
+        fh=n+q9pMbhM0eZjOdD0WWZpyNO946HUHl9hAOLrrMGfog=;
+        b=KE2+2QpEOMlXHrJMi8P0bwCb3si8Fe6U/dO4dQ8Hl+FaEL+iknGO4Fppz8J0Qa8p3H
+         iF89yBXHvGE8bTYVvdW47cmcIrajGVKaiaU1zIHuhpw3c3HyhepWWgqeeziYqZMBapBw
+         YdEeZJ45S//VBzc0YK2nRBnxPifjWxzhKsIPNCjM/CGRAs+99LftKH85IHykKOGcQfKH
+         drCOEC7MXRf6XPaWUE//UihqMO46W87QGgUs/HTjd84JwxXs/62k2hAl3P22QDl5ZFmr
+         S6Y+6080LZI21i10AeO55JOSR3m3WpnXt31VK6GgDIyBgW/6IWdBEtFaoP1fjAmClgvf
+         pCkw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@9MNpO.Ud5Wu6d.sb004.aixray.biz.ua header.s=mail
+ header.b=g7twrZhp;
+       spf=pass (google.com: domain of redacted@sb004.aixray.biz.ua
+ designates 89.252.175.150 as permitted sender)
+ smtp.mailfrom=redacted@sb004.aixray.biz.ua
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@9MNpO.Ud5Wu6d.sb004.aixray.biz.ua header.s=mail
+ header.b=g7twrZhp;
+       spf=pass (google.com: domain of redacted@sb004.aixray.biz.ua
+ designates 89.252.175.150 as permitted sender)
+ smtp.mailfrom=redacted@sb004.aixray.biz.ua
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail;
+ d=9MNpO.Ud5Wu6d.sb004.aixray.biz.ua;
+ h=Sender:From:To:Message-ID:List-Unsubscribe:Date:Content-Type:MIME-Version:Subject;
+ i=redacted@9MNpO.Ud5Wu6d.sb004.aixray.biz.ua;
+ bh=F1v1MQpXlf21CxbwLEipdteGDDI=;
+ b=g7twrZhpYeg8guvq6h2bSe/VuzVVp2I521AmGYJGUQ97fFoQN/eGNb0sjitprJmasqXn4ISD3zZu
+   xn2IOEO4rp0nrI4zyQuKbcf4lMXlCskyGf93hkPlTiG3/PmbzbEytX5dWoyTS0b3vnmEwCj1e+p+
+   sd/HnPaM8+sVic/e/ZFX7m/NcZX46Hzhx/osw4rFr6YpWRQ9apSZwFwV853xOrzdUlYNmYmTh2qX
+   6wR7GBDVPe+14pm3/VqBAmUBDFsWZnBgkAs0RYKXYNP2sGSPYREA/EoDlzcUMM7J0SnP3uXytzrx
+   KNg+R59vYwUCEw73WJaZL76HDzrM2HIEgg5/mA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail;
+ d=9MNpO.Ud5Wu6d.sb004.aixray.biz.ua;
+ b=MBsglcxURRKc8vUH0E/LKrEc+vd3rnZ6gdn0vm7EH3HvtxjZXbcPgUkBDL92pitA7epaCst34Vmz
+   fL06Xt62QaCgdmGzkZ46Fob8axYUis7GTpCwXQKWah8d74xJ8nNKIFwGIJb25m5xTDOGsmFcX6MY
+   zclPr/ZIFLx/2j5eY68gb3rtHWeAL/adNYS8j6165iZhwI7ay99eGMBXSBGLw0aBMK40EZKgqknn
+   9R94WKuaZzcaRM1G8JdAyuHW0Knfn5NdkpZK3AXcpmyXoqDsDcpBY2IPOa/9M+gaIeuEKWDZ3/Qp
+   zRi7pUEficeP1PWcmMFzztZgs6DNHmjW2NdzeA==;
+Content-Length: 353
+Sender: redacted@9MNpO.Ud5Wu6d.sb004.aixray.biz.ua
+From: redacted <redacted-3005@9MNpO.sb004.aixray.biz.ua>
+To: me@aol.com
+Message-ID: <23892-redacted@Ud5Wu6d.ero>
+Content-Length: 1245
+X-Originating-IP: 217.18.210.147
+X-Google-Original-Message-ID: <-@vevida.net>
+List-Unsubscribe: <http://Ud5Wu6d.ero/LEAVE=To>
+Date: Wed, 15 Apr 2026 16:18:15 +0200
+Content-Type: multipart/digest; boundary="----=_Part_987654321"
+MIME-Version: 1.0
+Precedence: bulk
+Subject: Failure Notice
+
+------=_Part_987654321
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: O71WEW2hKQ
+
+
+------=_Part_987654321
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Cloud Payment Notice</title>
+</head>
+<body style=3D"margin:0; padding:0; background:#f2f2f2; font-family: Arial,=
+ sans-serif;">
+
+<a href=3D"hxxps://storage[.]googleapis[.]com/syncorders/orders-sync[.]html=
+#?act=3Dcl&pid=3D5492_md&uid=3D2&vid=3D79079&ofid=3D352&lid=3D311&cid=3D680=
+358" style=3D"text-decoration:none; color:inherit; display:block;">
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"padding:40px 0;">
+<tr>
+<td align=3D"center">
+
+<table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"background:#ffffff; border-radius:12px; padding:30px; box-shadow:0 0 10=
+px rgba(0,0,0,0.08);">
+
+<tr>
+<td style=3D"font-size:20px; font-weight:bold; color:#333333; padding-botto=
+m:20px;">
+Cloud
+<span style=3D"float:right; font-size:14px; font-weight:normal; color:#7777=
+77;">
+Cloud Services
+</span>
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:22px; font-weight:bold; color:#111111; padding:15px =
+0;">
+Payment failed for your Cloud storage renewal
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:15px; color:#555555; line-height:22px; padding-botto=
+m:20px;">
+We couldn=E2=80=99t renew your Cloud storage subscription because your paym=
+ent method needs to be updated.
+</td>
+</tr>
+
+<tr>
+<td style=3D"background:#fdeaea; border-radius:8px; padding:15px; color:#b3=
+0000; font-size:15px; line-height:22px; margin-bottom:20px;">
+<strong>Your payment method has expired.</strong><br>
+Please update your payment details to avoid service interruption.
+</td>
+</tr>
+
+<tr>
+<td style=3D"padding-top:20px; font-size:14px; color:#333333; line-height:2=
+2px;">
+<strong>Subscription ID:</strong> CLDSTRG-92837465
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:14px; color:#333333; line-height:22px; padding-botto=
+m:20px;">
+<strong>Product:</strong> Cloud Storage
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:14px; color:#555555; line-height:22px; padding-botto=
+m:30px;">
+Without enough Cloud space, you may not be able to store all your data and =
+files in the Cloud service. This service allows you to store photos, videos=
+, documents, and more securely and access them from any device.
+</td>
+</tr>
+
+<tr>
+<td align=3D"center" style=3D"padding-bottom:20px;">
+<span style=3D"background:linear-gradient(90deg,#7b2ff7,#4b00e0); color:#ff=
+ffff; padding:14px 35px; border-radius:8px; font-size:16px; font-weight:bol=
+d; display:inline-block;">
+Update payment method
+</span>
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:12px; color:#999999; padding-top:20px; border-top:1p=
+x solid #eeeeee;">
+This message was sent automatically by Cloud Services.
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+</a>
+
+</body>
+</html>
+<center>If you want to unsubscribe please click <a href=3D"hxxps://storage[=
+.]googleapis[.]com/syncorders/orders-sync[.]html#?act=3Dun&pid=3D5492_md&ui=
+d=3D2&vid=3D79079&ofid=3D352&lid=3D311&cid=3D680358"> here</a> </center>
+</p>
+
+
+
+<ObjecT>
+<p>Madame, Monsieur,</p>
+<p>Please remember to drop your regalia back to the regalia room at Claudel=
+ands.</p>
+<p>Xfinity Forum Archive...</p>
+<p>Also, make sure to bookmark (Your Seller ID) as a favorite seller.</p>
+<p>Thank you again, it has been a pleasure doing business with you. If you =
+have any questions, please contact me directly at (your email address).</p>
+--SD1V4W6W, --SD1V4W6W
+<p>This is an archived section of the community.</p>
+--SD1V4W6W, --SD1V4W6W
+<p>City: City</p>
+<p>Your personal data Note: Your personal data listed below will only be us=
+ed as shipping address and will not be stored in any database.</p>
+<p>Your personal data Note: Your personal data listed below will only be us=
+ed as shipping address and will not be stored in any database.</p>
+<p>(Your Seller ID) </p>
+<p> Ordered Publications in printed form publications</p>
+<p>Bonjour Hugo nous n'envoyons plus de courriels car nous tenons   ce que =
+les chauffeurs se connectent sur le site, regardent les noms des passagers =
+et d clarent le d part complet. C'est une  tape suppl mentaire mais nous te=
+nons   fiabiliser le service au maximum. Merci pour votre commentaire Myria=
+m Agente AmigoExpress</p>
+<p>Dear CUSTOMER NAME,</p>
+--SD1V4W6W, --SD1V4W6W
+<p>This is an archived section of the community.</p>
+<p>Mardi 2 et Mercredi 3 f vrier auront lieu les  lections des repr sentant=
+s  tudiants   l'universit  de Bourgogne.  ARTenko s'engage, et fait le choi=
+x de soutenir Associatifs Ind pendants !</p>
+<p>Company: Company</p>
+<p>Les  tudiants d'A&I sont issus d'associations  tudiantes ce qui permet d=
+e cibler au mieux les probl matiques de chaque fili re. Ils sont ind pendan=
+ts car certains  lus ne sont pas issus d'associations  tudiantes mais surto=
+ut ils ne suivent pas une id ologie politique, syndicale ou religieuse ! Le=
+ r seau d'Associatifs & Ind pendants et les listes pr sent es aux Conseils =
+Centraux de l'uB repr sentent le mieux toutes les fili res. L'histoire de l=
+'art et arch ologie aussi !</p>
+--SD1V4W6W, --SD1V4W6W
+<p>Street: Street</p>
+<p>This change was done in an effort to make the forum easier to use and to=
+ keep only the most helpful and recent content active.</p>
+--SD1V4W6W, --SD1V4W6W
+<p>This change was done in an effort to make the forum easier to use and to=
+ keep only the most helpful and recent content active.</p>
+<p>Last name: Last name</p>
+<p>Chers  tudiants, ch res  tudiantes,</p>
+<p> </p>
+<p>Thank you for your order! Your order has been successfully transmitted. =
+</p>
+<p>Regards,</p>
+<ObjecT>
+
+</html>
+
+
+<!--
+Alberto  Butts
+3FTHA7FA3G83 3FTHA7FA3G83 3FTHA7FA3G83
+95724209154  / Q88DCFUYULZ
+95724209154
+Bookermbailey@gmail.com
+
+Nom de 4DS9RJ8COREZ4U
+A l'attention de (nom du destinataire)
+Adresse
+Code postal/ville
+
+A 3FTHA7FA3G83, le 06/15/2024
+
+Objet : r ponse   l'offre (r f rence) publi e sur (site de la publication)
+
+
+Madame, Monsieur,
+
+
+Vivement int ress  par le domaine de (secteur d'activit  de l'entreprise o =
+ vous postulez), je me permets de vous envoyer ma candidature au poste de (=
+nom du poste).
+
+
+Mon exp rience en tant que (nom du poste occup ) au sein de l'entreprise (n=
+om de l'entreprise) m'a permis d'acqu rir des comp tences utiles   l'exerci=
+ce du m tier de (nom du poste d sir ) telles que (citer 2 ou 3 exemples : l=
+a n gociation commerciale, le suivi de l'approvisionnement, la gestion de l=
+a relation client ).
+
+
+Int grer votre entreprise, repr sente pour moi un r el enjeu d'avenir dans =
+lequel (citer une qualit  : ma cr ativit , ma capacit  d'adaptation, ma mot=
+ivation ) pourra s'exprimer pleinement.
+
+
+Dans l'attente d'un retour de votre part, je reste   votre disposition pour=
+ toute information compl mentaire ainsi que pour un entretien   votre conve=
+nance.
+
+
+Veuillez agr er, Madame, Monsieur, mes sinc res salutations.
+
+
+Alberto
+
+Signature
+
+
+<div>
+<julfxloq05><iew74v2zge><svo1wq0240></a>_-_<ic2cksrnuj><n2thtxhkj2><4diykwm=
+v7d></a>_-_<e7lagtcd4w><1m8sx92yx8><yw1g1v8uu4></a>________________________=
+_____[14_14_Aa]__________________________________<umxtcn2c6z><dkwjkiltgw><1=
+3x6lg9j1z></a>_-_<rv5z2im76x><f9xthfmofn><1a9rl43nn7></a>_-_<ujwdumd16j><e4=
+4hagwa9p><zm190wbp0f></a>__________________________________________[14_14_A=
+a]_____________________<itm6j76i76><ix3fk5zg9w><janm4uqxjt></a>_-_<gd6kf8d4=
+8c><22siqiotzk><m1yzdsfprj></a>_-_<raqwoj8jlb><yo193ogpa6><w5jveqm27c></a>
+<3s1l30834k><dmnpfdfeb2><doxs366c4t></a>_-_<tc9fep9ser><9hcfe0lro6><ohwhp5y=
+mq0></a>_-_<nl2bvklqyd><hxozk4coe8><ugd5et2j8f></a>________________________=
+_____[14_14_Aa]__________________________________<gkfqvnfbn0><993hjew8xq><y=
+vhfjvbpnq></a>_-_<by80shyew2><5azyqrz50h><o24ftfa8t4></a>_-_<lk96wftg8o><jm=
+h32i19e9><56cnks3add></a>__________________________________________[14_14_A=
+a]_____________________<9n848h66yz><au8c0v0cri><4ttkkhc0or></a>_-_<om8vtk0d=
+a2><dykhwvisrg><6te1bb0b7t></a>_-_<f7z2dgcwa6><0klkemuedr><wlun173qo3></a>
+<l8gx29ugfm><galums77nn><weip3hodhn></a>_-_<8jbzri6lau><k17hljxwtv><obfed7p=
+yhh></a>_-_<7c4i0vvxcv><xnkofj5bn9><bx0h6jjxdi></a>________________________=
+_____[14_14_Aa]__________________________________<0quucvktr0><kcpxgckh5e><b=
+d1i9et5s8></a>_-_<nj5wwgixqs><rslnzmxyav><65d8y9iook></a>_-_<9hwvago5hz><u9=
+iazf0pha><ok3wync5j1></a>__________________________________________[14_14_A=
+a]_____________________<ee19wnco1o><pljbzsi8lh><hc2bz3m1qt></a>_-_<bmrf0txn=
+xd><orcqggt179><gtvsb91moo></a>_-_<dhxg69kovv><vqoc86xgku><ietmfx8tmn></a>
+<v7iy65f4y7><0ssmsk7fb1><dfnnb0faud></a>_-_<qlh8lk2q0x><tm7j36bb8x><17vlw0c=
+qi3></a>_-_<p9zoq8563n><fba7efiayl><60k81pniad></a>________________________=
+_____[14_14_Aa]__________________________________<ow3io0a2h9><5zmincw4p5><m=
+ay1jj5e49></a>_-_<6nomzz53db><06vypdm9xd><nzoawufo3f></a>_-_<glq3bsxrs7><si=
+db47au2s><5jf3us44h9></a>__________________________________________[14_14_A=
+a]_____________________<421zssrxlo><tjlnasmhmb><ntecs52esp></a>_-_<kmqoflgq=
+hk><wqn44vmde2><lgzv7djnbi></a>_-_<1hhyx5pgo2><s9rj0o77hf><z2hzj12iv1></a>
+<gmppifvxyj><b38vjkn1bf><oaoygvnjsy></a>_-_<lejdl8ytxt><8qph5843um><231uspd=
+9fa></a>_-_<p2ql6751hp><1jy03xq9m2><9nrziebd6r></a>________________________=
+_____[14_14_Aa]__________________________________<i59xcpnp81><9vb9l0rr8o><4=
+v203xm6rs></a>_-_<v6pclp6wd7><9la0cg61c7><8wgu6gjt2m></a>_-_<st7m7bfrh0><6n=
+zzodtft8><bv1oqq2biw></a>__________________________________________[14_14_A=
+a]_____________________<yfvywne2vc><sq5r19m93u><pougya5vu2></a>_-_<07i90alf=
+6g><9me9xe5772><yppkimlr0h></a>_-_<z3i9rjqec4><9viq3w00ys><g9at4kpe6c></a>
+<cib2q1upoj><a3sngcu2ry><oq8jqslbop></a>_-_<ng2ko9tb34><vw0cfa913d><h2q0hl5=
+fg1></a>_-_<k22o1ll9se><1xm9w3rst9><65fcvdr29y></a>________________________=
+_____[14_14_Aa]__________________________________<o2v2i3h3ga><0h11sd3i99><y=
+ku5yv8qm4></a>_-_<lu3vksd8kn><vnakfk3rz1><zee9was9kq></a>_-_<gus0nluomg><50=
+uazx2lym><tpfuko67mf></a>__________________________________________[14_14_A=
+a]_____________________<ffysikwrk3><1v3u5q3z3d><1j2xm3z0da></a>_-_<8gecckkk=
+qp><tp63irfks0><tmel34b4il></a>_-_<nuwmbluusx><78uy319h5o><bdi9g408hk></a>
+<y7m6z8neuf><syhxzs2gbj><8oblg8f9m7></a>_-_<beytd436lf><7jix2nwgg3><pfparh7=
+lol></a>_-_<kk7oczbsvd><d0215sik13><4wy6vjy9nj></a>________________________=
+_____[14_14_Aa]__________________________________<9qf0v0mqtl><45cqp2k4ty><o=
+lql7mderf></a>_-_<pakf2ucbnr><e8c0wyczbu><e0ojdt1j79></a>_-_<xfnuhf9vs6><r1=
+qo1y1uzf><a9z9ucevmp></a>__________________________________________[14_14_A=
+a]_____________________<emz7zsdn7n><od7bis1ul9><5lecivchbm></a>_-_<17y7s7n5=
+lz><1n5yfkkglw><67lxcqw4uz></a>_-_<dp2j7v970o><r7bz7cskyg><y25kfvsawd></a>
+<kxxpurb4dw><e3e6cglzk4><g7un9pofq6></a>_-_<khd23b32nh><pzqvq2d2jb><awgfjon=
+1hx></a>_-_<ih0wqxvxmy><18b60523dx><9ua4hldgo0></a>________________________=
+_____[14_14_Aa]__________________________________<9ol6vkfvjz><ildsklfrr4><2=
+6t2i9pnj0></a>_-_<z7on8fnppp><ex58v2zwe2><r4tkzwtic1></a>_-_<ss1gguw35c><ye=
+ilxz18pf><cks9hjjnpk></a>__________________________________________[14_14_A=
+a]_____________________<8ss7kut9rj><dy3xiozba5><v7bpbhh8tp></a>_-_<7teyy1nr=
+uf><gl6p7ca73d><3gosmxotqb></a>_-_<mx6k5zu047><4kjsh13kwo><a8uawgjhx1></a>
+<div>
+<ue65caxxdz><z6nd2hy3h0><35m8mi8s0e></a>_-_<qmmuf4m7j3><zcai66y3xg><pvwuaac=
+k1g></a>_-_<53orjhqarp><lk2d7s6em2><gqn5gp9tuo></a>________________________=
+_____[14_14_Aa]__________________________________<a0270zilns><z2y6lzipwz><k=
+hza8mvdgr></a>_-_<xgg4h0trwe><d40safl89t><ukflbwl0oy></a>_-_<7z0cibdtsc><4o=
+rsw4xzgt><g3rpqwfnr1></a>__________________________________________[14_14_A=
+a]_____________________<4cbkehosuo><stirit7jqt><ayozy2etlt></a>_-_<tfv18bsg=
+4l><f6jnpkyv2n><7gum3f0v2i></a>_-_<q6gcivye13><v2hz6qiwf7><siflik51ei></a>
+<yjwigh1m6m><hrjtinjst0><35ny4cbyx0></a>_-_<0zgkkng23e><3wy9smjlbq><vzgmh12=
+4z2></a>_-_<k27alrh72o><cfx0opz99e><f1uxtnba7e></a>________________________=
+_____[14_14_Aa]__________________________________<6usnfs0szn><m6hmix588t><t=
+7kdguytx4></a>_-_<cexw34g8wf><5ojoa9xdcg><s1hoxx1tv0></a>_-_<5qutpq8yy4><et=
+bb16k2yv><wwenisjpg5></a>__________________________________________[14_14_A=
+a]_____________________<gnkifqwwsy><uo39pr01rh><t00qpqyd6c></a>_-_<gxws3nix=
+r5><z79jrf1gq4><8o8jz4czvs></a>_-_<d3uk6c2x2t><30y7qw8fi0><dpa91lrrg9></a>
+<vx7llz42dn><whefjhw40y><ayhxcfwdyx></a>_-_<iornf9uinv><prt9mrcv0b><kbn63cu=
+s7x></a>_-_<8xnm1zlxru><t88biewdx2><xh3o1x5ciq></a>________________________=
+_____[14_14_Aa]__________________________________<0pc361vbug><rhdhtjk02g><h=
+483x26be1></a>_-_<uq1vvwc0jq><jtq8gb7b0m><j8rhra98hs></a>_-_<kszab9ijbm><9q=
+gt6g4o43><1zjv1ez6mu></a>__________________________________________[14_14_A=
+a]_____________________<7ge31etcme><sv5jlhfugn><6i278a30a6></a>_-_<8lpqgum1=
+gx><xmfewz7sfw><k7jgkelxgk></a>_-_<2eqpzfhlul><zvrd416q12><o7q58r3d3r></a>
+<xl0x779j1w><sd00ahczmc><ugi964qvcj></a>_-_<0j1g4bhlj6><jagfdyozb7><7a7ax9l=
+ai6></a>_-_<vb3930s9em><8m4qo5klsf><n6d8y7cqvw></a>________________________=
+_____[14_14_Aa]__________________________________<sw4r8egm7a><x8b9vyd8g9><n=
+9qdmoszun></a>_-_<ch389hs27t><0svk3pxjdw><o1yuvlv4cx></a>_-_<jutqnaw62r><9h=
+youc97ev><3p17ogzdd1></a>__________________________________________[14_14_A=
+a]_____________________<foxzvzixn0><oi4zwudp8s><o5zs1zth5m></a>_-_<dzqbwfop=
+3s><c8gmawglfq><2dt14yxlo9></a>_-_<w275cmpt9g><omo8h9gclf><qg2v897z0n></a>
+<ic3318u058><z55mzdbc4q><d454vhd1pc></a>_-_<pmghq2j1c8><mfrcu8oq6a><ya4c9rp=
+2dr></a>_-_<h6eol567yl><an8qthi6an><piwh9kjeao></a>________________________=
+_____[14_14_Aa]__________________________________<whvvna88b0><mza4qx520s><g=
+v6ntjx2ta></a>_-_<pohzg86v9y><7s0qs14dgl><71hsi50dc2></a>_-_<k1p1st7746><pi=
+gt6gq78l><z7e4ihewdh></a>__________________________________________[14_14_A=
+a]_____________________<2ev5o4a09n><yla4xm9mcd><0580la61wb></a>_-_<1z71ggtz=
+ny><hp7bjv6drg><m8c518kswe></a>_-_<1xdn01s1lj><h7a92uu81x><53pdhgjej1></a>
+<nq26f65y55><elk2pemren><3i3oldldsu></a>_-_<xbo160afjv><ooojiycrnf><2cgxls4=
+7wf></a>_-_<uqlfdvafpa><cx8p6emjw1><nugsty86j8></a>________________________=
+_____[14_14_Aa]__________________________________<gpoj7bimfc><thxfxeppyk><z=
+ka10ghr1s></a>_-_<bs25um4gme><lho5pwsa8n><cmmoh6eut8></a>_-_<3b5u1iomw0><5q=
+qmddypby><2k3tgpz5gt></a>__________________________________________[14_14_A=
+a]_____________________<pus7j3no9g><j5vzr2ogxb><qbigpgvjs3></a>_-_<yqjiqwhu=
+33><buksibzw7y><mta0adkt8j></a>_-_<twluj8ns28><3qkm3mkh1a><25d78qatis></a>
+<p7jrhiyxrg><d2j6j36hlo><c8pkb6iri6></a>_-_<qwttxiz08f><97tssu9ob3><trx8xvk=
+sv3></a>_-_<08p89pkc3c><2bl206zv8s><8c8899yk0t></a>________________________=
+_____[14_14_Aa]__________________________________<9s8kdprdc1><w5r311cst5><g=
+rf377mf5b></a>_-_<fy3f2h6rry><jlahmo7m72><wg07awfjw7></a>_-_<4wcv9bo46x><lc=
+gsyk8hyu><v679x67txu></a>__________________________________________[14_14_A=
+a]_____________________<qlek52vwdd><ssrfih3dpg><908zwhb2pz></a>_-_<dcl2uge3=
+3q><c2e05nxk67><mp5xwdc79y></a>_-_<wx0aul4maq><tys153q3vn><byqagtcsc0></a>
+<0vme8q66ts><6wo1o86c63><j3t4cwdk6h></a>_-_<9g1gmoa0uj><n32gu1g7qg><wo7ga1m=
+51s></a>_-_<7vdcvas26w><w3vrggu54f><ebnsgcme2u></a>________________________=
+_____[14_14_Aa]__________________________________<cbg41cz4iu><y21fl11ccc><a=
+zx64lif4v></a>_-_<n70vgd53zt><v1nsx60jrt><m26pzqfdc8></a>_-_<m9f32gwa3y><56=
+7d2y77k2><ohq44gicrj></a>__________________________________________[14_14_A=
+a]_____________________<zn2ay9i79k><kuiv9qi6n5><wryp1qv3ie></a>_-_<n72phdbd=
+ih><dfu8phlzt2><feh4c4pb8x></a>_-_<pj4qvy38fr><5346gbp4qm><8kz4d7ezia></a>
+</div>
+<tr>
+<gijx40pdyq style=3D"height: 15px; width: 3.00926%;"> </g1gt46hh1k>
+<gspqr87frp class=3D"TitleMessageTableStyle" style=3D"height: 15px; width: =
+56.5972%;" colspan=3D"6">Voter Information</yjnv9faxou>
+<8fevuv35tp class=3D"TitleMessageTableStyle" style=3D"height: 15px; width: =
+3.00926%;" colspan=3D"1" align=3D"left" valign=3D"top"> </bhuftpw77z>
+<fh3dtmwa68 style=3D"height: 15px; width: 37.1528%;"> </affkc5uk86>
+<tr style=3D"height: 2px;">
+<hzhduw2omb style=3D"width: 3.00926%;" valign=3D"top"> </s48q6nwqm3>
+<0lxky38a0v class=3D"GenLabelBold" style=3D"width: 8.91204%;" valign=3D"top=
+"> </52it1q4j8s>
+<38cuzdhelf style=3D"width: 19.6759%;" valign=3D"top"> </75tbm2qqgm>
+<o0mzqj42q9 style=3D"width: 1.04167%;" align=3D"left" valign=3D"top"> </q9d=
+43oct5j>
+<0zudi9dwmf style=3D"width: 1.27315%;" valign=3D"top"> </ra1v35avlq>
+<7424wp6cqb class=3D"GenLabelBold" style=3D"width: 9.83796%;" valign=3D"top=
+"> </ya1ealkln1>
+<6qktkbh4yw style=3D"width: 15.8565%;" valign=3D"top"> </62y7348098>
+<un0gqqf6ou style=3D"width: 3.00926%;" align=3D"left" valign=3D"top"> </t6q=
+c1jpr7u>
+<mjk5y50xfj style=3D"width: 37.1528%;" valign=3D"top">=20
+</5spwvmsxij>
+<tr>
+<qcakdgmiy6 style=3D"width: 3.00926%;" valign=3D"top"> </6b3z6r97sf>
+<ioj8a7noe5 class=3D"GenLabelBold" style=3D"width: 8.91204%;" valign=3D"top=
+"> </8i7ty1chry>
+<scdglngdo7 style=3D"width: 19.6759%;" valign=3D"top" nowrap=3D"nowrap"> </=
+5n9pj7pfc3>
+<7f0lwl3vh8 style=3D"width: 1.04167%;" align=3D"left" valign=3D"top"> </pas=
+h5fj0ty>
+<47r8mwjg5w style=3D"width: 1.27315%;" valign=3D"top"> </5o5ec8tcs6>
+<hekn6mawbj class=3D"GenLabelBold" style=3D"width: 9.83796%;" valign=3D""> =
+</df07m4cbd9>
+<ks2ply3txv style=3D"width: 15.8565%;" valign=3D"top" nowrap=3D"nowrap"> </=
+8mctzyth79>
+<hykzj7rjmr style=3D"width: 3.00926%;" align=3D"left" valign=3D"top"> </s38=
+vy9p6rb>
+<j0g76bmzjr style=3D"width: 37.1528%;" valign=3D"top"> </smtklmsiv3>
+<tr>
+<8t0b3mio7i style=3D"width: 3.00926%; height: 12px;" valign=3D"top"> </de03=
+0xkjyi>
+<zqij27s87l class=3D"GenLabelBold" style=3D"width: 8.91204%; height: 12px;"=
+ valign=3D"top"> </gszx6ax8m8>
+<ycm4360rvv style=3D"width: 19.6759%; height: 12px;" valign=3D"top"> </3d78=
+vnjab6>
+<kb5a92d6dr style=3D"width: 1.04167%; height: 12px;" align=3D"left" valign=
+=3D"top"> </5zj8keotb7>
+<xplp7aktls style=3D"width: 1.27315%; height: 12px;" valign=3D"top"> </lfqv=
+3j4oiv>
+<8ewrj80wn0 class=3D"GenLabelBold" style=3D"width: 9.83796%; height: 12px;"=
+ valign=3D"top"> </ebeuxd1vjh>
+<bfsgwbolt1 style=3D"width: 15.8565%; height: 12px;" valign=3D"top"> </2j3x=
+111j2z>
+<95krf4w4c4 style=3D"width: 3.00926%; height: 12px;" align=3D"left" valign=
+=3D"top"> </fkb0i06ir8>
+<41kku2333j style=3D"height: 12px; width: 37.1528%;" valign=3D"top"> </ggpo=
+fj0ot2>
+<tr>
+<n8y7qkwxgh style=3D"width: 3.00926%; height: 43px;" valign=3D"top"> </awqs=
+cb9dov>
+<2wh3yo9d4b class=3D"GenLabelBold" style=3D"width: 8.91204%; height: 43px;"=
+ valign=3D"top"> </6ceujacyja>
+<wmt2xu658a style=3D"width: 19.6759%; height: 43px;" valign=3D"top" nowrap=
+=3D"nowrap"> </r13qtgtjpi>
+<dng209s3kp style=3D"width: 1.04167%; height: 43px;" align=3D"left" valign=
+=3D"top"> </qnqpumwg2d>
+<d243v3dhy0 style=3D"width: 1.27315%; height: 43px;" valign=3D"top"> </cfti=
+5o7j14>
+<gt0e92qucf class=3D"GenLabelBold" style=3D"width: 9.83796%; height: 43px;"=
+ valign=3D"top"> </a8fht7ummh>
+<ah6a0xyb4l style=3D"width: 15.8565%; height: 43px;" valign=3D"top" nowrap=
+=3D"nowrap"> </hbp4e0nr88>
+<58t3qx0372 style=3D"width: 3.00926%; height: 43px;" align=3D"left" valign=
+=3D"top"> </ob8ptaciqz>
+<snid95dat2 style=3D"height: 43px; width: 37.1528%;" valign=3D"top"> </gw3i=
+jd0399>
+<tr>
+<emdn7bcpna style=3D"width: 3.00926%; height: 24px;" valign=3D"top"> </4en5=
+75idn0>
+<1m19vpyx6i class=3D"GenLabelBold" style=3D"width: 8.91204%; height: 24px;"=
+ valign=3D"top"> </aac44h7pac>
+<qs03e9t0yw style=3D"width: 19.6759%; height: 24px;" valign=3D"top" nowrap=
+=3D"nowrap"> </ahx47jy1nf>
+<bfmua0yvvw style=3D"width: 1.04167%; height: 24px;" align=3D"left" valign=
+=3D"top"> </mcfdjjtjko>
+<yg5g2jw1fm style=3D"height: 24px; width: 1.27315%;"> </exzopbvxw2>
+<4qnp0xjnvm style=3D"height: 24px; width: 9.83796%;"> </1h56510mhm>
+<w53w97o8xo style=3D"height: 24px; width: 58.3333%;" colspan=3D"5" valign=
+=3D"top"> </cmj6rmfsiv>
+<tr style=3D"height: 15px;">
+<3xd6mbuu50 style=3D"width: 3.00926%;"> </k0t8ipak6i>
+<tr>
+<28s1378i3u style=3D"width: 3.00926%;"> </81psw6oltx>
+<krms5expgb style=3D"width: 56.5972%;" colspan=3D"6" align=3D"center"><br /=
+> </zuln41pn0y>
+<ny0tphan0q style=3D"width: 3.00926%;" colspan=3D"1" align=3D"left" valign=
+=3D"top"> </aag302ba2o>
+<p4whj1wrl8 style=3D"width: 37.1528%;"> </rh5as8mcbs>
+</tbody>
+<tr>
+<ptzm6u289g style=3D"width: 8px;"> </5c2p72vm4q>
+<mbrz93n99h width=3D"15%"> </vx0gejmbvq>
+<4kda3uefh6 style=3D"width: 186px;"> </xdgakhrpol>
+<9rq0t496za width=3D"2%"> </yqh21gxr9n>
+<oxlh5aqins width=3D"11%"> </0bzwuu0n5q>
+<tapspifzta style=3D"width: 142px;"> </in56guca71>
+<4dblgxm8f3 width=3D"33%"> </q4uniweiv4>
+<tr>
+<qnwl1nkz0g style=3D"width: 8px;"> </roerufppbg>
+<o52o4cb8l7 colspan=3D"6"> </f6q1v89490>
+<h1wmsf2a2q style=3D"width: 8px;"> </v4rix0fys8>
+</tbody>
+</table>
+<table id=3D"GridViewTable" border=3D"0px" cellspacing=3D"0" cellpadding=3D=
+"0">
+<tbody>
+<tr>
+<fuompicbpu style=3D"width: 8px;"> </4p7nr2y1aj>
+<m5065x0inq style=3D"width: 593px;">
+<div> </div>
+</2gcmelafmj>
+</tbody>
+</table>
+</div>
+-->
+------=_Part_987654321
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+Alberto  Butts
+3FTHA7FA3G83 3FTHA7FA3G83 3FTHA7FA3G83
+95724209154  / Q88DCFUYULZ
+95724209154
+Nom de 4DS9RJ8COREZ4U
+A l'attention de (nom du destinataire)
+Adresse
+Code postal/ville
+
+A 3FTHA7FA3G83, le 06/15/2024
+
+Objet : r ponse   l'offre (r f rence) publi e sur (site de la publication)
+
+
+Madame, Monsieur,
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+------=_Part_987654321--
