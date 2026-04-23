@@ -1,0 +1,1007 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1776735414; cv=none;
+        d=google.com; s=arc-20240605;
+        b=dwmsnyXk+xm49RWzw+9J3WfJ9RsbuQZ9vAvcOLITNBYC7TqmHUHgwnGpzuv8kR1lj7
+         Az9TI09LMqTAtv1etXt1qLJ7JJsd3IAzcDTHGQiSYx5ZiDUEV1GzIxB5W+IDQww5f71J
+         3k/77kPH8/eu/J0JwJM7YIUwzlecUIs611p6zD6y1fN2MD+hZbdQ8BjdGV2Yw6VhdtcB
+         RSJ5Dwfig9uNYohvTNfDFYFkm30Ksx4ohfbhzgJm8KqjTcboH8tUcFmG6sbPRqDbg4B/
+         a4c7ONSWHjET0PfZ6LaPI1z9ZxVqhXFSN4tF5RqTwaEB2aeLfk09LgPz8NGbKP4t5uUA
+         wzlg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=sender:mime-version:message-id:list-unsubscribe:to:delivered-to
+         :subject:from:date;
+        bh=VjLzPp50cXxAES4XGMnYVh9c2Nf+/4ybxe1bGsVCbFY=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=GY4fq2icNuIMsub3pzPPLbj0GojMJgtjqC10RgYMXdjM83dWFbUqaRg1/XSA4M8vna
+         sxBSUQ0xN2TPOr9ifgVYGsfAwlw5N1A2W7e9lYrpBvsFqAVr9YjCn1wGwF24q+oNkLZ8
+         Aj6e+mSAbHyV/OVqY160ozaP+eejqkWpuEjgPGF/uEsTDj0bQJMKCFmbBxQwt3atKZo8
+         DsZIK6gsS0zVb67U+pwh4Q8S0ljtq29eCur5LPM10B20OFh8tB9QIBkrTxGUvT8/lw3a
+         vPu7ph8vo/lJnMp8uloGXqxD8lQW5DWZ28imBDKec7wKGBvK+wzB+f6TQCObqXm7kmFH
+         nO/w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of
+ myltpltmeqkyc@vqzptnhjx.toiidfrem.darriondemelo.com designates 89.252.162.222
+ as permitted sender)
+ smtp.mailfrom=myltpltmeqkyc@vqzptnhjx.toiidfrem.darriondemelo.com
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of
+ myltpltmeqkyc@vqzptnhjx.toiidfrem.darriondemelo.com designates 89.252.162.222
+ as permitted sender)
+ smtp.mailfrom=myltpltmeqkyc@vqzptnhjx.toiidfrem.darriondemelo.com
+Date: 04-21-2026
+From: Netflix Account <nooreply@nzl.gozzxltxcfsjx.us>
+Subject: 
+ =?utf-8?q?Your_subscription_has_ended_=E2=80=93_reactivate_it_for_=242?=
+To: redacted@redacted.com
+List-Unsubscribe: <http://joinhandshake.com/LEAVE=To>
+Message-ID: <04999634.77691653.ko4z9.bad1smtpin_added_broken@mx.google.com>
+MIME-Version: 1.0
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Sender: lvoihussmmyhjirwrmlcgggeevyawl
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Netflix - Account on Hold</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .email-wrapper {
+            background-color: #000000;
+            padding: 40px 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #000000;
+        }
+        .header {
+            text-align: center;
+            padding: 0 0 40px 0;
+        }
+        .netflix-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        .main-content {
+            background-color: #ffffff;
+            color: #333333;
+            border-radius: 4px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+        .alert-banner {
+            background-color: #e50914;
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 4px 4px 0 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: -40px -40px 30px -40px;
+        }
+        .main-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333333;
+            margin: 0 0 20px 0;
+            line-height: 1.3;
+        }
+        .greeting {
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .message-text {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight-text {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 15px;
+            color: #856404;
+        }
+        .cta-section {
+            text-align: center;
+            margin: 35px 0;
+        }
+        .update-button {
+            display: inline-block;
+            background-color: #e50914;
+            color: #ffffff;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            text-transform: none;
+            transition: background-color 0.3s ease;
+        }
+        .update-button:hover {
+            background-color: #c40812;
+        }
+        .account-details {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .details-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e50914;
+            padding-bottom: 10px;
+        }
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #666666;
+            font-size: 14px;
+        }
+        .detail-value {
+            color: #333333;
+            font-size: 14px;
+        }
+        .email-value {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .urgency-notice {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin: 25px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .urgency-notice strong {
+            color: #e50914;
+        }
+        .footer {
+            background-color: #141414;
+            color: #999999;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .footer-links {
+            margin: 20px 0;
+        }
+        .footer-link {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 13px;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            height: 1px;
+            background-color: #333333;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            .main-content {
+                padding: 25px 20px;
+            }
+            .main-title {
+                font-size: 24px;
+            }
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<center>
+<body>
+    <div class=3D"email-wrapper">
+        <div class=3D"email-container">
+            <div class=3D"header">
+                <div class=3D"netflix-logo">
+                    <img src=3D"hxxps://i[.]imgur[.]com/Ts4eEGS[.]png" alt=
+=3D"Netflix">
+                </div>
+            </div>
+           =20
+            <div class=3D"main-content">
+                <div class=3D"alert-banner">Account Action Required</div>
+               =20
+                <h1 class=3D"main-title">We're having trouble with your pay=
+ment</h1>
+               =20
+                <p class=3D"greeting">Hi there,</p>
+               =20
+                <p class=3D"message-text">
+                    We weren't able to process your most recent payment, an=
+d your Netflix account is currently on hold. Don't worry =E2=80=93 we'll ke=
+ep your account details and preferences exactly as you left them.
+                </p>
+               =20
+                <div class=3D"highlight-text">
+                    <strong>Your account will remain on hold until we can p=
+rocess a successful payment.</strong> To get back to watching, simply updat=
+e your payment information.
+                </div>
+               =20
+                <p class=3D"message-text">
+                    We know how much you love your shows and movies, so let=
+'s get you back to streaming as soon as possible.
+                </p>
+               =20
+                <div class=3D"cta-section">
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#index[.]php?search=3D4&d35723&ukzux=3D58-32&lm=3D195982HH=
+JC3660&sd=3D8&page=3DUVjZrLf8S7FEuZo" class=3D"update-button">Update Paymen=
+t Method</a>
+                </div>
+               =20
+                <div class=3D"account-details">
+                    <div class=3D"details-title">Account Information</div>
+                    <div class=3D"detail-row">
+                        <span class=3D"detail-label">Email Address:</span>
+                        <span class=3D"detail-value email-value">redacted@r=
+edacted.com</span>
+                    </div>
+                    <div class=3D"detail-row">
+                        <span class=3D"detail-label">Account Status:</span>
+                        <span class=3D"detail-value" style=3D"color: #e5091=
+4; font-weight: 600;">On Hold</span>
+                    </div>
+                    <div class=3D"detail-row">
+                        <span class=3D"detail-label">Next Billing Date:</sp=
+an>
+                        <span class=3D"detail-value">Next Month</span>
+                    </div>
+                    <div class=3D"detail-row">
+                        <span class=3D"detail-label">Service Provider:</spa=
+n>
+                        <span class=3D"detail-value">Netflix</span>
+                    </div>
+                </div>
+               =20
+                <div class=3D"urgency-notice">
+                    <strong>Important:</strong> If we don't receive updated=
+ payment information within 7 days, your account may be cancelled. All your=
+ preferences, viewing history, and My List will be lost.
+                </div>
+               =20
+                <p class=3D"message-text">
+                    Need help? Our customer service team is available 24/7.=
+ You can reach us through the Help Center or call us directly.
+                </p>
+               =20
+                <p class=3D"message-text" style=3D"margin-top: 30px; font-s=
+ize: 14px; color: #666;">
+                    Thanks for being a Netflix member,<br>
+                    <strong>The Netflix Team</strong>
+                </p>
+            </div>
+           =20
+            <div class=3D"footer">
+                <div class=3D"footer-links">
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#index[.]php?search=3D4&d35723&ujyiz=3D58-32&lm=3D195982PI=
+JK3660&sd=3D8&page=3DMB1hLt33u5deSue" class=3D"footer-link">Help Center</a>
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#index[.]php?search=3D4&d35723&evwez=3D58-32&lm=3D195982ER=
+ED3660&sd=3D8&page=3DhRNooDkYG62gnUz" class=3D"footer-link">Terms of Use</a=
+>
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#index[.]php?search=3D4&d35723&wwiax=3D58-32&lm=3D195982SX=
+ON3660&sd=3D8&page=3DxvZqDfw0S9km9gn" class=3D"footer-link">Privacy</a>
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/savelinge=
+/winbridge[.]html#index[.]php?search=3D4&d35723&yunmg=3D58-32&lm=3D195982JI=
+HC3660&sd=3D8&page=3DvZa8hAEPsM1o2jD" class=3D"footer-link">Contact Us</a>
+                </div>
+                <div class=3D"divider"></div>
+                <p>This email was sent to you as part of your Netflix membe=
+rship. To change your email preferences, visit your Account page.</p>
+                <p>Netflix Services, Inc. =E2=80=A2 100 Winchester Circle, =
+Los Gatos, CA 95032</p>
+            </div>
+        </div>
+    </div>
+</body>
+</center>
+</html>
+<br><br>
+<center>
+                  <table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p><br><br><br><br><br>
+  If you no longer wish to receive these emails,<br> you may unsubscribe by=
+=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/savelinge/winbridge[.]html#in=
+dex[.]php?search=3D5&d35723&iyglm=3D58-32&lm=3D195982GPKS3660&sd=3D8&page=
+=3DeVtl0w5jjp9UF0z">clicking here.</center></a><br>
+</p></td></tr></table>
+   =20
+
+
+    </a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/savelinge/winbridge[.]html#in=
+dex[.]php?search=3D6&d35723&jytxa=3D58-32&lm=3D195982UODA3660&sd=3D8&page=
+=3DnKO2HRzahvZ5ZNV">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+
+
+
+
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object BKTSUSEYQQCJGKHUMPSRNOXDZYEGQVBDRJDCXCURLDHSSUNXQFYJWJFSHAJE>
+
+Dear PPZVNLAYPFPXEYNKSVHNBX knrxfirxvrmvizyqtflacq,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is fcfynxqwpbqojouekzguhah=
+wjpwl.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi knbmpawhbjlfgezxvi,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi lgzmydrjpifcuouynalvkrvp,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: jifbsemywmmnmvcbtbsmhmtttb
+ Site ID: fjayokpdgihcfcbfnpcctgypf
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team ZATGAQAASUGIRHMUNAWIVZ
+
+Powered by KUOCPDXEGSYNIMTPMPJTFE=20
+
+</title>
+
+Dear EDVJWSMULYOACRJJCOIKKYFXS ybcudsoxlgpqqkhdtwfjrqycxr,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is foelvyonogjyfbkysayqcli=
+sq.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood LWWXHGRKUHNWIMBGZRAHZP,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+TGLIIIETZVOOYOMHUOPKBVBYTGBXJWFWVBTSNSRNDXKSKPCRSBHSBXNAJOHGAMAVHLPFGCHKQKW=
+YZJAGJKVPAVEAWLZPBYHSLRTJIJJLSOOHQMCTZKXITESOVDENIIVYQHWUOUPZZJZTZJISUEOZZG=
+QFWDPYOXMGIROIWWTQPIYCUCZZFMHXKSGMWCGKGXDJWULAJEVZ
+
+ Hi DWWBUKZRFPCTTDXPOJQUZU,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+lcrmjigboplofyspfqyyoaflebjjmqeulucemdxzigwgaberyckarodbqhnowzxviiokvgeyyaz=
+vtnivuartaktyaddbalquvigkhmhjwsggliseatfyaahtkxuewhwepntauwhqyjlinifzehkizh=
+robfmczlhqmikvvmkzrvancskrqzyxdpjneckirhsettrysmbc
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi 4E1BCG7KKYN46TRLISME2L6KV,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team SDGBVIGRNQQUITNVQLJIWT
+Powered by MVMHVCAMVCJMXEAJTIBDUK
+
+Login Name: RGKLGZXAEBPCZPVTGJWQZF
+Password: QPAHGBEONZBSBCTQAPEKAM
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: GMQ
+Password: XIJONEZABXXXUDMZCBGNKA
+
+	05DHNNQ429Y0WATMC8 SD0APGQ0QB9O0AH C5CTVTA0QP68D POZ2YM3E6YFSKBPEE4 ZTRAI0=
+DFZUH7C4N ZVMLME1MUPSZR TN5Z1RDQ8MH4XMHIS5=20
+	3LRKJABOG15L8WE16L BG6N5JDLKWE5AX4 DF94YOF3KM6QO 22CEAV7HW96EA8DF2O NK6NCB=
+EX586E412 D0T5W11FOX4CD TBDEQPSGFCD16RO9YW=20
+	EKNEGNAQN51SO14 97DGML8D8D46E Y85VE04RYX0WFHDFE8 SWQATIIIVMDN83L 24BYDA5S2=
+D7M2 K7FCTD1Y7AZM9I5Q6Z Q2ZAD73OPQGADY9
+	P1KEQHSE9XETC BYAXFGY66116YWQTFB 397W347IX9O2H2P 5ZLGQOT4LN98O IJBYJ6G4Z48=
+8PHA6JT TKATQSAYXO688H0 15JDJB2P8Y703=20
+	ZJGCPBB2J9LLDYS2NJ NAN6YDE59EZ3324 BDHYEV5KFWKVP BOWMZ8R1YUVZ19DRMA T0K3T5=
+3VLVMUK0P 0RKN8XKMQJC65 ZOG10T9GTBDPQ8SHZM=20
+	FN3PE4JAHO9CYBG M90O11SVD7SMQ ODOAXC1E4CRHSI9PIB 7OD47XR8A8B309M R9MHOE4FT=
+0MC7 VHFLKRTL2M3P1Q8R1R V253JZNFHCQ5JKZ=20
+	APCFSMA75CAQN HGGTGV4LE8N0217BQZ N6EYITPKN12FKY6 6NYD7GB05FX2P MABUJ5GBDPQ=
+MP20GDO J915OOB6RD2I5ER WZIT9VRNWAIN5=20
+	A925P7B41P9PZK89CE FCI1NO70TI7FOSM MNLJ13QQ978H0 JXIQLEYIQVWGB0Z9TX Y8IE7W=
+KVM0VZYLU YWRVS72WMJL7W BID2VRDLUXSOS1X7N7=20
+	NBJTR8VQSNRKBVU 3GHD6BNH4B33D Y4M22DUZZX7AI3PKXI NM29FONVUZBCHT2 XVX6H5APH=
+7KFY N2AE3YG7SC9INJG2YS II97NT2CK29JI8L=20
+	M373ZWOPTFZDR JWTYR9Z8GEXAKXPFPD 5CYSAVFGHVDBMUH ZCXM1V53KVXWM P265KCIOQP5=
+K1QCOEW KHYDVYACS4BZSO3 4YGP2YZAYOHMS=20
+	SDILV6OXQVEYIR2040 NFCGAELJ9NNYG0H J4SFFY4YN1TVD TCPCRHTRW19ZVZH952 SQN7M1=
+C7CRZ00BF 19B5JFP06KTP9 U4MDBPZWDPAW97BP1Z=20
+	WURPEO46WGZ7NDJ I4I5DI4Q0LVQR KED9VB5MQPWJAJUB3Z 8M2B8Z17LQHPL6W YTH292R6Q=
+XOG5 NE4EW6CZSC4HC10RVC 4I86JCZ2NEW937R=20
+	W83OZVMUPG5BI R9N8KCTBGJ3B5F40UA H3GRYO6IJ5YJSC9 W2QN20XBUFDHJ GFX2WU671T9=
+KYU1Z83 1YQFLU25P2UH88P BHS9B9RM11D3U=20
+	L3YMWWPB9QSI53TD8I KQ44KK3BDVWLAHG 8MQHOGOFT6T09 KFMQZJRHNOU2MAICPW TUHFYZ=
+E9UKJ3XS8 AFUAGLAWTW4YB ULK8X590CFL4SL7URJ=20
+	BCRVUDVPIWISXBF 70RM2YLI1EAW7 9LBDBCKDKU2XZRAK78 D3UDOOSHSF90WL0 Z1M8XXWVL=
+75SR TYK0PY0L7UMPQQQ3BF YLC3ZY83ZQGNDQX=20
+	9QBICG61UDFK1 4XEJPNQXIZ7BA75I9L PTB393QQMG368PA W0ENBZZ77HP3P FRUFVM1WSY2=
+PZUCXU8 MMW3H0A7PC7AUJO AYP1H82TWVYCL=20
+	XPCH62GW0GCSBYCI73 2QG59A47LWHX1GJ QMZ20RQXKX8OA DO3FEVEUIJHSE2ZPIZ 2SVZ87=
+G6GQMIYC8 NHI5EYBPK70BI FLXYV9PBQTF72P1T4B=20
+	WVCZQBH9T9ZQCWK XJDU9F4TVJHCE RSVYX9JG353NXSP20A GEQRGA0AQTE4YSX 3SSSPNJHT=
+6ESN 6SP1FVCLXF77EW1QP8 213LD5LB1UCOREN=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+HJKGXAHEBKIAMRGZOYNGVJFRPYMIOUKTPLGVADXSHNARKCYNMTVXOICYIPITFPAJAUNALOLJINV=
+FIJXIMGWTKVTFSKYLBMUAETNEOSVKVDHXBDAOZDTYSUKWVDOVUUVVCMUZKUCLLMNUSBLWUGWEAC=
+LBDNHLESTJBMAYFFLPBREREGZXXMKJTABWYTYFFIGILYLRBRYBK
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to SHGJASSYRBEVCWWIKVWFB=
+WYBQEAEKCROMKSNFUNCBYRPSAPZUUOLEUVYDUWLEMWDSIYVWNMODZPPPBLJUXLZNKNWDMRSYUTY=
+JZMBTFROMSNODXKOYPAONYAQOMNLXVZDNRDMFZMNZOCHGKNHOVFIFALYUKTIBBXAYMPKNMPXNYG=
+WEDXZEIHMHZWUQPUGKXIVPGCJIMJJ roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department YEVJWVICPXAXFABFTZNDDAXPROUNEGOCGPMXSEKQRGQTEQLK=
+TVGZCSMIPOSILONQZVVGRZCYMJMHKOLOQIYRPQALFQADRRNOZAJNDFRBNBAOAPNFLNVZRQJKENC=
+XCCEVHBYEMWKLLPVKVQXAEVYXQQURXJBCLAXVUQYBOSJOXQKBHBEOTJHDPNXXZVYLPEQBEDOYPG=
+IQJ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation SYRCHEDQIHOYJQF=
+JUOMCCBWNZPTSLGEWSOFQKUXSRLJARSVRUIVDFQFPWOPBTZDOFTOHICQOYXKQONLLILPBKEMEMA=
+JBPBONWPAEIMXKRNRSBTEHMHLCRELCFMMEOOWBBIJBQJPOYIKHAGGUGGZCPEDTNFFXSPUPSGTKZ=
+QGTCFZZGIWJQRERVCXIZHQSEJYPQUJUFXMOG development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will KKCWVUPJAXUSGWGQAIJYWEWPAQBAGLFLTTGNAZVGJPNAALZTWYADKVHOP=
+ABQZHXRLDEZVIHIYMELUZZYXOHOFMLADBSFYMLEBLPOOGRLGJETMAGBDYNNDKGCNALEKMMWDKBI=
+YMJORBSRUZMRJPTLFFYJZXEMXRRGIYYWPLNVDDWEHUYJTIUSXYEFJZMLYHUREKJFKGQYPGSVXFD=
+JYRURPGPTJKEWFJJHQWFFVUNVIPZEZWZOQFORSBZHSUUWUYIQFLVEIPSBJRFSYATACHHOEJOLHN=
+ZNNCHXZASYCOILLPRGOBXKVYDCXKKNJQGTVXQIVXGMYZZQHOFTMFZHEINEIGTODBYVSBNDAZOVA=
+ZUIGKFBDUXVOIQWNBQXHFSQVGIISYBEXEHPVFNKQFOT  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support AXGANRP=
+WVKTTIITYGOWXABNXLAGKONXTAUJUYDEXGYBGPMAELKGAHKOPDSDJGLHJBUCMLJEIMCJTFHQTTC=
+FDXUAXKWQTALAHUPLJVTBBNVXGRSQDTABXGJSBUBPWIJHWAURVRWTYFPQIAJVRCVGGMWICWHQFT=
+MKKBLDCKANEXPHPPYLRPNNLLQVVDBXMKHHFLDADCQNN  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
