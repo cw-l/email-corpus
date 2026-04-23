@@ -1,0 +1,288 @@
+Authentication-Results: spf=softfail (sender IP is 34.169.112.125)
+ smtp.mailfrom=realbirder.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=realbirder.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:7BAFA5B556BC8AE8EEDC45963DA45BA5809D945FF0E832A32F3491D82BB36D8B;UpperCasedChecksum:C3C02119DE2600E42045A03AF47790904188E0294548970DCFBC05B47539C773;SizeAsReceived:331;Count:7
+From: FlNAL-N0TlCE <support@realbirder.com>
+To: <redacted@redacted.com>
+Subject: Your backup service failed due to full storage. Fix it free in the
+ next 25 minutes.
+Message-ID: <9092b14ac6284d7880bb36d468d86f8f@realbirder.com>
+Date: Sat, 18 Apr 2026 17:07:03 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Apr 2026 17:07:03.5708
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 5b025345-af04-4713-f0c1-08de9d6ce9ad
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS2PEPF000061C6:EE_|PH0P220MB0556:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DS2PEPF000061C6.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 4/18/2026 3:00:50 PM
+X-MS-Office365-Filtering-Correlation-Id: 5b025345-af04-4713-f0c1-08de9d6ce9ad
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 34.169.112.125
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|2700799029|3025599003|9400799043|34130799006|1290799033|970799060|60050799006|32020799003|461199028|46080799009|3069299007|5149299006|46110799012|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Apr 2026 17:07:03.4210
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 5b025345-af04-4713-f0c1-08de9d6ce9ad
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS2PEPF000061C6.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0P220MB0556
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8715441
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9818.014
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage Alert</title>
+    <style>
+        /* System Font Stack - mimics the native OS font of the user's device */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F5F5F7; /* System Light Grey */
+            margin: 0;
+            padding: 40px 20px;
+            color: #1D1D1F;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .email-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Top Header */
+        .header {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #86868B;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        /* Main Card Design */
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 20px; /* Premium rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            padding: 45px 40px;
+            text-align: center;
+        }
+
+        /* Icon mimicking an App Icon */
+        .icon-container {
+            width: 72px;
+            height: 72px;
+            /* Generic Blue Cloud Gradient */
+            background: linear-gradient(180deg, #63a4ff 0%, #1976D2 100%);
+            border-radius: 16px; /* Squircle shape */
+            margin: 0 auto 25px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+            position: relative;
+        }
+
+        /* Notification Badge */
+        .badge {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            background-color: #FF3B30; /* System Red */
+            color: white;
+            font-size: 14px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #FFFFFF;
+            font-weight: 700;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #1D1D1F;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #424245; /* Slightly softer black */
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        /* iOS-style List/Menu */
+        .info-box {
+            background-color: #F5F5F7;
+            border-radius: 12px;
+            padding: 0 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-bottom: 1px solid #E5E5EA; /* Separator line */
+            font-size: 15px;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            color: #1D1D1F;
+            font-weight: 500;
+        }
+
+        .value {
+            color: #86868B;
+        }
+
+        .value-red {
+            color: #FF3B30;
+            font-weight: 500;
+        }
+
+        /* System Blue Button */
+        .btn {
+            display: inline-block;
+            background-color: #0071E3; /* System Blue */
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 980px; /* Pill shape */
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 10px;
+            width: 70%;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .caption {
+            font-size: 12px;
+            color: #86868B;
+            margin-top: 30px;
+            line-height: 1.4;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+            font-size: 11px;
+            color: #86868B;
+            line-height: 1.6;
+        }
+
+        .footer a {
+            color: #515154;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-wrapper">
+        <!-- Generic Header -->
+        <div class="header">Cloud Services</div>
+
+        <div class="card">
+            <!-- Icon imitating an App Icon with badge -->
+            <div class="icon-container">
+                \u2601\ufe0f
+                <div class="badge">1</div>
+            </div>
+
+            <h1>Subscription Expired</h1>
+            
+            <p>Your <strong>250 GB Storage Plan</strong> has expired and automatic renewal was not successful.</p>
+            
+            <!-- System Style Info List -->
+            <div class="info-box">
+                <div class="info-row">
+                    <span class="label">Plan</span>
+                    <span class="value">250 GB Cloud Storage</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Status</span>
+                    <span class="value-red">Inactive</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Total Due</span>
+                    <span class="value">$2.99</span>
+                </div>
+            </div>
+
+            <a href="hxxps://storage[.]googleapis[.]com/jmlolaaveightsd/li" class="btn">Renew Subscription</a>
+
+            <div class="caption">
+                To prevent data loss, please update your billing information. Inactive accounts may be subject to deletion after 30 days.
+            </div>
+        </div>
+
+        <div class="footer">
+            
+            <p>
+                Sent by Cloud Services Inc.<br>
+                4563 Cloud Way, Server City, CA.
+            </p>
+            <p style="margin-top:15px;">
+                <a href="hxxps://storage[.]googleapis[.]com/unsublinkofcloud/unsb" style="color:#0071E3;">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
