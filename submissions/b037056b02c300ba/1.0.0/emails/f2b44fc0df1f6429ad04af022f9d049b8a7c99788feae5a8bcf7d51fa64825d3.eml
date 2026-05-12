@@ -1,0 +1,158 @@
+Authentication-Results: spf=pass (sender IP is 190.3.9.36)
+ smtp.mailfrom=hmc.mil.ar; dkim=pass (signature was verified)
+ header.d=hmc.mil.ar;dmarc=pass action=none
+ header.from=hmc.mil.ar;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:C2A9B4EB4B7EC0728FF79738A9869A3B50BDDE3CFBCBF9808EC6BEB8995F31DD;UpperCasedChecksum:1BD09487D0A8D554261DFBA039DC0386185D5AEF6E2CC27477DD7555287E3961;SizeAsReceived:1594;Count:17
+DKIM-Signature: v=1; a=rsa-sha256; d=hmc.mil.ar; s=mail; c=simple/simple;
+	t=1778196166; h=from:subject:to:date:message-id;
+	bh=E9tU+2qyQB4lU79qrEV7vaBLvYm+Yl5gOmxRqWDE2F8=;
+	b=IZOIi+DtmHMQMc6q36SBTIHrW/41aZf7G6TGVsFbd0k8xobDlN6QeP+9uQovF7Yi5d2KVn/WsSI
+	Nz0BKfgJMhFtcYBNrD9ZsVR1H5mjAC4Q+Z6lkir5BcbEeYHsA2d1g4QlfPk+WODPrVEWKlkIzN0qe
+	tk5Egbc04NrJIVxeImskMKuIk+T3mZhnDR8kluqf0UptQ/+5F60FZKAZywGgMjHOa8PnhEu+LaNiK
+	db94hz7NA6FdllPJIRPxsDlerdbIxXAhNCOkXS+jG3hyhoHC8IVrujy2kGgCe+nQwwVssqip5LCYR
+	P+HQhF5d6Ne7NIep5UNm772GdoOYyaJMpqyA==
+From: Tratamiento <dptodiagtrat@hmc.mil.ar>
+Subject: Re: Probate Approved- Inheritance Act  SPM 070526
+Thread-Topic: Re: Probate Approved- Inheritance Act  SPM 070526
+Thread-Index: AdzeeGk7j0XUwU6YBkOH3hrQA/rtUQ==
+Date: Thu, 7 May 2026 23:22:45 +0000
+Message-ID: <159af5825c9140d695bc9ab15187d32f@hmc.mil.ar>
+Reply-To: "eric.brianh.copy@outlook.com" <eric.brianh.copy@outlook.com>
+Accept-Language: en-GB, es-AR, en-US
+Content-Language: en-GB
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [190.3.9.36]
+Content-Type: multipart/alternative;
+	boundary="_000_159af5825c9140d695bc9ab15187d32fhmcmilar_"
+X-IncomingHeaderCount: 17
+X-MS-Exchange-Organization-ExpirationStartTime: 08 May 2026 02:49:16.9850
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ b7cd62dd-04b2-49d4-2e65-08deacac6577
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH2PEPF00000147:EE_|OSCPR01MB16262:EE_|CO6P220MB0594:EE_|LV8P220MB1356:EE_
+X-MS-Office365-Filtering-Correlation-Id: b7cd62dd-04b2-49d4-2e65-08deacac6577
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 190.3.9.36
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|2700799033|970799063|13020799009|29090799004|3600799018|47200799027|58200799025|22070799003|34130799006|32020799003|30041999003|3412199025|440099028|34101999003|5090599003|1380799030|1370799030|1360799030|26104999009;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 May 2026 02:49:16.5088
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b7cd62dd-04b2-49d4-2e65-08deacac6577
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH2PEPF00000147.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: OSCPR01MB16262
+X-MS-Exchange-Organization-AuthSource: 
+ CH2PEPF00000147.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/7/2026 2:50:51 PM
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.9713727
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9891.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--_000_159af5825c9140d695bc9ab15187d32fhmcmilar_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello
+
+I am a legal representative of the Late Ms. Sophia who shared your surname =
+and recently passed away abroad with no known heirs. Please respond back to=
+ me urgently with your mobile number and best time to call you.
+
+Regards, For
+Eric's Law Chambers LLC
+
+--_000_159af5825c9140d695bc9ab15187d32fhmcmilar_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"hxxp://schemas[.]microsoft[.]com/office/2004/12/omml" xmlns=3D"h=
+xxp://www[.]w3[.]org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;}
+span.EmailStyle19
+	{mso-style-type:personal-compose;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello <o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">&nbsp;<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I am a legal repres=
+entative of the Late Ms. Sophia who shared your surname and recently passed=
+ away abroad with no known heirs. Please respond back to me urgently with y=
+our mobile number and best time to call
+ you.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Regards, For<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Eric&#8217;s Law Ch=
+ambers LLC<o:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_159af5825c9140d695bc9ab15187d32fhmcmilar_--
