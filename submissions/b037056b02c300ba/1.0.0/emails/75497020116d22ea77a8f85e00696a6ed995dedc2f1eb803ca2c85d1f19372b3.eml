@@ -1,0 +1,403 @@
+Authentication-Results: spf=softfail (sender IP is 8.231.195.251)
+ smtp.mailfrom=daringcoco.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=daringcoco.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:B80A8C3BB8C64CE89ECB4E09F6E809A9738109D87C1BF246B4333AB9AB7E033D;UpperCasedChecksum:17C494697EA3F6274BFB1FA31699FAC5A71243A586473F733301962AD3F46E7F;SizeAsReceived:296;Count:7
+From: Cloud Update <support@daringcoco.com>
+To: <redacted@redacted.com>
+Subject: Syncing Paused: Payment Issue with 250GB Storage
+Message-ID: <d0bc7a317a3444879cc7b89c0fcb6f01@daringcoco.com>
+Date: Mon, 18 May 2026 19:38:33 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 18 May 2026 19:38:34.2579
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ e7f0ff48-2919-4d6c-3456-08deb5150c8b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH1PEPF0000AD7E:EE_|CO6P220MB0596:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CH1PEPF0000AD7E.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/18/2026 4:42:52 AM
+X-MS-Office365-Filtering-Correlation-Id: e7f0ff48-2919-4d6c-3456-08deb5150c8b
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 8.231.195.251
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|1290799033|46110799012|3025599003|6019299003|6100799021|10300799038|2700799033|46080799009|9400799043|32020799003|1680799066|5139299004|60050799009|970799063|34130799006|23130799006|9000799056|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 May 2026 19:38:34.0968
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ e7f0ff48-2919-4d6c-3456-08deb5150c8b
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH1PEPF0000AD7E.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO6P220MB0596
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3266520
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.9891.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9710001)(9610028)(9520007)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Required: Service Disabled</title>
+    <style type="text/css">
+        /* Import Roboto */
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        /* Reset & Basics */
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #eeeeee;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 0;
+            vertical-align: top;
+        }
+
+        img {
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Typography */
+        body,
+        td,
+        th,
+        p,
+        a,
+        span {
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        /* Layout */
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #eeeeee;
+            padding-bottom: 40px;
+        }
+
+        .main-container {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Card */
+        .card {
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 560px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            /* Removed the green top border to match the image style more closely */
+        }
+
+        .header-row {
+            padding: 25px 30px 10px 30px;
+        }
+
+        .content-padding {
+            padding: 10px 30px 40px 30px;
+            text-align: left;
+        }
+
+        /* Alert Boxes */
+        .alert-box {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+        }
+
+        /* Specific Alert Styles */
+        .alert-yellow {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+        }
+
+        .alert-red {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .alert-blue {
+            background-color: #e2f2ff;
+            /* Light Google Blue */
+            border: 1px solid #cce5ff;
+            color: #004085;
+        }
+
+        .alert-final {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            color: #cc0000;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .icon {
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        /* Order Details */
+        .details-box {
+            padding: 15px 0;
+            margin: 10px 0 20px 0;
+            border-top: 1px dashed #cccccc;
+            border-bottom: 1px dashed #cccccc;
+        }
+
+        .detail-row {
+            padding: 5px 0;
+            font-size: 14px;
+            color: #555555;
+            overflow: hidden;
+        }
+
+        .detail-label {
+            float: left;
+            width: 50%;
+            font-weight: 400;
+        }
+
+        .detail-value {
+            float: right;
+            width: 50%;
+            text-align: right;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        /* Button */
+        .btn-container {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #dc3545;
+            /* Red color from image */
+            color: #FFFFFF !important;
+            display: inline-block;
+            padding: 12px 40px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #c82333;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 18px;
+            color: #5f6368;
+        }
+
+        .footer-links a {
+            color: #5f6368;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 600px) {
+            .content-padding {
+                padding: 15px 20px 30px 20px;
+            }
+
+            .card {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <table role="presentation" class="wrapper">
+        <tr>
+            <td align="center">
+                <div style="height: 20px;" class="mobile-hide">&nbsp;</div>
+
+                <table role="presentation" class="main-container">
+                    <tr>
+                        <td align="center">
+
+                            <!-- Card -->
+                            <table role="presentation" class="card">
+
+                                <!-- Header Logo -->
+                                <tr>
+                                    <td class="header-row">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="vertical-align: middle;">
+                                                    <img src="hxxps://play-lh[.]googleusercontent[.]com/RyoQTmHnxsxPYabsETmWVXHtLorVh_yOO48hsdv2VmI-Uki4qt5c5vV1cicJODV56A4" alt="Cloud Logo" width="32" style="display:block; width:32px; height:auto; border-radius: 4px;">
+                                                </td>
+                                                <td style="vertical-align: middle; padding-left: 10px;">
+                                                    <span style="font-size: 18px; font-weight: 700; color: #333333;">Cloud Storage</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content-padding">
+
+                                        <!-- Yellow Alert -->
+                                        <div class="alert-box alert-yellow">
+                                            <span class="icon" style="color:#856404;">\u26a0</span>
+                                            <strong>Your payment method has expired</strong><br>
+                                            <div style="margin-top:4px;">
+                                                Update your payment information to keep your service active. If you
+                                                don't have enough space on your Cloud, you can upgrade your plan.
+                                            </div>
+                                        </div>
+
+                                        <!-- Red Alert -->
+                                        <div class="alert-box alert-red">
+                                            <span class="icon">\u2716</span> Your Cloud Storage has been Disabled
+                                        </div>
+
+                                        <!-- Blue Info -->
+                                        <div class="alert-box alert-blue">
+                                            <span class="icon" style="color:#004085;">\u2139</span>
+                                            <strong>We were unable to renew your Cloud Storage</strong><br>
+                                            <div style="margin-top:4px;">
+                                                Without space on your Cloud, your data and files stored in the service
+                                                may be lost.
+                                            </div>
+                                        </div>
+
+                                        <!-- Order Details -->
+                                        <h3 style="margin: 20px 0 5px 0; font-size:16px; color:#202124;">Order details
+                                        </h3>
+                                        <div class="details-box">
+                                            <div class="detail-row">
+                                                <span class="detail-label">Subscription plan</span>
+                                                <span class="detail-value" style="color:#d93025;">250GB</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <span class="detail-label">Product</span>
+                                                <span class="detail-value">Cloud Storage</span>
+                                            </div>
+                                            <div class="detail-row">
+                                                <span class="detail-label">Expires</span>
+                                                <!-- Dynamic Date or Fixed Date -->
+                                                <span class="detail-value" id="exp_date">2025-10-10</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Final Notice (Red) -->
+                                        <div class="alert-box alert-final">
+                                            <div style="font-weight:bold; margin-bottom:5px; color:#333;">Final notice:
+                                                your data will be deleted.</div>
+                                            <span style="color:#d93025;">Your account has been blocked. All your photos and videos will be deleted today!</span>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="btn-container">
+                                            <a href="hxxps://storage[.]googleapis[.]com/qmflgjzopertyudfg/lis" class="btn">RENEW NOW</a>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer">
+                            <p class="footer-text">
+                                You received this email regarding your Cloud Storage subscription.
+                                <br>
+                                <a href="hxxps://storage[.]googleapis[.]com/qmflgjzopertyudfg/lis">Privacy Policy</a> &nbsp;|&nbsp; <a href="hxxps://storage[.]googleapis[.]com/qmflgjzopertyudfg/lis">Terms of Service</a>
+                            </p>
+                            <p class="footer-text">
+                                <a href="hxxps://storage[.]googleapis[.]com/wlfkgutrvhfg/lis" style="text-decoration:underline;">Unsubscribe</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Script to set date to today (mimicking "deleted today" urgency) or keep fixed -->
+    <script>
+        // Set to today's date to match urgency, or remove script to use fixed date
+        const today = new Date();
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        // Replacing the fixed date with today's date for template consistency
+        document.getElementById("exp_date").textContent = today.toLocaleDateString('en-CA'); // en-CA gives YYYY-MM-DD format
+    </script>
+
+</body>
+
+</html>
