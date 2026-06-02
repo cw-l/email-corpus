@@ -1,0 +1,225 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=ejtidUyP8Fc8FPrPRECLNq2swbuCAJ0go6UWC5udhgru11InrMoZLaaVGn4fzOItC0lUaYnRdxaPZkDxkbefy8dBt87Yt5b2/ao92kLEC2YPnI6Ip0Sv72Wza8sbc65p6pIc+b0s/Yv3pcseR049GLipjo30VXGVUamRsNpCuG3bx9lW1GisvvRICd1AYkhbI9u0ox+LNL3Ez7aIekB/OhHUPGdxvkg+V/OG3qCOfaFj6C5Z6GWbPqedg9cpcbCtv7s/pPfEHzDdkcobhKSExsZQEhY7GkzVawRqjNSbhecaztd0tjzcNJQdffx4Z67RQd0Z7G2XkJz5aZXXru5xJQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=p0xbfPVLHBj/E1p2+G50ZbgyYwfuB4RUkSdsZGw68PA=;
+ b=ckXf3pqKOppSFuGkFWwpxjUt9/VFp52pyyCvzBXyS9Kj/Tq5UoyPISntPA/dpL61Ne7bSOCPL+R9XCiDDUiCkhOM8ZO0MhT745sFirIRiVgb4tLT3QNkH9zJEZdWwrX8tw+125a1uJK+7MYYt7VA9mgewwxzlQvuP7j4nVvBw45amxjjYHk7Nd9qnnGkfJsikIDJ5tgL3HZHpiBNqpiCEEJ1x2679DWUDILwGxFZ6skV53myLISZ0eow6ITJKce9U8cqxMbXQJ9zyqRgzn17t1nBC1/wRuZfWmzEdpJGjsbGQPR+rOlaBPC01tygf/MIDNzy21tn8HWQaJvJSfBJbA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 74.125.82.194) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=noun.edu.ng;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=noun.edu.ng;
+ dkim=pass (signature was verified)
+ header.d=noun-edu-ng.20251104.gappssmtp.com; arc=pass (0 oda=0 ltdi=1)
+Authentication-Results: spf=pass (sender IP is 74.125.82.194)
+ smtp.mailfrom=noun.edu.ng; dkim=pass (signature was verified)
+ header.d=noun-edu-ng.20251104.gappssmtp.com;dmarc=pass action=none
+ header.from=noun.edu.ng;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:049A168790BFE2230C145E967D79C0F0DD5C4FA6AD8788D60FA891DD540C3C0C;UpperCasedChecksum:D1DB444882DB1E6388EAC54A45D76AF804E21F55C8FDDBF77D898772D1267E61;SizeAsReceived:4272;Count:20
+ARC-Seal: i=1; a=rsa-sha256; t=1780059212; cv=none;
+        d=google.com; s=arc-20240605;
+        b=boA3ch6l0k8UJR55c5UZDDmOCNYStsjH7/xR6TrtXH2Yri9c2yQbnajmAAWfxym0bg
+         +TmWIk7wkDmlCykoIk0GKhF0QqEAlc7k1JoFxY9mBj/hR6c9CE20dHydPEQXVcAg8YFS
+         E4eGI2M3Akky5aqShjdFZOSWuY7jbCrVZOUQMxlRo6muhNSzsVkAlvlPsjXASbhSAa1z
+         IzJG3k1x8o+NVmjIF7h/zbHy67di3rQPRDbMWdmewxA7TwbYZuVQBbQGRrdiDBZ0vpfO
+         xdwgNDpD2co3O33vR6lNhkTJL/9pg60gH+7foZbe6gL7twKB27QeURANkydPwzxXocMJ
+         vmOw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=p0xbfPVLHBj/E1p2+G50ZbgyYwfuB4RUkSdsZGw68PA=;
+        fh=h6Iri7+8Kyxhl8NE3LkRDwJlno0L1BjoCB1YdN/wKLE=;
+        b=UMGnhzbc+3B5SfkV6piUkmCrCSXkD1zHEvqPB1hAE+KWWU1krYFYPI6mBEjDf7lil4
+         ww0YVu3QL0l7Y8ciUo7vIdKQRof9XuguP1w9gwQbhVc3+DV++i2tM/bhhtYtM45HRGVU
+         cg5kClFXRsxvvd2tuDQ6/Hb1jOdWYme4bYElgeXFXDAi+2eQik0n/iKdINk7FvEbxe/X
+         RlS4cttiY+MwvHgYKCt3pIrz/hBDka/kzFc8XSsmZMeL9upyH09bBpVhCVj6S/WVGgG5
+         B3ASCNKUbs8KJCoX2UBmj0Dwyn1Mkx+T0DB4ln3Oh2F4t2YBSZ6kC5GUd4HkXzJTaXR7
+         o89A==;
+        darn=hotmail.sg
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=noun-edu-ng.20251104.gappssmtp.com; s=20251104; t=1780059212;
+ x=1780664012; darn=hotmail.sg;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=p0xbfPVLHBj/E1p2+G50ZbgyYwfuB4RUkSdsZGw68PA=;
+        b=RHeyvtvpYotcTzizYNm4WGYxzf4LsIGTOcc8AzW9nPxIHzkb+nBcOaN5NSe83QZXFN
+         bWLUtqo2gr73ZVBjohyuFRv8NfsmYtq+puyuQdSqVJgvY7NHroVRWPymesu+k+AL9ZrG
+         Vq1kAPqbSURQM0FGfS1CiQdVeL4j2FT/kcsXlmE5YE6xRX+WbE8RMFrcJ5orMjeSkVdG
+         lMiHzUlYwcpjFaU1qV6XvqNo1X22AQAKO5lYVasx7y78sqy/h5Dbv5SjEflRwEHt3RKl
+         IjpgQI0TuZ0r94cf1ItzAHmnt6XHGX6ame0bNy/hF2Ei27umf+6vrGA5uedTpJDBjqb6
+         0zlw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1780059212; x=1780664012;
+        h=to:subject:message-id:date:from:reply-to:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=p0xbfPVLHBj/E1p2+G50ZbgyYwfuB4RUkSdsZGw68PA=;
+        b=nr5nk6buu0mLSBM60EGA/JRhkY6wzmMrKq+PsoHMFu/kNsgKjD9muJIaz23NJ4p+vo
+         aTnKgPvBqiE+naxxSzjZblBH5uic7+ziQYyt8++drlr+JzBusYpaSRmw4CFIjbeJ3dqz
+         TQfAbPye6Nnx05c9/kIL7Lqk6wncwojgJe7cP9/2zRfDhstJ62LCMjhqYm9VKAXXAfhD
+         jRGP+U5ITdlmCIHsO1p/bByi7uZasOCVFJBEpcNRxbXGjG5B/tLF3muMypobmiasD7a6
+         e50fyXuuPmQ2nNH52hfOzf9kWCETsMCwIM77mveEI5B2TRhBwQxqlZ1c9sIVVjRzy2fr
+         c5kA==
+X-Forwarded-Encrypted: i=1;
+ AFNElJ8hXXc56YD78K1ZbLoI5aO9rzRKhl320Srx0SgXEnMb6XUQpFBsvec1S03eAMthAELhjMIRno1fzmwuGSs=@hotmail.sg
+X-Gm-Message-State: AOJu0YwOiq1BC3R1IAS3FiB3H2z/fR1YruIwCxICP1jNc1iRBx2Lu92w
+	cZZIN2ZDBmZXYPIoB0lGa3Cg5eUc/5nudYdeuUbXWLBiD1r4Qb+HZ2M7IVY3SNWd3QtEJ+9qHcb
+	q+AYcZGjOYDnsJK/qWdbMEX7T9a9BeGCUq0GuXQ3LyQ==
+X-Gm-Gg: Acq92OGBCOGvLjQMl1P2TW9YARdyHAvwow5KDCg6awxUBCReP1GXF3KT3KAKywcNa5N
+	zOX9Q6s7H0/KyW0O54V35C4yZM5nIE/4IpOSQVe3L468kzXqUn58hLa7qhV81UO2sb4dOdc+Gam
+	j3QmsKJ/8uXXzcC6JZf5KPT1rR9V0NkLPKUrdZKmGF2cEDZWfOYn13lgGCzgDLXV0Ecb4WOuNEV
+	Nzeq7s0tJJDhCecrpgHfm+451uD3JCZd/uGU3h9fnkbYkU7q0bV51XQsaV82N6CBZYWMzY0pInR
+	8rFJ5Oo5O9Fkk69yXxFrJPo=
+Reply-To: richclarke0081@gmail.com
+From: Richard Clarke <nou265105619@noun.edu.ng>
+Date: Fri, 29 May 2026 15:53:18 +0300
+X-Gm-Features: AVHnY4LgtOx8sr4dZHQQFZ2YeXlJwNdaOXqFiq-McjfYONwUcFrLSI0g6biVVaI
+Message-ID: 
+ <CADAd-TX8Xk-UbTrNQt9PmQH9wkuJgQVvhG+hw6WCzzZuf=tQ4A@mail.gmail.com>
+Subject: CONTACT RAPHAEL JOHNSON
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000f900220652f454df"
+BCC: <redacted@redacted.com>
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 29 May 2026 12:53:32.6816
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 72000d8c-fccb-49e6-31f6-08debd814a38
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SJ1PEPF000026C3:EE_|LV8P220MB2018:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SJ1PEPF000026C3.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/29/2026 12:40:56 PM
+X-MS-Office365-Filtering-Correlation-Id: 72000d8c-fccb-49e6-31f6-08debd814a38
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 74.125.82.194
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|2700799033|970799063|32020799003|29090799004|36030799006|46080799009|60050799009|34130799006|3069299007|9020799019|6019299003|1380799030|1360799030|1370799030|26104999009|3412199025|440099028|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 May 2026 12:53:32.6397
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 72000d8c-fccb-49e6-31f6-08debd814a38
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SJ1PEPF000026C3.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8P220MB2018
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3514360
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0071.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--000000000000f900220652f454df
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Dear,
+
+My name is Richard Clarke, your old friend. I am very happy to inform you
+about my success in getting those funds transferred under the co-operation
+of a new partner from JAPAN. Presently I am in JAPAN for investment
+projects with my new partner. Meanwhile, I didn't forget your efforts and
+attempts to assist me in getting the fund in the past despite that we
+didn't succeed at the time. It was the will of God, but finally I succeeded
+with the help of another partner.
+
+In appreciation of your earlier assistance to me in receiving the fund, I
+have decided to compensate you with the sum of $1,500,000.00 USD(One
+Million Five Hundred Thousand United States Dollars). Please accept it as a
+token of appreciation from me. Presently, I am in JAPAN for an investment
+project. Since it was difficult to contact you before I traveled due to the
+urgency of my business schedule, I have left instructions with my personal
+secretary Mr. Raphael Johnson, Please contact him through his E-mail
+address or phone number below.
+
+Secretary Name: MR RAPHAEL JOHNSON
+E-mail:  raphaeldzie@gmail.com
+
+Please email him and inform him that I have contacted you and that he
+should go ahead and release your compensation fund to you. Send the below
+information to him for verification
+
+Your Full Name:
+Your Address:
+Phone Number:
+A Copy of Your ID:
+
+Ask him to RELEASE the sum of $1.5million USD ATM CARD which I prepared and
+kept for your compensation for all the past efforts and attempts to assist
+me in this matter. I appreciate your efforts at that time very much. So
+feel free and get in touch with Mr.Raphael Johnson. Please do let me know
+immediately you receive it so that we can share our joy and happiness after
+all the sufferings at that time.
+
+At the moment, I am very busy here because of the investment projects which
+me and my new partner are having at hand. Finally, remember that I had left
+an instruction to MR RAPHAEL JOHNSON on your behalf to receive that fund.
+Therefore feel free to get in touch with him and he will RELEASE the FUND
+to you without delay.
+
+Take care of yourself and bye for now, please don' t forget to contact me
+when you are through with that, and please do not be worried if you did not
+hear from me for sometime because i will be very busy and will not have
+time to be checking this email always, thanks.
+
+Yours Truly,
+MR RICHARD CLARKE
+
+--000000000000f900220652f454df
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Hello Dear,<br><br>My name is Richard Clarke, your old frien=
+d. I am very happy to inform you about my success in getting those funds tr=
+ansferred under the co-operation of a new partner from JAPAN. Presently I a=
+m in JAPAN for investment projects with my new partner. Meanwhile, I didn't=
+ forget your efforts and attempts to assist me in getting the fund in the p=
+ast despite that we didn't succeed at the time. It was the will of God, but=
+ finally I succeeded with the help of another partner.<br><br>In appreciati=
+on of your earlier assistance to me in receiving the fund, I have decided t=
+o compensate you with the sum of $1,500,000.00 USD(One Million Five Hundred=
+ Thousand United States Dollars). Please accept it as a token of appreciati=
+on from me. Presently, I am in JAPAN for an investment project. Since it wa=
+s difficult to contact you before I traveled due to the urgency of my busin=
+ess schedule, I have left instructions with my personal secretary Mr. Rapha=
+el Johnson, Please contact him through his E-mail address or phone number b=
+elow.<br><br>Secretary Name: MR RAPHAEL JOHNSON<br>E-mail: &nbsp;<a href=3D=
+"mailto:raphaeldzie@gmail.com">raphaeldzie@gmail.com</a><br><br>Please emai=
+l him and inform him that I have contacted you and that he should go ahead =
+and release your compensation fund to you. Send the below information to hi=
+m for verification<br><br>Your Full Name:<br>Your Address:<br>Phone Number:=
+<br>A Copy of Your ID:<br><br>Ask him to RELEASE the sum of $1.5million USD=
+ ATM CARD which I prepared and kept for your compensation for all the past =
+efforts and attempts to assist me in this matter. I appreciate your efforts=
+ at that time very much. So feel free and get in touch with Mr.Raphael John=
+son. Please do let me know immediately you receive it so that we can share =
+our joy and happiness after all the sufferings at that time.<br><br>At the =
+moment, I am very busy here because of the investment projects which me and=
+ my new partner are having at hand. Finally, remember that I had left an in=
+struction to MR RAPHAEL JOHNSON on your behalf to receive that fund. Theref=
+ore feel free to get in touch with him and he will RELEASE the FUND to you =
+without delay.<br><br>Take care of yourself and bye for now, please don' t =
+forget to contact me when you are through with that, and please do not be w=
+orried if you did not hear from me for sometime because i will be very busy=
+ and will not have time to be checking this email always, thanks.<br><br>Yo=
+urs Truly,<br>MR RICHARD CLARKE <br><br><br><br></div>
+
+--000000000000f900220652f454df--
