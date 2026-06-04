@@ -1,0 +1,928 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1780530456; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ZTSDVTVW2nQT0Bj3gmVsX5mF2NShGbihIDh2jw1gIS6UebfpZhEvhPCQpN1xTRBMrq
+         ceQ7OfHsaRM/ARfShNk7KTxL0JK8eaZa8/RFM601KU53vMANtnT2Q5KSHaj9aL/l09f2
+         BpUQVwTWwEmnAGlcF7qymxNkzK9+1hPSyf32Y/+16L/hnYpqvYpeKj3SMlVBIDmW9SKN
+         lPaX5z/56BmQo34LDAIn15L4RcKY4Od02dbbnYlv47Rn5VNSeGY+FwuPVjvNuq10AWO3
+         4pCDTJBpaiNwbSD0htPRpPM/jBCEZ6f0Xv2gm3EIDqum8cvhhYRqlCfwtaZaA+Y5GSil
+         gQXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=sender:mime-version:message-id:list-unsubscribe:to:delivered-to
+         :subject:from:date;
+        bh=4SEWt462RBr5RmGC2A3J8PHKclLzVJOgWiX9Nrw16I8=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=By5Uyb7dBJ6TxU2FrkwwH7ip52uBXNpMBpL/8i3Lz9sclOWb1LJsHUbWPElACZUpUz
+         9mN7Z7p9LbIgzp2cUvj5BFdVAMfD84jAmwOcl5qTiFeyIICQhgYC9xfxWvursUB23oC6
+         Ur1yK3/j4lytOGXzMfTsdN/nnp1KkqD852C5dJkk7zfA87cutbzuyqptZXY+hbgStV01
+         /nZr7XVfn0IaID0GmOl0vLKY15YBTmY7v12uKUhDEtmfjsjUPbrkxOEvEG4nb77bJaMV
+         idYrDQ1kqbymMC7N1MPeJAHDEaATtL7k6w70Kd7VEfhlIUBR1WdZV4qsTysr7voFPWrF
+         4XOw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of
+ chebnuynbymyf@alamo.netflix.net.marstallers.de designates 89.252.162.206 as
+ permitted sender)
+ smtp.mailfrom=chebnuynbymyf@alamo.netflix.net.marstallers.de
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of
+ chebnuynbymyf@alamo.netflix.net.marstallers.de designates 89.252.162.206 as
+ permitted sender)
+ smtp.mailfrom=chebnuynbymyf@alamo.netflix.net.marstallers.de
+Date: 06-03-2026
+From: Walmart+ Subscriptions  <nooreply@hrs.fosufiqvpvkhi.us>
+Subject: Action Required: Update Your Walmart+ Payment
+To: redacted@redacted.com
+List-Unsubscribe: <http://discoveryplus.com/LEAVE=To>
+Message-ID: <01346453.01369803.ko4z9.bad1smtpin_added_broken@mx.google.com>
+MIME-Version: 1.0
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Sender: xtofycaeptkayakrsdokxfykqkuqhu
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Action Required: Walmart+ Payment Failed</title>
+    <style>
+        /* Modern Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: "Bogle", "Helvetica Neue", Helvetica, Arial, sans-=
+serif;
+            color: #444444;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* Layout */
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* White */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* Header - White for Logo Contrast */
+        .header {
+            background-color: #FFFFFF; /* White */
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .logo {
+            width: 160px;
+            height: auto;
+            display: inline-block;
+        }
+
+        /* Content */
+        .content {
+            padding: 40px 35px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #FFC220; /* Spark Yellow */
+            color: #000000;
+            padding: 6px 16px;
+            border-radius: 4px; /* Squarer for Walmart aesthetic */
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            color: #0071CE; /* True Blue */
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 20px 0;
+        }
+
+        /* Feature Box */
+        .benefits-box {
+            background-color: #f0f7fd;
+            border-left: 4px solid #FFC220; /* Spark Yellow accent */
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .benefits-title {
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 15px;
+        }
+
+        .benefits-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #444444;
+            line-height: 22px;
+        }
+
+        /* Button */
+        .cta-container {
+            text-align: center;
+            padding: 10px 0 20px 0;
+        }
+
+        .cta-button {
+            background-color: #0071CE; /* True Blue */
+            color: #FFFFFF !important; /* White */
+            text-decoration: none;
+            padding: 16px 45px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f9f9f9;
+            padding: 35px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .footer a {
+            color: #0071CE; /* True Blue */
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .spark-icon {
+            color: #FFC220; /* Spark Yellow */
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        @media screen and (max-width: 480px) {
+            .content { padding: 30px 20px; }
+            h1 { font-size: 22px; }
+            .logo { width: 130px; }
+        }
+    </style>
+</head>
+<body>
+    <div class=3D"wrapper">
+        <div class=3D"container">
+            <!-- Brand Header -->
+            <div class=3D"header">
+                <img src=3D"hxxps://i[.]imgur[.]com/tztf6tW[.]png" alt=3D"W=
+almart+" class=3D"logo">
+            </div>
+
+            <div class=3D"content">
+                <div class=3D"status-badge">Payment Failed</div>
+                <h1>Action Required: Your Walmart+ membership is on hold.</=
+h1>
+               =20
+                <p>Hi there,</p>
+                <p>We were unable to process your payment for your Walmart+=
+ membership. To keep enjoying your member benefits without interruption, pl=
+ease update your payment information.</p>
+
+                <div class=3D"benefits-box">
+                    <span class=3D"benefits-title">Don't lose out on:</span=
+>
+                    <ul class=3D"benefits-list">
+                        <li>Free delivery from store ($35 min)</li>
+                        <li>Free shipping with no order minimum</li>
+                        <li>Member prices on fuel</li>
+                        <li>Video streaming with Paramount+</li>
+                    </ul>
+                </div>
+
+                <div class=3D"cta-container">
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait=
+/brightway[.]html#index[.]php?search=3D4&d120230&baiif=3D14-32&lm=3D195982D=
+RMH2154&sd=3D8&page=3DpJ1c1S1PrCLOK2K" class=3D"cta-button">Update Payment =
+Method</a>
+                </div>
+
+                <p style=3D"font-size: 13px; color: #777; margin-top: 20px;=
+ font-style: italic;">
+                    Your benefits will be restored immediately once your pa=
+yment information is successfully updated.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class=3D"footer">
+                <span class=3D"spark-icon">=C3=A2=C5=93=C2=B7</span>
+                <p style=3D"font-weight: 700; color: #444; margin-bottom: 1=
+5px;">Walmart+ | Save money. Live better.</p>
+                <p>
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait=
+/brightway[.]html#index[.]php?search=3D4&d120230&fhmbk=3D14-32&lm=3D195982P=
+IDO2154&sd=3D8&page=3Dr43UfC75RFWrFhU">Help Center</a> &nbsp;|&nbsp;=20
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait=
+/brightway[.]html#index[.]php?search=3D4&d120230&dbqrs=3D14-32&lm=3D195982X=
+SES2154&sd=3D8&page=3DuFxwYwjOpIiBfNT">Privacy Policy</a> &nbsp;|&nbsp;=20
+                    <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait=
+/brightway[.]html#index[.]php?search=3D5&d120230&fotxu=3D14-32&lm=3D195982L=
+ZFQ2154&sd=3D8&page=3DmZwYLQN3Oo368Qy">Unsubscribe</a>
+                </p>
+                <p style=3D"margin-top: 25px; color: #999; line-height: 18p=
+x;">
+                    &copy; 2026 Walmart Inc. 702 S.W. 8th Street, Bentonvil=
+le, AR 72716<br>
+                    This is an automated notification regarding your Walmar=
+t+ account.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d120230&ryeew=3D14-32&lm=3D195982INXN2154&sd=3D8&page=
+=3DUdJ4Pn8GwW2pC7U">Here</a><br>
+ </center></p></td></tr></table>
+<tr>
+                <td align=3D"center">
+                    <img src=3D"hxxps://tinyurl[.]com/FGSGJSRTFHTRFH/track/=
+index[.]php?search=3D3&d120230&lxsdl=3D14-32&lm=3D195982MDYT2154&sd=3D8&pag=
+e=3Daabi0nbXGHuzlV9" width=3D"1" height=3D"1" style=3D"display:block;">
+                    <img src=3D"hxxps://tinyurl[.]com/FGSGJSRTFHTRFH/track/=
+index[.]php?search=3D3&d120230&bhjtv=3D14-32&lm=3D195982HWTK2154&sd=3D8&pag=
+e=3DQGX4AS3sW35eMWm" width=3D"1" height=3D"1" style=3D"display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+
+
+
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object QYQLUACHPIYVMRVURQGMSDXTMGOWPHAGXNMPMHEJOZXKGRUZZDICDRIOQNXY>
+
+Dear CSTJMGBHKZFZCJSBWKVQFB ztflfeuakskqmtazrmozse,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is wblasqneeqjztqezshqcqxt=
+jcyhe.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi arldqzgnkpccrxxbir,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi otinqlyqewqbwfypvhzsxufw,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: kfluwftgkuagpyshrzutfxtjzl
+ Site ID: ctifyozywtftrkzizgeyqueht
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team IYNHUYLWFNBYUOIONTQMNO
+
+Powered by APXVAABFEJCOELEMFUAQKG=20
+
+</title>
+
+Dear GAHPLZGSSXBBVFPDFLOSRYQIT lgwrgmvwgxymnziomkbxbocqdf,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is ejiplmmexbpzfmjuyiihegi=
+zi.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood CTVMSHJAOMGRSJWRMEWHRX,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+TJZCKOTHMIKLEKQSNAZZTWQVUMMDEPTDWXZUDYIMAWMKEMKUAYEHXTRJXIPYGQVBYPKVRXJKXDS=
+JFBPGCWTOAWPHYLOMDSFZMXADZZQMRSGUZDMUFTFSFSHDPBBJRTHMBZDPIUWSAKYJEFMVLQKPKV=
+TMJORMSQZRYLUTYYYWHBECWZQZFVSECEKUOWWGXPBAWXYISAFA
+
+ Hi SSBIOOMZADWJHKCOVGAFAY,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+skrlovqkxdcijxxjawrflyfioebwbirbtafxpmmvttbzsxdqojndulfvhjzcgmkhvwndmuqldim=
+doieqpuqqgtewndniockzrmmpabnqylxwzvxcbdhrfrstttzyglhouaylzvurviphbggopzlqsf=
+clkkkdbxuffsuzwopwypuhggkhaxznnidpupskzjbqjwduwbum
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi X1ZGWEVZ9TQ2PFRGI6DSHO1JN,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team SWHUQEBJNXIRQMYWGCRMBP
+Powered by LWYTNROQIIQIDZNZVSAHNU
+
+Login Name: ULUXCUROWRPXHZWPHUUIFA
+Password: DQSKPBRZBGFPJJGUPFIQDO
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: YAZ
+Password: CBXTAREIMCLHQCUPQCEUMP
+
+	ZTLMRFSHUZ1UAC2PBN 192T7ZTOFENEYP5 YNQ957PZFM4RV HD73TOO9QVS5W1T5C4 75E5TR=
+2KE0BX2W7 Q4E4WFPWEF73B QXJ6VL5IC0KD06RELI=20
+	HK7V7OPN5RCMUGH1DT VOMMK8L3V3C568A HLAJIA8TMEXI0 PYPR4PJA9QEU0FQSQH N5VXEI=
+VMVNX8FPN HJYBR67Z61C7H O0EYTOLQY3486HL5S2=20
+	LP98Z2V4DM38BIU LB1BFWZ9S84SU SAGK285TWYLUB20N5E IBPZI3348EMD01A GFPCJIKY6=
+W6ZO GQWIQ57TESCO27OEXM 6Q8HOE5ECAV6LCY
+	5TYM99B4JZG8S K2KMUG9KPBP02U14IN P1UZ3BBOL23C22S AU8UMDTI8IMW3 W0IF7M4CL84=
+ODW8CO4 SW9ACN9R1Z01GWP ER8JDR7477B8W=20
+	KEOIQYKC6F34364F1S O9MHFGGAJWXTX3M VJJOGE6CX41B9 LOJAHJSKTK87LQ8EYS DKEGIG=
+OMPPTRQPG 33UKK77O05VXF MG4BG92OH00TKX87YU=20
+	G5RPT63MSYSQF22 DQL0PY80ZHS0N AW3QXXYPNVLKSKW336 N3KTFUB47A6MEL8 KTPOQSIQP=
+AOZ6 CLPSUJUPFRLKK89MKG RC1NCYZYCEDAK6L=20
+	CI5RW9TTLQUHM 6OEN59XAY76VY2PQAQ EK3N3PZFUGO13ZO RVSA42PTVMAAE GVX7NC022DD=
+UAR5TLS 9MU75HOKEIGZ06X 82BU2VZ0I93FK=20
+	PNBCV5RN52DH4307CP AE33HAVO9298S47 M58F5VGSUVBX2 I1E777J2HTLD2RJZMH 0B7ZW0=
+S7G26LBTG AL716VSL6VURH VLHY97V6XLV37FI6H9=20
+	1EZB2HWPLLDM8YG MMOTXYTESMOPJ VS87URQ4F4SJAIESJ9 VRZ3GIXMK0VYJO1 ZOZ5K5KW7=
+4BVI 28J9RDOLNONE0P1K4U 27PPCMLOZVH6KKG=20
+	R9Z9B1XIT2MBP 5ENM83GBW961CD6V3Z BSB53EH01HNWHU3 STTVQFE1XCQL0 0GKMTCSHSLD=
+UW9OEOQ SLNEGRRANK71OP7 RW6IP48Y5ZDWC=20
+	1N3HDJ6K44323EH1KM 1MG6QXMP3DG8JJE S42G5JMC9UW2N XZOYCUIWIR7H9GCURG FHGQ0G=
+AZZTQNFOC NC2JSNQB4XW10 WOJGKV6GZW4HMZQ9WZ=20
+	QD5LW1LKO9A97UU 1NSZFGNA817TE W268HQWPA9VO7LOOCS HGEAPPGUVQ41WL7 1N8A360M4=
+4FH7 QQJL8W470A7Z3M63BT RVPYPFW9Z26B9ZM=20
+	GKIAQUFBZOX7C PP6Y3KTFBVY7OHULVN 5PILP1C27JC1BEK OXOIOUW9QXCY3 Y7C0WKWUH3W=
+7QYICBK ODT4TSF8COQXNU4 Y02P4GCRHKZB7=20
+	OV3PY6LVCEYGDWLE6C E2F4B04G00CZTKK XF91DAFEH5NCM 5XTFZ3TT5WOEM0MIDO 2G4O28=
+9G7M931QH 6UZ121N75HU3T 0V3UNTFNJ21UMLCORC=20
+	EH7SI2O6BH7BXL2 090HXBFUIZD3H TLDVTIAKNQ4RICZWWH 6X4672ILLNE5HN2 JRJE3361M=
+Z7RT H9V3MJQ1URDN2PRVWD 4AALDIWVQH2AH9B=20
+	08S8F2RO8VXYD 93R793W7MVMXVQ2901 E4ZNB2IKOKSDP5V FIH9R1G6YO83P WUHQA4IG1PE=
+NUWYHYR WCOPWSL97314YPU ZHVO92WETV0J8=20
+	L2DIB7NZ08VGGO6J14 OWPFDPVKH3MKMCY 3Q67AOAIG6G3C Q0I61KA8BSENYHXN38 TZKM59=
+R9RYRBGV1 Y17OV7R1UV48Q 6ZQY2SLGPSZ0OR0EO1=20
+	DEA76RU6AUV1FTN MT42OZJPG2DKI XQDUPHS8B5H8EG7CPK RV3GI0446R7UJUZ IQJPV6TAP=
+ZOCC 6C2MQ86ZOWH0O0D2YP 3K3EE73ZMMRJDOJ=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+OQPWNGRMMZOYFLWHYDKSBNUFZQCUKULTYUQNQLKTZWLLPUOXFYUSNAUAOOAKEBGENFADNJZWEQU=
+LDNYBEFMMDDJFKZVIQFYPIWKEVQILOBPGFVNYBIQDIWKOGXOANACXBLTQBOOILSNDDGIAFHJZQN=
+GRZKFHJVVFCXUAKEVIUTHELSHDMONTFTNMUVCIWSQGUPWHGFILT
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to SWXQKICMYGFEOUKWEYUFP=
+VDUMNEHCZYZVBQVNAJFLTIDCSCIFNUZWKSMOKCPVEMVUGHJIGSCWSZGSRBBWZWQVVJACPAZIWBZ=
+SPOTNLQAAIWEBNLRREBMOREYYWUFUMPPAEBUPDPWLLAEDZCRFYYYRXRJPFCBEEHKZHIZFXSKEUE=
+RSOBZRIGOEOTJWDVVWTZBMUBENZTN roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department IONNKXQDFAIKKRXSFJXNNHMISIWWTXIQNDYMGQNQWPPUYBBR=
+FRQYHQDODIWYZWVFEVYKQVXVGQPRLNXZZMYLKDKVDTLQZFFAARUFWUWNZDSLYZAYQRYMOBXOOAX=
+RIGARQANBKKPBSPCPVXKDSSWPQWWOMKPFSITDCUAUHNQVMRIIQYSVKWSKJHABRRNLXREYWENXSN=
+KCK to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation UCKQHBHAUVGFOXT=
+PRSNIWMXQUSKXGIKUAEDYCTCLIBINBNKNMUCKVPLKKOHJTTIOGFMDNNIEOHYPIYMNVWOHVFPYJQ=
+JNPPNDUFXNRPMMKGOFYMMEDEHFEQNMZZAVMWBHFKVIDNUVZYPECKWMTZDHRRJBBUERVLXQUQTIC=
+XFSIBIZQTFSZAKFRGBIZPQWUFCYBWGJYRAMZ development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will WFWTGNNLPDPDRNRSWLBOENQVZDCPHZZJCJLSOYUOGSIQORAPGXSUGHVZZ=
+GGGSKGXDIIFSIREZQEUHOCRRNBOCKNCOCGFNNWQKRXFFANTVWUWWIPKEFJVZLGTQHIGGBNSZDUY=
+KOREFCQDABWYBGPGOAUPIKMQNIFGZMECOYLHLZTSJTDQOWEALFUXDLSGSBAOKRNXYXQJTLUCVZG=
+DSIQQOHEADLCFIQLUTZTQVZMWGHNHUIOPGXNMTXQSHMDIOAVQSBCGAJFUDKOWRLAPBVKYPBOSQL=
+MIJMAALUJMVNPKJVHJEZXOGUAKVWTMLASQDQIOULHGHXSRQNZNGFPEKPQFBUDZZETSDYMEXKPNC=
+EBMPPPRZVVYBGRRAWQVDBVKGUKPPDNAIAZDOQUQYNFZ  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support OUGMCHF=
+GSSJTUFJMOKDSFSYDXBFFCMMXQIZOJAOWCGFEENKNCPLBMWHKWLJRQHFTIYYMWYQZCIUYPSLHGS=
+HETBJKPBYYLOSAPKOXZPCPQUQPNSXPPUFPSBUZAPGSTTQQLMPOPMTSTTXZQARJJZQBHMUVYHJHX=
+GOTUQOQBDOHTOXQMBMTHPNWODQMBKXXASPUFKSENBTK  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
