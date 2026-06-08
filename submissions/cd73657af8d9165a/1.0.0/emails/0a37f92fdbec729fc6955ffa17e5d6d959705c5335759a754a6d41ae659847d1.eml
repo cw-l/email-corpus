@@ -1,0 +1,1121 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1780807607; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ev6RYcIwJokTgwA8sn9ZKEjjdsgoGW4A8Un/4WysJ+hSruXezr8GPdfO1Guh2Rh5b1
+         k5At67/ND7jOot2ztOhF5BCfovlJ1t2KkPJt21VIk7GqqlXgRglNNT5Fhh6B/qt/gLFw
+         uZvDDiLd8Ts3eQ8CS9M5Ci1zBOd1h9sWkTs8tjtEtvO1xNMw8TiMx/jv8Mop1LvTaw2K
+         dKIIWf5O0quUFdxm2aKdtNO53p5gGSn+aMyExd8+6ruuxHQp5DmA+Dsdxtg+DpbpDaAC
+         fWWY+CTAEF3zuSPlMmyrRAQFncT1cZqkQEwS5Pd8DkJGkd3EkPsIz62y1PXBlQgK5UQS
+         7GSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20240605;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=rhhBT8ECXO/cQkOvhses0v51cb40Q5afHXAkdKswWgE=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=k2I2yyK0epzSd1yolfRw6S4pgN0PNHvkXKSJaQL5eraAXcGkO8WVX9VRivMamA/Xls
+         nnGGiksgTkXvOf/GnkQTmdYfXMnYlhCdJavUWZuUz4Y5unpt/doRTxtpqoBiqNNfOg9s
+         F06m5xb0NAB3PWpHQ5U+iI+szJHovVwYPVTIo3xKqPo4w81ktqbSh6LGxKURt8MmzoIU
+         LwMJbhXYUWBm1ptkLsUD+o8f14SfNkWb54goXxuPSegJpnDIBhazLfX2xjVqayXPQ+tv
+         3SkCnK/dO7zxS6ARLJrDnX8T6f4i8/1iNQYuV7huAIof7QLxfp/8oEp5nd440n4mqtx0
+         /DxA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cvcwxcvr.consolidation.lunovian.my.id header.s=smtp
+ header.b=AQkunxCD;
+       spf=pass (google.com: domain of
+ ocopjblktgtiw@consolidation.lunovian.my.id designates 46.31.78.39 as
+ permitted sender) smtp.mailfrom=ocopjblktgtiw@consolidation.lunovian.my.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cvcwxcvr.consolidation.lunovian.my.id header.s=smtp
+ header.b=AQkunxCD;
+       spf=pass (google.com: domain of
+ ocopjblktgtiw@consolidation.lunovian.my.id designates 46.31.78.39 as
+ permitted sender) smtp.mailfrom=ocopjblktgtiw@consolidation.lunovian.my.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=cvcwxcvr.consolidation.lunovian.my.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=mzcuhpskfddnvsuybafuh@cvcwxcvr.consolidation.lunovian.my.id;
+ bh=82jPupFyzCmXh7h3bg603RAMgao=;
+ b=AQkunxCD+ESRA55UZimNcEDQV7Mb1W1lUz0E49kY0W975Q33ipHP1QE9IAIYfg55pDBc90hJ3NEz
+   1A8TBTI3FwyVc/itRpzGIayoXeyxI0wL9o5zfFZgdYoTLqFzNqJYAdpF9MhpaVR/1b5DTKHR/63Z
+   42B4xXTzl0lTO7OLD0okWeAyG4y1PAeT1U1wUqyaUjJCvXKR4y5vZq1EKh7EneOsedMDsKqf2LIS
+   zxlfmUd8GEi2s3nG34QhClDB80aLs5UlaXAAd+EwfBUDU7q6oX9+hgztdq3rZuX9ZyhpTQXHGplB
+   5oZ7Up//xxMDnHvNHyi/HCTXUcQYw0cme/k7BQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=cvcwxcvr.consolidation.lunovian.my.id;
+ b=cJ2EGRCEBoVtY3ESRlHRVyU3XO6QhcACGpFiueOx9StEbfleOif1avRlcfXkLLqLdKI5uSiEeAkp
+   HafUz8ee2xa7P3hSuq1fJl5CPNN7NS9FdXQRAZPfX6q5ZjerQcJ+gJbaFS7BtA2Tt/71OcyQ9Fa7
+   V7AAkILpxnYn7XslHeaEgGabPkGyLvwDzJI9GVLaniCXK1qXbvRPeqeOzrv8YEFmjb88JFm2Kp0v
+   bPCCN+SDTGiom1uEOpAUA//RdpQtxLVJotE7gRiO7MOOyNsXcAPy25qiHwNx9nfGF3A5wqsQxcNt
+   058SyZfVX+/utZil01pSvqy0xcX8O4rO03BM0w==;
+Subject: This Viral TikTok Whitening Kit Is Selling Out Fast
+From: TikTok_Shop_Deals <eayhawv@cvcwxcvr.consolidation.lunovian.my.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.39
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <cstialwlnkhlsqqizbmrpkbopqpwzv@55xdsct867p6hvzudq>
+List-Unsubscribe: <http://preacontently.it.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Sun, 07 Jun 2026 02:05:44 +0000
+Sender: mzcuhpskfddnvsuybafuh@cvcwxcvr.consolidation.lunovian.my.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d126863&izeyb=3D564-32&lm=3D195982JNSY37255&sd=3D7&pag=
+e=3DdRSn22tKE1BL2ZG" style=3D"text-decoration:none; color:black">
+
+
+<center>
+ <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#i=
+ndex[.]php?search=3D4&d126863&sqnwy=3D564-32&lm=3D195982BSAU37255&sd=3D7&pa=
+ge=3DzPeelGrFR6CfNTW" style=3D"text-decoration:none; color:black">
+<tr>
+                        <td align=3D"center" style=3D"padding: 30px 30px 30=
+px 20px;">
+                            <a href=3D"hxxps://storage[.]googleapis[.]com/w=
+hilewait/brightway[.]html#index[.]php?search=3D4&d126863&qmacs=3D564-32&lm=
+=3D195982ZIBQ37255&sd=3D7&page=3DXK17OBIZba3HBG7" style=3D"text-shadow: non=
+e;">
+                                <div style=3D"display: inline-block; backgr=
+ound-color: #d93025; color: #ffffff; padding: 10px 20px; border-radius: 50p=
+x; font-family: Georgia, serif; font-size: 16px; font-weight: bold; text-sh=
+adow: uppercase; letter-spacing: 1px;">
+ 2,000+ People Claimed This Whitening Deal Today =20
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+
+</br></br></br>
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en-GB">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Special Report: Teeth Whitening Kit</title>
+    <style>
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=3DFraunce=
+s:ital,opsz,wght@0,9[.][.]144,300;0,9[.][.]144,600;1,9[.][.]144,300;1,9[.][=
+.]144,600&family=3DOutfit:wght@300;400;500;600&display=3Dswap');
+    </style>
+</head>
+
+<body style=3D"margin:0;padding:0;background-color:#FFF9FA;-webkit-font-smo=
+othing:antialiased;">
+
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color:#FFF9FA;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding:32px 12px 44px 12px;"=
+>
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width:600px;">
+                        <tbody>
+
+                            <!-- LOGO HEADER -->
+                            <tr>
+                                <td
+                                    style=3D"background-color:#ffffff;paddi=
+ng:20px 28px 0 28px;border-radius:6px 6px 0 0;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d1=
+26863&xhatt=3D564-32&lm=3D195982NHDA37255&sd=3D7&page=3D3grDtXDR858dZPg" ta=
+rget=3D"_blank"
+                                                        style=3D"text-decor=
+ation:none;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/VpgU7Y9[.]png" alt=3D"Teeth Whitening Kit" width=3D"130" s=
+tyle=3D"display:block;border:none;max-width:100%;">
+                                                    </a>
+                                                </td>
+                                                <td align=3D"right" valign=
+=3D"middle">
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Accent underline -->
+                                    <div
+                                        style=3D"margin-top:18px;height:3px=
+;background-color:#FF004E;border-radius:2px 2px 0 0;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- HEADLINE + INTRO SECTION -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:30px 28px 26px 28px;">
+                                    <!-- Label -->
+                                    <p
+                                        style=3D"font-family:'Outfit',Helve=
+tica,Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;tex=
+t-transform:uppercase;color:#FF004E;margin:0 0 16px 0;">
+                                        TIKTOK SHOP EXCLUSIVE DEAL</p>
+                                    <!-- Big headline -->
+                                    <h1
+                                        style=3D"font-family:'Fraunces',Geo=
+rgia,'Times New Roman',serif;font-size:33px;font-weight:300;color:#2A0A10;m=
+argin:0 0 22px 0;line-height:1.22;letter-spacing:-0.3px;">
+                                        Complete This Quick 5-Question Dent=
+al Survey & Get 70% Off WellaWhite
+                                    </h1>
+                                    <!-- Author strip -->
+                                    <p
+                                        style=3D"font-family:'Outfit',Helve=
+tica,Arial,sans-serif;font-size:12px;font-weight:400;color:#776366;margin:0=
+ 0 0 0;">
+                                        TikTok Shop Partner Offers =E2=80=
+=A2 Only 100 codes released
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- HERO IMAGE -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:0;">
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d126863&fwftw=3D56=
+4-32&lm=3D195982YHOF37255&sd=3D7&page=3DUx2Iig2lbzpgEst" style=3D"text-deco=
+ration:none;display:block;">
+                                        <img src=3D"hxxps://i[.]imgur[.]com=
+/MsBGm4t[.]png" alt=3D"Teeth Whitening Kit" width=3D"100%" style=3D"display=
+:block;max-width:100%;border:none;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- OPENING COPY -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:28px 28px 0 28px;">
+                                    <p
+                                        style=3D"font-family:'Fraunces',Geo=
+rgia,serif;font-size:18px;font-weight:300;color:#4D3A3D;line-height:1.75;ma=
+rgin:0 0 20px 0;">
+                                        TikTok Shop wants to hear from you.=
+ We are hosting a quick 5-question feedback
+                                        survey on dental care and personal =
+oral hygiene. To thank you for sharing your
+                                        experience, we have partnered with =
+WellaWhite to automatically apply a massive
+                                        70% discount to their top-rated at-=
+home Teeth Whitening Kit.
+                                    </p>
+                                    <p
+                                        style=3D"font-family:'Fraunces',Geo=
+rgia,serif;font-size:18px;font-weight:300;color:#4D3A3D;line-height:1.75;ma=
+rgin:0 0 20px 0;">
+                                        There are no promo codes to enter o=
+r extra steps to follow. Once you answer the
+                                        final question, your 70% discount c=
+ode is automatically applied, bringing the
+                                        price down from $158.00 to just $59=
+.00. This offer takes less than 2 minutes,
+                                        but with only a handful of discount=
+ spots left today, you will need to act
+                                        quickly before they are completely =
+claimed.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- THREE FEATURE CARDS -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:4px 28px 24px 28px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Card 1 -->
+                                                <td width=3D"31%" valign=3D=
+"top"
+                                                    style=3D"background-col=
+or:#FFE5EB;border-top:3px solid #FF004E;border-radius:3px;padding:14px 12px=
+;">
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-t=
+ransform:uppercase;letter-spacing:2px;color:#FF004E;margin:0 0 8px 0;">
+                                                        LED ACCELERATOR</p>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:=
+#4D3A3D;line-height:1.6;margin:0;">
+                                                        Uses dentist-approv=
+ed LED blue-light technology to activate the
+                                                        gel and lift years =
+of deep coffee, tea, and tobacco stains in
+                                                        days.</p>
+                                                </td>
+                                                <td width=3D"3%"></td>
+                                                <!-- Card 2 -->
+                                                <td width=3D"31%" valign=3D=
+"top"
+                                                    style=3D"background-col=
+or:#FFE5EB;border-top:3px solid #FF004E;border-radius:3px;padding:14px 12px=
+;">
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-t=
+ransform:uppercase;letter-spacing:2px;color:#FF004E;margin:0 0 8px 0;">
+                                                        ZERO SENSITIVITY</p=
+>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:=
+#4D3A3D;line-height:1.6;margin:0;">
+                                                        Formulated with ena=
+mel-safe, non-toxic ingredients to prevent
+                                                        pain, gum irritatio=
+n, or tooth sensitivity common with standard
+                                                        whitening strips.</=
+p>
+                                                </td>
+                                                <td width=3D"3%"></td>
+                                                <!-- Card 3 -->
+                                                <td width=3D"31%" valign=3D=
+"top"
+                                                    style=3D"background-col=
+or:#FFE5EB;border-top:3px solid #FF004E;border-radius:3px;padding:14px 12px=
+;">
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-t=
+ransform:uppercase;letter-spacing:2px;color:#FF004E;margin:0 0 8px 0;">
+                                                        EASY 15-MIN SESSION=
+</p>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:=
+#4D3A3D;line-height:1.6;margin:0;">
+                                                        Designed for simple=
+, hands-free home use. Complete a session in
+                                                        just 15 minutes whi=
+le relaxing, reading, or watching videos.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- SECOND IMAGE -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:0 28px 24px 28px;">
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d126863&lyoqy=3D56=
+4-32&lm=3D195982RIPM37255&sd=3D7&page=3DLBpusWC8FhDKVOj" style=3D"text-deco=
+ration:none;display:block;">
+                                        <img src=3D"hxxps://i[.]imgur[.]com=
+/xFFBA6s[.]jpeg" alt=3D"" width=3D"100%" style=3D"display:block;max-width:1=
+00%;border:none;border-radius:2px;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- RESULT COPY -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:4px 28px 0 28px;">
+                                    <p
+                                        style=3D"font-family:'Fraunces',Geo=
+rgia,serif;font-size:18px;font-weight:300;color:#4D3A3D;line-height:1.75;ma=
+rgin:0 0 20px 0;">
+                                        Thousands of users are already show=
+ing off their bright, confident smiles on
+                                        their FYPs. Real customers are repo=
+rting visible results in as little as one
+                                        week, saving hundreds of dollars co=
+mpared to expensive in-office dental
+                                        treatments that cost up to $600. Do=
+n't miss your chance to secure your
+                                        professional-grade kit for just $59=
+.00.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT + OFFER BLOCK -->
+                            <tr>
+                                <td
+                                    style=3D"background-color:#FFF0F3;paddi=
+ng:28px;border-top:1px solid #FFE5EB;border-bottom:1px solid #FFE5EB;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Left: product image --=
+>
+                                                <td width=3D"230" valign=3D=
+"middle" style=3D"padding-right:20px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d1=
+26863&guirz=3D564-32&lm=3D195982WHHK37255&sd=3D7&page=3DM4UV1JmgELDXUZd" st=
+yle=3D"text-decoration:none;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/txjm1nF[.]png" alt=3D"" width=3D"210" style=3D"display:blo=
+ck;border:none;max-width:150%;">
+                                                    </a>
+                                                </td>
+                                                <!-- Right: offer text -->
+                                                <td valign=3D"middle">
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;letter=
+-spacing:3px;text-transform:uppercase;color:#FF004E;margin:0 0 8px 0;">
+                                                        LIMITED TIME FLASH =
+DEAL</p>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#2A0A10;mar=
+gin:0 0 8px 0;line-height:1.2;">
+                                                        WellaWhite Teeth Wh=
+itening Kit</p>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:300;color:=
+#4D3A3D;line-height:1.6;margin:0 0 6px 0;">
+                                                        Save $99.00 today! =
+Get the full LED accelerator kit,
+                                                        professional gel sy=
+ringes, and custom trays for just $59.00
+                                                        instead of the regu=
+lar retail price of $158.00.</p>
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#776366;margin:0=
+;">
+                                                        Survey takes under =
+2 minutes. No payment required to start.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- CTA BUTTON -->
+                            <tr>
+                                <td
+                                    style=3D"background-color:#ffffff;paddi=
+ng:28px 28px 32px 28px;text-align:center;border-radius:0 0 6px 6px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"center">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"background-col=
+or:#FF004E;border-radius:4px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d1=
+26863&hhvug=3D564-32&lm=3D195982ZIPE37255&sd=3D7&page=3DMLPiuvbQV33jqvy" ta=
+rget=3D"_blank"
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:600;color:=
+#ffffff;text-decoration:none;padding:17px 40px;display:inline-block;letter-=
+spacing:1.5px;text-transform:uppercase;">
+                                                        START SURVEY & CLAI=
+M 70% OFF
+                                                    </a>
+                                                </td><br>
+                                                <!-- SPACER + FOOTER -->
+                                            <tr>
+                                                <td style=3D"height:24px;">=
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <p
+                                                        style=3D"font-famil=
+y:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#998487;line-hei=
+ght:1.7;margin:0;">
+                                                        Individual results =
+may vary. <br>
+                                                        <a href=3D"hxxps://=
+storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D=
+5&d126863&ddboz=3D564-32&lm=3D195982KCYI37255&sd=3D7&page=3DE8eH0FuRUaMpEpZ=
+"
+                                                            style=3D"color:=
+#998487;text-decoration:underline;">Unsubscribe
+                                                            from future
+                                                            emails.</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+</body>
+
+</html>
+		=09
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+	To Unsubscribe Click
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d126863&jtvbm=3D564-32&lm=3D195982COQT37255&sd=3D7&pag=
+e=3DdDhCPlN7IhbFH95">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</html>
+ <tr>
+                <td align=3D"center">
+                    <img src=3D"hxxps://tinyurl[.]com/SDGGsdgfg/track/index=
+[.]php?search=3D3&d126863&dueit=3D564-32&lm=3D195982MPOZ37255&sd=3D7&page=
+=3DNhA3S91Qz6Fjeon" width=3D"1" height=3D"1" style=3D"display:block;">
+                    <img src=3D"hxxps://tinyurl[.]com/SDGGsdgfg/track/index=
+[.]php?search=3D3&d126863&rwhds=3D564-32&lm=3D195982GQWD37255&sd=3D7&page=
+=3DmWjUuQm7UYoQfuz" width=3D"1" height=3D"1" style=3D"display:none;">
+                </td>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object KBYAFIQJTWLIARXIJVJNULLXUNTJURLRJLDTYLSPPZWBONFNTESJINNAXFFG>
+
+Dear LVMZPFFWDWIVBJMLTQAFOM exnblzvboehffkmxzctlzj,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is zkiuwhsrrpxhbrhtbnhwjev=
+msgsb.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi exoxudgwmcuareompr,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi ibvezatrkpfoxvrncxiildcp,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: lcgzedlcatkgpsxyurpfhfjhbx
+ Site ID: cdumzeubonuglutzeksowytsl
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team QXHZIYQNDKRRNIFSCWJIFQ
+
+Powered by VSGAFQNXQHMZOHOCWKFZEY=20
+
+</title>
+
+Dear RDGCJMSFVAMLQBVSAEPYLBVKI fljsdliqmpvudjcoqsdxfmqelr,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is fkefimswuahfdizjglaemct=
+sk.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood TKRTRIQBJOVIPEPXHWVWYU,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+RDRFCOIRPLZHRGHMJSVQKDKSWIZNGJMFAMLTPHGZDRJTQHRXNIFMQMKVZSEELBYYVPJXVCHJBLX=
+QPUXXATSEZMPGGOCRSGZPOSTAQPKYOHZOMAAPDFLKGQDSAEWGSYHZDZVBLGPSJMHWTJLPKUNCIV=
+AOTETLKOIJHASMLYUZREWVKZEHKKRGQDZKZLFRDBHNPGWMCKKH
+
+ Hi MUEQOGWEGRFCXUQNPXNWMI,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+bhuyqyfmnbwuiffffzyglcyvouptfupyyezxfkfkrtmzbcknbilwimmgfzbbriyxfvggkydthdz=
+xomeeaunkikuarnbmyxkycahlydcusifdpvgmspzwncsmbfpczaijdxqxbdkooskxuhqnmfnokl=
+bpnwvldrieyuwzzvmnrifusjocmjtyzbmtdozttrglhuhapsxc
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi DABWRC56JX877OHCIHI16ND6T,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team RAQWZUPKVBEEWAATHHEBKF
+Powered by ZDFVEYYIYHIESBMVFEFRYI
+
+Login Name: GQMUBBMVNZSGZCPMOMXSUZ
+Password: NXOIPNTNXFVVJPFORGAWFO
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: QNN
+Password: OGEIZOCEIQEEUEBTSMIDUF
+
+	T8XY5VFY02SN3CYXOM ZCWIB9E4ES4ICXN AP0XK6CE7OD2M HH3E1G9AURE8SVKVV4 Y8JEG3=
+CYX7U4XG0 TMRB03QYP73ZZ CH7S5VV6W7QYE0UBTE=20
+	BYNGWDAX8UUNY293XX BTI8ZT9VTLMIXQ5 DITJEZQ9UAT1E F9GVJWWRSG1MQLFE8K DPM9NK=
+944RC0V0N EVMHI0ZIE0EGO DD1BR89019QTH2UG49=20
+	8ZKAKFUB77OX4AJ ZQR6HECMNGAJ4 VCBLIZMCBIY18BY9TE CHF5420WAJKB7SQ L5D3EJH7K=
+YEWS 2QWH3MJPPUSB82MKQE 5AY17XVCNSUXRI6
+	Y1TIGMLHMJM5A H4S7RC65HYNVKPT2W9 DL7R9N4NDMPHLQV RK2FF5H27BIZ1 FECMA8WQ27X=
+VJZRQVR C3SVNAU19T1BI5M XEPDOXOWYN6KY=20
+	4ZRAW9NAOB7H0COYQB 0W7139ML2R1TZ4M CQPDYSQ6ATOK8 NTF38HAG6EBVT13YDW HZWJ3L=
+M5ES71WRM GDJ90VFPSQ9O8 2E509GRNWEMWO4WIVC=20
+	1QB0N77RKGV3SN3 Q5LD3VF5Q9USI JAUTYFBP342TMZWKRY 0LODD51HSYAJ3QH 21FVW4NTG=
+MLZ2 J7WPBS9X7KR2ODS4NK 2637BKV47UK6JMY=20
+	IJ5TP047U5JDT WTZXMXCJO66W1HC2K1 DARHTOZ4L7ZBYZY B5PF4KQD42C1X NMJPT159V79=
+RDL4FY9 Y7JZP4PHFPVVILT 41IHO86KF6QBE=20
+	5NJFQX23UJSB6M7MWB 478EJOM54O2PPSR F9HXT7CBR68C7 HKJAO4U1K2736MFOGE JURBS4=
+VU9VP6YKF LYJC1XHNDLZYG OYQMB1YR786YRAC525=20
+	LBBY29S1UC3J46W 04X69LEXM6P2T QW7F6H8QJ5GNCXR2G5 6SAH9CH0PZR69GA B0AH2WEX3=
+CZOY L28QDUP6S0G7XSXS53 B7UGTBWLSLCND0Q=20
+	WBBLS05PZAQUT WSYXQ6WMHVRR61XPGP VSZEONWX6VXBI3J R3TBVCYOHQ926 DOMFZS7JHZ9=
+QP6D7LI OR6YNCZ2N958P6G G3WXRPIKMSIVY=20
+	UDMK3BN6ILYDUZ2Y8F 42KQSZSO1PXOMC1 R7TQFMK0632LM 60YKU9QSV1304CQZBM N18G08=
+1VMMWSIHX 6AB7HK3XGNA7Q LRMMZ0N5HWLLVPJQDZ=20
+	4WNCDRH1TB6WUH2 0SNDDY2KO79GB F8UQVO3WAJBR42PFP5 OKMW4LLSEYB64S8 JBFHRTWWX=
+RLC2 8VNJ3MY986RXMMJM6X DO0K6YNTRNJFCLM=20
+	QT4J4147X4WQP NFVKRV9GP5VL9T60HE QM1LJWANRGUA9SU HGNFWZYE1IZBU INJ9GH9M86K=
+XS6JB4P 0M572PEDRB3B0CU HM3EB61M0A5JL=20
+	1Z3M6G3T6BJLOAS1YA ERUN6V2MU7QAOZV FO00CZOQ37JYW 6E1MAUUH4BFKIV5PES BCE6WC=
+D4U8OL753 UZWBIO3NEH929 43APYROWXMCKXUDQ7R=20
+	MKEGH5HMNV68XSI UVJFFNMAG0R1L 7MEKE6HM8JXKLFG2K8 XR5BT4U1T4DPBKU NFM0TQ2MV=
+7EPS SKIB9YQHAK97YING0V P0OZQ3RMYR596KU=20
+	YB8DYL8E9IIX1 F6F4F0LQXCXO0XGPQ6 WXF6ADS1V4C1IXR ZG9EDF6OH5DKG QA2SHWMLPDH=
+C2TTA6D 2TJSNCXHRVAI7LF W15F0DXED7WGG=20
+	FTD5EMCZVL95BDTADM T1PXX8G8NT5FIT0 16EIX783OXEZU UWTHZJQ173GPPJI5VY YC4CIF=
+E2L5YJ46T NVIUWRDW1OJAM UUS9B6LMY8YCQTO4MI=20
+	FK9DOVLQZXOE7LF ZS9UZFPY4HAWH 8DXHR7Q4R436PZCCBL 9TZB4SIKU61UWFR 9F60PRJIO=
+SD74 8N8168UWV95ZK78QDW Q5OI5HW7KS0SGQ8=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+VNIZMELBBCJLUWVAYTCCKEXAKYHCWNBSOEGDAXVDUVJDKEJHRTNMHEWKEUBKLQRPOIOZUVORIGN=
+RXBAQPHSZDBSWREPBWESSOBHIGAEDNJORDDZWKQZETUBQIBNEWHATGAOIOGEFKTCBKCELPPRJGD=
+HLFWIXEOHVWEUJCSVXJZTROHOXXDCEPOUDWIMIEOBSWYRQPZNLI
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to MLWORQOLQIQHJABUCLXRZ=
+ZALKAJRCHOVLRQRLYRGIJSHWRKEDKGSLFGHSRYHFGWYWXAFLYFLKXSCKQWTDXHZHIKPJBURSUAK=
+SMJUPAGSVONZAXTGHSALFDIKKFPMTTFBPJRPAYOQIZEESMERMUYUNNGZKTWIFPJJRZRGFHLQBEF=
+YVDPFVQOWGRHUSUBTXECPYZCGXHCI roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department QNJYEXPXQZCDXVVSUWKTLNVOIGEVXWIFOCZGEXPMNRIRJFZS=
+BAQEZCWCVXOFNKOYHCFLPYCGZTLWMBSDWDHJGVZRQTYDGWZKVHNAUQCWFJQSEZTLPVCWIOAMVYW=
+TKBKVFPOCADXMOAOCNSUJRGFSFEYZBGQSCGWISNTRUUEIIFHZWEJNNFGAQLZNZSJGHKIXQDFWLN=
+MXD to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation FUXOUXTXXQEXTCM=
+YMWJQQWEWBVGUFWEMNJDYWNLRHPXYXHHEMRHFIPQWMMAOABKQBFEESYRPURRFMEYZHYZBXBNDPD=
+VUUBYRNUPWKXWHFOFNKIODLZGKSATZWVJFWDBKTDXAEYGPJIMXFPQPKGUJHMSOWDBEZWIOGAGCW=
+UWENPBYHQUNJMBQMEDWEYZIDLWUCTFDPSHJK development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will HTUXIXPRVRZXMYEFUBNVIUVMEQRPJEZAHLUYZJHUYOSPVOTXVYVQMLDEI=
+BAGOITCVCOVIDPHGXDNTIXZBCCLIRNIVEABUZTSXWPKWJJQSZPJLQMPDYRIWJBYFWHRAYLWRGXW=
+ACIRYJXAVWEEFQFRWBVGRTZOJVWBTYXEHISTRFWTHRWNRYSWUTFRLUPUVIDPRVKOBCZTUSZPHZU=
+CZPFARJVPAVQVPYLSLHIYVKMFQFYTAEVYEDCQASVDLYRMZFHFKQIWXOGSKPPDQENMEARVFHJORT=
+WTUWGRHEOZICRHIOVVKKDOSVZNYEQFUHSFXCJUCWFPXDPAXIGFSDFTLCSVFWXJJKPYACTXAJCAY=
+JVBMDZOWOGLSALGGJURASQYENAYHGKRPLDXUNDGXMDG  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support BTKGTOJ=
+ZEAUGVCNNQXRYRYSGJHRTVZBKMWNFNZGGHRSAFMSGYMEESCOQSJMFEHJINRRDXJZCJXERJPBFZW=
+LZHYTHZOCDVIIJNMIBAEIKWQLDCYIFITONIIJBBDQLYQZRZUXHDMBLMVMUSNVFTVALVFJZWFNWY=
+HBHKBKEPMUPTKHLVJYUYCQRBNQOHVYWWJVONDTSXVCC  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
