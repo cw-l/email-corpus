@@ -1,0 +1,547 @@
+Authentication-Results: spf=pass (sender IP is 192.174.81.47)
+ smtp.mailfrom=hr.surveymonkeyuser.com; dkim=pass (signature was verified)
+ header.d=surveymonkeyuser.com;dmarc=pass action=none
+ header.from=surveymonkeyuser.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:67B2888465FC4A4BA677B98C5C547267ED69460904F06A9209C0354D8389ED0C;UpperCasedChecksum:250B8B7608760E88AA08B9A64A2537BFABE87C7626B106765CAF0F2A622D7BB8;SizeAsReceived:1606;Count:13
+X-MSFBL: YcywXrxTT+LUB/8ypYK9DzEtK79xw1l+zw+5tvn46pc=|eyJ0ZW5hbnRfaWQiOiJ
+	zdXJ2ZXltb25rZXkiLCJtZXNzYWdlX2lkIjoiNmEyNjkzNTEyNzZhZjhhNTVjNjE
+	iLCJjdXN0b21lcl9pZCI6IjEiLCJyIjoibGVlLmNoZW5nd2VpQGhvdG1haWwuc2c
+	iLCJzdWJhY2NvdW50X2lkIjoiMTAyIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=surveymonkeyuser.com; s=scph0816; t=1780961683;
+	i=@surveymonkeyuser.com;
+	bh=c3a7xp+zt6IXEZjBFaXBl6Nfo1SnhU7dO8R7TrAZ5PA=;
+	h=Content-Type:Message-ID:From:To:Subject:Date:From:To:Cc:Subject:
+	 Feedback-Id;
+	b=FDQymlmfTlp+UzmDSzWB0FkLYRezU6YVewflM3J/wvsGWG738qQik16YcTkNiZCto
+	 f4vnKjw57jb6An9fLG1YGiWV0oH6Zutt5MU/yO+5bTRiMjv2icp0cScPL3eBHHWci5
+	 pJ57aDaSX/UNY80V5rTzjmjiQM0Ck4UuSfZDrtJk=
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Authentication-Results-Original: 
+ i-01fad9042a76220d3.mta2vsmtp.sd.prd.sparkpost smtp.user=<hidden>; auth=pass
+ (PLAIN)
+Message-ID: 
+ <16.C5.39967.391572A6@i-01fad9042a76220d3.mta2vsmtp.sd.prd.sparkpost>
+From: "pending-instructions@upsasia.com via SurveyMonkey"
+ <member@surveymonkeyuser.com>
+To: redacted@redacted.com
+Subject: Your package is ready to leave our center. 
+Date: Mon, 08 Jun 2026 23:34:43 +0000
+Reply-To: pending-instructions@upsasia.com
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Jun 2026 23:34:49.9330
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 661e8aa8-0b55-44cb-50d0-08dec5b68894
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AMS0EPF000001B0:EE_|PH0P220MB0677:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AMS0EPF000001B0.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 6/8/2026 12:36:59 PM
+X-MS-Office365-Filtering-Correlation-Id: 661e8aa8-0b55-44cb-50d0-08dec5b68894
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 192.174.81.47
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:5;ARA:1444111002|3069299007|10300799038|970799063|32080799009|5139299004|34130799006|32020799003|46080799009|9400799043|3151999006|9000799056|68400799013|1680799066|22070799003|6089299003|56899033|1380799030|1370799030|1360799030|1602099012|4302099013|440099028|3412199025|18021999003|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Jun 2026 23:34:49.4821
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 661e8aa8-0b55-44cb-50d0-08dec5b68894
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AMS0EPF000001B0.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0P220MB0677
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.7778587
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0092.005
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ oU9bKqikNXtCp+TLNeGaruim0M3CccR7yajmtWhwEenWNSVWkGXOTqTdgEsOyDgT1oFoHoLDKb53PclXJ37ZFJYThP09pbSvvtcS8YErlODwxLGVb/NA5y2N49/FcNWRcF2EWfwixpPowrgO3c9R9qP5mWewQKIH1qomrheg8Lljdi4hx1jdE7R+d7xmpH17xK3zhmLlSrVF8BSbDW1YngMct+wi7izJIiD0m/nf3pyWiUTKgztDPR4BS/++lcpDWQyhxsi5eCyn3Xtpl/iLhbHFVtrgkve/PykCzHGabUBMCudKolnPFLGJb/Bf2aUyZOBc2DjSRWZmq/DwM8DH/yX6O1Et0LA+oapr0UOCvagP/3ezz0hP0IqWTqOfFDhOHnqTZazUoaJ5H9nq8ZxJxxAp8hPdpCPwp+RqLbR4BDhLypS2nIubnPfyHIi4zSzhwkMEMKJPH22XYtNtmmtbvKRB+3KhjqSiJ+R+sZSjz/VdWESLDqBcIFJgiTW/I2Z2O3CFNVQRYSPcVnNhFRzuNBrR5CW20gEEfdPvzeZV0Unvz1CI415IXA0hP+hP+VgkD0Ys5STgJ3WId6aJ+rAg5LzZLp6awdAc03qCIt2p43P69UqMNj4spEA3YF2vcwv/HGVURYLM8CZrj1Yq7BScnHynunD+4WDnrsyGd2Ii0ws261XNUZMHobbMnJ1mI18L0syYZiCL7wlFU5ce3M7xGPURhILVySWoGPRoDFG8DzF3EwzlWKAEENkxLTWNgVe7jtuwkmZGQMrN8idrk0HVsGdI5V5E7k+9EWcMsI2tbxtKgv2nEJEv1B91cg1q/9HpsWZo7s6/WbYgaP9XDk1fR/QorY4HR856nAo+qS3Z+RT85Pjca9v/fDPf6rG9kEMBrMbifxliRkQckFSgfI6zoZkz3eXWNlN0h5Kf/ay3tMcPYUfPcW5LHByRTE1kdraXoVbp6HsuinXWVswXOoRlfZEaXEbvzFRrLjEIjJFfhRIyDYxd5qJOGGQ0ByADH6It7gg+nnEWPq1r9/egG1XWKVQcYOoSNZqRGu6ExL83xrMOl7ru3yUKYKB8hc1kUxBKGYsopl05VmnTQ8jUnIbgfbZkLXgkriD6ZlQy79kdExlI0vAmuuvgMH9fSrr+BwE2iHJ5wU0YRSfVRvvk3rB4pMhxXVO8sky9oqRlLyolbhFM5ekT/YUCjka2js5tEew63CV6kLu6kK8YD6sACsvZfc5IelL/RD3iFMrcipQjILbMyVbPsjRn/IMnpmJ57ffWQD8mQF3EQicyoElNcqVWLufb2AKYEZ5qVdqkvR+i7a8kriK4PNfegN21CV8ySyuhIxaVGJlpzrar1UqO5HLk+LlhQK1TWACr4HtGE6pDeqc+SadyYwwT5XpqMngNK+Vkzr2h7s8vm7aLoOPfUh9P0UFs90i5kBNU0rWs80lEVYdWOUqVesy0UX7XNFokJzQvNPIVehNEjZsE0l5d7RCIUDCwVzlCjVhe62lubMJAOBaNlx/hT0epsSd9xZXzEVlkM/QSaq8jrkf5vFVB57p0b4L9v/TuAmAU2H3SVy9AWZC3i+sTgh8Iwuxh1ek3kGKH1w7wFYmXAOw/D0lwRmN+oouMrRCTn+EQzv1BrMZig3g1yiG4HlhAOmc3bQY106mHsQJhNl7R+bd0auUuNm75VJPl7bg6cuPxMp9/hgYd7FOOCcrGuSH1ggH53XisXxWNEDNpOfXLlYVkDAW+ZefaUlzM2EjLL2egb4XzXGZMAoZgEe3kkY049/mlXtdj2RHa5g5eN/w2KE+/Br4I2PMKp4SckKauT0LLl+RzM6EhvJ5VaZ4gEo7xRIDhA3CF4oXuwnwDnofmeCWrBzmDnloJMEycNauedEd8JuXdbIWpNVt2nu0KfMmwJKntdnE+casFWyK3u3dWOvnmR0sdq0JzlCn6pwqpSsR8KbNkp+JkmZOKApvTtPjYiu2FhMEr/j1G+Xeg6z5srP6GXv8w0JXpnviiPVqw0mjclMPX9tiyxREcc/JJsSsxJ120QzbeIC/EHSXNVBqeohp5AFhWdOGUx0Z3BGetzPVyMKIkUJlLZMDv2txLg0PAe7VUcsIeFd4KJeQ2lxutPxF+vRe/naHLCU8sGxGixVVN+6yx4ZX7vbD7KFsla/LbWhymH6h3UoP5hqeluVWMbhVtEJu3Hvclmw4I1NQTp+aIaDLE928luTxTnXVQGsAsRFbUWVlRFH1CWXnRyzmtlNqUT8kV7reVknz/HY2eipdlghQ8uHEmqiWH5LD7pC5HbjK8Tq2rBGNbKCWJz7yiLqDjGsTAQTT/mg5N6fRDtLLGGqa8LhESBFcyslsrN4O6XzVYsbXa0vjUQrVaMsQhliQ6DUTL2t8J+sLtdQAEDYPr21hyRrRJxGMwzwNs9eo87oHd1oKDsB27m33TGb7kuyFzZf+X8eJhS5BQUSTNrip9u4K9j8g7yZRLurhi5DSTvWOyJW4Zat75KrurJkUk8Is/rFCJJnHky5wS68f4IeuG7JDV0Xor4e2s8/ey9UR/iPbRPsA5JcpL1p7s0k9z/Qo5IjThhdY9WpT3iFvHSISxq87NKrSxl2A=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"und" dir=3D"auto" xmlns=3D"hxxp://www[.]w3[.]o=
+rg/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:sch=
+emas-microsoft-com:office:office"><head><!--[if !mso]><!-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <!--<![endif]-->
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+  <style type=3D"text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+
+  </style>
+  <!--[if mso]>
+    <noscript>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    </noscript>
+    <![endif]-->
+  <!--[if lte mso 11]>
+    <style type=3D"text/css">
+      .mj-outlook-group-fix { width:100% !important; }
+    </style>
+    <![endif]-->
+  <style type=3D"text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+    }
+
+  </style>
+  <style media=3D"screen and (min-width:480px)">
+    .moz-text-html .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+
+  </style>
+  <style type=3D"text/css">
+    @font-face {
+      font-family: 'National2';
+      font-style: normal;
+      font-weight: 400;
+      src: local('National2'), url(hxxps://cdn[.]smassets[.]net/assets/stat=
+ic/fonts/national2/regular[.]woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'National2';
+      font-style: bold;
+      font-weight: 700;
+      src: local('National2'), url(hxxps://cdn[.]smassets[.]net/assets/stat=
+ic/fonts/national2/medium[.]woff2) format('woff2');
+    }
+
+  </style>
+</head>
+
+<body style=3D"word-spacing:normal;">
+  <div aria-roledescription=3D"email" style=3D"" role=3D"article" lang=3D"u=
+nd" dir=3D"auto">
+    <!-- begin image header section -->
+    <div style=3D"margin:0px auto;max-width:600px;">
+      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"cent=
+er" width=3D"100%" style=3D"max-width: 600px;">  <tr bgcolor=3D"#FFFFFF">
+          <td colspan=3D"5" height=3D"30">&nbsp;</td>
+        </tr>
+        <tr bgcolor=3D"#FFFFFF" align=3D"center">
+          <td>  <img src=3D"hxxps://surveymonkey-assets[.]s3[.]amazonaws[.]=
+com/collector/439984951/message/136165558/logo/b86f47ea-f15a-4bea-93b5-fabb=
+65aa4635[.]png" alt=3D"" width=3D"200">  </td>
+        </tr>
+        <tr bgcolor=3D"#FFFFFF">
+          <td colspan=3D"5" height=3D"26">&nbsp;</td>
+        </tr>=20
+      </table>
+    </div><!-- end image header section--><!-- Begin body section-->
+    <!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"" role=3D"presentation" style=3D"width:600px;"=
+ width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-hei=
+ght-rule:exactly;"><![endif]-->
+    <div style=3D"margin:0px auto;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"direction:ltr;font-size:0px;padding:20px 0;padding=
+-bottom:20px;text-align:center;">
+              <!--[if mso | IE]><table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-ali=
+gn:top;width:600px;" ><![endif]-->
+              <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=
+=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertic=
+al-align:top;width:100%;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                  <tbody>
+                    <div style=3D"font-size:16px;font-family:National2,helv=
+etica,sans-serif"><p style=3D"font-family: National2, Helvetica, sans-serif=
+; font-size: 20px; font-weight: 400; line-height: 32px; color: #333e48; tex=
+t-align: center;">Hi redacted@redacted.com,<br><br>We have noticed that you=
+r address is incorrect, your shipment is pending until your address is conf=
+irmed.<br><br><span style=3D"text-decoration: underline;"><strong>Item Numb=
+er:</strong></span> XR654789224678CH&nbsp;<br><span style=3D"text-decoratio=
+n: underline;"><strong>Expected Delivery:</strong></span> Awaiting confirma=
+tion<br><br>To complete the delivery as soon as possible, Please fill the f=
+orm online and pay the shipping costs on ups.center-webaddress.com<br><br>T=
+his step helps prevent any delays or incorrect deliveries.<br><br>We apprec=
+iate your prompt attention to this matter and we look forward to supporting=
+ your shipping needs!<br><br>Best Regards,<br><br><span style=3D"color: #7e=
+8c8d;"><em>Please do not reply to this email - inbox is not monitored!</em>=
+</span></p>=20
+                    </div>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+    <!-- end body section--> <!--[if mso | IE]><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" role=3D"presentatio=
+n" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;f=
+ont-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style=3D"margin:0px auto;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"border-top:solid 1px #D0D2D3;direction:ltr;font-si=
+ze:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-ali=
+gn:top;width:600px;" ><![endif]-->
+              <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=
+=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertic=
+al-align:top;width:100%;">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                  <tbody>
+                   =20
+
+
+
+
+
+
+<td rowspan=3D"3">&nbsp;</td>
+
+<tr>
+   <td colspan=3D"3" align=3D"center" valign=3D"center" style=3D"padding: 2=
+0px 0;font-size:20px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif=
+;font-weight:normal;line-height:30px;color:#000;font-style:normal;text-deco=
+ration:none;text-align:center"><div style=3D"text-align: center;"><img alt=
+=3D"" height=3D"150" src=3D"hxxps://surveymonkey-assets[.]s3[.]amazonaws[.]=
+com/survey/422676973/rte/7b65c487-98d9-42c2-b2d8-af8af6a13137[.]jpg" width=
+=3D"600"><br><br>Thank you for evaluating the quality of our services.</div=
+></td>
+   <td rowspan=3D"2">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"center" colspan=3D"3">
+    <table class=3D"table" cellspacing=3D"0" border=3D"0" width=3D"100%">
+        <tbody>
+            <tr>
+ =20
+                        <td align=3D"center" valign=3D"middle" style=3D"bor=
+der-bottom-left-radius:3px;border-top-left-radius:3px;border-left:solid 1px=
+ #F5F5F5;background-color:#F5F5F5;">
+                            <a href=3D"hxxps://www[.]surveymonkey[.]com/tr/=
+v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3PErDK_2Bf6OjNYOPsq=
+ZdKwgVO5XY6qA7KieKsyc05lPvPfEK1ex4ODm8d1IRYs3rzDZ9vepzE63nsUn6Jb7_2F8jLVhLl=
+8V5YFJ_2F3mIPQ11ebXGnQLKWepTs6UlfuZZA6Z80hG4uo6orCCwz_2B0ohB4SRE1LIG_2B9T7F=
+_2FkbctIF57EGOS5lbNRKGUCyrNtAy6HUoNitP7dBFmFbS23N_2BE40PtfgpwCEZHIlml0prf74=
+QekmhPCTfwTNbXotmjk_2FsMNqJVBHnx5xgKmWaSBJeX9S3H2axuWSQmJMYUdBjE_2FdKkrFvrW=
+ETfS4MXMRl0bQi5xbq4aN2pq3xR8meylhP24AwfM5SovtXdJq6dUzzNuZNExtIzKkiKSiZxC518=
+raD8ZAZfUDRinnMajz4Q1fFNAvQGRXOGh0kFjVRoRkS83b9C2USzhu_2Bc7vYif1Xf03bAUHTc_=
+2BMqRJIqcsgMMJnr2L7Nbnd75dDcCCPQlQudcgE6KtwJsBAc4oZndawXj8S9k0aCgMu5mrXeNII=
+k9FxAf8u9ofcVZ0SqZLSG3K72_2FNMoXod5p_2Fiu8RYeGVdmc88jRI88c5G3nsGO5ACHqIMTsz=
+N0g19MiP7u9snbd96woHskP68f7KUpKAsh8j3_2BW8LxrH1XDc_3D" style=3D"font-size:2=
+6px;padding:5px 0 2px;display:block;text-decoration:none;color:#ccc;" rel=
+=3D"nofollow">=E2=98=85</a>
+                        </td>
+ =20
+                        <td align=3D"center" valign=3D"middle" style=3D"bor=
+der-left:solid 1px #F5F5F5;background-color:#F5F5F5;">
+                            <a href=3D"hxxps://www[.]surveymonkey[.]com/tr/=
+v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3PErDK_2Bf6OjNYOPsq=
+ZdKwgVO5XY6qA7KieKsyc05lPvPfEK1ex4ODm8d1IRYs3rzDZ9vepzE63nsUn6Jb7_2F8jLVhLl=
+8V5YFJ_2F3mIPQ11ebXGnQLKWepTs6UlfuZZA6Z80hG4uo6orCCwz_2B0ohB4SRE1LIG_2B9T7F=
+_2FkbctIF57EGOS5lbNRKGUCyrNtAy6HUoNitP7dBFmFbS23N_2BE40PtfgpwCEZHIlml0prf74=
+QekmhPCTfwTNbXotmjk_2FsMNqJVBHnx5xgKmWaSBJeX9S3H2axuWSQmJMYUdBjE_2FdKkrFvrW=
+ETfS4MXMRl0bQi5xbq4aN2pq3xR8meylhP24AwfM5SovtXdJq6dUzzNuZNExtIzKkiKSiZxC518=
+raD8ZAZfUDRinnMajz4Q1fFNAvQGRXOGh0kFjVRoRkS83b9C2US2_2F9WddPX5rAB_2B0050PRW=
+Zes5wdz05wgidBO2Wq9aRyZclNtzNjzwILxeRlbtb7oSa1VkOyR13OMo0zH2cBRh3AmXHGqMTYH=
+9TIDm1eyH0Mc5l85OmeMVuZNAWpp7WFEc5k64oyVNY0ZR3uWEJFl5Wvyxn_2FKOznEXRrtjMaFt=
+_2BAhmtrUPScntY0IrSXBX4vBNL9cHtTl4odgJmGcm_2FeD_2BhY_3D" style=3D"font-size=
+:26px;padding:5px 0 2px;display:block;text-decoration:none;color:#ccc;" rel=
+=3D"nofollow">=E2=98=85</a>
+                        </td>
+ =20
+                        <td align=3D"center" valign=3D"middle" style=3D"bor=
+der-left:solid 1px #F5F5F5;background-color:#F5F5F5;">
+                            <a href=3D"hxxps://www[.]surveymonkey[.]com/tr/=
+v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3PErDK_2Bf6OjNYOPsq=
+ZdKwgVO5XY6qA7KieKsyc05lPvPfEK1ex4ODm8d1IRYs3rzDZ9vepzE63nsUn6Jb7_2F8jLVhLl=
+8V5YFJ_2F3mIPQ11ebXGnQLKWepTs6UlfuZZA6Z80hG4uo6orCCwz_2B0ohB4SRE1LIG_2B9T7F=
+_2FkbctIF57EGOS5lbNRKGUCyrNtAy6HUoNitP7dBFmFbS23N_2BE40PtfgpwCEZHIlml0prf74=
+QekmhPCTfwTNbXotmjk_2FsMNqJVBHnx5xgKmWaSBJeX9S3H2axuWSQmJMYUdBjE_2FdKkrFvrW=
+ETfS4MXMRl0bQi5xbq4aN2pq3xR8meylhP24AwfM5SovtXdJq6dUzzNuZNExtIzKkiKSiZxC518=
+raD8ZAZfUDRinnMajz4Q1fFNAvQGRXOGh0kFjVRoRkS83b9C2USyELOhxlzDbjlWqJAi8KH98SO=
+FdR62AQd09F1fZBL2si2WVsoIZDlTyRoQD30zyjVM671aw_2FJiK5Db0BCYgpJMppDZxCEdKmo4=
+qFqypQEb33wM7bTi2wrKjAbRYno8XfCU_2BpHcy_2B86HPZszp6At6MrVnnzEYPIs84OsTrnv40=
+Fh6ZiXtOV1hJmkSJ_2BweW_2F5NaauXR851V6jnwvm7SoYEnZA_3D" style=3D"font-size:2=
+6px;padding:5px 0 2px;display:block;text-decoration:none;color:#ccc;" rel=
+=3D"nofollow">=E2=98=85</a>
+                        </td>
+ =20
+                        <td align=3D"center" valign=3D"middle" style=3D"bor=
+der-left:solid 1px #F5F5F5;background-color:#F5F5F5;">
+                            <a href=3D"hxxps://www[.]surveymonkey[.]com/tr/=
+v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3PErDK_2Bf6OjNYOPsq=
+ZdKwgVO5XY6qA7KieKsyc05lPvPfEK1ex4ODm8d1IRYs3rzDZ9vepzE63nsUn6Jb7_2F8jLVhLl=
+8V5YFJ_2F3mIPQ11ebXGnQLKWepTs6UlfuZZA6Z80hG4uo6orCCwz_2B0ohB4SRE1LIG_2B9T7F=
+_2FkbctIF57EGOS5lbNRKGUCyrNtAy6HUoNitP7dBFmFbS23N_2BE40PtfgpwCEZHIlml0prf74=
+QekmhPCTfwTNbXotmjk_2FsMNqJVBHnx5xgKmWaSBJeX9S3H2axuWSQmJMYUdBjE_2FdKkrFvrW=
+ETfS4MXMRl0bQi5xbq4aN2pq3xR8meylhP24AwfM5SovtXdJq6dUzzNuZNExtIzKkiKSiZxC518=
+raD8ZAZfUDRinnMajz4Q1fFNAvQGRXOGh0kFjVRoRkS83b9C2US6AOCqN7jwritOfcJYDeki_2F=
+DN7FykRZIRid_2Fz3s3oyHTH8fexnDD5W_2F64sE_2BjNRicvKGw2Z80q8Y33z8b8iKnc3bN0Ki=
+nRV72XeautKmD3cWoZImx1vD4O6Iek4s1RvHXyPNLHoAUVdNJ6ZCRyfoofsieayp59gs8milxJD=
+8j6U4pl8GNsuNbDptUXRxPtj4jSf_2Fv5AGcfglS0QvHWjaw2o_3D" style=3D"font-size:2=
+6px;padding:5px 0 2px;display:block;text-decoration:none;color:#ccc;" rel=
+=3D"nofollow">=E2=98=85</a>
+                        </td>
+ =20
+                        <td align=3D"center" valign=3D"middle" style=3D"bor=
+der-left:solid 1px #F5F5F5;background-color:#F5F5F5;">
+                            <a href=3D"hxxps://www[.]surveymonkey[.]com/tr/=
+v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3PErDK_2Bf6OjNYOPsq=
+ZdKwgVO5XY6qA7KieKsyc05lPvPfEK1ex4ODm8d1IRYs3rzDZ9vepzE63nsUn6Jb7_2F8jLVhLl=
+8V5YFJ_2F3mIPQ11ebXGnQLKWepTs6UlfuZZA6Z80hG4uo6orCCwz_2B0ohB4SRE1LIG_2B9T7F=
+_2FkbctIF57EGOS5lbNRKGUCyrNtAy6HUoNitP7dBFmFbS23N_2BE40PtfgpwCEZHIlml0prf74=
+QekmhPCTfwTNbXotmjk_2FsMNqJVBHnx5xgKmWaSBJeX9S3H2axuWSQmJMYUdBjE_2FdKkrFvrW=
+ETfS4MXMRl0bQi5xbq4aN2pq3xR8meylhP24AwfM5SovtXdJq6dUzzNuZNExtIzKkiKSiZxC518=
+raD8ZAZfUDRinnMajz4Q1fFNAvQGRXOGh0kFjVRoRkS83b9C2USyojoR8zzrXefl7IHnt7GgC3m=
+ugGoAV4G6VbDEWNKugv_2FMW3voyxDDTGqhxZIkkMFl36mgmuWdF90Z_2FyIJ9jyEeozfzbmX_2=
+Fsw2fLbe0VQplxqaWWtuLLqUcG5_2FNhTsCiefOj9UnGEIMJiNHqAVvIaBXKrhHkNsQcFd9sdAZ=
+Cr2JrJM67AGkpXO7djb1StzJ5GUKlEIXpWaRkrE7zVfHGfbU_3D" style=3D"font-size:26p=
+x;padding:5px 0 2px;display:block;text-decoration:none;color:#ccc;" rel=3D"=
+nofollow">=E2=98=85</a>
+                        </td>
+             </tr>
+            <tr><td>&nbsp;</td></tr>
+        </tbody>
+    </table>
+</td>
+                  </tr></tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->  <!--[if mso | IE]><ta=
+ble align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"" role=3D"presentation" style=3D"width:600px;" width=3D"600" bgcolor=3D=
+"#F7F8FA" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-r=
+ule:exactly;"><![endif]-->
+    <div style=3D"background:#F7F8FA;background-color:#F7F8FA;margin:0px au=
+to;max-width:600px;">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"background:#F7F8FA;background-color:#F7F=
+8FA;width:100%;">
+        <tbody>
+          <tr>
+            <td style=3D"direction:ltr;font-size:0px;padding:20px 0;text-al=
+ign:center;">
+              <!--[if mso | IE]><table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"><![endif]-->
+              <!--[if mso | IE]>
+<tr>
+    <td class=3D"" width=3D"600px">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"" role=3D"presentation"
+               style=3D"width:600px;" width=3D"600">
+            <tr>
+                <td style=3D"line-height:0px;font-size:0px;mso-line-height-=
+rule:exactly;"><![endif]-->
+<div style=3D"margin:0px auto;max-width:600px;">
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"width:100%;">
+        <tbody>
+        <tr>
+            <td style=3D"direction:ltr;font-size:0px;padding:0px;text-align=
+:center;">
+                <!--[if mso | IE]>
+                <table role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0">
+                    <tr>
+                        <td class=3D"" style=3D"vertical-align:top;width:60=
+0px;"><![endif]-->
+                <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=
+=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertic=
+al-align:top;width:100%;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                        <tbody>
+                        <tr>
+                            <td align=3D"left" style=3D"font-size:0px;paddi=
+ng:10px 25px;word-break:break-word;">
+                                <table cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:National2, H=
+elvetica, sans-serif;font-size:13px;line-height:22px;table-layout:auto;widt=
+h:100%;border:none;">
+                                    <tr valign=3D"top">
+                                        <td valign=3D"top" align=3D"center">
+                                            Please do not forward this emai=
+l as its survey link is unique to you. <br>
+                                            <a href=3D"hxxps://www[.]survey=
+monkey[.]com/mp/legal/privacy/" style=3D"color: #007FAA; text-decoration: n=
+one;" class=3D"link">Privacy</a> | <a href=3D"hxxps://www[.]surveymonkey[.]=
+com/tr/v1/te/akU_2BQc2vAhAsa_2B264x1g6_2FpF_2Fhy3EhxbpxJDHYpYZT3CvJK0hF8Vae=
+oYgNuYHKjC1rEUOxcRs6mZw4kUPaGP3avVhWMmQkVXHtaQoeCuxgWN_2FiiFgQZiKRghQsuW3Wu=
+x3QSEm4gz0y4EEI8p1dORswY_2B2uI0JGZUVkyZuYGq9_2ByzNgUeYehAPpwZeexBO7MkYhtaGT=
+yxAU6kFIdbWycv96FcBp6vdamBzXF4Ku2n_2FcUIUnT2vA5PidFx8rZAJ8614S9a3BN0d7M_2BT=
+8RrfsORRw_3D_3D" style=3D"color: #007FAA; text-decoration: none;" class=3D"=
+link">Unsubscribe</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--[if mso | IE]></td></tr></table></td></tr><![endif]-->
+<!-- Footer HTML -->
+<!--[if mso | IE]>
+<tr>
+    <td class=3D"" width=3D"600px">
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"" role=3D"presentation"
+               style=3D"width:600px;" width=3D"600">
+            <tr>
+                <td style=3D"line-height:0px;font-size:0px;mso-line-height-=
+rule:exactly;"><![endif]-->
+<div style=3D"margin:0px auto;max-width:600px;">
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"width:100%;">
+        <tbody>
+        <tr>
+            <td style=3D"direction:ltr;font-size:0px;padding:0px;text-align=
+:center;">
+                <!--[if mso | IE]>
+                <table role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0">
+                    <tr>
+                        <td class=3D"" style=3D"vertical-align:top;width:60=
+0px;"><![endif]-->
+                <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=
+=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertic=
+al-align:top;width:100%;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                        <tbody>
+                        <tr>
+                            <td align=3D"left" style=3D"font-size:0px;paddi=
+ng:10px 25px;word-break:break-word;">
+                                <table cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%" border=3D"0" style=3D"color:#000000;font-family:National2, H=
+elvetica, sans-serif;font-size:13px;line-height:22px;table-layout:auto;widt=
+h:100%;border:none;">
+                                    <table width=3D"100%" cellpadding=3D"2">
+                                        <tbody>
+                                        <tr>
+                                            <td width=3D"45%" align=3D"righ=
+t" style=3D"font-family:National2, Helvetica, sans-serif;font-size: 12px; c=
+olor: #6B787F">
+                                                Powered by
+                                            </td>
+                                            <td width=3D"55%" align=3D"left=
+">
+                                                <img width=3D"130" align=3D=
+"middle" height=3D"17" alt=3D"SurveyMonkey Logo" src=3D"hxxps://cdn[.]smass=
+ets[.]net/assets/smweb/collect/images/smLogo[.]png">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+
+              <!--[if mso | IE]></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </div>
+<img src=3D"hxxps://www[.]surveymonkey[.]com/tr/v1/te/D6vZrzNFtnM7gT9nqhyRD=
+gPVLqhs8CrgxYsQ61LEgaxVC_2BeU0vXU5sQ17VsLR_2Fkk[.]png" alt=3D"" width=3D"1p=
+x" height=3D"1px">
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"hxxps://click[.]=
+outbound[.]surveymonkey[.]com/q/2ylydz7yQMMzo9MA2odemQ~~/AAAAARA~/vpwDpUnOu=
+HnCksZ6nTGb07jpX2VAAT1dp4vOw5O6WG4JhTP8h5CZeoGW1OdANbiYdafjnQf-ET6yfWOsWWtB=
+slrgWzXVvE6NO_c8IJA9VRg~">
+</body>
+
+</html>
+
