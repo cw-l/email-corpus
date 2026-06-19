@@ -1,0 +1,420 @@
+Authentication-Results: spf=none (sender IP is 34.138.174.117)
+ smtp.mailfrom=kelvindorsey.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none
+ header.from=kelvindorsey.com;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:F40B638803216C0F79170ABC4478B2B1635346ACF44BCA602ECCB3893876DFBA;UpperCasedChecksum:1C37A0EB5F1C8BF8FFCC0F86A9A3A67494536BF8E6A2873201F84072A5F6A52A;SizeAsReceived:330;Count:7
+From: Cloud Solutions <support@kelvindorsey.com>
+To: <redacted@redacted.com>
+Subject: Exclusive offer: 50 percent off a 200 GB plan. Your storage is almost
+ full.
+Message-ID: <a9c6680b88ee4eff970a77d8ebf1e6f8@kelvindorsey.com>
+Date: Thu, 18 Jun 2026 18:08:21 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Jun 2026 18:08:22.1287
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 54d7622f-ca9b-4fab-15d5-08decd649578
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AM3PEPF00009B9B:EE_|EA2P220MB1249:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AM3PEPF00009B9B.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 6/18/2026 11:39:27 AM
+X-MS-Office365-Filtering-Correlation-Id: 54d7622f-ca9b-4fab-15d5-08decd649578
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 34.138.174.117
+X-SID-Result: NONE
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|3069299007|60050799009|2700799033|46080799009|9400799043|93100799006|32020799003|1290799033|34130799006|10029299006|970799063|46110799012|18021999003|440099028|3412199025|6022199012|22062799003|30041999003|4210799018|56899033|1370799030|1360799030|1380799030|2006899018|6106899015|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Jun 2026 18:08:21.8148
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 54d7622f-ca9b-4fab-15d5-08decd649578
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AM3PEPF00009B9B.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA2P220MB1249
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6619597
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0139.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Required: Storage Full</title>
+    <style>
+        :root {
+            --system-blue: #007AFF;
+            --system-red: #FF3B30;
+            --system-gray-bg: #F2F2F7;
+            --system-gray-text: #8E8E93;
+            --system-text-primary: #1C1C1E;
+            --system-border: #C6C6C8;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--system-gray-bg);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--system-text-primary);
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.6); }
+            70% { box-shadow: 0 0 0 12px rgba(255, 59, 48, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+        }
+
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+
+        .animate-shake {
+            animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+            animation-delay: 0.2s;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F7 100%);
+            border: 1px solid #E5E5EA;
+            border-radius: 22.5%; /* Squircle approximation */
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .app-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: var(--system-red);
+        }
+
+        .badge {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            background-color: var(--system-red);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid var(--card-bg);
+            animation: pulse-red 2s infinite;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: var(--system-red);
+        }
+
+        .header p {
+            font-size: 15px;
+            line-height: 1.4;
+            color: var(--system-gray-text);
+            margin-bottom: 20px;
+        }
+
+        .header strong {
+            color: var(--system-text-primary);
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background-color: rgba(255, 59, 48, 0.1);
+            border-left: 4px solid var(--system-red);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--system-red);
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .storage-section {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .storage-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .storage-title { color: var(--system-text-primary); }
+        .storage-amount { color: var(--system-red); }
+
+        .progress-track {
+            width: 100%;
+            height: 10px;
+            background-color: #E5E5EA;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .progress-segment {
+            height: 100%;
+            width: 100%;
+            background-color: var(--system-red);
+        }
+
+        .settings-list {
+            background-color: #F8F8F9;
+            border-radius: 12px;
+            border: 1px solid #E5E5EA;
+            overflow: hidden;
+            margin-bottom: 28px;
+            text-align: left;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            border-bottom: 1px solid #E5E5EA;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-label {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--system-text-primary);
+        }
+
+        .item-value {
+            font-size: 15px;
+            color: var(--system-gray-text);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .item-value.alert {
+            color: var(--system-red);
+            font-weight: 500;
+        }
+
+        .chevron {
+            color: #C7C7CC;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1;
+            padding-bottom: 2px;
+        }
+
+        .action-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+            border: none;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn-primary {
+            background-color: var(--system-blue);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+            /* Utilizing the pulse animation but in blue to fit standard primary action styling */
+            animation: pulse-blue 2s infinite;
+        }
+
+        @keyframes pulse-blue {
+            0% { box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.5); }
+            70% { box-shadow: 0 0 0 12px rgba(0, 122, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 122, 255, 0); }
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--system-blue);
+            padding: 12px;
+        }
+
+        .footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: #98989D;
+            line-height: 1.6;
+        }
+
+        .footer a {
+            color: #98989D;
+            text-decoration: underline;
+        }
+
+        .footer a:hover {
+            color: var(--system-gray-text);
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0;
+            }
+            .wrapper {
+                max-width: 100%;
+            }
+            .card {
+                border-radius: 0;
+                box-shadow: none;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="card">
+            
+            <div class="header">
+                <div class="app-icon animate-shake">
+                    <div class="badge">!</div>
+                    <span style="font-size: 36px; line-height: 1;">\u2601\ufe0f</span>
+                </div>
+                <h1>Action Required</h1>
+                <p>Your Cloud Account has completely run out of space. Device backups and file syncing have been <strong>suspended</strong>.</p>
+            </div>
+
+            <div class="warning-box">
+                \u26a0\ufe0f <strong>Critical Alert:</strong> Without available storage, your device is no longer safely backed up to the cloud.
+            </div>
+
+            <div class="storage-section">
+                <div class="storage-header">
+                    <span class="storage-title">Account Storage</span>
+                    <span class="storage-amount">50 GB of 50 GB Used</span>
+                </div>
+                
+                <div class="progress-track">
+                    <div class="progress-segment"></div>
+                </div>
+            </div>
+
+            <div class="settings-list">
+                <div class="list-item">
+                    <span class="item-label">Current Plan</span>
+                    <span class="item-value">Basic 50 GB</span>
+                </div>
+                <div class="list-item">
+                    <span class="item-label">Sync Status</span>
+                    <span class="item-value alert">Paused</span>
+                </div>
+                <a href="#recommended-plan" class="list-item">
+                    <span class="item-label">Recommended Plan</span>
+                    <span class="item-value">
+                        Premium 200 GB
+                        <span class="chevron">\u203a</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="action-group">
+                <a href="hxxps://s3[.]eu-north-1[.]amazonaws[.]com/cld[.]jm/hada[.]html" class="btn btn-primary">Upgrade Storage Now</a>
+                <a href="hxxps://s3[.]eu-north-1[.]amazonaws[.]com/cld[.]jm/hada[.]html" class="btn btn-secondary">Review Account Space</a>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            System ID: #882-194-002<br>
+            If you no longer wish to receive these alerts, you can <a href="hxxps://s3[.]eu-north-1[.]amazonaws[.]com/cld[.]unsub/unsub[.]html">unsubscribe here</a>.
+        </div>
+    </div>
+
+</body>
+</html>
