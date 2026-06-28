@@ -1,0 +1,393 @@
+Authentication-Results: spf=fail (sender IP is 8.228.2.246)
+ smtp.mailfrom=furanet.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=furanet.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:6337C614EF52DB9738A5C4BCB188168638AA3356319062B9302445EF9877EFF4;UpperCasedChecksum:28D3D28D78D25589EAA931644629335A346735BBBA22733D7D732C68D4996CC4;SizeAsReceived:297;Count:7
+From: The Health Desk <support@furanet.com>
+To: <redacted@redacted.com>
+Subject: It isn't age (The real reason your eyes are failing)
+Message-ID: <a1c46a7e1d0740aebed1f5cfc5705c8d@furanet.com>
+Date: Sat, 20 Jun 2026 23:20:54 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Jun 2026 23:20:55.1821
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 13d7c52b-8ecd-476f-7126-08decf2293fc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DU6PEPF0000B620:EE_|SJ2P220MB0876:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DU6PEPF0000B620.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 6/20/2026 3:18:29 PM
+X-MS-Office365-Filtering-Correlation-Id: 13d7c52b-8ecd-476f-7126-08decf2293fc
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 8.228.2.246
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|87000799021|9000799056|58200799025|46080799009|13020799009|9800799015|34130799006|5149299006|6100799021|3069299007|2700799033|32080799009|10300799038|47200799027|32020799003|9400799043|1290799033|3025599003|41010799006|1680799066|60050799012|970799063|5139299004|11119299006|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Jun 2026 23:20:54.7373
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 13d7c52b-8ecd-476f-7126-08decf2293fc
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DU6PEPF0000B620.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2P220MB0876
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2369538
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0139.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9710001)(9610028)(9520007)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Health Alert</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Proxima Nova', 'Segoe UI', Helvetica, Arial, sans=
+-serif;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-bottom: 2px solid #cccccc;
+        }
+
+        /* ABC STYLE HEADER */
+        .abc-nav {
+            background-color: #000000;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .abc-logo {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 14px;
+            font-family: sans-serif;
+            letter-spacing: -1px;
+            color: black;
+        }
+
+        /* Simulating the dot logo with text if image fails, or use image *=
+/
+        .abc-logo img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .nav-links {
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content-padding {
+            padding: 25px;
+        }
+
+        /* TAGS */
+        .tag-container {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            color: #005596;
+            /* ABC Blue */
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+
+        .live-tag {
+            color: #cc0000;
+            margin-right: 10px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        /* HEADLINE */
+        .headline {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+
+        /* SUBHEAD */
+        .subhead {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        /* BYLINE */
+        .byline-area {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .author-text {
+            margin-left: 0;
+        }
+
+        .author-name {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .timestamp {
+            display: block;
+            font-size: 12px;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        /* VIDEO HERO */
+        .hero-wrapper {
+            position: relative;
+            margin-bottom: 25px;
+            background: #000;
+            cursor: pointer;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.9;
+        }
+
+        /* ABC Style Play Button */
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-triangle {
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            margin-left: 5px;
+        }
+
+        .video-duration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: black;
+            color: white;
+            padding: 3px 6px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* BODY */
+        .body-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        /* CTA */
+        .btn-container {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .btn {
+            background-color: #005596;
+            /* ABC Blue */
+            color: #ffffff;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 4px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background-color: #003366;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer a {
+            color: #444;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=3D"container">
+        <!-- ABC STYLE NAV BAR -->
+        <div class=3D"abc-nav">
+            <!-- Using an image source for the dot logo -->
+            <div class=3D"abc-logo">
+                <img src=3D"hxxps://cdn[.]freebiesupply[.]com/logos/large/2=
+x/abc-broadcast-logo-png-transparent[.]png" alt=3D"ABC">
+            </div>
+            <div class=3D"nav-links">
+                WATCH LIVE
+            </div>
+        </div>
+
+        <div class=3D"content-padding">
+            <!-- TAGS -->
+            <div class=3D"tag-container">
+                <span class=3D"live-tag">Developing Story</span>
+                <span class=3D"tag">Health</span>
+                <span class=3D"tag">Vision</span>
+            </div>
+
+            <!-- HEADLINES -->
+            <div class=3D"headline">Harvard Researchers Uncover Natural Vis=
+ion Self-Healing Protocol</div>
+            <div class=3D"subhead">In clinical trials, 21,000+ patients hav=
+e gone from nearly blind to perfect 20/20
+                vision.</div>
+
+            <!-- BYLINE & DATE -->
+            <div class=3D"byline-area">
+                <div class=3D"author-text">
+                    <span class=3D"author-name">By Bill hutchinson and Lube=
+ Barr</span>
+                    <span class=3D"timestamp">January 22, 2026, 4:19 PM ET<=
+/span>
+                </div>
+            </div>
+
+            <!-- HERO VIDEO -->
+            <div class=3D"hero-wrapper">
+                <a href=3D"hxxps://www[.]strategicreflect[.]com/5P2W1PG/273=
+B7WHM/?sub1=3Dabdo&amp;sub2=3D20" style=3D"display:block;">
+                    <img src=3D"hxxps://media[.]istockphoto[.]com/id/219420=
+7189/photo/senior-female-ophthalmologist-explaining-eye-anatomy-to-patient-=
+using-model[.]jpg?s=3D612x612&amp;w=3D0&amp;k=3D20&amp;c=3DOAbqf9fE2RnKM0WS=
+0C3CrcmOBZy0yxMgDBrixr_G9as=3D" alt=3D"Vision Breakthrough" class=3D"hero-i=
+mage">
+
+                    <div class=3D"play-btn">
+                        <div class=3D"play-triangle"></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- BODY COPY -->
+            <p class=3D"body-text"><strong>(ABC News) \u2014</strong> A mas=
+sive breakthrough in ophthalmology is stunning
+                doctors worldwide.</p>
+
+            <p class=3D"body-text">This exclusive report exposes a new &quo=
+t;Self-Healing&quot; protocol that targets the true
+                biological root cause of fading eyesight\u2014something the=
+ $14 billion glasses industry has largely ignored.
+            </p>
+
+            <p class=3D"body-text">Early users report being able to throw a=
+way their prescription glasses and read fine
+                print again in record time. It appears to work regardless o=
+f age or how severe the vision loss has
+                become.</p>
+
+            <p class=3D"body-text">Watch the presentation below to see exac=
+tly how this protocol works before the video is
+                taken down.</p>
+
+            <!-- CTA BUTTON -->
+            <div class=3D"btn-container">
+                <a href=3D"hxxps://www[.]strategicreflect[.]com/5P2W1PG/273=
+B7WHM/?sub1=3Dabdo&amp;sub2=3D20" class=3D"btn">Watch The Video Report</a>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class=3D"footer">
+            Copyright =EF=BF=BD 2026. Vision Health Reports. All rights res=
+erved.<br>
+            <br>
+            <a href=3D"hxxps://s3[.]eu-north-1[.]amazonaws[.]com/visium[.]u=
+s/unsubuk[.]html">Unsubscribe</a> | <a href=3D"hxxps://www[.]strategicrefle=
+ct[.]com/5P2W1PG/273B7WHM/?sub1=3Dabdo&amp;sub2=3D20">Privacy Policy</a> | =
+<a href=3D"hxxps://www[.]strategicreflect[.]com/5P2W1PG/273B7WHM/?sub1=3Dab=
+do&amp;sub2=3D20">Terms of Use</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
