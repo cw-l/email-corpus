@@ -1,0 +1,1084 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1782885039; cv=none;
+        d=google.com; s=arc-20260327;
+        b=FDNwsrGTsz4pLj1yYcfY3Nht6qyefTGia8igWPj88S9dfdbhE2pYBDKZdUmQIAJ4oc
+         W+OMgFc5nIDjYyI+FG3BgjifwD0oVVXR+2bClO/whdSuQDi7Q12iMA1sEejLP66fHNYu
+         CyJAMMzZ5wUjohISH1dNz9N1VmTRGhC2xXipNAb+rzKkZxkM29UNlsDtkNkl3K1CT7to
+         zwJSbU90dFwmUO/zp+QiO9BWzg7yAXh6Fzs9/wyxCHKDo1iyyArEGEU7jMusS0RkRrUP
+         ZejLb63n1d0MdnhyoipKbwAIccH+Yotlg3uyzFobvKd386GuKhVzE2bwKtWPuVjnPhj3
+         KQkA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=g9AlqfW2AcbQvoqgVXo60taY4WN+Ecbl8xeWFK0epzs=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=cVglNa2zcxySjt+22e4BGpPlbvJde4VD6ao1HDdWYmaXrhbx84jQ7QKSebZtC92U0c
+         +2JpLVebizf3DMuOZTqkwfjMzEcLVCbyE9h9z4Ca+b4X/v+f3MobnrqYtpg24wDUHL0V
+         H/rzn8ncLzUUgFPZYi5GkFIj5KAtEArkkXg8LGd5F3eLSQ9oKrgPuhIC/1Ij9MxmJifu
+         d2N0VDeIXWprSTb9XDzTtkLk819bL2eryDsw8VaR5YW3epLuES/ibHdiMpGB3Xm3b0dY
+         dkOnSO/0kUf2jtLluARFT6nBbk4FW/B8u1GrUOPyKwzKn6aP/CFPho9u4mPA+kt6SytJ
+         GO3A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@jlxkhwjs.trionvex.daoulinghertz.eu.com
+ header.s=smtp header.b=mvtYQWD1;
+       spf=pass (google.com: domain of
+ odzehfvrxpitj@trionvex.daoulinghertz.eu.com designates 192.3.247.121 as
+ permitted sender) smtp.mailfrom=odzehfvrxpitj@trionvex.daoulinghertz.eu.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@jlxkhwjs.trionvex.daoulinghertz.eu.com
+ header.s=smtp header.b=mvtYQWD1;
+       spf=pass (google.com: domain of
+ odzehfvrxpitj@trionvex.daoulinghertz.eu.com designates 192.3.247.121 as
+ permitted sender) smtp.mailfrom=odzehfvrxpitj@trionvex.daoulinghertz.eu.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=jlxkhwjs.trionvex.daoulinghertz.eu.com;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=rhhtbhhrpeboswnmilnrm@jlxkhwjs.trionvex.daoulinghertz.eu.com;
+ bh=xyMBNVZx4Vok48ioyslDgQmlplE=;
+ b=mvtYQWD1E1J9wKUgzKh9I7kTZbIxrrxlrMa0Wqko8KB7tvkyf4mKwTOo0qTx8dAeqlOd6ExDzlEv
+   AlJUi6ybItJpd5zuxOMEkhsJye68ljKbYlsQuIpqE4VQ0FO9S6ZBU1wo42wDm9TEbH3R6MAthmO0
+   TuBuDErowoi6tH+lOCkXl6igM0iiYJZQ/100D/4kVFE0aFh6uemo4YBdRsOkLJHC7gAqSAaQ+XOb
+   F8VFApqXbQNtMJd3yuPTtf4SihYTf5cMeK4YL4o1XYGuf9asH7/lWDj/bI6yBjjdmlggLMC8VMV+
+   avhw8/5SBnqoO5kiVwyeDHoKELguOcChuk1mKQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=jlxkhwjs.trionvex.daoulinghertz.eu.com;
+ b=zn0VEWBAqkImgi0UcWLx2zcBuRN7vgx5CSzWa/tLGIwX5dkAUtEawgczw9SJMYhtEdHAYcrndqgv
+   gJwsa4RIlW+BxYKqiUp3nmRdw+udSUFUTv6Pc0Uywse9OwhlT1PLNNm+YQ/ADgEHNr0CdirSd6jZ
+   3OsGf3MSDaf6Jgb7amhnjuAdkCLAeT/TWjqdwemLd0wEunV7DtNzrtZqrRX4svGhdQT00GGqVsIR
+   4uhKVE0BiZJHNur4ERoV42b40m1Cb7pM8WpbMBN6Uc32MFC3LPfoSM3rldBdA+K/KJG5bnqTwpef
+   TRfFgR7La8g69WwkCfnu71NcGTFQWZC45eXP1A==;
+Subject: 7 cleaning products under your sink. You only need one.
+From: The_NuroClea_Team<yuyzulv@jlxkhwjs.trionvex.daoulinghertz.eu.com>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.3.247.121
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <fwvgnzjnoqgapwmfyqqcyzylfkyjkw@2p3jznpr5edjosffxd>
+List-Unsubscribe: <http://ravino.pro/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Wed, 01 Jul 2026 05:50:37 +0000
+Sender: rhhtbhhrpeboswnmilnrm@jlxkhwjs.trionvex.daoulinghertz.eu.com
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+
+
+
+</br></br></br><center>
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d183810&wvjtu=791-32&lm=195982IYGK40385&sd=7&page=A8siGb6pVXKXZKp" style="text-decoration:none; color:black">
+
+<!DOCTYPE html>
+<html lang="en" xmlns="hxxp://www[.]w3[.]org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <title>Cleaning Experts Say Most People Are Wasting Money on the Wrong Products -- This One Tablet Replaces Them All
+    </title>
+    <!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<![endif]-->
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            background-color: #f2f4f7;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        @media only screen and (max-width:620px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            .padding-mobile {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .hero-img {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f2f4f7;">
+    <center style="width:100%; background-color:#f2f4f7;">
+
+        <!-- HIDDEN PREHEADER -->
+        <div
+            style="display:none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all;">
+            Home cleaning experts say the average household buys 7+ different cleaning products when one non-toxic
+            tablet could replace them all. NuroClean changes that.
+        </div>
+
+        <!-- EMAIL BODY -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
+            style="margin:auto;" class="email-container">
+
+            <!-- 1. TOP ACCENT BAR -->
+            <tr>
+                <td style="background-color:#7535E5; height:6px; font-size:0; line-height:0;">&nbsp;</td>
+            </tr>
+
+            <!-- 2. HEADER ROW -->
+            <tr>
+                <td style="background-color:#ffffff; padding:20px 30px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="text-align:left; vertical-align:middle;">
+                                <span style="font-family:Georgia, 'Times New Roman', serif; font-size:12px; color:#888888; text-transform:uppercase; letter-spacing:2px;">Home Care Advisory</span>
+                            </td>
+                            <td style="text-align:right; vertical-align:middle;">
+                                <img src="hxxps://i[.]imgur[.]com/RFPisON[.]png" height="28" alt="" style="height:28px; width:auto; display:inline-block;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 3. THIN DIVIDER -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="border-top:1px solid #e0e4ea; font-size:0; line-height:0;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 4. HEADLINE -->
+            <tr>
+                <td style="background-color:#ffffff; padding:30px 30px 10px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <h1
+                        style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:28px; line-height:36px; color:#1a1a1a; font-weight:normal;">
+                        Your Cleaning Cabinet Is Toxic.<br>
+                        <span style="color:#7535E5; font-weight:bold;">This One Tablet Replaces It All.</span>
+                    </h1>
+                </td>
+            </tr>
+
+            <!-- 5. SUBHEADLINE -->
+            <tr>
+                <td style="background-color:#ffffff; padding:10px 40px 25px 40px; text-align:center;"
+                    class="padding-mobile">
+                    <p
+                        style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#666666; line-height:24px;">
+                        The average American home has 7 different cleaning products under the sink -- most of them
+                        loaded with harmful chemicals. NuroClean's advanced surfactant tablet eliminates all of them.
+                    </p>
+                </td>
+            </tr>
+
+            <!-- 6. HERO IMAGE -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px 20px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d183810&tmmro=791-32&lm=195982GSCT40385&sd=7&page=MeMGmvDae2mLojV">
+                        <img class="hero-img" src="hxxps://i[.]imgur[.]com/68KqWdu[.]png" width="450" alt="" style="display:block; margin:0 auto; max-width:450px; width:100%; border-radius:8px; height:auto;">
+                    </a>
+                </td>
+            </tr>
+
+            <!-- 7. CTA BUTTON 1 -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px 15px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tr>
+                            <td style="background-color:#7535E5; border-radius:6px;">
+                                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d183810&ryspk=791-32&lm=195982VZWS40385&sd=7&page=Gor4pgIgbFShjsN"
+                                    style="display:inline-block; padding:16px 44px; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#ffffff; text-decoration:none;">
+                                    Get 70% Off NuroClean Today
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 8. TRUST LINE -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px 25px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <p style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#888888;">
+                        1,985+ Five-Star Reviews &bull; Non-Toxic &amp; Eco-Friendly &bull; Ships Fast from the US
+                    </p>
+                </td>
+            </tr>
+
+            <!-- 9. 2px BRAND DIVIDER -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="border-top:2px solid #7535E5; font-size:0; line-height:0;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 10. STORY H2 -->
+            <tr>
+                <td style="background-color:#ffffff; padding:25px 30px 10px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <h2
+                        style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:22px; line-height:30px; color:#1a1a1a; font-weight:normal;">
+                        The Problem Every Homeowner Knows
+                    </h2>
+                </td>
+            </tr>
+
+            <!-- 11. STORY BODY -->
+            <tr>
+                <td style="background-color:#ffffff; padding:10px 30px 25px 30px;" class="padding-mobile">
+                    <p
+                        style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#444444; line-height:25px;">
+                        Walk into the average American kitchen and you'll find the redactede thing under the sink: a dozen
+                        half-empty bottles of different cleaners. One for the oven, one for the toilet, one for glass,
+                        one for floors, one for mold. Each loaded with chemicals you can't pronounce, each claiming to
+                        be "the best" at one specific thing. The result? A cabinet full of toxic plastic that costs
+                        hundreds per year and still doesn't get the job done.
+                    </p>
+                    <p
+                        style="margin:0 0 16px 0; font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#444444; line-height:25px;">
+                        Cleaning product manufacturers have a financial incentive to sell you multiple products. That's
+                        the hidden bait-and-switch of the cleaning industry -- and most people never question it.
+                        <strong>NuroClean was built to expose this and solve it permanently.</strong> One concentrated
+                        tablet. One reusable bottle. One cleaning solution that handles every surface in your home.
+                    </p>
+                    <p
+                        style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:15px; color:#444444; line-height:25px;">
+                        Using NanoClean surfactant technology, NuroClean's tablet dissolves in seconds and creates a
+                        powerful formula that penetrates deep into any surface -- grease on range hoods, mold in
+                        showers, soap scum in tubs, wine stains on carpets.
+                        <strong>No harsh fumes. No chemicals that irritate children or pets. Just results.</strong> Over
+                        5 million cleaners sold, with new stock selling out the moment it becomes available.
+                    </p>
+                </td>
+            </tr>
+
+            <!-- 12. 2-COLUMN GRAY PANEL -->
+            <tr>
+                <td style="background-color:#eef1f6; padding:30px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <!-- Left: product image -->
+                            <td class="stack-column" style="width:45%; vertical-align:top; padding-right:20px;">
+                                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d183810&scfbr=791-32&lm=195982DCPM40385&sd=7&page=Iet2uN5G8CYSKSE">
+                                    <img src="hxxps://i[.]imgur[.]com/RBNrS9b[.]jpeg" alt="NuroClean" style="display:block; max-width:230px; width:100%; border-radius:8px; height:auto;">
+                                </a>
+                            </td>
+                            <!-- Right: how it works -->
+                            <td class="stack-column" style="width:55%; vertical-align:top;">
+                                <h3
+                                    style="margin:0 0 16px 0; font-family:Georgia, 'Times New Roman', serif; font-size:18px; color:#7535E5; font-weight:bold;">
+                                    How NuroClean Works:</h3>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td
+                                            style="padding:0 8px 12px 0; vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#7535E5; font-weight:bold;">
+                                            1.</td>
+                                        <td
+                                            style="padding:0 0 12px 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444444;">
+                                            <strong>Fill Bottle With Water</strong> &mdash; Add one NuroClean tablet and
+                                            watch it fizz
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding:0 8px 12px 0; vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#7535E5; font-weight:bold;">
+                                            2.</td>
+                                        <td
+                                            style="padding:0 0 12px 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444444;">
+                                            <strong>Tablet Dissolves Fully</strong> &mdash; NanoClean technology
+                                            activates in seconds
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding:0 8px 12px 0; vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#7535E5; font-weight:bold;">
+                                            3.</td>
+                                        <td
+                                            style="padding:0 0 12px 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444444;">
+                                            <strong>Spray Any Dirty Surface</strong> &mdash; Works on glass, tiles,
+                                            wood, metal &amp; fabric
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding:0 8px 0 0; vertical-align:top; font-family:Arial, sans-serif; font-size:18px; color:#7535E5; font-weight:bold;">
+                                            4.</td>
+                                        <td
+                                            style="padding:0; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:20px; color:#444444;">
+                                            <strong>Wipe Clean Instantly</strong> &mdash; Zero scrubbing, zero chemical
+                                            fumes
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 13. FEATURES BANNER -->
+            <tr>
+                <td style="background-color:#7535E5; padding:25px 30px; text-align:center;" class="padding-mobile">
+                    <p
+                        style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:18px; color:#ffffff; font-weight:bold; line-height:26px;">
+                        America's #1 Rated All-Purpose Cleaning Solution
+                    </p>
+                    <p
+                        style="margin:10px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#e8d9ff; line-height:22px;">
+                        Concentrated Tablets &bull; Works On All Surfaces &bull; Non-Toxic Formula &bull;
+                        Eco-Friendly Packaging &bull; 30-Day Money-Back &bull; Pleasant Fragrance
+                    </p>
+                </td>
+            </tr>
+
+            <!-- 14. TESTIMONIAL BLOCK -->
+            <tr>
+                <td style="background-color:#ffffff; padding:30px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="background-color:#f5f0ff; border-radius:8px; border-left:4px solid #7535E5;">
+                        <tr>
+                            <td style="padding:25px;">
+                                <p
+                                    style="margin:0; font-family:Georgia, 'Times New Roman', serif; font-size:16px; line-height:26px; color:#333333; font-style:italic;">
+                                    "This cleaner has completely transformed my cleaning routine. As a busy mom, I love
+                                    how quickly and effectively it works on all surfaces. It has saved me so much time
+                                    and effort, and I no longer worry about harmful chemicals around my kids and pets.
+                                    My house has never been cleaner."
+                                </p>
+                                <p
+                                    style="margin:12px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#7535E5; font-weight:bold;">
+                                    &mdash; redacted T., Texas &mdash; Verified Customer
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 15. 4-COLUMN ICON ROW -->
+            <tr>
+                <td style="background-color:#ffffff; padding:0 30px 10px;" class="padding-mobile">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="width:25%; text-align:center; padding:10px 8px;">
+                                <img src="hxxps://i[.]imgur[.]com/Ngauoqx[.]png" width="40" height="40" alt="" style="width:90px; height:90px; border-radius:6px; object-fit:cover; display:block; margin:0 auto;">
+                                <p
+                                    style="margin:8px 0 2px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; color:#1a1a1a;">
+                                    All Surfaces</p>
+                                <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#888888;">
+                                    Glass, tiles &amp; more</p>
+                            </td>
+                            <td style="width:25%; text-align:center; padding:10px 8px;">
+                                <img src="hxxps://i[.]imgur[.]com/fyXmxAT[.]png" width="40" height="40" alt="" style="width:90px; height:90px; border-radius:6px; object-fit:cover; display:block; margin:0 auto;">
+                                <p
+                                    style="margin:8px 0 2px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; color:#1a1a1a;">
+                                    Non-Toxic</p>
+                                <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#888888;">Safe
+                                    for kids &amp; pets</p>
+                            </td>
+                            <td style="width:25%; text-align:center; padding:10px 8px;">
+                                <img src="hxxps://i[.]imgur[.]com/8tNyG7l[.]png" width="40" height="40" alt="" style="width:90px; height:90px; border-radius:6px; object-fit:cover; display:block; margin:0 auto;">
+                                <p
+                                    style="margin:8px 0 2px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; color:#1a1a1a;">
+                                    Deep Clean</p>
+                                <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#888888;">
+                                    Advanced formula</p>
+                            </td>
+                            <td style="width:25%; text-align:center; padding:10px 8px;">
+                                <img src="hxxps://i[.]imgur[.]com/EJN6au1[.]png" width="40" height="40" alt="" style="width:90px; height:90px; border-radius:6px; object-fit:cover; display:block; margin:0 auto;">
+                                <p
+                                    style="margin:8px 0 2px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; color:#1a1a1a;">
+                                    Eco-Friendly</p>
+                                <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#888888;">
+                                    Natural ingredients</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 16. FINAL CTA SECTION -->
+            <tr>
+                <td style="background-color:#ffffff; padding:20px 30px 15px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <h2
+                        style="margin:0 0 10px 0; font-family:Georgia, 'Times New Roman', serif; font-size:22px; color:#1a1a1a; font-weight:normal;">
+                        Limited Time: <span style="color:#c0392b; font-weight:bold;">Save 70% Today</span>
+                    </h2>
+                    <p
+                        style="margin:0 0 20px 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666666;">
+                        Regular price $49.99. Now just <strong>$14.99</strong> &mdash; while stock lasts.
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tr>
+                            <td style="background-color:#c0392b; border-radius:6px;">
+                                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d183810&gefac=791-32&lm=195982YJCQ40385&sd=7&page=jcAX9cVLNpktJhS"
+                                    style="display:inline-block; padding:16px 48px; font-family:Arial, Helvetica, sans-serif; font-size:17px; font-weight:bold; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">CLAIM
+                                    YOUR DISCOUNT NOW</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 17. URGENCY NOTE -->
+            <tr>
+                <td style="background-color:#ffffff; padding:15px 30px 35px 30px; text-align:center;"
+                    class="padding-mobile">
+                    <p
+                        style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; line-height:20px;">
+                        Currently sold out in retail stores nationwide.<br>
+                        <strong style="color:#7535E5;">Only available online. Ships fast from the US. Stock is extremely limited.</strong>
+                    </p>
+                </td>
+            </tr>
+
+            <!-- 18. FOOTER -->
+            <tr>
+                <td style="background-color:#1e2430; padding:25px 30px; text-align:center;" class="padding-mobile">
+                    <p
+                        style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#8a94a6; line-height:20px;">
+                        This email was sent because you subscribed to home care and cleaning product updates.<br>
+                        If you no longer wish to receive these emails, please <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=5&d183810&fgyga=791-32&lm=195982SFTE40385&sd=7&page=lIl1yjyvSGdr6Lf"
+                            style="color:#8a94a6; text-decoration:underline;">unsubscribe here</a>.
+                    </p>
+                    <p
+                        style="margin:12px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#5a6275;">
+                        This is an advertisement. Individual results may vary. NuroClean is a consumer cleaning product
+                        and is not intended to replace professional cleaning services. ADVERTISING DISCLOSURE: The
+                        owner of this site has a monetary connection to the products and services advertised.
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+
+</html>
+<center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+<p>
+  To Unsubscribe Click 
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=6&d183810&crdag=791-32&lm=195982VGMS40385&sd=7&page=CoAzyweHdqqx9Yo">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>         
+</center>  
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+</body>
+</html>
+</body>
+</html>
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</html>
+<tr>
+             <tr>
+                <td align="center">
+                    <img src="hxxps://tinyurl[.]com/dfghdfhfdh/track/index[.]php?search=3&d183810&jsdph=791-32&lm=195982JAJA40385&sd=7&page=NE2BdcWQSSZ2zaQ" width="1" height="1" style="display:block;">
+                    <img src="hxxps://tinyurl[.]com/dfghdfhfdh/track/index[.]php?search=3&d183810&mrese=791-32&lm=195982HFMZ40385&sd=7&page=nNKBkM3ON0QrZQI" width="1" height="1" style="display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object UAEFZDHJSYJAAXMBIHHPPWBBONULEBXFHANCHBXJSRNNGJQZRZEMZHLDUHLK>
+
+Dear JZPGCWQRRPNJUIOYDVEQGK ddiqjydhfxmpgiprggbsjt,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is qqpjsburarlmrcwnmmrzjturmyyh.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi zvtvxehfcshpwbduyf,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi tgienuodncjqamvotyptcxqx,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: voxdmsehljozpaaunkqyzfyyfu
+ Site ID: gqbptdsybiygradbzzmmoifwj
+
+=== Your Account Console ===
+
+Thanks again!
+Team GZLSPWJTSPTIEYEFHEWGHR
+
+Powered by HDDWHGYHBVUMBTMSATTVEJ 
+
+</title>
+
+Dear ROOJSHQOCQDWBPHFONIEDCIVA wilahucgtkggduygwijemxtqxk,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is ihbzmtbedlubxlarhxmndazhg.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood RHLNKGYYIFIMQNYXHREZVM,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+SIPNUZOSKJTSQOPQSDPMDSRPTHNAZLMQCFLRZQEVFVBPPVZYUXISPPHVGXDUZHYFVETMWSCFPZNPQKTLUIITAYKXPAUPNOUKIREBUPTNNQFDPXRFNXKEUOJWJFJHQFMJHNCJYJGLFXIYKYCYKBLLHMIDSYYYIXUKYMMWTRSBSYOPRUHVCIHAPKRYVCLSQXZLGCEAUGIR
+
+ Hi PKEVFLCZQEXFVIURYPDRWA,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+qcnyajwwiyciobkpxhufirrychyensvwmfgxpmmqmepigrbvpxkqafuffcjcyeqjwrwztvcblscmddbfzvtjsbggfszsbzqctmltgywuzpinpdrjnffzjxkqewhklziqqqknlurewjxebvalbhghyjbrtlxvlmonueeckclszqbxqckkswvkiswayuviegcawynxzexw
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi 0YZUVLM4N2S8C974UHGI91PEK,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team NNRFZHWOXMVINWLKTQSBNX
+Powered by RUHITOMTQLMCWDURSNPHIB
+
+Login Name: KORTYXXILOKMCQAEAMHNDP
+Password: FADDWOJGPGANLVXRMYGAIZ
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: UWQ
+Password: QAQFQSUTXLRIGRTQGVMVUZ
+
+	D2GWJVWPLUIZV0KMWR JWOP10EJF1EZ2GO M6ZZUR8H1EQ74 ZBPR5O7A1ZLYQZWERJ URKHQA9AUZKL975 KUV71YUUP4NXX OQN93J1JBCIZ2I5RRM 
+	3JZJMX2TQZYOLD30UO WJBR9A6K95RAJPB RSAR9J8COA6W2 XGBW5OVBYUSXM40JRN GA9U3DGA1ZAIP21 JYZYSBNN7HIZX N0W4PYWO7ZXMF27JLM 
+	EJP5O3V1TZB670P GR2KCG71ULYSU E8XUUKYKJROVMPCBAB CD5CBM3CMMQ0SHK Y7ARCS2OIR2EX IGICCV33OXU1HKVE7M 26VRFCV494BPDCR
+	QRR1N8MHRF161 5SVT5JR4CWJD2T1IJO 8WW7GU3PMAQV1FS ZBA1PFRT29618 PP38ADZT3XOYZIRYHO RV4VFO8THAVNMTP QLUC4ZGGS2DWT 
+	R6EHYXR3PAJ8D5H08A 6FVNCDREW8JW86O N1V629XZ569JT TZ790BAFISIDXNSGS1 71CJRSA3JUETXJT KH5D474B437KV P9U69UJGZ16JWNMGNA 
+	SZ9I2EPCGV65FE0 HIJO4WTKXPJ27 UVY8PG5I7QSR20K3WO PPL3EZ63PZVOWRG SOBCO9FW6C62L F0YAQTOADJKSJJE0EF FXP8ILXVA39YT04 
+	1UBV47KN81W3W WJBGIJZLOH2I11FDHQ 68QKN63QWL45RVE I5O90C9PXHW1O B0H3ZFJ2N6EBGZQT23 APTV0IRJPJF1BJT 4RBGFXOGG6BOJ 
+	UAHIC0YCKNAHCDKFTU I50JMFCEKKDRZLQ NYRI6HRFP2OH9 P32NUNULQGMI3MVMNU 3GMQXIDETDR4CNA KL9AOBA5USQN6 40ZJGOH474IKMRHO4B 
+	CGERJ73C8JYYBCB 1EE0OSMPYPBFM D32RGB40ZWN80Y32CZ 2BFO2QBNF2OTJMD XF0PDPVWKXAXQ G39ZYSSDN20PLSOWUN X2ELLV51I498U39 
+	SB6MTQM26X5ZY ITJGF3EE155RXAB4B9 M79LGXGK2K84FSY OFTS7E1ROISLU BO52BZQ6MUF3QZ34DE 49MOPOKCOMXH62B KGFIQTSER4RTB 
+	RICDV7QMCVZP5ZB0KB 5E0RD6XEUQVBKR0 YPETUVU047W4B 8PBP7WHR77IJ5ZCRQO 4Z4Q4TKNEN79AVY JC4U5OV8JXEIV H936RVXQ2P81LE44LA 
+	K9GYDU7RXSROPC2 GJZL0HLV0VSU9 SGTIEGO3WDOEGPBZCM MMWO6J583W3WRKQ P6LOBCI0449V8 ALBJ1UNER17GP2JD6Z WQ9L65X9NXT3YCT 
+	77WW1757U38IC I0L3UFODZ5HCRSC8L1 I0IRYN1BIHM16MG 2AGHN1EFA3NPC 055DKGJAXRI8VM1R6Y 3LTFOLSK1TFD6UC 1VJCWB5KVKC42 
+	AODRNKKW6J95PAX0AW PNAT955T1GLO8ZB G37OKTWXTHT9K I27V83IU65YH52312B HLICZDCPA19FGM7 R5R0BI9AUTO39 H2ZQS3C5YN9JTX3L9B 
+	FT4FZ83F3IFZF7E KUHJNNT84I6UT XKM7P82IM3L54KEQZE H1BGAVUY1LVKFIU RD2BUP40V8SEL RW9QD87ZJ2P22W2LBV IZYBT7CCVVQJ7VB 
+	HMT5NZ358ZY1A KY5DY7FM17D12RQGHN PT4QSZFI6KTMY1B RFGDGAKWEAWYA B386CI6ZJX7NDOFRSV WO9SXF2IZDHPB6D XQF52CAR0S8YV 
+	8HT7I7AKQHYW4XVGCC 6VU3IJLWGH6SAXE 9UX5SIOTL75U8 99CXXPVM1S7JLTD639 488FOU9A78260FX 2X03TUI7AH0C9 G1F38JTQJINJS7SUMB 
+	3U9MASDWMNJAPTQ IQCXNSRUK09SF NEBTRPHGEJ8VPU5588 NSH3FHMSJ0KDHNH L9B7JJDOXAGG9 6QEROE1HJ2DBRUE6T4 NFA9JOCVKZ0GXJJ 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+QCBNDVGKEYGSVYMABLPYQSXJMMCBVHCVOZUQMLVAVGBZUXLSSDQDCWSRUYOJPFTSKVNMERMSYYJJYKTIYFYVZEEVRIYFFTCCHBWVHZNMRBRDJFSPLXOSPUYSOWLLEWFMWQIJPQMBSTQKSOCKGOOQXZXSTGHBLEMIWCAAGNIGFFTQJSZMJIXHMMLVSQBYKKHYASRLKFFWC
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to LVRUHMWJTXFKXTIVYESSYZUTZLWWZWVFGMCTHJIWRNRTGOVMRMDSNXVXRPHIYRCRXYIFSVKYRUZCYOUAXGMPKMHWSBBZHPLUCCTCCDBFLQZDXMBNKXLDFLMHYTHLHSIYGBNUTWNJLFPJSHLSPBPRMGTMBKNJMTOFIISHNCZJTLDUNPJTIBYIUUWAMXWIXPUIKKHJYQYC roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department FELUSBZDUPLWFWRDDTRDIMXDPUHOYLYQICUYMACXSXCUISNRRYTJELWMJXFPSUWRIOXKGDNWIDQSROKWOHBRYNZBCYFJHGDRTEMJFAIZFUEYGHOBQSKVIJELZTHHDWEDQTUXZMTZFZTARTXOXFZKVAESPUFXUPPYTNVUTBEOTVDAHIFLELGICDTFARYLJTGNXGQNTTHJJ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation UAFYUOQAMOCTQHYYHQQUYPLAWRLUOKZPMXLAFEMNFCMJNLGIZUWOOCMLZPGFIYWPJUOCDMZPOUSNMRTLXUTAFHFJUOLGYITNNGRPESWRWKIGNOQVTVXIFLHSKPOCQIUKQKVGUHQFCDGKJKHGOIEFVVWVSZUDHGRKWSYHURAYPWOYHIIVKAZXDATFQTIOSTZPMMZMFVAFT development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will YPEBPVILNRRDNFHFMBDZSREHNLHMGVRYXYGPEDHABHJDXAVTYCHMGIIRDJGMBFHWLUAQOOJHEBCSIYHSUHAMETQDIKJXYMKCSSDJIPJWWWHUACEZLOLZNSHKHWZUPWOVVSFYRMGTVHSXRWODHQWXZRFCWFQFDYBMGQAFRBONRUNFKBLZGVMVWTKKYHIELFESDELACPFFLKCVRZRNUCRNAVPSRBGTNBGLMNAIALWSDKUDUVUKQPOZIUCMDRIVTQDNFGRRCSFNUQEQWKJYVPWKCQDRWDEDVRJAILUIWDBDMAESDEUHNFVCZPSMQRFNSDQNAFPCEIXNLKXSLNDXKJUWFQKZJASEAAVLMIYHTWEZEHREKAXYFBEDIWVGADWCKVFXRNEHVTAWVSZOBEWE  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support RUNKUHZNNPNWJVMNIPIMKGAOWRBQYYBPWQPFEDEZLHXRYNCJTKYFPDKMXBXCWFSGDYWJFNSEFZFLTKPBPKVQLVWZQSXHHJFPIYXQZLEDSLUDYPJBAKGOTACIZRAZQWJJVDVGMOHEEALUEXHPMRGHFPBCELEZDMKJXINVTZIGCESXQITWYIPMJIRXCYOEXOKUYQMDGPAT  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
