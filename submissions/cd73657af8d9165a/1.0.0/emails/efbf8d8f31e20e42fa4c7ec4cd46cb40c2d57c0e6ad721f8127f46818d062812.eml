@@ -1,0 +1,1056 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1783455113; cv=none;
+        d=google.com; s=arc-20260327;
+        b=R0nY0rmDQ6Aa78asls6rbtiVjoZYWyLq6Nlte4lk+hibcClDJJurHqg+Zy4pEGo/Hg
+         a67v44M425Mi4RhpfnUMMyjB7BTKsXJiepraHyK+OnIEm92+TTlOZ0T2uOejRm3RbNmr
+         eZShkVpWAUSsRkgglVnZJa5PpggeRyM6Nve0UcWmttYsihYobpsHzAu396P8SjZXhBs+
+         3JYP1SdPyKTMtDypfmEI21RRpLgT4kzXOm1xdzGIc+7MDQG8ds6KgHq9iV/bSE3c3VCq
+         5Way0lHVmAdubfXd5E+CcZqTJLj6bUCibk3piJOVMVe2BVTJjXj3gpPUTvD2sN8Wy91h
+         GpYQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=VAFMr495teVrNSNDPARYr33Lj7EmithrC2dclQMf4zE=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=e/54N6TCUOrgjyiM/aFkzGY9BOf4BTXOh8sLcbP6lEKu/iNFCGvwZsZhpuK5lbK6sH
+         p52ECW6XnetnyPVDxCceBnUSCaMH7E4kyBJ+B8LPIV9y7aShXhemojhx7lWBEcJO7b5X
+         GyA+5XyX5CLcumlVXQW/6nWau41DByPHDNo7MNb0BMRMQnp4ZlipYX3qPOjBAuhuH+26
+         vA9uxSu88iACL+bhRcq7ZR3jxpwhPnLXcjMg2SmH3KS5OKFIzgir/l1sc2U7tIc5BM4i
+         3R0p2qJ8lrCHX6gCkbNwyiOWaFnO4cn0OtZraU0tScQhrgKf28gQZwKQmzHgvk1N9r0P
+         Y/gA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tnqdzgey.zoom.rexviro.biz header.s=smtp
+ header.b=X6CzxO2K;
+       spf=pass (google.com: domain of dqmhtifiqryop@zoom.rexviro.biz
+ designates 173.254.234.56 as permitted sender)
+ smtp.mailfrom=dqmhtifiqryop@zoom.rexviro.biz
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tnqdzgey.zoom.rexviro.biz header.s=smtp
+ header.b=X6CzxO2K;
+       spf=pass (google.com: domain of dqmhtifiqryop@zoom.rexviro.biz
+ designates 173.254.234.56 as permitted sender)
+ smtp.mailfrom=dqmhtifiqryop@zoom.rexviro.biz
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=tnqdzgey.zoom.rexviro.biz;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=kcegpasmedypwnsheusvy@tnqdzgey.zoom.rexviro.biz;
+ bh=t1qDJyyNWYQGDVIA3A422XrdSk0=;
+ b=X6CzxO2KuKbnPN4rO1P0i8stK1ferAL/uQijrtNcdE1a9xAppNzGDoYyyYmE8F57hRm5iQLKNFVg
+   +0HVIZLf996nGT986qdQgLSyZ+LqVdtkPjuW0K52mMRaK5fn7kxbLxsYV76e5SbuOkYumxsNcUQU
+   Ri5ft7gBMeeRnffpNJ4JNiKI3oFoaJpY1MDdwHXcHLcBwUu3QF00hjHs0jnnNT6nWAnYJChmHTNF
+   qv1nMmtp+XBkj0v1eq8eXnQ3ZIXbQGVxjvVOoi8Vhfqwpg4kjQhdUFVMZCu0pnHxY96El1cyazpO
+   5+JhfpXEuVKRtnrgzV6lk0/WXgmX5EU0xHmN1w==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=tnqdzgey.zoom.rexviro.biz;
+ b=B3CFk0vSUr/EETuKPriarP9An+iGxpwCw07cMWqIe7FQXAHtjWiJTF3KZf/KXv33FBLE2IeDQzhf
+   wYEDVXkeg2Hz+wAQZty7hkNBN+OYTluAA6zUUEeU33AQx/bgDSCg8n3gSxbQeEfpVGGUtVVo6sf5
+   H5ShD/pq5gjTb2Yq2ZDfexLdQe1JGaCtw4wDijGXQYNetrkGdUoNDLfSUPsSJV3MLHUI5wzA1UIa
+   skFUt4bPaqVw2DCK51xpu8YoNYOTFYDfbU5mmCAgdLVfvtKXg4Tb/VKmKhwUYwMHIl9lnx49uZAH
+   HDXTN419v0w+0M45LrfHvrmnIT1ry+odeV8hPA==;
+Subject: A Coca-Cola World Cup Fan Bundle Could Be Yours
+From: Coca-Cola World <hyrtkuf@tnqdzgey.zoom.rexviro.biz>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 173.254.234.56
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <tlkssijdsehjukbaukhpdtbwokoiep@qt69o9q3d2xfmbcync>
+List-Unsubscribe: <http://mcatimb.lv.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Tue, 07 Jul 2026 20:09:57 +0000
+Sender: kcegpasmedypwnsheusvy@tnqdzgey.zoom.rexviro.biz
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <title>Congratulations! You Won the Coca-Cola World Cup 2026=E2=84=A2 B=
+undle</title>
+    <!--[if mso]>
+    <style type=3D"text/css">
+        table { border-collapse: collapse; }
+        td, th, a, p, span { font-family: Arial, sans-serif !important; }
+    </style>
+    <![endif]-->
+    <style type=3D"text/css">
+        /* Global resets */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-=
+adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; lin=
+e-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !i=
+mportant; width: 100% !important; background-color: #121212; }
+       =20
+        /* Mobile responsive overrides */
+        @media screen and (max-width: 600px) {
+            .email-container { width: 100% !important; max-width: 100% !imp=
+ortant; border-radius: 0px !important; }
+            .fluid { max-width: 100% !important; height: auto !important; m=
+argin-left: auto !important; margin-right: auto !important; }
+            .stack-column { display: block !important; width: 100% !importa=
+nt; max-width: 100% !important; direction: ltr !important; }
+            .mobile-padding { padding-left: 20px !important; padding-right:=
+ 20px !important; }
+            .center-on-mobile { text-align: center !important; }
+            .headline { font-size: 28px !important; line-height: 34px !impo=
+rtant; }
+            .sub-headline { font-size: 16px !important; line-height: 22px !=
+important; }
+        }
+    </style>
+</head>
+<body style=3D"margin: 0; padding: 0; background-color: #121212; font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <center style=3D"width: 100%; background-color: #121212;">
+        <!-- Preview text for email clients -->
+        <div style=3D"display: none; font-size: 1px; line-height: 1px; max-=
+height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; f=
+ont-family: sans-serif;">
+            Congratulations! You are this week's random winner of the limit=
+ed-edition Coca-Cola World Cup 2026=E2=84=A2 Bundle. Claim yours inside.
+        </div>
+       =20
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation" width=3D"100%" style=3D"background-color: #121212;">
+            <tr>
+                <td align=3D"center" valign=3D"top" style=3D"padding: 30px =
+0;">
+                    <!-- Email Container -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"600" class=3D"email-container" style=3D"max=
+-width: 600px; width: 100%; background-color: #1E1E1E; border-radius: 16px;=
+ overflow: hidden; border: 1px solid #2D2D2D;">
+                       =20
+                        <!-- Header / Logo Area -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 25px 20px; background-color: #1A1A1A; border-bottom: 2px solid #D4AF=
+37;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/prosperway/hoperise[.]html#index[.]php?search=3D4&d200125&jjwnl=3D868-32=
+&lm=3D195982WMJP39204&sd=3D8&page=3DQHmLQl2DghMMyjA" target=3D"_blank" styl=
+e=3D"text-decoration: none;">
+                                    <img src=3D"hxxps://i[.]imgur[.]com/BvO=
+ln3Y[.]jpeg" width=3D"130" alt=3D"Coca-Cola" style=3D"display: block; width=
+: 130px; max-width: 100%; height: auto; border: 0; filter: drop-shadow(0px =
+2px 5px rgba(0,0,0,0.5));">
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!-- Celebration Hero Banner -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"ba=
+ckground: linear-gradient(135deg, #E10600 0%, #8A0400 100%); padding: 50px =
+30px;" class=3D"mobile-padding">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%">
+                                    <tr>
+                                        <td align=3D"center" style=3D"paddi=
+ng-bottom: 10px;">
+                                            <span style=3D"font-family: Ari=
+al, sans-serif; font-size: 13px; font-weight: bold; color: #FFFFFF; backgro=
+und-color: rgba(0,0,0,0.4); padding: 6px 16px; border-radius: 50px; text-tr=
+ansform: uppercase; letter-spacing: 2px; border: 1px solid #D4AF37;">
+                                                =F0=9F=8F=86 Weekly Draw Wi=
+nner
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=3D"center" class=3D"headl=
+ine" style=3D"font-family: Arial, sans-serif; font-size: 36px; font-weight:=
+ 900; line-height: 42px; color: #FFFFFF; padding-bottom: 15px; text-transfo=
+rm: uppercase; letter-spacing: -0.5px;">
+                                            Congratulations,<br><span style=
+=3D"color: #FEE180;">You Won!</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=3D"center" class=3D"sub-h=
+eadline" style=3D"font-family: Arial, sans-serif; font-size: 18px; line-hei=
+ght: 26px; color: #F5F5F5; max-width: 500px; font-weight: 300;">
+                                            Your exclusive, limited-edition=
+ <strong>Coca-Cola World Cup 2026=E2=84=A2 Fan Bundle</strong> has been suc=
+cessfully reserved.=20
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Product Showcase Section -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 40px 30px 10px 30px; background-color: #1E1E1E;" class=3D"mobile-pad=
+ding">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%">
+                                    <tr>
+                                        <td align=3D"center" style=3D"paddi=
+ng-bottom: 30px;">
+                                            <!-- Product image referencing =
+image_cd1afe.png -->
+                                            <a href=3D"hxxps://storage[.]go=
+ogleapis[.]com/prosperway/hoperise[.]html#index[.]php?search=3D4&d200125&iw=
+rce=3D868-32&lm=3D195982JBOA39204&sd=3D8&page=3DxbKTHqPYPXMvrKV" target=3D"=
+_blank" style=3D"text-decoration: none;">
+                                                <img src=3D"hxxps://i[.]img=
+ur[.]com/6YRHhlV[.]png" width=3D"480" alt=3D"Your Coca-Cola World Cup 2026 =
+Bundle" class=3D"fluid" style=3D"display: block; width: 100%; max-width: 48=
+0px; height: auto; border-radius: 12px; border: 1px solid #333333; box-shad=
+ow: 0 10px 25px rgba(0,0,0,0.6);">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Introduction Message -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 10px 40px 30px 40px; background-color: #1E1E1E;" class=3D"mobile-pad=
+ding">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%">
+                                    <tr>
+                                        <td align=3D"left" style=3D"font-fa=
+mily: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #FFFFFF=
+; padding-bottom: 15px;">
+                                            <strong>Dear Coca-Cola Customer=
+,</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=3D"left" style=3D"font-fa=
+mily: Arial, sans-serif; font-size: 15px; line-height: 24px; color: #CCCCCC=
+; padding-bottom: 10px;">
+                                            Once a week, we randomly select=
+ a registered community member to receive our grand prize rewards. You have=
+ been selected as this week's winner! Your premium, limited-release <strong=
+>Coca-Cola World Cup 2026=E2=84=A2 Bundle</strong> is prepared and ready to=
+ dispatch to your verified address.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Product Feature Checklist -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 0 40px 30px 40px; background-color: #1E1E1E;" class=3D"mobile-paddin=
+g">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%" style=3D"background-color=
+: #252525; border: 1.5px dashed #D4AF37; border-radius: 12px; padding: 25px=
+ 20px;">
+                                    <tr>
+                                        <td align=3D"left" style=3D"font-fa=
+mily: Arial, sans-serif; font-size: 16px; font-weight: bold; color: #FEE180=
+; padding-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">
+                                             Your Premium Prize Package Inc=
+ludes:
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=3D"left">
+                                            <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%">
+                                                <!-- Benefit 1 -->
+                                                <tr>
+                                                    <td valign=3D"top" widt=
+h=3D"24" style=3D"font-size: 18px; line-height: 24px; color: #D4AF37; paddi=
+ng-bottom: 14px;"></td>
+                                                    <td valign=3D"top" styl=
+e=3D"font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; co=
+lor: #E0E0E0; padding-bottom: 14px; padding-left: 10px;">
+                                                        <strong>Premium Ret=
+ro Cooler:</strong> Heavy-duty, classic metal design built to keep drinks i=
+ce cold during the tournament.
+                                                    </td>
+                                                </tr>
+                                                <!-- Benefit 2 -->
+                                                <tr>
+                                                    <td valign=3D"top" widt=
+h=3D"24" style=3D"font-size: 18px; line-height: 24px; color: #D4AF37; paddi=
+ng-bottom: 14px;"></td>
+                                                    <td valign=3D"top" styl=
+e=3D"font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; co=
+lor: #E0E0E0; padding-bottom: 14px; padding-left: 10px;">
+                                                        <strong>Insulated T=
+ravel Tumbler:</strong> Double-walled stainless steel construction featurin=
+g custom FIFA World Cup 2026=E2=84=A2 branding.
+                                                    </td>
+                                                </tr>
+                                                <!-- Benefit 3 -->
+                                                <tr>
+                                                    <td valign=3D"top" widt=
+h=3D"24" style=3D"font-size: 18px; line-height: 24px; color: #D4AF37; paddi=
+ng-bottom: 5px;"></td>
+                                                    <td valign=3D"top" styl=
+e=3D"font-family: Arial, sans-serif; font-size: 14px; line-height: 22px; co=
+lor: #E0E0E0; padding-bottom: 5px; padding-left: 10px;">
+                                                        <strong>Commemorati=
+ve Gear:</strong> The official World Cup 2026=E2=84=A2 match soccer ball an=
+d heavy-duty canvas tote.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Primary Call To Action (CTA) -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 10px 40px 45px 40px; background-color: #1E1E1E;" class=3D"mobile-pad=
+ding">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%">
+                                    <tr>
+                                        <td align=3D"center" style=3D"font-=
+family: Arial, sans-serif; font-size: 14px; line-height: 22px; color: #AAAA=
+AA; padding-bottom: 25px;">
+                                            To complete your winner verific=
+ation and claim your package, please use the secure link below to confirm y=
+our shipping details.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align=3D"center">
+                                            <!-- Primary Claim Button -->
+                                            <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation">
+                                                <tr>
+                                                    <td align=3D"center" bg=
+color=3D"#E10600" style=3D"border-radius: 8px; box-shadow: 0 4px 15px rgba(=
+225,6,0,0.4);">
+                                                        <a href=3D"hxxps://=
+storage[.]googleapis[.]com/prosperway/hoperise[.]html#index[.]php?search=3D=
+4&d200125&amwiu=3D868-32&lm=3D195982PYKL39204&sd=3D8&page=3DBZrSLGBiHEWXdBD=
+" target=3D"_blank" style=3D"font-family: Arial, sans-serif; font-size: 16p=
+x; font-weight: bold; color: #FFFFFF; text-decoration: none; padding: 18px =
+42px; display: inline-block; border-radius: 8px; border: 1px solid #E10600;=
+ text-transform: uppercase; letter-spacing: 1px;">
+                                                            CLAIM MY BUNDLE=
+ NOW
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Safety Trust Footer -->
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 22px 30px; background-color: #161616; border-top: 1px solid #2D2D2D;=
+">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" role=3D"presentation" width=3D"100%">
+                                    <tr>
+                                        <td align=3D"center" style=3D"font-=
+family: Arial, sans-serif; font-size: 13px; line-height: 20px; color: #8888=
+88;">
+                                            =F0=9F=94=92 <strong>Guaranteed=
+ Authentic & Certified Secure Delivery</strong>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <!-- End of Email Container -->
+
+                    <!-- Footer Compliance -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" width=3D"600" class=3D"email-container" style=3D"max=
+-width: 600px; width: 100%;">
+                        <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding: 30px 20px; font-family: Arial, sans-serif; font-size: 12px; line-hei=
+ght: 18px; color: #666666; text-align: center;">
+                                <p style=3D"margin: 0 0 10px 0;">
+                                    This congratulations email was dispatch=
+ed because your email address was selected in our random weekly draw. If yo=
+u do not wish to receive future winner updates and promotional notification=
+s, you can unsubscribe at any time.
+                                </p>
+                                <p style=3D"margin: 0 0 15px 0;">
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/prosperway/hoperise[.]html#index[.]php?search=3D5&d200125&cjezq=3D86=
+8-32&lm=3D195982KYIB39204&sd=3D8&page=3Dsb53uFDsDGXytf2" target=3D"_blank" =
+style=3D"color: #D4AF37; text-decoration: underline; font-weight: bold;">Un=
+subscribe</a>
+                                </p>
+                                <p style=3D"margin: 0; font-style: normal;"=
+>
+                                    9555 N 90th St A101, Scottsdale, AZ 852=
+58, US
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
+</a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/prosperway/hoperise[.]html#in=
+dex[.]php?search=3D6&d200125&gpabc=3D868-32&lm=3D195982YVWA39204&sd=3D8&pag=
+e=3DgWFsO41w7hXNuzC">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+
+
+
+
+
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object NUNEDFUNYWEPOSNBOWPBVWHEKAZZYGCGXZNFJWCMCTIZBXQCIXPSKXZCUEIJ>
+
+Dear AXPBULWVANBSSSIHHACDID hjyyhpgznihwlgrmnhvjab,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is xuhvnmncqbnasicfwowajfg=
+scnbz.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi yzbhlvrbggdddlbbyc,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi onsknvnfngxcbuxddrqfjygw,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ieuhwxlnkknlumlhdxhuzzvcyy
+ Site ID: pamwaspqhbgaspuqhxouyyolz
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team RVKTOZNVDKEJVIVJXFVGDJ
+
+Powered by IKFUCJSRQIQIOCWOFEJREC=20
+
+</title>
+
+Dear YGZKSMUBBCNYXOCIJFOALFWMV egvbpibplsqzbceclbzlmufdya,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is uvfnyelwhwuczezycakdqxa=
+pm.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood OAHVNFGCVTCFYJWJFXZPLK,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+NLLPJLDHJJTGERCVKUMXENAJMRBQFSUAZKEBVYIZLGGPTKUEHVPVLKNGHIVLKIMFKOUCKRQQYLD=
+ZEPBVBUCNSFLHLWGJXAWKFSDISNPEKIOOJDHCGEZKZTFJCLYKKJPOYXERXWEYXZZVQEENSCLUKX=
+OHXGOKYCDGMFWGLRTWDGHERWGCIVHVMKIMVEFPVWTQVOTBBHHT
+
+ Hi PVZIHAPPAHLZXMWVGXRFXE,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+pzznheugpnxleutqiamhryaaskplgqksmkcyyserheahpgihxnffktzsapyxosyjhcgkwnmelmq=
+byuqgpezgysbvozsyspziasdjjntwpyjgtfewmidppdxhxddrsorbxbmozfwsthnwijndufuuky=
+qzhyxlegdfwqguttudrshnvgarkjxwbhmaltrnwqwtufskjtgk
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi K08TAY88B0IJZEAHV8SOFM20A,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team ALNVBNNNOXCGVCISDXQAVK
+Powered by WTFSZLUTGUSXFYOLSIIMXF
+
+Login Name: OZQQQUEJSBJNALBJSJOFYF
+Password: RBLVOMRGJTBDTTJJENHBGB
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: TOG
+Password: GZMVKZKEGQUYPLRPELBSUR
+
+	GQ8KT0QFTB0VS5K71T 8KODCAEZWD6WEVN 41FXP1NA2SSCR HMSIIYK8TFQ8940V1J N2I0XG=
+LZ8NJ0NPY XNO34EWIU3BIQ WC2ZMH2WOUI9RFWDN1=20
+	PASPI97KQRDJ9FHZHP KVKST2KBQ08KJXD SS2CQT0DBHA8T TLVCIR8J5IAS3BKKX5 UZF853=
+MI0O9R55A F7RKHE9MF2R35 NW1COTWLVBY7BGE9XD=20
+	6BPXES2W046WBNN 40E9GGVV6MCES 473XV1CWKBZA9B69CH U8D2X9B1C7RV5GP UMLL5RB9W=
+GWX6 9HNCRJKIRL9PDFX2EZ F4M7IBYE8TO6B2M
+	BBF7WDNPEMANM U83XSMYHXG3YSAFEBZ G27ZQVVSS51WN76 N8G5FHB5Z930W 8S8XN0ZB5LZ=
+8FWM195 PNSRNSHQ3L9MNG5 IUIV59FY9UI0Y=20
+	NDQ16DHFL7X05XIHNL WMYCT2KYNRC5VUW SVFWOFXZ4IHTH LUAAG2DBD63ZPATD9S NAK168=
+YTT7PFPFC RP1O95SM9BKUF EOZX3U3RF4R5AFQ2T1=20
+	XGM6FO2G2YC9KH9 MX5M073F3JTXW 8OB5IE52I6PADNRRTF 7ANRRZ07YLBK8CB 4GB5D80IL=
+WVE3 17MSZM7WVLPKB2K7TW 530FFJZLSW1S9IO=20
+	KBPWEJ2RCE4RE 5IR5RX8SU6GSCGFS2V PNXL4KY5YZUVMN8 XTAH5TBS79FBA 69QPLRY1JHW=
+NOG3IYH J3K65CBFTBUITP5 UQ97B5VUJXARU=20
+	QTG8ULWEXFI0ZN3NKM JNAK70JXHTRZ51U XEXZGVBPWPLZ5 QMUJ944FDMG6UBF08U NC0D7Y=
+5OQUHCARL E2J45JEK1MPH1 O7W18GOQ3XB49I42W0=20
+	IQ5O0ZIBE2937Z3 1KZN56Y52X7IR YLX4HMX62GS8XDVS4S DLRBGXU7BGNVUNM 3LDMJAZ0W=
+XO8Y QIOI5K52NI0HAT1V3S 0INSG7Y3X9Y855X=20
+	8GPTBHXI3A4IP KY477O98KOU92PKU95 T2S16ZI0FAPUJKU K9IIADU847ZNC IL3L0AOW40W=
+C1RDFWL DJHPXTC4MVT6TN2 2CBZQDG0OXRJB=20
+	HQSLHTUYTUYPCPR6ZA CVYA2FZ0S9USELH PQHCT1EK6567A K8EKPSRDXQV7CEQ9NH S0VJ1F=
+WLN6LDRUM G82A46ZCM8VW6 86ME0I6L858LXM3CER=20
+	NSCV19K4VO97O1O 3DWZ697VTDWUH SW9SLA3P5YB8TJO1SO 9BMI7GX8KHRWY0B EKD223RYJ=
+XNDX QYXSOHR84UXRB9H16K XEJJ00VR10648F8=20
+	N3664W2XDL91Z TA14MQFXDKE3Z7HG0A MJSCKPCLUERD87L 0M5X1XS8RP5D0 QP765A6RE6B=
+2OC9B54 MT9Uredacted45MQ93C3 L05QJ45NQTSJC=20
+	WT67E2OEI8OLU8GVCC C7MKZQ2S574YSGL I7MRCOBFHFBTU V689ZXAKC178V38OUN T9VZYU=
+G8Z9YL9VL 1KL81UB24AG0D B12MHSFSOYG7GAZQXE=20
+	M04DQWMKBESWD82 VN1VOGQHP8KQZ CFDJ2RM53TEFCJUJX3 ZB02S0AXIDQRFBV RO6UFB2YK=
+C0Q1 MWJ898PEED5E9QFFID NXYFU76IWHTILJU=20
+	DGCVKJYDDA0HB 3RWXWM3HOBUYBRW9K7 2W1SOT1OATX7NMU QN7MS0PFDE684 EEWDB5572W3=
+2RVB4LV IHJW3C9OI9JA10W C1VAVQETZFLR8=20
+	64633Z31TAKWZVW4GZ 16CKKGXOROJUG2H PCYN8PEO7J7L5 P6Q1VY5XK4O44L0F9X H3AMC6=
+O5SW1BPG9 89HJEQ0RFP6F9 439AKX0WH5XDL9N3MH=20
+	TGMYDXRNTVZOLVR OPHG3IPNEBO7U RYGZ981IOD84MJ10Q4 LBPV5YVODHI8QQ3 X8ICWDMXC=
+WNQZ FSTOICRDZ0YP8YFLSL KRPQVILZ060YMXA=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+ICXTZKULKBSQPUQNPOHARIGYKHXSQADPXTTDHPXNUVAPESWLCXVQEEUFZTYLRDUHJQRKKWOFFSY=
+AXPBOEREDFWQDRAMOEZXTZLVZBULEUTBRUJCMBFJVOENZZNIKHHRYAFIPEWCUZMRNBTNPWVGWDE=
+YXZQINBPHDREMLUUCIGHSAANHFPTFJLITVDWAYEYPBDUVRYFPPV
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to GPUBWKDRGCUYIQPLZJWVP=
+DDSJQZCMFUMDUWVLKRYWAICOFQTNJICNLYPZICOZYWXPEPPRSNQGLHZMIKAWMCLIWNHDESWBTLB=
+KIBXLAGQZZJRBNTASLNSHUHZPOCQZOSPPDOUYOTMQGTTWKBDJWBBSYBIDJUWNLKULZPJEMGLKAV=
+ZBUTBKOWTVYVEEPPYWQJIUFVZVQPO roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department KVJSGTGDZZKWWAGMAXORATQHTITUIZAEMZFXJHGKMRZCJRUV=
+LJKGVGACKOMKSENNVWFADFWFTUHAQZNGHBGXYKTPPIWYCSXDFXIVADTOIOEOKQYYDDLMHTGCIOU=
+ONECUBUISSKDXXOJIGMIBIIBKAHIHCBDOHCIUCCASYZDLJDZCFWBRHHUZEMBOJVICPZHSUNSNQV=
+WUV to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation CUUXMLNFUGTFNLV=
+ORGNYZWEPIASXBLJYVFDZDDHGDEOQMEUGQCBCQCCOKNQBNAQVYDOEEFYPUDSYXPVOUBUQDXETWD=
+JHGGFFLCQWQSQXJMYLPUOYJWUGKKKNAJTHEPSKSGSYBQUMWEFLSEVFEVILRHPQAHJOOETOQYKLX=
+XYZWWXSUBWZUVXPYPSFXJVRYRLLTZDDTJWWY development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will FABLWCOITENEXIZJAZMLBZHPGKJQYKKNAHTAHSPCTJRTRWVZXKHSKLTUK=
+KMLGWOGISKBNPCSCMBVMOAFAUXVPDCPLVVCEEWXWHNPQWEXMPQCDOVHDCGPWFTJDTWYMEXZMSTW=
+JTWJCAPBBDWSPCOTHJNSGWFBTYHRWEABNKFIRAVJYZHFOVZFXIWDYPHDDGBQWWVKWYKYURGBURS=
+QSFXVYNURBXBMKXZUBUHDHABGYOGQSOSLKBBQMFCMOPIYDWRRFCYTFIJUWGRKTJDIASKCAAFWUK=
+KMKIPTMSWBNTGNZXJAHVVLQJVMWXYQZQIREWNMWTGKQCQHVEWCPRXTIAEGFOVSHHBCLCDQEKVLA=
+ZJRPWJBRPSJJEECKRDNGIEURAEACRGIMBMVFIUWZHGE  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support ALGWHTX=
+UUMJUZWDNBAPAMUUQBIZDKSEZZAGTCRTLZHURLOMIHABRFZOLOXIYDIYDNTTNMWETILAAUSDWZW=
+RVNEIUBNGFQAUMZGSWTUFPAADATKBEEKOOOKOZZEGWYLZVZSCTMRVRCZBEWXJBKGUWGAAXJHRBW=
+XOAGZZDVRLAGLVDLZUUJXZPWBQYGBDBGRKNTEBKJORW  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
