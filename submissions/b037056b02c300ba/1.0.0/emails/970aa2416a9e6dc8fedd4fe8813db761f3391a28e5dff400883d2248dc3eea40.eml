@@ -1,0 +1,155 @@
+Authentication-Results: spf=pass (sender IP is 178.238.234.82)
+ smtp.mailfrom=eggmoo.com; dkim=pass (signature was verified)
+ header.d=eggmoo.com;dmarc=pass action=none
+ header.from=eggmoo.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:57B967A474ACA8D596A1FE80D51BE9F7AAFC071A23038956BD3F96D02615CDC8;UpperCasedChecksum:A3538DDDF698DF254107AB3C4565921C0CFF2071D88E5D488AE495D8CF3450F7;SizeAsReceived:813;Count:10
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.eggmoo.com 295B16409EE
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=eggmoo.com;
+	s=default; t=1783578929;
+	bh=GrjPGnre12MUyC8bwSGoowxJJWh8C5a6HJwNrceoh4M=;
+	h=From:Reply-To:To:Subject:Date:From;
+	b=ljXo3oYAd8XBrFNhBtXNCuGSrQp2Xfj60BJnG3i2CEQ5xHyoR5KDtLe/EG5HACOke
+	 UfUJcfpWj+LX9GXdC1n3wT+OvA5MHimDk0hXe3zoK2YQ81xfiway1qSkaQYtuTzvlf
+	 8RQ6hRFcXMsBw/L6/98E3QNM14MwNNjOwdjcf+rs=
+From: "Justin" <justin@eggmoo.com>
+Reply-To: justin@eggmoo.com
+To: redacted@redacted.com
+Subject: Corporate Training: Procurement and Contract Management Modules
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_5C68_0B332739.57E47DDF"
+Date: Thu, 9 Jul 2026 14:35:12 +0800
+Message-ID: <146402486367682084132269@DESKTOP-HF4QG96>
+X-IncomingHeaderCount: 10
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Jul 2026 06:35:31.1124
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 25d5971e-908d-4aae-2266-08dedd8445e3
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CY4PEPF0000E9D2:EE_|IA2P220MB1940:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CY4PEPF0000E9D2.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/9/2026 1:26:13 AM
+X-MS-Office365-Filtering-Correlation-Id: 25d5971e-908d-4aae-2266-08dedd8445e3
+X-Sender-IP: 178.238.234.82
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:5;ARA:1444111002|3069299007|5149299006|29090799004|41010799009|1290799033|970799063|46080799009|34130799006|56899033|440099028|3412199025|1360799030|1370799030|1380799030|5090599003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Jul 2026 06:35:30.8154
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 25d5971e-908d-4aae-2266-08dedd8445e3
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CY4PEPF0000E9D2.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA2P220MB1940
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6446832
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0181.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+------=_NextPart_001_5C68_0B332739.57E47DDF
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+UPCOMING PROCUREMENT & CONTRACT MANAGEMENT TRAINING SESSIONS
+
+Review our upcoming corporate professional development schedule across thre=
+e distinct operational tracks for August 2026.
+
+TOPIC 1: CERTIFIED INTERNATIONAL PROCUREMENT MANAGER (CIPM)
+* Focus Parameters: Analyzing landed costs, global sourcing methods, intern=
+ational trade documentation, and contract performance risk metrics.
+* Dates: 24 - 26 August 2026
+
+TOPIC 2: CERTIFIED INTERNATIONAL PROCUREMENT AUDITOR (CIPA)
+* Focus Parameters: Establishing procurement audit teams, analyzing contrac=
+t files, discovering system deficiencies, and evaluating supplier risk vect=
+ors.
+* Dates: 12 - 14 August 2026
+
+TOPIC 3: CERTIFIED INTERNATIONAL COMMERCIAL CONTRACT MANAGER (CICCM)
+* Focus Parameters: Drafting and reviewing commercial agreements, cost anal=
+ysis pricing principles, managing change orders, and contract closeout.
+* Dates: 18 - 20 August 2026
+
+Key Logistics:
+* Timing: 9.00am - 5.00pm | GMT +8
+* Physical Venue: Concorde Hotel, KL
+* Digital Venue: Live via Zoom Platform
+
+FOR DETAILS:
+To review any of the comprehensive course outlines, daily schedule matrices=
+, or group registration pricing options, reply directly to this email or se=
+nd a message via WhatsApp to +65 8264 5712. Please state the specific topic=
+ title or use reference tracking code: MULTI-Procurement.
+
+=20
+
+
+Concorde Hotel Kuala Lumpur, 2 Jln Sultan Ismail, 50250 Kuala Lumpur, Malay=
+sia.
+To stop receiving further course announcements, please reply to this email =
+with the subject line "remove me".
+
+
+------=_NextPart_001_5C68_0B332739.57E47DDF
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p><font face=3D"Arial, Helvetica, sans-serif">UPCOMING PROCUREMENT &amp; C=
+ONTRACT MANAGEMENT TRAINING SESSIONS</font></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">Review our upcoming corporat=
+e professional development schedule across three distinct operational track=
+s for August 2026.</font></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">TOPIC 1: CERTIFIED INTERNATI=
+ONAL PROCUREMENT MANAGER (CIPM)<br>* Focus Parameters: Analyzing landed cos=
+ts, global sourcing methods, international trade documentation, and contrac=
+t performance risk metrics.<br>* Dates: 24 - 26 August 2026</font></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">TOPIC 2: CERTIFIED INTERNATI=
+ONAL PROCUREMENT AUDITOR (CIPA)<br>* Focus Parameters: Establishing procure=
+ment audit teams, analyzing contract files, discovering system deficiencies=
+, and evaluating supplier risk vectors.<br>* Dates: 12 - 14 August 2026</fo=
+nt></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">TOPIC 3: CERTIFIED INTERNATI=
+ONAL COMMERCIAL CONTRACT MANAGER (CICCM)<br>* Focus Parameters: Drafting an=
+d reviewing commercial agreements, cost analysis pricing principles, managi=
+ng change orders, and contract closeout.<br>* Dates: 18 - 20 August 2026</f=
+ont></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">Key Logistics:<br>* Timing: =
+9.00am - 5.00pm | GMT +8<br>* Physical Venue: Concorde Hotel, KL<br>* Digit=
+al Venue: Live via Zoom Platform</font></p>
+<p><font face=3D"Arial, Helvetica, sans-serif">FOR DETAILS:<br>To review an=
+y of the comprehensive course outlines, daily schedule matrices, or group r=
+egistration pricing options, reply directly to this email or send a message=
+ via WhatsApp to +65 8264 5712. Please state the specific topic title or us=
+e reference tracking code: MULTI-Procurement.</font></p>
+<p><font face=3D"Arial, Helvetica, sans-serif"></font>&nbsp;</p>
+<p><br><font face=3D"Arial, Helvetica, sans-serif">Concorde Hotel Kuala Lum=
+pur, 2 Jln Sultan Ismail, 50250 Kuala Lumpur, Malaysia.<br>To stop receivin=
+g further course announcements, please reply to this email with the subject=
+ line &quot;remove me&quot;.<br></font></p></body>
+------=_NextPart_001_5C68_0B332739.57E47DDF--
