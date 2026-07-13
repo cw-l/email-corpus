@@ -1,0 +1,233 @@
+Authentication-Results: spf=fail (sender IP is 34.148.90.12)
+ smtp.mailfrom=staccato.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=staccato.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:F02B072E1C9787B7701EE02D51B02CD803BD96835F0BCC93DE9B642B553E5C5A;UpperCasedChecksum:C70738284F70F7C7C92D4080EEF310F88ECFB081669A9CF66ABD7CDA709EC116;SizeAsReceived:327;Count:7
+From: Renewal Department <support@staccato.com>
+To: <redacted@redacted.com>
+Subject: We tried to charge your account but the transaction was declined by
+ your bank
+Message-ID: <89153c35b2384532b2df9d6e4a5bd379@staccato.com>
+Date: Sun, 12 Jul 2026 17:42:25 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Jul 2026 17:42:25.6846
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ d5693992-eee5-4553-8d2d-08dee03cefab
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DM2PEPF00003FC6:EE_|PH9P220MB506277:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DM2PEPF00003FC6.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/11/2026 5:38:28 PM
+X-MS-Office365-Filtering-Correlation-Id: d5693992-eee5-4553-8d2d-08dee03cefab
+X-Sender-IP: 34.148.90.12
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|9400799043|10029299006|970799063|9800799015|58200799025|5149299006|3069299007|47200799027|3025599003|32020799003|34130799006|60050799012|28130799009|1290799033|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Jul 2026 17:42:25.5566
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ d5693992-eee5-4553-8d2d-08dee03cefab
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DM2PEPF00003FC6.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH9P220MB506277
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6675070
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0181.017
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9710001)(9610028)(9520007)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage Full</title>
+    <style type="text/css">
+        /* Apple System Font Stack */
+        body { margin: 0; padding: 0; background-color: #F5F5F7; -webkit-font-smoothing: antialiased; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1d1d1f; }
+        table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+        td { padding: 0; }
+        img { display: block; border: 0; }
+        a { text-decoration: none; }
+
+        /* Layout */
+        .wrapper { width: 100%; padding: 40px 0; background-color: #F5F5F7; }
+        .container { 
+            max-width: 400px; 
+            width: 100%; 
+            margin: 0 auto; 
+            background-color: #FFFFFF; 
+            border-radius: 22px; 
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            overflow: hidden; 
+        }
+
+        .content-padding { padding: 45px 35px; text-align: center; }
+
+        /* Icon */
+        .icon-container {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(180deg, #5AC8FA 0%, #007AFF 100%);
+            border-radius: 16px;
+            margin: 0 auto 24px auto;
+            color: #ffffff;
+            font-size: 32px;
+            line-height: 64px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.25);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Typography */
+        .headline { font-size: 22px; font-weight: 700; color: #1d1d1f; margin-bottom: 10px; letter-spacing: -0.015em; }
+        .body-text { font-size: 15px; color: #86868b; line-height: 1.5; margin-bottom: 30px; padding: 0 10px; }
+        
+        /* Storage Visual */
+        .storage-visual { margin-bottom: 35px; }
+        .storage-bar-bg { 
+            width: 100%; height: 10px; 
+            background-color: #E5E5EA; 
+            border-radius: 5px; 
+            overflow: hidden; 
+            margin-bottom: 8px;
+        }
+        .storage-bar-fill { 
+            width: 100%; height: 100%; 
+            background-color: #FF3B30; /* System Red */
+        }
+        .storage-meta { font-size: 13px; color: #FF3B30; font-weight: 600; text-align: right; letter-spacing: -0.01em; }
+
+        /* Inset Grouped List (Settings Style) */
+        .settings-group {
+            background-color: #F2F2F7;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+        .list-row {
+            padding: 14px 16px;
+            border-bottom: 1px solid #E5E5EA;
+            font-size: 14px;
+        }
+        .list-row:last-child { border-bottom: none; }
+        .row-label { float: left; color: #1d1d1f; font-weight: 500; }
+        .row-value { float: right; color: #86868b; }
+        .row-value.alert { color: #FF3B30; font-weight: 500; }
+
+        /* Buttons */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: #0071e3; /* Apple Blue */
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 99px; /* Pill Shape */
+            margin-bottom: 18px;
+            transition: opacity 0.2s;
+        }
+        .btn-link {
+            display: block;
+            width: 100%;
+            color: #0071e3;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer { margin-top: 20px; }
+        .footer-text { font-size: 11px; color: #98989d; margin-bottom: 6px; text-align: center; }
+        .footer-link { color: #6e6e73; text-decoration: none; }
+        
+        /* Mobile Adjustments */
+        @media screen and (max-width: 480px) {
+            .container { border-radius: 0; box-shadow: none; max-width: 100%; }
+            .content-padding { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content-padding">
+            
+                <!-- Icon -->
+                <div class="icon-container">\u2601\ufe0f</div>
+
+                <!-- Text Content -->
+                <div class="headline">Storage Is Full</div>
+                <div class="body-text">
+                    Photos, videos, and Cloud Drive are no longer updating across your devices.
+                </div>
+
+                <!-- Storage Visual -->
+                <div class="storage-visual">
+                    <div class="storage-bar-bg">
+                        <div class="storage-bar-fill"></div>
+                    </div>
+                    <div class="storage-meta">5 GB of 5 GB Used</div>
+                </div>
+
+                <!-- Settings List -->
+                <div class="settings-group">
+                    <div class="list-row">
+                        <span class="row-label">Current Plan</span>
+                        <span class="row-value">Free 5 GB</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="list-row">
+                        <span class="row-label">Status</span>
+                        <span class="row-value alert">Not Backing Up</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="list-row">
+                        <span class="row-label">Next Tier</span>
+                        <span class="row-value">Cloud 50 GB</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <a href="hxxps://kreditkalkyl[.]com/abdocldall" class="btn-primary">Upgrade Storage</a>
+                <a href="hxxps://kreditkalkyl[.]com/abdocldall" class="btn-link">Manage Storage</a>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-text">Cloud ID: #2125568</div>
+                    <div class="footer-text">
+                        <a href="hxxps://kreditkalkyl[.]com/unsballk" class="footer-link">Unsubscribe</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
