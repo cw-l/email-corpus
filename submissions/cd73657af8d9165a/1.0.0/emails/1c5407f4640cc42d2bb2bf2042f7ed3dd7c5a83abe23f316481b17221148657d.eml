@@ -1,0 +1,935 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1784519657; cv=none;
+        d=google.com; s=arc-20260327;
+        b=IuNMxfrICDPTpPkqeAzsMJY4T0xhHyeWanGI0lVZoIjABJFpr6dwuR4YSqWiI/GhLw
+         1pds37BolBB/N/woMjSPCeg4YirneQGwRjD4kHXLa5Dc6fV82O5eV6e8ABJqTDMcZXSn
+         LY2SxNkZEurYHdejLd0hAvaGpLCA5Qvsz3ivlDm0uKgmHQ6LVJj/UoMp++7ly/3oDhjA
+         xGyY8lnqKWpoZ0meeCJp0CiK7YtHXqquJRuW/9GbiUoyhsyXKzfSBTs8cSG5LhO0mNCc
+         YCb0yclSEfVY1x35kfQmKB9ckfRscEcm3y9Kt4eH01pl08cCmLGx50x/kNqEeLfOil7d
+         5wjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=a0OEFw9A3KEahaNjaMeWR6GbBewdbC6refkGyYW+Ctw=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=Yo5MxptzF6ZWaLYp/v3xGBh/nkzvmvFHi53Dq+8zaTqMpcu2wvTJ7A9mnUIhck9QAa
+         3nbpLyvPZoBGuRLpKiiL8lmLEroTN8rkjjv5mUsq1+AFho952jaCfq6viZz5XvycS1N7
+         s6YCWmiYHzaAMxurKGhmCnbQPez+lxdQ/3E8BDfdHTTOO003F5P6r60L5+Y4NqmREKwC
+         GlBs+bA0tINOu0llebQcQ+/efJITT6G+J7tTN7+Etf1CvshOr5/r0DAcetU6OeGYHzy5
+         WJ8VnyDIE3EhgxrAhyLlJ8yNuZXrNWMKZp+ZB5bci+brqht2GHr8lx0ToPU5696GOC8m
+         +GaA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@qfvgerwr.scaloria.brandexo.biz.id header.s=smtp
+ header.b=TVRB2fmv;
+       spf=pass (google.com: domain of ooifxrqvebgbh@scaloria.brandexo.biz.id
+ designates 192.236.246.75 as permitted sender)
+ smtp.mailfrom=ooifxrqvebgbh@scaloria.brandexo.biz.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@qfvgerwr.scaloria.brandexo.biz.id header.s=smtp
+ header.b=TVRB2fmv;
+       spf=pass (google.com: domain of ooifxrqvebgbh@scaloria.brandexo.biz.id
+ designates 192.236.246.75 as permitted sender)
+ smtp.mailfrom=ooifxrqvebgbh@scaloria.brandexo.biz.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=qfvgerwr.scaloria.brandexo.biz.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=psnhhajhzjppseqnxekfo@qfvgerwr.scaloria.brandexo.biz.id;
+ bh=MMY8MYeNP36slmMtkHfoBxHJJlc=;
+ b=TVRB2fmv4xkBfwj1o/UsI83+47sPtUaJ90yde8nwSG3Jgv3OBlAiDCCtQiBRpCHKmpAr9OrgILXQ
+   T+z9PntpWGQefeh64s848ZVq7pkKTCFddyR1YRuGyrkHbtG8+o3fQM5uXpIL7Z1YwS6JnReojlWr
+   +gtZ8/j7LFhsD6/kZJPh24nRWIMIor2Mn9SfAI8pHuMACerqmALon2V73guzYcEv3QSb+HHNzYRw
+   oQWb0uiqMPmy5wxizt6MH7xnxDVKTrTkPH7jqxhR0r/BKeQZ5mORG1DjiQLQH7HTIJX22MRfaaKK
+   5Qfap9HbURW8Rt+n8KkYT4pQqU/L5RVOjsW11g==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=qfvgerwr.scaloria.brandexo.biz.id;
+ b=XvGAjyb91RWyr1X/NixX782l3hZgu41InOD3R7SG+rra2VZ7DEvSzP5xObc+SPJb3frP0MTWHQUG
+   x6bZCG2Z/jZofBmfIWljqX6zzKvBBTJhqCwpN7z0WAwGzDJrRW69/I5nFNj59kgllyjHIbGMO6NU
+   8VscFgyC9rEoDDcCQFgSkZtMy+aaO3G33GrUOEjaQ1k/lRvFDM39Q99S/HYw8a30bjLZZC0IV6Lc
+   KXl1nYe2o8+3WLbqK39B0plrBDf/8iqMbYx9nHgOTyvivVO4GhEN/jsHAne+F2/AfUvKJWvmo4Y2
+   3YCdhYHq3NzdeDTdKuUoXfhwOx47CltaCQA5pw==;
+Subject: A bizarre morning habit that reverses cognitive decline
+From: The_Brain_Honey_Solution <zbgzneb@qfvgerwr.scaloria.brandexo.biz.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.236.246.75
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <wcrrmmeamtfokwalzzhrkriydvcahk@u144fprbwpg41kjxsl>
+List-Unsubscribe: <http://ytryfef.at.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Mon, 20 Jul 2026 03:43:08 +0000
+Sender: psnhhajhzjppseqnxekfo@qfvgerwr.scaloria.brandexo.biz.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+</a><br><br><br></a><br><br><br>
+<a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#=
+index[.]php?search=3D4&d214183&edahi=3D261-32&lm=3D195982WBXH39353&sd=3D7&p=
+age=3DPHpdTQ9x1TxuKrb" style=3D"text-decoration:none; color:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Special Report: The Morning Memory Elixir</title>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #FFFFFF; -webkit-fo=
+nt-smoothing: antialiased;">
+
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 40px 15px;">
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FFFFF=
+F;">
+                        <tbody>
+
+                            <!-- Top Header (News Logo) -->
+                            <tr>
+                                <td style=3D"padding-bottom: 15px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"left">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=3D4&=
+d214183&fogmg=3D261-32&lm=3D195982XVNH39353&sd=3D7&page=3DJkIhLIgkyztvfLR" =
+target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/53AhQ7k[.]png" alt=3D"" width=3D"70" style=3D"display: blo=
+ck; border: none; max-width: 100%;">
+                                                    </a><br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style=3D"padding-bottom: 30px;">
+                                    <h1
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 34px; font-weight: normal; color: #111111;=
+ margin: 0; line-height: 1.3;">
+                                        Neurosurgeon: This morning "memory =
+elixir" is the great secret to reversing
+                                        cognitive decline
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td
+                                    style=3D"font-family: Georgia, 'Times N=
+ew Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        Let's be honest: Brain fog, forgett=
+ing names, and losing your train of thought
+                                        are terrifying experiences that eve=
+ntually catch up with many of us as we get
+                                        older.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        You're going about your day and
+                                        <strong>suddenly you can't remember=
+ why you walked into a room =E2=80=94 or worse, you fear the early signs of=
+ dementia</strong>.
+                                        And relying on standard advice ofte=
+n leads to accepting cognitive decline as a
+                                        "normal" part of aging with little =
+to no real improvement.
+                                    </p>
+
+                                    <!-- IMAGE 1 (Main Hook) -->
+                                    <div style=3D"margin-bottom: 25px; text=
+-align: center; position: relative;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/victoryway/brightpath[.]html#index[.]php?search=3D4&d214183&rwoj=
+c=3D261-32&lm=3D195982BKUG39353&sd=3D7&page=3Df5AliydhfpZqwnV" style=3D"tex=
+t-decoration: none; display: block;">
+                                            <!-- AI GENERATION PROMPT IN AL=
+T TEXT -->
+                                            <img src=3D"hxxps://i[.]imgur[.=
+]com/nyWCoSv[.]jpeg"
+                                                 alt=3D""
+                                                 width=3D"100%" style=3D"di=
+splay: block; max-width: 100%; border: 1px solid #e0e0e0; margin: 0 auto;">
+
+                                            <!-- Fake Play Button Overlay -=
+->
+                                            <div
+                                                style=3D"position: absolute=
+; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; heigh=
+t: 70px; background-color: rgba(204, 0, 0, 0.8); border-radius: 50%; border=
+: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div
+                                                    style=3D"width: 0; heig=
+ht: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent;=
+ border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div
+                                        style=3D"text-align: center; margin=
+-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div
+                                            style=3D"color: #888888; font-s=
+ize: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercas=
+e; margin-bottom: 10px;">
+                                         =20
+                                        </div>
+                                        <img src=3D"hxxps://i[.]imgur[.]com=
+/gn54MIh[.]png" alt=3D"" width=3D"150" style=3D"max-width: 100%; height: au=
+to; display: inline-block;" />
+                                    </div>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        Millions of viewers were left in sh=
+ock during a recent broadcast when
+                                        neurosurgeon <strong>Dr. Daniel Ame=
+n</strong> finally revealed the truth without
+                                        any confusing medical jargon. He ex=
+plained that cognitive decline is often
+                                        triggered by a lack of specific nou=
+rishment in the brain.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        Instead of relying on brain games o=
+r giving up, he revealed a controversial
+                                        daily solution called <strong>Brain=
+ Honey</strong>. This powerful "morning
+                                        elixir" nourishes your brain cells,=
+ clears out brain fog, and
+                                        <strong>restores your mental clarit=
+y and focus naturally=E2=80=94at any age.</strong>
+                                    </p>
+
+                                    <!-- CTA Button -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 45px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center"
+                                                    style=3D"background-col=
+or: #cc0000; border-radius: 3px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=3D4&=
+d214183&snfvc=3D261-32&lm=3D195982LLHH39353&sd=3D7&page=3D1AljE6LZa2U6R3W" =
+target=3D"_blank"
+                                                        style=3D"font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-we=
+ight: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; disp=
+lay: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        Watch The Dr. Amen =
+Presentation
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style=3D"border-top: 1px solid #eeeeee;=
+ padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align=3D"center"
+                                    style=3D"font-family: 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; line-height=
+: 1.6;">
+                                    This is an advertorial. Results may var=
+y.<br>
+                                    Brain Honey is a dietary supplement. St=
+atements have not been evaluated by the FDA.<br><br>
+                                    You are receiving this email because yo=
+u signed up for health updates.<br>
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/victoryway/brightpath[.]html#index[.]php?search=3D5&d214183&wsntk=3D=
+261-32&lm=3D195982SZAJ39353&sd=3D7&page=3D3gEZKNVf253iiYh"
+                                        style=3D"color: #999999; text-decor=
+ation: underline;">Unsubscribe from future
+                                        emails.</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html><br><br><br><center>
+ <p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#=
+index[.]php?search=3D6&d214183&dvozs=3D261-32&lm=3D195982FOWN39353&sd=3D7&p=
+age=3DxCp0Asag4eAETii">Here</a><br>
+ </a></a>
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+ <tr>
+                <td align=3D"center">
+                    <img src=3D"hxxps://tinyurl[.]com/bgsfsaSD/track/index[=
+.]php?search=3D3&d214183&zyssl=3D261-32&lm=3D195982BOHC39353&sd=3D7&page=3D=
+zt9LK4oIl1IuKQB" width=3D"1" height=3D"1" style=3D"display:block;">
+                    <img src=3D"hxxps://tinyurl[.]com/bgsfsaSD/index[.]php?=
+search=3D3&d214183&xyhxm=3D261-32&lm=3D195982OVPY39353&sd=3D7&page=3D8Qw6TM=
+OZ1Hc8oJ2" width=3D"1" height=3D"1" style=3D"display:none;">
+                </td>
+    </table>
+        </div>
+    </center>
+</body>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object ZSBRYGLCKGLINLNWPTJIHVFMSFEWFWHEFZMJIHLXIWHYUFRUPVOYPBUXKKPQ>
+
+Dear VGWVSYIVIIZPSXGKEYWCAF tlzpxieakxkppevazxbgjf,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is kjcnpqtgdwjfpxjfqvqufkq=
+wobxg.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi ioajghpbyxnnuswtsw,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi hwvbamgaetsvlpbqxlssxctt,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: coqyefsgluzhpxhapodlnpkljy
+ Site ID: hyttihgisdvwigkwspkhghjpg
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team GNWFZUKVZYECDPMNKSTNXX
+
+Powered by UASNXNFOGGNNHXUZADYOOK=20
+
+</title>
+
+Dear LYBZEVRKQOUZKLBUETFHVYMWJ grypgtxscmjjeatonhassecqlk,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is plzybzsurmmjbcoaoyfeght=
+vj.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood WJRCQAITLPQAQCYHJGEWMP,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+WWVPTQSULIVUVIHBIPDDUHYFPEOCTSCBVWYMQAUKAHXXURZQPZLWIINOTVXRRUDFKFXKQLDXTVZ=
+YUIDBEQDWKTZZPVGVHCRFIDAFVAWVNZJMYLPPEEIGFZBGCQDQMDTZGJWODHJEPYLXRODILXDGRZ=
+TSHEGOYFPZVIDFOEPSLAQJECFEPSIZVOBZDVCQXSGSRZCYHAQI
+
+ Hi EPWQCFBBJFADXUSGBNQBNE,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+cutjcqemesotissjejlfusysnoczarwljxjxtnqkyzpfsmepurzhgqwcdufruyxtzicdrmlaxmh=
+ssercojiraaixczcyhpilzuvcrcqsnatcguxnfhtcmvmmepaspgmpwxbyqrbabjrvopzttrytsx=
+zsbtrgjvbifeyvddombyazbznyjjksnocuxdxvbbscictgiarv
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi W7BOJL9WVOZ93A7UFRKQEYJKT,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team IRCBSMRHYYLUQOWWRTJSFT
+Powered by MJXXERXJBEJFFPGFSAIMRA
+
+Login Name: BPCJTZGPHZQRRQFWNVYGQW
+Password: TSMOCHCUPCHPLRFULVKISN
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: DVK
+Password: UYIJFQGFEGDDEWSSAGOLNY
+
+	CRHXTXVPLVGXP6T4X5 8R8KWI563V3CY60 S7A6DEVZVMGFO 8AJS1MPOSF8Z3FDYMW J0WCSB=
+ODYZ8MRAL OCSJ9MXNG8864 V34VLCLJE7NZM16V0Z=20
+	Y7ZU694EQY47UM84XZ N53259E6NRUMNXT ID0ZAV23XUA5L 8WPD7Z164OXG4CK1RU 7ZDZUY=
+2XZLMQVFY IFROIOO949SSF P92VINVJCBR7FZFGA9=20
+	NFU5VOZGS8K8LFR 6C3R0J5SYK1ER HVQ4JQ4PDS9KV0OMN7 K1WOJYUFSX5RLIE 2T7O0WRAD=
+2GSB U0JZQHUEQ6GHQZYHI5 Q8K986HIZG725OS
+	0SSR2GY9DQHDX UZS7ERGQM8X82X45OT EKO8FZ4KVFIZHMQ IIQ9AHPP98SYN BOB1DQJGGN6=
+Z8J1UKZ 1E8RLSLHB0WGGUP PXZ3IOUVBP7CX=20
+	1D5TBX0XWY8HRRH92O 3VFUIFQV330E65Z 7CJKDUJ03ELVI WQ0K9UPR1KAAF7YJE3 5E2NU4=
+Z9INK4C7H 4EZD1BETQADJR 1WAB0OE9YDKP2FJSFO=20
+	9QODG1ZTZJNL2WO 4OE9M6Y178IZY E15PEX880Z3BE1HZSQ 8KECCIL7BHH8YOR O1J0HGQRW=
+4QX9 FOYEJZKLQDM1S783XU 0RPGFNGQ44UDZS3=20
+	6OWHIO2XVKBSQ VJHII10Q6HAHD41N13 HOFNXLJ0LDLPRTE VYF8YSS84XL1J XG5NRI4RSDP=
+TEDR0M7 JQ8G4MTVZDNH4H4 Z7C8X22FVX4HE=20
+	8M77F4BQWJGAZ1VNSA D7RFR1HP512O3G5 27272O5F7DFXA MQJZ8D21I8DJJFO6A2 YGJU3S=
+SBJJ801HB V9MT8HT3XZXCW BQA6LHQ18WR9LPYY6F=20
+	VAAT16W6HOSN1M1 R3S587HSHB64T 7GMPIW97174G6FSP62 5VDFUDZ9TBCQKQN 0W3XLOLNP=
+MA6W WOGF3960LY2HY5AKM3 VB4WUILZD9XKY33=20
+	R1JCDMUCJJHZO ZA0COEX634KCP58B5F 27M0F44JFK87E5W LOEBCN6KLI7BD NBF4Y66WVNB=
+GS5IDRG C7XCGSMG73EFSCA O6HAQVFNVQALI=20
+	LTVDE5Q2MFPGYNST05 4TF34421G64GWR3 5DF9XO3BCL84J L21S46L1NAA9BWHWZI 0T5P8G=
+D16D0HZVB NUGQBT4HJHEXT 8FPOGQISAZFT2B4R7F=20
+	R3Y5IGJ2V2HWQAY ICQORQOONV7SH GWQ539ZVZ82I96KXJY CTRYJNF0YOQ7X8C BRHCRY55X=
+A5OP ST8IBSF4O9VX9HTZC9 3P66BWTQ12OOJON=20
+	3NG17TIFYONJ5 P2Z17XGIDUT2LJ6UE9 6F2GBFA2D5RA1TI F5UCHDU234Z5X 1L9YE093YAQ=
+DYG6Z9N WQ6QJJD3DWZ4A85 MCRWRL8YENY3D=20
+	RYM1S80I1TIQZUZPV6 HXOYZXYQIU6EYFB 2M9Y37VF3CCIC HJL5EQ2UPW9KGP1N5Z SMD5F4=
+8QX2ECG2A V1OHPAJROUHOS P66BUE02GIHO2DKUVT=20
+	BKMJK90MXFDQ03X QFQS0D9V8OLGE 43PFBRHBPQNKBEB52I 6HUWGK4ENWIEM7X 34ISY5KKF=
+R35X NDSGQQ0DSGPVCNOPRQ 982UCPQ0OGW9JSH=20
+	TDK9VZOAS7F8B GZHJ0ST67VEEWKAX3V YLSCW30LZY30YR2 OH3ACSXBKEO6R M1MU8UL2JF0=
+9MPS0N4 MF39Y80W60B4ASJ LLFV28W562RSC=20
+	74DXL8VIV51NPQYMKP X3YO6LS1V9N4STU 9L0FHOFATR0HP PQKUA80IR8WZ4X9RS1 5UD9OA=
+OI1AV4CMO ZBPQJNY1CH2HI 2NR5FBSR4NBCE8ES08=20
+	IN63HNDOHTZYNIJ XBZRQFV7AE1VR GQ4IM86ZMWOECZ8BXS 55YSD1MNWLD59ON 0PR9P5VZK=
+FTLG PRMB8862JVBXR27P6Y UHPTX81KG28E9EW=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+OHOTZIRDYJWBRTZYQGRDOWZEDIKGWXJZQGOQLDNRRQZLSSQFLFCALNTSKGALGULGGXIWLLRZYSZ=
+ESOWFFTKOVTACTSYPMZFVDRMKOFLCCRPMUBPCNIKURTMLLRYOSKSLTAAKRSTVFSRKPFKPFMDRWH=
+SDRVIIOGSWFRWUDQZYAFZMVAEVRRTRHZWAOEVUQIQRBNGWDCRHW
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to WYCPLDPPSSQJDDRGWYYJT=
+AMLQASRYQNNODQEHNHFYXIFQAVRCJQYTUUUZVSICRYNOKBVARTAWYPKAZWKZPDIWAUTWBDQSOGL=
+ZUWSJKCRGPXOMJZBNNQAHSXYAVQEVPMLUWFALFUYJCSMTMKNTFESYYJOBZNGQQUWEPWMGICHOOP=
+CDTHVWPJNMVRXXIUQFHZSJRKFWQLM roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department GFXPCDFKMGXLZGIVLPOVNZDMDQULKEXAYXNTCDSYBSYZSXQR=
+EGPBPIYYKKHMDVZPTHJHKWQPZQNZSMQGPWYLFHOIZSTJJIJHRKARWPXYZFAXWUSEVJQDOJLRNAQ=
+YFAZQWEXFELXHEPKMVMXGJZLFNGNVVTYUNVJCKVVYFAEQNQVIFODMFHKZYBYXRQTBCLUNJSMCMH=
+EDB to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation QSWUKAPUBFLQQQA=
+LGGWTHOCAEUKWKSDGOUTWHXLLZXFIFUPXOUJFWWHFDSUVKPPQJXDVNYSKPAOVUIYZYDFQPSNGKA=
+JSJRKERZNPPFWQZFSZRMMAHYAXCLBDNIYVMRMABFWDKKYHFDCPHGNTLPDJDPYGHNERMAZFOBVAJ=
+KJGURNAIKSZYQIVBQYGJIXRWUCXTEQHGRTFZ development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will VXRVAZMZGTKZTLHSNUFPCRVRPANGZLJBGSESCGSXDHEYPMTKTRQMBVHCM=
+DMQOKVYLQOSVUCJFUOKSWATEFQWTBVHPJZPFCKVCYSSCLMZSWDKAFJZFTXRVQLUZOLSOMTFEODZ=
+GIXKVPQUJUWBZYSFFZAVERXEMLHKXGPCNVEALECBBBQLKMAWIZELGCIEYSQOGPOJPYBICCLTYQF=
+ZZOXEBLTERQUNYNLKTXFIFPFNWIUPNYHNDOAWQADLDQDSRZDVADLQZXMVDFJCZXYJJNDSUIXYGT=
+BMSWKZDLZKPFSIRBLPOCPDWLGHIRBOEEXUMYIWDSRRRMQPQBCOJGWYOMNYBGQJCLCYBZSRTHMCM=
+MGNPEHOJOPFYYXRTKTWYCPWIKUFOAZUAXOZEYMLZARL  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support WGPCNRN=
+AEARKSCWXSHVZSFLQOBRRLIVEKVRELVSQVPDZIKQMRSPMBWLXIVERJMVFLQWFMUSPBUETUBHINI=
+DredactedMFAFFVIBAIMYPSOETWKVSSEBQNJJKNPKBGTGWCAFVQUIMBLAROVHQTVQGCWFVLYGBM=
+VSKTJLTISQDCXABHJLCLQVMNOFAXFZWTDFMWQKLWXLTESKLR  to keep delivering qualit=
+y journalism that?s open and independent. Every reader contribution, howeve=
+r big or small, is so valuable. Support The Guardian from as little as $1 ?=
+ and it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

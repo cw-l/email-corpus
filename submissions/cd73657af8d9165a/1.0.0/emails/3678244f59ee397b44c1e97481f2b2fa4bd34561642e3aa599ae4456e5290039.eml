@@ -1,0 +1,890 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1784360167; cv=none;
+        d=google.com; s=arc-20260327;
+        b=nfmzdKWWz7ooaSDc8qPmp6JT8srmIvu+298G9T3t5v6J3VpORSqVtloisDASKksB/e
+         ZG/2hVBkWspJ/8Ug3MX3SoLIZHYHNfBsgcpfteGgRdzEIVNgjmue495M7hHjEIcsRLew
+         qIb7LJ2Xx4xor9sToU5mLf4j/u2BMWjJuwgz0KjqStUbwwz9EbaEBNSo9GOf5ogOHQkb
+         rV7HQiUbAEFGvxAolxi3pQCAnmnf6sW4pYFyOdCTnfs04QzCUQCgJFR6H03YkHvPipB8
+         RRHN4HFFHJEawCA6MXxI1SRZrnQkvlZ9WVNTl22Hk+n+HMiDmRPBnlKBQPoQKLWl12oD
+         ooOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=QNgNa52bRxnP5Gf5Wym01Dhxo0GCt/xZWFKn3tIpWXQ=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=ZNCqHyUw6pl2k0vOobXaTWy2bVnojVYiBH8XEP0ew4ZXqC0EzNCXln/tTOjFgqZP1I
+         dyOTXquj+QAgoYIMboqS93P7yJYkicac1dKWiM1yfRa4tlrB42VkoyeKcGezfZlra5oU
+         KXWTsCaZbOYc99DrvgE1j5VDnIreQu9BU8Db/ea4uZgfuMchafE0/5T/0f3HGB4l4P2Q
+         LtUjNxaHpSlsZCZ5iqBPYqIMqXk7s0ei6TLemqINQD32R4Qe5NQHToqLpfmGKASp9YWz
+         sGWYdHCzRbO0ebJsA9ogY+NCbGwCDPU8+7ffzMjxRI+kiLpS8rWp55x2/8dVKwd1GCrT
+         /64g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@evxiczck.leage.saventro.my.id header.s=smtp
+ header.b="kfblJ/8K";
+       spf=pass (google.com: domain of dnjngqvjyvltl@leage.saventro.my.id
+ designates 107.172.147.241 as permitted sender)
+ smtp.mailfrom=dnjngqvjyvltl@leage.saventro.my.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@evxiczck.leage.saventro.my.id header.s=smtp
+ header.b="kfblJ/8K";
+       spf=pass (google.com: domain of dnjngqvjyvltl@leage.saventro.my.id
+ designates 107.172.147.241 as permitted sender)
+ smtp.mailfrom=dnjngqvjyvltl@leage.saventro.my.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=evxiczck.leage.saventro.my.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=nosqrarsekquwgbgpzmiv@evxiczck.leage.saventro.my.id;
+ bh=XzRL3XL2ZkZdsNnCLePVyypWB8I=;
+ b=kfblJ/8KfirIHTDg3hV3Fysf3CvgVmaHxZQc1tx3IZY9P0FBrfhqZxcAa6ZOISOHS8dHbM2Y4/go
+   rKzgScDCkR4XLwm6/CS9jemxP9zgafXggvr7zJfEwOd3slyVfNOxpQWBm1eF+DE/7Oc+6X8A+FhI
+   uS6zgWvOzrM/J8msrar49q71hFBKE6NdZ+2G0G0BxJd/Atnun+tYbJkCis2v3sZAX4IUeFQNCSFT
+   6b+T26svW6S7sQwAVARFMvdwBMpSHm4UsavDXDcorBUJx4DaAI+QcqMVylgWWADBuuAMYsUq5xma
+   kd2Bq9HRkMH94fetHjDPRV8VlO/6bkIywFkwSg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=evxiczck.leage.saventro.my.id;
+ b=dDdaH0mnbXtlg6pJeEwHBztiaBzJYyln+sLpR3bo96zG1NijpMe+9jV35J+Mq15Xcyb+KxW8HmlE
+   1iB97IB5qSCd8bYcMHGV/y1UP2XNKl/QFwHRyM02+VBPOVFm59vbnRY2FXQEGqBkEKtCAeC8gsPO
+   JfMTAqMQYBQXFur6XFdMKWu3ZxFe4QB3Kyqn2y/Xx3hucX09WJV8UMor6/wAKG/XsfQMG/+prXBi
+   XjlEcsj+RSXHORkQQetDG8xFAu2kIzJox2hvALLy1dJa405CV08QWJzv2XUw1mMADGZ9PopSTAp5
+   fUEs9DSXT0/1uDSpTW0dr2ftMy3a/eHwVdrRUg==;
+Subject: Limited Special Offer: 75% Off FrostyPure 
+From: Mini_Portable_Cooler <twdzzsv@evxiczck.leage.saventro.my.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 107.172.147.241
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <mltqmwgqxbxsofxgynepezpeuexrlz@1xcakjwytsuoh6c67d>
+List-Unsubscribe: <http://omvexi.online/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Sat, 18 Jul 2026 07:16:19 +0000
+Sender: nosqrarsekquwgbgpzmiv@evxiczck.leage.saventro.my.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+</br></br></br>
+<a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&ldrdh=974-32&lm=195982TGHN40801&sd=5&page=yZWpcEjkCVv10pe" style="text-decoration:none; color:black">
+
+
+<center>
+ <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&qizhd=974-32&lm=195982SJDH40801&sd=5&page=fSv2YphGGNJfIJk" >
+ <div><h2 style="font-family:Georgia;letter-spacing:2px;font-size: 35px;margin-top: 20px;border-radius:8px;text-align: center;text-shadow: 0 2px 4px rgba(0,0,0,0.5);display:inline-block;padding:8px 16px;font-size:1.5vw;background:#C41E3A; color:#fff;border:2px solid #D4AF37;"> 
+Deal Alert: 75% Off Mini Portable Cooler - FrostyPure 
+</div>
+<a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&yajmn=974-32&lm=195982BOZZ40801&sd=5&page=gexvQIW4VsYqUnA" style="text-decoration: none;">
+<font color=#D4AF37 size=5 face=Rockwell>
+
+Massive 75% Off FrostyPure Portable Cooler 
+
+</font><br> 
+       <p><b>
+ <div><h2 style="font-family:Arial Black;letter-spacing:2px;font-size: 35px;margin-top: 20px;border-radius:8px;text-align: center;text-shadow: 0 2px 4px rgba(0,0,0,0.5);display:inline-block;padding:6px 12px;font-size:1.5vw;background:#1a1a1a; color:#D4AF37;border:2px solid #C41E3A;"> Limited Special Offer: 75% Off FrostyPure 
+ </div></a>
+
+
+
+
+<a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&xmkrk=974-32&lm=195982CEBR40801&sd=5&page=d6HfOTdTnQ7Y0pU" style="text-decoration:none; color:black">
+<!DOCTYPE html>
+<html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en-GB">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Report: Mini Portable Cooler - FrostyPure</title>
+    <style>
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=Fraunces:ital,opsz,wght@0,9[.][.]144,300;0,9[.][.]144,600;1,9[.][.]144,300;1,9[.][.]144,600&family=Outfit:wght@300;400;500;600&display=swap');
+    </style>
+</head>
+
+<body style="margin:0;padding:0;background-color:#F2FAFC;-webkit-font-smoothing:antialiased;">
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#F2FAFC;">
+        <tbody>
+            <tr>
+                <td align="center" style="padding:32px 12px 44px 12px;">
+
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                        <tbody>
+
+                            <!-- LOGO HEADER -->
+                            <tr>
+                                <td
+                                    style="background-color:#ffffff;padding:20px 28px 0 28px;border-radius:6px 6px 0 0;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&pwuem=974-32&lm=195982UUPV40801&sd=5&page=7zAMamTxqSlXWTV" target="_blank"
+                                                        style="text-decoration:none;">
+                                                  
+                                                    </a>
+                                                </td>
+                                                <td align="right" valign="middle">
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Accent underline -->
+                                    <div
+                                        style="margin-top:18px;height:3px;background-color:#21B4D6;border-radius:2px 2px 0 0;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- HEADLINE + INTRO SECTION -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:30px 28px 26px 28px;">
+                                    <!-- Label -->
+                                    <p
+                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#21B4D6;margin:0 0 16px 0;">
+                                        SPECIAL TECH TRENDS REPORT</p>
+                                    <!-- Big headline -->
+                                    <h1
+                                        style="font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:33px;font-weight:300;color:#1A1A1A;margin:0 0 22px 0;line-height:1.22;letter-spacing:-0.3px;">
+                                        How This Genius Invention Is Disrupting the $135B Air Conditioner Industry
+                                    </h1>
+                                    <!-- Author strip -->
+                                    <p
+                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;color:#999990;margin:0 0 0 0;">
+                                        By Matt Bernard | July 15, 2026
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- HERO IMAGE -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:0;">
+                                    <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&vybgx=974-32&lm=195982GHFX40801&sd=5&page=mZuBOnCGdnFIo4h" style="text-decoration:none;display:block;">
+                                        <img src="hxxps://i[.]imgur[.]com/dryopGO[.]jpeg" alt="Mini Portable Cooler - FrostyPure" width="100%" style="display:block;max-width:100%;border:none;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- OPENING COPY -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:28px 28px 0 28px;">
+                                    <p
+                                        style="font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;margin:0 0 20px 0;">
+                                        For years, three massive AC companies have controlled the cooling industry,
+                                        keeping prices high and ripping off customers with expensive installations and
+                                        regular filter replacements. Now, an innovative startup called FrostyPure has
+                                        turned the market on its head by introducing an energy-efficient, filter-free
+                                        air cooler that delivers instant, high-speed personal cooling for a fraction of
+                                        the price.
+                                    </p>
+                                    <p
+                                        style="font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;margin:0 0 20px 0;">
+                                        As weather experts predict one of the hottest summers on record, traditional AC
+                                        units are failing to offer an affordable solution. The FrostyPure uses advanced
+                                        evaporative cooling technology to naturally cool, humidify, and filter the air
+                                        around you, starting in under 5 minutes without skyrocketing your electric bill.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- THREE FEATURE CARDS -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:4px 28px 24px 28px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Card 1 -->
+                                                <td width="31%" valign="top"
+                                                    style="background-color:#DFF1F5;border-top:3px solid #21B4D6;border-radius:3px;padding:14px 12px;">
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#21B4D6;margin:0 0 8px 0;">
+                                                        NO FILTER EXPENSES</p>
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#334145;line-height:1.6;margin:0;">
+                                                        Unlike other portable coolers, the FrostyPure operates
+                                                        completely filter-free, saving you from recurring filter upkeep
+                                                        costs.</p>
+                                                </td>
+                                                <td width="3%"></td>
+                                                <!-- Card 2 -->
+                                                <td width="31%" valign="top"
+                                                    style="background-color:#DFF1F5;border-top:3px solid #21B4D6;border-radius:3px;padding:14px 12px;">
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#21B4D6;margin:0 0 8px 0;">
+                                                        8-HOUR BREEZE</p>
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#334145;line-height:1.6;margin:0;">
+                                                        Simply fill the water tank and plug it in to enjoy up to 8 hours
+                                                        of uninterrupted, quiet, and soothing cool air.</p>
+                                                </td>
+                                                <td width="3%"></td>
+                                                <!-- Card 3 -->
+                                                <td width="31%" valign="top"
+                                                    style="background-color:#DFF1F5;border-top:3px solid #21B4D6;border-radius:3px;padding:14px 12px;">
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:#21B4D6;margin:0 0 8px 0;">
+                                                        ECO-FRIENDLY</p>
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#334145;line-height:1.6;margin:0;">
+                                                        Built with innovative technology, it uses natural water
+                                                        evaporation to slash your energy bills while keeping you
+                                                        comfortable.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- SECOND IMAGE -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:0 28px 24px 28px;">
+                                    <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&xaibo=974-32&lm=195982IYCV40801&sd=5&page=DP3ATf8oPIzDiO5" style="text-decoration:none;display:block;">
+                                        <img src="hxxps://i[.]imgur[.]com/LgxAuZK[.]jpeg" alt="Mini Portable Cooler - FrostyPure" width="100%" style="display:block;max-width:100%;border:none;border-radius:2px;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- RESULT COPY -->
+                            <tr>
+                                <td style="background-color:#ffffff;padding:4px 28px 0 28px;">
+                                    <p
+                                        style="font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;margin:0 0 20px 0;">
+                                        The results speak for themselves. Thousands of verified customers are dumping
+                                        their loud, power-hungry traditional AC units. They are opting for the quiet,
+                                        portable comfort of the FrostyPure. It can easily move with you from your office
+                                        desk to your bedside table, ensuring you stay safe and refreshed during intense
+                                        summer heatwaves.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT + OFFER BLOCK -->
+                            <tr>
+                                <td
+                                    style="background-color:#DFF1F5;padding:28px;border-top:1px solid #BCE3EB;border-bottom:1px solid #BCE3EB;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Left: product image -->
+                                                <td width="230" valign="middle" style="padding-right:20px;">
+                                                    <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&scjjs=974-32&lm=195982ONOJ40801&sd=5&page=T9BPfoPOegetaHk" style="text-decoration:none;">
+                                                        <img src="hxxps://i[.]imgur[.]com/bwBGB8O[.]png" alt="Mini Portable Cooler - FrostyPure" width="210" style="display:block;border:none;max-width:150%;">
+                                                    </a>
+                                                </td>
+                                                <!-- Right: offer text -->
+                                                <td valign="middle">
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#21B4D6;margin:0 0 8px 0;">
+                                                        LIMITED TIME PARTNER SPECIAL</p>
+                                                    <p
+                                                        style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#1A1A1A;margin:0 0 8px 0;line-height:1.2;">
+                                                        Get 75% Off Your FrostyPure Air Cooler Today</p>
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:300;color:#555550;line-height:1.6;margin:0 0 6px 0;">
+                                                        For a limited time, first-time buyers can claim an exclusive 75%
+                                                        discount with fast shipping. Plus, protect your purchase with a
+                                                        30-day money-back guarantee.</p>
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#999990;margin:0;">
+                                                        Note: This exclusive offer is not available on Amazon or eBay.
+                                                        Stock is extremely limited due to summer demand.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- CTA BUTTON -->
+                            <tr>
+                                <td
+                                    style="background-color:#ffffff;padding:28px 28px 32px 28px;text-align:center;border-radius:0 0 6px 6px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color:#0F5566;border-radius:4px;">
+                                                    <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d213644&ivtnv=974-32&lm=195982TWSR40801&sd=5&page=fysWzI6aEiEZIWT" target="_blank"
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:600;color:#ffffff;text-decoration:none;padding:17px 40px;display:inline-block;letter-spacing:1.5px;text-transform:uppercase;">
+                                                        CLAIM YOUR 75% DISCOUNT NOW
+                                                    </a>
+                                                </td><br>
+                                                <!-- SPACER + FOOTER -->
+                                            <tr>
+                                                <td style="height:24px;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <p
+                                                        style="font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#BBBBBB;line-height:1.7;margin:0;">
+                                                        Individual results may vary. <br>
+                                                        <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=5&d213644&ltmwp=974-32&lm=195982BONH40801&sd=5&page=ybP1BPeFeNaLDA3"
+                                                            style="color:#BBBBBB;text-decoration:underline;">Unsubscribe
+                                                            from future
+                                                            emails.</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+</body>
+
+</html>
+    </a>
+</a><br>
+<html>
+<body>
+<center>							
+<center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+<p>
+	To Unsubscribe Click 
+<a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=6&d213644&qmrrn=974-32&lm=195982IPEL40801&sd=5&page=EAG08rxuwbsK1zs">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</div>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+</body>
+</html>
+  </a><br>
+     </a><br>
+    </a> <br />
+</center>
+</body>
+</html>
+    </a> <br />
+    </a> <br />
+</center>
+</body>
+</span>
+</div>
+</html>
+<tr>
+                <td align="center">
+                    <img src="hxxps://tinyurl[.]com/2jpumb7w/track/index[.]php?search=3&d213644&lfhzp=974-32&lm=195982RDPY40801&sd=5&page=lGUYs07LjawshzA" width="1" height="1" style="display:block;">
+                    <img src="hxxps://tinyurl[.]com/2jpumb7w/track/index[.]php?search=3&d213644&vxpqc=974-32&lm=195982EZAB40801&sd=5&page=dOkgNGnma4jIWGv" width="1" height="1" style="display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object QCKBTCMJWRBPYEBBZRCQKPVTNRGBZTWSMXCARJBTSHPQVFOEJRFVTYHNCOMI>
+
+Dear OMGNZHJVZZKKZAQBQKUOFL ckirtnjrwldqksjhfpxshn,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is vuzfdlrpocdcxmytedbulsacijzu.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi agzqhqwtuipqxpvwxr,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi hutoqaggnwbqcgntnwcbylwg,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: rtpnenpdihmgdpngjwgeerlqrn
+ Site ID: fsvteiuskzsqvcolgwposkxwo
+
+=== Your Account Console ===
+
+Thanks again!
+Team LAJJHBQLRMZAJZQSPLFDFS
+
+Powered by WQKNXJVZGFBYYUGYUJBHTL 
+
+</title>
+
+Dear FTTRJLGFCUONANUIJXGOMDWFA ymqnhfaojtrsvsghjilmvcwqis,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is yaaigpnujlnnzkifhwesrfeqo.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood UDUSDPYMVPSTYLDMQFJFAO,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+DUAORGCTMRWBVSKAERHXJQUWHDPWTSNGAOXJWASZOAXMNOSHCLROJULFHAAZRTDUCYDYLWPYCULYEAZNEQDNAUVCWIDHFBRVCCCFHCYIOQVENPFXJHXFSAUVHKCUDYCABZWLFCRVSSVKLSRQWFTCLDKPNMAASEOQDDIHBDEVMREKJOBOXIDPDTTSEVIJMYRVRRPKXVGY
+
+ Hi SHJVWVYPIPBBXCJJLMGRCM,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+ybgkeoyxnmimxcvfrzcyqsvzqfcnjqwlumfwgydnqjcobzwemsicfyrrohhvzdnvrrmzqrwrzubpebmlyykpbagojpkdhvkvxxiybvroeexlimxeemdkobuxeweqbatixplqythfystwltpssezkhjkcfevlktdiznaifizxgbpgbpceqnhnfhysvslpcazpolwbrxxs
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi 3AK4RI3PYNR6R82V8GKVMOG5I,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team HWNBIXJFTLWHGDMSGEAZUZ
+Powered by YRWZIQUJGYAGYBNQPPBFYD
+
+Login Name: PRBDYNQHBDMOSSAHKBNFOP
+Password: PDYOKFCYPGDRACAWKJIPPY
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: KGH
+Password: EBKKTSOKAYKBVJCFBQBTVR
+
+	MKVTE5ISRAMVOGMRR7 MMMCX6MHFYOE62A LYAP6J3BSBNDG DUV9ER4PJ0VSY9HZ07 SUJE4Y8FHB0ABZR 7A1VH8P8F35BK LR1CHV938QU0PC0EW9 
+	27MQHALE035EVCIALT 6CE3M6QVAO2CD71 RONRL65EADMHB MMXO7O21KQEM3JVYSI ANG97UFJWOPCOCX 0M2XE8MJGJRO7 3B456QE7AMLKG6KD77 
+	XZX04IJTE2KSXE8 4N1W0L60G3Y71 URAP9VRZBBILIOE1OW 2WTBPUSPIZLSL8C EEU4U360FZGDI AWW76Z565P5XNRNDF9 GZMKD7G0C9PEWYF
+	6746DAGGFRI5Y 018BAGMT24Z9QGXVA3 HU5G4HWR9ML9WV7 ECILWYPHBCF5X JGC1IN5N83KZVUYVOL 5R661PYR2EM4K01 4WVOPEM6W938S 
+	2WHL4XGGHQ6SM8ZJIG G3ROH7MII3WB9CH 2KMFNESQMQJIZ VT0BKZGQ67FYG4NLUZ QCOIAS9WOMYFV11 XUFUURO776ZSZ 6HIPLVI3G23YZSEWFP 
+	BWSBJT5SLXP41GV MWNGC9GQM14SG 61P4W505CUBUZIE65I QBWRPRJ9J868NIM O72AIGDZU7FI6 9L3XZ3F42M3EUJF5KG XIRUTTBJNH3H97Z 
+	FHRBQYCC8XOCX 2KV7G8FKRASZXLQM6K W06IP2HI5CCFDYG QXN9QFW5RVQUV Y0S1YVHGRC351AE2JI 3N9CGSU0KU0KMAB C2BGWRUCY7KXZ 
+	O80JL73HHCKXNBCC5Z 51BEAUWYASWY2AL ALJ5AYW3TI6J5 Q4JLDK2KXY1AJQ0QJK 95TAS4KZBXLZCDK 5PL14INGLJSNP 1XTYWU6F6USCT99078 
+	8Y7P2TWUARD5S77 N3RD99QE26A8T E3WY2R1N730NP52QB8 8BL7ERXA0Y1RD73 SFIZTU61EAEJT HEUEWNK3EWZ8QHPG9H OC25NKMTT0BRPOK 
+	79PGRFHYL40LM 38LYYH9JPIZ1RB6LH3 A35L67L23QJIFS6 SLLRJJLVRJNE9 9APGQ18LCPTMAVAE0P JFJ2AS0M42Q3HKK VK0MWK0PV70YR 
+	Y5V8TOSDCI23BLFHAP 9DW160VQ7XES3Q3 294IDUS43HX3T QLBS47OP2Z70Y2WRVG 6S9UHZN8JD81KQI WVAZBVIUTBM2K AF41O5YPIJFYVTK32V 
+	6XF0681KSYF37II TJ2PMQ7Y3F8W7 WGSYZUZXLT9VQMLPTZ 5R0YTMZGS3W4CRQ 6NLIPCHC2GB89 I5ZX18OPMDKC11UB2Q TG0XI6NXJHPYIV7 
+	JMP8AN7DGCZBK 27C4IZNK0S2TSKLY6M 35PRD4D7O7QO2SH 53GZFS1EISEXR T80OWLRW0Y05WHJE9X R6IXN7XDYS6O2MH U4Y3DJT60FQGM 
+	5B3CUD36F3KZJ885LE 075VH9OBIP23XBB TOZXLWVZRV4O5 QNXZM6B62PKT5SFW38 CWEUPK3RW4JGF60 BOR825IWIUZKL VCEQUN58SXORSBOSSO 
+	8YM8SC1S5YZ2227 8VBZJSPSEIKFE HJWCA6KSGO8XI9Q0SH NFCDPIWXZSV4JLR 5SFOOJUKA1HV2 X08993X7N3FOCHTOQ4 V2SF1TFEURDVGZO 
+	UH7JRHOZNGT3Q 9U3XC8GJI02GLFRAOL W7C42LU43TE77JU R0YVKLMC5Q9ZU 14C2IVG7NS9CF1ROS2 KPKJH56FUAKY8PG CJ82ZPGEGMGYE 
+	WOLVBPICIVV7A07WAK KYDESL1Z57ZWGI3 T3RI2KLRLZ51F IIT9NCTX3OW4B5DAQN MQZ24A11H7PKGET IMLGYY0S4AB19 3846ZOOOGWY1ORM5YS 
+	0H319DK9Q9MPK4C P1WFCD49PSB4H BPIN1F3YWC30UM4Y2L 6JB7DC8UT0XNAII H75V0A02TOFL3 DY7EOFCJYF8HOQF9JR JK0BWEL1MWKYALI 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+HRPUXOJZDSZUIHACFHYQKEMQSSWHNYJGYZPYEBINYIVRXYEQDIKCNISDJMLOWFZQTDWQXBEEJHENDUCOJAHZKCEPMEVKIZKXSIAOPULREHAQBQTESXXIKQUTHCQZVRGQGTIYIDENNHWDOUDQAYIGYRHRFLTHVFBSRPOUKBAUWEBMQOOMFJHTZFOWPUQHMTFKBAXDHQQJK
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to PAEMGGVWJYBDVIDJCIYOKRRNOIJLPAZUIDJUDCRPLRKYMPTELHELTEVOTOUJVMPBZRQKHGQXIFIKOVTJEXUWVZFOLZYIJBFIGLKJJHFOKQICZRJQQKNTHQZRQFBNNSKUSIMLHGYOEJBCBIXEFKOJDPINFDBNXQFLGDWDMNCMUYMNKJRLURYTSSRUDHPADCLZHKXSQZGC roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department RTEEOSWDXKOJEVBVUBXIMRMDBHPZYDMNFRIPFDFGWXGDDLQBWWXSYMPDBGCYVYVIDXPURNQKWOCZCDOQLJZQHFMGFKCKMRUWRVBXECOOJHQZWJDRRSSHCVMHQVUDRIIISZKDPQKOXZVPDSNFEXFVEGFTTMWBUQXSDQJFVADWRGMFLANTMNQWGCWBMMGEIPBMUTMIXVVIF to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation OXDFIDGGVBFDBACNXGFWWMXWDUILPDUBWCJEMSJCDRVXSSGDBFFRXZBKZVFEXSRBYHEMDVNOOUAHYQARPOMQXPOQALOGWYALFTCATELDPWCHMZTYDIOHLXJCBGMDDHHIWYMOQVRMDOKXIHVUFANGTFIUBHOEQDVOSUWCYJTQASYPBIMQEXTSWURVIKVCDUHTMVVUUVLHG development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will MCNJDLIGVBQSUUHNNENKMVPATTZGQFZVPRUEMXZYVVABGVDWQTMPDTODKTLIHGCOGKLBSFYOJVZNGNDNZYGMNPHFDQGZTWPHCRGXTJUTEFAIXIIKITUTGAMNLDGMHFQEEFYWBLDIMGVMFLCIKYWTYBBSSIOUJUVUHZIKYUGZLXHNSYCRFMXILATHBPXFZCBZQJRQHJSHCWFURGTXGTUSNWHKLMJEFLAVEAEZAGQKWLWHMFYIUEBBAPHQEDACNODVJIJFAIEGUEVNJVYNGTZVUNTQOZDJNREBOUZGLCIBAWSRIZXYOCNZBSDXOWMMCLUPXNQXEIGHSVOEREILJEAKZSIZVXCJNDOKLWWIQNVEQJJTKYYXWJHXFZJSGVTPGSINAEZZPRAPBFTFNGMF  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support DZKSMVELSQTUNDSBISRTKLPSEODSRSNWFNYUFBNESHAMVWIOQDLVMMXKYWQOPLTQCGYTBJFCHKRDXSCJWHAQURWIPQABGNOMIUESBRJABYEPPWIZLVPANULMKOBWXXMYGFBEWHCJRONPOIQQERYWXGDVZOFNPCLZQDPADVIEUKXVGQVZOFNKFHLVLQXLZUEUNMZPIYXM  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
