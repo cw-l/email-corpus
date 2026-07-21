@@ -1,0 +1,212 @@
+Authentication-Results: spf=softfail (sender IP is 136.112.13.9)
+ smtp.mailfrom=nov.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=nov.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:68B5A6323BAF53A600A8D0F1AA06F916CD069054B49F00FEB313E5A432EE6793;UpperCasedChecksum:C9490EE09A2D076F3D0BDCAF00F16FB26F2D081E8A9D82B53D0DB56A283CD61D;SizeAsReceived:303;Count:7
+From: Cloud Security <support@nov.com>
+To: <redacted@redacted.com>
+Subject: Your storage limit has been reached. Cloud services are now paused.
+Message-ID: <f33c5bbe1448492783187169db64aea7@nov.com>
+Date: Sun, 19 Jul 2026 23:16:21 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Jul 2026 23:16:22.7108
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ d030edcb-b128-4715-5e68-08dee5ebbf8f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AMS1EPF00000043:EE_|DSWP220MB984212:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AMS1EPF00000043.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/19/2026 3:15:55 PM
+X-MS-Office365-Filtering-Correlation-Id: d030edcb-b128-4715-5e68-08dee5ebbf8f
+X-Sender-IP: 136.112.13.9
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|3069299007|41010799009|9400799043|32020799003|34130799006|2700799033|3025599003|970799063|6019299003|60050799012|1290799033|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Jul 2026 23:16:22.3887
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ d030edcb-b128-4715-5e68-08dee5ebbf8f
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AMS1EPF00000043.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DSWP220MB984212
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6196787
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0223.005
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Cloud Disabled</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #fef2f2;
+            font-family: -apple-system, BlinkMacSystemFont, Arial, sans-ser=
+if;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.15);
+            border: 1px solid #fecaca;
+        }
+
+        .hero {
+            background: #b91c1c;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .status-bar {
+            background: #7f1d1d;
+            color: #fecaca;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .body-p {
+            padding: 30px;
+        }
+
+        .warning-list {
+            background: #fff5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #fed7d7;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #9b2c2c;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .x-mark {
+            color: #e53e3e;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: #e53e3e;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(229, 62, 62, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #a0aec0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=3D"container">
+        <div class=3D"status-bar">System Alert \u2022 <span id=3D"sys_date"=
+></span></div>
+        <div class=3D"hero">
+            <h1 class=3D"h1">Cloud Services Disabled</h1>
+            <p style=3D"margin-top: 8px; opacity: 0.9;">Your storage limit =
+has been reached.</p>
+        </div>
+
+        <div class=3D"body-p">
+            <p style=3D"margin-top: 0; font-size: 16px; color: #2d3748; lin=
+e-height: 1.5; text-align: center;">
+                We have paused all upload and sync activities for your acco=
+unt. New data is not being saved.
+            </p>
+
+            <div class=3D"warning-list">
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Photo Backup Paused</div>
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Drive Uploads Blocked</div>
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Email Attachments Disabled</div>
+            </div>
+
+            <a href=3D"hxxps://storage[.]googleapis[.]com/mstallcld/ls" cla=
+ss=3D"btn">Reactivate Storage Now</a>
+
+            <p style=3D"text-align: center; font-size: 13px; color: #718096=
+; margin-top: 20px;">
+                To restore full service functionality, you must upgrade you=
+r storage plan or free up space immediately.
+            </p>
+        </div>
+
+        <div class=3D"footer">
+            <a href=3D"hxxps://storage[.]googleapis[.]com/abdoallgeosunsb/l=
+s" style=3D"color: #a0aec0;">Unsubscribe from alerts</a>
+        </div>
+    </div>
+    <script>
+        const d3 =3D new Date();
+    document.getElementById('sys_date').textContent =3D d3.toLocaleDateStri=
+ng('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    </script>
+</body>
+
+</html>
