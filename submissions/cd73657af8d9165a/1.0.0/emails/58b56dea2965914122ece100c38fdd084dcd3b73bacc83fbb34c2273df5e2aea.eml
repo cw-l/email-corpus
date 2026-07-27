@@ -1,0 +1,1102 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1784778841; cv=none;
+        d=google.com; s=arc-20260327;
+        b=FO0fWiRn0ihhxNeF6D1dHzz8/Au+b5RevWTPDSlnya8XKTj5tJ4t/b3X+w4i0l2rd2
+         JFzEzWVSH0zBrf2qI8zmbAQYclAnBVC1WmXYYQpZFgtecv5qSvZeIZWx1fdZHNBlMeys
+         uhG8qjQDjFhmWrIV1VLOOsW9BDPp/fWej4CWUdX/wG2gf4brmdTvG2LlnGNW43SHgRh1
+         AMK1A5WLR9vNDT2a1UDydaHcYFNYWJTM74GDJzOXHnRX72TJ0yInmMBVOZFlZ7INzmH8
+         hD7VtNQJd3ECJRNf2jFpifGuLkTjqLO45QZQ8o2KS/a/QDW7E7a3Y98cAtUSOU/PImv8
+         N7Iw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=ybj20G/HeQrq9BIHK2AnhAfPeRHXvwcUBD0v4Kt+hc8=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=pNwqQaEHMc7MdEB7hDuWK1Vku85CkWuEZ317LorvhB7Gab+YEkIum9foLZidAm2vBP
+         CiSAA1np7m3RWFID7GvSDM9j7fN9D8iKUFXT1YxwrfqDMHNfa9LapKmQYv2whgV0k8GC
+         fEq8l1x/eKU0UPFyeruA8BlKA6T7mfK86fi4o/f0ID53r7lZyU7j7KB++FrpJJmay7Ls
+         c8+LeNsOnSJBTIJzvppm0HM9l4ikXXzHrpVHlIW7epE+P5bAECmkcXY8GnQvj+/X76bD
+         M8/Io3wWKrsTbyv/BsTh7o+zTqKJU9qZw8NaX8wYUV8HMXWM2Y070RnpfE1YZojzmiGl
+         kaFA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@qcvvudwj.yaxaa.afternic.eu.com header.s=smtp
+ header.b=lKxRiGoO;
+       spf=pass (google.com: domain of oqiuqwpexwage@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=oqiuqwpexwage@yaxaa.afternic.eu.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@qcvvudwj.yaxaa.afternic.eu.com header.s=smtp
+ header.b=lKxRiGoO;
+       spf=pass (google.com: domain of oqiuqwpexwage@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=oqiuqwpexwage@yaxaa.afternic.eu.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=qcvvudwj.yaxaa.afternic.eu.com;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=orqncmscoxlqblraolfmz@qcvvudwj.yaxaa.afternic.eu.com;
+ bh=jbqeoxeNiCCR+oOKQVAyOtuf45c=;
+ b=lKxRiGoOEXSL6PCDwxly6r8VId8qk2RILn3H28xJPxbGFcf7Y1kP3BDgO0Ff12Y7NtAxfqeyYQdf
+   9fevKcaMmJAAoZferjYe84plG0bXK6EpuxcVhyqrTWYK1cOr8zhPnJBsoYKNp/kTFdcS7OiGUzZZ
+   SHiswBHSFa4EFZreiBKj6/YTgN6xNVU6uDN0LTyn4UsXQ9R6dcBhTqXpFccCSyEkKiVqc5xlFNlQ
+   eQ8RYNax9nKNWbx76JnETDuCFF73UkGqLtA3DgUBqkguQ7UUGN3EhGdrGoy0Zcg171IyPs4G0eYc
+   IgCu7+ObTKXKXzHRQScddB07b3qIcTkqsjsUrA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=qcvvudwj.yaxaa.afternic.eu.com;
+ b=gzt217aNbgRNJ7fJVtGoZ2sTbX4CIljCR+BzyLDZG310n6Mwwh969Dkp7tFxVtJ7myZuUsS0zChq
+   ATSOLuvSy+PPqCU5i7BKOKMQLoe4kVvvv5iYQ1jPsBmGKZjL3fZIurn8LlriwNaJWuNEDvKZeXHL
+   Iq46+aPyCm07/cyMWk3wGJoGGr6X7edHuPIVHSIIp50VLiODIDibCxHuXyrEbblRPvJugyfzIGtW
+   bLuFE9UISCV+jMoO7LwxdRJowqVYEew7atA68rx+UMydNJCbgszVWizVm0lvIn0MC8OK+rK3RP7p
+   6B+HHPzvqhvHlFa6Ys2FWp5pjCznyZDeH4bMIw==;
+Subject: FLASH SALE: SuperAntiSpyware Pro X at lowest price ever
+From: SuperAntiSpyware_Team <okgsymg@qcvvudwj.yaxaa.afternic.eu.com>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.3.247.121
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <elnrwlryewxjolgzabstrwlrzruond@svz8imq07hesu0y9ys>
+List-Unsubscribe: <http://ravino.pro/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Thu, 23 Jul 2026 03:54:00 +0000
+Sender: orqncmscoxlqblraolfmz@qcvvudwj.yaxaa.afternic.eu.com
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#=
+index[.]php?search=3D4&d216574&hvmps=3D1002-32&lm=3D195982XJSR40871&sd=3D7&=
+page=3DiaTYNmqnOoKjlfc" style=3D"text-decoration:none; color:black">
+
+
+
+<html>
+
+<head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Protect Your PC with SUPERAntiSpyware Professional X</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .offer-box {
+            background-color: #f0f8ff;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #777;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .features {
+            margin: 20px 0;
+        }
+
+        .feature {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .feature-icon {
+            color: #0056b3;
+            font-size: 20px;
+            margin-right: 10px;
+            min-width: 25px;
+        }
+
+        .footer {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .guarantee {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .shield-icon {
+            font-size: 48px;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=3D"container">
+        <div class=3D"header">
+            <h1>SUPER<span style=3D"color: #ff6600;">AntiSpyware</span></h1=
+>
+            <h2>AI-Powered Protection Against 1 Billion+ Threats</h2>
+        </div>
+
+        <div class=3D"content">
+            <p>Dear Valued Customer,</p>
+
+            <p>Is your computer protected against the latest cyber threats?=
+ With over 1 billion malicious threats
+                blocked, SUPERAntiSpyware Professional X Edition provides c=
+omprehensive protection for your PC.</p>
+
+            <div class=3D"offer-box">
+                <div class=3D"shield-icon"></div>
+                <h3>SPECIAL LIMITED-TIME OFFER</h3>
+                <p>SUPERAntiSpyware PRO 3PCs 1Year</p>
+                <p><span class=3D"price">$19.95</span> <span class=3D"origi=
+nal-price">$59.95</span></p>
+                <p>Just $1.66/month</p>
+                <p>PLUS: FREE 30-day LiveTech 24/7 Technical Support</p>
+                <a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/br=
+ightpath[.]html#index[.]php?search=3D4&d216574&idsso=3D1002-32&lm=3D195982R=
+DKB40871&sd=3D7&page=3Dt9tx4qGnglRBl3s" class=3D"button">GET PROTECTED
+                    NOW</a>
+            </div>
+
+            <h3>Why Choose SUPERAntiSpyware Professional X?</h3>
+
+            <div class=3D"features">
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>AI-Powered Detection Engine that blocks over 1 bil=
+lion malicious threats</div>
+                </div>
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>Real-Time Threat Blocking stops malicious files as=
+ soon as they're detected</div>
+                </div>
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>Multiple Scan Options to fit your lifestyle (Quick=
+, Complete, or Critical)</div>
+                </div>
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>Automatic Database Updates ensure you're always pr=
+otected</div>
+                </div>
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>Protection against Ransomware, Spyware, Malware, T=
+rojans, and more</div>
+                </div>
+                <div class=3D"feature">
+                    <div class=3D"feature-icon">=E2=9C=93</div>
+                    <div>Works alongside your existing antivirus for maximu=
+m protection</div>
+                </div>
+            </div>
+
+
+
+            <div style=3D"text-align: center;">
+                <a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/br=
+ightpath[.]html#index[.]php?search=3D4&d216574&tjvrj=3D1002-32&lm=3D195982A=
+BAW40871&sd=3D7&page=3DXSToOeZbkOx8EXR" class=3D"button">SECURE YOUR PC
+                    TODAY</a>
+            </div>
+        </div>
+
+        <div class=3D"footer">
+            <p>SUPERAntiSpyware PRO automatically renews yearly at $59.95. =
+LiveTech renews at $19.95/month after the
+                free trial. You may cancel anytime by calling 1-866-966-625=
+4.</p>
+            <p>=C2=A9 2025 RealDefense LLC. All rights reserved.</p>
+            <p><a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/bri=
+ghtpath[.]html#index[.]php?search=3D4&d216574&dvwja=3D1002-32&lm=3D195982TR=
+TO40871&sd=3D7&page=3DhXSLf4RFoJCgcBA">Privacy Policy</a> | <a
+                    href=3D"hxxps://storage[.]googleapis[.]com/victoryway/b=
+rightpath[.]html#index[.]php?search=3D4&d216574&faxcf=3D1002-32&lm=3D195982=
+BGAY40871&sd=3D7&page=3DOlHqLyYdWlKkCiP">Terms and Conditions</a> | <a
+                    href=3D"hxxps://storage[.]googleapis[.]com/victoryway/b=
+rightpath[.]html#index[.]php?search=3D5&d216574&nhgnn=3D1002-32&lm=3D195982=
+VWJD40871&sd=3D7&page=3DKdkfmXNw0FVVvdV">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<html>
+<body>
+<center>						=09
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+ </td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html><br />
+				<br />
+				<br />
+		=09
+				<center><p class=3D"unsubscribe" style=3D"font-size:10pt" > To unsubscr=
+ibe, click <a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightp=
+ath[.]html#index[.]php?search=3D6&d216574&ewaqz=3D1002-32&lm=3D195982SCVT40=
+871&sd=3D7&page=3D2I3xvqBXu5XgXUY">here</a>[.] </p>
+			   </a> <br />
+	=09
+		</html>
+			=09
+	=09
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</div>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+</body>
+</html>
+  </a><br>
+     </a><br>
+    </a> <br />
+</center>
+</body>
+</html>
+    </a> <br />
+    </a> <br />
+</center>
+</body>
+</span>
+</div>
+</html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+
+  <!-- Tracking pixel -->
+
+</center>
+</body>
+</html>
+
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+</body>
+</html>
+</body>
+</html>
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</html>
+<tr>
+             <tr>
+                <td align=3D"center">
+                    <img src=3D"hxxps://tinyurl[.]com/bgsfsaSD/track/index[=
+.]php?search=3D3&d216574&mqdgz=3D1002-32&lm=3D195982ROCZ40871&sd=3D7&page=
+=3DlJVI0Tiyi2tpUJh" width=3D"1" height=3D"1" style=3D"display:block;">
+                    <img src=3D"hxxps://tinyurl[.]com/bgsfsaSD/track/index[=
+.]php?search=3D3&d216574&estcw=3D1002-32&lm=3D195982CSBG40871&sd=3D7&page=
+=3D5qB5Sv4OUNRMfYW" width=3D"1" height=3D"1" style=3D"display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object EPAKBIKYHSUCXXTUZSOEQJFILVBXMAARJFYQLZOTQMLGTGLPPWHVWXDMVYID>
+
+Dear NTMHZQWYFGNQKHBEDOKZAN htojpydcdkswultowqqqng,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is lkrnserruawnbgoknrhhypx=
+bjbfk.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi vizfstdcsgoqxocxrd,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi vlchhjxtsfksqkffrrjzordi,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ossryoylhsqdpeyntlegvliecb
+ Site ID: yvikqrmpqegajdindqwxageoj
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team ADDIDSYKLUDVZMEJHPULKJ
+
+Powered by HPWMORJVOGJXBORYTHPYNT=20
+
+</title>
+
+Dear MHRTVTXRHPXITWPLIMSVLTAMF lmccyqtxyhlaxfvccrwiufbngs,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is wxteyokbdpxnarxazhfheih=
+ok.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood VYZTYQORABIJKDGUDCTBNZ,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+BMFTNBPKJUTMZKQRWIVUHYXDRKZUYEKXHIEFLOWJWHQFIWHOWYOOEICSYBDWKNXYPVDFHKNLIDH=
+AEETUTOAWFOFEANUFPXZEFCIBEQVTKBKMRGIVATEZBYOVGPWYJLAGXDRLRVTYUQMNZJHCLUQTZZ=
+XTOLYTLUSFVMGCVSAYDHDWQHKFQTOGROMQTTLTPBRUJIRDEYMN
+
+ Hi XEREWJLGJHPWEGIJPLUCYW,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+pzmqkefbexkkpktlxkhkgvlmrgslbskmzppxzbvcotogpkpggrqiuhugakfbltpdxyezmiaovkb=
+kctjbreufxwhhwhcwfzdkspkssrfocejnqczqysdiwwbijsmmmbngjnvddwahbsnhmvmwnsjfsa=
+vimpgpmmzfuuefiwoiejshauwnymicgzdcmosvuzwmdctqvrvb
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi T5K0OW3W5MYG5E0M2I8TBLM3P,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team BVTQXKLJEYEMAUJREVXPDT
+Powered by SZCKEYYNHZCMDNWUENBANV
+
+Login Name: CFXHWIHTSCZHBRZEPZFLLL
+Password: CELXZCALIKBHGQYGITTOTA
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: DNZ
+Password: STYYTOWHOGMJNLYZHHEQMP
+
+	N4JE6ADXL3CKKNB8DA 98QNQNQM0WLLAZE 9LCCI37EK4MC3 8W6WU8YNAH5V7EGR4B WA6B9Z=
+XH2VFMTQH HZCJPYZK7KMFZ E60L2Q2L38POY7MMQ3=20
+	QBFYEJL338PSZPJQ8D Q87T3YILCUTKRJ0 H2QUPD2NE0OHS D3PRFL0GCVUGL1WKP6 ZV4CGT=
+FDWKP8667 CH7Q27E7FXF7S KV4SD7P0FITD2TGG83=20
+	Q2TG0CGKF8ZH2MI A6X0W1DT5HNZ0 4W8WMHOPDHP46ZEEXL DZP9XZ7KL2UV03M EUECCC22D=
+08HY J7RY0B5IOTDC0MO79Q V6UV2E5X2F92WQP
+	WBOH704HZBDFG DQ9QF3LISGN6284QHY C4M0YQ53O8J40YU N2LOA91LV3I9C D51CU152FJO=
+OHFEQ6B QTU94VVH5NE27X0 FPJYPS0TKNI0I=20
+	BSL0F8EO0S71D6Z4BL 2GK7SQM42S1K3U2 81T63QUB34EC9 JQFDZJWLQCM19N2OJN UZFA9S=
+BRSJTEI49 ALGFF2W27AIC1 5IB53WH0AHQ6ZXHCPM=20
+	W69OQTQ2ZBLXPP6 6YHR7L3Z18DEG VY9EU7H2FUZDYXI88V 0TQJYON3CG88NLI W15I833OJ=
+XZU2 3EWMDJGHOOOU1FL9UQ SCINKOV46362ZEB=20
+	VWJ52K4U8ILQJ 8O9UZAFP36RLWIU9NJ D62Y017V6GMW651 QT1768DT1QSJ4 J8ANNKNJFYL=
+GREW2GI NXRJJE7O7JC3VLJ 9830540W4K23B=20
+	HDZHL0H0E9NLZ7L9D7 2DUBQ9AFIS4461N 235FP93R08DMB LBKD3QPCXYR0ACWEUV C1K67Y=
+7F80008S8 Q72UCC7HBBTLE SS20JYY6SYHWOECFT3=20
+	L1IY5KI5EH223UF CKDCDG4BVZOO8 TYUX038VBUNJ16GKPE 9NSSYYTXY52S2LE H9MXNJPYN=
+EQH1 JJRVN8CTKLJ3FU1B2G 39ZG50Z3UW1BSAV=20
+	DKRU4DZ7A407N M0GP687BRW93NMOO4K JKMRL9SI5IA7T10 A0IJXA8PUIOPB KGIID0K8ELS=
+ZSMG0AU 3TJBYJEHV34GFBL JWBFZRZUB62RP=20
+	LMEVMFG09WN71Q444Y CD8CM9PT0BLN26J WTJBN9N3VK7AO ZVHT4IG46PZVXNJS0F H7CBBN=
+WKDCGEWCQ F3X051FACBX4S XPXDFI81OC3BR31Y86=20
+	NMK8KUKEKLX0LYM KXV3EM0RJMYAQ WZ5GMLJ4E3R4G7DWXA RTSU5N6VEIPSTCE P8JFBL6CO=
+FPCI KSIXZEJW86ILU5GWEF YR9H1ECJVSPXXB2=20
+	FHV3HF449WHXP 6RTSTID7B0TJJW24ML SDPV9HJWE1H15B6 9RSEMTMPTAN79 X1NAJKQ2C0L=
+11CQZWH PPYNOY21L5BLD1P UOTZIHMMY11VN=20
+	JFIT2T4G3RLVLKIN4B 5D8JG14THQLF0R3 MMA3AI3O4VE02 WRT49TJSLLGRDYF5AI 1KK5LE=
+RNYZDSS2W 73TDHQ07X3O9Y G6VD9ODWGOJ187WH2R=20
+	LJMYFJHD036K6O1 GV32JURV9SVYS BMPT8GBFPKBUREBSIF OPHZ1Z3CV4TWH9E ZLO0KQ0K0=
+MQBN 8UVQDTP17NYMUH2LIP LRZFU3B7W38Y85O=20
+	AYFYPLE5LA0LD 8583PZW6G4MOHSTX78 K1GOKLTT0CL3KNY S4NHKF4RZ3AXC IKMZKVUWSHD=
+405ZG7H URAIXTZKBR0JXBE KG81B3S5RN3JY=20
+	TPUJHQKMAUGAVJ3RYE MDUL8JKHOTZ7OM4 PXDOLX0DKI4DB T4GKV2YVNC8B4EMNHV 1RVVPC=
+O55Z0JS18 YM2YAZAU6UDKC GGJL5SRJG0C71ILLNQ=20
+	I3AIUY9KQVK4IZV Y77RUAGJ8KCTT Q87PSXKNH10W9ON8TT 057W5UYA50XKYZB N2CRS7LQ9=
+YMEU XPVHCYZ0T1PFTVX7WA DM1E335J2MCQ7HJ=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+FRNHOEVWYUJKWANACOWBPJAUCVFLTJKDZAQVOUCFZFUHSAQXDMVPIMKGUKMYYTPLSUDMJWTGYBS=
+HIABWRRYFHYJTVVZDTDLFQFSIBYUVVLPYVJCYYOJKQYMOHWCEMPWXGXFHCZVIFAPDDLIIPJKYQN=
+MQGXESWORGKLBXKHMQIPTJHAJPHPRDLHXZRGOLVWLRKLPWTAGFC
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to RVUOEAZUPAOCXXHWSQMFG=
+BKZFLAALSENYRBNVCORYFXWKTBNFEVCPLUQIAPSNPPFOSGAXFJITGAEAITTXVZXGFTYAASLRLVH=
+QWNNBCVVZAJYTIDWFGSUFFMKLVKHQVIJBCOBOYCSCSGLCVYVFFOAAGJZNRKCPEQBYBLOJKQYMVH=
+EIKDAZQIZCWUHGLSPYZKFTKRTHDWW roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department LRRDKHZVDGYPGOFJWWZNOEODCVEOZPXQATNQIGOSBQABUQRK=
+ZYWDLWXZGXPEPAFLCVAJXKJBTGWHZVGPMDRXAPQTWBYGJQAKWDQPBYNHJUSVFDJAEAEAMXNUSVN=
+TBOAFGGMXPFUKFHIQGPPZMBMYNEKHDWFRPQEYKUMQCCJOCWTOGPPUENULYHHELYDCWLBKKNCGAN=
+TLI to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation UKUJIOIBTOZDTVN=
+YLWHPXYZUDANZSVUDUNETDZBUJTINRXXFZCUBWLBZRMCCCTNPXYAKPZJGDNWIOUSFUPQUZMSWDC=
+UNYKSVSNUIIYCCQSRRRGMZVBKXEDJSBGRBBAGMELQRHGDEHXHKEDXAZNYZEJDJGMSPQEPKUCLBL=
+EQMTERWLLLFGRLWAVBRSNGWDDOLSGWIBOKIK development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will CGQKFKOTBWAKHQNALWUOGNMYFQXIXAXCLFJITZCLIFJLIWUKUEBDRYEQB=
+DPFWQPXROJVXTQRYCYKASLUZQNDNVBGKHEVYLCWFGMTAEKTZXUYBELYJUGJZSQEWCFIJQARGUED=
+LFKBWTZYFCQDMOOVYBMOHYJICKGLWFHISQCBESMHEVXVTNYIBPMEIPRWIJXCMONCUMQIOMHRYIJ=
+JMXNKZQBIIDISDNUXRWTIUBWRXQFCTYRYVMNPBNLOHCYFDDCJIEKDPEKMBWEHPAMAUVBZYTHBTF=
+PMAVIVVJXJNYVZHCDGCECEDUQBOUUOCULTGEKOPIVJTLLQNFTFZUZWYKOZPEAMBWSLOQIILZMNW=
+GOOGGJQXNQDMJEXOPQXJSROXBWTJGKQOFLGWGJSRCKS  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support STASEPZ=
+GOTYDYRJQMAXINSHIYSRFIVIFPTQJNREKKUQEISLRYWXMLKEKPKQIGAHGSYIYYVFXQBSNWDMHHP=
+XGIBXNFSWMAUVHLOMGNKSBIQXXVBJSUYVWBZUKORXAGTBGRWUAZRNVQIXAWASQVQSSGMCIAHWSY=
+SNSWMOLOZUEBMFZLPEBFNGTGUAAZDYKLZSFXLXZVLGP  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

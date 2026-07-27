@@ -1,0 +1,232 @@
+Authentication-Results: spf=fail (sender IP is 35.226.95.142)
+ smtp.mailfrom=molromania.ro; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=molromania.ro;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:13279DD74762864E4313234AF8114141E2DB7803A30233B5D3E9C29FFF31BE78;UpperCasedChecksum:F1FA2BEB34B90FBAC3B5217698D39BC924C5169D876E15E1BD240B63D465C922;SizeAsReceived:309;Count:7
+From: Account Security <support@molromania.ro>
+To: <redacted@redacted.com>
+Subject: Your photos and videos will stop saving if storage is full.
+Message-ID: <9601dcdbb69e4913aac032b9f8ccfc4a@molromania.ro>
+Date: Tue, 21 Jul 2026 19:09:40 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Jul 2026 19:09:41.1319
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ f725bd8c-6d98-490e-2966-08dee75b9df5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN2PEPF0000449E:EE_|SA1P220MB1606:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN2PEPF0000449E.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/21/2026 2:24:47 PM
+X-MS-Office365-Filtering-Correlation-Id: f725bd8c-6d98-490e-2966-08dee75b9df5
+X-Sender-IP: 35.226.95.142
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|1290799033|32020799003|3025599003|34130799006|970799063|41010799009|3069299007|5149299006|47200799027|2700799033|13020799009|58200799025|9400799043|60050799012|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Jul 2026 19:09:40.9898
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ f725bd8c-6d98-490e-2966-08dee75b9df5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN2PEPF0000449E.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1606
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7871738
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0223.005
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage Full</title>
+    <style type="text/css">
+        /* Apple System Font Stack */
+        body { margin: 0; padding: 0; background-color: #F5F5F7; -webkit-font-smoothing: antialiased; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1d1d1f; }
+        table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+        td { padding: 0; }
+        img { display: block; border: 0; }
+        a { text-decoration: none; }
+
+        /* Layout */
+        .wrapper { width: 100%; padding: 40px 0; background-color: #F5F5F7; }
+        .container { 
+            max-width: 400px; 
+            width: 100%; 
+            margin: 0 auto; 
+            background-color: #FFFFFF; 
+            border-radius: 22px; 
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            overflow: hidden; 
+        }
+
+        .content-padding { padding: 45px 35px; text-align: center; }
+
+        /* Icon */
+        .icon-container {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(180deg, #5AC8FA 0%, #007AFF 100%);
+            border-radius: 16px;
+            margin: 0 auto 24px auto;
+            color: #ffffff;
+            font-size: 32px;
+            line-height: 64px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.25);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Typography */
+        .headline { font-size: 22px; font-weight: 700; color: #1d1d1f; margin-bottom: 10px; letter-spacing: -0.015em; }
+        .body-text { font-size: 15px; color: #86868b; line-height: 1.5; margin-bottom: 30px; padding: 0 10px; }
+        
+        /* Storage Visual */
+        .storage-visual { margin-bottom: 35px; }
+        .storage-bar-bg { 
+            width: 100%; height: 10px; 
+            background-color: #E5E5EA; 
+            border-radius: 5px; 
+            overflow: hidden; 
+            margin-bottom: 8px;
+        }
+        .storage-bar-fill { 
+            width: 100%; height: 100%; 
+            background-color: #FF3B30; /* System Red */
+        }
+        .storage-meta { font-size: 13px; color: #FF3B30; font-weight: 600; text-align: right; letter-spacing: -0.01em; }
+
+        /* Inset Grouped List (Settings Style) */
+        .settings-group {
+            background-color: #F2F2F7;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+        .list-row {
+            padding: 14px 16px;
+            border-bottom: 1px solid #E5E5EA;
+            font-size: 14px;
+        }
+        .list-row:last-child { border-bottom: none; }
+        .row-label { float: left; color: #1d1d1f; font-weight: 500; }
+        .row-value { float: right; color: #86868b; }
+        .row-value.alert { color: #FF3B30; font-weight: 500; }
+
+        /* Buttons */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: #0071e3; /* Apple Blue */
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 99px; /* Pill Shape */
+            margin-bottom: 18px;
+            transition: opacity 0.2s;
+        }
+        .btn-link {
+            display: block;
+            width: 100%;
+            color: #0071e3;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer { margin-top: 20px; }
+        .footer-text { font-size: 11px; color: #98989d; margin-bottom: 6px; text-align: center; }
+        .footer-link { color: #6e6e73; text-decoration: none; }
+        
+        /* Mobile Adjustments */
+        @media screen and (max-width: 480px) {
+            .container { border-radius: 0; box-shadow: none; max-width: 100%; }
+            .content-padding { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content-padding">
+            
+                <!-- Icon -->
+                <div class="icon-container">\u2601\ufe0f</div>
+
+                <!-- Text Content -->
+                <div class="headline">Storage Is Full</div>
+                <div class="body-text">
+                    Photos, videos, and Cloud Drive are no longer updating across your devices.
+                </div>
+
+                <!-- Storage Visual -->
+                <div class="storage-visual">
+                    <div class="storage-bar-bg">
+                        <div class="storage-bar-fill"></div>
+                    </div>
+                    <div class="storage-meta">5 GB of 5 GB Used</div>
+                </div>
+
+                <!-- Settings List -->
+                <div class="settings-group">
+                    <div class="list-row">
+                        <span class="row-label">Current Plan</span>
+                        <span class="row-value">Free 5 GB</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="list-row">
+                        <span class="row-label">Status</span>
+                        <span class="row-value alert">Not Backing Up</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="list-row">
+                        <span class="row-label">Next Tier</span>
+                        <span class="row-value">Cloud 50 GB</span>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <a href="hxxps://storage[.]googleapis[.]com/mstcldtone/lis" class="btn-primary">Upgrade Storage</a>
+                <a href="hxxps://storage[.]googleapis[.]com/mstcldtone/lis" class="btn-link">Manage Storage</a>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-text">Cloud ID: #2125568</div>
+                    <div class="footer-text">
+                        <a href="hxxps://storage[.]googleapis[.]com/unsuballgeocld/lis" class="footer-link">Unsubscribe</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,1091 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1784798689; cv=none;
+        d=google.com; s=arc-20260327;
+        b=MCiuGQAx179SN3Ba9dqX3pOzgCugtVy1Q/IUauXnCtSpFPcVdXm29YNlVAQXVlRXtc
+         HD2w16WAqnTNiPPizpj0wQ3TCW/UtaBtQqsq1AHW8Lc+tpytSCOSH/uF1U8WYaztQuzG
+         gqB1Bkd8y7ZNuU6TFueh8LWzlgOiHKzI1Y1TiCCiMkGAq5VYqXLBw7ni4ioXxT3d7DIF
+         Bm2EsndNDhJXsGw3mzwvX/+dr01mkU+gCZmjs26zvdc/DwqIXgpB5g3heq9tsu14Sfq6
+         LrJcQgQ6renN2axDFjGp3gJ9HIWabOLLjLK9yJl1ZcKSq3iRBDt43dV4fFM9SvcJOO3V
+         Fo3g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=OV8ithubHoeygeicENwzulXjOPedmOX4D67gGatjuKY=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=BIN51pwrD66Fqwef8iqsprWIqPLC0d/riZTtZK1FGk2qcJ+rPA9CquwIW70ymSq7s6
+         EThNFxFQyKQ7pvchBnY8Clbz2hUb6vdBF48H/52T3VKF/ndwO2k/M2oRuyj32M+B45gm
+         HcK650+paZpE+eBD+faeVwNeZMrJi/M+m9wIKNWmOEclhemIGEZ1+tp6qo36mqCkgW4z
+         REMatVHDSBJqEpIkG6l8y3eaEBWoRqMvuVLnsSnWYWk2ffWfOOOkkewx4EWEO4ylMGbE
+         dVj/Pm+3Jp9O2Q1RqGOX/0bwhsIe8FuuyDOcZ415a51g6ZWnO4pisa5rZ9roMOzKoL5j
+         o4cQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aejnwdkn.photonix.venloria.biz.id header.s=smtp
+ header.b=R8EpZAWh;
+       spf=pass (google.com: domain of ovwegumjxzvjm@photonix.venloria.biz.id
+ designates 46.31.78.39 as permitted sender)
+ smtp.mailfrom=ovwegumjxzvjm@photonix.venloria.biz.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aejnwdkn.photonix.venloria.biz.id header.s=smtp
+ header.b=R8EpZAWh;
+       spf=pass (google.com: domain of ovwegumjxzvjm@photonix.venloria.biz.id
+ designates 46.31.78.39 as permitted sender)
+ smtp.mailfrom=ovwegumjxzvjm@photonix.venloria.biz.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=aejnwdkn.photonix.venloria.biz.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=cnhgisiqcbbrsltyzawwm@aejnwdkn.photonix.venloria.biz.id;
+ bh=og0sCc0f26Xgo+xUt3bOQFmJW2s=;
+ b=R8EpZAWh2+NGygEbIJfG3LzmlGuoyYLtQMZN5znS57WhKY5Hsy6I7QbK4dSqvKRrnWTFsknqH4QA
+   spKIvVIAZghxVZfST3ZnjvPjGg6Qmg0q9OZiWcqoPFjgxHtpNQAoO3/i0rq3bUat48zfU2BdTqRp
+   CAYhEm6Nyqnrk+azq7oV83J/wJwwzias0TTOA7zaH0fCFXa0VzbjT/EOlV8rHF+E8FFmEfH6Ip+Z
+   pKqc1WJ2kxrFEFLaVnrluzHQhZR5PhRNu3l41gpyVHMZF5uMZZZJTViDNrQPwpL2ncGxt8Wr45hG
+   qpPgik7r5RszEo2mtdj8gA2hnwm3LZnDFmgzTA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=aejnwdkn.photonix.venloria.biz.id;
+ b=HVAhRB1lq1HbxgYHIEC40EzCJTFuxfSG4+aHlbBMlyQlhjZ2kOg9oFFkEqQZWNX7gl+rpYcL/YzB
+   pN9bthRWR5x1T0M5cPcCxXAgFF4p4sw8/+OT/fkEIxiGijMRAWKsvDWep2PCTyBp0r2O38NYHJ1w
+   isB5ltZsHqLexbL33LiHpfT4TMpAie9Y8c3/QTVF7JMg7MsEnY0hMgyoQ9WNGhpxUCCYz2OG0owF
+   P5Fp4BEGGjDwXF/5AGaii2ADuTPfjoY8WeeDU1OXo5nJN3r+vloGPEQhNu5VoMxDvvkeQwoIMFVY
+   rqSL5hWP8TRIy2mgzz2s0JulFpIVWMhLN8ZYgw==;
+Subject: Lowe's Survey: Kobalt Mini Toolbox reward inside
+From: 
+ =?utf-8?b?TG93ZSdz77+977+9ICA8ZGhmY2pzbkBhZWpud2Rrbi5waG90b25peC52ZW5sb3Jp?=
+ =?utf-8?b?YS5iaXouaWQ+?=
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.39
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <jrfoulwsfolueuvlkjjhnvfsqqsgzp@adkc4et08qs97wnyzv>
+List-Unsubscribe: <http://semituransverse.hr.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Thu, 23 Jul 2026 09:24:12 +0000
+Sender: cnhgisiqcbbrsltyzawwm@aejnwdkn.photonix.venloria.biz.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+
+
+
+</br></br></br><center>
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&tcrad=1003-32&lm=195982VZCZ39240&sd=7&page=8THZC7YPvVv8NEh" style="text-decoration:none; color:black">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowe's Shopper Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .email-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border: 2px solid #004990;
+            padding: 0;
+        }
+
+        .header {
+            text-align: left;
+            padding: 20px 25px 0px;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0;
+        }
+
+        .content {
+            padding: 25px 30px 30px;
+            color: #333333;
+        }
+
+        .greeting {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #004990;
+        }
+
+        .paragraph {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            color: #15B6E5;
+        }
+
+        .cta-link {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #004990;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .cta-link:hover {
+            background-color: #15B6E5;
+        }
+
+        .signature {
+            font-size: 13px;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .wave-divider {
+            width: 100%;
+            height: 45px;
+            background: #004990;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wave-divider::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -5%;
+            width: 110%;
+            height: 30px;
+            background: #FFFFFF;
+            border-radius: 50%;
+        }
+
+        .wave-divider::after {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -3%;
+            width: 106%;
+            height: 28px;
+            background: #004990;
+            border-radius: 50%;
+        }
+
+        .author-section {
+            background-color: #004990;
+            padding: 25px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #ffffff;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #ffffff;
+            overflow: hidden;
+        }
+
+        .author-bio {
+            flex: 1;
+            color: #FFFFFF;
+        }
+
+        .author-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .bio-text {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #e6e6e6;
+        }
+
+        .website {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #15B6E5;
+            padding: 8px 12px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 20px 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #004990;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #666666;
+            margin-bottom: 12px;
+        }
+
+        .company-info {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .acknowledgment {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #666666;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+
+            .email-container {
+                border-width: 1px;
+                border-top-width: 4px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .author-section {
+                flex-direction: column;
+                padding: 20px 15px;
+                text-align: center;
+            }
+
+            .footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="hxxps://i[.]imgur[.]com/y68evSv[.]png" width="110px" alt="">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <p class="greeting">Dear Lowe's Shopper,</p>
+
+            <p class="paragraph">
+                We would like to offer you a unique opportunity to receive a brand new Kobalt Portable Mini Toolbox.
+            </p>
+
+            <p class="paragraph">
+                To claim, simply take this short survey about your experience with Lowe's. Your honest feedback is
+                invaluable in helping us improve our services.
+            </p>
+
+            <p class="paragraph">
+                Click below to start your quick survey and secure your reward today.
+                <br/>
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&nyskz=1003-32&lm=195982BVXM39240&sd=7&page=M4sCqtXBXGeoUFz" class="cta-link">CLAIM YOUR REWARD</a>
+            </p>
+
+        </div>
+        <!-- Product Highlight Section -->
+        <div class="author-section">
+            <div class="author-image">
+                <img src="hxxps://i[.]imgur[.]com/r5m5Slc[.]png" style="width: 100%; height: auto;" alt="">
+            </div>
+            <div class="author-bio">
+                <div class="author-title">Kobalt Portable Mini Toolbox</div>
+                <p class="bio-text">
+                    This durable, high-quality Kobalt Portable Mini Toolbox is engineered for versatile use, making it ideal
+                    for both professional trades and home repair projects.
+                </p>
+                <p class="bio-text">
+                    As a valued Lowe's shopper, you can receive this entire set as an exclusive feedback reward
+                    after completing our short questionnaire.
+                </p>
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&scodu=1003-32&lm=195982HWXO39240&sd=7&page=2XCoCwBERrVgnd2" class="website">START SURVEY</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&vgrud=1003-32&lm=195982UQQV39240&sd=7&page=d2iQi3mIheWIbsM" class="footer-link">Privacy Policy</a>
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&zddjj=1003-32&lm=195982YFIX39240&sd=7&page=KtAgzuLF3g1158C" class="footer-link">Terms of Service</a>
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&hwwjv=1003-32&lm=195982MBJF39240&sd=7&page=F6owNi8EDqDXN4U" class="footer-link">Help Center</a>
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d216734&fahaa=1003-32&lm=195982RQQR39240&sd=7&page=6AzhMedGxSQr4PA" class="footer-link">Manage Preferences</a>
+            </div>
+
+            <p class="footer-text">
+                Participation is voluntary. Limit one promotional reward per household. This shopper survey is sponsored
+                by Lowe's.
+            </p>
+
+            <div class="company-info">
+                &copy; 2026 Lowe's. 1000 Lowes Blvd, Mooresville, NC 28117
+            </div>
+
+            <p class="acknowledgment">
+                <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=5&d216734&wgesm=1003-32&lm=195982NTSF39240&sd=7&page=6ZvGcInkxoebfn6" style="color: #46474a; text-decoration: underline;">Unsubscribe here</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<html>
+<body>
+<center>							
+<center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+ </td></tr></table>
+ </a></a>
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html><br />
+				<br />
+				<br />
+			
+				<center><p class="unsubscribe" style="font-size:10pt" > To unsubscribe, click <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=6&d216734&llptl=1003-32&lm=195982MTOU39240&sd=7&page=9CVbZ48P4CiUz5o">here</a>[.] </p>
+			   </a> <br />
+		
+		</html>
+				
+		
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</div>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+</body>
+</html>
+  </a><br>
+     </a><br>
+    </a> <br />
+</center>
+</body>
+</html>
+    </a> <br />
+    </a> <br />
+</center>
+</body>
+</span>
+</div>
+</html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+
+  <!-- Tracking pixel -->
+
+</center>
+</body>
+</html>
+
+<html>
+</center>         
+</center>  
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+</body>
+</html>
+</body>
+</html>
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</html>
+<tr>
+             <tr>
+                <td align="center">
+                    <img src="hxxps://tinyurl[.]com/bgsfsaSD/track/index[.]php?search=3&d216734&dlvlu=1003-32&lm=195982BDLW39240&sd=7&page=faTKbvdhBvqwjzn" width="1" height="1" style="display:block;">
+                    <img src="hxxps://tinyurl[.]com/bgsfsaSD/track/index[.]php?search=3&d216734&bgabk=1003-32&lm=195982WTQN39240&sd=7&page=nyt7UaY9gbLSjqJ" width="1" height="1" style="display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object OWRQUZYWKTFXXXTGOKBGIZQBWPHVJCDTUFFDHDIOJNIWOHIKNUBECTIJWPZP>
+
+Dear SGTNPUDPMZMECGXUVVSMSA hhypkaowknpfjhtdzmplpi,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is wxavpungsgcyeyzjrhiuuzpwxwus.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi ylthwkdqrrefwqihmh,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi vxovcpswlwwcvmpstwiaupbl,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: rqngeshssvtubqvarsfngblady
+ Site ID: nknmpfegvvwuatmguhaywpqkz
+
+=== Your Account Console ===
+
+Thanks again!
+Team ELEUIOMMOBVNPUOAXUKJHK
+
+Powered by AYVYLEVBHXWNUCBNDXKFIQ 
+
+</title>
+
+Dear PSIJOXRZAMNLWFJDMCBQKRCNI vtygomtfjrxvhrlgingcdscvlc,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is gtcihstiyqqgfsovrbsivwmsa.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood RUYKHMGJEVZWRMDKZAYGUE,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+JWSBXVQCIMBZRUMRFFCCJAWCNYITHRXRDDVUCSRWRRNIIEQZDCTGSZYTAHDDZMWLBGZBTBKQOUDSQBARZUJBCMGWDREUUZSPCNFEJURMGZEDBNWDMGYHXSXQYUXQSXCZIHAXQILVZNRMNMFXCOOVCIWJIDQMISJGEETIMGJMADRQACIMHLHFLRLLNPPXEFGCEKMQNVRE
+
+ Hi PPFZCLELHAJQPCQJDYHFCI,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+yxozruzwtlenfejxsqlajblclfuuwiwjceebpnyymntasbfldvevngzlwnrftwjsrgfzrnxdfkhruqifevyvzjijkeqiavigiheyiguouhcclljtcmnjuppgjdkripawadinjmkorlpxrychaziwspuflhicqdgoflqcsrortxabmhceicasqlhorcxajgodmqucagmu
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi SJ3YFN878KUVZV504LRTDEBQE,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team XKVFVJXVVXPTDKOHRVKUMR
+Powered by DGRRHUFSXTHWHVLUDOHANA
+
+Login Name: EDNRBEHCXBYHBBZQQFWPPP
+Password: UNPSDQKARQFFHDECJVLJQT
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: UGX
+Password: QBUIJSEDWPKBAZPDCKZGWX
+
+	35AWQ8F8PPGMY928PI 7MSBRXH8NJNCI9W C0OV5OEBYZDVJ V09H6V2LVZ56YOTQNS BR2YG4FU2154OXG 481NPZUPFCMDI E0P2B3LGDNRJ0XC0Q9 
+	LE01AJTAR37TFVTY6R H0D0WZUUVZWR6BM LYIIBK9WZ9O8M AB1O4WWI2LLCIFMBAD KJ1UYD1R41Y77C3 J4T6B3K2CO0GF I5SHF8XI2HILSKURLI 
+	HZYN79RBW7Q3DE1 I9MSDDPJ7JACV UW2RVVECB7C83QH0MY 5NS4M0TPS73XZSO A5QP7BBFIO5KF TIJP3Q7T2O12VEN16N KB6U6I5DQ6S6OU6
+	SKZQQUAS33P3K LHT92YVJBOW2H83W3J P3SXRCZF9AY1S5E QBSDI2NTNVA6M IS5KKYMCSW5JW6R2K8 JK2UN6RE81NLLUC VW952NIV5VRBF 
+	SW1NSYYT5ZUE6YBMCZ XXHHIBO07N836T5 AZL9L9CCOQYF0 0SW1OVDNTLSIQH77TF 413YV977390DM3B EYCC0ZG8BYPH8 B0EL50PHAJIHFOJAG3 
+	0S8XFT6H04TKZNP G7FDR4VBHU8FA AQ7GADODMT4MO2YH0W H74V6D7YQ720R9S 0JN8US4VHM4T0 JDAGW2SKKIF24APW2D EK2OPJERX18YJ3Y 
+	NRMJEG5T7T6MH GR168ABEJQFAU1O1YI E5NJWEF22IBIN5C LMRW9KCYH0514 30TMDP55YTNU6YIYK9 5ZN8E6CVEP1AQQ3 7DFDZ6UH16Q9R 
+	TT484Q2MWLI5HXQGZJ 88KNMYCHS0TOTJH VKVFTI5AFFWJJ DU8MI67ZY5S0VH3P5R LNVF1TAMAA6QCG4 DSBAHK1OE1ZLX BGLBFLFR9UIOVGLWVJ 
+	GU4C5TEN4NTIM1I 8ADCNC5C4A7OK W85PECRYB9Y3W5C59L DP5HLOHH9HQWUPG 52NWALHDOPL4D 170ZOONYGP1AZ6KZ15 85276SQBA0G8SWP 
+	6FWS5XLISF46M 6EEXUH34JVPXESG1PG 0002GP0J87EX8M0 Q7AOCNOJ5XSSM WAKSJ0KJP8QS5F2I1Q PJ3FZD5NIROHHOD 692E5LFGTP3U0 
+	Y6XURCFCH186VD4AMM E4JRS7RIBC4H7XD 5Z5KCBZCKZKQA OXFDZUNYVFT188NNM9 KKO03YJ4QFFSO7Y BHOEFEH7QPKBF QG3MLZ6OJTT9EGQ706 
+	E6ZPF293E2E5NWO IKLFEENRY126K MVVLAMW7GG94JW31UX 6Y7Q7PURQOI6BHP FHR4BG0Z78VK2 X2369W063QB29QPXSP 4ZRJ4F9QV4ANLV3 
+	ZV0WJE7SOFC7O 0AJ67HLGF3F90JV95L A47C9BK4E2NL8VG PYVE3W74OKDX6 VVO3NUIAQJFD9BW4CI 1N2K83JRNRLHGQP O13VF39YQUZFH 
+	G9P3NQVAJQTMNCGQL1 87HQWJ2BZSYZA3G FZW4TQT7T35J6 GGF9EVWX27BBFL8DI6 R8E2LZ1N184H73W DX8GMMBP34MIW FP5NESRCAL42MLN1N5 
+	QQ992LRG0WHGEUK HAHPJD8NAZQTU 1RC4IYV65ELYVM191P WDGL1LYTNLCVYYX 9PY4T5CCKBPM1 CU9EQQSTPIZY036BUQ 5DEEQSFWSS7ZHEJ 
+	M7DXK48G1TQI5 JAQW7M7NSQI7FBYKEE K3NL2ACQUQ56E0U H5B7JUX3KP8YX 420PL8Q24S8NDQDU34 1UJLPRKVMZRZDDA Z2J20EOA2BHER 
+	7EMAPQUCJZDTD56S09 ZIG64SPFAMYJERY NBLBQ8LGB6VXZ Y4DJF99HVU7S9LZF6Q TF5V79YD9RBUAFL XME28AKGLT0AY 7G1MQH4Q2LMJZYDK5O 
+	CDYV6VVNKIJ4WOJ Q6QPBVV6VOUAL T3H4C5F1AP7J3DP23E 4GAVV7D8TLQRBW7 3F83GS0CL5TCK M9CPNLES2HMMHVILNN W9TE24N2B0A3EZG 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+YPGNPWNMKLYFXWFBKRWAAWQKKKJFUTBGBHKOTZBANTFKAZCAAGTGRSJQLHFOVDJJIAYSCFXSWUAZQPTTYDSLTRINUBMNDOSOSESINAGURIKNRFHZMVMUYSBJEQWVTPUGIDKJZXGFNOBICLOWPHWMMJMNXLCSVPIQIDNIPMWXOHITNAVGAAECSTEFVPEFSQEHTTDQZUDOF
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to KQCOKYTKPMEUVAGECDCMVDDIGVSBQFELGFJTZTSPSEYKWGTEUAIWOXDKPGRQCNNINIMHGZFZTFTSZKWAIRWQZMJFRGTHGOJSVRNGHYIRWLJCTYHQURPAJTTNOIDOAMZDIZDQHKOEXJMOVWMBFMDFMSSZQCJEYZVHEXBGUDHYPGDEJETSGRHTYUQYOQZJOSMLZMLWUXAL roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department DUWPJWEALKCZHZRCEMUTCSLEJEYEYWGYSNPEKWPUIVQHOGMWPWGHOVPYLAZXBPLDXZUBLBRHMJNLPKJSHKCETITMPPCSSNSLREQVVYEQKVOXRZLOTZLGAYPBWEXZPQFRZTLQLIWSYJJHMEIHRPSCOTNDDPUDHWSVNNTKBDZLKRDIZTWLBVJGKJFUVPGJGFCMLVYAVLDKU to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation QIQYAGMOHRQCMPETSHNPAEJDLGDKRYENLSIKVAPVWFFMKLBIASPITLXMMNJTSINQDJXXHPRXOZLZMCPWHOIDOIIDAHQOJWIILVPHDZPWGEIDLPOYJRHLSVNOLOLROMJXMHVHROPLQFNRPDVCLMOLZKBUIXRTMYAQIDZQCFVXWNNCEJUCUEJJCGRZWTFTWTFBWAEIZGIFD development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will ZPBTPYHSKNQEEYAEHTNFUDDLOWJZRJLROMLOGITZAIOWGCSMVUOAQONWYXZDTQMTNVJDXXKWQJYFMDAKLLRZMLENITZIKPWQBGMBZLTWGHQNYZDCRWMXZLTOTVCXRCLVZNFGODXNEBUKUYPSLKAKIMTZZMMSRBSTHCXQGOIZCMUPRGHARGOFLMXCMYGCUYNKKZKGVADRHAETRXJBSNLTKCESDHRYWQPUUEUBOXXBDMQZKSHFYHTAHBAKXPGXNDXHXHJHXTRVLZTGULYGRDFILMLPGWROYLGLCXEVDDDGZPEUXEIBNPVEFCXWGPVCAIFTZZGBAMKFYGOZYCIQAMVMDOIGIATGTCWRCFJMOFVNLFIJUYTKSMDABAUKEWDAOWKHPTIOBARTLEHYWORT  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support YTSTBBNYTMPRLIHYUPVZGJDGJPQVHKYKHJLGXPCFLYAZUZCEBHXXKMSKEAFMDFCOPMHBKIJTNLWVIBXBQZSJNZNJGORERTDKRCJXKGQZMCCRXMLHVHPVYFFELXRKUYFWZCWUOSCOMIHUNNROCOQEAKZOWZZQIVEUEWGDSNMJHHVUZDXRWJJKATHLRENXZCSCTUEGLANN  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

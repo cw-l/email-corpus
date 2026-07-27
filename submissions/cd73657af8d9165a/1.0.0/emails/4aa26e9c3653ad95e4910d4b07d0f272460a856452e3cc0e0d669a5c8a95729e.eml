@@ -1,0 +1,866 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1784961912; cv=none;
+        d=google.com; s=arc-20260327;
+        b=EobC5Mqa6CKCXWGWO42/XJSHmWAGqeqJHT7vb4t4BWk3RjEq4YJ/Pii6Wn81y6pyY6
+         sk2aAytF1WOG+NMkfAB6xEDKuSSxgBXoJ7U3ENNeAE+ud4Ho+A+3CfaaIgtlN1hhyuBs
+         zmseef8ht2fSk8ishi+TciqPaU3Fu/ZJ6sBKiyKor/GMSXujMQ8DCiVDMP3sXr/DhkIC
+         XaNb36lLeg0zn25JDGLPKq5prOP/X5PkymZVpy6J2NFPM3j4RP3IrYSJjHye+1LzdFH0
+         +jw6t2Lau0qGqUJ2/aS6NqPUZ1ORBolUUxNu9fHoAevQS24ZKzYbFqZi4B758E/Qg8VN
+         WvPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=p+Wl6255Ck7ho2woQcCe02Gd+jbhC0I9rzY1tHnHL48=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=ZaoFyJjKMAMncio5fhiNJOfQtPKpl3WBkgVUaAHjd9LovfVMHUNybrDrRPcrAb0k86
+         bH1yZVnvQVeggPKzuNn0ufWo3Cr6h++zYpTFKXkx0nGGOqTVT7Tl0usJlGLw2sKqs0GZ
+         1l/cwU2TCxQVBlS7oUmJjA2Zzj+HKWTS7Cbh8rda5HwzUmyxQLArBnVreYbA9t7nMbKM
+         uh45+sZvbZf8jGQ5DwyzmuiCsxFni/Elf+ey07U6Zd4GcQWk0xM4En/bknH+Y4TDZUVv
+         pVdt58RnOV0Fic/JKfzFRsgt/NLleXCyO2p52cqlkSI76O/sTq3HINhxU1BTG4m/Dkui
+         pl7A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ntzgfjbq.supervex.clarifox.my.id header.s=smtp
+ header.b=lzP9dvo6;
+       spf=pass (google.com: domain of ntesugwxbropq@supervex.clarifox.my.id
+ designates 46.31.78.62 as permitted sender)
+ smtp.mailfrom=ntesugwxbropq@supervex.clarifox.my.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ntzgfjbq.supervex.clarifox.my.id header.s=smtp
+ header.b=lzP9dvo6;
+       spf=pass (google.com: domain of ntesugwxbropq@supervex.clarifox.my.id
+ designates 46.31.78.62 as permitted sender)
+ smtp.mailfrom=ntesugwxbropq@supervex.clarifox.my.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=ntzgfjbq.supervex.clarifox.my.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=zlnwbtolzjpncbsuringi@ntzgfjbq.supervex.clarifox.my.id;
+ bh=n/PKE6/ma0LtkSh8WeE9Rvv+ktc=;
+ b=lzP9dvo6QCUeFfQwubAzUVY58ixzund2f3qQRVYEUlniCiRvEb/0yLSSppRjli+QJapLRSIIFKdj
+   Mxszj7XIrUHCce21Td6D84JAL6eEwCOwtEFsEPabCdCU4xar+T1ZI0ob6Z/FQFFWOTtZ5w4cZfUf
+   SVYHUJoUf6buba2PvIIVoPY/1OrXriD8zgMSBt3Q425ieUeMaYAsNAsZiSjLfYJs8nVUqkXGCn4V
+   1vGI6Scw/onERRkc70dq7PtAs8+mbTsDDa7msB/Xj4942EerIA4NCFeFTfEvw9PNer4TpsN7dUfm
+   Q/9ULHbhxqJxcPrEZS7RG+BuzC9jhK7PxdjWnw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=ntzgfjbq.supervex.clarifox.my.id;
+ b=nE8eemC87H6Xh+D4GUwyiJtdO1NYGhzuQWPbYsuxj27AB9aomZOr7GH8lo77XXBe7PHvxxvSJ9YU
+   jMItYRFSoRZI8W2JNrSJRLyfQJUhYp3qP2R3bVV8S9JMBSAsSCAlLIoJPYQBNsc+IbAv33XChW/1
+   YVNxHILpz9Oa7jp40gSXdvdobHP/rF6Xd/l7kspG/x07os5kOIiqS2sFfy8cykMXpv1YKRczNsyp
+   rRmnQYWMjjEYutlZ7f1nwlvt0Fxaw/NvDCUyzSSfFi85unuF/cyx4jsGinqkD0k+usXybTWwPFBD
+   g0RdrGp7FDMj92gKRjb/nv2xW1lD6A5uLpvJjA==;
+Subject: Men Report 3.8 Inch Gains After Using This Simple Trick
+  F.R.E.E.-V.I.D.E.O-
+From: Real_Male_Growth<fsajvyw@ntzgfjbq.supervex.clarifox.my.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.62
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <plgiwebubuidvrhszwfqhgjenmhrip@sk8eddaempsa8wi1hb>
+List-Unsubscribe: <http://orclars.es.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Sat, 25 Jul 2026 05:53:07 +0000
+Sender: zlnwbtolzjpncbsuringi@ntzgfjbq.supervex.clarifox.my.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+
+
+
+</br></br></br><center>
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d217787&gqoqu=810-32&lm=195982PEEI39079&sd=7&page=4mb0maZDLPz8UFz" style="text-decoration:none; color:black">
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fat Loss | Health News</title>
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            color: #212529;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 10px;
+        }
+
+        .header-img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .headline {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: #cc0000;
+        }
+
+        .video-container {
+            position: relative;
+            display: block;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .main-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            border: 3px solid #eeeeee;
+        }
+
+        .sub-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75px;
+            height: 55px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.6));
+        }
+
+        .body-text {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0b2e59;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+
+        .comments-section {
+            padding-top: 10px;
+        }
+
+        .comment-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e9ecef;
+        }
+
+        .comment-name {
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            font-size: 15px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .comment-actions {
+            font-size: 13px;
+            color: #6c757d;
+        }
+
+        .cta-btn {
+            display: block;
+            background-color: #cc0000;
+            color: #ffffff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 30px 0 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #990000;
+        }
+
+        .footer {
+            background-color: #0b2e59;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <div class="header">
+                <span style="font-size: 32px; font-weight: bold; color: #cc0000; font-family: Arial, Helvetica, sans-serif; letter-spacing: 1px;">HorseWood</span>
+            </div>
+
+            <div class="headline">
+                Scandal: Doctor Exposes The Trick That Increases Your Penis by 3.8 Inches in 12 Days!
+            </div>
+
+            <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d217787&uyvct=810-32&lm=195982ONKW39079&sd=7&page=vRnSwM4GpNmFofc" class="video-container">
+                <img src="hxxps://i[.]imgur[.]com/5jHQADF[.]png" alt="" class="main-img">
+                <!-- YouTube style play button SVG -->
+                <svg class="play-button" viewBox="0 0 68 48">
+                    <path
+                        d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 .13 34 .13s-21.79 0-27.1.14c-2.93.78-4.64 3.26-5.42 6.19C.13 13.05.13 24 .13 24s0 10.95 1.35 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 47.87 34 47.87s21.79 0 27.1-.14c2.93-.78 4.64-3.26 5.42-6.19C67.87 34.95 67.87 24 67.87 24s0-10.95-1.35-16.26z"
+                        fill="#ff0000" />
+                    <path d="M45 24L27 14v20z" fill="#ffffff" />
+                </svg>
+            </a>
+
+            <div class="body-text">
+                <strong>(Horsewood Protocol)</strong> It's the viral sensation that has doctors baffled. No expensive pumps, no risky surgeries, just a simple trick you can use every night.
+            </div>
+
+            <div class="body-text">
+                We are receiving thousands of comments from men who used this strange natural trick to safely increase their size, boost their performance, and satisfy their partners.
+            </div>
+
+            <div class="subheading">Top Viewer Comments</div>
+
+            <div class="comments-section">
+
+                <div class="comment-box">
+                    <div class="comment-name">Jessica Smith</div>
+                    <div class="comment-text">My husband has been using this trick for a week and his size has visibly increased. I am impressed and very happy about it </div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 12 min</div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="comment-name">Emily Johnson</div>
+                    <div class="comment-text">I never thought anything would work, but this is insane!! Every man should learn this.</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 18 min</div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="comment-name">Robert Miller</div>
+                    <div class="comment-text">I stopped spending money on useless supplements after my doctor saw my
+                        results with this Trick...</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 25 min</div>
+                </div>
+
+            </div>
+
+            <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=4&d217787&wbuhd=810-32&lm=195982BRXE39079&sd=7&page=8O2WOFqQP3Q1k8k" class="cta-btn">
+                Watch The Presentation Now &raquo;
+            </a>
+
+        </div>
+
+        <div class="footer">
+            Weight Loss Breakthrough &middot; Health News<br>
+            <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=5&d217787&jhwsx=810-32&lm=195982RZPK39079&sd=7&page=rrUT3WIPqt9DmeJ">Unsubscribe</a> | <a href="#">Manage Preferences</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+<p>
+  To Unsubscribe Click 
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#index[.]php?search=6&d217787&hynst=810-32&lm=195982OQUM39079&sd=7&page=mGfV648iqhhM2Lm">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>         
+</center>  
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+</body>
+</html>
+</body>
+</html>
+<html>
+</center>         
+</center>	
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</html>
+<tr>
+             <tr>
+                <td align="center">
+                    <img src="hxxps://tinyurl[.]com/fdgdfgergrbegve/track/index[.]php?search=3&d217787&txpma=810-32&lm=195982PFBZ39079&sd=7&page=hTZOV5v9gZYebpB" width="1" height="1" style="display:block;">
+                    <img src="hxxps://tinyurl[.]com/fdgdfgergrbegve/track/index[.]php?search=3&d217787&nrdcq=810-32&lm=195982EWLD39079&sd=7&page=B4QRuHosTUGwYXM" width="1" height="1" style="display:none;">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </center>
+</body>
+</html>
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object DMQNVQWFUHQJCYGJQXCJLAJBQYULTFFCGJOHVHHXKYIHZHJJLISSEYMFTMTZ>
+
+Dear GCPSPFABGTXKNHGERAIECZ ymbcxcdxjicyhwidxbrjgv,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is sfvtrvaoasdwepeeueurgramceiq.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi ohizqunajhzjwxkyqy,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi ykptafyudlsaqcqvjblyaoos,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: qpepxndapvbzjeoppjvqzzqtcy
+ Site ID: rfraokcwuuhtxcrqjgoechubj
+
+=== Your Account Console ===
+
+Thanks again!
+Team SLWWFAZXXQQYUZUDOHIYMT
+
+Powered by EDYELMBJZBKOVQTCFPHIXB 
+
+</title>
+
+Dear YONECAMILLYKFPMATXJJWJYTD ourbbbuzxthmfjmxvpiwduktap,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is mgewtpnbepxrgpvxbocxmyzkw.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood OUGTLGYDJYAWKNCTHQGWGZ,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+KQPBQEYHQLMVAYDXNHRUSKWGVGPKIODRWQQUFTFILVBPCMYPGHCEVTHAVVLSRGCATSIKYYZREXBBPDBRTFABOWRQIFWEZGIHUQHARGYDSSXLLYAAGSPCXWZWLHSBHBCKNZPBETEJQMJUDredactedOIYAVJFXWHLHSAALEDGKIEHRAGOBFUFEXSNMTWUKWTSVTXWXWCMGAXUY
+
+ Hi ECMMZGZCMZRYEPJEIVUFFC,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+umglawmmhtkstlfzjdtvutgmjrvqimxstgkrikzxkueonysuvuxjogguznbyithpyorywzhynfwbwsjbllwovxphzldxlcdjgpybdvfvtfbqxvkgqasldlffitotjtjlsitixmavavemwgtkxksufotnfhjbokeghtbamdbyboqinwdgvplzrluqtnwvfzlrklnizsfk
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi QGU99L1XWQG3PP477HPF04GHC,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team EIISDIMUFMYBVYXYXABZDH
+Powered by XWHUXTQSABRVBNYIWCYQLO
+
+Login Name: WLUNCNJDYLYOJWCXYSYGXM
+Password: FVNMCFTEGIYSZKXKAIFGWO
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: ALM
+Password: MWILTLYGXSRJOAUTUHHUJU
+
+	Z44ZHYGKXJ1YU714RR G7TPCZPDVZ05TGF 5MRQWRJFGXU7P ZPU44FFW31EKHD1P06 31C6P0KPM4QOXST UWC7POPA0XIGU Y1BH1VWL46U3ORU2O4 
+	LM9KDGLA3NLYG2VQX2 H40UQSDMRNP6XA1 SOWWGNGI7MWEY Q4KUH0CJCPL3PG7VM4 BWQ7VBG546VMHQ9 C1NY8CQSNM1H1 WY3708KCJ6FTN2T0S9 
+	ZHOIQKETXLE6VDD 6H1IGW5A2N2CT V1IZLND26W94X4ZPXR B8KXG8MCDGX8XYI 2E5S380TPF70R WGYGMVQFNRDQ6XIKER P9BCOGJPXUM5XMR
+	TWQS637I48L7J KU7L2UVXJBIPNNQA8Q TLTF36Y6TZW38PD MZ9NQ4P2REKR2 FT7LKNTGZN0A9AP9WW 31ERH4CCQIZWDHL GK6DXQDTQAJST 
+	MIX82BW2BRRXXK0333 HQN9K5Z1GBZ6738 XV6JSU6R8E02Q ITWR1626A5YROIZ5KW JQ6DT1S7LOK79V1 044VR4D3COHSF G8CV4UENULCY1KB42L 
+	5SH1HLOYZ8W1XMH KBQH0OGDVIXX5 8XQX8NNBD0M6RQKDN9 C6IVXRDALT64F2J 0P8Y3XX27W2AJ UJOYMMYBL8DAQCKMI6 X8AIBM83URC6CR7 
+	5V1NEH7G3M9SF CUVPZ1D1XJ7ZPWZY6L RE2F62SOLJ7JEAU 5580C76EKWUUE FY1TRMK5WR5JAA688S Y36G1RKPJ7F9AMU 2U6909CT88F38 
+	4AUBM4R5Z3UXS271IN GQEG8P7YR3K6RKV IIQ7NPH6GVZKP 9IML90VWW22723Z029 OCLKQTAHYKUKZ4I JA5XQSDNOT1FN UQMVDIP9A0MSVLXJFC 
+	QM3KSINH3MCD7JU KDLJJQULNTKQW 469XYM6EGT8CDIFA5E TECM25ZSF0OLJSB 6ZWM058GFF86C QGGC7UGMRI00WWNAPZ AFQZC3EU012FM5J 
+	YI8Y06W4EQD5M PFIOXWMVKO50X4F9DT 4YOJZ9ZFWTINQSB VN5M1MW6D682Y FPSM84K8DU3T56IWDD D4B551BB8O7QTVD ZTEWMQ18ILW7W 
+	C0AFLQTG62RZI78KV8 QL73UA9Q12DDCKD 7NUSVF3EVSU8J RG0LUI03UZJ6JQSRTQ Q18PBY894T12CWR FKSPOTIQSAH8G YXU8T11R8RUXXZOWDG 
+	MOWZWDRMTX3PSO0 QLU7YKOHPFOJZ 89C8LJJNDMUULTYAQZ R1DTSHD8NPBMI3U M8D175VB188S1 IY3XFWEK5RUY2RFVAJ HL3JWSJFFEWV5L8 
+	KUCG6Y84VYNRI GFEF0I51WF83BIRV4Y BOHDIE4XUVI6BQ9 T7Y1V0Y2DXCSQ 1NWRWQCZJO6MW9OKZ9 2WSO2PADBO4J9ZU WVASE6MR12G3N 
+	WB2MP1O1ZBOZZFRY6C 8SF91DG17229TY4 MP4UWFJQGLO06 W5U6LXRQ1FAC3Q7GBQ P9L08NKL133JPM9 0SP3EYA0WHVC3 51RX66ZR2NFRJJZW0Z 
+	PPZ9VVGBWOI027X NVAXAORVVQ9KG 2Z8SA7ZLXQ0W7TV289 56G8CIH2B2WDOVX LCBBSO907QXPT 5FE3AYSNXI1Z80GXGS BGNPJA0AWHB6J40 
+	BNKPRYCHO34EE MI40FSP9DV4V1APZE3 LS7HOC154Z50A9B AO58FTOOECM3U 054DUO8NDH5UJHSD4B 8TFLU2GCJ8SB5L6 OWD7E4Q9V8LIY 
+	244U4K8M0JXZFIXZ68 L71K64OXUFDNL5P NNJVIHCT7BJKH QNCKM5TN4PBK59SXEM 195K059RN0WHEIR V003KYZGD1A3P 8Q3WQ1EUE9ZM1TC475 
+	7EQRBEDXE82LUCE QDLNF90BYJCOT 18S1MH295O5XJ70518 3FT4IVLWXGNSYSM Z41CZUY0PHRI1 OO1Z9QU1WV1Q6TXIPY XIKKUH4CQCOHKBB 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+RWPTNOPMXSYAYXSAAYYEFILZJDEQHMZPLILGTPURIPFCPOESYNWZZUAVOJQXOKLXDYYBMQWMRAZAHCDBHZTUYHRCBGKGJKGCFCJRXRKNEVSPTSCMVAEYZEAAVQZMYKQDQOLLBCLLQTZUZGTVQUIIEVLCFBCDOSDOYJKQKCLJLAEUCVBFUWJQCIPVGIJOBSOMYJGWVCAQL
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to ZATYYDIVNLETYOBRFDKHHWZHWZSSMDUTPNNKVWBCDANUHQIGFMFZGHYDAHUGPDEYHUJULNOBHLNGIGDWOMFOIVTVACHBMMVUUSJAZLNQCVDIPNYUOIULFFLXZJFVLCZWFSILNIOAADWNMERSVRQDUUHUGWRLQCPXHDWJIBWSQHPLMOYZVRTLWGNZOJMALRFRFJRTQWAG roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department WDPVSYTTBQPWXABJJUQVMGREFVNCHAOWBXWESIBSERRQEPHWXRCBSGPUEGPQOIUIDAFNDBTAJAJSUDMIVGYWRIUWFLYKTRMGGMEJOBJZYZYXVGNRBIVSVVETXDVRTNKAZFHBNXABGKDTBMTVUCEHTIYNLHOKHPTZMHYQOGYDBDBFUFLICZGYOUFVXDESOIYINRHRZQTJB to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation XBBISRVOFJKWIBJRDXXPOCEEPOMSGQLDBBECZQUFRKJAPUXTCKKCDYHROABZBBLXMWSSXKZGJSBCPRAAQLRUOPICCVZWAVCEEMKCQXOJTVXIIEFPSOVYJEPBBEUPEPBJCIQNCBZPGMVHKLJEBNUNKIRAVVMFTHHQQKIUCETLOVUECXWVCPFLZXIJJYUUBUBFASIGXWWQL development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will HYUUPHSQJXCQKFCSAKRDJHRTRJYLFULHUHWXFTRCXHZCUWJHYYDRXHMEBTKRTGEKPAGFCFCQNMMEIBXRYGRHWAGNGJOEYHRUVYMWKUKTMGFCGMUTKQVHPRDROQZMRHMRCIJHDTLZNDDPXCYEKNYCYWHCUWLRBGGLSFQNPQLFETNDETXVRNJUAYUODXLVEFKJRXKFQPXHEEUKFXSPHYKYBYRMGOUCWGVXUUGSGFENVNMMBTGXMTCUYRRRYDVRYSDFVNXHDWACIFVJXKQMJKGVYESOCZXSKRHQZNLTCXOFNBUOVOPXFCYQJLBLSNTPZTIGGUVBYIFQHMEHDGQJXWGXOYZEZYIKDYGBBZMKNGDEPRMIBYICQYFCJEDTTPHVSBABGNIHBRMEBPZLSLTV  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support SOJVYJNXVXTLUXOELESHTJQSKDIIVGPJVIKNDSCMBDIZXCWEEDFRFPYOROAYCIHBUGJTROBOKMIDSILVURVLWYANXOGAQJHSKWMVATMLSSYIADJYWLFBDOULQFKVGHAXOSPUYILHCLRLDVAVKZVTPAVDZIFMVOBURPSJVABPYJNRDIHCXLTILBFOHQWSIDEASLWOQXIF  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
