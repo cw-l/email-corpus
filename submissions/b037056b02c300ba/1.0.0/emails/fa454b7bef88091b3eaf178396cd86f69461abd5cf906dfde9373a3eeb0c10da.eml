@@ -1,0 +1,208 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=KSYNfzi+P8Tc9UgZ7cUmgJCmTTb9LvgcWRq2bYucaVDUdlv/efvmCSbaF9dJN7JFagaI/RvkPOxKigBXOcaVr6TC361IyaK1kiR4e9BMW6QsAMTlDplVBlyTdLyNdEKnVzH2BJ/TBDQR+RU69QDeXCgK9/VVCSpE9SptuGRHBxh0mnk7ubDTw0MRe09uiemhiGbLVID/O2jC+tJaIlNc9iYQckbzEM+ntSnOBpW51Nuw3BUA4OhP51kNiWRdLUYqUjiIi2D3ETOF+S5neZCH4rtyABznTRx6XygVHDo4w4ZMWM55fTGE4B6mgkhQirpSJI1zotpQjlzFM2PsT1Cylw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=fsyEtSnnagLftQqLejXxAHWpexQSc0xD8YZXWdP+G2Y=;
+ b=IQlPRoaeS15ANo1a50CojOM3I18f4hDD48ydRzzOLAvP4EerE6JzQ5wbSK3intazVAPjU8Go5tgJqDHHlhmJJ7phxaqwWJUW1Yxz7tiWYFczAm9lOExhirVdecAV0DWqwLMcYaWV3JddtKj4i38JH9cTAB+HQq0abs2GhGX3lGOQ1vCpgkIFCjx58QzQclmSmoiEy+i9hk+B4MXJHzKfm0/8kPt+sBtEBGQk/AOwKI74/x+ywnM/Mg1iokGPXZBw1G3XbrmFrshv2wQ+u/Ud8+9i6E2vnIyuaQI7nX4EP9Wrv1PyDUyQ4+0nf1yhyHjG59iBgvdzQEud8XV9C0rRgQ==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 74.125.224.130) smtp.rcpttodomain=hotmail.sg smtp.mailfrom=noun.edu.ng;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=noun.edu.ng;
+ dkim=pass (signature was verified)
+ header.d=noun-edu-ng.20251104.gappssmtp.com; arc=pass (0 oda=0 ltdi=1)
+Authentication-Results: spf=pass (sender IP is 74.125.224.130)
+ smtp.mailfrom=noun.edu.ng; dkim=pass (signature was verified)
+ header.d=noun-edu-ng.20251104.gappssmtp.com;dmarc=pass action=none
+ header.from=noun.edu.ng;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:1C16CF0857DACBF31D38D8629CE2D41B0BF2075FC5E10B74149653071A56F415;UpperCasedChecksum:B7BB3D718B03AA22BE4943314638D870A4AA0C991DE7F88CE7AD724C807E2AEF;SizeAsReceived:4281;Count:20
+ARC-Seal: i=1; a=rsa-sha256; t=1785233984; cv=none;
+        d=google.com; s=arc-20260327;
+        b=IiQDP0y0i5tQXiOXhY7X9CqDZKdIIJbb4YpbyYkX2N/swHqHI/14Ns5fSFB5ArTiXg
+         RnRHGzPGTQ7Kd9x3xz4u86QPSZ3bsM7Oq91yc4P+0W6rIjrjnf+p9wUgScAbWD58Qt66
+         rh4xpTT63tqijaR2yzmuh7rlGS1jAdKVyF0xEhP5wWib0fVG5WQLN1Vh/RhR1F2TezC2
+         OxH7B77PUh3pMExml+Qv91Q66UlgvMpSm4V7ouDjJkR2Qtte8YjfsmeKqEzuXBfrP3EH
+         2ZcFLoCvKaDjiGingI86fb3PbL7fczbLqqgkJ1bBncvBsN1C0JLtL5R2VElkafZAuCb+
+         S1Jg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=fsyEtSnnagLftQqLejXxAHWpexQSc0xD8YZXWdP+G2Y=;
+        fh=FUhoB5sSw2sArv3dJIg8qyClWBDvEjaIS9GgfYFBtEQ=;
+        b=rekz4VwL3S9sXO5wvy3JqRp6ZfGMmUf8+xIhrqiVB8+r1XYUhJcsmITNXeY2yuJJky
+         vFzpKWE61zG/Irxyjwsg1f0XKtxAv3mW4ktZPbl8x2sl1LdJbHyxuTeP0wla4HVNTVwk
+         2KR1NXuJBJx8SxOX6lKAtllDbG77ZJ2o/COxleeYXxEpdPGOqS90SzrDST4efI1hNz22
+         6xKCR2/HburUyKVbZpY8LQWeGObymi3IzWl6K7U5YIV3+/b/d7yhaNVNJ006YWZMzZmw
+         8u+FWjGWsWpuhi/BmjE4EIioBFOTAJzZscIw21lx90zFVNFY9mritlCymJHHH+apJkZ/
+         taWw==;
+        darn=hotmail.sg
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=noun-edu-ng.20251104.gappssmtp.com; s=20251104; t=1785233984;
+ x=1785838784; darn=hotmail.sg;
+        h=content-type:to:subject:message-id:date:from:reply-to:mime-version
+         :from:to:cc:subject:date:message-id:reply-to:content-type;
+        bh=fsyEtSnnagLftQqLejXxAHWpexQSc0xD8YZXWdP+G2Y=;
+        b=dKHQ2lWr+7ECCXTQWd9rQCxrwuqYDx3mbUB0ItHz3xDEmm7phCxF+HBByll+AWIMbU
+         jitdJmg1OVTJMUcK+7PIPgUmOvY2rg98r9ruWw75iWiAU2Y8eDtdSZH0wKExxBKKVL+5
+         vOl8IfpDlaLQRAXeeV8kX/5IfSatn48VIZ4ruOirCfksvrljQLwv9+m584LOO/1Bin2O
+         xIf/QNzGoppOlejdQJRtjo9CCp/3nyZnm8H+OwlxVn5X3btuO2YPopHTTqxH/jK7W0WJ
+         sZZAqc3ScJORV7r5SiWQhwIcSqISELMJhT3csL7G/MJcG/UaS956K6YxkINvJopDGZDE
+         StBQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1785233984; x=1785838784;
+        h=content-type:to:subject:message-id:date:from:reply-to:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to:content-type;
+        bh=fsyEtSnnagLftQqLejXxAHWpexQSc0xD8YZXWdP+G2Y=;
+        b=TYLEBVqRoFi2iqGI3vRdNCJSzbFOg+LN5ibYWhOehGIePt5sC5XzxtzCjaqv2iziSO
+         fRKRw3o/rL9c3E7ece6wJYFZNz3GBPcMPXiNL9VoklDtEa3ndlzgLtm15PaLKW53SX2P
+         cRZQ7HbzjaEJNPm6SAFyQCVFZC3ojjU0cmDsGXwUKfSBpN3EDXzaLTrtCDWj6/DX/h7h
+         KYM7C4hd9MFA1u0BKtYUyEmZW9JZNjmpFl7c1Q12bvwkYYkuBvOvXhbqIc8Hp4KWmFLS
+         OaLa1p740Kp2veSUPKWE05JzkLj4akBAM2deCo+VUKz8Mo9R6DEa2jcLjpvesWVsA7aA
+         UR2w==
+X-Forwarded-Encrypted: i=1;
+ AHgh+RrldQcuWZ30GlGdEoa8vq/8+h/vb9+Nt1I6mGJY9qk0466/rF5ZnyadzkN3Vo3pCz4YyIg49EA1jmJweW0=@hotmail.sg
+X-Gm-Message-State: AOJu0YyhHbWpa68zn9w8MZvpyvjeuMKAam4vi7Of/dYm1hHPfkUzuEkV
+	pF2rZmYaa4rTq5TSeUtyevnIwi1ZM8u3P2Ot25+WKv0Vklaaay9rQBckLe3oSbsqPqa5sn1SPDI
+	h3eZmrHBDd+F+XxPqCHiAH0VmZ2XQ+KfGwvltIsYVDw==
+X-Gm-Gg: AR+sD11/ULiDeeu9TgZxQBSAk3pRjrXayplqhkNlkDo27pArh34jdMHOukx4zPPetlZ
+	VJwgfmDhfLaI3Yb7HZmPLuVjJezVX70ii2HSj7sdPf8YX/jU4+iCbiszTwyyP/20p0jYUT2yrpv
+	xo2G60NKLpZAyfT46FmkDGccuuRQ8mEGalaRe73J2bwPN/zwx2DWsreEKO/B7wrapZD5UDyqMlK
+	abTt1kn5iu5ChzcDiC/RFMBjBIg6md2Qg6rWabqJDj2kt2oU+bSKJLCskGT+mDEVOk=
+Reply-To: alexx.sawadogo@gmail.com
+From: Alex Sawadogo <nou254201367@noun.edu.ng>
+Date: Tue, 28 Jul 2026 03:19:29 -0700
+X-Gm-Features: AUfX_mweGBbPeMc7u4nnV-Ozm3Q13T5jRfKVRcFPXRKEmJkbD5uHYOGWTmPAW8I
+Message-ID: 
+ <CAFqYm5DjZd+m1zjhd+8f_a8gJqBeNcBDwGMyqho7ieupFVJYtg@mail.gmail.com>
+Subject: Greetings
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="0000000000007592c50657a92db4"
+BCC: <redacted@redacted.com>
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Jul 2026 10:19:44.7639
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 7cf1d1b9-059d-420a-b179-08deec91bebc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CH1PEPF0000AD81:EE_|SA1P220MB1850:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CH1PEPF0000AD81.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/28/2026 6:07:57 AM
+X-MS-Office365-Filtering-Correlation-Id: 7cf1d1b9-059d-420a-b179-08deec91bebc
+X-Sender-IP: 74.125.224.130
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|9020799019|970799063|6019299003|36030799006|29090799004|41010799009|32020799003|34130799006|46080799009|39010799015|3069299007|60050799012|30041999003|1380799030|1370799030|1360799030|440099028|3412199025|26104999009;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Jul 2026 10:19:44.7389
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 7cf1d1b9-059d-420a-b179-08deec91bebc
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CH1PEPF0000AD81.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1850
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6485199
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0245.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--0000000000007592c50657a92db4
+Content-Type: text/plain; charset="UTF-8"
+
+Attention: Sir/Madam.
+
+VIA ATM VISA CARD. IRREVOCABLE COMPENSATION PAYMENT OF US $ 700,000.00
+ We have actually been authorized by the newly appointed Minister of
+Finance and the governing body of the United Nations Monetary Unit
+Investigate the Unnecessary Delay on Your Payment, Recommended and Approved
+in your favourite. During the course of our investigation, we Discovered
+with dismay that your payment has been unnecessarily Delayed by corrupt
+officials of the Bank in an attempt to swindle yours fund that has led to
+many losses from your end and unnecessary Delay in your payment receipt.
+The United Nations and the International Monetary Fund (IMF) has chosen to
+pay out all the compensation funds to 150 Beneficiaries from United States,
+Europe, Canada, United Arab Emirates, Bahrain, Qatar, Saudi Arabia, South
+America, North America, Australia, Asia and Africa Continent through ATM
+Visa Card Consumers, businesses, financial institutions and governments to
+use Digital currency instead of Cash and Cheque.
+
+We have arranged your payment to be paid to you via ATM Visa Card and this
+will be issued on your Name and shall be posted directly to your address
+via delivery company. Upon your contact with us, the sum of US $ 700,000.00
+will be credited to the ATM Visa Card and this will enable you to make
+withdraw in ATM machines in your country with a minimum withdrawal of US $
+3,000.00 per day. Your limit can be increased to any amount upon your
+request.
+
+In this regard, we will have to furnish the requested information to our
+Directorate of International Payment with the followings;
+
+1. Your Name:
+2. Country:
+3. Age and Sex:
+4. Occupation:
+5. Mobile Telephone:
+6. Delivery Address:
+7. Id Card Number:
+
+We need your urgent response to this email as directed to avoid further
+delay. Confirm and get back to us immediately.
+
+Yours in service,
+Mr. Alex Sawadogo
+
+--0000000000007592c50657a92db4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Attention: Sir/Madam.<br>&nbsp;<br>VIA ATM VISA CARD. IRREVO=
+CABLE COMPENSATION PAYMENT OF US $ 700,000.00<br>&nbsp;We have actually bee=
+n authorized by the newly appointed Minister of Finance and the governing b=
+ody of the United Nations Monetary Unit Investigate the Unnecessary Delay o=
+n Your Payment, Recommended and Approved in your favourite. During the cour=
+se of our investigation, we Discovered with dismay that your payment has be=
+en unnecessarily Delayed by corrupt officials of the Bank in an attempt to =
+swindle yours fund that has led to many losses from your end and unnecessar=
+y Delay in your payment receipt.&nbsp;<br>The United Nations and the Intern=
+ational Monetary Fund (IMF) has chosen to pay out all the compensation fund=
+s to 150 Beneficiaries from United States, Europe, Canada, United Arab Emir=
+ates, Bahrain, Qatar, Saudi Arabia, South America, North America, Australia=
+, Asia and Africa Continent through ATM Visa Card Consumers, businesses, fi=
+nancial institutions and governments to use Digital currency instead of Cas=
+h and Cheque.<br>&nbsp;<br>We have arranged your payment to be paid to you =
+via ATM Visa Card and this will be issued on your Name and shall be posted =
+directly to your address via delivery company. Upon your contact with us, t=
+he sum of US $ 700,000.00 will be credited to the ATM Visa Card and this wi=
+ll enable you to make withdraw in ATM machines in your country with a minim=
+um withdrawal of US $ 3,000.00 per day. Your limit can be increased to any =
+amount upon your request.<br>&nbsp;<br>In this regard, we will have to furn=
+ish the requested information to our Directorate of International Payment w=
+ith the followings;<br>&nbsp;<br>1. Your Name:<br>2. Country:<br>3. Age and=
+ Sex:<br>4. Occupation:<br>5. Mobile Telephone:<br>6. Delivery Address:<br>=
+7. Id Card Number:<br>&nbsp;<br>We need your urgent response to this email =
+as directed to avoid further delay. Confirm and get back to us immediately.=
+<br>&nbsp;<br>Yours in service,<br>Mr. Alex Sawadogo<br><br><br><br></div>
+
+--0000000000007592c50657a92db4--

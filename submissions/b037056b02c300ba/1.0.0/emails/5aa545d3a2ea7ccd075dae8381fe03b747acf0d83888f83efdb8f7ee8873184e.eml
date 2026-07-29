@@ -1,0 +1,360 @@
+Authentication-Results: spf=softfail (sender IP is 34.187.132.50)
+ smtp.mailfrom=unixtutorial.org; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none
+ header.from=unixtutorial.org;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:D23E91DCCDBBF981310D5DAE067EC7B498B4B9FE1DFB09364483BB84DFF4AFA5;UpperCasedChecksum:0A269F58C783970F5A8FC7042AE26CC402ED36A6536D0950C6039DB8F2181FD3;SizeAsReceived:316;Count:7
+From: Storage Security <support@unixtutorial.org>
+To: <redacted@redacted.com>
+Subject: Keep your files safe. Upgrade your storage plan immediately.
+Message-ID: <2088bb73542f4aebbe3f2582deb1c1b6@unixtutorial.org>
+Date: Tue, 28 Jul 2026 18:20:19 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Jul 2026 18:20:19.4831
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 7122c5f3-9887-412a-ac94-08deecd4e191
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CY4PEPF0000FCC0:EE_|SJ0P220MB0431:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CY4PEPF0000FCC0.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/28/2026 5:12:25 PM
+X-MS-Office365-Filtering-Correlation-Id: 7122c5f3-9887-412a-ac94-08deecd4e191
+X-Sender-IP: 34.187.132.50
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|2700799033|58200799025|46080799009|87000799021|970799063|9400799043|13020799009|69000799021|51300799024|9800799015|46110799015|34130799006|5019299006|32020799003|3069299007|1290799033|1680799066|9000799056|10300799038|3025599003|5139299004|60050799012|6100799021|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Jul 2026 18:20:19.3444
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 7122c5f3-9887-412a-ac94-08deecd4e191
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CY4PEPF0000FCC0.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0P220MB0431
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2262636
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0245.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Upgrade Storage Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background: #f4f1ee;
+            padding: 20px;
+        }
+
+        .wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 2px solid #007aff;
+        }
+
+        .topbar img {
+            width: 80px;
+        }
+
+        .topbar-tag {
+            font-size: 10px;
+            font-weight: bold;
+            color: #007aff;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+
+        .header-band {
+            background: #007aff;
+            padding: 28px 28px 26px;
+        }
+
+        .band-eyebrow {
+            font-size: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 10px;
+        }
+
+        .band-headline {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .band-sub {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        .band-pill {
+            display: inline-block;
+            margin-top: 14px;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 6px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        .body-split {
+            display: grid;
+            grid-template-columns: 58% 42%;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        .body-left {
+            padding: 24px 18px 24px 24px;
+            border-right: 1px solid #ebebeb;
+        }
+
+        .body-right {
+            background: #faf8ff;
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .greeting {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .para {
+            font-size: 11px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .para b {
+            color: #222;
+        }
+
+        .product-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #F8F7F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-circle img {
+            width: 80%;
+            height: auto;
+        }
+
+        .product-name {
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #007aff;
+            text-align: center;
+        }
+
+        .product-discount {
+            font-size: 22px;
+            font-weight: bold;
+            color: #007aff;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .product-discount-lbl {
+            font-size: 10px;
+            color: #888;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .cta-row {
+            padding: 20px 24px 16px;
+        }
+
+        .cta {
+            display: block;
+            background: #007aff;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 16px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 3px;
+        }
+
+        .footer {
+            background: #f5f5f5;
+            padding: 18px 24px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer-links a {
+            font-size: 10px;
+            font-weight: bold;
+            color: #777;
+            text-decoration: none;
+            margin-right: 14px;
+        }
+
+        .footer-fine {
+            font-size: 10px;
+            color: #888;
+            line-height: 1.4;
+            margin-bottom: 7px;
+        }
+
+        .footer-copy {
+            font-size: 10px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 7px;
+        }
+
+        .footer-unsub {
+            font-size: 10px;
+        }
+
+        .footer-unsub a {
+            color: #46474a;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 440px) {
+            .body-split {
+                grid-template-columns: 1fr;
+            }
+
+            .body-left {
+                border-right: none;
+                border-bottom: 1px solid #ebebeb;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=3D"wrap">
+        <div class=3D"topbar">
+            <img src=3D"hxxps://static[.]vecteezy[.]com/system/resources/pr=
+eviews/026/529/763/non_2x/flat-design-blue-cloud-icon-cloud-storage-vector[=
+.]jpg" alt=3D"Cloud Logo">
+            <span class=3D"topbar-tag">CLOUD Storage alert</span>
+        </div>
+        <div class=3D"header-band">
+            <div class=3D"band-eyebrow">CLOUD STORAGE REMINDER</div>
+            <div class=3D"band-headline">Your Cloud Storage may be full</di=
+v>
+            <div class=3D"band-sub">Photos, videos and backups will stop sa=
+ving when storage is full.</div>
+            <span class=3D"band-pill">UPGRADE STORAGE</span>
+        </div>
+        <div class=3D"body-split">
+            <div class=3D"body-left">
+                <p class=3D"greeting">Hi,</p>
+                <p class=3D"para">Your current plan is running low on avail=
+able storage. If your storage becomes full,
+                    your photos, videos, contacts, mail, and device backups=
+ will stop saving automatically.</p>
+                <p class=3D"para">Upgrade your Cloud Storage today to conti=
+nue saving everything seamlessly and keep your
+                    files secure without any interruptions.</p>
+            </div>
+            <div class=3D"body-right">
+                <div class=3D"product-circle">
+                    <img src=3D"hxxps://i[.]8upload[.]com/image/fe4026f2a93=
+a13fc/image[.]png" alt=3D"Upgrade Storage">
+                </div>
+                <div>
+                    <div class=3D"product-discount">MORE SPACE</div>
+                    <div class=3D"product-discount-lbl">off your Upgrade St=
+orage</div>
+                </div>
+                <div class=3D"product-name">Upgrade Storage</div>
+            </div>
+        </div>
+        <div class=3D"cta-row">
+            <a href=3D"hxxps://storage[.]googleapis[.]com/msteightcd/lis" c=
+lass=3D"cta">UPGRADE NOW</a>
+        </div>
+        <div class=3D"footer">
+            <div class=3D"footer-links">
+                <a href=3D"hxxps://storage[.]googleapis[.]com/msteightcd/li=
+s">Privacy Policy</a>
+                <a href=3D"hxxps://storage[.]googleapis[.]com/msteightcd/li=
+s">Terms of Use</a>
+                <a href=3D"hxxps://storage[.]googleapis[.]com/msteightcd/li=
+s">Help Center</a>
+            </div>
+            <p class=3D"footer-fine">Participation is voluntary. Limit one =
+discount per person. Offer valid while supplies
+                last.</p>
+            <div class=3D"footer-copy">=EF=BF=BD 2026 Cloud. All rights res=
+erved.</div>
+            <p class=3D"footer-unsub">
+                <a href=3D"hxxps://storage[.]googleapis[.]com/unsballgeocld=
+s/lis">Unsubscribe here</a> &nbsp;\u2022&nbsp; <a href=3D"hxxps://storage[.=
+]googleapis[.]com/msteightcd/lis">Manage
+                    Preferences</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
