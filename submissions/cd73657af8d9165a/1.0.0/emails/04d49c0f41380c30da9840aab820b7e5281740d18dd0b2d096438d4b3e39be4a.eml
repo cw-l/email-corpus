@@ -1,0 +1,1061 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1785702028; cv=none;
+        d=google.com; s=arc-20260327;
+        b=cDaH/cRjS8YV6YgsYCgsIj0u9PCMMy5giGhxWCRjW2rxuuQxtGSoytVychASj506z8
+         hj7hzCOxbL7hiGzc1r/Al12w/mqt677CC9JkbG94R5nulac2kTEXA9gsVccYaJE3RZKF
+         lVH8+Fj7fHi03LejFpBFu7M5G86sikaRGbyd4EjXhCLSotLJ9dZ5grMb8pQCBDEV23wa
+         WMCz3HgQnNTTzKnKDcNPKBL/tUgIDGyK+tnFebPTi4sAfa9jdoMcoJckViiXkUvHHJR2
+         Dr3DR7iDpChAQMPM1EHT5k5g+VCaXkH6hZ9CSHXND5aE/QxRdDsN0PwGQwngXE0nAtGc
+         GWjg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=UJFcBqWX7rN5XJ0C3qbobs+0M6QUihERTy1osJHnkws=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=D2LMPTBk0qv9dIhtVCAYQjUelhkvta6JZDGb9ZNIjUeJomrHAHHdLa2EiQKx1Wfoa4
+         TgH2VYwC8nFpVxKvG5bJqQifhfjYHqU35KOIfBeJFFgvKoF3PCwxKSQW71gODBAk1FZY
+         4eWT9qKKYhSjv7fTpbdgsxiO3nJQgF2BItgsQYlsCutjBp8nEbO7H+TEe4ntIWNquH9W
+         SDYBHdtVUw5z+QVYjKy6Mh6z1rU3kfjukhxRGHus8AYZ1lqQYTgowcZicMv0QCslP304
+         7qlPGqZNxfe+iD3ObPJEZHsCIRQWVk1BRUkmSa5K4dCwK3gpI/2/OI25FZ6AKIiMrs6b
+         BrVQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@uhqrbkfb.iiksb.zarmito.biz.id header.s=smtp
+ header.b=VTwKhxch;
+       spf=pass (google.com: domain of fjsydpibeuusr@iiksb.zarmito.biz.id
+ designates 23.95.48.150 as permitted sender)
+ smtp.mailfrom=fjsydpibeuusr@iiksb.zarmito.biz.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@uhqrbkfb.iiksb.zarmito.biz.id header.s=smtp
+ header.b=VTwKhxch;
+       spf=pass (google.com: domain of fjsydpibeuusr@iiksb.zarmito.biz.id
+ designates 23.95.48.150 as permitted sender)
+ smtp.mailfrom=fjsydpibeuusr@iiksb.zarmito.biz.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=uhqrbkfb.iiksb.zarmito.biz.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=hxbnnvyxjmdlvqhsyaprr@uhqrbkfb.iiksb.zarmito.biz.id;
+ bh=j2kIwbyKGEBfbv/3cUf9Sz1OUII=;
+ b=VTwKhxchfH5YjDFPdL2HG5zN1hzDkC62/X5cnIoIqtWfIKNXV36NfDGj/uJQmRWtQ+qd09JXsOB9
+   v25xzKZ+mEvIWxSNrCSMowPkeDRyuGzyG8EY4Xw24X/niNY6Fot4fJzFA9IKC9ajitl/ImwQqBPT
+   3sN3kpqfy+O1s5jcGwlO1MgjUb14SXsnAfU+6eGCc5wGj6yFqc4tZt1kK+9vKYJ4tzjpGi88oRqt
+   v4Fun5MBOnCt8GDxA8UaM0ghfg4vy5gwShy0ycdbNUd47zmsFUWan/fh0o4dowMwGDAFbfub5vTo
+   BOmuoMKkH0UHfmOFmuaP59HhCKcs0FCVOP0mQg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=uhqrbkfb.iiksb.zarmito.biz.id;
+ b=rwLj8Fj8ssaCmV8cWSfYZfrBLEN/F/TUpLtzxdWDB5Vs5tKrw0IcNl4ft/xHaIExj0RtMFQGSe4Z
+   dRo0x2OufoprEXSBYHAl2TRbVgv22I1WBCeOgaM5MoxThnq+M4fKrrPUnfETghziPymniveG+hNk
+   33urZmPgQwLgmLwwwjuTIw0MNfYbe6+j5pljiNUzT14gpQZm+yFgzWIc+AevxXtwJfn3/rhS39+C
+   8JQl0XEwHRCBf50V69TlZ7O5ptShCsCL+54Voh0yLLgAzlpJsCkiy1DPIRo7MtSRlK6NU56h2Ufl
+   9tdimFKpZzShgB/HCEBrRxR/oryt8+Ozs3fnPA==;
+Subject: RE: Critical_Update: redacted, Your Payment Failed On Sun,
+ 02 Aug 2026 19:18:50 +0000,
+ And Data Protection Is Off! Your photos and videos will be removed!
+From: 
+ =?utf-8?b?UGF5bWVudF9EZWNsaW5lZO+/ve+/vSA8d3Bja3RsbUB1aHFyYmtmYi5paWtzYi56?=
+ =?utf-8?b?YXJtaXRvLmJpei5pZD4=?=
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 23.95.48.150
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <crtvxtaszjjkhvhtashrccmwhyedyv@rsbcvr2i25b402weka>
+List-Unsubscribe: <http://artofarsenal.com/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Sun, 02 Aug 2026 19:18:50 +0000
+Sender: hxbnnvyxjmdlvqhsyaprr@uhqrbkfb.iiksb.zarmito.biz.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<center>
+</br></br></br>
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d223655&wqmkr=3D996-32&lm=3D195982IKZX39552&sd=3D5&pag=
+e=3DxzeuLhq91dJ7EJG" style=3D"text-decoration:none; color:black">
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+  <meta charset=3D"UTF-8" />
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1=
+" />
+  <title>Cloud Final Notice</title>
+<body style=3D"margin:0;padding:0;background:linear-gradient(180deg,#dde7f5=
+ 0%,#f8f9fb 100%);font-family:'Segoe UI',Arial,sans-serif;color:#222;">
+
+  <div style=3D"max-width:680px;margin:60px auto;background:#fff;border-rad=
+ius:22px;box-shadow:0 10px 35px rgba(0,0,0,0.08);overflow:hidden;"><!  a407=
+Yrfj9sYSK1UjuCfm0IByLvJGA9tVZCOcO32gwRKLRbI8   >
+   =20
+    <!-- Header -->
+    <div style=3D"background-color:#2a8dfc;color:#fff;padding:45px 30px;tex=
+t-align:center;">
+      <div style=3D"font-size:85px;line-height:1;">=E2=98=81=EF=B8=8F</div>
+      <div style=3D"font-size:46px;font-weight:700;">Clo<!  GwMKXlp91EkRvCP=
+9JCeh2QpohQObV8BNU027OroV07jhogO   >ud<span style=3D"font-size:26px;vertica=
+l-align:super;">=C2=AE</span></div>
+      <div style=3D"font-size:22px;margin-top:15px;opacity:.9;">Secure<!  N=
+UW4fpmW7IHaONd9J5m09pCQtBrvjWIBGmtZezBKredactedBoQGcTfL   > Sto<!  RE6juq2Q=
+zHG7Q2R3xfq9eXcDakt6hl3dEsDOanXko7yKwJ104n   >rage<!  h43spnhx3FUbSnj1g2UhA=
+fhoxvc1nUM1HPwtKYJp0d7ceZA4   > &<!  7uds4sGjxla8XhmP1U3dTnHEx6XGgwKLtDsUuZ=
+uRTpS   > Ser<!  82erAAgnGasFSOR9BbAOSP7e8gib4PpSa4BMGR7JQa   >vices</div>
+    </div>
+
+    <!-- Body --><!  ZiOHvCBWwzCBI2GpdXlZsPD8ZrX0UdgMf8Ws0Pi   >
+    <div style=3D"padding:45px 40px;">
+     =20
+      <!-- Notice --><!  7U8chi88PZe3UlhJFpvKAllwOPYp5xrv8DEfmcF5KdLIW1hwTC=
+C   >
+      <div style=3D"background:#f2f8ff;border-left:6px solid #2a8dfc;paddin=
+g:18px 20px;border-radius:10px;margin-bottom:25px;">
+        <div style=3D"font-size:22px;font-weight:700;color:#2a8dfc;">=E2=9A=
+=A0=EF=B8=8F<!  hfelLrKHnQ6Bpim7pWOMtTE9bL5mpzfyYnCLOqoKNyz   > Fi<!  ZzROX=
+bo6mQuuWZfzySNMJCo107GoK8Iv2xdrdF6m4MHvUKCISL   >nal<!  RqMJzk0hzqSTo8Muhuc=
+fRzaojBh7kkSaPGgSCy4iHcCd9soV0yAs0   > Not<!  5wUpq3Sjmzus3mI5UDknllmp7cepV=
+xXqugTHRdZ   >ice<!  X2xKx5cld3kvY6DAs0IPyvtk0CS9nH4U1ubnEe0   > =E2=80=94<=
+!  lYmnr3CQoTLpIXiaqfoMJJAsb8Pqfe4xUPC8Rb7l7d   > Act<!  TU8VAlfus04zVcppaD=
+dioYGHShrkTHRzpBSM6cKzBzsrd   >ion<!  te6aihX3fq7OgPYwHzGvvkN4HFEoWk4D64Uk8=
+99   > Requ<!  PFhmVXBuuQwaOlnnW66GMXtpsrntl1SsDnunJVMoZr   >ired!</div>
+        <div style=3D"font-size:17px;margin-top:8px;">Pl<!  tJBDvpxwLRpBGJ8=
+yXHBU4bWY6YTQBabjp4aODiM8   >ease<!  rCGadbFW65jEnSQy5rsR9CoDGo5eekFThLI8Pl=
+JBfACuVKn   > up<!  PQpSVzbxrVuvkDJw2HS6rNqxHv0nwZ57nepBF2tR   >date<!  zap=
+cSZVVd7gR47z7qv18t9A8GWmuoQkbQnbyFuLrm   > yo<!  doLvjWCDxkQrj1JSLSQlYYxYIO=
+vJnv49tTlLUs   >ur<!  4E8RfC6gOnEXmVPRvyvSz0BSIxbCxjJaG88V9MlTXRgYCskJn   >=
+ Clo<!  Cxglg9Bi1WK9qlWd0p2kwC7xVKLafc0euoyWG2a2Z   >ud<!  XIAna6qecAAtGvtT=
+BLriY7GkdgqvVZLxYKn9X0Bvz5akKyre   > acco<!  YJ3yeCHRmFy1I7U6tAK85pqI0tYjZp=
+zHEgdAKqct96ZlT   >unt<!  iaM6Du2w5NTHsqQwCrReSilXrsaEC34UF6Ikkugws15jVdfQm=
+KBeF   > in<!  rIzDUwEmrW0fZi9O7qKFiTdPZ1KpFQ2gsOEIPk0HNB5Cs   >form<!  0my=
+kZH3LDAXwVAQwNFG0Ap9ut4V6UgzQFabREQBTR8VWXyu   >atio<!  Hw41HrChJSFmWD85jqr=
+NItI3EjEAHBEUGY2   >n imm<!  Kj28jipmFaccolYxIhzyRCusadNi0Wg7zDlFPe4iucS   =
+>edia<!  UfN1eZb6F4qTsUAyEhzvh4dl5NVkGEtdr8tHMHHd3X3   >tely<!  JMcwxzAVo2l=
+rcbItnPBxWwVQId7XxvQxhNzjyayRORWC   > to<!  fM9Zw3slh7qSHFqf3ggC1516G8giZxA=
+dVjRcIVEEKoX9NdzXvkfYL2   > av<!  fiBapPOVMBbVmCWoKt7OUT7yesKRVOi6WabWFrAwk=
+h7sa9RahMAY8   >oid<!  HO8HuY4jvS53zUH4e49ufKrFfOYYHBKFRMDqiti1NCizzgA   > =
+sus<!  ly8Wd2u3lAwkUwOXx1iPHqSZgJjdaRShnIPCLFkFu   >pe<!  WUszNXuWsiLUQM3PX=
+XPb64OLPF63QNyDFH1VeSgMZHZQ0oACqL   >nsion.</div>
+      </div><!  jN4SgNljMK7bksHRNBbo46RdCeinWqdEPEJl2PahoxJs   >
+
+      <!-- Warning Box --><!  KKWsngF81xn91CMCfk5nAWy6MEQ0hErBLz1MenUXwN5  =
+ >
+      <div style=3D"background:#fff8e5;border:1px solid #ffebaa;border-radi=
+us:12px;padding:20px 25px;margin-bottom:25px;color:#7a6400;font-size:17px;l=
+ine-height:1.6;">
+        <b>Important:</b> We=E2=80=99ve reached<!  11yewE7bgOn6Kome8osBsPj7=
+n7W5kQ5   > out<!  czyqJp5QxXM67F2W6eIHGagBcyvWLJUmm0upl6siOB   > be<!  Vrv=
+OVghRFVwdXFPExMFvITOeKaEG71wAsXqoh11Pdtrn   >fore<!  EqvfVAgI2n4rwKO3GjKnLu=
+frW2kp3y8wEZswHKKpyq6Dq   > =E2=80=94<!  xRZmyQD1UbRDH6vhyZl0JlNTykWcNjvEWS=
+FPw4ClpGmd7A4vsYj   > your<!  jXueruJFeRYj3f6nhyQ9rci8FOwL38ZLFjgQwD9AQ2qJD=
+YZQFuL   > acc<!  5MGkzAFLswCIjHOyn08KUAXcx0m1Afpsbc4Fg0Xyl   >ount<!  906B=
+vrs7y0Sj075PZ3C5RmHUzDWoiDgJnRaZl4IlUbX   > info<!  qkUdvm4zXenpYIfGj9vDVQq=
+hwOIbl4pepfURnc275Ou   >rm<!  zWcJUPzvOt4N3HSqUbKiPBvbKcry1b4Pmfkh5zPr16uwq=
+VqpnO   >ation<!  N35Q6SC3183xeBp7SgVbMku0Sa4QDJ0xcbPxVQpEcgypmwUBb8   > is=
+ st<!  p7ckxqA7Xyl3B7GTmCHgXYZPJEqQTabnSx5JnvowFOOHu5BsX3WpMf9   >ill<!  3L=
+oB8r7TjHCS6rvtONgKGJMP491osIGIaLA4c2bdow2XPAlMKGWFT   > outd<!  gcyB1pEwG1k=
+JtQC2fMTSIzMs0T3lmQujnD50AVPoscDE8s9Urft0lupjpEu   ><!  8UpRDTQ9oTq1TG5boiU=
+3A02EPvOChn0a1PnG8qdCNu   >ated.<br><!  Vo2lOsC95bZ83a9OuKUsh3AmO5E0vg7xfJt=
+4pX6txvsmralh57mh9gADX   >
+        This<!  KlNp7F5MqvZ3pQvds3QOzIOqxlhJb2tg   > is<!  XiKDYrEVTWtN53Pk=
+EOTqIuX4zhXXDDrUAK2Ph   > you<!  7pwRDmXYTH50adpq8zBom4bFqb7nFh9XW8XKk4mkbp=
+K   >r<!  ya715CQauGpUoMLhXj3TRgVQdIhOEnd2zVKAbe8hfn8DDQU2T   > <b>fi<!  VO=
+p8mY4Bs3w5zNt0JBiSyjmQiOH8OuVqfWfSIWs0L9Pozht   >al<!  ZSOrclyQokwWR9kv8Xtb=
+A6PfORcNrfk3aoq1b5P   > re<!  vxN3eatWbK1ttgEzRNilJEvAfM2wnL2DqlAJJbaMT7Q4h=
+9t   >minder</b>. Ign<!  KVJZ0mjWxt2moGbO4NEXTJvCp0z1BngT470e0AYcO8YZVtcr96=
+7   >oring<!  IbgXZfazH1aNU2ntBuhqa7cgwQxVDHvOwB2AfLD9aMsBm89XJcE   > th<! =
+ JFxF4Q6MFgLeZhf5F3Wsihfss2GEvL711BQK5P1g0Kbey2LzJZAJ   ><!  pWD5Y2Rz616zkQ=
+FLlZjZwuonp0hmRf2TfVWdoh9Bfs45Rjg   >is<!  7kifaEpqi3ij5SuAixj75TDo1HNbtP9M=
+ykPe6ObvZj0IvNq   > mes<!  2RMJIPeRkpmtuxsqIY8bajklg0sW0h8tVHI5SeUcOSj1l5r7=
+73FEj   >sage<!  dexDaLQnGUcFefcxNVCzdj58dhWeRwCYikDrVJIePe   > may<!  pphR=
+zW4jigO48tIdOrI8XQOX8G2NcihQnDmEbzpH5J3Hf   > result<!  F4eLZpaU1MLOd8FmByB=
+NPuJSfVHcSgd1fiub18etKuXeR   > in<!  yUnCaSaBeKrV0ehkXCLWTN1R5peLVdMGTAJL5 =
+  > serv<!  LdxtTpV3zdplwxZBMLFsvaWgs7IKPiAKAVgVTzyKmLyTw   >ice<!  HlJWiDS=
+gSjoXgxTVZ01ochtNETCZoRbrKSrpSDXU25G   > inte<!  tbDXGDu6EReYGxj5u82XEjdpfk=
+AUMmIO25pugk4dL2PrS9keOTR   ><!  XHNaoYgknx2VK2CTDnPbCU4h3Km2e78myEk9U1n9ul=
+JnkiQ   >rru<!  PA0OGNyyAhvxP69XZhY7DUg7DztF4deHKNABWyH   ><!  vxVRwL9XD2j0=
+kFokV1R1X2sVuWGYIFCHRClTWVTQ6bWT   >ption.<!  iqXMTL3M5NqewFOhDdPdNUEJHMlut=
+9lav   >
+      </div><!  pEDhe5XLP5TRmlteku7Eb2QtidOpYJxLZ5Q2t8fCybKj   >
+
+      <!-- Critical Box --><!  hfBV4VsC02QJh8U3JMsrdETHd56H5X8GALMWzswi   >
+      <div style=3D"background:#ffeef0;padding:30px 25px;border-radius:16px=
+;text-align:center;color:#111;">
+        <div style=3D"font-size:40px;width:75px;height:75px;line-height:75p=
+x;border-radius:50%;background:#ff3b30;color:#fff;margin:0 auto 15px;">=E2=
+=9D=97</div>
+        <b>Hello  redacted,</b><!  sXinJBAGUgpT0iKrFTNwnkyiaXsskbxk25m3vz  =
+ > your<!  dQ37qoxO7Ab6F3MPopLabVHFMICctYAdzhSEBlBYxHOgr22TU   > sav<!  7dR=
+nt4EdkpLXZ74qlxAY7fmLKHpcajpS0HIh   >ed<!  g0AmUDsQeidtMou0ERL9rcIK3oHvgARK=
+oOU68bn   > paym<!  WiMS9KdepKqf63EPb0rdfgZyDILD1RoXefIOlGxoiAi9oGpX   >ent=
+<!  rdtewj7oo37sRMcVlQytwTDqj27ZvoleOyEf   > met<!  Xbk6a4MYE9M16aosCnQ05LO=
+0WzS5wUXkP6me36zeOtXwCTkcKNjlx   >hod<!  Q245DeNAQsfGxGhLFBsz21YB4k5bxfJ2XQ=
+5K6i   > sti<!  5Bj6xRGreJ12D7SG89b6VoWAzqpfd0s6mHZdzqp0DSbj   >ll<!  vK2kr=
+CmXCqF5mAvLZR1wnGwh90H3Axp2CDcFB1SFUzrAXp   > requ<!  d5fsm0mN4dI4iyAUIa3qJ=
+ou6qTCYZYFLlU8gYwlvebg0tSav   >ires<!  rRqGH8NAXFlz0pqeHdKH1Eu1LTdLHGcHPIRT=
+YOM0AjYzDoLQh   > an<!  uhZHPry3jU4iM7SxaSPTJrm00IbpCfuNyZAf4AP1qRBij8   > =
+<b>imme<!  Fwi6FpOBXcsQ3QdVTarxIKrqbi8PfN35tHH8M   >diate<!  kX5tzLrzCLinU4=
+U9oVcofoOHbL9cR9U0agqiLoeZ8QboDNYHbD8   > upd<!  iVxmfyUeK2r19T7dN7TeXl5HJf=
+fHPoR70ZsuYyF9Lb   >ate</b><!  7SMP3j76P0guq4Hc3nxwZwiiO1sUQftizFxy2lTBK   =
+> to<!  GOAe4i7voaCYd5n7uVrA4Zk1Jcpbm0XpxMwELJO   > keep<!  YfNEI0uXIqC45Gr=
+oXUiAw2DaUMLhzsyAI7joUI   > yo<!  rteWdDo12dRET1s0eD8GUG4rO8bi22ThwUR914LNc=
+a5f1Rk   >ur<!  BW7TNTjFwtilXjf6CW89mWa7kFipPZlQdqCaiSu   > sto<!  xEXT9R1E=
+kipvpy5sCXnukCSDD3tp5LmJcYmWBJO1lZXezR9y   >rage<!  XLDdM3FWUKdsCJs2hS8G6AO=
+87jQcrr1v0OlF   > and Clo<!  vnk0h0TGcU52dKRRauiP6PcwhKvZlCk0s9iWExIGOn   >=
+ud<!  UYm2Kkf7JAWsMpUTMmL4Kxd9ybj5rbciwWpGQS9tVvH6sKeLCZ   > feat<!  lIUG94=
+qHgXuNlIZUONHaugCexw5GJdex9LQ9JCz3886Q73MCxO   >ures<!  DLhdIrmMXLCFIEDYq0u=
+wA4gd6GQYh27Pa4uZ6iPv4otXY   > act<!  tuDvCnQ3Rh9Gs8iLwTen9hbpkScXnQEQPoVXr=
+plXzfg   >ive.<br>
+        <div style=3D"margin-top:5px;">This<!  XkXy1opGOM9VLFn3heNMlo4ybklE=
+bDYX4KZDJmf   > is<!  6CZJacOJ0pGUc3mgaxavgHP8EMxSUuXyemAluO   > y<!  s1api=
+uUpWOvU3OwY6hfE7bdlcyArGLjwLr6XoW7XnioAN   >our<!  emqBgu2SZWDiGfP8Y5drxriH=
+G6BjN94N5AFHleiRbZR3xpQzo   > <b>fi<!  yXgopHRQvjbsry8OXg65eE8BU7C4QXXv   >=
+nal<!  4hz3lGXu7bHQpfeY6pot9R0Blr2kXDBa1BqOkNXcVA   > oppo<!  TnRDwHlJyFgBJ=
+5PWLVd7LEdSjeyHsZyEGtBgsTzJLTIx60   >rt<!  KcmdUO4cEIFgxdJnVar0CFTHi8e4ba13=
+d2uD8   >unity</b><!  4SfNp7ICsZ4jcS7c7gmDriVVDqIPEVGrBJOhwLkNNNgMRbKRZvt4 =
+  > befo<!  oY90uXYADxRRj6hVIK2wQhpZ0VA7PDtLOAG1juUsH9   >re<!  yZIoHUsSAzo=
+KSO4UNR2ZE6nVtIAO3Q6S9ar20wDIOUb   > su<!  0i4z7vuYWK3wrjRl9NzZTt0dh0KXPuYc=
+tpMh   >sp<!  FGO9hyProYmtFGFMGZuMRC1fsCnRvSiLpDR9bvQbvgQhbd0FRGU   >ens<! =
+ qhKI7RNfFI5tHHI656CIpVCGcWPjP6iKRVei5IYMbbks0uPGc   >ion.</div>
+      </div><!  wxTKXXy0gd47NyWOW3FKaVayPnlbfhzM6SUXzg9S3   >
+
+      <!-- Account Info -->
+      <div style=3D"margin-top:30px;">
+        <table width=3D"100%" cellpadding=3D"12" style=3D"font-size:16px;bo=
+rder-collapse:separate;border-spacing:0 10px;">
+          <tr><td style=3D"background:#f5f7fb;border-radius:8px;"><b>Su<!  =
+K2poERdgJbLvdkppR0C9gOr7RGDTN58gPLmyOZ9yqb3Nz   >bsc<!  slqZWplag88eHpnk6cG=
+5k5LQ6b8FNEMztVPgqYcNO   >rip<!  wBm8o6DoV1jfYH3uz3hnvLGWCC0ek7zBYxQhUTOv1A=
+XuJ   ><!  1CEAyXUdFE0pdAXk3gcxKMZqmaGdEk3TldGPY3sREKTVC7ex   >tion<!  TGhe=
+4fmeTnw9CoCap8yK9Myk0xTVUYjmDMWiL9O   > ID:</b> 7779852</td></tr>
+          <tr><td style=3D"background:#f5f7fb;border-radius:8px;"><b>User<!=
+  7B5WVUk2eiuzyQJJq35Og5vs5jNRxdRdwsEzyGtJlw   > Email:</b> redacted@redact=
+ed.com</td></tr>
+          <tr><td style=3D"background:#f5f7fb;border-radius:8px;"><b>Revi<!=
+  i7h0aga2reloW0dPNTVQMW7C7GrAbXAqjHlecamDOUay   >ew<!  h5vUbOoUqT6Z7dgun36=
+uS3S3gqRNwgTY99ULcyXq5xH   > Da<!  A9riSQ85uNSSysrhJBapliMySLqYLVRQBh6   >t=
+e:</b> <span style=3D"color:#e53935;font-weight:700;">08-02-2026</span></td=
+></tr>
+        </table>
+      </div><!  YrfphUkn46MGPxVgMukwqUgVvrI6oXMjaHOpvM4z9Gn   >
+
+      <!-- Description --><!  mgOiblruCYrFZSMbyYUfz3pHAvrFeRPFjLRmQMIE   >
+      <div style=3D"margin-top:25px;font-size:17px;line-height:1.8;text-ali=
+gn:justify;color:#444;"><!  4BOhWjLXpUZvAF64gWwJZ6ino9cQLYMhPxuarwNzg   >
+        To<!  GVQmcctQzu0AMT5vV9QywR2HOskHF8TqwvR7PtiFVtJPKPCBFmnU   > ma<!=
+  yvdLqgzlAgzFo3wbpfXMco0S2oKZ4GMLIkN7ndw26yIOWG   >in<!  BHydhqhKflbo3CPVw=
+XfX6yMHABqrGuB9rMJ2DQU5B7XPJYur   >tain<!  gFEoX0w5xDSdVqiu3JRevnMyJprGnkI3=
+7YtxFzizYg   > sec<!  yU8Qt59NMPGvjMrhyhrWdFEN4TGmGVRcALXuB7HbZP   >ure<!  =
+gcOx8vb3GKX1Ccdldq49Z4VOSH31cAoH0gOgb5P   > acce<!  LInLrbQikFE6pJePO51ak9A=
+3RE6xJ6XrwD7208HX9riGUWBO9V7   >ss<!  tmVOPOygVoGlh2xPSQMPQeCXboywk4H4x9sKJ=
+sQSSxA   > to<!  Xd9PjawLSXVvMq3tjEy4QTocjuiwQzAi7GjSmt0JURW0ec   > yo<!  Q=
+GmLvMjnuDP2LhqTkkjoJJemJBFv8pxljk5lTVlsO   >ur<!  e88HIxWcs7if4uDtunwWFlUpt=
+pSB8Z6WvdtECAI46nuSkuGk   > fil<!  UJ9mJSBrSs3aKkcjBH10XRWBOkwjoUm4UdD5eYkx=
+ET2Tw   >es,<!  1xyHNBaSLjfsFZiH2CedqutUdhOqvDAehx57   > pho<!  Ug344QB5js6=
+coOk3MySEMQ90ZDDsTHoCtpUSqZuwawKM   >tos,<!  FHXvenOGruk7wMebUF3YAOf4iVTEBK=
+F60m5zOVn64XVOzPqW   > and<!  LUMmcoaXOke0ZHiG7RgWcX3F8UUhjqsusiA3bYjGHei0s=
+e68iNLjVpU2E227   > bac<!  1LIncIiRAJA15nDUKUcp5imHPJvaez5SrHxHtMazpuDxOy0 =
+  >kups<!  bLMw01KrrqtUNGZhVI6SZ2WGpYfGhRTVIRCANWDIEVmWyU   > acr<!  uF7nnH=
+eFZh8HRLhUPQh0u635NrQe2sxUlpZ8P   >oss<!  J4Hpxq8aA8fGiH2CHh6zaCeYTiDhzlj66=
+Wxc3SJIqCm5BVG   > all devi<!  F6BZFi6Hif7u2s7GVbdsgAT9oZz5aFnj6VLgb4tzFUze=
+D2KH2iR   >ces,<!  NHyzE2oXxIjg8ojx8AhUp3wFblVfUV3uKGFf75MaHtm4aPgq   > it=
+=E2=80=99s<!  17DtqmwZgz65ciIRpRFZCxkqbjOjUglfqnzgj98R4UCBf   > esse<!  TbW=
+SkA5DNv2EzETzcNqd3Rb6Z0LShsh4HGnGU7vcM   >ntial<!  1pAADhuS6QfuTMREmHBLrJm5=
+KTRAxYy8uRBTmALV   > to<!  KAGWc8rNNXtH17uycGSxH9kDXQ9kYPxuMGCu   > update<=
+!  b87Sx4h8qxRN7wOcay4tBljVALtpvg7qwOurKudEANfsZ4PhCc   > your Cloud<!  fKC=
+HccxuGa3qLgk3aFffx1WHDUix7LosbSng1a9RP86TyD48M   > details<!  PkOih3rJShSKh=
+hRkEBjPGkxutEsTkxX1anQuNfPpAVsLLuA7lfEa   > now.<br><br><!  KcECOByKz3UqrpV=
+6WMibkSX3KjiUpMgR49NlTop3G90PFs4   >
+        Ignoring<!  wDVAU24rQTHGJe1wI0Zr6b99KySwWX6psM9HAX0xo3PNMN   > this=
+<!  I0T9egQqmnKfsw4iKmfjKXjlN44dgJHqonVFk3qqZaK9hRnR   > fi<!  2XB8MoCQeKZ0=
+yD3frJC7EOHUtR0HJ6prH9VRJd8WPkkg   >nal<!  96GGi9WBWKsdM2LhP6IOV5BUHfw1bMj7=
+opXFEE   > notice<!  9N0FIhWJhMq9f56Gctji8J5Wnh4G7lD9MzUgbVUKF5   > may<!  =
+uz4wBaTuUtSR2IO0oSfsNpouVuPVfSnHuN2YHU1DbX8iHbp   > lead<!  pRobjCbsptMIM4M=
+PfUT9wcYLSfsDnmEFh7Sxnj   > to<!  p96gbiu3XAUb0c1wnbmOka6OSVncSL6P2B09eeq  =
+ > an imm<!  98PpTiqRrsUByJUMCqUnUlfeRBLk3VnyAkkwaqS2t2   >ediate<!  Q4DqAA=
+Oif13CyCAhgtqRryX5Ck7UhIElEgZ5Hoi4qyBInve67   > suspe<!  YWbAEc77TPQG7CJ8Gg=
+2XGodKu9nO746QBK9Aq2yvv   >nsion<!  LTmi63nXh8DjWtyzVhupvQHvl22j937DmwylzWd=
+CBErnn7y   > of<!  nl27uD2qSoambjPuNVJYNgW3wUAq8MIPUK3xsbuNEERB   > your ac=
+co<!  FoM6y3bSNx6UV4sR0WylW8QFEhAfefHQFrpltIasboz1   >unt.<!  WEekXMpZxLqZc=
+p6LVB7GE9AecWM5KxBQJfMOK993o0NQM7Xx9Ka5   >
+      </div><!  diYnPHvrs1hzEfIGuU7ZDoUipjR1mE2fdm8Ciakn6Z   >
+
+      <!-- CTA Button --><!  nuw5S8kXbp6S56wr2tuJ3HKaSzOu6kddynD86UQ   >
+      <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]h=
+tml#index[.]php?search=3D4&d223655&ryfml=3D996-32&lm=3D195982OXOE39552&sd=
+=3D5&page=3D4soXvPlbrDL30yF" style=3D"display:inline-block;background:#2a8d=
+fc;color:#fff;padding:16px 38px;border-radius:40px;
+      text-decoration:none;font-weight:700;font-size:20px;margin-top:35px;
+      box-shadow:0 6px 18px rgba(42,141,252,0.4);transition:all .25s ease;"=
+><!  kvlMisOoa49PpdRhaEpoqjXyVR0png0nBUoBXWDQCVMLtAL   >
+
+        Update<!  pDR3tKrgcL4gqriEjM7wl7uWqXMnvDxO0gdrVyox   > Account<!  s=
+rE86KeImNxA9Gc8l6c90X0vplqb9p8Z33Lnx8   > No<!  GyjmZfvoE3cHFgnzmkzro9br14N=
+24bOaQ5qXWZLfHvlK5   >w<!  9uL9KunIQX5FwrfE4A39W0I9V6qWiJRBqmuXCRPE7xOnSxs =
+  >
+
+
+
+      </a><!  Q9LY0W5ZhPc0pcSEpOMwbeFTmonJbEYVjdhIfFqT11GlP   >
+
+      <!-- Footer -->
+      <div style=3D"margin-top:45px;font-size:16px;color:#555;line-height:1=
+.7;text-align:center;">
+        <div>Thank<!  GLb06UHlDlyllWTMlA6UTZcQT198tYMfE8p   > you<!  q1gLjK=
+3x3pAQ8ufeDGzcQZSLVKqWzrRcceHqJ8FWtaG   > for<!  sMM23sACuTIZsDZgsrR4A1ILxQ=
+oe9j4H7AUUaTi8y5z   > being<!  2H1feobGmrsdrSWhWMhNfblgCVIBkMPV7mPHiXciHhW =
+  > a<!  3rwGAX2V9UME5wCp4zssg6Tcs8XjE1QsbaxZiHrFcvl0xb   > val<!  bX5FQepP=
+iEkwOplMF8LPEJpgjvNMUZdehk24krqAhFyxUCD   >ued<!  GEUNXZnts7CglbAMQqhvthZVl=
+LqBX7cGrFk6gQwz60I46IKl13ma   > me<!  5krTypjBDT9Sng92jeGJB1z0C7tz0GqKrEnYz=
+NAuKyzZ3owx   >mber of<!  4uBjbHaKzG76ejlrlQPu8OqqxCKjW5IvpDGgOTRSlW5PqOunb=
+   > the<!  nhExCdaPG7LyLwPAtjVSG2cTckC4BYOvnCZpKdxL6aqgAgvQY   > Clo<!  X5=
+InkGCls9J4p7NBnphMeWEzBoKEGpKxiHRnUgejtbI8TJVd   >ud<!  uaXBwJn6HxLa0KiSTxj=
+YXVIU7PplTn80uBeQFfwWolB   > commu<!  k093XTIBuQduLf2YjvtqFD2G6AFXqpVHqSBE9=
+zFKnFzT   >nity.</div>
+        <div>This<!  Ptfp9D8UQvl4QlH5Ukuh6dGmq2H3d6LBo8DNDgSi1Aik9S1W5a   >=
+ is<!  XazzjZ8HWR8Hbamk1UYuu3MBi7FkLRjnPkHGVxx6M   > your<!  eU4PCplTpRxi2Y=
+WCJw70YBGj1Usa1iYF9u3gjpC   > fin<!  l03rzYNwOunDrm6lmdSStBNHtuXbrORDc6acz5=
+QpNFAy7XiOIV1N6   >al<!  aeVmyvOAZdM1fbNxkORMlwQSlkRT2ci93ppGimywHfAQiicB  =
+ > cha<!  PEYppR0NVCYbKNs8lT4bnuBBZcK2fEjLi2AAjYxvmM   >nce<!  nIymqIKXe8jt=
+2v8kQDm9uyQCcxRVmtVPMfMM2gZh9dNcOFhX   > to<!  Q2UgMqcjsmkdPc8tz5MwPIeebxld=
+u7qEzmY2F1R8SO   > prevent ser<!  EtUs5X9d5CN58sT4P4bPoz1D4wFl1ej2WZDPIsUvs=
+G   >vice<!  uBWMS8toBDaq9cFkSxrlJdNYs0valJwImnYftfb99   > disr<!  yTl2oSWz=
+9PBNK1UfFm4egqZ2FBwFN57IujbhhIcRJ0WM   >uption.</div>
+        <div style=3D"font-weight:600;margin-top:5px;">=E2=80=94<!  z01xZav=
+2NgTpoqd7QViO2HOqfMA911DuW6IA8CWgCNsCMXzTFX5T   > The<!  CarPv3SoSJ4qfuJ8Uj=
+rLLXLcdxyhWUcQHcE2nMM37zURJOC   > Cloud<!  qLQDNN5iakjZMODHmILNhbOud03tXkmB=
+T0rAyapf9qmUDPaPrsst28UaY   > Su<!  mDLKmdeJmXm5MpWgt1zX8h8OK6pBtkV4BeGB   =
+>pport<!  AIzvmmDyHyTJmC9XIUdJfluZKzSUM2a7fhwJxlqbAw6   > Team</div>
+      </div><!  bR6CKnC6jYDFsQzwE735VoxctRmz8av1x28poZZY3ejKnWykSEBee2WFOH =
+  >
+
+      <!-- Unsubscribe --><!  nhw3FQ2HTBSDpoW5qfEDMM0r2otGRzIph9XHv0wtjLpAL=
+mxbkRo   >
+      <div style=3D"margin-top:40px;font-size:11px;color:#777;line-height:1=
+.6;text-align:center;">
+        <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.=
+]html#index[.]php?search=3D4&d223655&injaq=3D996-32&lm=3D195982HUCK39552&sd=
+=3D5&page=3DbKn1nMmpl3QMVqt" style=3D"color:#5b3bf6;text-decoration:none;">=
+<!  2OyLFPJlqqQZVmuAo9aY3Pl4Uv8OjWpcovjt8Futh1te   ></a><br><!  jag6zqwiCOu=
+Vh1xGERNSDVbOxEBZ0UBx9lgneLnPs   >
+
+
+        If<!  rS5rrd45CN0knK4PpMWo3EUffqFi88dBNOxOf4Zx7lY8   > you<!  8VDz3=
+RR50aJPcKXVG2guDIgnpBqAXx84XIZSz6yKsya4A6NL   > pre<!  XgpWRtfswYSbAQeIUlhA=
+e08dAyQfUqmBnre   >fer<!  JQL4aWtVUckwpuu01TJHFQhQTRRV1ziXh   > not<!  xDe5=
+REk06UYCXFCqOnuugohIok22k4YtzRJ6kQVLcSyAmKq   > to re<!  0pJy6cTNuDxcvaFzAz=
+umjebAgWFKeKcuV90yGbNxfkWSwF5wP   >ceive<!  0lPHVLdhjALIubsbdQu5ad9MzkzjO2E=
+GFAsBa2CZBH   > further<!  DZlFI0uqWYnZhcc48XB9PmmkJc77atcAfOoqKCZpfkpTf2  =
+ > upd<!  AyhVXEdgUKqf7Ya5FfeSj6evXhkYWJWdCdsZYb6p0X2UjL   >ates,<!  dDtzEn=
+hOR42Cf6VGM7PPZKonXs7JkyIbwfI7pUu2m   > contact<!  MxiPVQ1BRUhzQ1DbmvCgdNpM=
+U7tFBZOh111H   > us<!  OkK0q0JoafXcJM6A5F5pkJJO2BLGl7RNHF6IsalwI1N6   > at:=
+<br><!  22adoXDCCw9i6lHUHqUz8SJ65VpISfPLvcXd8KQmwoNp0IN0DL   >
+        874<!  xSXTd0bpuD1oIB4TsmUeb3ztNDyE2ZTEHTswvs   > Cart<!  M07EC8VmQ=
+7Em3zkGNgdgx4IaXWvqDMDGG0EKICA   >er<!  1FVeJXzhKpHdNEHredactedrFfJRsvrnRc4=
+2urkuFlDcKvNz0DyGxMwH1ECrj   > Exte<!  zGy8pjns40VrWgS3OnEXhBgKY3pP58Ap5peE=
+DVRiO1KM   >nsion,<!  COVrCbAI0UoHhymBAGptLHSNiILBCwVZR8h9mE   > Port<!  ZP=
+t6H5VrHiagldZu3osnxMQbtm879Oh9EVzArtunCOJkA9Y   > Lauren,<!  c3WYBYsV1djqet=
+j7PglUXAHa7yHMZcIgBDuVjskL4mR9xfQqPUibGkW   > SD<!  GNVaiWCOWEVrW65oosj8rvd=
+pdtnwsxBjOlCNYtDe4Nrp3Q7l   > 5103,<!  xgNuLAd1Mjso1qf2EIfaLUG1DPTfaMrK8CY =
+  > OH, N<!  9aX3diZs1ejgLgR7L2HjM5Lkjm2l7xtWKQSlGsYf6uV6fi74yb   >M,<!  6X=
+Z6DnKeBwSe7el3J376dXE5ZZdHgokuSGfxHB0d3nNDCANrnikRXjD   > 01205,<!  n3MNDfE=
+NeFiGWPUCC3dnGBYJW05yJUJklDr15UCI97   > US<!  K4aaNh4sMIJTmcRt1Pp11MUuRrzCw=
+jsC23C   >
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+</html>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+</center>
+ </td>
+ </tr></table></td>
+<center>=20
+    </a>
+	 <center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+	If you no longer wish to receive these emails,<br> you may unsubscribe by=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D5&d223655&taasf=3D996-32&lm=3D195982NNRV39552&sd=3D5&pag=
+e=3DX1D4OLsNUtctdHO">clicking here.</a><br>
+ </center></p></td></tr></table>
+</body>
+</html>
+    </a>
+</a><br>
+<html>
+<body>
+<center>						=09
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+	To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d223655&cemoc=3D996-32&lm=3D195982HMWA39552&sd=3D5&pag=
+e=3DnzwYw0Bjft38VLR">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center>=09
+</center>
+</body>
+</html>
+<center>=20
+<center>
+</span>
+</div>
+</center>=20
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</div>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+  </div>
+</body>
+</html>
+  </a><br>
+     </a><br>
+    </a> <br />
+</center>
+</body>
+</html>
+    </a> <br />
+    </a> <br />
+</center>
+</body>
+</span>
+</div>
+</html>
+
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object PLWSNBBLLONNXETBHBWYLEWBCCQBKSKDKJAMHHOATEAGFOMZGRUOTRHQGSWL>
+
+Dear ZUYLRIPVJBPKENVRYOLMIU oiiuidtzjcqwosklosmhpp,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is hjvpkbseiuvgskvylnzdeew=
+xlpbw.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi sdgnuuzbwdfwkbvsaq,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi fhubrchujywacurmuzsziwzo,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: fnehzpvibjssyhkdfvuyqchqfm
+ Site ID: iqwekkdxukjxzvaitzgccgsdw
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team ZYUSCTTVQVZHNFPTSONELA
+
+Powered by ZIKEGKROYUJDCZKFONHXLE=20
+
+</title>
+
+Dear BFMVCWVJARIMMWFZNGHQEBIDJ vxmytepgdzvpgysisctpzbgsna,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is qezfwyobpwgrxgefohauhac=
+eh.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood AXGQBLOSMUEZAFBSGBGNQU,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+OUCMUCFDGLRFRFWWJEDEHPZGZORULRPBFXHAQWEIPOPWKUCROGONQJMLMDYPKUBOENLBZODWYXB=
+AFLSCNSPYFUCJLOALMXGJMYWVYBXXMURKYMQPDKKTALYWECVSZAXOYQPTAJHVEQXQNMSBZZDJDK=
+DKSEPPRDQDESHADWQHSIUGBDICIESNAAGHGBDCOJFAQKPNTHWX
+
+ Hi QGAMBCNFAYHFZWCALZHMDS,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+kentyfpthfzxxcrfmanjvwjejamwvjejfasbsfoqtryoaazatsmlpmbbohdwzylctdwgvurukyj=
+ccmswhhjvsezapvkvwrqukbdoyowiudmvxltshcwpgliuhfschwgoqgfjqafbfyiiakbiryrhky=
+avilrooatzgrroazkxrqnghkoczixoagcefzkblduaqougpifo
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi JQCU11SO1XIPDYARW4IPF7JMI,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team UENMXNGADSFKBTDRDTZOPP
+Powered by RDKIJFFNMSKULBSYUOVEUM
+
+Login Name: BYGVHKEXRDUDAVYNXUAFWJ
+Password: AXDCMHSBMHPDZBWDGOEKOM
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: IFU
+Password: IVIXDRAQWICPEITKJMJPKY
+
+	Y60LT6IDLYJGQYCMU7 O0ANF0D2GT2XXZT VG6JW00GYD438 Z806P8TIK8PY67QE0E QEZPXQ=
+4A8M3OMPR Z10XY325SLD04 0T8WP9S9YK2YLHBJSH=20
+	B6T3SQZNGKN8KUXG9D R5XHDGOJLKUI8U8 2PFI3O6ZFUK3E UT5NGBTR9FSC1IA79F IHU4S8=
+IYVZFMAL0 9SZ28169HNS2G BQFN8ISCM2YIB43YH2=20
+	G4RXO5XSM9N4I5N 0GEEX3A3FMA1R 4S1Z2UOD1PCF32EUZC 9JTWYZSY84EL8A0 WR5OPD1RX=
+XLLY ZKI7M8O0190P9NP967 UYVVMMKM47HO0EX
+	NDQQYTJ3C9ZQC JGHX0V5UWFMR7ANVMA FLRWLDKUE00265I NJXLU9DZ8M3BN 355U7K11IQ9=
+6T5JWN8 6DVK7QG2D8FYBDG IQ7V25AGNIBF5=20
+	5ZBODS0FYO5NWF7OSE ZR295FA22A56LJN 0H2OTKYUBZO0B H007I2HS5ZSJRUC877 DJJ0PY=
+XOV8TLIMC VMC2B0GOTO4S6 TGYOI5T9WIY5CTICG1=20
+	SVBHEUT9A09RO7S 1RCE5HJWBD62Y TPMXXMRHKK8G5BQ4LV 17X5P1JI2JVXK48 JQ7L89HZ4=
+05SW RNTZD57A9RX4VVMJSN 8D5O42IHPEGP5XW=20
+	FEOY30B8ZGY6Z KS5JJREUMK0U26YPTM 2A7NTKSU212JEVB 6SPW6Y94K0QQW HM3MCT4DW9E=
+RHXKXWE S3RBLWUOR76DI1T NQMGVB1Y6G82C=20
+	I673PNJJGNAYWLD7OW 6R5O6L7XVR05OQ1 IGI276ALRR34O RQGY34DQ0DMSD5MJ0Y SM8XYE=
+67DM54WAB CO7RODJGMAKVA VZKG2LVFEZU72TW7R2=20
+	DL7JO3WLWDWNLEK EPX8OP117MN1I QPSY9WR7CX9PX44OCK 48AR8HH52YOME1M QXB63ZDSB=
+IBU8 G9F18YI64X1WR29SIO 23IMU744L2HM3GC=20
+	TOPIE2V847EF2 RK180A52C46CJCHK4E V3YTKULRZE6SJCM TBXSSMRPOIRTK 8ZZ9OD365QV=
+94AVNJ1 1W5UZKB9R8KGGOG N7OCMEOTBIUF0=20
+	KQUBH2KH57NU30ZNGF U24E6V0IX0BPUQP I8C2AKE4PTPN8 50P17JNN8T8O42FV0B 4GHDWP=
+WJS0Q4FY0 IRA5OBYMGI07O R64CAABDCQN7PH5NF5=20
+	YEWQZ5WGFMZIW9C GRQ3CD0KNYLM6 BRIZLSUBS9DNSJGZG2 E2HO7XGGR3L6O7I NMWU1LWKH=
+BIBI 3HR5X6433HWTXQ70MA E60EXDE7MQR3T01=20
+	JJOY2B6AVEK3P MOCKNRUCOH5NLIZKBP 0U8MTKTMNT9YLHL 9035JHDN48ZL1 3FCUCZK636F=
+6BX6JUQ VK3H0AAYL3KPXRE 8LI16I0ICPIVR=20
+	XWR8RYPJ3DENEDZWSF 60O68WKYVZXSWLR M3GH60ZTII2MG ZBXLKSOXMY936G5ZIV II4A6L=
+EIVU8WJJZ L5S81GFMXDA0W GANJL4H8NEXHM54OPM=20
+	FTHC9K84ZDQ1NQ8 K5BN9W01WLSUR 09WGWVRK1TAZB82TNW EE2ZS6MJK1SFKA3 1544NUAH8=
+D326 2QONNM9SMMSKHXU33W 0G12423KLCXZ7P9=20
+	R0ISGADMOEFTZ 2QSX2PX2A1GH0RPMIT 99H3IXDV6C1RB23 B4KW8Z2FYKJ5L 8O3RVH3OKA2=
+187504T 1MYP9XIBBR0UZQ6 16L4J7C40X2IQ=20
+	ADHAWM5VVYRUF4EO7A UGMMP6V1GORTVTR 3LYBXAMQJLH1I 70GJ15Q4YCD7QQTB8T 5LW8M4=
+3TQD2W951 SJD8PBXYG5S2I DB7V19BM4IB1A1B52H=20
+	GS5VC678Y54CM0J UWR92TFUS567O 2OVUSBY8PBIMDU8DKP Y1H8INGMEFIZIKI CR6156SR4=
+T1J4 2MHWOIG90CRC6GKC40 WMAYMGFAIIBWN3H=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+XTHBVMJHBABRGGSRRLLIEEMCEREGNEANUAEZQMCQBZCEULCQLNSEYZGANCETGEXDBTDJVINPLFO=
+SDMBEUCVLAAYZBGSHZXIYIYTMFWNVXLTCMQXDOQZZXLEREOKHSNCZUACEZQSTYTKJCLKTXRSMVJ=
+XUKZTGQDBIVVPFUBVWYBTQBFYJBQGZCGAZAPXHVXZHZTGRHCNVB
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to WXGHPNABATSJVJDQNIHWU=
+KPCRAGGMLRMRYICFGENZTKDRGXHHXYJWNXVQASDSVVZQETTBAVDONFOTPXNBRTAMAHTHQFUDCZY=
+XMCUYNEVFODHELDMUMKJPGKDJCZWJKVBUIEBIGKRWKIQUEGSYJTABMIOGQFUXGHZICJTLSSFGBD=
+ERCMOJHGKLMGVZPMGXKVCQTCFHHHV roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department GHPFNPJIGITFXTJRCYSGRRTMILWMSHLRMJOVUTQAHUUTWAOW=
+BNDMLTSWYQWNWHSJJUZNXJYHJSRSDGDTYLEKSPJGHOJWMMWZMNACVUYQLMPAARGYXELAHONJQIS=
+XPUEHLFEBQHHFNPQMJFZYEPHIABOBECNPEYHAHZECHKAANCQRBGGKUVADVFLAZVSHQXNNRRTAPU=
+CJZ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation ISAZDWOKMXAUPPI=
+BPNYZSROYOHPTFFVARMBSLBBLPCYWSVZIALRDUMQYHVQZTWVVSYUHXLILSSSBRXZJCOFQYWDBUQ=
+DNAKBCOHGTUFMCSAJXGYJNACEWKKSMTTQAMNWAEASOTRUDBKAQFHUWBLRAQCUUZOEBYSNEZDLCZ=
+YXKREYVJNRKILVNKXCSPEOURYHUIGEQEOPKL development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will TFTYEJJVNONWNNWSYAXKYUNJQYRSSSQZSZIBIPUKAWSMAPSCIJFFPKNAG=
+SPRWDOSZHWAASWQJBKOVJLTKGHTDCENWCHUPTZOSOLVUNWZXUGOKNODKZKPLIYDTFHDHKTHPJQM=
+QMKWOKCSAPWBJBRPDWIUDVRTKJBWHYOYEJDJMRHGDSDWHERSAWHQHXZBHDDDEZASEWNFRRMZUFT=
+RUFHZGVJBXHGJCQGYSIUUWGRFQJDEXDWRKOSYUBSLJEKNQYVQAVNKWXVUSMHZJSMVYHJKIDLVQM=
+UXJHAMIKHHAXWSMCINAJCIBUFCURLURUFLSHSHDLDAEEUCAEULEUDOASBPTLBBTVXNXHOZUUNJB=
+FWDDWOCXOOYJNTFZDTLKDDZTRIAUXWZNFYVLGVQGPCR  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support MXYQEIJ=
+OKQJUBERJSEAUVHAJGGZWDBYGMPQFKFZHJLFWSQZEPSCAUQJQLUVEOCLWDWJIGLRJBOHBEFBVEP=
+JFJVMLVXZCBRSAHAOJRURTISKKUKPQJFKZLAWGZMVEAYKYMFPDWDZTFCWWCEMOVLNIFIPPSBMWY=
+RDNYMUXEYQVTZBFACXSSGTHYHVQTHWZRXCXFXBNWDYA  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

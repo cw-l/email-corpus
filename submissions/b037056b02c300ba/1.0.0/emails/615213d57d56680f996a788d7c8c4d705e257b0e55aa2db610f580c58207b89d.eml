@@ -1,0 +1,361 @@
+Authentication-Results: spf=softfail (sender IP is 136.66.186.133)
+ smtp.mailfrom=fatemag.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=fatemag.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:BFD243F9B8CF8C524F843853B95AB46121951FDEB8D6F9600F000F9B7D904748;UpperCasedChecksum:BAA44EABE59E7C1806043A7AFA3EF4C211481362A14EBC56EE060F1D40474894;SizeAsReceived:309;Count:7
+From: Heart Wellness <support@fatemag.com>
+To: <redacted@redacted.com>
+Subject: Occasional light-headedness addressed in this health presentation
+Message-ID: <5c86397625ab4cba91cab1eb6ba826d3@fatemag.com>
+Date: Mon, 3 Aug 2026 22:43:16 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Aug 2026 22:43:16.3565
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 1f73b7e7-7ff9-4563-00a5-08def1b09bcc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ MWH0EPF000C6187:EE_|EA2P220MB1069:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ MWH0EPF000C6187.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/3/2026 12:50:21 PM
+X-MS-Office365-Filtering-Correlation-Id: 1f73b7e7-7ff9-4563-00a5-08def1b09bcc
+X-Sender-IP: 136.66.186.133
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|84100799006|10300799038|9400799043|6100799021|9800799015|60050799012|93100799006|5139299004|9000799056|11119299006|13020799009|58200799025|970799063|32080799009|47200799027|2700799033|5149299006|3069299007|32020799003|1290799033|1680799066|34130799006|56899033|6022199012|440099028|3412199025|1370799030|1360799030|1380799030|2607281247196008|30041999003|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Aug 2026 22:43:16.2802
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 1f73b7e7-7ff9-4563-00a5-08def1b09bcc
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ MWH0EPF000C6187.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA2P220MB1069
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9598096
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0270.016
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>CardioFlush Blood Pressure Presentation</title>
+
+<style type="text/css">
+
+body{
+margin:0;
+padding:0;
+background:#ececec;
+font-family:Arial,Helvetica,sans-serif;
+color:#222222;
+}
+
+table{
+border-collapse:collapse;
+border-spacing:0;
+}
+
+img{
+display:block;
+border:0;
+max-width:100%;
+}
+
+.wrapper{
+width:100%;
+background:#ececec;
+}
+
+.container{
+width:100%;
+max-width:600px;
+margin:0 auto;
+background:#ffffff;
+}
+
+.cta{
+display:inline-block;
+background:#b51f2e;
+color:#ffffff !important;
+text-decoration:none;
+padding:10px 24px;
+font-size:16px;
+line-height:20px;
+font-weight:bold;
+border-radius:5px;
+}
+
+@media only screen and (max-width:620px){
+
+.outer-padding{
+padding:0 !important;
+}
+
+.container{
+width:100% !important;
+}
+
+.content{
+padding:18px !important;
+}
+
+.headline{
+font-size:25px !important;
+line-height:31px !important;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ececec">
+
+<tr>
+
+<td class="outer-padding" align="center" style="padding:20px 10px;">
+
+<table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+<!-- HEADER -->
+
+<tr>
+
+<td style="padding:15px 24px;border-top:5px solid #b51f2e;border-bottom:1px solid #e5e5e5;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+
+<tr>
+
+<td style="font-size:27px;line-height:31px;font-weight:bold;color:#b51f2e;">
+HEALTH NEWS
+</td>
+
+<td align="right" style="font-size:12px;line-height:18px;font-weight:bold;color:#666666;letter-spacing:.4px;">
+CIRCULATION REPORT
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+<!-- CONTENT -->
+
+<tr>
+
+<td class="content" style="padding:18px 24px 28px;">
+
+<div style="font-size:12px;line-height:17px;color:#777777;font-weight:bold;margin-bottom:6px;">
+BREAKING HEALTH PRESENTATION
+</div>
+
+<h1 class="headline" style="margin:0 0 10px;font-size:28px;line-height:34px;color:#222222;">
+
+Worried About Rising Blood-Pressure Readings?
+<span style="color:#b51f2e;">
+Watch This Brief Circulation Presentation.
+</span>
+
+</h1>
+
+<div style="margin:0 0 12px;font-size:16px;line-height:23px;color:#444444;">
+
+If your readings keep changing, your stamina feels lower, or healthy circulation has become a growing concern, this short report may be worth seeing.
+
+</div>
+
+<!-- VIDEO THUMBNAIL -->
+
+<a href="hxxps://storage[.]googleapis[.]com/sbhthredd/cd" target="_blank" style="display:block;text-decoration:none;">
+
+<div style="border:1px solid #dddddd;padding:5px;background:#ffffff;">
+
+<div style="position:relative;">
+
+<img src="hxxps://www[.]ni03hfph[.]com/686/offers/21129/c/61752/assets/image-1[.]png" width="550" alt="CardioFlush cardiovascular wellness presentation" style="display:block;width:100%;height:auto;border:0;">
+
+<!-- HIGHLY TRANSPARENT PLAY BUTTON -->
+
+<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+
+<div style="
+width:82px;
+height:82px;
+border-radius:50%;
+background:rgba(255,255,255,0.10);
+backdrop-filter:blur(2px);
+-webkit-backdrop-filter:blur(2px);
+border:2px solid rgba(255,255,255,0.30);
+position:relative;
+box-shadow:0 8px 28px rgba(0,0,0,.14);">
+
+<div style="
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-35%,-50%);
+width:0;
+height:0;
+border-left:26px solid rgba(255,255,255,.90);
+border-top:16px solid transparent;
+border-bottom:16px solid transparent;">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</a>
+
+<!-- CTA -->
+
+<div align="center" style="margin:14px 0 7px;">
+
+<a href="hxxps://storage[.]googleapis[.]com/sbhthredd/cd" target="_blank" class="cta">
+WATCH THE PRESENTATION \u2192
+</a>
+
+</div>
+
+<div align="center" style="font-size:13px;line-height:19px;color:#777777;margin-bottom:20px;">
+1,071 people are watching now
+</div>
+
+<!-- SYMPTOM BOX -->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fff5f6;border-left:5px solid #b51f2e;">
+
+<tr>
+
+<td style="padding:17px 18px;font-size:15px;line-height:27px;color:#444444;">
+
+<strong style="font-size:19px;color:#222222;">
+Watch If You Notice:
+</strong>
+
+<br><br>
+
+\u2022 Blood-pressure readings that concern you<br>
+
+\u2022 Feeling tired during ordinary activity<br>
+
+\u2022 Cold hands or feet<br>
+
+\u2022 Occasional light-headedness<br>
+
+\u2022 Worry about circulation as you get older
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- BODY COPY -->
+
+<div style="margin-top:22px;font-size:17px;line-height:28px;color:#444444;">
+
+This presentation explores a straightforward daily wellness approach intended to support healthy circulation, cardiovascular function, steady energy, and general heart health.
+
+</div>
+
+<div style="margin-top:18px;font-size:17px;line-height:28px;color:#444444;">
+
+See why adults over 55 who are concerned about blood pressure and circulation are paying attention to this short health report.
+
+</div>
+
+<div align="center" style="margin-top:26px;">
+
+<a href="hxxps://storage[.]googleapis[.]com/sbhthredd/cd" target="_blank" class="cta">
+SEE THE CIRCULATION METHOD \u2192
+</a>
+
+</div>
+
+</td>
+
+</tr>
+
+<!-- FOOTER -->
+
+<tr>
+
+<td style="
+background:#f5f5f5;
+padding:20px 24px;
+text-align:center;
+font-size:11px;
+line-height:18px;
+color:#777777;">
+
+This presentation is provided for informational and promotional purposes only.
+
+<br><br>
+
+Do not stop, replace, or change prescribed medication without consulting your physician. Individual experiences vary. Statements regarding dietary supplements have not been evaluated by the Food and Drug Administration.
+
+<br><br>
+
+This product is not intended to diagnose, treat, cure, or prevent any disease. Consult a qualified healthcare professional before beginning any new supplement or cardiovascular-wellness programme.
+
+<br><br>
+
+<a href="hxxps://storage[.]googleapis[.]com/sbhthreddunsb/cd" style="color:#666666;text-decoration:underline;">
+Unsubscribe
+</a>
+
+&nbsp;|&nbsp;
+
+<a href="hxxps://storage[.]googleapis[.]com/sbhthredd/cd" style="color:#666666;text-decoration:underline;">
+View Presentation
+</a>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

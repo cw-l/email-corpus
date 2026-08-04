@@ -1,0 +1,271 @@
+Authentication-Results: spf=fail (sender IP is 34.178.11.67)
+ smtp.mailfrom=esc.edu; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=esc.edu;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:7640B45C165A9F4B0C928C225F2F80DEE285A0619BDC8E6BBE444810EF16EE04;UpperCasedChecksum:1AF5699D154C112A1B80D8D14E1F99E31C9FFC19EF9394D157708E8089411BCB;SizeAsReceived:315;Count:7
+From: Backup Services <support@esc.edu>
+To: <redacted@redacted.com>
+Subject: Your storage is full. Cloud sync has stopped and files are queued for
+ removal.
+Message-ID: <d4d9b663398440e6a07a8a566e90621e@esc.edu>
+Date: Sun, 2 Aug 2026 23:40:31 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Aug 2026 23:40:32.4550
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 14ba7627-aef8-49c6-46e6-08def0ef7175
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS1PEPF0001708F:EE_|LV8P220MB1100:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/2/2026 11:34:03 AM
+X-MS-Office365-Filtering-Correlation-Id: 14ba7627-aef8-49c6-46e6-08def0ef7175
+X-Sender-IP: 34.178.11.67
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|3069299007|2700799033|47200799027|34130799006|970799063|3025599003|46110799015|48050799012|32020799003|58200799025|33080799006|119000799009|30140799009|13020799009|1290799033|9400799043|60050799012|18040799003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Aug 2026 23:40:32.0793
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 14ba7627-aef8-49c6-46e6-08def0ef7175
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS1PEPF0001708F.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8P220MB1100
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7902248
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0270.016
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9710001)(9610028)(9520007)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage \u2014 Last Chance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 20px;
+        }
+
+        .email-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .v3-top-bar {
+            background: #0a1628;
+            padding: 8px 40px;
+            text-align: center;
+        }
+
+        .v3-top-bar p {
+            font-size: 12px;
+            color: #fc8181;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .v3-header {
+            background: #0a1628;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #16213e;
+        }
+
+        .v3-logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .v3-logo span {
+            color: #4a90e2;
+        }
+
+        .v3-status {
+            font-size: 11px;
+            color: #fc8181;
+            font-weight: 700;
+            background: rgba(229, 62, 62, 0.15);
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid rgba(229, 62, 62, 0.4);
+        }
+
+        .v3-hero {
+            background: #e53e3e;
+            padding: 36px 40px;
+            text-align: center;
+        }
+
+        .v3-hero-eyebrow {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .v3-hero-headline {
+            font-size: 30px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .v3-hero-sub {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+        }
+
+        .v3-content {
+            padding: 28px 40px;
+            background: #fff;
+        }
+
+        .v3-body-text {
+            font-size: 15px;
+            color: #2d3748;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+
+        .v3-body-text strong {
+            color: #e53e3e;
+        }
+
+        .v3-divider {
+            border: none;
+            border-top: 2px dashed #e2e8f0;
+            margin: 20px 0;
+        }
+
+        .v3-urgency {
+            background: #0a1628;
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .v3-urgency p {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fc8181;
+            line-height: 1.5;
+        }
+
+        .v3-urgency span {
+            color: #fff;
+        }
+
+        .v3-cta {
+            display: block;
+            background: #e53e3e;
+            color: #fff;
+            text-align: center;
+            padding: 18px 30px;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: 900;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .v3-cta-sub {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 6px;
+        }
+
+        .v3-footer {
+            background: #f7f7f7;
+            padding: 14px 40px;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .v3-footer p {
+            font-size: 11px;
+            color: #999;
+        }
+
+        .v3-footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <div class="v3-top-bar">
+            <p>Urgent Account Notice \u2014 Immediate Action Required</p>
+        </div>
+        <div class="v3-header">
+            <div class="v3-logo"><span>Cloud</span> Storage</div>
+            <div class="v3-status">Renewal Failed</div>
+        </div>
+        <div class="v3-hero">
+            <p class="v3-hero-eyebrow">Last Chance</p>
+            <h1 class="v3-hero-headline">Your Files Will Be<br>Deleted Today</h1>
+            <p class="v3-hero-sub">Your plan has expired. Your storage is full. The clock is running out.</p>
+        </div>
+        <div class="v3-content">
+            <p class="v3-body-text">Your 250GB Cloud plan failed to renew. Right now,
+                <strong>your photos, videos, and backups are at immediate risk of permanent deletion.</strong> Once
+                gone, they cannot be recovered \u2014 not by us, not by anyone.</p>
+            <hr class="v3-divider">
+            <div class="v3-urgency">
+                <p><span>Storage used: 250GB / 250GB (100%)</span><br>Cloud sync is paused. Deletion is imminent.</p>
+            </div>
+            <a href="hxxps://storage[.]googleapis[.]com/abdocldtwo/ls" class="v3-cta">Save My Files \u2014 Renew
+                Now</a>
+            <p class="v3-cta-sub">One click. Instant reactivation. No data lost.</p>
+        </div>
+        <div class="v3-footer">
+            <p>This is a critical notice for your account. &nbsp;|&nbsp; <a href="hxxps://storage[.]googleapis[.]com/sbhtwocldunsbb/ls">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

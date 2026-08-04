@@ -1,0 +1,231 @@
+Authentication-Results: spf=pass (sender IP is 178.238.234.82)
+ smtp.mailfrom=eggmoo.com; dkim=pass (signature was verified)
+ header.d=eggmoo.com;dmarc=pass action=none
+ header.from=eggmoo.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:D53B67B0C84CF76EFC07365D3595E606F75729CF7A9E0EB2DED8F0D13736DF71;UpperCasedChecksum:3CD703499663AF00248944DDE1A93C7CD395537DD034E22B481E89708FB9E8C8;SizeAsReceived:808;Count:10
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.eggmoo.com 106DB640AD0
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=eggmoo.com;
+	s=default; t=1785365548;
+	bh=YIfaiXd58ks9AME5e78uwCtmjQpBXkMS1mKXDWtMlfg=;
+	h=From:Reply-To:To:Subject:Date:From;
+	b=Qb8WX5fStVSz6YPq4ZEnm09dxqFgIuhKgQK9p3sQKCGrum6Cc8ADpxIuuVZY+pNqf
+	 bK9A0yUBbwV59PUV57mB31bh3byBzVUU5WjJ55Hk/+mAVVw8gatpH2T1yZ3EFndj2t
+	 MEUqFP6CrLgITmkOJXuqu62F/ybnKLVZpNs2F85Q=
+From: "Justin" <justin@eggmoo.com>
+Reply-To: justin@eggmoo.com
+To: redacted@redacted.com
+Subject: Discipline and Performance Management - 27 & 28 August 2026
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0B66_20147AAB.40735024"
+Date: Thu, 30 Jul 2026 06:51:45 +0800
+Message-ID: <2220398571592637218015@DESKTOP-HF4QG96>
+X-IncomingHeaderCount: 10
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Jul 2026 22:52:30.3822
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 3c592763-3837-4c0d-df8c-08deedc411f4
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SJ5PEPF000001EC:EE_|SJ2P220MB1187:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SJ5PEPF000001EC.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 7/29/2026 6:35:59 PM
+X-MS-Office365-Filtering-Correlation-Id: 3c592763-3837-4c0d-df8c-08deedc411f4
+X-Sender-IP: 178.238.234.82
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:6;ARA:1444111002|46080799009|3069299007|29090799004|32020799003|1290799033|7099299003|34130799006|970799063|84100799006|68400799013|440099028|3412199025|1360799030|1380799030|1370799030|34101999003|30041999003|5090599003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Jul 2026 22:52:30.0371
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 3c592763-3837-4c0d-df8c-08deedc411f4
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SJ5PEPF000001EC.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2P220MB1187
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.8831208
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0245.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+------=_NextPart_001_0B66_20147AAB.40735024
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Discipline and Performance Management
+
+Master the legal procedures, practical processes & common pitfalls in manag=
+ing employee discipline, misconduct & termination matters.
+
+=20
+
+27 & 28 August 2026
+
+9.00am - 5.00pm | GMT +8
+
+Concorde Hotel, Kuala Lumpur, Malaysia
+
+Zoom Video Conference
+
+=20
+
+WORKSHOP OVERVIEW
+
+This practical 2-day workshop will help participants effectively manage pro=
+bationers, poor performers and employee misconduct in accordance with Malay=
+sian employment and industrial relations practices. Participants will gain =
+a better understanding of disciplinary procedures, performance management a=
+nd termination processes to ensure fair, consistent and legally compliant w=
+orkplace practices. Through case studies, discussions and practical example=
+s, participants will also learn how to avoid common legal and procedural mi=
+stakes that may lead to costly disputes or Industrial Court claims. The pro=
+gram equips managers and HR practitioners with practical tools to maintain =
+workplace discipline, improve productivity and foster better industrial har=
+mony.
+
+This 2 days interactive program will enable participants to have a better u=
+nderstanding and hands-on experience of managing difficult employees, handl=
+ing disciplinary and termination procedures in order to achieve better indu=
+strial harmony and greater productivity.
+
+=20
+
+COURSE OUTLINE
+
+DAY ONE
+
+Session 1: Introduction
+
+Session 2: Managing Probationers
+
+Session 3: Managing Performance of Confirmed Employees
+
+DAY TWO
+
+Session 4: Managing Misconducts
+
+Session 5: Disciplinary Process
+
+Session 6: Post Termination Process
+
+=20
+
+INQUIRE/REGISTER:
+
+Reply with =93PDF-Discipline=94 on the email subject.
+
+=20
+
+=20
+
+=20
+
+If you prefer not to receive any further emails, kindly reply and put =93re=
+move-me=94 on the subject. Thank you.
+
+
+------=_NextPart_001_0B66_20147AAB.40735024
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><span style=3D"FONT-SIZE: 1=
+6pt; FONT-FAMILY: SimSun; COLOR: #7030a0; LINE-HEIGHT: 115%">Discipline and=
+ Performance Management<?xml:namespace prefix =3D "o" ns =3D "urn:schemas-m=
+icrosoft-com:office:office" /><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Master the legal procedures, practical processes &amp; common pitfall=
+s in managing employee discipline, misconduct &amp; termination matters.<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">27 &amp; 28 August 2026<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">9.00am - 5.00pm | GMT +8<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Concorde Hotel, Kuala Lumpur, Malaysia<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Zoom Video Conference<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">WORKSHOP OVERVIEW<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">This practical 2-day workshop will help participants effectively mana=
+ge probationers, poor performers and employee misconduct in accordance with=
+ Malaysian employment and industrial relations practices. Participants will=
+ gain a better understanding of disciplinary procedures, performance manage=
+ment and termination processes to ensure fair, consistent and legally compl=
+iant workplace practices. Through case studies, discussions and practical e=
+xamples, participants will also learn how to avoid common legal and procedu=
+ral mistakes that may lead to costly disputes or Industrial Court claims. T=
+he program equips managers and HR practitioners with practical tools to mai=
+ntain workplace discipline, improve productivity and foster better industri=
+al harmony.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">This 2 days interactive program will enable participants to have a be=
+tter understanding and hands-on experience of managing difficult employees,=
+ handling disciplinary and termination procedures in order to achieve bette=
+r industrial harmony and greater productivity.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">COURSE OUTLINE<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">DAY ONE<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 1: Introduction<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 2: Managing Probationers<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 3: Managing Performance of Confirmed Employees<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">DAY TWO<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 4: Managing Misconducts<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 5: Disciplinary Process<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Session 6: Post Termination Process<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><span style=3D"FONT-FAMILY:=
+ SimSun">INQUIRE/REGISTER:<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">Reply with =93<b><span style=3D"COLOR: #ee0000">PDF-Discipline</span>=
+</b>=94 on the email subject.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: Si=
+mSun">If you prefer not to receive any further emails, kindly reply and put=
+ =93remove-me=94 on the subject. Thank you.<o:p></o:p></span></p><font size=
+=3D"2" face=3D"Arial, Helvetica, sans-serif"></font></body>
+------=_NextPart_001_0B66_20147AAB.40735024--
