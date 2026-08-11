@@ -1,0 +1,318 @@
+Authentication-Results: spf=pass (sender IP is 54.240.48.95)
+ smtp.mailfrom=bounce.remotelock.com; dkim=pass (signature was verified)
+ header.d=remotelock.com;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=remotelock.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:92A93DA9E7830E2B5B00C6FC1B51DC1FEBD0B661CBA841EEDFF9E882182D0EEB;UpperCasedChecksum:31ADCBE3DB2F6D4082943DB7439EA3CE7D2C04B371812C9D5B773E20CDE4DC9B;SizeAsReceived:1501;Count:13
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ysugit2fccl5htylca3gzqjqi6jpdjfb; d=remotelock.com; t=1786101996;
+	h=Date:From:Reply-To:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding;
+	bh=MWtzRNWL0Mthug0/Xm/w21WD7yGEuKQYXiCeTAPJZ8Q=;
+	b=eOeiBvW2Dy8uWIp9oX36Sgk6yKFaOSKnrbTdrPtZpRfP2zgM+fcUuXIZQNiYoEez
+	h603q1dVcg2bLn1rleOlyx4J56L6WuKAAJGLQS5SctBvFqEdDW2cUycrZnArvH/krCy
+	ujHVHWmdkQjyvhkVpLKXMJc3JPTgNFBPte96bspE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1786101996;
+	h=Date:From:Reply-To:To:Message-ID:Subject:Mime-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=MWtzRNWL0Mthug0/Xm/w21WD7yGEuKQYXiCeTAPJZ8Q=;
+	b=Zr+Zty2wJWxkf7J1aQgUic+P5ibvfrBMwdaol+XvY27esFQyBL6Ts2Juf4blvCYV
+	jdY27skoLvnL+zutwlC9g9OKi3+Rm8fIgKF7MKJT+K0ICiGzG5hOSmrnr6PONgSRP8k
+	7vR7W0T7UtnUKHgHEPkt2YQS4sVWLL7XH0vlZcs8=
+Date: Fri, 7 Aug 2026 11:26:36 +0000
+From: Info <noreply@remotelock.com>
+Reply-To: divaah@hotmail.com
+To: redacted@redacted.com
+Message-ID: 
+ <0100019fdbf99d3c-3d460cfe-2689-40eb-a09e-878bfbfb505b-000000@email.amazonses.com>
+Subject: New message waiting for you
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6a75c0eccbfe6_32ad9e5d49349";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Feedback-ID: 
+ ::1.us-east-1.mQrJCr0zBormcrk7KrRlyFV/0VA3XVAFfQcdPsezmWg=:AmazonSES
+X-SES-Outgoing: 2026.08.07-54.240.48.95
+X-IncomingHeaderCount: 13
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Aug 2026 11:26:37.2284
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 7a951515-5fef-4d4f-b182-08def476be7b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN1PEPF00006000:EE_|BL1P220MB0803:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN1PEPF00006000.namprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/7/2026 10:58:55 AM
+X-MS-Office365-Filtering-Correlation-Id: 7a951515-5fef-4d4f-b182-08def476be7b
+X-Sender-IP: 54.240.48.95
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|5139299004|10300799038|9400799043|1680799066|970799063|58200799025|100100799003|1290799033|9000799056|47200799027|34130799006|16002599021|440099028|4302099013|3412199025|1360799030|1370799030|1380799030|1122599022|2607281247196008|1602099012|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Aug 2026 11:26:37.1723
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 7a951515-5fef-4d4f-b182-08def476be7b
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN1PEPF00006000.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL1P220MB0803
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5735983
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0292.011
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+----==_mimepart_6a75c0eccbfe6_32ad9e5d49349
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Logo
+
+
+
+Hi,
+
+
+
+There=E2=80=99s a new message for you on your dashboard
+
+
+
+View Message ( hxxps://house-limon-9598[.]unicornplatform[.]page/ )
+
+
+
+Thanks,
+
+
+
+Facebook ( hxxps://facebook[.]com/ )
+
+
+
+LinkedIn ( hxxps://linkedin[.]com/ )
+
+
+
+Instagram ( hxxps://instagram[.]com/ )
+
+
+
+YouTube ( hxxps://youtube[.]com/ )
+
+
+
+Email ( email@example.com )
+
+
+
+Copyrights =C2=A9 All Rights Reserved
+
+
+
+```
+----==_mimepart_6a75c0eccbfe6_32ad9e5d49349
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "hxxp://www[.=
+]w3[.]org/TR/REC-html40/loose[.]dtd"><html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body>
+
+<div style=3D"width: 100%; background-color: #f5f5f5; font-family: Arial,He=
+lvetica,sans-serif; margin: 0; padding: 0;">
+
+
+
+  <div style=3D"width: 100%; max-width: 600px; background-color: #ffffff; m=
+argin: 0 auto;">
+
+
+
+<div style=3D"background-color: #ffffff; padding: 25px 20px;" align=3D"cent=
+er">
+
+  <img src=3D"hxxps://assets[.]unlayer[.]com/projects/0/1785758879147-logo2=
+6s[.]png" alt=3D"Logo" width=3D"112" style=3D"display: block; width: 112px;=
+ max-width: 100%; height: auto; outline: none; text-decoration: none; margi=
+n: 0 auto; border: 0;">
+
+</div>
+
+
+
+<div style=3D"background-color: #ffffff; padding: 40px 30px 20px;" align=3D=
+"center">
+
+  <p style=3D"font-size: 22px; line-height: 1.6; color: #222222; margin: 0 =
+0 20px; padding: 0;">
+
+    Hi,
+
+  </p>
+
+
+
+  <p style=3D"font-size: 22px; line-height: 1.6; color: #222222; margin: 0;=
+ padding: 0;">
+
+    There=E2=80=99s a new message for you on your dashboard
+
+  </p>
+
+</div>
+
+
+
+<div style=3D"background-color: #ffffff; padding: 20px 30px;" align=3D"cent=
+er">
+
+  <a href=3D"hxxps://house-limon-9598[.]unicornplatform[.]page/" target=3D"=
+_blank" style=3D"display: inline-block; background-color: #ce4222; color: #=
+ffffff; font-size: 16px; line-height: 1.2; font-weight: bold; text-decorati=
+on: none; border-radius: 4px; padding: 14px 44px;">
+
+    View Message
+
+  </a>
+
+</div>
+
+
+
+<div style=3D"background-color: #ffffff; padding: 20px 30px 50px;" align=3D=
+"center">
+
+  <p style=3D"font-size: 18px; line-height: 1.6; color: #222222; margin: 0;=
+ padding: 0;">
+
+    Thanks,<br>
+
+  </p>
+
+</div>
+
+
+
+<div style=3D"background-color: #e5eaf5; padding: 30px 20px;" align=3D"cent=
+er">
+
+  <div style=3D"" align=3D"center">
+
+
+
+    <a href=3D"hxxps://facebook[.]com/" target=3D"_blank" style=3D"display:=
+ inline-block; text-decoration: none; margin: 0 8px;">
+
+      <img src=3D"hxxps://cdn[.]tools[.]unlayer[.]com/social/icons/circle-b=
+lack/facebook[.]png" alt=3D"Facebook" width=3D"32" style=3D"display: block;=
+ width: 32px; height: 32px; border: 0;">
+
+    </a>
+
+
+
+    <a href=3D"hxxps://linkedin[.]com/" target=3D"_blank" style=3D"display:=
+ inline-block; text-decoration: none; margin: 0 8px;">
+
+      <img src=3D"hxxps://cdn[.]tools[.]unlayer[.]com/social/icons/circle-b=
+lack/linkedin[.]png" alt=3D"LinkedIn" width=3D"32" style=3D"display: block;=
+ width: 32px; height: 32px; border: 0;">
+
+    </a>
+
+
+
+    <a href=3D"hxxps://instagram[.]com/" target=3D"_blank" style=3D"display=
+: inline-block; text-decoration: none; margin: 0 8px;">
+
+      <img src=3D"hxxps://cdn[.]tools[.]unlayer[.]com/social/icons/circle-b=
+lack/instagram[.]png" alt=3D"Instagram" width=3D"32" style=3D"display: bloc=
+k; width: 32px; height: 32px; border: 0;">
+
+    </a>
+
+
+
+    <a href=3D"hxxps://youtube[.]com/" target=3D"_blank" style=3D"display: =
+inline-block; text-decoration: none; margin: 0 8px;">
+
+      <img src=3D"hxxps://cdn[.]tools[.]unlayer[.]com/social/icons/circle-b=
+lack/youtube[.]png" alt=3D"YouTube" width=3D"32" style=3D"display: block; w=
+idth: 32px; height: 32px; border: 0;">
+
+    </a>
+
+
+
+    <a href=3D"mailto:email@example.com" target=3D"_blank" style=3D"display=
+: inline-block; text-decoration: none; margin: 0 8px;">
+
+      <img src=3D"hxxps://cdn[.]tools[.]unlayer[.]com/social/icons/circle-b=
+lack/email[.]png" alt=3D"Email" width=3D"32" style=3D"display: block; width=
+: 32px; height: 32px; border: 0;">
+
+    </a>
+
+
+
+  </div>
+
+</div>
+
+
+
+<div style=3D"background-color: #003399; padding: 15px 10px;" align=3D"cent=
+er">
+
+  <p style=3D"font-size: 14px; line-height: 1.8; color: #ffffff; margin: 0;=
+ padding: 0;">
+
+    Copyrights =C2=A9 All Rights Reserved
+
+  </p>
+
+</div>
+
+
+
+<p>```</p>
+
+
+
+<p></p>
+
+</div>
+
+
+
+<p></p>
+
+</div>
+
+</body></html>
+
+
+----==_mimepart_6a75c0eccbfe6_32ad9e5d49349--

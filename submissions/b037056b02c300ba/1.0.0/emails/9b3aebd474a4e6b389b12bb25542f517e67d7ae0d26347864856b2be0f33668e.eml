@@ -1,0 +1,271 @@
+Authentication-Results: spf=softfail (sender IP is 34.126.74.235)
+ smtp.mailfrom=immobilo.de; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=immobilo.de;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:2E265C61FA5AFBF08FF4475F10F1D56D2A3E9395C41254112E3CB1C0F6B8F8B0;UpperCasedChecksum:684B292CD2AB3167E07D375CB5209D4180DF132DA3D50B0BC68CDD0BF9678876;SizeAsReceived:297;Count:7
+From: Medical Updates <support@immobilo.de>
+To: <redacted@redacted.com>
+Subject: Seniors reporting incredible results in just 30 days
+Message-ID: <d6ea6b8b0dff49779ac28b42c7366b2e@immobilo.de>
+Date: Fri, 7 Aug 2026 15:14:20 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Aug 2026 15:14:21.3383
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 49753454-2ccc-488e-6636-08def4968eed
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ CY4PEPF0000E9D1:EE_|DS7P220MB0854:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ CY4PEPF0000E9D1.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/7/2026 12:03:08 PM
+X-MS-Office365-Filtering-Correlation-Id: 49753454-2ccc-488e-6636-08def4968eed
+X-Sender-IP: 34.126.74.235
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|69000799021|2700799033|58200799025|60050799012|1290799033|13020799009|9400799043|10300799038|6100799021|34130799006|32020799003|9800799015|11119299006|3069299007|5139299004|22070799003|970799063|1680799066|9000799056|18021999003|56899033|6022199012|440099028|3412199025|4302099013|1370799030|1380799030|1360799030|2607281247196008|1602099012|30041999003|2406899039|16011999112;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Aug 2026 15:14:20.7542
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 49753454-2ccc-488e-6636-08def4968eed
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ CY4PEPF0000E9D1.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7P220MB0854
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6390910
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0292.011
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10160021)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en"=
+><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Special Report: NeuroPeak Brain</title>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #FFFFFF; -webkit-fo=
+nt-smoothing: antialiased;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 40px 15px;">
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width: 600px; background-color: #FFFFFF;">
+                        <tbody>
+
+                            <!-- Top Header (News Logo) -->
+                            <tr>
+                                <td style=3D"padding-bottom: 15px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"left">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/jmempeak/m" target=3D"_blank" style=3D"text-decorati=
+on: none;">
+                                                        <img src=3D"hxxps:/=
+/upload[.]wikimedia[.]org/wikipedia/commons/2/2e/CBS_News_2020_%28Stacked_I=
+I%29[.]svg" alt=3D"NeuroPeak Brain" width=3D"120" style=3D"display: block; =
+border: none; max-width: 100%;">
+                                                    </a><br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style=3D"padding-bottom: 30px;">
+                                    <h1 style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 32px; font-weight: normal; color: #111111;=
+ margin: 0; line-height: 1.3;">
+                                        CBS News Special: 98-Year-Old Veter=
+an Reveals 30-Second Morning Ritual That
+                                        Reversed His Memory Loss
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td style=3D"font-family: Georgia, 'Times N=
+ew Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        In an emotional CBS News report tha=
+t has captivated viewers nationwide, a
+                                        98-year-old WWII veteran stepped fo=
+rward with a powerful message for anyone
+                                        struggling with memory loss: &quot;=
+I need to reveal something.&quot;
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        After years of worsening brain fog =
+and struggling to recognize loved ones, he
+                                        restored his sharp mental recall us=
+ing a simple, 100% natural 30-second morning
+                                        ritual developed by top neuroscient=
+ists.
+                                    </p>
+
+                                    <!-- IMAGE 1 (Main Hook) -->
+                                    <div style=3D"margin-bottom: 25px; text=
+-align: center; position: relative;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/jmempeak/m" style=3D"text-decoration: none; display: block;">
+                                            <img src=3D"hxxps://encrypted-t=
+bn0[.]gstatic[.]com/images?q=3Dtbn:ANd9GcQ8dfgB5VUSrnguFqVuNMxZYqH6D-9QSdsP=
+DUBqC9298yux4R-jxGCUw3V8&amp;s=3D10" alt=3D"NeuroPeak Brain" width=3D"100%"=
+ style=3D"display: block; max-width: 100%; border: 1px solid #e0e0e0;">
+
+                                            <!-- Fake Play Button Overlay -=
+->
+                                            <div style=3D"position: absolut=
+e; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; heig=
+ht: 70px; background-color: rgba(167, 12, 12, 0.8); border-radius: 50%; bor=
+der: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div style=3D"width: 0; hei=
+ght: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent=
+; border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div style=3D"text-align: center; margi=
+n-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div style=3D"color: #888888; font-=
+size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: upperca=
+se; margin-bottom: 10px;">
+                                            AS FEATURED IN
+                                        </div>
+                                        <img src=3D"hxxps://i[.]8upload[.]c=
+om/image/df1160e9576856bc/news-logos-19cced4b2b60[.]webp" alt=3D"As Seen On=
+ Media" width=3D"350" style=3D"max-width: 100%; height: auto; display: inli=
+ne-block;">
+                                    </div>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        According to medical researchers be=
+hind NeuroPeak Brain, age-related memory loss
+                                        isn't an inevitable part of aging\u=
+2014it is caused by a build-up of toxic neural
+                                        waste blocking brain signals.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        By introducing a specific combinati=
+on of natural brain-activating nutrients
+                                        every morning, thousands of seniors=
+ are clearing decades of brain fog and
+                                        restoring total mental clarity in a=
+s little as 30 days.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        Family members report incredible tu=
+rnarounds\u2014parents following complex
+                                        conversations again, remembering pa=
+st memories clearly, and reclaiming their
+                                        independence without pharmaceutical=
+ side effects.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 35px 0;">
+                                        Watch the complete CBS broadcast no=
+w to discover the exact 30-second daily
+                                        ritual and see how NeuroPeak Brain =
+can help restore your mental sharpness today.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- CTA Button -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 45px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center" style=
+=3D"background-color: #A70C0C; border-radius: 3px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/jmempeak/m" target=3D"_blank" style=3D"font-family: =
+'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weigh=
+t: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; display=
+: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        WATCH THE FULL PRES=
+ENTATION NOW
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style=3D"border-top: 1px solid #eeeeee;=
+ padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align=3D"center" style=3D"font-family: =
+'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #99=
+9999; line-height: 1.6;">
+                                    The information provided is for educati=
+onal purposes only and is not intended as
+                                    medical advice. Individual results may =
+vary.<br>
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/jmempeakunsb/m" style=3D"color: #999999; text-decoration: underline;=
+">Unsubscribe from future
+                                        emails</a><br><br>
+                                =EF=BF=BD NeuroPeak Brain Research 2026. Al=
+l Rights Reserved.
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+Authentication-Results: spf=pass (sender IP is 198.13.47.10)
+ smtp.mailfrom=mithinkbox.com; dkim=pass (signature was verified)
+ header.d=mithinkbox.com;dmarc=pass action=none
+ header.from=mithinkbox.com;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:B8E0EF0F45DF3A3E273E945FA460D4644CD1A83689749DE86BBF1A292E304E05;UpperCasedChecksum:A41A6C2F03F7598334DCC542AF023EE7F0F182BC1575843712CD27D640882229;SizeAsReceived:849;Count:11
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.mithinkbox.com A0B99BF2F
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mithinkbox.com;
+	s=default; t=1786314506;
+	bh=fLRlyv9AfFRkKwESrorqmSOUP9sxWy3zvu87QrhZz9Y=;
+	h=From:Reply-To:To:Subject:Date:From;
+	b=i//VjYwplAg6MS05lxprRs8tziur4xmQbhDtHzgasqmODiaBVUTLM119qN4t1Lvgx
+	 Mc5oC1OGkuZc8vYYWgh4ZsI5vd1ADvY0VdOHMSapFdRVpcXclEW2Y0oG5p5Bi2EVSr
+	 +k9ZVPDI3wC9bLfaXK3FRkZ//FK027VRpZLnvDCo=
+From: "Phyllis" <phyllis@mithinkbox.com>
+Reply-To: phyllis@mithinkbox.com
+To: redacted@redacted.com
+Subject: Modern Leadership Essentials for Emerging Leaders (3 & 4 September
+ 2026)
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_55D4_6CDE6038.7B732DDA"
+Date: Mon, 10 Aug 2026 06:28:03 +0800
+Message-ID: <11336397313944782214372@smtp-relay>
+X-IncomingHeaderCount: 11
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Aug 2026 22:28:28.1411
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ d49d4d61-405c-4701-9837-08def66588db
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SA2PEPF0000150A:EE_|CH3P220MB1198:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SA2PEPF0000150A.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/9/2026 9:32:03 AM
+X-MS-Office365-Filtering-Correlation-Id: d49d4d61-405c-4701-9837-08def66588db
+X-Sender-IP: 198.13.47.10
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|1290799033|29090799004|58200799025|9800799015|2700799033|32020799003|69000799021|7099299003|87000799021|23130799006|46080799009|34130799006|51300799024|84100799006|5149299006|970799063|3069299007|56899033|3412199025|440099028|1370799030|1380799030|1360799030|34101999003|2607281247196008|5090599003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Aug 2026 22:28:27.8498
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ d49d4d61-405c-4701-9837-08def66588db
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SA2PEPF0000150A.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH3P220MB1198
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2522749
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0292.011
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+------=_NextPart_001_55D4_6CDE6038.7B732DDA
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Modern Leadership Essentials for Emerging Leaders
+
+Adapt, inspire and thrive in an ever-changing business environment
+
+=20
+
+3 & 4 September 2026
+
+9.00am - 5.00pm | GMT +8
+
+Concorde Hotel, Kuala Lumpur, Malaysia
+
+Zoom Video Conference
+
+=20
+
+Workshop Overview
+
+The future belongs to leaders who can adapt, inspire and thrive in an ever-=
+changing business environment. As organizations face evolving workforce exp=
+ectations, technological advancements and increasing complexity, there is a=
+ growing need to develop leaders who are prepared for tomorrow's challenges=
+.
+
+=20
+
+This program is designed to cultivate future-ready leaders by equipping par=
+ticipants with the mindset, skills and confidence to lead people, drive per=
+formance, navigate change and build high-performing teams. Through interact=
+ive discussions, self-assessments, case studies and practical activities, p=
+articipants will strengthen their leadership capabilities and prepare thems=
+elves for greater leadership responsibilities in the future.
+
+=20
+
+Course Outline
+
+Session 1: Leading in a Rapidly Changing World
+
+Session 2: Communicating for Impact
+
+Session 3: Emotional Intelligence - the Leadership Advantage
+
+Session 4: Problem Solving and Decision Making
+
+Session 5: Leading High-Performance Teams
+
+Session 6: Leading Through Difficult Conversations and Conflict
+
+=20
+
+Inquire/Register:
+
+Reply with =93PDF-Leadership=94 on the email subject.
+
+=20
+
+=20
+
+If you prefer not to receive any further emails, kindly reply and put =93re=
+move-me=94 on the subject. Thank you.
+
+
+------=_NextPart_001_55D4_6CDE6038.7B732DDA
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><span style=3D"FONT-SIZE: 1=
+4pt; FONT-FAMILY: &quot;Arial&quot;,sans-serif; COLOR: #00b0f0; LINE-HEIGHT=
+: 115%; mso-fareast-font-family: SimSun">Modern Leadership Essentials for E=
+merging Leaders<?xml:namespace prefix =3D "o" ns =3D "urn:schemas-microsoft=
+-com:office:office" /><o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Adapt, inspire=
+ and thrive in an ever-changing business environment<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">3 &amp; 4 Sept=
+ember 2026<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">9.00am - 5.00p=
+m | GMT +8<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Concorde Hotel=
+, Kuala Lumpur, Malaysia<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Zoom Video Con=
+ference<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Workshop Overv=
+iew<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">The future bel=
+ongs to leaders who can adapt, inspire and thrive in an ever-changing busin=
+ess environment. As organizations face evolving workforce expectations, tec=
+hnological advancements and increasing complexity, there is a growing need =
+to develop leaders who are prepared for tomorrow's challenges.<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">This program i=
+s designed to cultivate future-ready leaders by equipping participants with=
+ the mindset, skills and confidence to lead people, drive performance, navi=
+gate change and build high-performing teams. Through interactive discussion=
+s, self-assessments, case studies and practical activities, participants wi=
+ll strengthen their leadership capabilities and prepare themselves for grea=
+ter leadership responsibilities in the future.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Course Outline=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 1: Lea=
+ding in a Rapidly Changing World<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 2: Com=
+municating for Impact<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 3: Emo=
+tional Intelligence - the Leadership Advantage<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 4: Pro=
+blem Solving and Decision Making<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 5: Lea=
+ding High-Performance Teams<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Session 6: Lea=
+ding Through Difficult Conversations and Conflict<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><b><span style=3D"FONT-FAMILY:=
+ &quot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Inquire/Reg=
+ister:<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">Reply with =93=
+<b><span style=3D"COLOR: #ee0000">PDF-Leadership</span></b>=94 on the email=
+ subject.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun"><o:p>&nbsp;</o=
+:p></span></p>
+<p class=3D"MsoNormal" style=3D"MARGIN: 0in"><span style=3D"FONT-FAMILY: &q=
+uot;Arial&quot;,sans-serif; mso-fareast-font-family: SimSun">If you prefer =
+not to receive any further emails, kindly reply and put =93remove-me=94 on =
+the subject. Thank you.<o:p></o:p></span></p></body>
+------=_NextPart_001_55D4_6CDE6038.7B732DDA--

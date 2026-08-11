@@ -1,0 +1,373 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1786320770; cv=none;
+        d=google.com; s=arc-20260327;
+        b=grcfhCkM51cBKkoXThZt6iIm7p2jJz3ER4jkZC7//6ZoszjrSZ7WcnjbLsl3yvkNlB
+         AVkszxE+JOkqF/A18s7yHHM2+juhZAAoP+v2o2paNYJ1aCiXyqZnvkLO89gPdix9dDNO
+         luH1wvhDpd10sKExemtal9uEHF952LMnhEK1u6YTluOQNfOBunZkYMeupV8BE2I6t0RJ
+         CUdbkNRLOEue5/pP3h+eJ1TA5R4r7Sav4DkDjs9Uapxn10kzKlPT4p+yydwupKkZIzJ8
+         EpqtMsuTRQBzM/q1LXWGqHaHPN1cgEfFcxnhA9eSOxN3WT5OenxvlH8iCESEH21FWPJQ
+         lh6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=cg19YnJ/lzMz0VC6SqCMBDtccBHktpDAdWlj6CJ0H+0=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=jMBwfX1uorEvG+wJMV++HLdSBDuCIrICDprot/CzJDgSyMQxeRVCWC7L4/Uqh3DGb2
+         sKcbJFiJyhCC+Xk4AmobvqJpwZNsT7SA3R5aznmjIjKMGNfc3t8TFs35RKQlM7RuNBj6
+         d3qx28o/tW/3Km2xy0jmzd9C3VFBO0/leW5ry3ChFjIO5w4AXLjb29M+uSSVr3ezEr4w
+         9yimsDL17NCXTIu1HT6f5AoC8CL0c49XKb+97LDgHNiAZcB4dYUFu6WUh0jQSG5m8Tc0
+         IO5ht5bK4BsguNXVRPUYFdYxtAEGsyI6+HRyLhvRA1B86oZid3IbhUai1iA8XM9rV3Tu
+         OdRA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@zh432t.zh432t.g5pqx1.us
+ header.s=smtp header.b=LgEUxA1X;
+       spf=pass (google.com: domain of
+ return@bhoing-meebrge.soninid.net.kitharwooded.info designates 152.53.157.183
+ as permitted sender)
+ smtp.mailfrom=return@bhoing-meebrge.soninid.net.kitharwooded.info
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@zh432t.zh432t.g5pqx1.us
+ header.s=smtp header.b=LgEUxA1X;
+       spf=pass (google.com: domain of
+ return@bhoing-meebrge.soninid.net.kitharwooded.info designates 152.53.157.183
+ as permitted sender)
+ smtp.mailfrom=return@bhoing-meebrge.soninid.net.kitharwooded.info
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=zh432t.zh432t.g5pqx1.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=rleviwbakrhvnl.67780446706063@zh432t.zh432t.g5pqx1.us;
+ bh=lyzNzqPJDG+xgwo/ykpcwEzTvmk=;
+ b=LgEUxA1XWowUpnAg6yVyYL/cmIcw21+njoq9GIjNmSob1qzM4Ns+cSAJM14hnpzeBu5iaQAsHwX4
+   E6PZQ0aZ9MF+EXj0zar08PBrhzawKVw3ylNMroXf7850Bn4dV1LMLk7eHG75jFmeY+JCdD/AHEdJ
+   B+O+j7sS05XqySVvzpFsBPdu4KprenSFWSuYbjHQRl93OWHx5BFOKvvtN+F+CzJfN9/5uLhXG+Tx
+   gspNSibAYtLHmfEZYLfpFWai/bTwDjjBG1cZnGZzesXy3q80W4M1OfBba4d8Jy7/SvAtbBsutcxK
+   9AyF/YA1UKrYQ4lC+5znTvtE5be7NpTLUoQJaQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=zh432t.zh432t.g5pqx1.us;
+ b=CbsTl0FBPQJg1eYjyuBI9HySMaKv1rfAMfk0OlcDldQIH4a5C+aIcluqWO19TV3fJLsPyyGwCP4b
+   kpnqPg5OpLvVj/0eamq56zGoPtqUxFdXVOSQqcoodklLHANjNPCZt5QVZP794PG/kOHdxArOd/4Z
+   CvboKrd6NVeIiZNvkku1TEjNrXlNkp0OtEhQurzHHsDoaggxnAYp58KY0Ovm0G3wm8TEXWMxVJeI
+   /ugdn0l9B4DoxCNX8HhViPEFGy+MITu0Sa23q7vWPl4uyJ9FJIuwFAnTcKnserE8AEkIcIZEYDcN
+   r3EeR3fF8rNthan6/dT+AWDWy8pX0dtAe6fdZA==;
+Date: Mon, 10 Aug 2026 00:12:48 +0000
+From: "DirectMeds" <rleviwbakrhvnl.67780446706063@zh432t.zh432t.g5pqx1.us>
+Message-ID: <n0a60dur.6oug0220.zh432t.6ougSMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: DirectMeds GLP-1 treatment helps you lose up to 4O lbs by the End of
+ Year
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 08-10-2026
+
+27778182401126899575
+-----
+sjavqrvffontslheedlzqcbpofhpmvqephjjsbdiqpjtoqmiedkagfpggmkhsjavqrvffontslh=
+eedlzqcbpofhpmvqephjjsbdiqpjtoqmiedkagfpggmkhsjavqrvffontslheedlzqcbpofhpmv=
+qephjjsbdiqpjtoqmiedkagfpggmkh
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[=
+.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd">
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0"/>
+    <title>DirectMeds - Affordable GLP-1 meds</title>
+    <style type=3D"text/css">
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=3DOutfit:=
+wght@400;600;700&display=3Dswap');
+       =20
+        /* Mobile Breakpoints */
+        @media screen and (max-width: 500px) {
+            .container { width: 100% !important; }
+            .content-padding { padding: 20px 20px 40px 20px !important; }
+            .btn-cta { font-size: 18px !important; padding: 14px 10px !impo=
+rtant; }
+            .main-title { font-size: 24px !important; }
+        }
+    </style>
+</head>
+<body style=3D"margin: 0; padding: 0; background-color: #f7f9fb; font-famil=
+y: 'Outfit', Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%;">
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+bgcolor=3D"#f7f9fb" style=3D"table-layout: fixed; padding: 20px 0;">
+        <tr>
+            <td align=3D"center">
+               =20
+                <!-- Main Container -->
+                <table class=3D"container" width=3D"550" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" style=3D"width: 550px; m=
+argin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 30px rgba(0,0,0=
+,0.08); border-radius: 12px; overflow: hidden;">
+                   =20
+                    <!-- Wrapper Link Over the Whole Creative Content -->
+                    <tr>
+                        <td>
+                            <a href=3D"hxxps://storage[.]googleapis[.]com/v=
+ictoryway/brightpath[.]html#4cAdkr230047BNIL294jaycptymnk32KVLEREHORXCWQCA1=
+95982WJIP41122x11" style=3D"text-decoration: none; color: #333333; display:=
+ block;">
+                               =20
+                                <!-- Header Logo Section (Recreated from im=
+age_9e1fa7.png) -->
+                                <table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td align=3D"center" style=3D"paddi=
+ng: 30px 20px 10px 20px;">
+                                            <table border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" style=3D"margin: 0 auto;">
+                                                <tr>
+                                                    <!-- Left Side: Custom =
+Medical Icon -->
+                                                    <td valign=3D"middle" s=
+tyle=3D"padding-right: 12px; line-height: 1;">
+                                                        <div style=3D"posit=
+ion: relative; width: 34px; height: 30px;">
+                                                            <!-- Pestle -->
+                                                            <div style=3D"p=
+osition: absolute; top: -4px; right: 4px; width: 6px; height: 16px; backgro=
+und-color: #3ba3ff; border-radius: 3px; transform: rotate(25deg); -webkit-t=
+ransform: rotate(25deg); -ms-transform: rotate(25deg);"></div>
+                                                            <!-- Mortar Bow=
+l --><div style=3D"position: absolute; bottom: 4px; left: 0; width: 30px; h=
+eight: 15px; border: 3px solid #000000; border-bottom-left-radius: 15px; bo=
+rder-bottom-right-radius: 15px; background-color: #ffffff; box-sizing: bord=
+er-box;">
+                                                                <!-- Blue P=
+lus Sign -->
+                                                                <div style=
+=3D"position: absolute; top: 2px; left: 6px; color: #3ba3ff; font-family: A=
+rial, sans-serif; font-size: 13px; font-weight: bold; line-height: 1;">+</d=
+iv>
+                                                            </div>
+                                                            <!-- Stand -->
+                                                            <div style=3D"p=
+osition: absolute; bottom: 0; left: 7px; width: 16px; height: 4px; backgrou=
+nd-color: #000000; border-radius: 1px;"></div>
+                                                        </div>
+                                                    </td>
+                                                   =20
+                                                    <!-- Right Side: Pure H=
+TML Text -->
+                                                    <td valign=3D"middle" s=
+tyle=3D"font-family: 'Outfit', Arial, sans-serif; font-size: 32px; font-wei=
+ght: 700; line-height: 1; letter-spacing: -0.5px;">
+                                                        <span style=3D"colo=
+r: #000000;">Direct</span><span style=3D"color: #3ba3ff;">Meds</span><span =
+style=3D"font-family: Arial, sans-serif; font-size: 10px; font-weight: norm=
+al; color: #000000; vertical-align: super; line-height: 1; margin-left: 1px=
+;">TM</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Content Section -->
+                                <table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                        <td class=3D"content-padding" style=
+=3D"padding: 20px 40px 40px 40px; text-align: center;">
+                                           =20
+                                            <!-- Title -->
+                                            <h1 class=3D"main-title" style=
+=3D"font-size: 28px; font-weight: 700; line-height: 1.25; color: #2c3e50; m=
+argin: 0 0 15px 0;">
+                                                Are You Paying <span style=
+=3D"color: #e42c75;">"Mortgage Money"</span> for GLP-1 meds?
+                                            </h1>
+                                           =20
+                                            <!-- Subtitle -->
+                                            <p style=3D"font-size: 16px; co=
+lor: #7f8c8d; margin: 0 0 40px 0; font-weight: 400;">
+                                                A healthier you starts here=
+ with transparent, affordable pricing.
+                                            </p>
+                                           =20
+                                            <!-- Tap Goal Headline -->
+                                            <p style=3D"color: #1abc9c; fon=
+t-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 1=
+3px; margin: 0 0 20px 0;">
+                                                TAP YOUR GOAL!
+                                            </p><!-- BUTTONS GROUP -->
+                                            <table width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-bottom: 40px;">
+                                                <!-- Button 1 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 15px;">
+                                                        <a class=3D"btn-cta=
+" href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#4=
+aBYLm230047FrDv294youkuisfta32FUTRDMGICNBAIWQ195982JYTD41122j11" style=3D"d=
+isplay: block; background-color: #9b59b6; color: #ffffff !important; paddin=
+g: 16px; border-radius: 30px; text-decoration: none !important; font-weight=
+: 600; font-size: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0=
+,0,0.1);"><span style=3D"color: #ffffff !important; text-decoration: none !=
+important;">10 =E2=80=94 25 lbs</span></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Button 2 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 15px;">
+                                                        <a class=3D"btn-cta=
+" href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#4=
+HVlwb230047hgXv294ofeuxievnk32JKBUTGNMUGIBNQA195982VWUE41122g11" style=3D"d=
+isplay: block; background-color: #e91e63; color: #ffffff !important; paddin=
+g: 16px; border-radius: 30px; text-decoration: none !important; font-weight=
+: 600; font-size: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0=
+,0,0.1);"><span style=3D"color: #ffffff !important; text-decoration: none !=
+important;">25 =E2=80=94 50 lbs</span></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Button 3 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 15px;">
+                                                        <a class=3D"btn-cta=
+" href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#4=
+ShEsN230047IzwL294tfysatwpem32VUNUOUMSOHUBGIN195982UHXC41122x11" style=3D"d=
+isplay: block; background-color: #f39c12; color: #ffffff !important; paddin=
+g: 16px; border-radius: 30px; text-decoration: none !important; font-weight=
+: 600; font-size: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0=
+,0,0.1);"><span style=3D"color: #ffffff !important; text-decoration: none !=
+important;">50 =E2=80=94 75 lbs</span></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Button 4 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 15px;">
+                                                        <a class=3D"btn-cta=
+" href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#4=
+KMYAi230047kpPW294iltnkvtchu32IHYZIQSKIQBQSXS195982UZPV41122N11" style=3D"d=
+isplay: block; background-color: #1abc9c; color: #ffffff !important; paddin=
+g: 16px; border-radius: 30px; text-decoration: none !important; font-weight=
+: 600; font-size: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0=
+,0,0.1);"><span style=3D"color: #ffffff !important; text-decoration: none !=
+important;">75 =E2=80=94 100 lbs</span></a>
+                                                    </td>
+                                                </tr>
+                                                <!-- Button 5 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 0;"><a class=3D"btn-cta" href=3D"hxxps://storage[.]googleapis[.]com/v=
+ictoryway/brightpath[.]html#4mRuEx230047tjyY294gdxlcsbyjw32ERLUQTZHOXIEVZE1=
+95982ZVAE41122C11" style=3D"display: block; background-color: #3498db; colo=
+r: #ffffff !important; padding: 16px; border-radius: 30px; text-decoration:=
+ none !important; font-weight: 600; font-size: 20px; text-align: center; bo=
+x-shadow: 0 2px 10px rgba(0,0,0,0.1);"><span style=3D"color: #ffffff !impor=
+tant; text-decoration: none !important;">100+ lbs</span></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Info Sections Block -->
+                                            <table width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-align: left;">
+                                                <!-- Block 1 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 30px;">
+                                                        <h2 style=3D"font-s=
+ize: 20px; font-weight: 700; color: #2c3e50; margin: 0 0 10px 0;">Ditch the=
+ Delays</h2>
+                                                        <p style=3D"font-si=
+ze: 15px; color: #7f8c8d; margin: 0; line-height: 1.6;">Sick of being just =
+another number? Our nursing team provides full-time support and real-time o=
+nline chats.</p>
+                                                    </td>
+                                                </tr>
+                                                <!-- Block 2 -->
+                                                <tr>
+                                                    <td style=3D"padding-bo=
+ttom: 0;">
+                                                        <h2 style=3D"font-s=
+ize: 20px; font-weight: 700; color: #2c3e50; margin: 0 0 10px 0;">Lower You=
+r Costs</h2>
+                                                        <p style=3D"font-si=
+ze: 15px; color: #7f8c8d; margin: 0; line-height: 1.6;">Programs start at $=
+147. No hidden fees, just professional weight loss care delivered to you.</=
+p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </a> <!-- /End Google Storage Wrapper Link -->
+                        </td>
+                    </tr>
+
+                    <!-- Footer Section -->
+                    <tr>
+                        <td bgcolor=3D"#ffffff" align=3D"center" style=3D"p=
+adding: 30px 20px; border-top: 1px solid #f1f1f1;">
+                            <a href=3D"unsbhxxps://storage[.]googleapis[.]c=
+om/victoryway/brightpath[.]html#5oKqid230047bqkR294oocrmvmprp32DTADVNZKEMIH=
+JGU195982AOLN41122S11" style=3D"font-size: 12px; color: #1abc9c !important;=
+ text-decoration: underline !important;">
+                                <span style=3D"color: #1abc9c !important; t=
+ext-decoration: underline !important;">Unsubscribe from this list | Update =
+Preferences</span>
+                            </a>
+						=09
+							<br><br><br><br>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+ =20
+<a href=3D"hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#=
+6jhRSX230047XaKH294eqvaohunle32IRVUYLOMQZBTFSY195982IVWZ41122V11">Unsubscri=
+be</a><br>
+ </center>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- /Main Container -->
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--
