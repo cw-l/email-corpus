@@ -1,0 +1,102 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1786579858; cv=none;
+        d=google.com; s=arc-20260327;
+        b=C9ivBLnUFj73ZneQVGfCTHIX5mwXUIYbDtiaoPeoeXmBuikw8njTpqd+Nou1EEGWEf
+         oaxRTUPksOMF5MW5x/cvdhCCLR5iqfxJYsYPOaqTew3MCZ68cMdNcQvqWLof9/LbSffi
+         NaSMOKx/8V08R+0adgau3u+qvjriv1c7m+Ido0M6Yci8siUjj/Ofng0l9yYEmuRqCrZy
+         UOiSEpWZdJrPyRh1KfmGzr7rl1mH5i7wrg8yOzj9yZT+T3UZ/C9nwO8HH2Mn77LDXK7X
+         QQUBPRBj9GRvMyBDsb5CkaEL6k8PsRhY0fDSuTe/eFqNY6WBgoNT7ounKOUFSxwpptmI
+         EYrQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=Lyw1idPfCunVa/KkBlRtVHig7fkxmvk9OM36hKNw1/s=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=AxCkfqOsTwHGnJWewOwi4KxJT0AxQvok0Y/Y9ySzbMJMvTQc5VFXbq+RXcqGXGwtw5
+         NosIr8F4FhfKqKg56A8p1l3fFlFEB54juROt5FQYkN5bp+AcGfW/Gvrw8Z/IyN8GWNsQ
+         0swcom0kHHDM4TzOv/pQgmuyjY1WsratPece5gU0S9a6N/qgqK1ZBOeynUTHWn0h0u9a
+         TFoF9hvW4MjUQKgCgxiVmvjoa5RVZAmHikJvzDE3OY1xq7ljOt8+eYqJAgS1l9TgATnz
+         0sRJhbCUFHv2wOKRtW+0xiPFK2Sw67LX6n+WUufxBbT5pClmXgOhOLCixSCS7Xmc37dA
+         DA/g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@941bs6.941bs6.5pu79c.us
+ header.s=smtp header.b=SP807yf1;
+       spf=pass (google.com: domain of
+ return@deining-arnkage.techcore.org.witnessmentity.net designates
+ 152.53.157.183 as permitted sender)
+ smtp.mailfrom=return@deining-arnkage.techcore.org.witnessmentity.net
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@941bs6.941bs6.5pu79c.us
+ header.s=smtp header.b=SP807yf1;
+       spf=pass (google.com: domain of
+ return@deining-arnkage.techcore.org.witnessmentity.net designates
+ 152.53.157.183 as permitted sender)
+ smtp.mailfrom=return@deining-arnkage.techcore.org.witnessmentity.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=941bs6.941bs6.5pu79c.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=izhzjjbvziirjp.08425395921213@941bs6.941bs6.5pu79c.us;
+ bh=Yaz14iBTg9RDzn3uY2x+K3BLlNs=;
+ b=SP807yf1L0Qc3pi/oMtY0ItclYvXIlq9fbR93FD/WS91QLxIexFAHhizoqL8HVcjTpo5UHno9303
+   W5Cz8SxPGsSJc59JCsNEpK6FZ4x3H9yroY5L0gh7MsZkV3Y5irSqpNVZk5IeL+gKTMtSAGbVlhF3
+   OLJEOj6kdZBfri8M3neqRQiMZrGBHOxYnsQPsYJaSdENyF0VHoZGi9KiXrLKif07XJR/7Q+ip7m9
+   GN7i6dwdLbNkEErMXaQszn+pgb1S6twAnQKNlBjUaBQhn+qj8ut/wAumCNKCthkLpcnY06z+i3m8
+   5A9z4TLw/Y7tsSieXRQ0CltHKaCivQ87+dUj0g==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=941bs6.941bs6.5pu79c.us;
+ b=kZpRMBQgrRQYGpiFk/qmtHX35n8SpT2pCGWytjMAaQn5H7PJVX2Oxg//YUFxJkrsrxFtgCrneNC6
+   J85AGevXDKXttikictO8CjymF2XOAHV81euQEzToS0iTxH+t0monWTWIAoGi+jsWoXIvbTFlFGrb
+   UpQX89eu68L04D/zVwVkyN0/08AKZKzfyCC58jeYseV35Zoo1FlSa1FLu4rqvWOi77HJuXgHUqp1
+   bkRaC3mT9boKzkTUMhf2NLZ7/FGrNpxVrIffocWmqEM1q+ZKe3vSaSGRXYXzQN3TZPlOEUDYphJ4
+   JaqmnZnJXCxoSk6D/uLpAQ5yTOi9U8hzt+6jzg==;
+Date: Thu, 13 Aug 2026 00:10:57 +0000
+From: "redacted" <izhzjjbvziirjp.08425395921213@941bs6.941bs6.5pu79c.us>
+Message-ID: <x5d5gg88.rlst0220.941bs6.rlstSMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: The bedroom comeback no one saw coming
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 08-13-2026
+
+18289963188005967604
+-----
+ezjgmxdmkwzzhofqrtlfcfjzrctokowkjneoyasnnqsylbdwjyxjyqhfbjjhezjgmxdmkwzzhof=
+qrtlfcfjzrctokowkjneoyasnnqsylbdwjyxjyqhfbjjhezjgmxdmkwzzhofqrtlfcfjzrctoko=
+wkjneoyasnnqsylbdwjyxjyqhfbjjh
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+ 
+
+
+<!DOCTYPE html><html lang="en"><head><title>      He stopped second-guessing himself in bed    </title></head><body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #ffffff; margin: 0; padding: 0; width: 100%!important;">    <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#ffffff;">      For a while, he kept hoping things in bed would just improve on their own.    </div>    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td align="center" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 24px 12px;">          <table role="presentation" class="container" width="600" border="0" cellspacing="0" cellpadding="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px; max-width: 600px; background: #ffffff;"><tr><td class="px" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; padding: 10px 34px 0; font-family: Arial,Helvetica,sans-serif;">                <div style="font-size:12px;line-height:16px;letter-spacing:1.2px;color:#7A838C;text-transform:uppercase;">                  A private frustration                </div>                <div class="hero" style="font-size: 33px; line-height: 39px; font-weight: bold; color: #1F252B; padding-top: 10px;">                  He stopped second-guessing himself in bed                </div>              </td>            </tr><tr><td class="px copy" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; font-size: 17px; line-height: 27px; padding: 22px 34px 0; font-family: Arial,Helvetica,sans-serif; color: #3F474E;">                <p style="margin:0 0 16px;">                  At first, he told himself it was nothing.                </p>                <p style="margin:0 0 16px;">                  Just stress. A long week. Bad timing. But after a while, he couldn&rsquo;t ignore the pattern. Things in bed didn&rsquo;t feel as easy, as strong, or as reliable as they used to.                </p>                <p style="margin:0 0 16px;">                  He wasn&rsquo;t looking for a big conversation about it. Like most men, he just wanted to feel confident again, stop overthinking, and trust his body in the moment.                </p>                <p style="margin:0;">                  Then he found a presentation built around male performance, stamina, and bedroom confidence. That was enough to make him stop scrolling and actually watch.                </p>              </td>            </tr><tr><td class="px" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; padding: 18px 34px 0;">                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #F6F7F9;"><tr><td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 18px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; line-height: 26px; color: #49525A;">                      It&rsquo;s hard to feel fully present in bed<br>                      when part of you is worried it won&rsquo;t happen the way it used to.                    </td>                  </tr></table></td>            </tr><tr><td class="px copy" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; font-size: 17px; line-height: 27px; padding: 20px 34px 0; font-family: Arial,Helvetica,sans-serif; color: #3F474E;">                <p style="margin:0 0 16px;">                  If performance, firmness, or confidence have been slipping lately, you are not the only one. A lot of men are looking for something that helps that side of life feel more natural again.                </p>                <p style="margin:0;">                  Sometimes the biggest shift starts when a man finally pays attention to what his body has been trying to tell him.                </p>              </td>            </tr><tr><td align="center" class="px" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; padding: 26px 34px 0;">                <table role="presentation" border="0" cellspacing="0" cellpadding="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td align="center" bgcolor="#5B6C7C" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #5B6C7C;">                      <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#4IgmWA233431TgQZ1120psiyautbti32KYOMXCXYXKCQKEN195982UEUB41122K11" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none; display: inline-block; padding: 16px 34px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; line-height: 20px; font-weight: bold; color: #ffffff; background: #5B6C7C;">WATCH THE VIDEO</a>                    </td>                  </tr></table></td>            </tr><tr><td class="px" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; padding: 24px 34px 0; font-family: Arial,Helvetica,sans-serif; font-size: 15px; line-height: 24px; color: #5D666E;">                <p style="margin:0;">                  Confidence feels different when you no longer have to question what will happen next.                </p>              </td>            </tr><tr><td class="px" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-left: 22px!important; padding-right: 22px!important; padding: 30px 34px 28px;">                <center>                  <font size="2px">You may unsubscribe at any time. <a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#5fkOxv233431fOPe1120pzjvdixizf32FFZAYCYWDBDZYUH195982ZNBW41122S11" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;">Unsubscribe</a><br>                  C/O Biofraga 19655 E 35th Drive. Suite 100 Aurora, CO 80011</font>           <br>   <br>   <center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+<p>
+  
+<a href="hxxps://storage[.]googleapis[.]com/victoryway/brightpath[.]html#6IxJhS233431vTye1120apynuepfgh32WXTALFJKLNJFSMQ195982UGHR41122T11">Unsubscribe</a><br>
+ </center>     </center>              </td>            </tr></table></td>      </tr></table></body></html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--
