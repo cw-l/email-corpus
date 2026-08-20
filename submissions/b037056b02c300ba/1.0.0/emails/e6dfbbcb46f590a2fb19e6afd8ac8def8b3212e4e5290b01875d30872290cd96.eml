@@ -1,0 +1,169 @@
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=wXD9FJF5kCj9R0jLIIJ2Ebij9NIxACUwlF66/PdHys6/9X/A4DeNHVxkTuTail9O9iBxme1TWsc0AM7EBk6aBYVA1XM3+rftA1wLwXPxE3/6UGMano9Ib1Yg9aeiwS/M4Tg0/kGZgNWPyCtRhW7zBhtiVu58EHa2CP9rxlW3fjt22CxMfR++VmlA9auTZfHjA3xfr6ndT3z1GXYkfnl/pp1Fhh+RcUMC8UP/18Gv/PR2cZwj3+PbMjNWJNfrFrDmFv7bp31GlDJt9HwV6LpchY+gng1tzUoNJlsvek8RwxG69Tpt6dvEQfjPIYeVyPxZ0m4QDGpgQVWVCLnGHw6ieA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=WWK5ny7iuK3DkT4Twm7TJlsVq3fe/5sc0CiHbqc5AFA=;
+ b=hNWGeLxtzJE4KMk4eSSFVy3f5qkJagipcKh3OCuDIjWwoRp5UZ1YVhLN6vzFU1OQcjDFc+JyMPb1PwmNCojTEQIHXwTypZLUOkcEE8Q5a2TyynSSc3fc9d4EmhIatUW0jyJ2OYE025BcvRCQR/iE5iipl9ifKBpP5njrFTYgC1x9oqiV5UbSoKRc7q93w7EvTmwBOHjVRNwpmgDOf4890JKHOpJ6+evocMtKGNerPgOB5s7GaAmUBn7SM4BV2g6Pk595qVqzogIbhSLX8NKJUy5h/J0qVR44HlBnBXj2kgxX2+7H6M1/6OBuFfacGRTaC60DGzyjcnl+xoZeYVhZNw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 74.125.225.64) smtp.rcpttodomain=hotmail.sg
+ smtp.mailfrom=madrasah.kemenag.go.id; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=madrasah.kemenag.go.id; dkim=pass (signature was
+ verified) header.d=madrasah.kemenag.go.id; arc=pass (0 oda=0 ltdi=1)
+Authentication-Results: spf=pass (sender IP is 74.125.225.64)
+ smtp.mailfrom=madrasah.kemenag.go.id; dkim=pass (signature was verified)
+ header.d=madrasah.kemenag.go.id;dmarc=pass action=none
+ header.from=madrasah.kemenag.go.id;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:C82B00F9EDAE1C49FACB5BAE32D88CAECC1EA31C5A95E39297E212DFA6BD454F;UpperCasedChecksum:A40B7ACAAE69184A54AE728EE07DE7E749476A7836BA9C2028EF253A8ECABFDA;SizeAsReceived:4204;Count:20
+ARC-Seal: i=1; a=rsa-sha256; t=1786976190; cv=none;
+        d=google.com; s=arc-20260327;
+        b=bsPLi3u/9uxbUmU23d4NsI//UdTRrMPJ5szLSGA3BL4F0IFkBDaNzjY93ChfF3fGGQ
+         H+OC+9cyMlkayM2N1LTGV0izLWydT2BwV7UBvUpYI0KdytAbXUwWCedZfH/4Kx6V4EK2
+         QKrcnrEwdzO4GRJaHPuaGDljgv/gqrdCNFhMtp52mRXl5U1Yqjuc3yVMuA6Wlq/oYLGp
+         Si1MLgAo4XB3myg+5b2OezV3OPJZXQ9uKm5GOwPkR3ZdzuwOXbGuBi2fbED1lRMkwhdW
+         y90dFunR3jzoyL7rx468olbfioJc6E1X8sLgtMb+SzImRgdOW3ViGnOph8EHbAbRycNG
+         qhag==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :dkim-signature;
+        bh=WWK5ny7iuK3DkT4Twm7TJlsVq3fe/5sc0CiHbqc5AFA=;
+        fh=7PPgTpvdP6uYNwLogLJBqF84otpHnDk2+B6CSfFNByY=;
+        b=X0goXwGIikLLftGhLb07rF26jyaqaQlX6nyZagWXrZWGpWRjpOQ/TrkVOQOSARf+nn
+         oAHPPrwpzgWJWHxqVa6HrWGTSPtSOmVxcWkCZ+t2v/nU+nipz5paoHKSOxAB1w0bmXP4
+         3bXVmvz+3wbgHfznad4aLKhBa0yajIVQdXsqhxQUrFAYQyLkWhD5/YX5ZWvUfM3wjtCm
+         l35+DysiUI2ZcLgSgcpgWuHav6zQLeqTU6tBR7sqJYrE0YXzGbxHDWioVqmqdWl9hXwC
+         8MpypbbGoecBxvYHOAexdAilMoZ5FxIiA8zxSOdjHxuNphruu1H5qH/rPH8Ns/zWDtLl
+         djiA==;
+        darn=hotmail.sg
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=madrasah.kemenag.go.id; s=google; t=1786976190; x=1787580990;
+ darn=hotmail.sg;
+        h=content-type:to:subject:message-id:date:from:reply-to:mime-version
+         :from:to:cc:subject:date:message-id:reply-to:content-type;
+        bh=WWK5ny7iuK3DkT4Twm7TJlsVq3fe/5sc0CiHbqc5AFA=;
+        b=QwiQhxCeP9g6EPobUSQFulZk9P0iEGgmt4fwvhYjN5k7PPpw2V56XDNj9/4OtRC1WG
+         JQv3gCDGRpRNlAej7CUKRkdvtRkRRjmcvkTZvTNUlX9MWj13+V6cwfGls2PDxIhKhEEe
+         f7/zexYcpa3w8qj38oQ8urGy7lvDm9t7MUu2k=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1786976190; x=1787580990;
+        h=content-type:to:subject:message-id:date:from:reply-to:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to:content-type;
+        bh=WWK5ny7iuK3DkT4Twm7TJlsVq3fe/5sc0CiHbqc5AFA=;
+        b=hmIRSaYB/GWmMzxq/xFEyqAn82jm2tB2NQeKQzqnsMteJlHlb1FlwqrD8ALqNohsWK
+         PF3FKSWX3HmbvmYqWKz0HevJny2/NY3Ox3NyT9tNdmNkEfm4qAy5K/4x5plkT+Yd8zTD
+         lZ1Weuh0q/S4Lx6Aykl/q3zgqJmiw8hLqItqAuN/ARx5gHOZ+Ye9adLnOLt4ONM2yuQ0
+         tEZx82+qwOVD4NjutmsxBy0jlxzEzoSpSWnEeqFuJTvoV6PMh/zbxd/5a1FsZPXrk69u
+         PeLqY08VUR0m1WBHEGEfqd7Ri52M3yL50nFIVPCCEf5IIY5uXqMQtBOFqzn2QZM9XGeS
+         4o7g==
+X-Forwarded-Encrypted: i=1;
+ AHgh+RpHRiSGDgPLn/3b26nsuujD0Qj7u7UPEXeeeTk9gf0em96HOkC4tqkfeUqtHWgMGndkRWeCR+WjCqmGjlE=@hotmail.sg
+X-Gm-Message-State: AOJu0Ywuj+e2cuyEc4owf1oWQzRYvB40VjPe4Q9QCjVYES5B4dIGsBko
+	BoII1xKuupRBDSLWPcSrFBJ+jaDL52ilSob0+Erj6+UpYLXkpxLwHStZzp3CqqUsRC8InOZQDra
+	FTvIajAfd20iUc6duWHb14S1fnmt2wkDg331U3Aw20A==
+X-Gm-Gg: AR+sD12Y7WIPRw56iurnRE5kXRa6RU7kPtTQR6ARJNPXjwqcSCluDH3qAfut0IVCytA
+	+m7pSBr4/d2016WDm5Eh7uD78lSp4397gIQTpxTFHbRJCouaAi9ocOMtrAa978adBM5AJVffQ9C
+	DL6TxEgTa3/tKpxcC5Riciy7QAJz2Mr0gGcYIj/GusENPv+wg5wkl52+M/HoII6sCp6pAo7eetY
+	gcwvhy8LyU2REzJJIx6FlSdD7s1Ay7DFMLM8rBzVOBa2HHbGCy8DGsAPE8euxklCjP1Z8UWcSee
+	apbk/z1wh/iFLZt6c9ogR/t+qzErQM+Gh7fmimRQgybBjJ+TeMRD7J9yNeD/1Pb8ShH/t0w5HA0
+	Tja0=
+Reply-To: infor5854@gmail.com
+From: Rosalie Charles <sahidah9@madrasah.kemenag.go.id>
+Date: Mon, 17 Aug 2026 17:15:36 +0300
+X-Gm-Features: AcwNN1XRIc9DZ-zzrHK7NiA0pcJfMJb1ADY7tX6GmWhi1NokpnNTGC5HzGzoQDI
+Message-ID: 
+ <CAA-o+oaegxbk=r5NH8tFgSUHMRj-rM7faGzai1svDhs=RHab7g@mail.gmail.com>
+Subject: Give me your word never to betray my trust in you
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000f9bcdc06593ed049"
+BCC: <redacted@redacted.com>
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Aug 2026 14:16:31.4900
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 35938f0f-fc59-4fd0-0fde-08defc6a22de
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SJ1PEPF00002311:EE_|SJ2P220MB1378:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SJ1PEPF00002311.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/17/2026 6:33:23 AM
+X-MS-Office365-Filtering-Correlation-Id: 35938f0f-fc59-4fd0-0fde-08defc6a22de
+X-Sender-IP: 74.125.225.64
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|3069299007|5149299006|36030799006|9020799019|970799063|39010799015|46080799009|29090799004|32020799003|34130799006|2700799033|3412199025|440099028|1370799030|1380799030|1360799030|2607281247196008|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Aug 2026 14:16:31.4508
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 35938f0f-fc59-4fd0-0fde-08defc6a22de
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SJ1PEPF00002311.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2P220MB1378
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6412601
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0315.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--000000000000f9bcdc06593ed049
+Content-Type: text/plain; charset="UTF-8"
+
+Hello dear
+
+My name is Ms. Rosalie Charles, widow with stage 4 cancer. I saw your email
+in my search for someone I can trust to assist and utilize the proceeds
+realized from my estates and investments for charity, basically helping the
+less privileged, widows and orphans because according to the doctors my
+days are numbered. So don't be surprised reading from me today but consider
+this a divine intervention.
+
+I am willing to give you a substantial part of the funds for your personal
+and family needs, so give me your word never to betray my trust. I desire
+to entrust the money in your care and it is my last wish to use this money
+strictly for charity thus, I seek a sincere heart to actualize this as my
+health no longer permits me. I have to rest now and will explain further
+when I hear from you.
+
+Regards,
+Ms. Rosalie Charles.
+
+--000000000000f9bcdc06593ed049
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">Hello dear<br><br>My name is Ms. Rosalie Charles, widow with=
+ stage 4 cancer. I saw your email in my search for someone I can trust to a=
+ssist and utilize the proceeds realized from my estates and investments for=
+ charity, basically helping the less privileged, widows and orphans because=
+ according to the doctors my days are numbered. So don't be surprised readi=
+ng from me today but consider this a divine intervention.<br><br>I am willi=
+ng to give you a substantial part of the funds for your personal and family=
+ needs, so give me your word never to betray my trust. I desire to entrust =
+the money in your care and it is my last wish to use this money strictly fo=
+r charity thus, I seek a sincere heart to actualize this as my health no lo=
+nger permits me. I have to rest now and will explain further when I hear fr=
+om you.<br><br>Regards,<br>Ms. Rosalie Charles.</div>
+
+--000000000000f9bcdc06593ed049--
