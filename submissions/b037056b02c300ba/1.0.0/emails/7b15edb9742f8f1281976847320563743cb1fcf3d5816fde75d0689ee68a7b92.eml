@@ -1,0 +1,249 @@
+Authentication-Results: spf=fail (sender IP is 34.182.155.225)
+ smtp.mailfrom=searca.org; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=searca.org;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:3BAE0FF9B8F4FA8FE3F4CFD274EB943C784906B3490C0AC133A393591AEBB06A;UpperCasedChecksum:969C4B6A8730DCEAF3A4DFA0A1259FA1026765B2CBCA24B8CCE3EFDFB01F84FC;SizeAsReceived:319;Count:7
+From: 60 Minutes Health Team <support@searca.org>
+To: <redacted@redacted.com>
+Subject: Why traditional treatments miss the root problem. 60 Minutes reveals.
+Message-ID: <daff49b4280749b682b11e6c4ec43421@searca.org>
+Date: Thu, 20 Aug 2026 17:08:14 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Aug 2026 17:08:14.6694
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ fbf5f11f-87a0-43ba-b9c7-08defedd9f47
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DU6PEPF0000B620:EE_|SJ2P220MB0952:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DU6PEPF0000B620.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/20/2026 10:39:11 AM
+X-MS-Office365-Filtering-Correlation-Id: fbf5f11f-87a0-43ba-b9c7-08defedd9f47
+X-Sender-IP: 34.182.155.225
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|1290799033|46080799009|11119299006|2700799033|32020799003|970799063|3069299007|41010799009|1680799066|34130799006|10300799038|9400799043|9000799056|60050799012|5139299004|6100799021|7112599012|1602099012|30041999003|2607281247196008|6022199012|8011999015|56899033|1380799030|1370799030|1360799030|4302099013|440099028|3412199025|7310799015|2406899039;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Aug 2026 17:08:14.4170
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ fbf5f11f-87a0-43ba-b9c7-08defedd9f47
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DU6PEPF0000B620.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2P220MB0952
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3720548
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0339.004
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/=
+TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns=3D"hxxp://www[.]w3[.]o=
+rg/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>60 Minutes: Health Discovery</title>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #e5e5e5; font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+
+    <!-- 100% Wrapper -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #e5e5e5;">
+        <tr>
+            <td align=3D"center" style=3D"padding: 20px 0;">
+
+                <!-- 600px Container -->
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"600" style=3D"background-color: #ffffff; max-width: 600px; border-top=
+: 5px solid #b30000; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+
+                    <!-- Top Navigation Bar -->
+                    <tr>
+                        <td style=3D"padding: 15px 20px; background-color: =
+#000000;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tr>
+                                    <td align=3D"left" style=3D"font-size: =
+24px; font-weight: bold; font-family: Arial, sans-serif; letter-spacing: -1=
+px; color: #ffffff;">
+                                        60 MINUTES
+                                        <span style=3D"font-size: 15px; fon=
+t-weight: normal; color: #999999;">| CBS</span>
+                                    </td>
+                                    <td align=3D"right" style=3D"font-size:=
+ 12px; font-weight: bold; color: #ffffff; text-transform: uppercase;">
+                                        <span style=3D"color: #b30000;">\u2=
+022</span> Special Feature
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Headline & Kicker -->
+                    <tr>
+                        <td style=3D"padding: 30px 25px 15px 25px;">
+                            <div style=3D"font-size: 13px; font-weight: bol=
+d; color: #b30000; text-transform: uppercase; margin-bottom: 8px;">
+                                A New Discovery About Diabetes
+                            </div>
+                            <h1 style=3D"font-size: 26px; font-weight: 800;=
+ color: #111111; margin: 0 0 15px 0; line-height: 1.25;">
+                                The Real Reason Behind Unstable Blood Sugar=
+:
+                                <span style=3D"color: #b30000;">Vitalflo Nu=
+tri Blood</span> Exposed
+                            </h1>
+                            <div style=3D"font-size: 14px; color: #555555; =
+border-left: 3px solid #b30000; padding-left: 10px;">
+                                By <strong>60 Minutes Investigative Team</s=
+trong> | Aired Sunday
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!--  HERO IMAGE WITH OVERLAY BUTTON (INSERT IMAGE HERE=
+)  -->
+                    <tr>
+                        <td style=3D"padding: 0 25px 20px 25px;">
+                            <a href=3D"hxxps://storage[.]googleapis[.]com/s=
+bhgobld/ls" style=3D"display: block; text-decoration: none; position: relat=
+ive; background-color: #000000;">
+
+                                <!-- YOUR IMAGE PLACEHOLDER (Full width, re=
+sponsive) -->
+                                <img src=3D"hxxps://m[.]media-amazon[.]com/=
+images/M/MV5BODk0YzQ3ZTctMjk5ZS00YTZkLWIzNWItMGM3YTRlZmNlYjdmXkEyXkFqcGdeQX=
+NvbG5vbXM@[.]_V1_[.]jpg" alt=3D"Watch 60 Minutes Report" width=3D"550" styl=
+e=3D"display: block; width: 100%; height: auto; border: 1px solid #dddddd;"=
+>
+
+                                <!-- FAKE PLAY BUTTON OVERLAY -->
+                                <div style=3D"position: absolute; top: 50%;=
+ left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; ba=
+ckground-color: rgba(179, 0, 0, 0.92); border-radius: 50%; border: 3px soli=
+d #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                                    <div style=3D"width: 0; height: 0; bord=
+er-left: 22px solid #ffffff; border-top: 13px solid transparent; border-bot=
+tom: 13px solid transparent; margin: 23px 0 0 28px;">
+                                    </div>
+                                </div>
+
+                            </a>
+                        </td>
+                    </tr>
+                    <!--  END IMAGE BLOCK  -->
+
+                    <!-- Body Copy -->
+                    <tr>
+                        <td style=3D"padding: 10px 25px 30px 25px;">
+
+                            <p style=3D"font-size: 17px; color: #333333; li=
+ne-height: 1.6; margin: 0 0 18px 0;">
+                                If you or a loved one suffer from Type 2 sy=
+mptoms or unstable readings, you need to
+                                watch this presentation immediately.
+                            </p>
+
+                            <p style=3D"font-size: 17px; color: #333333; li=
+ne-height: 1.6; margin: 0 0 18px 0;">
+                                A viral 60 Minutes segment reveals why trad=
+itional treatments often miss the root
+                                problem. Furthermore, the newly unveiled <s=
+trong>Vitalflo Nutri Blood</strong> method
+                                allows individuals to optimize glucose abso=
+rption safely from home.
+                            </p>
+
+                            <p style=3D"font-size: 16px; color: #333333; li=
+ne-height: 1.6; margin: 0 0 20px 0; background-color: #f9f9f9; border-left:=
+ 4px solid #b30000; padding: 14px;">
+                                <em>&quot;Day 7 and my sugar dropped to 97.=
+ I honestly cried when I saw the meter. Thank you, Dr. Phil.&quot;</em><br>
+                                <span style=3D"font-size: 13px; color: #666=
+666; font-weight: bold;">\u2014 Linda M., Verified Viewer</span>
+                            </p>
+
+                            <p style=3D"font-size: 17px; color: #333333; li=
+ne-height: 1.6; margin: 0 0 25px 0;">
+                                Watch the full investigative report now to =
+discover how this natural protocol works
+                                before the clip is removed from the web.
+                            </p>
+
+                            <!-- CTA Button -->
+                            <div style=3D"text-align: center; margin-bottom=
+: 10px;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/sbhgobld/ls" style=3D"background-color: #b30000; color: #ffffff; font-si=
+ze: 19px; font-weight: bold; text-decoration: none; padding: 18px 32px; dis=
+play: inline-block; border-radius: 4px; box-shadow: 0 3px 6px rgba(0,0,0,0.=
+2); text-transform: uppercase;">
+                                    \u25ba Watch The 60 Minutes Report
+                                </a>
+                            </div>
+                            <div style=3D"text-align: center; font-size: 13=
+px; color: #888888; margin-bottom: 20px;">
+                                Broadcast on CBS \u2022 Currently streaming=
+ online
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style=3D"background-color: #111111; padding: 25=
+px; text-align: center;">
+                            <div style=3D"color: #ffffff; font-size: 13px; =
+font-weight: bold; margin-bottom: 8px;">
+                                60 Minutes Medical Coverage
+                            </div>
+                            <div style=3D"color: #777777; font-size: 11px; =
+font-family: Arial, sans-serif; line-height: 1.6;">
+                                Sunday at 7 p.m. ET on CBS and Paramount+ \=
+u2022 Sunday starting at 4 p.m. ET on the CBS
+                                News app.<br>
+                                =EF=BF=BD 2026 CBS Interactive Inc. All rig=
+hts reserved.<br><br>
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/sbhgobldunsb/ls" style=3D"color: #999999; text-decoration: underline;">U=
+nsubscribe
+                                    from Health Alerts</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

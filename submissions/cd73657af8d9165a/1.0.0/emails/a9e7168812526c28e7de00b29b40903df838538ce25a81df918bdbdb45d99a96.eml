@@ -1,0 +1,783 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1787254313; cv=none;
+        d=google.com; s=arc-20260327;
+        b=XcZ49gAgadlcIqB9+VVSSIbiPlWY+IRpd0KhjS0+6OS//XhnjL0XComyNE16ezbAEe
+         vQGdtq46fkbgbMeCOZ7ryC4KyYv149meVF+qi8+s0H8NITnVtfO82SP4HAg/s9fsxQjc
+         tW5DqAWrN+VNva1aob/zC38+JksRTPkvQi2FdzFBnNpsbmhC5mcQcfA6pFmEvSoLklr9
+         mE8yk+qAEPI678sWetQj9vKDjq3LI2M7lIZS3joKVMM3nhkoOolY+jSI4Ttp5NvnKbqx
+         lKxwS4nZCv/KvwtaGhrpl5E1lRzGlu2DO/LLpaaeWQhOav5Ybxw7zdu31a1m4btIRplM
+         q4yg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=E6cXxclBX1ytrrCCHpaNaGuxU/LliZvtgUSNgg9lI14=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=DguqealG6NrUK6a4AIM8Q+ytsnFrGSwdLbz01KKlREwX5imEd5liRxF39tSNPGVlnm
+         rOJYPRBuBACYa75ZUglgFuJJ38eU1UamubOXwQ6+7CyZhAiqj/DdSvhOqOwU2cXMtJzY
+         NF4JwWgwMDv9ye3B/RCeAEFG3YIsoB52j+CoDn6Hvje1MIy1nfLOhDwiodo4hE9gEm+d
+         wh/TngTiRj43rxXaEbTH7y5wrC4bNTW/xzCoVxtbdsAukXvUnodaMcR2AzdMAOmfE8UB
+         Vz3YSwrn5IhwWp81flLa1T1pVTeBx1CiffhrPOKaQyNRAux54v6p+Z0xNZ39lEnSCHmM
+         SJ8w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bcraxmdp.supervex.brightix.my.id header.s=smtp
+ header.b=VDiij4sa;
+       spf=pass (google.com: domain of ikxyguluilrgv@supervex.brightix.my.id
+ designates 46.31.78.62 as permitted sender)
+ smtp.mailfrom=ikxyguluilrgv@supervex.brightix.my.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bcraxmdp.supervex.brightix.my.id header.s=smtp
+ header.b=VDiij4sa;
+       spf=pass (google.com: domain of ikxyguluilrgv@supervex.brightix.my.id
+ designates 46.31.78.62 as permitted sender)
+ smtp.mailfrom=ikxyguluilrgv@supervex.brightix.my.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=bcraxmdp.supervex.brightix.my.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=kygdhbllinvspqpiffuaz@bcraxmdp.supervex.brightix.my.id;
+ bh=C7aniQyw/pUeVO/TbAVl50aVuHM=;
+ b=VDiij4saOmK1v47uF/6ZBG0cuAg3nkv4iodKk+l63uTQ0u7aKlRmaGr/3ejiVAzOkMjHNGLasnou
+   /Z3VOX7WJnDcSwPJwap6vTDW68+Hh/KrJMvJXwqzfcjiQmR3N79DP4qPeIVadeNcklKpIvfkhbq0
+   sCNUeBNBuOHGY3eqzPVpe2F7ug6Aj9m3a2GGazW0l2nyq4uTNQR/hCYQRzIWFgFbD/rVspLUxc1q
+   2KN64s7svBG7YhVtEcuWcUertI7ayRmX85YD1rT7HDOmcr2MLCPpij8mXi/A8cmtQHMH7MIxK+K9
+   rHmv/lyGnSEeV9aHx+NJ4G8XOKnLFjymIK44ZQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=bcraxmdp.supervex.brightix.my.id;
+ b=nNU6rwpZdakmaHQZaAa0Uf0GdKQboqA9VGzLXM7H9IqT7MK3gKl4tg7DuEj+Wj9RUaOP0ukZS2cb
+   4rPsCAVrruSvyshmMWmoh7dt92WvXvuQv8YnrjeSg3gwIMXNbYUEaib2aiuV1l+0NaUs661leQyt
+   JEivl9u5meuriEpU5XTy1AeCMvefBMaM7b4VH2lwc473adzIGSSqHNsIJa7BmZuCBr+TIwHSVz0y
+   sCCOgX4H2EbL97tnqysamvxh9kGmfGfMy4M+7iFcf9qUIx9rO1FXTcnJbGbE2ToDaF/hp7NCTkx4
+   bqTYiy3EhimzUHmd7fFaQ4NhmysOvKvIL0n79A==;
+Subject: 
+ =?utf-8?b?77+977+977+977+977+977+977+977+9IEZlZWwgTGlrZSBZb3UncmUgSW4gWW91?=
+ =?utf-8?b?ciAyMHMg77+977+977+977+9IEFnYWluIFdpdGggSG9yc2VGaWwgRGFpbHnvv70=?=
+ =?utf-8?b?77+977+977+977+977+977+977+9?=
+From: HorseFil_Power <lteicwr@bcraxmdp.supervex.brightix.my.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.62
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <fingmespuaraiflurluwztqyhocgue@30jnr55xdb81i90r25>
+List-Unsubscribe: <http://orclars.es.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Thu, 20 Aug 2026 19:30:11 +0000
+Sender: kygdhbllinvspqpiffuaz@bcraxmdp.supervex.brightix.my.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+
+
+
+</br></br></br><center>
+<a href="hxxps://storage[.]googleapis[.]com/gootrackinginc/campusepaper[.]html#4mrlJR240655kQRj1133bxxsozvjlz32LWZQNOEVRASGXZY195982KPPP39073d7" style="text-decoration:none; color:black">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Routine for Men's Performance</title>
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            color: #212529;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ff8c00;
+            padding-bottom: 10px;
+        }
+
+        .header-img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .headline {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: #cc0000;
+        }
+
+        .video-container {
+            position: relative;
+            display: block;
+            margin: 0 auto 20px auto;
+            cursor: pointer;
+            max-width: 320px;
+        }
+
+        .main-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .sub-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75px;
+            height: 55px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.6));
+        }
+
+        .body-text {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0b2e59;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+
+        .comments-section {
+            padding-top: 10px;
+        }
+
+        .comment-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e9ecef;
+        }
+
+        .comment-name {
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            font-size: 15px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .comment-actions {
+            font-size: 13px;
+            color: #6c757d;
+        }
+
+        .cta-btn {
+            display: block;
+            background-color: #ff8c00;
+            color: #ffffff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 30px 0 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background-color: #e67e00;
+        }
+
+        .footer {
+            background-color: #0b2e59;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <div class="header" style="font-size: 24px; font-weight: bold; color: red;">
+                MEN'S HEALTH NEWS
+            </div>
+
+            <div class="headline">
+                Breakthrough Natural Method for Men's Stamina and Energy
+            </div>
+
+            <a href="hxxps://storage[.]googleapis[.]com/gootrackinginc/campusepaper[.]html#4JGqEr240655SKyG1133hexuobetgs32OXFNYUPNEDCTFNH195982BHYJ39073v7" class="video-container">
+                <img src="hxxps://i[.]imgur[.]com/fVaggcD[.]png" alt="Gluco" class="main-img">
+                <!-- YouTube style play button SVG -->
+                <svg class="play-button" viewBox="0 0 68 48">
+                    <path
+                        d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 .13 34 .13s-21.79 0-27.1.14c-2.93.78-4.64 3.26-5.42 6.19C.13 13.05.13 24 .13 24s0 10.95 1.35 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 47.87 34 47.87s21.79 0 27.1-.14c2.93-.78 4.64-3.26 5.42-6.19C67.87 34.95 67.87 24 67.87 24s0-10.95-1.35-16.26z"
+                        fill="#ff0000" />
+                    <path d="M45 24L27 14v20z" fill="#ffffff" />
+                </svg>
+            </a>
+
+            <div class="body-text">
+                <strong>(Men's Health Protocol)</strong> It's the sensation that has doctors talking. No expensive
+                treatments, no exhausting exercises, just a simple daily trick.
+            </div>
+
+            <div class="body-text">
+                We are receiving thousands of comments from viewers who used this routine to restore their stamina,
+                improve their vitality, and regain their youthful confidence in just weeks.
+            </div>
+
+            <div class="subheading">Top Viewer Comments</div>
+
+            <div class="comments-section">
+
+                <div class="comment-box">
+                    <div class="comment-name">James Walker</div>
+                    <div class="comment-text">I honestly didn't believe it at first, but after just two weeks, I noticed a huge difference. My stamina is back, and I feel like I'm in my 20s again. My wife can't stop smiling!</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 3 m</div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="comment-name">David Collins</div>
+                    <div class="comment-text">This trick completely changed my confidence. I was embarrassed to talk about it, but now I'm proud to say everything works perfectly again. Highly recommend it!</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 11 m</div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="comment-name">Ryan Mitchell</div>
+                    <div class="comment-text">I've tried everything on the market, but nothing worked like this. My performance and size have both improved. I feel incredible!</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 13 m</div>
+                </div>
+
+                <div class="comment-box">
+                    <div class="comment-name">Jason Reed</div>
+                    <div class="comment-text">It took about 10 days before I started noticing results, stronger, longer, and much more satisfying. Thank you for giving me my confidence back!</div>
+                    <div class="comment-actions">Like &middot; Reply &middot; 16 m</div>
+                </div>
+
+            </div>
+
+            <a href="hxxps://storage[.]googleapis[.]com/gootrackinginc/campusepaper[.]html#4bcylE240655QuUc1133zdbhozjkhz32TXMHKVEYDECFSPG195982CRHG39073m7" class="cta-btn">
+                Watch The Presentation Now &raquo;
+            </a>
+
+        </div>
+
+        <div class="footer">
+            Men's Health Breakthrough &middot; Health News<br>
+            <a href="hxxps://storage[.]googleapis[.]com/gootrackinginc/campusepaper[.]html#5XOTaC240655ZcHI1133gwtkhworun32FMUIDTZBJXZOFOL195982VSVS39073D7">Unsubscribe</a> | <a href="#">Manage Preferences</a>
+        </div>
+
+    </div>
+<tr>
+<td style="font-family: 'Trebuchet MS', Geneva, sans-serif; font-size: 10px; color: #999999; padding-bottom: 20px; line-height: 1.6; border-top: 1px dashed #cccccc; padding-top: 15px;">
+To Unsubscribe Click
+<a href="hxxps://storage[.]googleapis[.]com/gootrackinginc/campusepaper[.]html#6JcnGp240655rCqE1133rjdzarsktw32GUJCEMDODZAPHUK195982UCER39073z7" style="color: #777777; text-decoration: underline; font-weight: bold;">Here</a>
+</td>
+</tr>
+</body>
+
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object CYJNUPUOSODWWHKIPCEESAEAHLCKJDYINSJPNNJBBMGZUOAKJXWPGPXFQKZR>
+
+Dear YSYGMBMUUWIPPDSIYPTFDO apvrsuksiqpzlhjxifwgsk,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is qpqexumcowuauofxeiwqgxzwsvbr.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi zyvnfbmkqskbwykqee,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi zjmcdagwslyybljewtwedquv,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: sdkopjpbowyuqvtkwdtdvillui
+ Site ID: tehaxirsrxukpbjkplhzpyxwa
+
+=== Your Account Console ===
+
+Thanks again!
+Team SIOPNMDFFFGGUVJITJRNTS
+
+Powered by PEVVKNREUXLBIPEAYRDTRT 
+
+</title>
+
+Dear RNQVXEPVWEKPMBZRDDCYGNSKO gwvkgqmeapwpybuawkjessuapg,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is izicmypujkexsyrdygiugvosp.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood ARYQAKEIRNOKWCRIYXGKYM,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+KHMJUSEQKFMKREULBPPKJOQBXZOOONPRYFTWTWKVSYFYLGTNXALUIORGDTIOAMMRMMNZLNJKPEIBWKDHNKWQOJYXPFURZHKKMGLJQUJEIRQPVUGNMSMZUAJXAMBAIKRDLFSRGXXXBHYWNAFCAGZBMWCBBHYUHSRVXZEUWRYJFBRLEKKZOJAOIKSXBNPGDXACVMTMBNHG
+
+ Hi VWPNFCBKKXGOOLEGGDBBSS,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+wbkqyvgrgjpzuetmxvrcpmfughealrrpoyrjsegugjeihaibajcjifwtwywnzjbecmfkxlmiapdouwvruedbftvuxltpdnfqfmbknpfcziozdkkktodaqriovxhmipkbpymvjpgksljeavtbgmhxlyirmxuwdhyloemupyuyefmsaxszctrukwaaapzjldyukrdkvdij
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi V35FZ18MU14RDRPAOF1P244DU,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team WEEFKQRYBEUVNZNMUEYRVA
+Powered by JSMXDIHEIRMTXCQJAOCPUP
+
+Login Name: HHYTGZMGSNQRGYGUXPVYIU
+Password: YNBLFDAZLUZLAJXIJZNEFH
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: DPX
+Password: NZTTMJORHDQDAIBXFERIGA
+
+	51A3AGTXCXX5F6LQPC OTM52H6OIBBUXN2 75I642Z27EMWF A3WLPUEH2CKUA993YH 3OK4AG4WSQX06A5 8SYOAL3KW3MB3 3A7WLRDVCU1RCEC1XK 
+	5FS7XRM64D9USL4JZW 6SHWM2S68FYEQGY C1EXN7LWIH0GK TEX4TK2P71ZXDAFE2N OYSSQKXOFBEELGE IUZH6KZTD2QDU R2B7JXJ70RAYOURZH4 
+	UKJ51INQZL0DC1N YAPAU575N6TFB LW0E10DQEPVSUPZJPS Q5S9INOD12DU1MS PLYL35RVAZ0TT 0UNAB4YXP0N7Z3RAXZ Y2UL3OSF36QM5B1
+	WK5KI3N14A43A XF827YGPI55U21KYGU 8OZFGWV4XKZ5GTP 5OY6ENE1WSBG6 MLYCTEYNNHL5IWQTU2 WUABC125KPZ7B7W 14ZZVHF17RWUV 
+	AJZ1EVR4LP524VXDFA ZFF5Z5CI82AGVEO 4VZUI5LE2PW25 12MTFIXMGVQ9O3YFVI 3RC8BRKAL68NZRU 6FGBDW89O41LG 0M0CD0NWIZV5LJYZPN 
+	J5CT7PRU90BPU6X 5IIMUG0Z2BBET 3W9AWRA63S8J79LA8E MHJ44XT662QOEBJ 2SS7DQA1JLJ9J IU56XJ0307ONJEDGZJ 2OG9CCV5U518NP3 
+	S0H4RV7S2034F R5SKCK744FPAI6IBW0 Z7GZJGKETYIH48J HHY7QMU24VJB8 EDZWEZDHFL9VW8XJNE NUV4KW6T1P4NOCY VMB4M393QS31P 
+	ROZC0LV05IWDGRBHPO 9SZX3Z2IUXTYY1L R7JYXKI98JNOE 4GLGGS1OGFN65DABR4 9XFFY964KX3ISRG R9JHGK5YSSG53 UHG0Q723ZH3E6S09H6 
+	A4YU75PAXMDFQVI B9AU6AQ496QBC ZBYDOMFQMDAN83US95 K854966FM4HSA0V MA9ZAPJ2ZEPUC LDL35JWS3P35GTT1GO FGG2KO7AUBRFKJ0 
+	QLQRW10565URI ZOIXSBGFN0TBH7YAPD PIC56J0XD77CNA7 A29KPOWCVASZ3 LBBOJ7XFHE1MD0STJ9 CLOYDRLM6B9QVG0 CZZ32J773DKVH 
+	CJIR3TTSPVHX8EKP8M U8900604E2R6V71 Q3UFCCS3DCA3S IX1DF8QYK69109TN2Y 6UM7GMPRHZ69N3R PFZEJ9YW417ZS VP3K6ADM2XC37TRQF5 
+	RGMS5ADBZWRDKAY EKJH4VGIRDDMH P12JMMHPUUO53MDGRC 6YX3SUYFMPSAQR9 0VF1TUMQR91C7 YHA6VN2D1BJI5QZFXV 299CJI1H820EKW4 
+	UIU05A4U11FKR EAGDDA7LT9JT0ETX8V Z4D7A42MCAXDB5B O7C9VPQ04M20L ESBMVG04XQT4HK6GMQ 8SDSICZW83VCM6G SZZPHO65RCYP5 
+	NVF2DDX2E4354P5TF7 KTN46U3Q8GNNOTM P3JD9HNXFES0A 49MSJLMXLMG4718YHR 8LLA0LBV6CYAFBO H8I2Z1XFMQMIQ II1PE9W5X66V27BW7H 
+	4MSNGKHQDTH2GC2 RD14LXXIBABF2 T89KIJBWAOCM0ZZ622 RQ0TIWQH4TZLM3E FEE3CKZ0DGU7A TRTAGHKY4T6MVU2AX8 O2N8CRVCF2BODO5 
+	4MFF0KG27VAJE HXLCZNEIX6C25FYX5N U4OR0VARTJPRA4R FVOW9G0E5SZ9Y N4IJ7N0WXUPJYJ27RU 45CIQVBA7A3ZJ5A 831GFDH8DVG45 
+	6J0FDXPOZ10P4SJSQC HLJKQYOJ30L4WDR 8X816I75R2Y31 6XMK4SZ3EX5HCHQO9H R815YG40Q8SELLX C9PZYB0H1AY1Q D9N1P3JXBIY1FVVN58 
+	MQKDMRCWEW6JSDJ 66ZEYXLVADU1C YF92D8TP2P7YY41LNY 6QYKTE2V9LZ89MM ZTYP5HB60ZU68 HWE7SEO1QGIDN9QL9K CLMUYIY5RJUGPDE 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+GZOKFRSHZHURYBFDXJFRXPQSYONTBCUSNJUOCJYQNRXUFTEZEKVWHGPXHETKCJFXYYEKHBVXPDRCGHFEBFIJNOGYWPBSWMBPYTFTSNLWNRJZEMNFHLSDNPJLGYOWZIPQBHOKSJDALVATXVLMIEABHWAMPTNCEBNPXJFOZDKJTCZSYXOVMredactedIHUKGIZFWOHSZYGVLLETT
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to JPFITZFUHXACAUPQFJBAALCHHPEXMMHOCOKXJPUHWVUTHBNVAVCLDEGYQDHBNFISXXHTKATBWKBBOYYOIUBGLLIKFABSBTZPSAYUULRKJPQPXAPSBYUBRXKNXKTEQZDOCCQLFLJURDDWTFMBTCRBLBPSJUDZLGMAXHEDDQXEHAWJGRFFUEPTDDBQMOJYSRSYBGMNDZPB roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department YIONQEXAZKNXVENCSNYFOLNZBIUEJTEMFPZIDSDAAIAUAIQANXJDVSUXDRHCWTURYXEPRHZLTWAETLDGFQNTWJURBMKMCMQVRHIVDVLJFUNAUANOMFUZGXFDDELSTTLWOFWDHEredactedCCFNBBTGKYBGDEFXVQQREAHJHGQABJILVMHHITGIUVHHBLVKZSZPVIZGBDMAYNGM to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation VGVPGDRBXEWTEVNFICJUZBFFDTABLLUNAAYZKMYKSKEDHAHOBJQOOATOYVWJEZRPJHXINRWTMNIITWDCFVQMQYJDLUIADGCAXHXNYZABNUZKDYXSNCYTMFRIWXJNRNLCNXTSWQJYRPTPCUBTOEYTTKBGXAFOCLRGUDZAGZNVJEQVPDFYXVNJPOSCYMWECRSMQHPAKGAOV development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will VDCPYSUUZCHXKHGWMIPSDYPUNSUNYKIZQYZOQLURNPIUDZPUWRDUWQUBYHSSWNDTFRXEOQKCLRYCZJQSZYYLJBAQMFITQSEBYDGQKMWKKOQKCVJRKXUUSNSTAVFNQALNJOXZZCTWBNWOCYLYTABZLPAMGJJQBPLANBJXVOXLHPRJPELAYBDRPUWNANJCYVYXTZGVHQKJKQKCHIZAKAJZEXYMIFZAIHHLSOCRWKILJXDFPAWDJQFKJOCFPSFTTRDWYXIFUHCGFMQHFHLWFGMLEXKGZLWEFBPJYDUUTKCNVFHSLLFBSHQKKVIWJYMJZAKRWQWQIKRIZXTIZQYGCXQOLUGXEEKWUSITHUJUPEPBXWWCYDDCILBZSGOTPWITTHJYTBLEFZIDUCEPLIKZ  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support CGGGQMTKCUAPLDZYEPAFJAWASQQCJWYUEGQADRSVLDDCRFXUIWMBZIZAUUQNOWULYNOWAUIEOUXEZIYBWKXCDOQUJWOKMQVCCFHQORCZJRXHLTOWKWIRHWIGDKWGZBLMVOKTQMZOYQXUSWUAOGOQRELJTEXFUMZBDQMUQRXJXZFWZOGGUTMZKGSMKXKZAALMNPAUVSKI  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
