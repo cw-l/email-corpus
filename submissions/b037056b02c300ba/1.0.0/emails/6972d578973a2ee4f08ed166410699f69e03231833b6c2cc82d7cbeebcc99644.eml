@@ -1,0 +1,212 @@
+Authentication-Results: spf=softfail (sender IP is 136.112.122.143)
+ smtp.mailfrom=limelifeplanners.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none
+ header.from=limelifeplanners.com;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:04DD4AC8DFE01A4BBDC9DF55F59A6C1840B556DB6C2ACF6A96A1A7388325F9EB;UpperCasedChecksum:B590901FDB85787F3025B6AF0E648AC4CADBBCD62541D0F56522E4B91F944B44;SizeAsReceived:313;Count:7
+From: Storage Deletion Alert <support@limelifeplanners.com>
+To: <redacted@redacted.com>
+Subject: Your cloud protection is being disabled now
+Message-ID: <f648774be5f94633b28c9b0732a6f04e@limelifeplanners.com>
+Date: Sat, 5 Sep 2026 03:33:58 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 05 Sep 2026 03:33:59.4719
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ aa273571-1462-4662-3293-08df0afe85ec
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BL02EPF00029927:EE_|CO6P220MB0370:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/4/2026 8:06:42 PM
+X-MS-Office365-Filtering-Correlation-Id: aa273571-1462-4662-3293-08df0afe85ec
+X-Sender-IP: 136.112.122.143
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 8
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|84100799006|3025599003|41010799009|260826003000599003|60050799012|9400799043|46080799009|34130799006|2700799033|970799063|1290799033|32020799003|5019299006|18040799006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Sep 2026 03:33:58.6433
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ aa273571-1462-4662-3293-08df0afe85ec
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BL02EPF00029927.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO6P220MB0370
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7614712
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0360.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9525003)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Cloud Disabled</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #fef2f2;
+            font-family: -apple-system, BlinkMacSystemFont, Arial, sans-ser=
+if;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.15);
+            border: 1px solid #fecaca;
+        }
+
+        .hero {
+            background: #b91c1c;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .status-bar {
+            background: #7f1d1d;
+            color: #fecaca;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .body-p {
+            padding: 30px;
+        }
+
+        .warning-list {
+            background: #fff5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #fed7d7;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #9b2c2c;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .x-mark {
+            color: #e53e3e;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: #e53e3e;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 2px 5px rgba(229, 62, 62, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #a0aec0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=3D"container">
+        <div class=3D"status-bar">System Alert \u2022 <span id=3D"sys_date"=
+></span></div>
+        <div class=3D"hero">
+            <h1 class=3D"h1">Cloud Services Disabled</h1>
+            <p style=3D"margin-top: 8px; opacity: 0.9;">Your storage limit =
+has been reached.</p>
+        </div>
+
+        <div class=3D"body-p">
+            <p style=3D"margin-top: 0; font-size: 16px; color: #2d3748; lin=
+e-height: 1.5; text-align: center;">
+                We have paused all upload and sync activities for your acco=
+unt. New data is not being saved.
+            </p>
+
+            <div class=3D"warning-list">
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Photo Backup Paused</div>
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Drive Uploads Blocked</div>
+                <div class=3D"list-item"><span class=3D"x-mark">=EF=BF=BD</=
+span> Email Attachments Disabled</div>
+            </div>
+
+            <a href=3D"hxxps://wordpress-214734-0[.]cloudclusters[.]net/cre=
+ative_62020_4[.]html" class=3D"btn">Reactivate Storage Now</a>
+
+            <p style=3D"text-align: center; font-size: 13px; color: #718096=
+; margin-top: 20px;">
+                To restore full service functionality, you must upgrade you=
+r storage plan or free up space immediately.
+            </p>
+        </div>
+
+        <div class=3D"footer">
+            <a href=3D"hxxps://wordpress-214734-0[.]cloudclusters[.]net/cre=
+ative_62020_4[.]html" style=3D"color: #a0aec0;">Unsubscribe from alerts</a>
+        </div>
+    </div>
+    <script>
+        const d3 =3D new Date();
+    document.getElementById('sys_date').textContent =3D d3.toLocaleDateStri=
+ng('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    </script>
+</body>
+
+</html>

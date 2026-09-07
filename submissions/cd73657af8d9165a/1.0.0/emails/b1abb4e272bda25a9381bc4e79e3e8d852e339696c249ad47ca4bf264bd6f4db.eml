@@ -1,0 +1,580 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1788635363; cv=none;
+        d=google.com; s=arc-20260327;
+        b=ZGXtOAXzhWKXQ2C+LOGQIPkuZQ73QY/EmeVqdWjLqR967URWeIA2P137YAsrtYnSn9
+         sQTt1PHfcDkOunoeG2s/aRimfWeCL371XiLi+95+jBWDu7VQno3DgEU4jbIxvGOR0jom
+         F0f44zlLoGy4jEddS2uQ/J1ZMIv57fIoc25Jshpu11w3soIwqsGNA6jE/qUthlpmNOSu
+         4MAMcE3dnebqAzAxbV0bdrWSlPbg3yMTilYP3NCyV+lUFmcHLMZ1do9cVb6GOtsPUEwQ
+         ad7DRz/Q004ngnTVKo846AGDoJzD/ba4/FRV/wy5n8Dt56aiyFqP3DKmqNtsAwDKuZ61
+         SpTA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=jT9sficL7ARAaw16lrluD/l1uG+N+unBrCtzdsFFcKI=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=NJ9DCTgFt4v5M00PVu0Z5Mi3MdnRLW8PbzgUO7LM4epTbUmbKJAZ6QNCNuHXCuXs9j
+         F6N+iL3oc93ck4DoHL5iS6coc2TA+1yzxt289b0euXUVaaLrWBWeNLQfTLh7FrrECrk9
+         iKYzd5iAzA6CVnm0c2bnVTzex6URV9alA5Q/eqPKZQaKvPOpQqfm+Q0pf31MBOdu4Wbu
+         FujvMlgkF8xby75gzvuJPnG40UoeValuo6yFZXy/s78WPFYbhSxz51k6r7MfTbaGWu1s
+         jD6IZVTaFcJSIa9NspMT9oJ+SnOIAZ9QNf6S1EQyoJIXenOPzETpFmdizbOql5mWfe4u
+         BDsA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@gazms1.gazms1.wgdbpf.us
+ header.s=smtp header.b=rviUsvUO;
+       spf=pass (google.com: domain of
+ return@sifntion-merge.dataommault.net.bulwarede.com designates 50.6.241.224
+ as permitted sender)
+ smtp.mailfrom=return@sifntion-merge.dataommault.net.bulwarede.com
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@gazms1.gazms1.wgdbpf.us
+ header.s=smtp header.b=rviUsvUO;
+       spf=pass (google.com: domain of
+ return@sifntion-merge.dataommault.net.bulwarede.com designates 50.6.241.224
+ as permitted sender)
+ smtp.mailfrom=return@sifntion-merge.dataommault.net.bulwarede.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=gazms1.gazms1.wgdbpf.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=muozhrthdcweik.77578927020455@gazms1.gazms1.wgdbpf.us;
+ bh=s5yxnAzNDxK5wv2EKWY+NZpptP4=;
+ b=rviUsvUOGaP4lI5ERNH4WdQQZVHN8iNXIswG+VI/x3NOaIs/reENQXs2WE0O1EPeIcJTTH2J+giM
+   NO2zDMxY3tXT8lBUaUMXtaB7dwvxBi70U8r24cZHcyCcT/9+VvkXzp9710ABDjbpHl39VO1HXAUW
+   BkWM8vK+PJdk+hb2dg/TEUBGxDLHehP3AZhIjz6m2awCvpvXQeig40r/ITC/dc242KNSDoHkxDO0
+   ctyrx6Y3wT7HGNCmIf6GSBf1CV1dMvPMHotA2FchVRm5JPiUKBio0F/+9eYM88K5tnti9dK62TOX
+   aL75T6OMhnP1KOorf8VYHo2UubVXnwGtngsLRw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=gazms1.gazms1.wgdbpf.us;
+ b=L/CD9YOtiR9OSjtf0g46YmztPbOmzAb8xARmLX8Ga5yQlvQR0KkrkTPygs/i7isDjunew+khu2DJ
+   SF4M6/cfQZUE4SAFVBflagnWbwFDdW8izFC0VLY/ZNIO3JJj4OBN+FiLMcQequfjBLNHb45CHyuP
+   3+vhplzyWk9cUsIfUpnYL3Hu1f0lX37LJb9lV2qXV4fBxsse2b43BPaCMpSwaEaWhZgrcaf5DKOL
+   qTUpNyynUNH5B0wxhZ0HbfccZhQ7B4YpjbbGIqDTF5DPxd7bknszGGNL8/jv3c1mxXkYoKh+YgHA
+   C2eFGEglm8LMXMcvmG1a3e0XAnulboJYLcQJkw==;
+Date: Sat, 05 Sep 2026 19:09:22 +0000
+From: 
+ =?utf-8?b?Ik15Q2hhcnTvv73vv70iIDxtdW96aHJ0aGRjd2Vpay43NzU3ODkyNzAyMDQ1NUBn?=
+ =?utf-8?b?YXptczEuZ2F6bXMxLndnZGJwZi51cz4=?=
+Message-ID: <jxowrk4b.lzrt0220.gazms1.lzrtSMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: 
+ =?utf-8?b?cmVkYWN0ZWQsIFBhY2sgVXAg77+977+977+9IFlvdXIgRnJlZSBNZWRpY2FyZSBL?=
+ =?utf-8?b?aXQhIFJlYWR5LCBjb25maXJtYXRpb24gY29kZTowODU0MzIy77+977+977+977+9?=
+ =?utf-8?b?77+977+9?=
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 09-05-2026
+
+440286867392252644642477444206857031947861323770258713370010
+-----
+ebxjhvrbcjhrhftvzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyiebxjhvrbcjhrhft=
+vzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyi
+ebxjhvrbcjhrhftvzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyiebxjhvrbcjhrhft=
+vzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyi
+ebxjhvrbcjhrhftvzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyiebxjhvrbcjhrhft=
+vzsitlmdegmudjylwgmzoevpqwlfiwzerehfcyzwfmpyi
+
+If you believe this has been sent to you in error, please safely hxxps://st=
+orage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&=
+d252434&lqhkv=1329-32&lm=195982LOXJ45162&sd=11&page=3D9G9ZGzFwRlug7zEscribe
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+If you believe this has been sent to you in error, please safely hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d252434&yyoaj=1329-32&lm=195982BHFR45162&sd=11&page=vQNIVn5v8yb20qAscrib=e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+<meta charset=3D"UTF-8">
+</head>
+<body style=3D"margin: 0; padding: 0; background-color: #f4f4f4; font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+
+     <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"background-color: #f4f4f4;">
+        <tr>
+            <td align=3D"center" style=3D"padding: 20px 0;">
+               =20
+                <!-- Email Content Wrapper (Max Width 600px) -->
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"600" style=3D"background-color: #ffffff; max-width: 600px; width: 100=
+%; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0=
+.05);">
+                   =20
+                     <tr>
+                        <td align=3D"center" style=3D"padding: 40px 20px 20=
+px 20px; background-color: #ffffff;">
+                            <!-- CSS Logo Recreation -->
+                            <div style=3D"font-size: 42px; font-weight: bol=
+d; letter-spacing: -1px; margin-bottom: 10px;">
+                                <span style=3D"color: #e63946;">My</span><s=
+pan style=3D"color: #457b9d;">Chart</span>
+                                <!-- The red swoosh underline -->
+                                <div style=3D"height: 3px; width: 140px; ba=
+ckground: #e63946; margin: -5px auto 0 auto; border-radius: 2px;"></div>
+                            </div>
+                           =20
+                             <div style=3D"margin-top: 25px; margin-bottom:=
+ 15px;">
+                                <svg width=3D"20" height=3D"12" viewBox=3D"=
+0 0 20 12" fill=3D"none" xmlns=3D"hxxp://www[.]w3[.]org/2000/svg">
+                                    <path d=3D"M1 10L10 2L19 10" stroke=3D"=
+#333333" stroke-width=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"rou=
+nd"/>
+                                </svg>
+                            </div>
+
+                            <p style=3D"color: #555555; font-size: 18px; ma=
+rgin: 0 0 25px 0; font-weight: 500;">
+                                Exclusive discounts and special prizes!
+                            </p>
+
+                             <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0">
+                                <tr>
+                                    <td align=3D"center" bgcolor=3D"#1a1a24=
+" style=3D"border-radius: 50px; padding: 15px 30px;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&yktbo=
+=3D1329-32&lm=3D195982GDOD45162&sd=3D11&page=3Djr97pbWw1VrT6lJ" style=3D"fo=
+nt-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; di=
+splay: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                            Start Your Survey Before It's G=
+one
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td style=3D"border-bottom: 1px solid #eeeeee; font=
+-size: 0; line-height: 0;">&nbsp;</td>
+                    </tr>
+
+                     <tr>
+                        <td style=3D"padding: 40px 30px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                                <tr>
+                                     <td width=3D"45%" valign=3D"top" style=
+=3D"padding-right: 20px;">=20
+                                        <div style=3D"background-color: #f0=
+f0f0; border: 2px solid #cccccc; border-radius: 12px; height: 280px; displa=
+y: flex; align-items: center; justify-content: center; text-align: center; =
+position: relative; box-shadow: inset 0 0 20px rgba(0,0,0,0.05);">
+                                           =20
+                                            <!-- CSS Medical Cross Icon -->
+                                            <div style=3D"position: absolut=
+e; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                <svg width=3D"80" height=3D=
+"80" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=3D"hxxp://www[.]w3[.]org/200=
+0/svg">
+                                                    <path d=3D"M12 4V20M4 1=
+2H20" stroke=3D"#457b9d" stroke-width=3D"3" stroke-linecap=3D"round"/>
+                                                </svg>
+                                            </div>
+
+                                            <p style=3D"color: #888888; fon=
+t-size: 14px; padding: 20px; position: absolute; bottom: 20px; width: 100%;=
+">
+                                                <strong>[Medicare Kit]</str=
+ong><br>
+                                                <span style=3D"font-size: 1=
+2px;">(Visual representation)</span>
+                                            </p>
+                                        </div>
+                                    </td>=20
+                                    <td width=3D"55%" valign=3D"middle">
+                                        <h2 style=3D"color: #1a1a1a; font-s=
+ize: 26px; line-height: 1.3; margin-top: 0; margin-bottom: 20px; font-weigh=
+t: 800;">
+                                            We would like to offer you a un=
+ique opportunity to receive a brand new <span style=3D"color: #000000; text=
+-decoration: underline; text-decoration-color: #e63946; text-decoration-thi=
+ckness: 3px;">Medicare Kit!</span>
+                                        </h2>
+                                       =20
+                                        <p style=3D"color: #555555; font-si=
+ze: 16px; line-height: 1.5; margin-bottom: 30px;">
+                                            To claim, simply take this shor=
+t survey about your experience.
+                                        </p>
+
+                                        <!-- Bottom Button -->
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+                                            <tr>
+                                                <td align=3D"center" bgcolo=
+r=3D"#1a1a24" style=3D"border-radius: 50px; padding: 16px 35px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d2=
+52434&yovjq=3D1329-32&lm=3D195982QMFI45162&sd=3D11&page=3DDKeOmEf8ZNjKJ5T" =
+style=3D"font-size: 16px; font-weight: bold; color: #ffffff; text-decoratio=
+n: none; display: inline-block; letter-spacing: 1px; text-transform: upperc=
+ase;">
+                                                        Start Survey
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- FOOTER SECTION -->
+                    <tr>
+                        <td align=3D"center" style=3D"background-color: #ff=
+ffff; padding: 20px 0 40px 0; border-top: 1px solid #f0f0f0;">
+                           =20
+                            <!-- Social Icons (SVG) -->
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0">
+                                <tr>
+                                    <td style=3D"padding: 0 10px;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&jldxf=
+=3D1329-32&lm=3D195982LFNO45162&sd=3D11&page=3D6MXxaXwSN932srM" style=3D"te=
+xt-decoration: none;">
+                                            <!-- Facebook Icon -->
+                                            <svg width=3D"24" height=3D"24"=
+ viewBox=3D"0 0 24 24" fill=3D"#555555" xmlns=3D"hxxp://www[.]w3[.]org/2000=
+/svg"><path d=3D"M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268=
+ 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.10=
+54 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"/></svg>
+                                        </a>
+                                    </td>
+                                    <td style=3D"padding: 0 10px;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&snpnj=
+=3D1329-32&lm=3D195982NCSS45162&sd=3D11&page=3DekhbSYkegMNg6og" style=3D"te=
+xt-decoration: none;">
+                                            <!-- X / Twitter Icon -->
+                                            <svg width=3D"24" height=3D"24"=
+ viewBox=3D"0 0 24 24" fill=3D"#555555" xmlns=3D"hxxp://www[.]w3[.]org/2000=
+/svg"><path d=3D"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.=
+817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.=
+833L7.084 4.126H5.117z"/></svg>
+                                        </a>
+                                    </td>
+                                    <td style=3D"padding: 0 10px;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&tgalm=
+=3D1329-32&lm=3D195982GGXH45162&sd=3D11&page=3D3tWTTRtIH3HxVvt" style=3D"te=
+xt-decoration: none;">
+                                            <!-- LinkedIn Icon -->
+                                            <svg width=3D"24" height=3D"24"=
+ viewBox=3D"0 0 24 24" fill=3D"#555555" xmlns=3D"hxxp://www[.]w3[.]org/2000=
+/svg"><path d=3D"M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10=
+.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C=
+17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858=
+C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.75=
+74 9.75736C12.8826 8.63214 14.4087 8 16 8ZM6 10H2V21H6V10ZM4 3C3.46957 3 2.=
+96086 3.21071 2.58579 3.58579C2.21071 3.96086 2 4.46957 2 5C2 5.53043 2.210=
+71 6.03914 2.58579 6.41421C2.96086 6.78929 3.46957 7 4 7C4.53043 7 5.03914 =
+6.78929 5.41421 6.41421C5.78929 6.03914 6 5.53043 6 5C6 4.46957 5.78929 3.9=
+6086 5.41421 3.58579C5.03914 3.21071 4.53043 3 4 3Z"/></svg>
+                                        </a>
+                                    </td>
+                                    <td style=3D"padding: 0 10px;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&hefdb=
+=3D1329-32&lm=3D195982DLHS45162&sd=3D11&page=3DS40DZwRwZ4AmOg7" style=3D"te=
+xt-decoration: none;">
+                                            <!-- Instagram Icon -->
+                                            <svg width=3D"24" height=3D"24"=
+ viewBox=3D"0 0 24 24" fill=3D"#555555" xmlns=3D"hxxp://www[.]w3[.]org/2000=
+/svg"><path d=3D"M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 =
+4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.14=
+9 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.0=
+12-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.84=
+9 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1=
+.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.6=
+18-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2=
+ 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.01=
+4 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0=
+-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.=
+69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.=
+162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162=
+c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.=
+406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.=
+645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Footer Links -->
+                            <div style=3D"margin-top: 20px;">
+                                <a href=3D"hxxps://storage[.]googleapis[.]c=
+om/whilewait/brightway[.]html#index[.]php?search=3D4&d252434&kjiij=3D1329-3=
+2&lm=3D195982JETV45162&sd=3D11&page=3DhjsYmEDgci8Sni1" style=3D"color: #555=
+555; text-decoration: none; font-size: 14px; margin: 0 10px;">About us</a>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+
+<div style=3D"display:none;">
+=20
+<body dir=3D"ltr" class=3D"generic" bgcolor=3D"#FFFFFF" style=3D"background=
+-color: #FFFFFF;">
+
+  <div class=3D"preheader" style=3D"display: none; max-width: 0; max-height=
+: 600; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opa=
+city: 0;">
+    Updates to OpenAI=E2=80=99s Privacy Policy
+   =20
+  </div>
+
+  <!-- start body -->
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" di=
+r=3D"ltr" class=3D"wrapperMod" bgcolor=3D"#FFFFFF" style=3D"background-colo=
+r: #FFFFFF;">
+    <!-- start body block -->
+    <tr>
+      <td align=3D"center">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"360">
+        <tr>
+        <td align=3D"center" valign=3D"top" width=3D"360">
+        <![endif]-->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"email-shell heroMod03" bgcolor=3D"#FFFFFF" style=3D"width: 100=
+%; max-width: 600px; background-color:#FFFFFF;">
+         =20
+                        <!-- header image -->
+           =20
+           =20
+            <tr>
+                <td valign=3D"top" class=3D"header-td email-header-td" bgco=
+lor=3D"#FFFFFF" style=3D"padding: 42px 24px 42px 24px; background-color:#FF=
+FFFF;">
+                    <table align=3D"center" width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"email-header-surface" style=3D"mi=
+n-width:100%; background-color:transparent;">
+                        <tbody><tr>
+                            <td valign=3D"top" align=3D"center" class=3D"em=
+ail-header-inner" style=3D"padding-top: 0; padding-bottom: 0;">
+	                                <a href=3D"" target=3D"_blank" class=3D"em=
+ail-logo-pill email-header-logo-pill" style=3D"display:inline-block; backgr=
+ound-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); bord=
+er-radius:12px; padding:4px;">
+                                  <img alt=3D"" src=3D"" width=3D"103" styl=
+e=3D"display:block; margin:0 auto; width:103px; height:auto; max-width:100%=
+; border:0; background-color:#ffffff; background-image:linear-gradient(#fff=
+fff,#ffffff); border-radius:10px;">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+         =20
+
+         =20
+  <tr>
+    <td align=3D"center" bgcolor=3D"#ffffff" class=3D"content-td" style=3D"=
+padding: 24px 24px 32px 24px;">
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"center" width=3D"100%" style=3D"max-width: 552px; width: =
+100%;">
+        <tr>
+          <td align=3D"left" style=3D"padding:0; color:#000000;">
+            <p style=3D"font-family:'OpenAI Sans', Helvetica, Arial, sans-s=
+erif; font-weight:400; line-height:24px;">Hi JD,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">We=E2=80=99re u=
+pdating our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketin=
+g-update-link" style=3D"color:#000000; text-decoration:underline;">Privacy =
+Policy</a> to include information about ads in ChatGPT, including how they =
+work and how you can control your experience.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Ads may appear =
+on Free and Go plans. Plus, Pro, Enterprise, Business and Education plans d=
+o not have ads. Ads do not influence the answers ChatGPT gives you. When yo=
+u see an ad, it is always clearly labeled as sponsored and visually separat=
+ed from the organic answer. You=E2=80=99ll get relevant and personalized ad=
+s using information that stays only on ChatGPT, such as ads you've interact=
+ed with, or context from your chats. You can manage ad personalization anyt=
+ime in <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-upd=
+ate-link" style=3D"color:#000000; text-decoration:underline;">settings</a>.=
+</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Your personal d=
+etails and conversations with ChatGPT are private and are not shared with a=
+dvertisers. Advertisers do not have access to your chats, chat history, mem=
+ories, or personal details. Advertisers only receive overall information ab=
+out how their ads perform, such as total views or clicks.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Learn more abou=
+t <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-update-l=
+ink" style=3D"color:#000000; text-decoration:underline;">ads in ChatGPT</a>=
+ and our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-u=
+pdate-link" style=3D"color:#000000; text-decoration:underline;">privacy con=
+trols</a>, including how we protect your data.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Thanks,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">The OpenAI Team=
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+         =20
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    <!-- end body block -->
+
+        <!-- start footer -->
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+     =20
+     =20
+   =20
+    <tr>
+      <td align=3D"center" class=3D"email-footer-row" style=3D"padding:12px=
+ 0;">
+        <!--[if mso]>
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"600"><tr><td>
+        <![endif]-->
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"max-width:600px;">
+          <tr>
+            <td align=3D"center" class=3D"footer-td email-footer-surface" s=
+tyle=3D"background-color:#ededed; border-radius:12px; padding:24px;">
+              <table role=3D"presentation" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                <tr>
+                 =20
+                    <td align=3D"left" class=3D"email-footer-logo-cell" sty=
+le=3D"padding-bottom:12px;">
+	                      <a href=3D"" target=3D"_blank" style=3D"display:inli=
+ne-block;">
+                        <img src=3D"" width=3D"88" height=3D"23" alt=3D"Cha=
+tGPT Logo" class=3D"email-footer-logo-img" style=3D"display:block;border:0;=
+">
+                      </a>
+                    </td>
+                 =20
+                </tr>
+                <tr>
+                  <td>
+                    <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+                      <tr class=3D"footer-row">
+                        <td valign=3D"bottom" align=3D"left" class=3D"email=
+-footer-copy" style=3D"font-size:10px; line-height:1.8; color:#000; width:1=
+00%; padding-right:0; vertical-align: bottom; padding-left: 0;">
+                          OpenAI<br/>
+                         =20
+                            1455 3rd Street<br/>San Francisco, CA 94158<br/=
+>
+                         =20
+                         =20
+                          <a href=3D"" target=3D"_blank" style=3D"color:#89=
+8A8D; text-decoration:underline;">Privacy</a> &middot; <a href=3D"" target=
+=3D"_blank" style=3D"color:#898A8D; text-decoration:underline;">Terms</a><b=
+r/>
+                          <span class=3D"email-footer-copyright" style=3D"c=
+olor:#888; display:block; margin-top: 1.8em;">OpenAI =C2=A9 2015=E2=80=9320=
+26</span>
+                        </td>
+                       =20
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+<img src=3D"" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heigh=
+t:1px !important;width:1px !important;border-width:0 !important;margin-top:=
+0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-le=
+ft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddin=
+g-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--

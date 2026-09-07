@@ -1,0 +1,612 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1788017606; cv=none;
+        d=google.com; s=arc-20260327;
+        b=FF75CMGlPSZjwDaWArEnB436bcAVfTfBl+39EtWOzvnmLi6jD7oDPXXeWDyFIbyXLS
+         KSYrGbZTZnILcN330Iw9nXMzyPGVCWJf9PGC7iYB9ZJz1bQVUn/A8AmfoJicuFKYm0uZ
+         tqs8qDyQ/7LK+KcTCQnlgilVvfe2Vj/2PnbVQkXOWcT4VVmEBLyNKcgWpRUayKdVG6nq
+         FeMcWORCc+M75/UTEyLOxFSFY7QoZK07C+zaAaIYCdIcUn9/xwp78SkEdu4Nt6/ZKwuZ
+         g2PtOcyujzGgKPCWts/u+GpWv8Y3GcHl6nL00yMMJmWAkkDKTIFYv2OeJ/BNzgNa5wRi
+         cMXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=QGHQ2Hub7mobGCxIhH3tOeeW9rHGaJhvBmv12zkolT0=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=GjGCKxp/ng9idWE0R34DLfmF2Oss3SysLXB2V2krUf6zrypB1ddXDBxsa91orlW3po
+         HiSGqQiI7tN2CowE7wmV9WoVrlwlHiXCjQaODQP4faGb9EK+cTI99QYE4iEBmBovsE1T
+         qn+kRaT7ozuO7CIgbU5qvyRiT4TVuHknsKcxzvXVCq3/yQS/6dlwHYKbJp3SZw6gAj7X
+         8LZbD0IpJwkIYQpoanKwEcE/vgz7oFV4oZg62PU1rPH4ZGpmQIbEwGXrbywFM6nbUKzK
+         joia2gl0idt2mfZQOhcfobtO7vxGHqk6766SwUjigHzr/f83e8grtg5GD7ZbBELSbk2K
+         l/kA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ceiwnkwo.shopee.anechtayne.web.id header.s=smtp
+ header.b=EFLPxdzE;
+       spf=pass (google.com: domain of otupfsqmspklr@shopee.anechtayne.web.id
+ designates 46.31.78.48 as permitted sender)
+ smtp.mailfrom=otupfsqmspklr@shopee.anechtayne.web.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ceiwnkwo.shopee.anechtayne.web.id header.s=smtp
+ header.b=EFLPxdzE;
+       spf=pass (google.com: domain of otupfsqmspklr@shopee.anechtayne.web.id
+ designates 46.31.78.48 as permitted sender)
+ smtp.mailfrom=otupfsqmspklr@shopee.anechtayne.web.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=ceiwnkwo.shopee.anechtayne.web.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=puoeuszapsexpdgjxcttk@ceiwnkwo.shopee.anechtayne.web.id;
+ bh=pkEASIqhDfq6vuHHQYq0ugHOcQU=;
+ b=EFLPxdzEfBqMBTPQ4kIojY7MstHqtOYn6byfQvj2Eltj4drP4UJJDQbaD9tJiq0Ewab9aOJmdVAX
+   wgGFX3/7xFL5fVea4FW7y5hIloDyvai3NnVvKvxZdI6dd6d8AP0ZQ/z4ukEyofmVync5iHKO4Po/
+   Th0Dr9HWQ7+xPIiGrVjzF6FHHX1ZBnG8vtJ72ZRn2jIWLqX4IuG0vd1oPVVTYdwn809WyCiR5/Zc
+   VIzqLkbg9iTQozpQgApA8eN7ndmaKjV+IfwjVabnWxyS8gqU5jYhM1g24vxdVO+1rVhz3/vdLbuC
+   T1jzKOwZLbgZnUmF012CpXzVCB+xF3G0nLxHyQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=ceiwnkwo.shopee.anechtayne.web.id;
+ b=kmnwzKjh+RjvxaWMemdqOXP67bE+FCkUo15X/k2ySwoyMkPMe4LrEi8GyOhg5iJvEEiX/MyojY/H
+   4zBJExwCjjUW/WM7wqH+jn0fcSL8u0ecHX7UmfbJPGrC4DkbDwtmZPb2OeTHhD5iGFxZ+cohTw43
+   81zM1qxvg3F1y/PeIpAQEOAdzVKwMHoilfJMQWZInKI7KAHerxEgy1SNm7UU8sgBMa54hxSt9BEX
+   Ho/6dqPYK0V9PzHR0UPmx6GfBlidn/MMrOo+XWBvKgyJGDshj4a2ryUysUjFFQsvhNN+8m48IMUK
+   nP3lGxvl03LtxAbFzn/4NMJTVxYzKcg3uMpkCA==;
+Subject: How Oprah lost 43+ lbs with Baking Soda
+From: Fat-Burning Ritual
+  <hrhjzne.32.195982@ceiwnkwo.shopee.anechtayne.web.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.48
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <kepwwpbvnkddyqsgvinkglvcxclovl@lx8qtazi9tg5g6hkjy>
+List-Unsubscribe: <http://lappiad.mt.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Sat, 29 Aug 2026 15:31:47 +0000
+Sender: puoeuszapsexpdgjxcttk@ceiwnkwo.shopee.anechtayne.web.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div style="width: 650px;">
+      <h3>
+        <font face="helvetica">Thousands of busy Moms across TikTok are dropping 45+ lbs with Oprah's 10 second recipe each morning (Here's how to make it &gt;&gt;)</font>
+      </h3><font face="helvetica">Oprah has been in the public eye for decades.</font>
+      <p>
+        <font face="helvetica">For years she's struggled with weight loss, openly talking about her own personal battle with the scale.</font>
+      </p>
+      <p>
+        <font face="helvetica">Now she's sharing the exact recipe that has helped her to shed those stubborn pounds for good.</font>
+      </p>
+      <p>
+        <font face="helvetica">All without following strict workouts or using expensive GLP-1s.</font>
+      </p>
+      <p>
+        <font face="helvetica">This one simple, 100% natural recipe naturally boosts your body's own GLP-1 production from the inside.</font>
+      </p>
+      <p>
+        <font face="helvetica">No doctor visits. No prescriptions. No nonsense.</font>
+      </p>
+      <p>
+        <font face="helvetica">Don't wait, [Fname].</font>
+      </p>
+      <p>
+        <font face="helvetica"><b><a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d245993&vwgpc=1162-32&lm=195982MEDB42222&sd=8&page=PF67CZePiBFmpn1">Access the Full Recipe here to & boost your body's natural GLP-1 with this Bariatric Baking Soda Trick &gt;&gt;</a></b></font>
+      </p>
+      <p>
+        <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=4&d245993&gghxr=1162-32&lm=195982VDBU42222&sd=8&page=QPuZ89nGrQ0sjHN"><img border="0" src="hxxps://i[.]imgur[.]com/nBuEv1d[.]png" alt=""></a><br>
+        <br>
+        <font size="2"><font face="helvetica"><br>
+        <a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=5&d245993&xyuor=1162-32&lm=195982UOQO42222&sd=8&page=oh0qAV8y3CUyl7n">Unsubscribe</a></font></font>
+      </p>
+    </div>
+  </body>
+</html>
+</a>
+</a><br>
+<html>
+<body>
+<center>              
+<center>
+<table width="600" style="text-align:center">
+<tr width="600" style="text-align:center">
+<td style="font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; text-align:center; color:#aaaaaa;" width="600" style="text-align:center">
+<p>
+  To Unsubscribe Click 
+<a href="hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#index[.]php?search=6&d245993&smvah=1162-32&lm=195982TUWS42222&sd=8&page=BXwC1sq0QYtO3IA">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>         
+</center>  
+</center>
+</body>
+</html>
+<center> 
+<center>
+</span>
+</div>
+</center> 
+</html>
+</center>
+</body>
+</html>
+</center>
+</center>
+</body>
+</html>
+ </tbody>
+ </table>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </body>
+</html>
+</body>
+</html>
+
+
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object YOGCBODPZOZSKWFFABUUVBCKJIIAJOBHYWKAUWHCDTNJONFYVEBGJJIHWXKO>
+
+Dear AMBSHBPLQYBJXDVBUGDQRI wblegaaxsragtansidwffw,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is xoiqtagdwxrfxqsrbfzceljdwudt.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi jwyivcpaqfmtvjlbda,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi rufpbyvkekxofurfxrujnrto,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: tgwmuwcafqnlmawxitaydtdzth
+ Site ID: hvaatnmjtiqpbkyhzvoqfaquu
+
+=== Your Account Console ===
+
+Thanks again!
+Team SDKKVAFNMGDDBAXHPQEFTL
+
+Powered by VLGTTJJMMBBFCYYLJGLJHJ 
+
+</title>
+
+Dear VUFSAHSOUGWPAOSKOFOGJIHFA mukrxuwoekcxgsltsbdekytyws,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is vaasdsijgykvwrugygesoxdsd.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood AWZNHHWMSFFJFPPMAEUXKX,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+BINBBKNVLQJMKIMOVCYBXUMQCEZLZWTKUKGYERXOFHWRLQDPAZQFQAISLZPVRSTXYOXZXBXPUCRNOPXCCPKYHYVWAPDUELTOCTXNIPIWKIQNGTJDWOEITPNGCNZCTSYMKRCHKDROJRUKGXEOILKTTTDNMGNHELPVPWCHCSIPXOGTPOLXPENUSIJVMJOVMIJBHZEFSZQJ
+
+ Hi DENGVUPNTGSUBJLFIDRBKL,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+txbcncxkomshghophtpdkqrhlfmuxuqpmvjfaczmedsdeiqiiomdkqeqauvtiyytweclkfsicryphiduoxsruqkuolskmqjxsdydtdlrqolgkcwkcqievcpqcwtqsfutxsxnyhhykgswljvfqtxovjjlybgvdlzsieadrumowvkerphfdasdvfkzpfplfeervwcxznzn
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi 0DQ7YVEUAIKJV2FMB6BZJIRAZ,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team IQRIXJHBBUBMKNBYYRIXJG
+Powered by WAOKLAVDGLDYULQGPSPVOK
+
+Login Name: NURSJLBFZPDSRPSAKHQZKN
+Password: ZLBGMCAOSXLDHLHEQHSTRX
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: BQY
+Password: FGTTIEILSOSBIWRKNYUNIU
+
+	I3IBGT23S74AVG5M48 2EBH1PQYPSWMTYD WVZIFY11W7SMM AVVXDRHL08JQIN54SN IESTUWHM1AA8RDS 9UJZ3IOQA1CUK 89X3AI6ZAL8CPBUDEW 
+	8AHNIX3NU32B7LNJ50 WUMWGJZHBIO50PD DI99MKZP4HOPR JJ3JVEWDEH9RQA2SA2 3UKZBZUHWS9YKGU F7S872SC0H3GR 48IG3CDCCH7TLVRNSO 
+	9OOJ9X5COLWCMUJ BA6JROVCB0SDO VD7ZG4U5LKZE6GPE7J ELMNN0F9FVX7013 RXWA7S90V1BX6 4VEFVCNC96BDWA8M2E I2B097DE8UIMN92
+	RFXCGJKI3I7W4 ZFFV4BVMIBWBHTUEY3 3HKG9DHP9Y0Z3QT E0UTUD3BEZVIK OAHKVPGCZ8HBOZCSSA 8KZ3O0XWN8H8M5M ILKQW6P3ATY4F 
+	7ET4GZP2L5CZ3UDS98 D2YC6Y58OCGTF4N D83DWCCODM21D JHITDE9RO774G95368 GCETPPCSGAIVB07 A0TQC7F3GSRLK 0Z1D3KSB1L9KGQZDP8 
+	PT2H4O582LH3B15 OV44AJ19FP87C LIYVIPP0BZXTW2LFFE 798QFFV0R58POAB AS52XCHMHHG4B 1NJPW3G83Z9BZ6DC03 OTJBK20B3O9OYGN 
+	1ZXVMDERLRMQJ EXLD1L1DQ2PIIN7YP2 5UYCO9KCL52VF06 SCJ0RS0WDXY7Z 49GL3Q5BHYSYHOEJBR QP4ASWLFXG2M7S0 JMQ74CD7X5KU7 
+	ZAZ81SNSPB7WMQST9B D4BTQ3GDK1IETBX JC5C9M58VUF50 K1F44PFB04Z1ZC7A7N 55SFCMIW3SLA7RZ RS8YD20M5R4M3 Y7BFRPOK0QW9OM8AIW 
+	LU7X6DU6676I5O5 SR1PDNVZJQGYJ 4QN33JXHQGC7BPI7CS WW3VFMOYGV2DX4D CU038UHPMSMEI U9FQ9JZ3519ECXNA36 30M17UNZBSXROUC 
+	7B5MB1K9NSL7J SRT4EVL0UKIXW9IJOJ I194O71N1USOG5L O8D3243JD7DE1 3S89GFA94RN2F60WF1 MQCESZL7JSREB8H Z4M6WMHFABIQ6 
+	YXVCEINE91BYP601N2 C10DHMWJ3OLJQL8 4E31I8B7W2TAC 8F9MZ5IOZM0UIHGKMD 89AP02XMHNEWNYH WLHJ4FX36MKRP DCA7R9MHM3K8TUNZ2Q 
+	YH7OUKEO8LM6D75 W9LLY0AX2O167 CJ2YLW4ACTJ3P9X1ZH 2Q2BDU5I3CO40DH 89OH308VLFSKX Q5T05XINY79LCZ7LRL SRAEDOMGBJ3G0FU 
+	82YVUTZGGUP09 R2X9GKWTCR61F96TUV CKULLVN6PUV2WBC UG6SDT02JU7CB CVG39QJEAF88IIEGOZ I6ZZDMLWSMI1YM1 ZGBZ7JTHJD0DY 
+	NFYQGFVQFLTKB6STYQ 301SRPB24CYAB8L 7W5D2RJ0K9D5P E8NSEHOY1QUDDCG75F YICON4V0H0X0VI1 WKZ4V1L3V2BPO ZF764SILXTWACKBOPC 
+	BIBAEIDUSYSYE9S T7VAHECJ14IFU 3J4CVXFMQUL7DV5CG7 V1K5QEUJ3WVWEN1 SD87SVO49RVJX FXOS82QJW9SG2BZ7JL MGI8P5DM3H8NAYM 
+	5GWA2ZP7P2XF6 YH3KWBEUPXS2IM1QWV EISYCHBBHPW3A7B L3N3YKA4QBZE0 V1RQUBARJE769LTGCQ 71K2V69T5B1Z70U KN8PKCY3K9IBI 
+	JACXAHA8V130KUCLQL KHQCQ94DVEQ2RT9 N6T2GIMVOANWF 0Y46JHHQYWHORHX8F9 G1XPGA63UI7HZCI O6BQX4MY2RTDW GVWSGCP56OC5XH7SKP 
+	BZPMT1I6RQ7WSBG BY0USB8UHC3YO REELRYXNDYF5BGXSLM U15PK6Q27QUA49H 6ROWG5NU0X3GH HEHKSGFWTY1DXGQ9VF 0BOTCWF00ZG10TG 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+EDMYSDESBWNPLXPNHKMMVWICLLWPXHQAVJTFLRGYKODYPRITDWWRGWEGOZWCXKDVRKOTITXHQATIXQQTQSJUCTUZYDXEKLEBGWXGODGEJEJAUEZWPOUVCSQSQNGWAHWAWNCWWAEYBPCTTRGCEUUCJPQONTWTJMPBBEEWGSZMZZJHHLAECXJCTSONVSCMFJOBDDTHQGMHK
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to RGYENKBPECOPWAILPPKKGLAEOVGTEFWTEZGVDFIAAWVGSQZLNQIWNEHSNDIDGJMJKORIPLMQUIDYDGESWNFJHCHEKGEUDHPHLTNEVLNCIAKPXXDTNQCOHJTSTNRIKCYLQKTIBMGIXEZRHVJXUTEKCPBLNUVDJNCTMTQIYDYJXYOBVSDUQXHJEXVDKZMAFBZNAJXGXJZW roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department ZHQQXWCYWWQQTJMWLTAKVTQEJOKMURLGGPNWEFHSHLEPCWHTTIRCXUVDVYJKIGFPSKFAYVKIKRRSXTYEEYWDUBLLOJJSCDFLJFZCZNJMKEPADWSLIWredactedGNOSECVDZZOFISNGHMYHUORFOPLWWOOKBYATHFROWQYRIIOYTOQJLDJOUABTGMRGBCTOKYLNDHBEZZHMHIYX to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation DCEWQOWDSBCLHHPQKMQSYUPOGEVCBGJYQWOBIMSYKSFCPQMMCXOTIFZPULJAUUBBFTVBZVFJCEEZVRAYDDNISFXRMEYRSUSILJANIJENEZXDHUHBFGCZAMBUMGOTQBIGNOPNYNFUUMJQMOPEYDYXDQSYGCHUWLPJXDSMDMBEFHETAJTHBQFKCMSYIXODBZMIFSBCFHXBI development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will GSZDTGDTHIBKABJBDLHRAVMBUVDHEZNMVEUGFHMXRDKTLWOOKLMMTCKITLOWNUFXNZLXUBGUSVDINZDBEDHOREYPREILPQNGOWFLJLBOSUYULDXAAUZMWXEJMJOBLJKADGPMFYTXYAGVRXRLKRILVCKKSYCNOPPKZHRISNDXULDELTDSPGSGTENKXIXEFVXFCXSRRZXHUFGOXCXFRNXIERDIGZJDDMFRJZILSILEYBHYUKPINWAXGTCVUVEOIGTRYDHZUYAJHROOEPNNHFDSRHPWFQGMQOLAWVBKOCSQUTWOEYPDULOXACCCIOSOPTEBQGCIJHPNIPRLIMROGUGBXDIFKXJRNCEBWHSFPPAOTDJHCECBIRVGECEGAXYDJSLEUIKVSIBTZSZVBRDJ  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support YYWHZINTUOMLSRNYBGQCWIZNFVROLBGSGZBQQEDWNGJWQDRVWHNQRTAQITJXRVJOKBSNMQTSHWNSRZTPOWUYNNWVURHQEYPPXZXCKAJWTPFUYQWSHHHMSWDYADTFPTQLNRAUSZKMKQYPTUPAVFNVBMAZJVPQXCRECCJYZLKVFMXGUKLPPEXGTBRUMQWBVRIPQCVBULLP  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

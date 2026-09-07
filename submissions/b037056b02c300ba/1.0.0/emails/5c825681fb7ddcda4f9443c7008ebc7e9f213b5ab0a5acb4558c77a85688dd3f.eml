@@ -1,0 +1,392 @@
+Authentication-Results: spf=softfail (sender IP is 34.173.170.144)
+ smtp.mailfrom=mywinners.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=mywinners.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:CE6D87EC47274C874893A41A580D29A114E30B71FB06AEB9DEA3DC248C9FDAA7;UpperCasedChecksum:E503C2337FDD8F1ADF0674EB1E8B2616B6AD2A63CF9ED19A6A53BB9EA08A983D;SizeAsReceived:300;Count:7
+From: Back Restore Savings Insider <support@mywinners.com>
+To: <redacted@redacted.com>
+Subject: Back Restore: Deal Availability Update
+Message-ID: <c8267e6c526e42d989998764879b4d4f@mywinners.com>
+Date: Fri, 4 Sep 2026 20:06:40 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Sep 2026 20:06:40.8545
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 16579a21-3a1d-4488-2c53-08df0ac008dc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ SA2PEPF000015CC:EE_|CH3P220MB1982:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ SA2PEPF000015CC.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/4/2026 8:42:51 AM
+X-MS-Office365-Filtering-Correlation-Id: 16579a21-3a1d-4488-2c53-08df0ac008dc
+X-Sender-IP: 34.173.170.144
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|34130799006|2700799033|1290799033|47200799027|32020799003|970799063|9400799043|13020799009|58200799025|6099299003|3069299007|5149299006|10300799038|93100799006|22070799003|1680799066|5139299004|6100799021|60050799012|9000799056|260826003000599003|260804220100599006|1602099012|30041999003|11135499009|2607281247196008|22062799003|1380799030|6022199012|18021999003|56899033|1360799030|1370799030|3412199025|440099028|4302099013|6106899015|2406899039|2006899018;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Sep 2026 20:06:40.6994
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 16579a21-3a1d-4488-2c53-08df0ac008dc
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ SA2PEPF000015CC.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH3P220MB1982
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6805143
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0360.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en-=
+GB"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Special Report: Back Restore - Professional Decompression</title=
+>
+    <style>
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=3DFraunce=
+s:ital,opsz,wght@0,9[.][.]144,300;0,9[.][.]144,600;1,9[.][.]144,300;1,9[.][=
+.]144,600&family=3DOutfit:wght@300;400;500;600&display=3Dswap');
+    </style>
+</head>
+
+<body style=3D"margin:0;padding:0;background-color:#F2FBF1;-webkit-font-smo=
+othing:antialiased;">
+
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color:#F2FBF1;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding:32px 12px 44px 12px;"=
+>
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width:600px;">
+                        <tbody>
+
+                            <!-- LOGO HEADER -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:20px 28px 0 28px;border-radius:6px 6px 0 0;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/rodsbhbk/m" target=3D"_blank" style=3D"text-decorati=
+on:none;">
+                                                        <img src=3D"hxxps:/=
+/offer[.]biocorerenew[.]com/backrestore/images/intera/logo[.]svg" alt=3D"Ba=
+ck Restore - Professional Decompression" width=3D"130" style=3D"display:blo=
+ck;border:none;max-width:100%;">
+                                                    </a>
+                                                </td>
+                                                <td align=3D"right" valign=
+=3D"middle">
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Accent underline -->
+                                    <div style=3D"margin-top:18px;height:3p=
+x;background-color:#3E8A35;border-radius:2px 2px 0 0;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- HEADLINE + INTRO SECTION -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:30px 28px 26px 28px;">
+                                    <!-- Label -->
+                                    <p style=3D"font-family:'Outfit',Helvet=
+ica,Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;text=
+-transform:uppercase;color:#3E8A35;margin:0 0 16px 0;">
+                                        INDEPENDENT PRODUCT REVIEW</p>
+                                    <!-- Big headline -->
+                                    <h1 style=3D"font-family:'Fraunces',Geo=
+rgia,'Times New Roman',serif;font-size:33px;font-weight:300;color:#1A1A1A;m=
+argin:0 0 22px 0;line-height:1.22;letter-spacing:-0.3px;">
+                                        Why Professional Decompression Is G=
+etting Attention for Back Pain
+                                    </h1>
+                                    <!-- Author strip -->
+                                    <p style=3D"font-family:'Outfit',Helvet=
+ica,Arial,sans-serif;font-size:12px;font-weight:400;color:#6F7A6D;margin:0 =
+0 0 0;">
+                                        Independent health-product review =
+=EF=BF=BD Updated August 26, 2026
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- HERO IMAGE -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:0;">
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/rodsbhbk/m" style=3D"text-decoration:none;display:block;">
+                                        <img src=3D"hxxps://offer[.]biocore=
+renew[.]com/backrestore/images/pre/02[.]webp" alt=3D"Back Restore - Profess=
+ional Decompression" width=3D"100%" style=3D"display:block;max-width:100%;b=
+order:none;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- OPENING COPY -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:28px 28px 0 28px;">
+                                    <p style=3D"font-family:'Fraunces',Geor=
+gia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;mar=
+gin:0 0 20px 0;">
+                                        For people dealing with recurring b=
+ack discomfort or sciatica, the usual advice
+                                        can feel frustratingly familiar: st=
+retch more, manage the symptoms, and keep
+                                        going. Back Restore takes a differe=
+nt approach by focusing on mechanical
+                                        decompression at home.
+                                    </p>
+                                    <p style=3D"font-family:'Fraunces',Geor=
+gia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;mar=
+gin:0 0 20px 0;">
+                                        Its Regenesis Tri-Therapy System co=
+mbines dynamic traction, thermal
+                                        hydro-therapy and neuromuscular vib=
+ration in a 15-minute routine. The product
+                                        page says the goal is to reduce spi=
+nal pressure, support disc rehydration and
+                                        relax tight muscles.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- THREE FEATURE CARDS -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:4px 28px 24px 28px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Card 1 -->
+                                                <td width=3D"31%" valign=3D=
+"top" style=3D"background-color:#F7FCF6;border-top:3px solid #3E8A35;border=
+-radius:3px;padding:14px 12px;">
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-tr=
+ansform:uppercase;letter-spacing:2px;color:#3E8A35;margin:0 0 8px 0;">
+                                                        DECOMPRESSION</p>
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#=
+444440;line-height:1.6;margin:0;">
+                                                        Dynamic traction is=
+ designed to create space between vertebrae
+                                                        and reduce pressure=
+.
+                                                    </p>
+                                                </td>
+                                                <td width=3D"3%"></td>
+                                                <!-- Card 2 -->
+                                                <td width=3D"31%" valign=3D=
+"top" style=3D"background-color:#F7FCF6;border-top:3px solid #3E8A35;border=
+-radius:3px;padding:14px 12px;">
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-tr=
+ansform:uppercase;letter-spacing:2px;color:#3E8A35;margin:0 0 8px 0;">
+                                                        HEAT THERAPY</p>
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#=
+444440;line-height:1.6;margin:0;">
+                                                        Thermal hydro-thera=
+py adds controlled warmth to the
+                                                        decompression routi=
+ne.
+                                                    </p>
+                                                </td>
+                                                <td width=3D"3%"></td>
+                                                <!-- Card 3 -->
+                                                <td width=3D"31%" valign=3D=
+"top" style=3D"background-color:#F7FCF6;border-top:3px solid #3E8A35;border=
+-radius:3px;padding:14px 12px;">
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;text-tr=
+ansform:uppercase;letter-spacing:2px;color:#3E8A35;margin:0 0 8px 0;">
+                                                        VIBRATION</p>
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;color:#=
+444440;line-height:1.6;margin:0;">
+                                                        Neuromuscular vibra=
+tion is intended to relax tight muscles
+                                                        during the session.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- SECOND IMAGE -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:0 28px 24px 28px;">
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/rodsbhbk/m" style=3D"text-decoration:none;display:block;">
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- RESULT COPY -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:4px 28px 0 28px;">
+                                    <p style=3D"font-family:'Fraunces',Geor=
+gia,serif;font-size:18px;font-weight:300;color:#2E2A26;line-height:1.75;mar=
+gin:0 0 20px 0;">
+                                        The appeal is simplicity: position =
+the device on a flat surface, place the
+                                        curved arch beneath the lower back,=
+ select a mode and relax for about 15
+                                        minutes. The advertised program is =
+designed to bring three complementary
+                                        therapies together instead of requi=
+ring a long sequence of separate routines.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT + OFFER BLOCK -->
+                            <tr>
+                                <td style=3D"background-color:#F0F9EF;paddi=
+ng:28px;border-top:1px solid #CDEBC8;border-bottom:1px solid #CDEBC8;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Left: product image --=
+>
+                                                <td width=3D"230" valign=3D=
+"middle" style=3D"padding-right:20px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/rodsbhbk/m" style=3D"text-decoration:none;">
+                                                        <img src=3D"hxxps:/=
+/offer[.]biocorerenew[.]com/backrestore/images/pre/product[.]webp" alt=3D"B=
+ack Restore - Professional Decompression" width=3D"210" style=3D"display:bl=
+ock;border:none;max-width:150%;">
+                                                    </a>
+                                                </td>
+                                                <!-- Right: offer text -->
+                                                <td valign=3D"middle">
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:10px;font-weight:600;letter-=
+spacing:3px;text-transform:uppercase;color:#3E8A35;margin:0 0 8px 0;">
+                                                        CURRENT DEAL</p>
+                                                    <p style=3D"font-family=
+:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#1A1A1A;marg=
+in:0 0 8px 0;line-height:1.2;">
+                                                        Save 60% on Back Re=
+store
+                                                    </p>
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:300;color:#=
+555550;line-height:1.6;margin:0 0 6px 0;">
+                                                        The current offer l=
+ists a 60% discount, free shipping and a
+                                                        90-day money-back t=
+rial.
+                                                    </p>
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#6F7A6D;margin:0;=
+">
+                                                        Availability and pr=
+icing can change.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- CTA BUTTON -->
+                            <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng:28px 28px 32px 28px;text-align:center;border-radius:0 0 6px 6px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"center">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"background-col=
+or:#3E8A35;border-radius:4px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/rodsbhbk/m" target=3D"_blank" style=3D"font-family:'=
+Outfit',Helvetica,Arial,sans-serif;font-size:13px;font-weight:600;color:#ff=
+ffff;text-decoration:none;padding:17px 40px;display:inline-block;letter-spa=
+cing:1.5px;text-transform:uppercase;">
+                                                        CHECK AVAILABILITY =
+&amp; SAVE
+                                                    </a>
+                                                </td><br>
+                                                <!-- SPACER + FOOTER -->
+                                            <tr>
+                                                <td style=3D"height:24px;">=
+</td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <p style=3D"font-family=
+:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;color:#BBBBBB;line-heig=
+ht:1.7;margin:0;">
+                                                        Individual results =
+may vary. <br>
+                                                        <a href=3D"hxxps://=
+storage[.]googleapis[.]com/rodsbhbkunsb/m" style=3D"color:#BBBBBB;text-deco=
+ration:underline;">Unsubscribe
+                                                            from future
+                                                            emails.</a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+</body>
+
+</html>

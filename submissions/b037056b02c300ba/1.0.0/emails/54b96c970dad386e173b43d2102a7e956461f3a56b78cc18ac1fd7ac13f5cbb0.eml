@@ -1,0 +1,113 @@
+Authentication-Results: spf=pass (sender IP is 195.83.153.9)
+ smtp.mailfrom=etud.u-picardie.fr; dkim=pass (signature was verified)
+ header.d=u-picardie.fr;dmarc=pass action=none
+ header.from=etud.u-picardie.fr;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:A67D79175D2FE41B713B52F1DDA214998145D1A1CDFD10EADC75BF6FD5E7618B;UpperCasedChecksum:B24FE352BF64CB0C49879DF4FA15BE7DA85511C2FF5824E81076E2077282B8FF;SizeAsReceived:2983;Count:20
+X-Virus-Scanned: Debian amavisd-new at u-picardie.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=u-picardie.fr;
+	s=smtp; t=1788721146;
+	h=from:from:reply-to:reply-to:subject:date:date:message-id:message-id:
+	 to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=5k2AKSuuUfTFXnmX0JW8M5aQVCnMZqaP714jxwGToYE=;
+	b=GVWmSkLT1UzlXmaIwkpTuvd71ttjYoLSrl7zx0rTicjQKWItrzbTYUGl8GW6+fS76o+YCW
+	vKeb3hHCxREAOID5L/j5YuXWYiGCBrgUqOxRAq4nUEoegoDCbzqnbutRYVP5HoHhbwYLP3
+	oXXhguQIoLSn5SyW1pRI2UUkqQnc8jSbofPhv2bXWWDADEdzBnaSutsQ9LD+nIY9XMr2z+
+	BzFllwb16Bu4bjz4LvCjlnS73nWdlP5IPijt+WfI/A0cxCjCDl9hYRxEdtNt7hisrDWvJj
+	zqRmSZiT2/ux3kg3Li3WAcPQ3aGFoE7LymjD6EgqW5DPi2nJ/tur/YkxKeWrkw==
+Date: Sun, 06 Sep 2026 20:59:06 +0200
+Message-ID: 
+ <20260906205906.Horde.Jlk6-BqCIR0Q8jIyf1i0E_5@webmail.etud.u-picardie.fr>
+From: Kenneth Manly Andolf <imed.toulgui@etud.u-picardie.fr>
+Reply-to: budget.ropng@palaunet.com
+User-Agent: Horde Application Framework 5
+Content-Type: text/plain; charset=utf-8; format=flowed; DelSp=Yes
+Content-Disposition: inline
+X-Spamd-Bar: ++++
+Authentication-Results-Original: smtp.u-picardie.fr;	auth=pass
+ smtp.auth=t22007061 smtp.mailfrom=imed.toulgui@etud.u-picardie.fr
+X-Rspamd-Server: passoire-01
+X-Rspamd-Queue-Id: 4hdKHZ2R3Rz3wcd
+X-Spamd-Result: default: False [4.11 / 1000.00];
+	MISSING_SUBJECT(2.00)[];
+	MISSING_TO(2.00)[];
+	BAYES_SPAM(0.21)[65.77%];
+	MIME_GOOD(-0.10)[text/plain];
+	ARC_NA(0.00)[];
+	FROM_EQ_ENVFROM(0.00)[];
+	NEURAL_HAM(-0.00)[-0.999];
+	MIME_TRACE(0.00)[0:+];
+	DKIM_SIGNED(0.00)[u-picardie.fr:s=smtp];
+	MID_RHS_MATCH_FROMTLD(0.00)[];
+	ETUD_FROM(0.00)[etud.u-picardie.fr];
+	HAS_REPLYTO(0.00)[budget.ropng@palaunet.com];
+	RCVD_COUNT_TWO(0.00)[2];
+	RCVD_VIA_SMTP_AUTH(0.00)[];
+	REPLYTO_DOM_NEQ_FROM_DOM(0.00)[];
+	FROM_HAS_DN(0.00)[];
+	RCVD_TLS_ALL(0.00)[]
+X-IncomingHeaderCount: 20
+X-MS-Exchange-Organization-ExpirationStartTime: 06 Sep 2026 18:59:08.9280
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ b293065d-10fe-44c7-c359-08df0c48ee8c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AM3PEPF0000A794:EE_|SEYPR06MB7071:EE_|PH7P220MB1454:EE_|LV8P220MB1356:EE_
+X-MS-Office365-Filtering-Correlation-Id: b293065d-10fe-44c7-c359-08df0c48ee8c
+X-Sender-IP: 195.83.153.9
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|29090799004|34130799006|970799063|32020799003|47200799027|13020799009|46080799009|2700799033|58200799025|260825235400599003|3069299007|60050799012|5149299006|2607281247196008|440099028|3412199025|1380799030|1370799030|1360799030;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 06 Sep 2026 18:59:08.8001
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b293065d-10fe-44c7-c359-08df0c48ee8c
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AM3PEPF0000A794.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEYPR06MB7071
+X-MS-Exchange-Organization-AuthSource: 
+ AM3PEPF0000A794.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.7680149
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0382.004
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9560006)(10180024)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+
+
+--=20
+Hope this email reaches you in good health and well-being.
+
+This is to inform you that your grant support fund is now available.
+
+Please see the disbursement reference number below:
+
+(This will be provided in subsequent email):-
+\u2022 Disbursement Reference Number: GSI*******/*****/2***
+
+Kindly acknowledge receipt of this notification. If you have any
+questions or require further assistance, please contact us immediately.
+
+Notification Department
+\U0001f30dGSI=EF=BF=BD
+

@@ -1,0 +1,123 @@
+Authentication-Results: spf=softfail (sender IP is 35.247.110.176)
+ smtp.mailfrom=crescentrating.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none
+ header.from=crescentrating.com;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:3AFD5280370DD7C6BFC922F7096056752AA94B0506E853B9A32F10F59CFE9911;UpperCasedChecksum:A58E6825CCB78741FCC1519AFDA3116C9C856A1F83BA52D3A845B06860E5679B;SizeAsReceived:329;Count:7
+From: DirectMeds Order Services <support@crescentrating.com>
+To: <redacted@redacted.com>
+Subject: 
+ =?utf-8?q?Order_Now=2C_Lose_Weight_Sooner_=EF=BF=BD=EF=BF=BD=EF=BF=BD_Your_P?=
+ =?utf-8?q?rescription_is_Waiting?=
+Message-ID: <b9cb74512d014f2d88b576957934bcb7@crescentrating.com>
+Date: Sat, 29 Aug 2026 17:06:02 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Aug 2026 17:06:03.1032
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ bc6cf904-cf25-40d4-128d-08df05efce94
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN7PEPF00000091:EE_|DS6P220MB835816:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN7PEPF00000091.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 8/29/2026 4:19:25 PM
+X-MS-Office365-Filtering-Correlation-Id: bc6cf904-cf25-40d4-128d-08df05efce94
+X-Sender-IP: 35.247.110.176
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|970799063|58200799025|69000799021|5139299004|13020799009|46110799015|34130799006|32020799003|1290799033|32080799009|2700799033|10300799038|9400799043|3025599003|9000799056|6100799021|1680799066|5149299006|5099299006|9800799015|260826003000599003|60050799012|18040799006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Aug 2026 17:06:02.8478
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ bc6cf904-cf25-40d4-128d-08df05efce94
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN7PEPF00000091.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS6P220MB835816
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1045439
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0360.006
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DIRECTMEDS!</title>
+  <style type="text/css">
+    /* Change --image-width to adjust the image size */
+    :root {
+      --image-width: 80%; /* e.g. set to 50%, 75%, 100%, etc. */
+    }
+    img.responsive {
+      width: var(--image-width);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .unsubscribe {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 1em;
+    }
+    .unsubscribe a {
+      color: #666;
+      text-decoration: underline;
+    }
+    .footer-address {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      line-height: 1.4;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="wrapper" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td>
+        <a href="hxxps://storage[.]googleapis[.]com/tomedsjm/ls">
+          <!-- apply the responsive class to get percentage sizing -->
+          <img src="hxxps://www[.]ni03hfph[.]com/686/offers/17452/c/50454/assets/Ad1_2c[.]jpg" alt="Direct Meds Ad" class="responsive">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+    </tr>
+  </table>
+
+  <div class="unsubscribe">
+    You may unsubscribe at any time by <a href="hxxps://storage[.]googleapis[.]com/tomedsjmunsb/ls">clicking here</a>,
+    or write to:
+  </div>
+  <div class="footer-address">
+    Direct Meds LLC<br>
+    14572 S 790 W #A100<br>
+    Bluffdale, UT 84065
+  </div>
+</body>
+</html>
+
