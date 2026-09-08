@@ -1,0 +1,630 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1788791754; cv=none;
+        d=google.com; s=arc-20260327;
+        b=c7QQ+9P4E25FFk4Xocx8tVsppM+h/MXPM3tJgOehmrdGjfLcjSfrN65/pUbNZ1eWtB
+         eF345wfwFrM1g3X+gW5U89YpKE4YhOFJfBZzE2iwTBMc4h0/MlBkpdwE266gpvLyZE/p
+         i4fsYerbhVbsiAmQupgCqmceqwL0X/uwido6Cf5qfLRypFWPDTVyuD6/VPdrOtmcmjdq
+         RU9RkFo2aOw04arJ8VLvh/54+xOI3aqrgWWUA4EFmRwb2naPjnETHn87Fnd8uQLPhuxG
+         +v/bLpd5hHMgX3EAlvb/Ev5Jp6W6MwaFVNjjqSvHC8HqWEitLoo+98HTcGB4G6U60Xqm
+         UH6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=/3AErq/jET7Io4qpp84X66/XsE7Y8GLG/i4kWWbH0UI=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=Up+Ir/P9MPZfegwF6YBMHCw7a2RU3OrVJt/+FTEwIcUJ39NYMdAI5QV+at/AllAN6l
+         t+3tE+N6g81tiIR9xB/aVqpivICp91C1BY2oU79J0xR5ZYVzcBqABEqSZUamdWSA3HUa
+         j9O7kQWdUOZ+fB/dEbQnJhG2e5CMBblqKzQGZ35/DRP/ZxKjrevff7iFdCSKM5j1NeQd
+         qtiibcMHvABBEPBUKCOPVGTbQpwjqfcrnx07uHTLUfiCHvcpGjR1Od3tQiJaZar2GZEr
+         DiJ2dEKDQfbLYwjmtp2bSQu5v6MeU4sT9Gm9bBYF+6U93iImA1Mn5tmS+qMYV4PNCXv9
+         bVwg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@y8a9h7.y8a9h7.ktx5i5.us
+ header.s=smtp header.b=QPt+p5bw;
+       spf=pass (google.com: domain of
+ return@finetune-eystem2e.aivault.com.importedly.net designates 192.236.246.75
+ as permitted sender)
+ smtp.mailfrom=return@finetune-eystem2e.aivault.com.importedly.net
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@y8a9h7.y8a9h7.ktx5i5.us
+ header.s=smtp header.b=QPt+p5bw;
+       spf=pass (google.com: domain of
+ return@finetune-eystem2e.aivault.com.importedly.net designates 192.236.246.75
+ as permitted sender)
+ smtp.mailfrom=return@finetune-eystem2e.aivault.com.importedly.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=y8a9h7.y8a9h7.ktx5i5.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=ppenwkeawyfljw.35465486738890@y8a9h7.y8a9h7.ktx5i5.us;
+ bh=fz6lk2YM6AipVR7C7M+FODBOnMw=;
+ b=QPt+p5bwcpj8adZtR0xOcFp7p373YKTR3NZxIn0IZCbZDl24w11o/tJx6wfGqb7wlOuhRbYd5snm
+   KUeKXipnW96fszHAGg9yez+9WlfSQtnuop8sFPs6X2UEXb0yqt+6zbCTzTZyfRjRVYl/6LPPOmgy
+   CO8JOvShtZT5fGwixKxwi0xDrJuogWeFlfcYNvrUYFGsmddyfOuClQXcF4ea4zcNIzui3qbcfAaN
+   U5tVgOYCBaJvb5TSbj5lCQpSIjIUGQerukly3o9AdDumtgYKnFQAuxBJ5b22GyGovKQ7/riFnO22
+   f2GVA18oEsX7wOQ9lBrkbtCdU6pjQ0PJ4GagSA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=y8a9h7.y8a9h7.ktx5i5.us;
+ b=N+PAsr2/Ip3I27NCzDi1bgGp6eMdqr62I6W2fmDAMNYvzpG9beGAkAD7lq3es8+7y5QkMDspKvVb
+   9KoxNOZ6bCXkBI+no4Fa4NtySy9+r0a4MvR7JBHGl6V1kxwbgZ8GTUgXNvdyJColdl9DaEo3Uj3C
+   B9+iTGrgnmpDwr33O5GpTWmf5Nk7angmxIgvoJuTXiJrk7QEwkNJoNVYCxzy4kV7MuC6ZG4cHXEb
+   KPd5ogJ6vfCYuSkPJkOsmHo8zeYh6mOfI+Jr6rAGJdZOXEqiQ8Q2XWYFc6eoqUTkrl0YUkJgngfb
+   aOzYrFeHVEBCtQA05zQaZ5coGFODzS2cQzwsPQ==;
+Date: Mon, 07 Sep 2026 14:35:53 +0000
+From: "McAfeeEmergencyNotice"
+ <ppenwkeawyfljw.35465486738890@y8a9h7.y8a9h7.ktx5i5.us>
+Message-ID: <8i2t43vk.ukw70220.y8a9h7.ukw7SMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: 
+ =?utf-8?b?cmVkYWN0ZWQsIFlvdXIgTWNBZmVlIHBheW1lbnQgZmFpbGVkIGFuZCBwcm90ZWN0?=
+ =?utf-8?b?aW9uIGlzIG9mZiM5NDQwMDk2Ne+/ve+/ve+/ve+/ve+/ve+/vQ==?=
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 09-07-2026
+
+715066621608779641057749319119596137711797532166821184611020
+-----
+niflvcgvzgvasglcawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqoniflvcgvzgvasgl=
+cawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqo
+niflvcgvzgvasglcawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqoniflvcgvzgvasgl=
+cawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqo
+niflvcgvzgvasglcawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqoniflvcgvzgvasgl=
+cawdcrzogqishlhydesrwykgsqxtvdwpadipupefizsqo
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+If you believe this has been sent to you in error, please safely unsubscrib=e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<html lang=3D"en">
+<head>
+ =20
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, H=
+elvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.5;
+      padding: 20px;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,=
+ 0, 0, 0.06);
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+    .header-branding {
+      padding: 25px 40px 10px;
+      text-align: center;
+      background: white;
+    }
+    .logo-bg {
+      background: white;
+      display: inline-block;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    .logo-bg img {
+      max-width: 180px;
+      height: auto;
+    }
+    .status-alert-bar {
+      background-color: #C01818;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    .body-content {
+      padding: 30px 40px 40px;
+    }
+    .headline {
+      font-size: 24px;
+      font-weight: 700;
+      color: #75160D;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .intro-text {
+      font-size: 16px;
+      color: #475569;
+      margin-bottom: 25px;
+    }
+    .intro-text strong {
+      color: #C01818;
+    }
+    .info-card {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label { color: #64748b; font-size: 14px; }
+    .info-value { font-weight: 600; font-size: 14px; text-align: right; }
+
+    /* Timetable Styles */
+    .failed-log-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #94a3b8;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+    .timetable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 13px;
+    }
+    .timetable th {
+      text-align: left;
+      color: #64748b;
+      font-weight: 600;
+      padding: 10px;
+      background: #f8fafc;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    .timetable td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #f1f5f9;
+      vertical-align: middle;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 11px;
+      background: #fee2e2;
+      color: #ef4444;
+      text-transform: uppercase;
+    }
+
+    .action-btn {
+      display: block;
+      background: #C01818;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding: 18px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 30px;
+      transition: background 0.2s;
+    }
+    .action-btn:hover { background: #75160D; }
+
+    .promo-box {
+      margin-top: 24px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      text-align: center;
+      background: #fffcfc;
+    }
+    .promo-box h4 {
+      color: #C01818;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .promo-box p { font-size: 13px; color: #64748b; }
+
+    .footer {
+      padding: 30px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+    }
+    .footer a { color: #64748b; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class=3D"email-container">
+    <div class=3D"status-alert-bar">
+      FINAL NOTICE: PROTECTION EXPIRES TODAY
+    </div>
+   =20
+    <div class=3D"header-branding">
+      <div class=3D"logo-bg" >
+
+         <h1> McAfee </h1>
+      </div>
+    </div>
+
+    <div class=3D"body-content">
+      <h2 class=3D"headline">Important Account Update</h2>
+     =20
+      <p class=3D"intro-text">
+        We are writing to inform you that your subscription is currently pe=
+nding deactivation. <strong>Multiple attempts to process your recurring pay=
+ment have failed.</strong>=20
+        <br><br>
+        In an era of increasing identity theft and digital menaces, maintai=
+ning your protection is critical. Your personal data remains vulnerable unt=
+il your payment method is successfully updated.
+      </p>
+
+      <div class=3D"info-card">
+        <div class=3D"info-row">
+          <div class=3D"info-label">Account User : </div>
+          <div class=3D"info-value">redacted@redacted.com</div>
+        </div>
+        <div class=3D"info-row">
+          <div class=3D"info-label">Coverage End Date : </div>
+          <div class=3D"info-value" id=3D"current-date">09-07-2026</div>
+        </div>
+        <div class=3D"info-row">
+          <div class=3D"info-label">Current Risk Level : </div>
+          <div class=3D"info-value" style=3D"color:#C01818;">CRITICAL</div>
+        </div>
+      </div>
+
+      <div class=3D"failed-log-title">Transaction Timetable</div>
+      <table class=3D"timetable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id=3D"date-1" style=3D"font-weight: 600;">09-07-2026</td>
+            <td>Subscription Renewal</td>
+            <td><span class=3D"status-badge">Declined</span></td>
+          </tr>
+          <tr>
+            <td id=3D"date-2" style=3D"font-weight: 600;">09-07-2026</td>
+            <td>Automatic Retry</td>
+            <td><span class=3D"status-badge">Failed</span></td>
+          </tr>
+          <tr>
+            <td id=3D"date-3" style=3D"font-weight: 600;">09-07-2026</td>
+            <td>Final System Attempt</td>
+            <td><span class=3D"status-badge">Unpaid</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]h=
+tml#index[.]php?search=3D4&d253125&hpokk=3D50-32&lm=3D195982EOQU42450&sd=3D=
+11&page=3DUPRTV0AyGX3savz" class=3D"action-btn">Update Payment Method</a>
+
+      <div class=3D"promo-box">
+        <h4>75% Loyalty Discount</h4>
+        <p>To ensure your continued security, we've applied a 75% credit to=
+ your account for this month. Please complete your renewal before this offe=
+r expires at midnight.</p>
+      </div>
+    </div>
+
+    <div class=3D"footer">
+      Generated: <span id=3D"footer-time"></span> | Ref: 196333US<br>
+      =C2=A9 2026 Protection LLC. All rights reserved.<br>
+      9555 N 90th St A101, Scottsdale, AZ 85258<br>
+      <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]h=
+tml#index[.]php?search=3D4&d253125&ekqgv=3D50-32&lm=3D195982TTAP42450&sd=3D=
+11&page=3DkzTVJqeKFQrEmau">Manage email preferences</a>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const now =3D new Date();
+     =20
+      const dateEl =3D document.getElementById('current-date');
+      if (dateEl) dateEl.innerText =3D now.toLocaleDateString(undefined, { =
+year: 'numeric', month: '2-digit', day: '2-digit' });
+      const footerEl =3D document.getElementById('footer-time');
+      if (footerEl) footerEl.innerText =3D now.toLocaleString();
+      const d1 =3D new Date(); d1.setDate(now.getDate() - 2);
+      const d2 =3D new Date(); d2.setDate(now.getDate() - 1);
+   =20
+      const d1El =3D document.getElementById('date-1');
+      const d2El =3D document.getElementById('date-2');
+      const d3El =3D document.getElementById('date-3');
+     =20
+      const opt =3D { month: 'short', day: 'numeric' };
+      if (d1El) d1El.innerText =3D d1.toLocaleDateString(undefined, opt);
+      if (d2El) d2El.innerText =3D d2.toLocaleDateString(undefined, opt);
+      if (d3El) d3El.innerText =3D now.toLocaleDateString(undefined, opt);
+    })();
+  </script>
+</body>
+<center>
+	<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#i=
+ndex[.]php?search=3D5&d253125&pvcso=3D50-32&lm=3D195982UTET42450&sd=3D11&pa=
+ge=3DDC3TjfZ6OMO1YB7" >
+			<img src=3D"hxxps://i[.]imgur[.]com/pbPUPbD[.]png">
+		</a>
+		<br />
+		<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+ =20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d253125&tfugs=3D50-32&lm=3D195982BZYK42450&sd=3D11&pag=
+e=3DLHq1DDwaMbbbCon">Unsubscribe</a><br>
+ </center>
+		<br />
+	</center>
+</body>
+</html>
+
+
+
+<div style=3D"display:none;">
+=20
+<body dir=3D"ltr" class=3D"generic" bgcolor=3D"#FFFFFF" style=3D"background=
+-color: #FFFFFF;">
+
+  <div class=3D"preheader" style=3D"display: none; max-width: 0; max-height=
+: 600; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opa=
+city: 0;">
+    Updates to OpenAI=E2=80=99s Privacy Policy
+   =20
+  </div>
+
+  <!-- start body -->
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" di=
+r=3D"ltr" class=3D"wrapperMod" bgcolor=3D"#FFFFFF" style=3D"background-colo=
+r: #FFFFFF;">
+    <!-- start body block -->
+    <tr>
+      <td align=3D"center">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"360">
+        <tr>
+        <td align=3D"center" valign=3D"top" width=3D"360">
+        <![endif]-->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"email-shell heroMod03" bgcolor=3D"#FFFFFF" style=3D"width: 100=
+%; max-width: 600px; background-color:#FFFFFF;">
+         =20
+                        <!-- header image -->
+           =20
+           =20
+            <tr>
+                <td valign=3D"top" class=3D"header-td email-header-td" bgco=
+lor=3D"#FFFFFF" style=3D"padding: 42px 24px 42px 24px; background-color:#FF=
+FFFF;">
+                    <table align=3D"center" width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"email-header-surface" style=3D"mi=
+n-width:100%; background-color:transparent;">
+                        <tbody><tr>
+                            <td valign=3D"top" align=3D"center" class=3D"em=
+ail-header-inner" style=3D"padding-top: 0; padding-bottom: 0;">
+	                                <a href=3D"" target=3D"_blank" class=3D"em=
+ail-logo-pill email-header-logo-pill" style=3D"display:inline-block; backgr=
+ound-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); bord=
+er-radius:12px; padding:4px;">
+                                  <img alt=3D"" src=3D"" width=3D"103" styl=
+e=3D"display:block; margin:0 auto; width:103px; height:auto; max-width:100%=
+; border:0; background-color:#ffffff; background-image:linear-gradient(#fff=
+fff,#ffffff); border-radius:10px;">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+         =20
+
+         =20
+  <tr>
+    <td align=3D"center" bgcolor=3D"#ffffff" class=3D"content-td" style=3D"=
+padding: 24px 24px 32px 24px;">
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"center" width=3D"100%" style=3D"max-width: 552px; width: =
+100%;">
+        <tr>
+          <td align=3D"left" style=3D"padding:0; color:#000000;">
+            <p style=3D"font-family:'OpenAI Sans', Helvetica, Arial, sans-s=
+erif; font-weight:400; line-height:24px;">Hi JD,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">We=E2=80=99re u=
+pdating our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketin=
+g-update-link" style=3D"color:#000000; text-decoration:underline;">Privacy =
+Policy</a> to include information about ads in ChatGPT, including how they =
+work and how you can control your experience.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Ads may appear =
+on Free and Go plans. Plus, Pro, Enterprise, Business and Education plans d=
+o not have ads. Ads do not influence the answers ChatGPT gives you. When yo=
+u see an ad, it is always clearly labeled as sponsored and visually separat=
+ed from the organic answer. You=E2=80=99ll get relevant and personalized ad=
+s using information that stays only on ChatGPT, such as ads you've interact=
+ed with, or context from your chats. You can manage ad personalization anyt=
+ime in <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-upd=
+ate-link" style=3D"color:#000000; text-decoration:underline;">settings</a>.=
+</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Your personal d=
+etails and conversations with ChatGPT are private and are not shared with a=
+dvertisers. Advertisers do not have access to your chats, chat history, mem=
+ories, or personal details. Advertisers only receive overall information ab=
+out how their ads perform, such as total views or clicks.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Learn more abou=
+t <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-update-l=
+ink" style=3D"color:#000000; text-decoration:underline;">ads in ChatGPT</a>=
+ and our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-u=
+pdate-link" style=3D"color:#000000; text-decoration:underline;">privacy con=
+trols</a>, including how we protect your data.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Thanks,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">The OpenAI Team=
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+         =20
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    <!-- end body block -->
+
+        <!-- start footer -->
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+     =20
+     =20
+   =20
+    <tr>
+      <td align=3D"center" class=3D"email-footer-row" style=3D"padding:12px=
+ 0;">
+        <!--[if mso]>
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"600"><tr><td>
+        <![endif]-->
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"max-width:600px;">
+          <tr>
+            <td align=3D"center" class=3D"footer-td email-footer-surface" s=
+tyle=3D"background-color:#ededed; border-radius:12px; padding:24px;">
+              <table role=3D"presentation" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                <tr>
+                 =20
+                    <td align=3D"left" class=3D"email-footer-logo-cell" sty=
+le=3D"padding-bottom:12px;">
+	                      <a href=3D"" target=3D"_blank" style=3D"display:inli=
+ne-block;">
+                        <img src=3D"" width=3D"88" height=3D"23" alt=3D"Cha=
+tGPT Logo" class=3D"email-footer-logo-img" style=3D"display:block;border:0;=
+">
+                      </a>
+                    </td>
+                 =20
+                </tr>
+                <tr>
+                  <td>
+                    <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+                      <tr class=3D"footer-row">
+                        <td valign=3D"bottom" align=3D"left" class=3D"email=
+-footer-copy" style=3D"font-size:10px; line-height:1.8; color:#000; width:1=
+00%; padding-right:0; vertical-align: bottom; padding-left: 0;">
+                          OpenAI<br/>
+                         =20
+                            1455 3rd Street<br/>San Francisco, CA 94158<br/=
+>
+                         =20
+                         =20
+                          <a href=3D"" target=3D"_blank" style=3D"color:#89=
+8A8D; text-decoration:underline;">Privacy</a> &middot; <a href=3D"" target=
+=3D"_blank" style=3D"color:#898A8D; text-decoration:underline;">Terms</a><b=
+r/>
+                          <span class=3D"email-footer-copyright" style=3D"c=
+olor:#888; display:block; margin-top: 1.8em;">OpenAI =C2=A9 2015=E2=80=9320=
+26</span>
+                        </td>
+                       =20
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+<img src=3D"" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heigh=
+t:1px !important;width:1px !important;border-width:0 !important;margin-top:=
+0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-le=
+ft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddin=
+g-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--
