@@ -1,0 +1,438 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1788992787; cv=none;
+        d=google.com; s=arc-20260327;
+        b=J+hsZ9YIa76bHwLzx5KvdG23VPTAhVJG+cN52Rwfw4miuIzT+AmWWwaVin8YSo1Lpg
+         HM1XOppCEUz5LM8Ga0EzzaJdW2aNr0nYEf7grhZy1f+eim3j/3Rqs9dwBNonah7d/i38
+         om8QV4Y+ckY/KTpfyu6Ejx8FPEOYz1fMc+9SCaa7JL2eYKUk59it53pDbsjXDI3VXWMa
+         1ovyGCSCI4KLcwIES+oP0O9XNzSddVGCJYPPAjR+7yFnxCzLeG2nXnuZxyGBt7CTixKN
+         pj9KFE2v9wRjih1iLS6kFOYUV3a0QzZZxiKiIYTyHlK0pChKQO+nS8S/evN///KJFf1g
+         uKTQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=eplo1S2aND1sT3hOPoozjSfkFCN8ubqwwgugVVe5EwE=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=J/ntfd2086R64EuWDOH+6h4KNO8+XtdkznqumCm8h6y4RH1qP/er/tF8e5wapu7Lrf
+         yULkKh8ZYayMPsEHov4PimS9sqE9iyiCSEACwW7om8IV5Gsi6dzZpyLDjxuoeTyQnKS8
+         HcL7dcZgbfF+nWIZ0tKeljPJMxK3fGCsbjwm6lO6EEdIqLR/Xj9zwTOBdYNDe8V5ZIgI
+         Xxc/bCyuZi92NbKe75U9x65hJu/z0FwaaJzkwuV7zBJKnZFryai5F8Uw4HXV1WHLB/eG
+         F8vcmJusfxdhuceZ4n1olLMsKyn2wF/HUo5QVuhkeT7+PbZk6sDBBes1IGSnNIyRooX+
+         G15Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@z9rmqg.z9rmqg.3lbcn4.us
+ header.s=smtp header.b=ImRbZzlY;
+       spf=pass (google.com: domain of
+ return@sifntion-merge.dataommault.net.chronistem.com designates
+ 159.195.17.250 as permitted sender)
+ smtp.mailfrom=return@sifntion-merge.dataommault.net.chronistem.com
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@z9rmqg.z9rmqg.3lbcn4.us
+ header.s=smtp header.b=ImRbZzlY;
+       spf=pass (google.com: domain of
+ return@sifntion-merge.dataommault.net.chronistem.com designates
+ 159.195.17.250 as permitted sender)
+ smtp.mailfrom=return@sifntion-merge.dataommault.net.chronistem.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=z9rmqg.z9rmqg.3lbcn4.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=jxchkvvfiayhmd.79270520324922@z9rmqg.z9rmqg.3lbcn4.us;
+ bh=6aUK+NUBeOJm9Q1cGgbHOEI45Gc=;
+ b=ImRbZzlYVXEBWpHjh5I4IF8eZWiK1dBCWVZlkzs0tk3PqMYtxemBr5JcgDkby0322Cm6B5w6ttMu
+   /wDu6iu5aTZHCpCWFL+Jgyf+GVzeHu9nvFWouQ+z85nSpdtOb1Xgn8tev9K98/lRqJqhO+cpM9TU
+   2JuVWjGeZMAXZg6VUASfZpljEnUSeOmL5DIVrhFcL7Hk3eBXwCvC25K19eit/VCvvSx3XC1bJ4jC
+   RGAVnm/4kiCFwi3NZCSjNMt3YuqZllRwa9NrcK1pj+52bhjjTyyG31H1bsORF4XGHqV9X8R57AUa
+   nTIB3QJcquFfUKb6iq2BN8xXXynFzayQebcAXw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=z9rmqg.z9rmqg.3lbcn4.us;
+ b=LHzz541HteOSvVmMYl1chMfcBj/k2fimlcCERQ3eMMJ9Guy5GUZESF2GW5qy19ihkNgVvTfPWRHv
+   kvG/+oFuyj9KGa7j88+TVEfehBtLuD6HndDQr8IGfYp8/2B/J2bMsuA5f12Gr4jzHoJx9HXv9rGk
+   umtmJF0fcP4Ikxr7TyskID8dvoLKWZ6ktDMcXoaTUSzhSalrUtwmn68mzUZGyipin85KSVkC+Kao
+   RciZq2G8rReipFy9UrFLa5Ry/8zz4GadetovnFyVs2CH8WW5Xg0bNWJ9btS2ojD/u0fG5CkRa4e3
+   FxWQBcpOdl1IQtk4aPTjmBiGlCpZ+X/Q/v13Ag==;
+Date: Wed, 09 Sep 2026 22:26:26 +0000
+From: "Sex Trick" <jxchkvvfiayhmd.79270520324922@z9rmqg.z9rmqg.3lbcn4.us>
+Message-ID: <uxkrh35j.3at80220.z9rmqg.3at8SMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: Watch this Alone
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 09-09-2026
+
+928460926732358324564654337125190929597084465264732297332199
+-----
+tbglehluclqxukxvjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhztbglehluclqxukx=
+vjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhz
+tbglehluclqxukxvjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhztbglehluclqxukx=
+vjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhz
+tbglehluclqxukxvjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhztbglehluclqxukx=
+vjactqrsbvmylpyudlwlxktuogenirsmwsahimunyjmhz
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+If you believe this has been sent to you in error, please safely unsubscrib=e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<html>
+<body>
+<center>
+
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d256714&gbxmi=3D1354-32&lm=3D195982MTUW45167&sd=3D11&p=
+age=3D4xHLJkj8yfS5NsF" target=3D"_blank" style=3D"text-decoration:none;colo=
+r:inherit;display:block;">
+
+<table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"    st=
+yle=3D"background:#fff;border:1px solid #dadde1;font-family:Arial,sans-seri=
+f;">
+
+
+<table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"background:#fff;border:1px solid #dadde1;border-radius:8px;font-family:=
+Helvetica,Arial,sans-serif;">
+  <tr>
+    <td style=3D"padding:12px 12px 8px 12px;">
+
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+        <tr>
+          <td width=3D"48" valign=3D"top">
+            <div style=3D"width:40px;height:40px;background:#d8d8d8;border-=
+radius:50%;"></div>
+          </td>
+
+          <td valign=3D"top">
+            <div style=3D"font-size:15px;font-weight:600;color:#1c1e21;">
+             Kevin Costner
+            </div>
+
+            <div style=3D"font-size:13px;color:#65676b;">
+              28 minutes ago =C2=B7 =F0=9F=8C=90
+            </div>
+          </td>
+
+          <td align=3D"right" valign=3D"top" style=3D"color:#65676b;font-si=
+ze:20px;">
+            =E2=80=A2=E2=80=A2=E2=80=A2
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td style=3D"padding:0 12px 12px 12px;font-size:15px;line-height:22px;c=
+olor:#1c1e21;">
+ This is the recipe video that's going viral online. Watch it while you sti=
+ll can!<br>
+<strong>But be warned =E2=80=94 watch it alone.</strong> It contains explic=
+it sexual content.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+        <tr>
+          <td align=3D"center" style=3D"background:#111;height:620px;">
+
+            <div style=3D"width:350px; height:620px; background:#e8e8e8;mar=
+gin:auto; text-align:center;line-height:620px;color:#888;font-size:18px;">
+            <img src=3D"hxxps://imgur[.]com/gUsoTH5[.]jpg" style=3D"display=
+:block;max-width:350px;width:350px;height:auto;  margin:auto;">=20
+            </div>
+
+          </td>
+        </tr>
+      </table>
+     =20
+
+
+</a>
+
+ =20
+
+
+<tr>
+    <td align=3D"center" style=3D" font-size:10px;" >
+      <br>
+
+      848 N. Rainbow Blvd., Suite 3974 Las Vegas, NV 89107<br><br><br><br><=
+br><br>
+      <a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]h=
+tml#index[.]php?search=3D5&d256714&kbiwc=3D1354-32&lm=3D195982ZSCE45167&sd=
+=3D11&page=3DAKVtotkQ2UMkYO3">Unsubscribe here</a>
+	   <br><br><br><br>
+	   <center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+ =20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d256714&pwgam=3D1354-32&lm=3D195982JPBP45167&sd=3D11&p=
+age=3DKcf0evwjuMpJhuH">Unsubscribe</a><br>
+ </center>
+        </td>
+  </tr>
+  </table>
+</html>
+</body>
+
+
+
+
+<div style=3D"display:none;">
+=20
+<body dir=3D"ltr" class=3D"generic" bgcolor=3D"#FFFFFF" style=3D"background=
+-color: #FFFFFF;">
+
+  <div class=3D"preheader" style=3D"display: none; max-width: 0; max-height=
+: 600; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opa=
+city: 0;">
+    Updates to OpenAI=E2=80=99s Privacy Policy
+   =20
+  </div>
+
+  <!-- start body -->
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" di=
+r=3D"ltr" class=3D"wrapperMod" bgcolor=3D"#FFFFFF" style=3D"background-colo=
+r: #FFFFFF;">
+    <!-- start body block -->
+    <tr>
+      <td align=3D"center">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"360">
+        <tr>
+        <td align=3D"center" valign=3D"top" width=3D"360">
+        <![endif]-->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"email-shell heroMod03" bgcolor=3D"#FFFFFF" style=3D"width: 100=
+%; max-width: 600px; background-color:#FFFFFF;">
+         =20
+                        <!-- header image -->
+           =20
+           =20
+            <tr>
+                <td valign=3D"top" class=3D"header-td email-header-td" bgco=
+lor=3D"#FFFFFF" style=3D"padding: 42px 24px 42px 24px; background-color:#FF=
+FFFF;">
+                    <table align=3D"center" width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"email-header-surface" style=3D"mi=
+n-width:100%; background-color:transparent;">
+                        <tbody><tr>
+                            <td valign=3D"top" align=3D"center" class=3D"em=
+ail-header-inner" style=3D"padding-top: 0; padding-bottom: 0;">
+	                                <a href=3D"" target=3D"_blank" class=3D"em=
+ail-logo-pill email-header-logo-pill" style=3D"display:inline-block; backgr=
+ound-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); bord=
+er-radius:12px; padding:4px;">
+                                  <img alt=3D"" src=3D"" width=3D"103" styl=
+e=3D"display:block; margin:0 auto; width:103px; height:auto; max-width:100%=
+; border:0; background-color:#ffffff; background-image:linear-gradient(#fff=
+fff,#ffffff); border-radius:10px;">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+         =20
+
+         =20
+  <tr>
+    <td align=3D"center" bgcolor=3D"#ffffff" class=3D"content-td" style=3D"=
+padding: 24px 24px 32px 24px;">
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"center" width=3D"100%" style=3D"max-width: 552px; width: =
+100%;">
+        <tr>
+          <td align=3D"left" style=3D"padding:0; color:#000000;">
+            <p style=3D"font-family:'OpenAI Sans', Helvetica, Arial, sans-s=
+erif; font-weight:400; line-height:24px;">Hi JD,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">We=E2=80=99re u=
+pdating our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketin=
+g-update-link" style=3D"color:#000000; text-decoration:underline;">Privacy =
+Policy</a> to include information about ads in ChatGPT, including how they =
+work and how you can control your experience.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Ads may appear =
+on Free and Go plans. Plus, Pro, Enterprise, Business and Education plans d=
+o not have ads. Ads do not influence the answers ChatGPT gives you. When yo=
+u see an ad, it is always clearly labeled as sponsored and visually separat=
+ed from the organic answer. You=E2=80=99ll get relevant and personalized ad=
+s using information that stays only on ChatGPT, such as ads you've interact=
+ed with, or context from your chats. You can manage ad personalization anyt=
+ime in <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-upd=
+ate-link" style=3D"color:#000000; text-decoration:underline;">settings</a>.=
+</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Your personal d=
+etails and conversations with ChatGPT are private and are not shared with a=
+dvertisers. Advertisers do not have access to your chats, chat history, mem=
+ories, or personal details. Advertisers only receive overall information ab=
+out how their ads perform, such as total views or clicks.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Learn more abou=
+t <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-update-l=
+ink" style=3D"color:#000000; text-decoration:underline;">ads in ChatGPT</a>=
+ and our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-u=
+pdate-link" style=3D"color:#000000; text-decoration:underline;">privacy con=
+trols</a>, including how we protect your data.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Thanks,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">The OpenAI Team=
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+         =20
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    <!-- end body block -->
+
+        <!-- start footer -->
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+     =20
+     =20
+   =20
+    <tr>
+      <td align=3D"center" class=3D"email-footer-row" style=3D"padding:12px=
+ 0;">
+        <!--[if mso]>
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"600"><tr><td>
+        <![endif]-->
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"max-width:600px;">
+          <tr>
+            <td align=3D"center" class=3D"footer-td email-footer-surface" s=
+tyle=3D"background-color:#ededed; border-radius:12px; padding:24px;">
+              <table role=3D"presentation" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                <tr>
+                 =20
+                    <td align=3D"left" class=3D"email-footer-logo-cell" sty=
+le=3D"padding-bottom:12px;">
+	                      <a href=3D"" target=3D"_blank" style=3D"display:inli=
+ne-block;">
+                        <img src=3D"" width=3D"88" height=3D"23" alt=3D"Cha=
+tGPT Logo" class=3D"email-footer-logo-img" style=3D"display:block;border:0;=
+">
+                      </a>
+                    </td>
+                 =20
+                </tr>
+                <tr>
+                  <td>
+                    <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+                      <tr class=3D"footer-row">
+                        <td valign=3D"bottom" align=3D"left" class=3D"email=
+-footer-copy" style=3D"font-size:10px; line-height:1.8; color:#000; width:1=
+00%; padding-right:0; vertical-align: bottom; padding-left: 0;">
+                          OpenAI<br/>
+                         =20
+                            1455 3rd Street<br/>San Francisco, CA 94158<br/=
+>
+                         =20
+                         =20
+                          <a href=3D"" target=3D"_blank" style=3D"color:#89=
+8A8D; text-decoration:underline;">Privacy</a> &middot; <a href=3D"" target=
+=3D"_blank" style=3D"color:#898A8D; text-decoration:underline;">Terms</a><b=
+r/>
+                          <span class=3D"email-footer-copyright" style=3D"c=
+olor:#888; display:block; margin-top: 1.8em;">OpenAI =C2=A9 2015=E2=80=9320=
+26</span>
+                        </td>
+                       =20
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+<img src=3D"" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heigh=
+t:1px !important;width:1px !important;border-width:0 !important;margin-top:=
+0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-le=
+ft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddin=
+g-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--

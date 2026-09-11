@@ -1,0 +1,1041 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789020074; cv=none;
+        d=google.com; s=arc-20260327;
+        b=nOiztsr19f0118ZYN0475Pe/6ZIkrxPV8WtywQeG9fHTVadxFv94hGCh3On75CSqgG
+         NnsgwYXP425Hdwp79YL4wEYSyRjUcn1xBEztBEYdG2CumMFOGjuyNah25+deyBCsuaCB
+         o5AVOrBQoCw0pUYqW79MN4qlkIViZYz/az73D3sCGig/XFW+ZH+Lm4WGRgjhNUihcl2u
+         QotyFd3PTT8f+R/4ZDmoUXjIJtEuCgu/KUMW4Zy3ux+wcnEfq1weSzIMpkY2iuYbU0aL
+         gnYxxEtoOGfMFx2cEYtyhUhgVmmocOPpI+E+s/LpVMLiKjm8ytnn4y8Qsv4xXLdwQ4ku
+         5KaA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=1u8f+WMhxS3XY+aLI5jvyT42aq15x5A3/3v3+93ai1o=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=lQv7rSJFpVxjpdHIxl9axKB+bgac/Q1if/ubcgEIcKK6DZ45P/0MlnxLcN5IfGdHKS
+         nkDgLBBwaue4pRKxwJPmSx0ATXuOx2semoVP6QEZ7Vsr1VbK03WgTOCa/v54A7kH7pJx
+         QJOrzPaukr0wfWwgoHdhqMweDHR6ftmtLfaxqSewp6ks2Ei3SczmhGwX7PBqGtYl8eyz
+         38CqpOaYXihLoNYaGTHeB0jJ6MiFRQw5B5BtZ44k+wbiLKubaYdgTXGwJEOL/vSsaLtM
+         txrH68hcbmj0Od7osdAiSUozEnAhe65bhD0UErnUZTGnVGlGsmcVjzeZNlfl//aGa77z
+         uj/w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@xibyvhvl.yaxaa.afternic.eu.com header.s=smtp
+ header.b="LVznYg/o";
+       spf=pass (google.com: domain of azcbllqzjefub@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=azcbllqzjefub@yaxaa.afternic.eu.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@xibyvhvl.yaxaa.afternic.eu.com header.s=smtp
+ header.b="LVznYg/o";
+       spf=pass (google.com: domain of azcbllqzjefub@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=azcbllqzjefub@yaxaa.afternic.eu.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=xibyvhvl.yaxaa.afternic.eu.com;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=nokpohzieaumgsjeiupsv@xibyvhvl.yaxaa.afternic.eu.com;
+ bh=94rWWJgUx9yNs2b60UEYQ6GqfjU=;
+ b=LVznYg/o8qr5QwYQOLZTbPmFM9CThzlu2luohspVtemT0c6hhB2rjwLCet0FTwAlgFfzQZSIKZik
+   CBBSpG4analSC75u8PNPEMLcVFO0tW+Tcmh0VwdgplTCJZrq2kz7tS83T395EeTqo9LR4tpTS+l2
+   itwn1MXISZYv0DyR2YmGGnc1mPmgF4Mt6u5Si3ym0coiqKi5BloiI3svCZCtQUXe20ZcJZgCSoVF
+   sp29N7iM/4mKDC8fxUHk9VPSYV9yX1Bk8eiX1z/Npito8/JIhTf0T6lKdlwr2Fu+YHWGPF58AL++
+   hOWSsoSfpCRFV6NYfZ80Sldt5I1DZkEimwZqOQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=xibyvhvl.yaxaa.afternic.eu.com;
+ b=AqznYBa9whDTfffN3H0GkWWvCxVuKrW3fEo+aZvzwaeFNFCzrlDxurLPzVmb1mI6CrH1zAZfu/7S
+   jCzImy+opkefZpAT7nQVn927dtp+DGgDypDq5B7ShozoUzi3lbhd0bmzMFL4fgeuA1dE2Zg0yVlQ
+   Q9ZNhTgIY+yAVnvmhu3xtwUADMfLFEfsISbqF9GfeERhaAGUN75Ne60XNLu/qoIsdl1BJnbo7UuG
+   UG/IHHf6Awi3bFrdGxAcfTXueZFOmT+DX+6/KeKidhPN7FrFf4Mn0eoCLSioBrrkZfM5R0CpfWXI
+   0wvSF61DPMzxxPGRz79Yv+PQHCaGZrIe71pCvg==;
+Subject: Herz P1 Smart Scale: 56 metrics, no monthly fee
+From: Herz_P1_Partners<vdfakic.32.195982@xibyvhvl.yaxaa.afternic.eu.com>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.3.247.121
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <lssnesivohqnuzhcsmgtyjsvmnhveq@6v0j15kk005u9v2irn>
+List-Unsubscribe: <http://ravino.pro/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Thu, 10 Sep 2026 06:00:40 +0000
+Sender: nokpohzieaumgsjeiupsv@xibyvhvl.yaxaa.afternic.eu.com
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#iroC=
+NxiBwoOYjiTggmGPdPJiQJZnqE&4itxZGjiJVm&258229/1351/jqyfypdzks[.]home[.]php?=
+sq=3D32-195982&lk=3D40872-7&page=3D732" style=3D"text-decoration:none; colo=
+r:black">
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en-GB">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>=F0=9F=A9=BA Special Report: Herz P1 Smart Scale</title>
+    <style>
+        @import url('hxxps://fonts[.]googleapis[.]com/css2?family=3DFraunce=
+s:ital,opsz,wght@0,9[.][.]144,300;0,9[.][.]144,600;1,9[.][.]144,300;1,9[.][=
+.]144,600&family=3DOutfit:wght@300;400;500;600&display=3Dswap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            background: #f0f4f8;
+            padding: 30px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 560px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+            border: 1px solid #e8edf2;
+        }
+
+        .content { padding: 22px 25px 18px; }
+
+        .header-bar {
+            padding: 20px 28px 0 28px;
+            background: #ffffff;
+            border-radius: 6px 6px 0 0;
+        }
+        .header-bar .logo { max-width: 130px; display: block; }
+        .header-bar .divider {
+            margin-top: 18px;
+            height: 3px;
+            background-color: #00147C;
+            border-radius: 2px 2px 0 0;
+        }
+
+        .badge {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00147C;
+            margin: 0 0 14px 0;
+            display: block;
+        }
+
+        .headline {
+            font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+            font-size: 30px;
+            font-weight: 300;
+            color: #101B45;
+            margin: 0 0 18px 0;
+            line-height: 1.22;
+            letter-spacing: -0.3px;
+        }
+        .subtitle {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #6E7690;
+            margin: 0;
+        }
+
+        .body-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 17px;
+            font-weight: 300;
+            color: #202844;
+            line-height: 1.75;
+            margin: 0 0 18px 0;
+        }
+        .body-text strong { color: #00147C; font-weight: 600; }
+
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 16px 0 20px;
+        }
+        .feature-item {
+            flex: 1;
+            min-width: 30%;
+            background: #F1F4FC;
+            border-top: 3px solid #00147C;
+            border-radius: 3px;
+            padding: 14px 12px;
+            text-align: left;
+        }
+        .feature-item .label {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00147C;
+            margin: 0 0 6px 0;
+            display: block;
+        }
+        .feature-item .desc {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            color: #3F4965;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .offer-section {
+            background: #EEF1FA;
+            padding: 24px 24px;
+            border-top: 1px solid #D7DEF0;
+            border-bottom: 1px solid #D7DEF0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+        }
+        .offer-section .product-img { max-width: 200px; }
+        .offer-section .offer-text {
+            flex: 1;
+            min-width: 180px;
+        }
+        .offer-section .offer-text .label {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00147C;
+            display: block;
+            margin: 0 0 6px 0;
+        }
+        .offer-section .offer-text .title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #101B45;
+            margin: 0 0 6px 0;
+            line-height: 1.2;
+        }
+        .offer-section .offer-text .desc {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            color: #4E5874;
+            line-height: 1.6;
+            margin: 0 0 4px 0;
+        }
+        .offer-section .offer-text .note {
+            font-family: 'Outfit', Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            color: #7A839A;
+            margin: 0;
+        }
+
+        .tags-box {
+            background: #f8f9fa;
+            border: 1px solid #e8edf2;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 14px 0;
+            text-align: left;
+            font-size: 13px;
+            color: #2d3a4a;
+            line-height: 1.8;
+        }
+        .tags-box .label { color: #5a6a7a; font-weight: 600; }
+        .tags-box .value { font-weight: 700; color: #0a1628; float: right; =
+}
+
+        .cta-btn {
+            display: block;
+            background: #00147C;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 16px 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 2px solid #00147C;
+        }
+        .cta-btn:hover {
+            background: #00209E;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(0,20,124,0.25);
+        }
+
+        .footer {
+            background: #f8fafc;
+            padding: 16px 20px;
+            border-top: 1px solid #e8edf2;
+            text-align: center;
+        }
+        .footer p {
+            font-size: 11px;
+            color: #8B93A8;
+            line-height: 1.7;
+        }
+        .footer a {
+            color: #8B93A8;
+            text-decoration: underline;
+            margin: 0 4px;
+        }
+        .footer .sunsb { color: #00147C; font-weight: bold; }
+
+        @media (max-width: 480px) {
+            .content { padding: 16px; }
+            .headline { font-size: 24px; }
+            .body-text { font-size: 15px; }
+            .offer-section { flex-direction: column; text-align: center; }
+            .offer-section .product-img { max-width: 150px; margin: 0 auto;=
+ }
+            .features-grid { flex-direction: column; }
+            .tags-box .value { float: none; display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+
+<div class=3D"container">
+
+    <div class=3D"content">
+
+        <!-- HEADER -->
+        <div class=3D"header-bar">
+            <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka=
+[.]html#ibkGmSsohJqGSbmuTRlaqyIBRnptIe&4KYTSaWbXnd&258229/1351/quqewryqxg[.=
+]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D564" style=3D"text-decoratio=
+n:none;">
+                <img src=3D"hxxps://i[.]imgur[.]com/BT592Bc[.]png" alt=3D"H=
+erz P1 Smart Scale" class=3D"logo">
+            </a>
+            <div class=3D"divider"></div>
+        </div>
+
+        <!-- BADGE -->
+        <div style=3D"padding-top: 20px;">
+            <span class=3D"badge">=F0=9F=93=8B INDEPENDENT PRODUCT REVIEW</=
+span>
+        </div>
+
+        <!-- HEADLINE -->
+        <div class=3D"headline">
+            Your bathroom scale may be telling you only part of the story.
+        </div>
+        <p class=3D"subtitle">A partner review of the Herz P1 Smart Scale a=
+nd its full-body tracking features</p>
+
+        <!-- IMAGE 1 -->
+        <div style=3D"margin: 16px 0;">
+            <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka=
+[.]html#DSMSBpKVjnXUjxcOAGoepBgpLXcPdd&4paJdKUOuNE&258229/1351/mxqshhtouu[.=
+]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D329" style=3D"text-decoratio=
+n:none;display:block;">
+                <img src=3D"hxxps://i[.]imgur[.]com/Onhspow[.]png" alt=3D"H=
+erz P1 Smart Scale" width=3D"100%" style=3D"display:block;max-width:100%;bo=
+rder:none;border-radius:8px;">
+            </a>
+        </div>
+
+        <!-- BODY TEXT -->
+        <div class=3D"body-text">
+            Weight can move for many reasons. Water levels, muscle changes =
+and body composition can all shift while the number on a conventional scale=
+ barely changes.
+        </div>
+        <div class=3D"body-text">
+            The <strong>Herz P1 Smart Scale</strong> takes a broader approa=
+ch, using eight electrodes and dual-frequency BIA technology to estimate de=
+tailed body metrics and help users follow changes over time.
+        </div>
+
+        <!-- FEATURES -->
+        <div class=3D"features-grid">
+            <div class=3D"feature-item">
+                <span class=3D"label">=E2=9A=A1 8 ELECTRODES</span>
+                <p class=3D"desc">Uses hands and feet for a more complete b=
+ody scan than a basic foot-only scale.</p>
+            </div>
+            <div class=3D"feature-item">
+                <span class=3D"label">=F0=9F=93=8A 56 METRICS</span>
+                <p class=3D"desc">Track weight, body composition estimates,=
+ water, muscle and additional wellness data.</p>
+            </div>
+            <div class=3D"feature-item">
+                <span class=3D"label">=F0=9F=92=B3 NO MONTHLY FEE</span>
+                <p class=3D"desc">Full tracking access is promoted without =
+an ongoing monthly subscription.</p>
+            </div>
+        </div>
+
+
+
+        <!-- IMAGE 2 -->
+        <div style=3D"margin: 16px 0;">
+            <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka=
+[.]html#lNhZYlXCexBBTrCOhfmRecHOKNysYn&4fpBjzrVRYi&258229/1351/ipghmevpcc[.=
+]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D286" style=3D"text-decoratio=
+n:none;display:block;">
+                <img src=3D"hxxps://i[.]imgur[.]com/kQeUUya[.]jpeg" alt=3D"=
+Herz P1 Smart Scale" width=3D"100%" style=3D"display:block;max-width:100%;b=
+order:none;border-radius:8px;">
+            </a>
+        </div>
+
+        <!-- BODY TEXT 2 -->
+        <div class=3D"body-text">
+            The practical advantage is context. Instead of reacting to one =
+number alone, users can review trends in body composition and other estimat=
+es in the companion app. The scale also offers <strong>Bluetooth syncing</s=
+trong>, an extra-large LED display and battery life advertised at <strong>u=
+p to 180 days</strong>.
+        </div>
+
+        <!-- OFFER SECTION -->
+        <div class=3D"offer-section">
+            <div>
+                <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salam=
+inka[.]html#drNjZtPJlgiIJMNUJLZxzoFjwfSksw&4czENHfWbsK&258229/1351/eicdvumi=
+xp[.]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D426" style=3D"text-decor=
+ation:none;">
+                    <img src=3D"hxxps://i[.]imgur[.]com/Qhm35rs[.]jpeg" alt=
+=3D"Herz P1 Smart Scale" class=3D"product-img">
+                </a>
+            </div>
+            <div class=3D"offer-text">
+                <span class=3D"label">=F0=9F=8E=81 PARTNER OFFER</span>
+                <div class=3D"title">Check the current Herz P1 availability=
+.</div>
+                <p class=3D"desc">Review current pricing, product details a=
+nd package availability through the offer page.</p>
+                <p class=3D"note">Pricing and availability may change.</p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]h=
+tml#zIZtjAqSCvaIgkWuhtyhckTncEmmsM&4hTzsUzFYjZ&258229/1351/tlcnaufnrk[.]hom=
+e[.]php?sq=3D32-195982&lk=3D40872-7&page=3D179" class=3D"cta-btn">
+            =F0=9F=9B=92 CHECK CURRENT OFFER
+        </a>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class=3D"footer">
+        <p>
+            Individual experiences and measurements may vary. This product =
+is intended for general wellness tracking and is not a substitute for profe=
+ssional medical advice.
+        </p>
+        <p>
+            <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka=
+[.]html#CkoqxqcElxbcGKFIRPYhwWrJRtpeMw&5CLAdsuRmYW&258229/1351/inkqyawhea[.=
+]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D501">Unsubscribe </a>
+            |
+            <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka=
+[.]html#TWTtpeHwPbmBvJkMhmNMhdXXeoRpWP&6YEHlbVvHxA&258229/1351/jhzsplaeok[.=
+]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D504" class=3D"sunsb">=F0=9F=
+=94=92 Unsubscribe Permanently</a>
+        </p>
+        <p style=3D"margin-top: 4px; font-size: 10px; color: #bbb;">=C2=A9 =
+2026 Herz P1. All rights reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object TJAFNTYITYKETBYDRQBKZXCCPTOOSAOGVNJNBPRGDOJHCARTLLZBAEGGPCXY>
+
+Dear YLYRFBQJMQEJZVPKKEQEOY yulmxgdiipeteyanjtvewv,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is dmkkrntlhxhxtzxrmfqbsoz=
+wyxvs.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi zyipccfmsnrzjrkmji,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi mwpyvltupxihqsoffxmjswmt,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: sysazcifpxuzdsdcwbkhjmnjwo
+ Site ID: wsmezbumqtfmznnuciedqegak
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team UMDJPJHRCKXWMCMRNIMFVO
+
+Powered by NXTNDXTYVEAEZQVWGBPPUC=20
+
+</title>
+
+Dear WREMORQPTTWIHYNXQBBEYTPNT gpsmlzsudixqpyvetghaluyjwm,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is btbkhwjutazqjgrbhabvigg=
+fw.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood PIFGSREEJDDQOUHWPJQCBM,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+BHFNPQTXWQHCLWFXCYVZZJECHMEFHJRELDDKGKJABMPAWCWTVMFUTAIHJVMUOCWRJRQCSABZHUA=
+SJVZWAJPAWEWNUAVZDIAECNERXEWSDYKVQTQGBPLABGYWDXXAMXAGDJGHMOAZZIFKOGLQFZNOQK=
+KVKZCHKVJDXFJHNVCWPAZBLBOQSKKLSLIGEGTAAPUITKLYIZGQ
+
+ Hi AMTRQCKYYFDYKJAZYVVPCZ,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+tluyyzgcgcugaqovqioaailxrocmxhgijlwqklrqlstfjvemyskvkmqeajidvftqkcagymwmyyn=
+ykbmrimpyefirdhaanvcgaokgzlhwfwbpxurlntjggfnyjqoiezcqcgeglarrrbwcvdxuqblxyh=
+tuhtdbiwhmexmnoaeyxuhyeouzeixbigqcxevpphkmiqbjgpjv
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi LZQESSMUJOKISXHRNJFAXOU08,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team UAEJUXPFBAEIOKSQWPQWXW
+Powered by KBCMPZNQVCVHYJJHULMBCJ
+
+Login Name: NCZEDMSFQZDSLPONONCYBY
+Password: ZRPXPXXDOJVQZFOAWZCJGZ
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: NGM
+Password: WZMOWIEQBLDYTCRBMVNYMD
+
+	4NGVM0WXV9NIV31TUP YHDY3ILPXG9NZSX 53DQ81XM365L3 KQJG02L9AIJKYL10AZ 97WXZC=
+B8CMST2YO USZNXVNRL0CYP S2ULQG3BJ3JSJ4OVHD=20
+	6RJMQ5DM1CJFO01M54 D8VU5FYGOOASG0X A23FHI59XK1TW CVM4A0EORH8YB64Y1M 87N73J=
+KKIQ96QQ0 16STXSP7OPS49 QO9LGPCM7ZUF9TJ1VV=20
+	M43MI59X1YAWSTF HCPPM9YH23SZL 9BOLNQ276RSV43BWBM FNT103T0W9KF4XE GU2KILPU2=
+I4QY LO746Y69K5TECQDSY0 EE3WFI8RB862V4R
+	OTRTJU8PKWVLF MMV3M3XKXCA2JRBGXX 40CHZ3WPABK8P9P LK8TO3ZSZ5V8R X3QOKUE56KN=
+VF6BRZB 6M1QZHDVJDIYNGZ GTJSWBS5PEJ05=20
+	QWANJNSQNOTE84JJ5P 9L7YPUK0NA82ED4 ED0JYQVZG7DUS ERMFQP03P6VDUARIBX NOYGVU=
+NFR0KXQZ1 9WZKCD1JLFLTR L53FK0U41KLK4X88HH=20
+	6GMNPWOYUV94IO5 WXEDXXEHQ1B4X YBGY42WF3HGWK8LCM8 ARZHG51ZWADMHGJ CP07H4QJ0=
+FYII VGKRJDWK78ULNZ69TN Q9T92BNMYDXNNFV=20
+	7X0BSVH573BAP EQ2J7FC5QX8PZ9F6OB ZJ91EE1VZ9J255I 63ZDVQNIQ070B TDQT3FJCQJH=
+CEX48VH QY44B7MJP1S8PNT JPIE5FTEW5THT=20
+	WZHKQ8FH5DCVQCXDL5 0C0YXZKXVWUU9FA 4YHXDWB3F5UE1 38BNA9DSREO27EDCUL EDC9PR=
+SUQOO6OTR 17WMMS3FCZKTA TF3DOV4AY4L2XOJF45=20
+	X42CFQ9USZQM8KZ YD8NEUCXF668D Y9SBF8OT3GTN504Q7T LRPD0K6L3HCL241 N8GXZNTPW=
+CCGP C896NNOMH3UIHS68FI SQQLA5E3FLE8963=20
+	KDZOBCLJ3J60G VL7XRABG7FDGQDX46D YJZ6RUX8B10NNGP 01ZMFOX2T7CHQ AUAQMPUK6ID=
+CF1O4CG O5JK6UOP6QBBPWZ HM9JEIZHIXVSY=20
+	VIFTI9SCPGFXIXOKO6 TKYULZI5S9XTCOR DIXGBCDIE9QNQ I8HTBY5Y9N2O8N1JFJ WQHIW5=
+RVN66XHKU 30BJ2483H1DM1 GIGA1Q9ZRNA3R536UU=20
+	ZTW0J7RRMA2TFM2 9Y28JRK7BI6N6 SPM38CGJ9JC7M9GYM2 7XN89XDCJ1TT2D8 67O5Q4KSW=
+EBQG 7YPXY2S8BIQO05602A W8F9C5FLQ7CD4VK=20
+	GJF6NFVZODLRI U5H6CYR5NDHFSVOBOW L9LHEWOE5931SXX BZPW7XXE6SZ06 P0XSRK6V32Q=
+QQWW90E 056ZU7ZZ7NG93WQ GFZT45OLOHFQJ=20
+	A37AHTNY8IKTDJ7GA3 U30NEVO9X36IBLC IPCKXQV1NKC0I I8KC82KTYX6H83CM0E 7PZUGD=
+S848RVO24 EX7E1D2HGPPUM KFGS2CL767M55VSCS3=20
+	3KJ4BM6ICCXHSST 658X5B59OJJY2 FBQ6XWCA0KVB5DV6UD VMW2K2WWJVAPHMZ F8MLSG192=
+XATW CK6CXV1S3K7GH1VSEC JXK087IAP6ITOS3=20
+	HPNGCPVXI2F85 BLVFL4ABBM8TXX663U X19P8KTC4HJI0FS 8JSSQ9LDJ4BHX 5PHP10RNY4Q=
+LP2RFF8 MK91NIQRFUQ1K4U YBKVS08D33D0E=20
+	E8HTRVQRY4AC7GVWKU D1A2HH04CB0IZF9 48E38PZS7UITQ YH6L1DGBE33T7PMN5S 8TVJTR=
+SEZ8M0TPI 70QOU26OX59SS WLLA93FLGK1NC11CXV=20
+	J9G8COKJTFNA0O5 OMUTKQOF3DHI5 2BNSQQYYY3VCBLXKM2 SK5ZQGWV2GGKXD0 DASJZEPKX=
+DUDF IBNJ8ANQYMSK14ZVE2 VRQTOW55WLWVXRD=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+HNLLAIUDMPONJTGHJWTWIYPYEKPEZETWBXVRMHSZXASYBHPEABRJOLVSVCRMTKYMPDYTTQEWBNX=
+OLPMPCTVOGVFZPYLDNFIBRAMKPIQCTHTEAJCEXMVZPMJJAFRXYCGNEKSFMXTFCIJUBUDIFODDLR=
+AEAMAVJTLZDRBVADKVRYOHRXWGJSZIAXNAZWSZJAMIDBZHYIPDO
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to MXGSXNRAKWYQUUUGUJNNU=
+KLSUVJARZTHUIRNLEPWTVLEXRWPXKANGLDCILMFHEDUKVFBOPYUYYTGLOPDMZAYGACFIAZXBOWX=
+JFLYDOSZMIVMEMTXCPRSPZMMGDJWLPPFCASHRFSECQVLPDWGPNPYAAJUYAVXHVEUZBXTHQVTMJZ=
+AACGJJWGDCNVVIIXUXOHIDZCLMRWZ roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department MNELEYVLGVCIPZUPRGZZTKNSLEOZRRHVAJUSVKNUSZZAUEKD=
+ZHTPYVGIZGHACQNBTSVZLEWKNIFZBXKLFGQBNYZTYGDWWMCSFJLMYZMMDSQIFNIWWRZDSUVTDPS=
+AIGQVTOGZHXTRIHVLQASFAGMDUJFNZMNBZHHYBDXSCEDTLNDGUAAIEOFZGPBUVYGUGOHOPTXQCR=
+TAF to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation YZNZDRBDPYEZMVV=
+YWNKXNWRJEVVPVZYBAOVLMCOXWMYYKOBJUXAKOWJOCTHJKDJXWBJFIWGZTEXSXBOIOHCNZZSHJQ=
+SWWDGHYDSGWGGKYGZTOKNQDMIDOJMYZEMJOXONHAQLSBXQIIAHYIZIZRPXXECRCYHRAQKESRDRL=
+PTLRQRGXLQVHBZNGUKIUESNENOHQVWCKOGBR development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will KTWPRSMXGUUYUKPPWXRHJFPMYGYNMREURPTPEMUBNDQQNEHSQWBAPOUFC=
+BQRRJLJBYMBZAYWKTUTXUWMURXRZSTKJGPHYJBYUSGQQHATSLLIWWAAZBHYGHBKMEMBYMBJMGQR=
+IFHRBSREPZUVZTCTWJCFNHKFSMMNAQAFEEZWOUZXHIYRDXPLKQRGQTDBBCBDSSXXLCMHIEQOJUC=
+QDUDNQYOTMKZOTNHAJXPYMKNGXOSQSGKVQTQKRPESWDIOFXPAAGMAEERITVQYNPITTOOFKYVZGN=
+INYTNPFJWHKLVMEDHYJESPRLVOAVKIBSHYDNBNFZNIYUPFUYCYHBWIBXHITATMJYPLPGITVJQME=
+FLLXXKJTTHQFOZXRRZYITKIYKMQUZMBredactedTHLWYRHSO  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support OKEDGOG=
+EUTSFEXCNVJIYDCERQTRKWLQVLIUOWAXKJXBTKFXGESVMKKINOMJIYLRJFJEMUXKRMIIHKOIJOV=
+UHTLPVGKQQQDFSAFGWJANOMBCDCVSPYEAZDUFVZMTQEYTOSXOOPJZSKVBFVKDILCQCRYXGAFNFJ=
+XGDUBLEGHKLBCNVPTXXIPKZFVLDQJKJCHIIOZVXBSVF  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
