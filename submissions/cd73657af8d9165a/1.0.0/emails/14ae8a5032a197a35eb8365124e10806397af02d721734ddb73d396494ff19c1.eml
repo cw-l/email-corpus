@@ -1,0 +1,941 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789432364; cv=none;
+        d=google.com; s=arc-20260327;
+        b=aIGGtET/zgz6OQD5nlyiAQ63P0OFzWZdVQxEumGhkj3no0lqtbiIfReSUFUZiuXncq
+         SLBuh/4MI2NEtClW7VObGcHh+md+G42oofIyRFuzbm80blCWPM2IIbh44aRUZR3AeXqH
+         ZJ1Pw2MJ6Uwv2bKteKEnjHFMxQPg+q2gnu47ioreuqa2riyXV6kDQUdYWBKVXBpDtv5v
+         O/ncz7RTKBV43OEbpBY+YefiO4VYIArxp10EwncYXfXVYHfKkWuAAroRFbtt9VQQyOyg
+         uprv7V0I8j+DvGWDQekB+aESaBO0W/FUHQv+xBRsOFvN3O8Lpdf67amMK94kblbaUKS9
+         a6iA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=WE13ISUfGOKBLAuOdfu2pgB/jBPNEoyHZwryExpapc4=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=mXC+MeAWtKV6ByM0VXAp2qOriVJ3/ghITozoUW+x00sZ8bGAk0rLYx5QZpuOdLb5/8
+         rfPiCxPXQXwB77UjnCHdThqYiZGcHGeskNOWy8AivU8NdZZrUaXd2Z3Y/nOrXD8x+qbr
+         ogouMmiSpWcRCszq9zwZjWvvsWR+y0e2pQeoZvQ1N0OC78nYQVjyIZEsDfK6UjGl2Yb2
+         FIFqE45tAD7/rQUIIkPnFwNPcckJUxaYXhCy0o/TXrTvh9mxuQ86sT2Io5d70K12eHO3
+         ckFCRwmVU2uCtjSZoIl61F4WPEVlWDKa2hicVI6wFcIOZ2XSH8wJfulY0AHTdDmvNmDd
+         T9NQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@wpgxnriz.viewpo.wildforest.web.id header.s=smtp
+ header.b=bupbOvlw;
+       spf=pass (google.com: domain of vpchhlxjzarxa@viewpo.wildforest.web.id
+ designates 152.53.168.142 as permitted sender)
+ smtp.mailfrom=vpchhlxjzarxa@viewpo.wildforest.web.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wpgxnriz.viewpo.wildforest.web.id header.s=smtp
+ header.b=bupbOvlw;
+       spf=pass (google.com: domain of vpchhlxjzarxa@viewpo.wildforest.web.id
+ designates 152.53.168.142 as permitted sender)
+ smtp.mailfrom=vpchhlxjzarxa@viewpo.wildforest.web.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=wpgxnriz.viewpo.wildforest.web.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=nhtpusqhoqxhzhonbzokn@wpgxnriz.viewpo.wildforest.web.id;
+ bh=vSMvPMp390GkTgrSpRgyaYFRNz8=;
+ b=bupbOvlwlkTzE6OSJamJh0X2fZrnQWli5RRH+wDtcDVwoxSACc7X1FfhmdYTh8z+sGpGxDzxSu3+
+   z/m2No6otvj57VEf1poDlFTQ2a6zhdBGsPIJ2RPUE6WM60Qr+plXrxH8GaCDuzltgSI9Pv8q16JC
+   YE2r/UoFOTodIhj0lAq691rDtfyoN93JnVkDiIELCe9KGKXUCtu+0Bk3GB8GASKHzC6QvTxWTT3t
+   +wE3e/PQcOicwzKsyknrqBWNhI0fB3/GilRehI534+G4zl9RU5P5zSz3LQp5IlFS7WlmJaXGdAUF
+   VloOkiJXpVZ7G3gJSOomMcV9CGPNdHtVNH66Sw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=wpgxnriz.viewpo.wildforest.web.id;
+ b=Qi4IsOKcqqT9gKDyB0sGm+6N0XfrjB34AoAIaK3jFqtnv2WcdN96frJrYAYCAAfd+sjcWil4FIoS
+   gAgdBzSAZdYJ1Pzwyp5EWm9lM5K09Thb1QkHo7TKJ6QgeNrGfzTkEqGM2tlgVVZjEKmOlxgXr7ZR
+   pDzLwut2AIj28gGZIC1ViljNISrMmo5VF8qMJBawvwHBtGZfpewM3bI9f/0vZHpimp4a1sT4V0Bh
+   /1/8/OWxpoG0boG6G59iV/cauFhiOgbdI/Oxp7ea3mEFicuN8+EUBURfaKmZedgQJzBfpBLhpClw
+   HwdtqxY6Oo2xYMnnb1xrqIm+i/lwBkBWM8nccQ==;
+Subject: 
+ =?utf-8?b?77+977+977+977+9IEltcG9ydGFudCDvv73vv73vv73vv70gWW91ciBwaG90b3Mg?=
+ =?utf-8?b?YW5kIHZpZGVvcyB3aWxsIGJlIHBlcm1hbmVudGx5IGRlbGV0ZWQgb24gMDktMTUt?=
+ =?utf-8?b?MjAyNiDvv73vv73vv73vv73vv73vv70gUmVuZXcgeW91ciBzdWJzY3JpcHRpb24g?=
+ =?utf-8?b?Zm9yIGZyZWUgbm93IQ==?=
+From: redacted <gslffyb@wpgxnriz.viewpo.wildforest.web.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 152.53.168.142
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <drnmfqacvlkesavxahwetxblcfedse@adphyggaviizts5cp5>
+List-Unsubscribe: <http://digimindsa.my.id/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Tue, 15 Sep 2026 00:21:25 +0000
+Sender: nhtpusqhoqxhzhonbzokn@wpgxnriz.viewpo.wildforest.web.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+</br></br></br>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#WbXq=
+XcfLUJZgXUyqdbFEtTFnXUPMWL&4rmuLqUnAWN&262266/61/jwxtwfhmvv[.]home[.]php?sq=
+=3D32-195982&lk=3D45089-9&page=3D523" style=3D"text-decoration:none; color:=
+black">
+
+<!DOCTYPE html>
+<html lang=3D"en"><head>
+  <meta charset=3D"UTF-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Cloud - FINAL NOTICE: Account Termination</title>
+</head>
+<body style=3D"margin:0; padding:0; background:#eaeaea; font-family:Arial, =
+Helvetica, sans-serif;">
+
+<!-- Main wrapper table for Gmail -->
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgco=
+lor=3D"#eaeaea" style=3D"background:#eaeaea;">
+  <tbody><tr>
+    <td align=3D"center" style=3D"padding:20px 0;">
+      <table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" style=3D"max-width:600px; width:100%; background:#ffff=
+ff; border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; bor=
+der:1px solid #d0d0d0;">
+        <tbody><tr>
+          <td style=3D"padding:0;">
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D TOP BAR =3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0">
+              <tbody><tr>
+                <td style=3D"background:#0f0f0f; padding:14px 30px;">
+                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0">
+                    <tbody><tr>
+                      <td align=3D"left">
+                        <span style=3D"font-size:20px; font-weight:bold; co=
+lor:#3eb2fa;">Cloud=C2=AE</span>
+                      </td>
+                      <td align=3D"right">
+                        <span style=3D"font-size:12px; font-weight:bold; co=
+lor:#ff3b30; letter-spacing:1px;">FINAL NOTICE</span>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D RED STRIPE =3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0">
+              <tbody><tr>
+                <td style=3D"background:#ff3b30; height:5px; line-height:5p=
+x; font-size:0;">&nbsp;</td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D THREAT HEADLINE =3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:32px 30px 8px 30px;">
+              <tbody><tr>
+                <td align=3D"center" style=3D"color:#0f0f0f; font-size:13px=
+; font-weight:bold; letter-spacing:2px; text-transform:uppercase;">
+                  =E2=9A=A0=EF=B8=8F Account Termination In Progress =E2=9A=
+=A0=EF=B8=8F
+                </td>
+              </tr>
+            </tbody></table>
+
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 12px 30px;">
+              <tbody><tr>
+                <td align=3D"center" style=3D"color:#0f0f0f; font-size:32px=
+; font-weight:bold; line-height:1.2; text-transform:uppercase;">
+                  You Have <span style=3D"color:#ff3b30;">48 Hours</span> B=
+efore Your Files Are Destroyed
+                </td>
+              </tr>
+            </tbody></table>
+
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 24px 30px;">
+              <tbody><tr>
+                <td align=3D"center" style=3D"color:#555; font-size:15px; l=
+ine-height:1.6;">
+                  This is your <strong style=3D"color:#ff3b30;">final warni=
+ng</strong>. After this window closes, your account and all associated data=
+ will be permanently erased from our servers. No backups will remain.
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D BLACK TERMINATION PANEL =3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 24px 30px;">
+              <tbody><tr>
+                <td style=3D"background:#0f0f0f; padding:0;">
+                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0">
+                    <tbody><tr>
+                      <td style=3D"padding:20px 24px 8px 24px;">
+                        <span style=3D"color:#ff3b30; font-size:14px; font-=
+weight:bold; letter-spacing:1px;">SYSTEM STATUS: TERMINATION PENDING</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style=3D"padding:0 24px 20px 24px; color:#e0e0e0;=
+ font-size:14px; line-height:1.7;">
+                        Your subscription failed to renew after <strong sty=
+le=3D"color:#ffffff;">3 consecutive payment attempts</strong>. As a result,=
+ your account has been flagged for <strong style=3D"color:#ff3b30;">permane=
+nt deletion</strong>. This decision is automated and cannot be reversed onc=
+e processed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style=3D"padding:0 24px 24px 24px;">
+                        <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"background:#1c1c1c; border-left:3px solid #ff3=
+b30;">
+                          <tbody><tr>
+                            <td style=3D"padding:16px 20px; color:#ffffff; =
+font-size:14px; line-height:1.9;">
+                              <strong style=3D"color:#ff3b30;">Files marked=
+ for deletion:</strong><br>
+                              =E2=80=A2 All photos and videos &nbsp;<span s=
+tyle=3D"color:#777;">(permanent)</span><br>
+                              =E2=80=A2 All documents and files &nbsp;<span=
+ style=3D"color:#777;">(permanent)</span><br>
+                              =E2=80=A2 All synced devices &nbsp;<span styl=
+e=3D"color:#777;">(disconnected)</span>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D ACCOUNT DETAILS =3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 24px 30px;">
+              <tbody><tr>
+                <td style=3D"background:#fafafa; padding:20px 24px; border:=
+1px solid #e5e5e5; font-size:14px; color:#333; line-height:1.9;">
+                  <strong style=3D"color:#0f0f0f; font-size:13px; letter-sp=
+acing:1px;">CASE FILE</strong><br>
+                  <strong>Reference ID:</strong> 94629667<br>
+                  <strong>Account:</strong> redacted@redacted.com<br>
+                  <strong>Plan:</strong> Cloud Storage =E2=80=94 <span styl=
+e=3D"color:#ff3b30; font-weight:bold;">EXPIRED</span><br>
+                  <strong>Termination Date:</strong> <span style=3D"color:#=
+ff3b30; font-weight:bold;">09-15-2026</span>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D CTA =3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 12px 30px;">
+              <tbody><tr>
+                <td align=3D"center">
+                  <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/sal=
+aminka[.]html#eAUtBercbtjjwOQhfuJFzSzOqZuVPV&4jtEjfKNmPI&262266/61/eqbuqgvf=
+qv[.]home[.]php?sq=3D32-195982&lk=3D45089-9&page=3D867" style=3D"display:in=
+line-block; background:#ff3b30; color:#ffffff; text-decoration:none; paddin=
+g:20px 48px; border-radius:4px; font-size:20px; font-weight:bold; text-tran=
+sform:uppercase; letter-spacing:1px;">Cancel Deletion =E2=80=94 Restore Acc=
+ount</a>
+                </td>
+              </tr>
+            </tbody></table>
+
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px 28px 30px;">
+              <tbody><tr>
+                <td align=3D"center" style=3D"color:#ff3b30; font-size:13px=
+; font-weight:bold;">
+                  =E2=9A=A0=EF=B8=8F Once terminated, your data cannot be r=
+ecovered. This is a one-time restoration offer.
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D DIVIDER =3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:0 30px;">
+              <tbody><tr>
+                <td style=3D"border-top:1px solid #e5e5e5; height:1px; line=
+-height:1px; font-size:0;">&nbsp;</td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D FINAL PRESSURE BLOCK =3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"padding:20px 30px 32px 30px;">
+              <tbody><tr>
+                <td align=3D"center" style=3D"color:#666; font-size:13px; l=
+ine-height:1.8;">
+                  If you have already restored your account, please disrega=
+rd this notice.<br>
+                  If not, this is the <strong style=3D"color:#0f0f0f;">last=
+ communication</strong> you will receive regarding this matter.
+                </td>
+              </tr>
+            </tbody></table>
+
+            <!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D FOOTER =3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D -->
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0">
+              <tbody><tr>
+                <td style=3D"background:#0f0f0f; padding:20px 30px; text-al=
+ign:center;">
+                  <span style=3D"color:#888; font-size:11px; line-height:1.=
+7;">
+                    Automated system message =E2=80=94 do not reply.<br>
+                    Cloud Security &amp; Compliance =E2=80=94 Data Protecti=
+on Division
+                  </span>
+                </td>
+              </tr>
+            </tbody></table>
+
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+</body></html>
+</table>
+</body>
+</html>
+<br><br>
+<center>=20
+<br><br><center>
+</a><br>
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  If you no longer wish to receive these emails,<br> you may unsubscribe by=
+=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#wWju=
+kMystSEtDpMlAGWgMgXwcBKNZx&5xFCRPnzmwO&262266/61/iqcgwuyjck[.]home[.]php?sq=
+=3D32-195982&lk=3D45089-9&page=3D244">clicking here.</a><br>
+ </center></p></td></tr></table>
+    </a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#PpiQ=
+RisCYHFKzZfpAcbJAHFvDKmkzE&6gaZYHWcZyt&262266/61/eyvpgftnui[.]home[.]php?sq=
+=3D32-195982&lk=3D45089-9&page=3D701">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+ =20
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object NPDICBRJSCBUINKYNBQYDDWBRYWEQBBGDPQPIQWERBPFUVDMDWRCBHRKSCDZ>
+
+Dear WIOSUFEKOVJUCNOITJQSUC jexfaltjlyslwswswumjeh,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is rmhrsqyboluedexnpgkuxei=
+osxzn.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi oyivauvadpbkzmovxu,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi kkfiohbgqycaarlhpqespsef,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: xzsvwoxtahinguboqjojkmhgan
+ Site ID: dcdnhsmbmrxclsffouchbsmqc
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team TBOFAXXYLOZVUWQLZATMSD
+
+Powered by UWGTJQKUZAKEUHBMVFXEOC=20
+
+</title>
+
+Dear XJJWVICKIQXHFZMTPNTAEQSKP vrptgzfwmwajepkaombpxsvyqa,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is tehdgvfqyzqdtpehvzbplfo=
+vn.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood ILSZCOSBFKKLFBOQKHGDHX,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+YSYHCUMCCFIVRDLRGMXFZOZHLMBEMBOMVVDOFICZDFWDPNWJNIUNWWRMUKMTQLEJMXZYULWIVTA=
+KKBJNODGUDUVHRHCBCNUBMHQZYTVOLYTHHOWJOIVZZZGXEBOOSMERVJDVMSNBPPWZHZDKSSCTYE=
+QLRVSJECWHHRLICXSPSHREYPOQPYBXQUVHXIQPQBXDBDBZGEBB
+
+ Hi PMNQLRLHLQZPIRMRWKOGNK,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+pdnpssjegndiwdpglnycxevnihuocytodcmsehnsuooqvvmlwtnocsbbkgtaldvpoojpttjjpkg=
+qwazdifqvtzlpeihkqpsbibeuteyhmlrrxdulcazhyoeqomyjlipewzowoypzyxhdpyxwtesldb=
+ffblnxyivrsathrxfprxaicwfxoquboevqvqptmybmbtdibzxe
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi Q4KWOYZ7T9RWWRE1NN7TMGBWE,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team LBEJRQFHWHNSQYRUSWJVHU
+Powered by YGJRGVCBQYYOPETQGCMCRR
+
+Login Name: XNNMJWPKIECTDLHEWJTOFT
+Password: ALKJMEFNMQOTKJVRCGTFFR
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: DKN
+Password: VGURMMYIVBCBAAQGKAZBNL
+
+	GBU73XYRRHEAJ6CO04 70WLUOK3CWVRWYZ 4LFN5ZNS0HA7L 0SM9N1UHVXKAZRH8J0 B6CFGG=
+2FTA7CZ90 EVIZANNDCRJEA U41JR397BBCBP6WDS7=20
+	N976FPG270EX50ESLE 9OI3F3F73ZE4BN3 YQ8YO0RJBV33E WCMT1M7NVEQ6F08SAV LFZTX0=
+UI1I7CN7J QQT6VC5O8HE00 XDUIZNY5N55JLGVL7O=20
+	SX0HGI4GZEGHGEK RHJFNYBZYNAT6 MN911VVE4CBD15TQ82 BB0LGVN0O3FY2T4 0VGJXMMZS=
+J4PU LPK3TJXRL8QU547FHG EQ5KTWBOBHJQD5G
+	CF961C1S8HGBL SY8VA8FU2FX6OF58UO CLXM07SSE9N37TM BILFH0T8XXDUS HL2X7W90KC6=
+CU8H82O MUMN9W6VYALAJWR 1XLWFGJ6I7185=20
+	3PO1E8TOXGRWEL8MR6 BI5CU84BSX6CN1O SBYI6GEJL2NZA PBDN0IS9YIB3QNXPLU G4E4NW=
+UHUEHNGM5 7DZF5P2OFN9K7 8M5MLYG98X6AR08HDV=20
+	6K6EICA1WGGVIYT HGR8KFXUSUP2C 0LMVKNR5XU0F5Q1BIY PKGSWJZS9QHASVW VRGGJUITN=
+Y863 QFHD5WNWHXJLZI0YGA ISUNNFG2G0RAKPK=20
+	JXQ0322Z1FSTD 4RT4ZUQE1ZY8FVT2LA 2BV9UHL4BWXM1ZT ZLKZUY6KU63FP V8MXMZ58L0O=
+D9UHPDV 6SV778LVPCUVQ5S AORHQQX0YGJ1V=20
+	RZB5ILFCRMZFECLM5U XHA2A0253ZJR5YG GR7MT1V09EFX4 KXKMYB7RH4NFNWO4WJ 8QK73L=
+L0UEP2LEH PM6FM89LLVX7M UXQ1PPUB4S2AI81CW4=20
+	ILXHJ1FE0FMIRFN 1KIOJA78LTY1Y 2WABNX80FITR7M6F8J VHXV5WFYMKZF8RJ 3PBHZGXQZ=
+NHRG 3U74M2C5KN0WW5FZ3P UCW4GL2BID3SPBW=20
+	7ZWH78LBQ46TX D2PFH44L1VJCN2XBPA TK0S6NPE7IREACU BFS8CN1ZJOWGX 9YN2NVO8JAE=
+7D16UEW ZR5DH6189HJGX48 ROG5HYAOLVFMF=20
+	M39F5PP5IVPH8RI6WH 7IOA9S0NU15365A J0FVAZ7DYZEI4 XYC6I66P7WIAFJT5F9 5SCUMW=
+GS7ZAIIYT E535AP3E60IO6 7YVN9LLL6J0AXRFO6N=20
+	RSX17AKWHF37BYR RVYKPD2EDQBYC KZU8VMGMOROYGR8H35 7B3F0YSA7XR9ZAG O790J2KXX=
+QUR3 7Q7MWSJWLN6KH82BZA C1ARDV82P9IBPN5=20
+	RQVGYKSKLMBHF GAZG5ZMPPLLS4KET61 TFURDQ7AUT5ZZ3A TM5SEMNBSDXKC AGEK13O9SO2=
+2V4QWXE DELGMYHWJ6K5B6I IZOQ1B68DHMSU=20
+	0V8OJAXYC91N66S480 A4H6348TBLK9PIT D0RHZZST0TXAA DTSWNBC8TI9GVQMWT3 G18KV8=
+FYREX4RL0 C4MYYUTTFZJCZ 18AGPGEX7I7S9CILL9=20
+	GVE4YV38ZBHVS8T BN2UBNPOFIILP M1VTC9MTB5RRP91KX7 TD69QWE281OU5WK N3GJEH5QD=
+F0ZN V5O3B7KWCBN1BBAHR1 14GBPCBW3RXNKV4=20
+	WEOE8LK9OQPBV JGTB4B8Y8N9D2JYE7I 0PJ8UBE2H2T72BL SDY2WQI4K6RTB TGT8HHHGZK5=
+S29E47L HNDBMELLLL1F34S SPG86YTKV9OH4=20
+	WHKP2MNFAZ0OJTJLZV 9B86AEHJJ9QEFKC AD6VA8JHTKEKT PRGFWR1GAEZX14ZXUQ 3XJS6Y=
+H1RHKR8XW 9UUNUMQO60HOO FBHHK2JPPBFBJAVYP9=20
+	ZT8T7CCKEK17MWN C4UE4D39RAI32 IEP8TVOYHKUEBWYA37 9S7LRBQOCR0CCMS 1632ZVMNL=
+V1EF XFSDG87C4OJQQVJLOL 0AM62UT9JF7CVQG=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+UPQLJRXISYAYAASFCEMBYHATFABQMRMCOMDASNENJEKHBYLWXKSMBICGSKUNQJBUKMDDXBWZMPS=
+HRANYYINNJRQZFRIEWKZTJLIXAYJJIOHVHLDLNFCCPRJVDIDTJRCFDBGXJSJCMWJBKREVGMLHUM=
+FHUCNWMJNAPYGKDBCTEHAXIAPOXVUXJBSPRCOEEOXDLCYYQJXSE
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to LJXBNUGCTXNWTOKRVBRHR=
+WZTQHJKSTHCBWDZLAEFTMAENEELGNDYVYAJBWBOVNUJMVZKAAEOALSIIDKTZGIFNBISBHXKIMPN=
+GYILWNGEPFSWHWQGXTBYLWMURURAHESISIWEKGFTORVEKIRPHIRJUKHZSXPGALDZISCUQMEFZIO=
+SPYQMELLYPCCODHCEJOTZCEUEICNP roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department OYIPGOXQVGQRFUAACEJCRGLRONBGICVMHULBECLQPQYECZRP=
+HGPQNBCPBXGLVOZESNEYXJKJVKYSWBNNFHLKALHVSWEXJQIEUILVVQQZTZCMGRRRYUBDRTVLRRG=
+ESKQQDNZVCTMTFOTHRGVSZOUCFFRIZDWROLZWVETNZRDQGOTGBFBVYHRVDZUMFDJPLAKAKMNETX=
+EIU to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation ONDPKKUVMPJHYAO=
+KLECZCAJSHAXANNKWYKTBAHKCRZNGEWUSDXTRYNWGASZEQOMYXIRUJHAQVGVEDVETGFYMMIXBBW=
+OAGFIHPMDGOVRUAORYEWAJRYHNHVEMEXLMLSYOZEFVFNAUCXDGPCIAUSALLPAVYVPFFVVWQYZGW=
+NOMJMSUKJYFCKOIYLAHPJIJRKYQDIIBMEJVY development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will GYLCVQTBJQTSQXBWETSJYBJJADOYBIXWVKGDIKTUZIDQAVEGFEEEZJBJO=
+MMJDKSPCGCXIHOIYRTIMSEUKXACXPCAEYULPZHMEXNCDJAXHOSLWPSSALSCGGWRXRVOFVXZFRXX=
+TDNZIFBOCAFTJMDAGAQCZAQVYTAINFSHNQBDYLHHCBVKORXMJNUJAVLDNGCQTWTHTDBPFHCUNYG=
+PIYHDGTUMDVQJMNIDBCUPCDXDAFKJULCYGRYTZNYNGVJADCDUHOMKLRHNYWZXXGFJPNMKMKMZSZ=
+NWIXEKLIRCPWFVOQCTEDDWKNAINIIJQBPNIMLPVYKPNWJLXEEGDAWQUTZMCOVVPSOTWBLZJDCIX=
+CDVTNDDUXTBCLIXULTBHFNKXHRLZEYIISKQWIUFCAQE  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support SIEYKNI=
+HRWNTPERXEANBIMFHHWQKOHFLFVFTZWQLYJFXDGMPHSFDBEGHATUIXATLAYFYPNPMTQZHNZKREP=
+ZYPFFGKYQAHFQZMZMFTZVIJERHBGLDAGNWTRSUNYDTFINZPDKPBOGNMQWYEQOZLFLKDFNOHDEUA=
+NXDVIWGQSGNQWHPKMEPYCCHCXQADDWHSBPZZEPVDSYN  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

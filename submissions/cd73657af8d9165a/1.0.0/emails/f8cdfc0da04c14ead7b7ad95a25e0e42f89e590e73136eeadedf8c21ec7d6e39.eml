@@ -1,0 +1,1007 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789440959; cv=none;
+        d=google.com; s=arc-20260327;
+        b=ie+XgP117LfPwNhSbdbDYePexcLXwaEK31xMwZHUVVSl22uXCB0Huf+QxWxt5MLmOZ
+         YpmR19w0Xu+urwmRKl0biR14vRA3VjWrlasf10fiIRsG7RQQGOaaNtO3UjiFiFyAnGGT
+         A5TxwNIgxkys6qfAXotlxnJiPUXjx+RtcAzc49vOJGsyZaV2Gh5na/rasMNO2kQntNQv
+         31J72Uxmw+FVJB/K8ua5Sg7NX/MV/9iDub+UkL/+L9czSHR8L+gfr/cHG472xk5pIzUR
+         5JzwPDQ9HUPp4BQggjE6Wjt2mBichRCEdCEk4fZD3tDTe+Db691Armvmbn7IYX9IIP1P
+         kwVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=GU3JJwhCj1OxqXbEcELM3m0wxDog3NV4sPkh77M7u/8=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=CKCV96pfALmCxINd3o98vyDja+dyOVYlbGp861IeCtmk2eWEeRw6pt+9bomviA6MSS
+         16uW7QJPKC+vXAtrU0GEZtYvkK4dEcX+J7EQjCzrkLN0XovVp6y4Z9EUh22BoDN88Ric
+         +gN8UbV762ZOtKSehA9c/C97GEXEN4HJdI2DhL9TQfW1RQHVEpVfhc/y8jA/NZl3bRB4
+         L+jeD4hq2TQ5ZWEpwGshm7Th909abMz4fcTkNup5OAA8+EmCzpcpoWScTWb6UYEa/7Ip
+         cTxs9u/VYwem4iMBhuzs87QA12Pt1MuVTIZ9tDjDszxBA5PPZ2r9kfAVsvU6Rppjlp7I
+         juPA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=fail header.i=@xthdbymx.azurvibe.solvexia.biz.id header.s=smtp
+ header.b=R6CYtjRr;
+       spf=pass (google.com: domain of rdxxdzynksylz@azurvibe.solvexia.biz.id
+ designates 46.31.78.27 as permitted sender)
+ smtp.mailfrom=rdxxdzynksylz@azurvibe.solvexia.biz.id
+Authentication-Results: mx.google.com;
+       dkim=fail header.i=@xthdbymx.azurvibe.solvexia.biz.id header.s=smtp
+ header.b=R6CYtjRr;
+       spf=pass (google.com: domain of rdxxdzynksylz@azurvibe.solvexia.biz.id
+ designates 46.31.78.27 as permitted sender)
+ smtp.mailfrom=rdxxdzynksylz@azurvibe.solvexia.biz.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=xthdbymx.azurvibe.solvexia.biz.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=btgkxhidjdcderqqzunsb@xthdbymx.azurvibe.solvexia.biz.id;
+ bh=xZJYat69WE9emEcd3/I5DPNS1vc=;
+ b=R6CYtjRrFKJ9tveFi3++G4ZzCe1G88QmrvlL2iNMyrvutoO+YWf2eRpl0ta32IjjdLJfMI2ZFBHT
+   5Ay2+pQSEqzr+YP2k6NbnZavn54h+rtr06+Bjxz9XCQ3i6lwBvjJYE3K4IW1uusPre3GgtDbNV6Y
+   cTThx+7MRJiLosJZqV6o1I6SHhIxs6TNWxuazJ4Mq5oTNKQu6Z799W7eBwtys/IUSxMBrfuDIJp/
+   IpUTNLNHIFZKoW+o6vjngltfG0GfpsH3EGIylcipBRF3GU8SqwmsDhwgfGm3LBoUVAYFuooqNDIa
+   DXr5Whv2Bzi5HFx08utBcDEaUiavu4Jb2m9Oww==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=xthdbymx.azurvibe.solvexia.biz.id;
+ b=n2LM0XuT+HYuOcIFV8sve6u4y9WNcLT422MJWU7Q4BybXmYvNsvYNba6bp5mEhGj6s40bJkAOrNl
+   FyNUQHOVFJH3q1VOLZSPEcmGJZLJHkSp8BjXpgWI38ypF0qSFnHvlAxDXSvHdN6Ok4bcY1l4AdJm
+   dKuPx4j6NEL6mDW+uDKCidXA0oqxy8Ohfj72rOCmZa9/sBszzGAmaGO6zJySmAsux68kKNMSwEj/
+   bCd+NMc159eFW9084L1KBSaQUTrXVMCZwlJ08IIyNlqnM51yHyP4z73hBMmGSuQKZiq+03J2vafs
+   d6QmgRm+tOqhnuggh0BnMMr94OmoGaqpR1qq6A==;
+Subject: 
+ =?utf-8?b?77+977+977+9UmU6IDJuZCBhdHRlbXB0IGZvciByZWRhY3RlZDogJDUwMCBBbGRp?=
+ =?utf-8?b?IENhcmQgZm9yIFlvdSDvv73vv73vv73vv73vv73vv73vv73vv70gQ0RCSg==?=
+From: Aldi.Winner<wskwtdf.32.195982@xthdbymx.azurvibe.solvexia.biz.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 46.31.78.27
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <rnbrzhukjpudtonswdildbucxxntdj@w1aq63xyw40a9luxwa>
+List-Unsubscribe: <http://moirtop.lu.eu.org/LEAVE=To>
+Content-Type: multipart/digest;
+ boundary="----=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF"
+Date: Tue, 15 Sep 2026 02:55:20 +0000
+Sender: btgkxhidjdcderqqzunsb@xthdbymx.azurvibe.solvexia.biz.id
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#wxNB=
+THMUHwYZaRrcibjzMpIoxABXQx&4dgskTIkPik&262779/1356/oncgtrtuin[.]home[.]php?=
+sq=3D32-195982&lk=3D45389-7&page=3D922" style=3D"text-decoration:none; colo=
+r:black">
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>PayPal & ALDI Gift Card</title>
+</head>
+<body style=3D"margin: 0; padding: 0; background-color: #f5f6f8; font-famil=
+y: Arial, Helvetica, sans-serif;">
+
+    <!-- Wrapper Principal (Fond gris clair) -->
+    <table role=3D"presentation" width=3D"100%" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" bgcolor=3D"#f5f6f8">
+        <tr>
+            <td align=3D"center" style=3D"padding: 30px 10px;">
+
+                <!-- LOGO TEXTE HAUT (PayPal | ALDI) -->
+                <table role=3D"presentation" width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" style=3D"max-width: 600px; margin-bottom:=
+ 15px;">
+                    <tr>
+                        <td align=3D"center">
+                            <div style=3D"font-family: Arial, sans-serif; f=
+ont-size: 24px; font-weight: bold; letter-spacing: -0.5px;">
+                                <span style=3D"color: #003087; font-style: =
+italic;"><span>P</span><span>a</span><span>y</span></span><span style=3D"co=
+lor: #0079c1; font-style: italic;"><span>P</span><span>a</span><span>l</spa=
+n></span>=20
+                                <span style=3D"color: #cccccc; margin: 0 10=
+px;"><span>|</span></span>=20
+                                <span style=3D"color: #001e60; font-family:=
+ 'Arial Black', Arial, sans-serif;"><span>A</span><span>L</span><span>D</sp=
+an><span>I</span></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- CONTENEUR BLANC CENTRAL -->
+                <table role=3D"presentation" width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" style=3D"max-width: 6=
+00px; width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.=
+05);">
+                   =20
+                    <!-- Ligne Bleue Sup=C3=A9rieure Arrondie (PayPal Blue)=
+ -->
+                    <tr>
+                        <td height=3D"6" bgcolor=3D"#0070ba" style=3D"borde=
+r-radius: 8px 8px 0 0; line-height: 6px; font-size: 6px;">&nbsp;</td>
+                    </tr>
+
+                    <!-- HEADER INTERNE -->
+                    <tr>
+                        <td align=3D"center" style=3D"padding: 20px 20px 15=
+px 20px; border-bottom: 1px solid #eeeeee;">
+                            <div style=3D"font-family: Arial, sans-serif; f=
+ont-size: 16px; color: #0070ba; font-weight: bold;">
+                                <span>D</span><span>i</span><span>g</span><=
+span>i</span><span>t</span><span>a</span><span>l</span> <span>R</span><span=
+>e</span><span>w</span><span>a</span><span>r</span><span>d</span><span>s</s=
+pan>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- CORPS DU MESSAGE -->
+                    <tr>
+                        <td align=3D"center" style=3D"padding: 35px 30px 40=
+px 30px;">
+                           =20
+                            <h1 style=3D"margin: 0 0 10px 0; font-family: A=
+rial, sans-serif; font-size: 28px; color: #222222; font-weight: bold;">
+                                <span>G</span><span>r</span><span>o</span><=
+span>c</span><span>e</span><span>r</span><span>i</span><span>e</span><span>=
+s</span> <span>o</span><span>n</span> <span>u</span><span>s</span><span>!</=
+span>
+                            </h1>
+
+                            <p style=3D"margin: 0 0 40px 0; font-family: Ar=
+ial, sans-serif; font-size: 18px; color: #777777; line-height: 1.5;">
+                                <span>Y</span><span>o</span><span>u</span><=
+span>'</span><span>v</span><span>e</span> <span>r</span><span>e</span><span=
+>c</span><span>e</span><span>i</span><span>v</span><span>e</span><span>d</s=
+pan> <span>a</span> <span>g</span><span>r</span><span>o</span><span>c</span=
+><span>e</span><span>r</span><span>y</span> <span>c</span><span>r</span><sp=
+an>e</span><span>d</span><span>i</span><span>t</span> <span>v</span><span>i=
+</span><span>a</span> <span>P</span><span>a</span><span>y</span><span>P</sp=
+an><span>a</span><span>l</span> <span>t</span><span>o</span> <span>u</span>=
+<span>s</span><span>e</span> <span>a</span><span>t</span> <span>y</span><sp=
+an>o</span><span>u</span><span>r</span> <span>l</span><span>o</span><span>c=
+</span><span>a</span><span>l</span> <span>A</span><span>L</span><span>D</sp=
+an><span>I</span> <span>s</span><span>t</span><span>o</span><span>r</span><=
+span>e</span><span>.</span>
+                            </p>
+
+                            <!-- CARTE CADEAU ALDI 100% CSS (Z=C3=A9ro Imag=
+e) -->
+                            <table role=3D"presentation" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#001e60" style=3D"=
+max-width: 420px; border-radius: 16px; box-shadow: 0 15px 25px rgba(0, 30, =
+96, 0.3); margin-bottom: 40px;">
+                                <tr>
+                                    <td style=3D"padding: 25px;">
+                                       =20
+                                        <!-- Haut de la carte : Logo et Bad=
+ge -->
+                                        <table role=3D"presentation" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"margin-=
+bottom: 20px;">
+                                            <tr>
+                                                <td align=3D"left" valign=
+=3D"middle">
+                                                    <div style=3D"font-fami=
+ly: 'Arial Black', Arial, sans-serif; font-size: 24px; color: #ffffff; font=
+-weight: 900; letter-spacing: 1px;">
+                                                        <span>A</span><span=
+>L</span><span>D</span><span>I</span>
+                                                    </div>
+                                                </td>
+                                                <td align=3D"right" valign=
+=3D"middle">
+                                                    <div style=3D"backgroun=
+d-color: #f26422; color: #ffffff; font-family: Arial, sans-serif; font-size=
+: 10px; font-weight: bold; padding: 5px 10px; border-radius: 4px;">
+                                                        <span>G</span><span=
+>I</span><span>F</span><span>T</span> <span>C</span><span>A</span><span>R</=
+span><span>D</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Centre de la carte : $500 et F=
+iligrane 'A' -->
+                                        <table role=3D"presentation" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"margin-=
+bottom: 15px;">
+                                            <tr>
+                                                <td width=3D"25%"></td>
+                                                <td width=3D"50%" align=3D"=
+center" valign=3D"middle">
+                                                    <div style=3D"font-fami=
+ly: Arial, sans-serif; font-size: 65px; color: #f26422; font-weight: bold; =
+line-height: 1; letter-spacing: -2px; text-shadow: 2px 2px 0px rgba(0,0,0,0=
+.3);">
+                                                        <span>$</span><span=
+>5</span><span>0</span><span>0</span>
+                                                    </div>
+                                                </td>
+                                                <td width=3D"25%" align=3D"=
+right" valign=3D"middle" style=3D"overflow: hidden;">
+                                                    <!-- Faux filigrane 'A'=
+ (Bleu un peu plus clair) -->
+                                                    <div style=3D"font-fami=
+ly: 'Arial Black', Arial, sans-serif; font-size: 90px; color: #002b80; font=
+-weight: 900; line-height: 0.8; margin-right: -5px;">
+                                                        <span>A</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Bas de la carte : Num=C3=A9ros=
+ -->
+                                        <table role=3D"presentation" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+                                            <tr>
+                                                <td align=3D"left">
+                                                    <div style=3D"font-fami=
+ly: 'Courier New', Courier, monospace; font-size: 16px; color: #ffffff; fon=
+t-weight: bold; letter-spacing: 4px;">
+                                                        <span>*</span><span=
+>*</span><span>*</span><span>*</span> <span>*</span><span>*</span><span>*</=
+span><span>*</span> <span>*</span><span>*</span><span>*</span><span>*</span=
+> <span>8</span><span>8</span><span>2</span><span>1</span>
+                                                    </div>
+                                                </td>
+                                                <td align=3D"right" style=
+=3D"font-family: Arial, sans-serif; font-size: 20px;">
+                                                    =F0=9F=9B=92
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- BO=C3=8ETE CODE PROMO -->
+                            <table role=3D"presentation" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#f4f7fb" style=3D"=
+max-width: 500px; border: 2px dashed #001e60; border-radius: 8px; margin-bo=
+ttom: 40px;">
+                                <tr>
+                                    <td align=3D"center" style=3D"padding: =
+18px 10px;">
+                                        <div style=3D"font-family: Arial, s=
+ans-serif; font-size: 11px; color: #001e60; font-weight: bold; text-transfo=
+rm: uppercase; margin-bottom: 8px;">
+                                            <span>R</span><span>e</span><sp=
+an>d</span><span>e</span><span>m</span><span>p</span><span>t</span><span>i<=
+/span><span>o</span><span>n</span> <span>C</span><span>o</span><span>d</spa=
+n><span>e</span>
+                                        </div>
+                                        <div style=3D"font-family: 'Courier=
+ New', Courier, monospace; font-size: 20px; color: #111111; font-weight: bo=
+ld; letter-spacing: 1px;">
+                                            <span>A</span><span>L</span><sp=
+an>D</span><span>-</span><span>5</span><span>0</span><span>0</span><span>-<=
+/span><span>G</span><span>I</span><span>F</span><span>T</span><span>-</span=
+><span>X</span><span>9</span><span>9</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- BOUTON CTA PAYPAL -->
+                            <table role=3D"presentation" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"margin-bottom: 20px;">
+                                <tr>
+                                    <td align=3D"center" bgcolor=3D"#0070ba=
+" style=3D"border-radius: 30px; box-shadow: 0 5px 15px rgba(0, 112, 186, 0.=
+3);">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#tijxcKSmrdkYVLagBwbJFvPRnrZWZC&4cSfnutg=
+Qia&262779/1356/cuxwfrgbvp[.]home[.]php?sq=3D32-195982&lk=3D45389-7&page=3D=
+747" style=3D"display: block; padding: 16px 45px; font-family: Arial, sans-=
+serif; font-size: 20px; color: #ffffff; text-decoration: none; font-weight:=
+ bold;">
+                                            <span>C</span><span>l</span><sp=
+an>a</span><span>i</span><span>m</span> <span>N</span><span>o</span><span>w=
+</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- DETAILS TRANSACTION (Footer interne) -->
+                    <tr>
+                        <td style=3D"padding: 0 30px 30px 30px;">
+                            <table role=3D"presentation" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px soli=
+d #eeeeee; padding-top: 20px;">
+                                <tr>
+                                    <td align=3D"left" style=3D"font-family=
+: Arial, sans-serif; font-size: 13px; color: #888888; padding-bottom: 5px;"=
+>
+                                        <span>T</span><span>r</span><span>a=
+</span><span>n</span><span>s</span><span>a</span><span>c</span><span>t</spa=
+n><span>i</span><span>o</span><span>n</span> <span>I</span><span>D</span>
+                                    </td>
+                                    <td align=3D"right" style=3D"font-famil=
+y: Arial, sans-serif; font-size: 13px; color: #111111; font-weight: bold; p=
+adding-bottom: 5px;">
+                                       1P1971HDAUL
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=3D"left" style=3D"font-family=
+: Arial, sans-serif; font-size: 13px; color: #888888;">
+                                        <span>D</span><span>a</span><span>t=
+</span><span>e</span>
+                                    </td>
+                                    <td align=3D"right" style=3D"font-famil=
+y: Arial, sans-serif; font-size: 13px; color: #111111; font-weight: bold;">
+                                        <span>09-15-2026</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- =3D=3D=3D=3D=3D UNSUBSCRIBE LINKS =3D=3D=3D=3D=3D =
+-->
+                    <tr>
+                        <td align=3D"center" style=3D"padding: 0 30px 25px =
+30px;">
+                            <table role=3D"presentation" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-top: 1px soli=
+d #eeeeee; padding-top: 18px;">
+                                <tr>
+                                    <td align=3D"center" style=3D"font-fami=
+ly: Arial, sans-serif; font-size: 11px; color: #888888; line-height: 1.8;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#GpnEXaWexVcOqwNAjijTsAZHLbRdxR&5iLaPMYW=
+pPe&262779/1356/feurqwtiuf[.]home[.]php?sq=3D32-195982&lk=3D45389-7&page=3D=
+661" style=3D"color: #0070ba; text-decoration: none; font-weight: bold; mar=
+gin: 0 8px;">Unsubscribe</a>
+                                        <span style=3D"color: #cccccc; marg=
+in: 0 4px;">|</span>
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#UJvAUzkHIoRvyiTmwzACBhNkUgjcDk&4aocgyzG=
+yqc&262779/1356/splzsazbmp[.]home[.]php?sq=3D32-195982&lk=3D45389-7&page=3D=
+533" style=3D"color: #0070ba; text-decoration: none; font-weight: bold; mar=
+gin: 0 8px;">Manage Preferences</a>
+                                        <span style=3D"color: #cccccc; marg=
+in: 0 4px;">|</span>
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- Fin du Conteneur Blanc -->
+
+                <!-- FOOTER EXTERNE -->
+                <table role=3D"presentation" width=3D"100%" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" style=3D"max-width: 600px; margin-top: 20=
+px;">
+                    <tr>
+                        <td align=3D"center" style=3D"padding: 10px 20px;">
+                            <p style=3D"margin: 0; font-family: Arial, sans=
+-serif; font-size: 11px; color: #888888; line-height: 1.5;">
+                                <span>Y</span><span>o</span><span>u</span> =
+<span>c</span><span>a</span><span>n</span> <span>u</span><span>s</span><spa=
+n>e</span> <span>t</span><span>h</span><span>i</span><span>s</span> <span>G=
+</span><span>i</span><span>f</span><span>t</span> <span>C</span><span>a</sp=
+an><span>r</span><span>d</span> <span>f</span><span>o</span><span>r</span> =
+<span>a</span><span>n</span><span>y</span> <span>f</span><span>o</span><spa=
+n>o</span><span>d</span> <span>o</span><span>r</span> <span>i</span><span>n=
+</span><span>-</span><span>s</span><span>t</span><span>o</span><span>r</spa=
+n><span>e</span> <span>p</span><span>u</span><span>r</span><span>c</span><s=
+pan>h</span><span>a</span><span>s</span><span>e</span> <span>a</span><span>=
+t</span> <span>A</span><span>L</span><span>D</span><span>I</span><span>.</s=
+pan><br>
+                                <span>T</span><span>h</span><span>i</span><=
+span>s</span> <span>e</span><span>m</span><span>a</span><span>i</span><span=
+>l</span> <span>w</span><span>a</span><span>s</span> <span>s</span><span>e<=
+/span><span>n</span><span>t</span> <span>t</span><span>o</span> <a href=3D"=
+hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#DIKcaanDVoOEMKO=
+etutsUpzettkghH&6yYCyMraXuN&262779/1356/soqndibapw[.]home[.]php?sq=3D32-195=
+982&lk=3D45389-7&page=3D853" style=3D"color: #0070ba; text-decoration: none=
+;"><span>Unsubscribe</span></a><span>.</span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object GBLUIYBVFVCPUYBGWOIBLQJVVHZSPHDBARMZJKBOUZZQTBXASZHOJSZILZDI>
+
+Dear DVPSIWVLIOYQPFYCFECTGG whqjhdydraqwcapcevqckh,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is autmrjpzoytsvvwhdzjzekn=
+ntgjl.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi jgksegsowdrcdlffvu,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi fkgjmhceulcphvrrvffqvula,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: mitjfsbueobakqbeymntnusdiw
+ Site ID: xxdpyysykekfzcpgkekwucojv
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team ADSDDPWPRHCJPYSKFKIOUB
+
+Powered by WTGWELKBBRNYHLPUNJRVJH=20
+
+</title>
+
+Dear NQVIWSLGJHTBFBZROICIMIYQE lexzuohooqkyrozxnioqnoaota,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is jkjdqtrjjrfoojjfwnimfig=
+rz.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood RMXRCZZHGHUWZGBOFDJOCM,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+XWRTXIKDGJJGHXUKLBEVHMRPDYZTUNASBIJTCCJEJGFBBPOBYLDTFJDCFAIZANEWKRYVGJXLYFI=
+QMWUZMUXGCIZOSSWNBZHAUFPTAZFULQFVEIQXNZNLUFWUGVGLOSKRYILENMMPIUTDJNIXPAFFCS=
+IDWAIURRDATSYOKEICDXZGXDOVLBLIDGAXMFTSMYGLCOPBIKGS
+
+ Hi NYEPXUVTBVSCVAOYLILICX,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+buitksxdqgmcdbofrrrueqsnqnfbcnxjdxeouaebiogejjbwxhisfbpacyaxqcbqeuydxgfuzib=
+omxnwpkldqfuvwtngxinimwlwoifxfmeociseiduuuxevkwkzodjpftnjgurzwyddqvcxkbcowu=
+puzqblijcxvzxggwtfhxjjcuikdbtqgjhponramktaflgqxdjs
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi HRT5U9DGTCWG7DGE0DGQNCZ4Y,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team VredactedULIIZNKROVGSWOACTU
+Powered by DDUSPPGAAFNKLPERRLRKDX
+
+Login Name: SCIJTUIVJTWLQFYBQKIDFR
+Password: HRFLIXVIYRFMXWZWOAVRFZ
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: WSO
+Password: QYUVOOXIHDAYUKZYOJXFLZ
+
+	1TE1MDWW3U6HZWC9GU 819GT3C7NFSH5AY I80M1231LTSN0 2PFCTCSD2NTXQMHHBC W6SRU5=
+TNJLDHGGH T0ETNJ5DKAMBX DEWDMMMFLB8NAJIRSZ=20
+	T8L9TPBS0UIW3P103W XCA1XSJ8JZX8FAO L5YUV3W30PQ7X FS4XSJWQ1HTFKRM51B YWJ7AF=
+YCL0WVJVI WAURK4CAJFA06 SLJVKYABOBCDIX08Y2=20
+	73ZOCCVDYF1EEIZ RD6HBAA6L089G YG1VZ4FYIMWDPDT6C6 LI5AG7MBLZ4LH9Q J23YYUZOI=
+POPN Z6UI5LPVZHYTVMZOVF N5DMTRQCXAA8S1L
+	IMTS7KSLY4WEU 3P5QB0DE965BNJGZ2D S1X3019N6GSP4HU R45SFP9H609OK NFMDOKUH5TW=
+OYABBOK TBCVH95QAW9HBA2 B3AI3VOJDH9SU=20
+	UYBJWSQXRS9VG96EKT BEI90NQYZB5OHHO WDSAJ4CL30OFS TIH002MC883SWRMSR8 RZ9OOS=
+ETWC6KFQJ N49GFKF638KHE 10VLSE4O9CJ7XCQ5IW=20
+	TP1OWETYEY5OXY0 O5CGVGGSTZS0C XEHHQ573TNMBSPUUVA SO3QDCD6UYAD21U KHXSL1YFW=
+5VNX GVVBZCOJHK77IB1DSD 1NB8VQ27E827EEG=20
+	MLTDX9E2UXDIH JOFCB6D555ETVFUUOF WC4G0CCUXF4U0LA SVDPER2KB8ILM YIURZFP8AB9=
+7JHQGUH MQ726P31XP2YGRG BUZ21WXKDIL19=20
+	UL18XIIZ9OYQ5K55SF K96P44P2M60FEPS YJ62WZAEOPIL7 W1LFIQZ8649TMDU9U7 WP3754=
+EKUM5OQ68 1L3YYMSR38D3C JGN8MC1TQHD62IQ9DW=20
+	3PTSR0GAFMLSRN1 Q0VW5TC3PSC0R SG5CL5H2X6YYW5YHEL R15Q5SQGBFQKCCZ TO6QWHQP6=
+URPY 963HM2ICJLSA6K6YY2 IEQAA0LCPOUHRIP=20
+	UCOXODUQAZR4D XSE4SPBQ6GQ82S7VC4 TUZPH27Z4FYFVWR GT1BX97EXYD9J YU2C9B32C8B=
+EHNN69F RZV9CPXM9876O2S DTVB36AEJ4S12=20
+	9751S7NXR7E7KUXZNN CQ82XTOXDEST19Q B5VBQSA2XI2EJ 2APRKN7J2Q68TKCFX8 0K054T=
+GKF6UE7E1 05QSWR1DKQD75 VAC8U7SNQ9PY40PCRE=20
+	73UAZV2JWV1XF9I 848NZTJ3LDVOR 5L136VMDAF41Q2VR6D QMR794TUH2YGMH6 024Y9E78F=
+B1WK 1IQOHC1TXQ1KLYZ0ND 92KWIAGY9GQP8L8=20
+	IZ65X04VG2J7T O778G6668KEE32HXMR O901TQML7VPJS91 EKEPR86T8K4UO 1LPHW3DWY5T=
+ESAS30F Y5TGFV9GPUHXNAX T4LEM8LODW7R5=20
+	DAKZCMBSOTI6E9EWLP 9UCUFB59KWC2EMA HLPQA409O4ELT L7AJGRY1FLKK0SKHGE DC4A97=
+7MPK4ANO7 CXMUDBIME6HLA J5CNW5PWSVW4WQL18Y=20
+	0N4BH1G9DLH5EQB 01IUNPU8AZCWC GWSO1AXDRRWATQ3044 0PS6FPV74JG6WQE 8LSUAEHQK=
+9HXV XNK31H9KNRKL7MCCNA WFOHXW95WEI7182=20
+	A15U0IGQ1A2IS 1ENEM2PLEQ64V9B7OK 1DYOJ5WRMFDBXTW 3TR7IKQG2B70T OXM3LC40GZ4=
+HMKX94K CT02B1K0VG7X6WV L018BPT5OUC8T=20
+	AJ9APXOOHO9I9L2H9S 5JTXD4I8VVEOMWL SMJXT7QHKKTXD 8ZJ5CQGSB3HBV38OA8 8KTIPX=
+U3QR7SZ4E JJ29RD16B6WK2 BHKC2HIMWKF9I4ZKO2=20
+	GKISSVDKU0FABUC VX7P1YQQT0BFZ S5IF18L9L5Z519U1T1 YLG0E1IZOE47K5B CF15H8WP3=
+YM7Y 3NPSO2P5QI27BOZ82T BP3FFBUCVVUKCDJ=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+DMYWIAWSWZUFVEPNEJRUPJTGOQJNYZMHKOVYZFWBTGKHCFZRHUNEXQHIAAHSSPZTDHFISDUOJPR=
+TWGVHNLIIBZJUPFRMHCHQWCTEIKTXCTWVISZKFJCFVHTJDYCPKHSMOVMCMQRCDIXWABQSBANXDO=
+MZGNNHPPJXSFHYESFXQPODDEPASZCFXNKLUCMBTRICPAHZZJRZW
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to OMLKDHIWKUSGNOBTSYAME=
+CWOZKRCTVLZTPOKBXBPUDNXOKKKLZYEWAWZSQUTABRVMUVGKNGVYRSZPTYAUMYDOAUDBHCQJECI=
+RCVBXOPBNFWOWKPYVWFDFDVXYJJMKDCIAAGREFXDMKQWXJCYGMPQHEQUJDSRQUUELTWQWVVNEIR=
+FOGPEMXFGETVRTDGQFEWVZGEMUFVI roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department GQUCGPKYRMTSEGNHCMHSMPZFKVHDHUEXKDBDBCZNLFLHIUYE=
+IIIHTIJATMSKCFAOTAXASSQUWVUQOGXDMJODSIQBPVFGSEDLFSXOIPLGGJLIVPHVGZBIPEIPURK=
+KZHKVIYFRHKBQRTJGLRGYSGHOFQDOTNTWTXOIYVOYDNDQZSVLORJFUSVQFVBCKLTTVERCMGLBEK=
+IZU to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation TIBABSYWPLDAYKN=
+FTMNSIRXUCEZXZJRFOUNSDDTPGFPWTKGADFQHTPWKCXTHKIHTLMNEWVYORSLLYJTYTQBXAKODQT=
+ZAMYOPKNDXRMGNEIKIDAXNDDQYYTXRFDCAUIPZKEPCVSZBTLZILCPZBNDEHWRAVCIMIEXKIQSTH=
+PAZPJRAKWNPNYXOAUTOZOLMOELGGWPEBZUKF development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will YFUFXXJFPLRSBSNUGHDULCOCRFPKQXNLECDHFXHAIWMGGKAECFIKIZVWK=
+XZXAJVZCPZNMBIJRDZRMSDCTFQSFLBBDQZODARDKDBWCMDXFRLCJOWPLBEWIGWRIAAKJOMYTSSH=
+GVJDWHNTGGXYJXULZNQRPGFVNFYCAFELFXSEINSUAGQTDUDXFSSOVCYRVMGYMXJACQVIEAXTPXS=
+TKEGKKDJSKWWFBRANZOENBLCSTDMDNJPQFPKUDLZRWSCOPERSCUGPQCNFMOCCCFQXNWDYZBMTLB=
+FVPFPPBRFMISRSMVJYHICYATFEENJYNWNBYTGAXIZSDRDMYFBJVSTCXXNRBMZILJYISCISKPLQN=
+LSCFVIOBHPWQFJXWTHOEKLQAJZHSBANFEYRSWMXDDZS  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support ISYSIUJ=
+VKWYZGQBKSPHSZNQJVOHJNGAXGPMGHCNHMVQZUTCYLLXPVFNLZPAAMBJKDEFFUHIFDAZDPUZOWC=
+HJNYGJYYDODMIQFIQNEMNIFHWPOUREPAWRLONMBAWAOHSSODKLABAZJLHNHDBGHJUYETQAXLROY=
+LYFQLMLLBHRZTCRMIEBPVCPBCZNBAKROUSAEWKQAZYT  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
