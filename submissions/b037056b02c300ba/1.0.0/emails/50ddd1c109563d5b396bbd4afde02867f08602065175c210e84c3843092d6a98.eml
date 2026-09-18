@@ -1,0 +1,221 @@
+Authentication-Results: spf=softfail (sender IP is 35.185.33.129)
+ smtp.mailfrom=playfulcooking.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none
+ header.from=playfulcooking.com;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:D448CEAD9EDB228021BDFEF0C8F525FE7608653F3C5941A79ECD48AEDE0B4737;UpperCasedChecksum:741215CD4BD0BDB97B089CA8C347FC81B2096CE849BED6AE37A35F38BE0BAF06;SizeAsReceived:304;Count:7
+From: Your Xfinity Member Benefit <support@playfulcooking.com>
+To: <redacted@redacted.com>
+Subject: A Special Surprise for Your Plans
+Message-ID: <1af09c4582534b53a7f55998bad45baf@playfulcooking.com>
+Date: Tue, 15 Sep 2026 10:34:40 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Sep 2026 10:34:40.2132
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ f42e175f-b4bf-461d-28a6-08df1314f2b5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN2PEPF000044A6:EE_|SA1P220MB1892:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN2PEPF000044A6.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/15/2026 6:13:17 AM
+X-MS-Office365-Filtering-Correlation-Id: f42e175f-b4bf-461d-28a6-08df1314f2b5
+X-Sender-IP: 35.185.33.129
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|260826003000599003|6100799021|51300799024|69000799021|1680799066|12119299003|5099299006|87000799021|1290799033|13020799009|2700799033|9800799015|46080799009|58200799025|32020799003|9400799043|23070799003|970799063|34130799006|10300799038|9000799056|60050799012|84100799006|5139299004|6022199012|1380799030|4302099013|1370799030|440099028|3412199025|1360799030|56899033|1602099012|2607281247196008|30041999003|40112799007|6106899015|2406899039|2006899018;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Sep 2026 10:34:40.1168
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ f42e175f-b4bf-461d-28a6-08df1314f2b5
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN2PEPF000044A6.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1P220MB1892
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8084294
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0406.000
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9710001)(9610028)(9520007)(10115022)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xfinity Email</title>
+  <style>
+    :root {
+        /* ========================================== */
+        /* COLOR THEME CONFIGURATION                 */
+        /* Easily edit theme colors here!            */
+        /* ========================================== */
+        --body-bg: #f5f5f5;
+        --container-bg: #D9E3F0;
+        --text-dark: #000000;
+        --accent-blue: #5223FE;
+        --accent-red: red;
+        --btn-bg: #5223FE;
+        --btn-hover: #3b19b5;
+        --footer-text: #666666;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--body-bg);
+    }
+    .outer-container {
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        background-color: var(--container-bg);
+        padding: 30px 20px;
+        text-align: center;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .bg-left, .bg-right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: auto;
+        z-index: 0;
+    }
+    .bg-left {
+        left: -190px;
+    }
+    .bg-right {
+        right: -190px;
+        left: auto;
+    }
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+    .logo {
+        margin-bottom: 25px;
+        max-width: 180px;
+        height: auto;
+    }
+    p {
+        margin: 15px 0;
+        line-height: 1.6;
+        font-size: 16px;
+        color: var(--text-dark);
+    }
+    .content p:first-of-type {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--text-dark);
+    }
+    .product-name {
+        font-size: 36px;
+        font-weight: 900;
+        color: var(--accent-blue);
+        margin: 20px 0;
+        letter-spacing: 0.5px;
+    }
+    .product-image {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+    .small-text {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--accent-red);
+        margin: 15px 0 25px 0;
+    }
+    .button {
+        display: inline-block;
+        padding: 20px 40px;
+        background-color: var(--btn-bg);
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-size: 20px;
+    }
+    .button:hover {
+        background-color: var(--btn-hover);
+        transform: scale(1.05);
+    }
+    .footer {
+        font-size: 13px;
+        color: var(--footer-text);
+        margin-top: 30px;
+    }
+    .footer a {
+        color: var(--footer-text);
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <img src="hxxps://snaparia[.]com/file_8095d60e-68fa-4697-8757-2941baa30ad7[.]png" alt="" class="bg-left">
+            <img src="hxxps://snaparia[.]com/file_524d1143-c5c0-4287-a4da-a2dd2a0c41ce[.]png" alt="" class="bg-right">
+
+            <div class="content">
+                <img src="hxxps://upload[.]wikimedia[.]org/wikipedia/commons/b/bc/Xfinity_logo_2021[.]svg?utm_source=commons[.]wikimedia[.]org&amp;utm_campaign=index&amp;utm_content=original" alt="Company Logo" class="logo">
+
+                <!-- ============================================= -->
+                <!-- [EDITABLE] HERO HEADLINE & PRODUCT TITLE        -->
+                <!-- ============================================= -->
+                <p>We would like to offer you a unique opportunity to receive a brand new one</p>
+
+                <p class="product-name">Yeti Red Bull Bundle F1 Bundle</p>
+
+                <img src="hxxps://clarpix[.]com/file_00b4c5f2-b856-4731-b845-191c52243a77[.]png" alt="Car Emergency Kit" class="product-image">
+
+                <!-- ============================================= -->
+                <!-- [EDITABLE] SUB DESCRIPTION & SURVEY INFO        -->
+                <!-- ============================================= -->
+                <p class="small-text">To request it, simply complete this short survey about your experience with Xfinity.</p>
+
+                <!-- ============================================= -->
+                <!-- [EDITABLE] CALL TO ACTION                         -->
+                <!-- ============================================= -->
+                <a href="hxxps://storage[.]googleapis[.]com/abdo15/l[.]html" class="button">CLAIM IT NOW</a>
+
+                <!-- ============================================= -->
+                <!-- [EDITABLE] UNSUBSCRIBE FOOTER                   -->
+                <!-- ============================================= -->
+                <div class="footer">
+                    If you no longer wish to receive these emails, <a href="hxxps://storage[.]googleapis[.]com/abdo15/l[.]html">unsubscribe</a> here.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

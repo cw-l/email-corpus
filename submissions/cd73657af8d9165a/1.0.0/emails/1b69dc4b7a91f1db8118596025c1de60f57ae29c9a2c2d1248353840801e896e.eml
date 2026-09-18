@@ -1,0 +1,1030 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789575255; cv=none;
+        d=google.com; s=arc-20260327;
+        b=g/G7i9epXRY8lH+GVCZTxAAjfUmiePBneMOGKDePRmf80CjjPbz4WfJ6RTjNvH/oh+
+         NCoXEtJljv1K/W2QP3/MSIG9bHu/cJtsHMTL4GEqTM8LKg2VO5d0ioJwKqvl2nAUGtBL
+         039zYpWX3fUiFOgBqWc/Rgig3HZ2g/ytECD56USD33aNQIP48jpWRClGtOV5HoCuDED5
+         QwC/KmMiX1XVh+p3Nm2tYPgnwGub7QlBIjglPB7hiZEB2IZgbO+V3Dv7kg4wLGu1bTsl
+         HI3gesm2FYh2z5A/9Lg3oIYlus+w6gZkR87c7M+mtnMGkbAhEaNYbeeR8H7PslvAGEV3
+         e2vw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=0B8n+ll9RZ6f1fYxU7P/adddvh8zUb4nW09OE0wW7iA=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=QblNpuKfGH2QDuXvt8+rPtu1SyvIYHnQQi+ReUx7/QMmmbG5g2Sjh8zBUkjMyJrIHI
+         cjMYVTqFcISBqFxh1hcq2Iz3ZzhUaNZ84bzuLPToAoqaupT+RlAjeQuSOLc+xsOyMJQD
+         2jU3ItIspyVLOsAllcThWxdqF5uXE+fQCAmr/OZi+t9l7qNuR6oWxo1JtDz96pbT04/Y
+         7bGTHm22at9woVTzKOEXoY3JXZo36HNJXl3Y/yjOLcDNnc4wMBVi//mbA8PLN7aM1HMH
+         L5yeY6AsfjGg1iH+7qIwm8iwnCkHopIQ4jP38829XIzxeW4RJy1xBdRGAwPg2cRNJDJN
+         UnGA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=neutral (bad version)
+ header.i=@jtxyxlxd.alford-gane.google.gov.cernakfilm.sk header.s=smtp
+ header.b=MXScO33C;
+       spf=pass (google.com: domain of
+ syavburvvsbim@alford-gane.google.gov.cernakfilm.sk designates 94.102.13.5 as
+ permitted sender)
+ smtp.mailfrom=syavburvvsbim@alford-gane.google.gov.cernakfilm.sk
+Authentication-Results: mx.google.com;
+       dkim=neutral (bad version)
+ header.i=@jtxyxlxd.alford-gane.google.gov.cernakfilm.sk header.s=smtp
+ header.b=MXScO33C;
+       spf=pass (google.com: domain of
+ syavburvvsbim@alford-gane.google.gov.cernakfilm.sk designates 94.102.13.5 as
+ permitted sender)
+ smtp.mailfrom=syavburvvsbim@alford-gane.google.gov.cernakfilm.sk
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=jtxyxlxd.alford-gane.google.gov.cernakfilm.sk;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=vziwupmhybsynayyhvafs@jtxyxlxd.alford-gane.google.gov.cernakfilm.sk;
+ bh=BSNy6dj6hG4xkP2wrPufdyJnxhs=;
+ b=MXScO33CO5e2D6XdSd6tb8TlzJMu+tzTTODOtAps36NHqvc6bzZS++tuPgo5pPLhY7NH8ZOo6yvn
+   ud+QOeF39wNznrdnF8lisxAHf8w2d4UFtlCHiRIl0q0Qzpuk/QZPCnCC6ZcX0w0IVpU/yK5OHMKr
+   pOSOrwnmkAy3sAae2xFkrBj1b8UU1USPwq0pLH0z12xG4DopgLH9YekCuIm14zwyRIl6+Yq+AJUr
+   fGusZJe9ahkrffDJHDyL2393nYSRBSnnz62Hsr0PuLAAcyApXFk2K2SLS3NHsbjPZACgA5U+1E6g
+   I74Xi99PiosNTP7z7IPtDWeB49ysUYi8pEOK4w==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=jtxyxlxd.alford-gane.google.gov.cernakfilm.sk;
+ b=fRP2rXDvLF4eR5kKtpbEdoWqoDt7EtT8EQip9dseujKWvAvtIXkaUOAuD6GZwZwE0RPoaDptkHqY
+   CwUp2xoKy+ffrTOepNxk78ew5hLBGCDJqJnDEwaj3mf6VduytiMzjNfYS1q4+J4K3oa3BR0OQ/dl
+   cxQii4hFcstDs9+fLX7cnkwsTp21+ShntQ39pFmhVQ4a49qBbAIrBtEewd0+TaVp+hp70UfcE4dt
+   qMeh6okMB+VD01cuzW+wwMI3Teig9Fi849R0IkUD+p7lNXozfOUk0tZFLGaDAmrLwC/0zwgcpFHm
+   IjGKsK8YE6K+9Ch8DzcINa3MjbTHsuSYu1ivHA==;
+Subject: Watch before deleted: The simple shower trick that ended ED for men
+ over 60
+From: HoneyBoost
+  <lqmmvut.32.195982@jtxyxlxd.alford-gane.google.gov.cernakfilm.sk>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 94.102.13.5
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <akeqsfwsihpvjasaovjiknacsmvquo@17e8wafz64vdnewuwh>
+List-Unsubscribe: <http://petfinder.com/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_14133110"
+Date: Wed, 16 Sep 2026 16:13:26 +0000
+Sender: vziwupmhybsynayyhvafs@jtxyxlxd.alford-gane.google.gov.cernakfilm.sk
+
+------=_Part_1_14133110
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_14133110
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#ZlKF=
+dCwzHhlZtpFQGQLdbozvkteXKE&4RDFfVSoYoB&264726/1421/cyywfuivsq[.]home[.]php?=
+sq=3D32-195982&lk=3D38191-7&page=3D378" style=3D"text-decoration:none; colo=
+r:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>Special Report: HoneyBoost</title>
+    <style type=3D"text/css">
+        /* Mobile Optimization */
+        @media only screen and (max-width: 620px) {
+            .main-table {
+                width: 100% !important;
+            }
+
+            .mobile-headline {
+                font-size: 24px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-body {
+                font-size: 16px !important;
+                line-height: 1.6 !important;
+            }
+
+            .btn-cta {
+                width: 100% !important;
+                padding: 16px 15px !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .responsive-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .product-jar-img {
+                width: 220px !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #FFFFFF; -webkit-fo=
+nt-smoothing: antialiased;">
+
+    <!-- Outer Table -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 40px 15px;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"600">
+                    <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"600">
+                    <![endif]-->
+
+                    <!-- Main Container Table -->
+                    <table class=3D"main-table" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FFFFF=
+F;">
+                        <tbody>
+
+                           =20
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style=3D"padding-bottom: 25px;">
+                                    <h1 class=3D"mobile-headline"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 30px; font-weight: normal; color: #111111;=
+ margin: 0; line-height: 1.3;">
+                                        Doctor Reveals the 14-Second "Honey=
+ & Baking Soda Shower Ritual" That Restores
+                                        Rigid Hardness in Men Over 45 =E2=
+=80=94 Zero Pills
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td class=3D"mobile-body"
+                                    style=3D"font-family: Georgia, 'Times N=
+ew Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        If you've noticed that your perform=
+ance and firmness aren't what they used to
+                                        be, the real cause is not your age,=
+ stress, or dropping testosterone levels.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        Medical researchers have discovered=
+ that male blood flow gets choked off when
+                                        micro-arteries in the pelvic area b=
+ecome blocked with toxic debris. But when you
+                                        combine
+                                        <strong>raw honey with baking soda =
+and warm water in a 14-second morning shower ritual</strong>,
+                                        these impurities begin to dissolve,=
+ opening the floodgates for intense,
+                                        unrelenting circulation on command.
+                                    </p>
+
+                                    <!-- HERO IMAGE (Main Hook / Video Prev=
+iew) -->
+                                    <div style=3D"margin-bottom: 25px; text=
+-align: center; position: relative;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#tDRQYrETGJgdkXMHCplNLxXwqAvaDU&4cwleyGS=
+UqA&264726/1421/lxzdainktn[.]home[.]php?sq=3D32-195982&lk=3D38191-7&page=3D=
+842" target=3D"_blank"
+                                            style=3D"text-decoration: none;=
+ display: block;">
+                                            <img src=3D"hxxps://i[.]imgur[.=
+]com/eTmszKB[.]png"
+                                             alt=3D"Watch Honey Shower Hack=
+ Presentation"
+                                             width=3D"100%" class=3D"respon=
+sive-img" style=3D"display: block; max-width: 100%; border: 0px solid #e0e0=
+e0;">
+
+                                            <!-- Play Button Overlay -->
+                                            <div
+                                                style=3D"position: absolute=
+; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; heigh=
+t: 70px; background-color: rgba(255, 80, 60, 0.85); border-radius: 50%; bor=
+der: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div
+                                                    style=3D"width: 0; heig=
+ht: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent;=
+ border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div
+                                        style=3D"text-align: center; margin=
+-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div
+                                            style=3D"color: #888888; font-s=
+ize: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercas=
+e; margin-bottom: 10px;">
+                                            AS SEEN ON CBS NEWS & MEN'S HEA=
+LTH INVESTIGATIONS
+                                        </div>
+                                    </div>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        "At 68, I thought my glory days wer=
+e completely over and that prescription pills
+                                        were my only choice," shared one vi=
+ewer. "After 3 days of doing this simple
+                                        shower routine, I had the kind of f=
+ullness, stamina, and rock-solid rigidity I
+                                        haven't experienced since my 20s. M=
+y partner was absolutely stunned."
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        Thousands of men over 45, 60, and 7=
+0 are throwing dangerous blue pills into the
+                                        trash. Because this method is 100% =
+natural, it produces zero racing heartbeat,
+                                        zero headaches, and zero dangerous =
+prescription dependency.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        You simply combine this daily morni=
+ng routine with <strong>HoneyBoost</strong>
+                                        to clear arterial pathways, maximiz=
+e nitric oxide absorption, and lock in
+                                        lasting firmness whenever you need =
+it.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 30px 0;">
+                                        Watch the unedited presentation bel=
+ow before the pharmaceutical lobby forces it
+                                        offline. This short video reveals t=
+he exact recipe and step-by-step
+                                        instructions.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT BOTTLE / JAR PLACEHOLDER (Centered=
+ directly above bottom CTA) -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 25px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#wWfvUOukOBweCtKGzmwAfYSlqFX=
+Eyq&4LylKMxJgbn&264726/1421/lzubevdedf[.]home[.]php?sq=3D32-195982&lk=3D381=
+91-7&page=3D881" target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none; display: inline-block;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/u1jxTnM[.]png"
+                                                             alt=3D"HoneyBo=
+ost Virility Protocol"
+                                                             width=3D"250"
+                                                             class=3D"produ=
+ct-jar-img"
+                                                             style=3D"displ=
+ay: block; width: 250px; max-width: 100%; height: auto; border: none; margi=
+n: 0 auto;">
+                                                    </a>
+                                                    <div
+                                                        style=3D"font-famil=
+y: Arial, sans-serif; font-size: 12px; color: #777777; margin-top: 10px; fo=
+nt-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                                                        Official HoneyBoost=
+=E2=84=A2 Virility Protocol
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- BOTTOM CTA Button -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 45px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center"
+                                                    style=3D"background-col=
+or: #FF503C; border-radius: 3px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#rThrzlXoaDpWhXBypHvvNUvrLmR=
+xjV&4itffGrYHdy&264726/1421/zjofflslun[.]home[.]php?sq=3D32-195982&lk=3D381=
+91-7&page=3D762" target=3D"_blank" class=3D"btn-cta"
+                                                        style=3D"font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-we=
+ight: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; disp=
+lay: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        CLAIM HONEYBOOST & =
+WATCH THE VIDEO
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style=3D"border-top: 1px solid #eeeeee;=
+ padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align=3D"center"
+                                    style=3D"font-family: 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; line-height=
+: 1.6;">
+                                    You are receiving this email because yo=
+u opted in to receive men's vitality and
+                                    health updates.<br>
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/smalbus/salaminka[.]html#zZiqxNBpbnBLesyOGMaAFSIBouFxVO&5aAgBKDazls&=
+264726/1421/aprxmquijt[.]home[.]php?sq=3D32-195982&lk=3D38191-7&page=3D996"
+                                        style=3D"color: #999999; text-decor=
+ation: underline;">Unsubscribe from future
+                                        emails</a><br><br>
+                                =C2=A9 HoneyBoost Research 2026. All Rights=
+ Reserved.
+								<br><br><br><center>Unsubscribe
+								<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]h=
+tml#QJpZLUPYEISwYFIVijUOwTfVwalPdM&6iXRMdRlgxM&264726/1421/tzdoovalbh[.]hom=
+e[.]php?sq=3D32-195982&lk=3D38191-7&page=3D566">Click here</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object JPAKNAQRCXMFNXANNAORTDFDNEJYTTZHTBLYLWUYJZPMNOROVTJEBBEMWGBK>
+
+Dear JBVZHTMEGPORGMLMBHHEGZ iadmawlidzrmsmnpwgzals,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is qiloxrytjkgxlituoqqdosq=
+dxfho.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi unkarrnpehaonwosaa,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi tsowpnouvjsvkgldsmisakuk,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: qfnambqnawynwiuanexzjyzesz
+ Site ID: yfzyhgtuekdlgzolyvaxbhvcq
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team JTTIUKROIQRRQKADBMYDNY
+
+Powered by FNNJISTODAVCNZAQVHARFN=20
+
+</title>
+
+Dear RFAJQBVFAPRFIQUVKNKIFHYUA siltulfcqutmonsaxzpajlhgcb,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is xjrolcxnstjxiporkwcfihs=
+vh.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood OQRNUHGMGZDGQCYQJHHDGQ,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+OZHRYDECMBWZTOKOERRLROUPTLNGWQMZIOWSTKNXIZKPPMMJZJLAEXTGIEEXZECZKZJZEHWKSUM=
+CUNWLEMYRGKTMMXBISMPGUOIZKITPJIZPAXSMJSLICVLKFKECZNABSULNEMPPSDUNMIIPAKNLYL=
+LRMCSZWZLBYJTDRMZSRQIYXDRNBHTILQBETQTOMYKGXPVJOUFM
+
+ Hi POBPQBOKMZFMLAPPHJPSDH,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+akgaifqxywhllkwxzbfpdaceswznqnejziwswqbnkggxoscwqtqriioooqcpffgmrzfipebguoi=
+uiuecyfyxwmlgdlowxuwbuiuixefjsgolzstyjrzuseeqwgajgedmjomwullzmcepawicvsqjib=
+jqylelhusxnjvgsbleaoyasfsqsnupwcuailphbccvqnirkail
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi MSLJZEXQGN6B5V5Z5TNUO65QS,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team LTRXXZUVEILAZWVFWNPWNY
+Powered by DGYXUUYZIRYGLBSMTDXCXR
+
+Login Name: DIFAZNAQKHXIAYOGONINMB
+Password: EEQNCXNNWIMBQQNRVLLCEF
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: ARF
+Password: WOVPADYTPNACNPFRTEVMZC
+
+	WURWZDDYXBQAP9XH0N XO3SGL0DR1SQO4E TCSDSOJYOWWM1 1CZQR6NTPTDMQGXUU0 UHXRSO=
+F75SSDMNM E0CTGC692IGXZ 3IZ2LU2DD4IOWKZ9P9=20
+	7M4S5JA9B239D0Z4GY UN07NK6TQ2ISOBC CCBU2A7BSS34B 2YNQ32BASWM40VAA40 SWIJB0=
+NAKSH54KH Y4LLRC26D3LMV V44T6JN1Y1LUXT9F07=20
+	D0AL2Q6J9BBT0S6 77EIV7IUBC7EI 47DJC0Y53XWLC5LBNP ONOQC7QS9P60HS0 KKR66JAZG=
+9ENL IGT3AOZ2U8WZ99UBPQ TXA3LVGJ8OZI7H6
+	4NTIY0VAXPVY1 5UC937UCLD4Z9CEAJN QVV90Z2TRNPBMXB XB5FQPVM2IUZF 294W4B0TSBE=
+D167WUF F9PDFRDTASO0U2A J0M57UKUCNA45=20
+	CSF83FI4DF1RR8FDVK WSRTM4XL1I54KWG 4PBMQRUNIS4I0 LY5KFVOB11ICWARA2P 91BARR=
+32UKRJZGD ZIK1BX2GGGZC1 7FS1XGB9VRCS88F0FU=20
+	ELZCYCIP3YJD7ZQ BH053M71V448I BQERNLH725YSXRZ5FP LGKJ1LDYU5SBN1L XMHMOW0VS=
+V7ZO 10IMOU52SOAEJ5H09A WNQ2HRF96T8EAB0=20
+	WLQ5OXWQITYVF 3G5SEPRE29TZ11R8PU WO130Y4SJLJHD9S 9KYSXNY3X1Q4R LZSQ3C0U4L9=
+1HZG559 RLSDPO12TFREF30 TEV65FASMOK9R=20
+	2Q3X2WMEF98ATKZ7D8 PE39DMC06FIPV05 QT16PC0O4YMPP ADR7S36RWULGR90MKM UJ5FOV=
+HVU3MW8WL PD85OJOY3638S ZS1PBAI5FH0CDMVNFA=20
+	JP904RGHBIZAF9K 94UXAZLOBZ9JV 93NBWBNCHGV7N4U3SH RUZ4ZN5N4UO25EG ZTHLEFLW6=
+OICM LQPIERAHN646WU0FA5 JKJ0KF4T0RAAAQH=20
+	M6UY4047KYP3G HMGSLEQGTP5DTSOY06 UG09QX21KASV47Y MYNKKN4Z6MKAA 7H66Z0HW4Q9=
+1NEELWW QPM6JD8L28P2IG0 T8XPWCB3Z4JBM=20
+	9LC59OGCJ2ZL3N9HSW DJ1IDUY80R5NQGG FSBLLRG9BBPE3 91EII8NU5B3O9J464F SDMSPA=
+ZIVN6FJ7F D6L3G57BA76JD 2K474X4SS4OPGCBN65=20
+	4NQ5LX6DW17G4TU EVZ6OI8PIFXZF LQM9QDOW6IQNU9GS6O AYFAQ0G8DAYKZI5 1MEAWKOL1=
+9KXO O3C48JXF42IRJIODI8 Q02TQU17YUV9UCB=20
+	GU7HJHW6U52J4 MKGP7H238ZNYTSQWY4 TZGL847ZPG3C8S0 SQM6CTB9HMCV7 W7OWNRANXGQ=
+IVAONZB KZ0NPUHY1MCGFA0 EIAD0X0LE62RS=20
+	G0SOKP3HAU66Q3VLW6 3J3V4CCC7X9ZV77 Q6PBT65WFONZ1 WVKW1MOB2ROFUFQY13 6RAIMA=
+KU1765WU0 P7KSXCMCKHBV1 J5JW1XCRGHFU2IJ5OX=20
+	2A1SXE8D73ILF4D WTOQM6PGZI27D ZI3EO8S34SFTL32SDL HSJJNIYSX4X28QP RXM4VEFBQ=
+LGJG 800T0WIQUKJIC188XA VOWBJFG1L3VJYS8=20
+	ZYVYU7LRB77V3 GGWFJKFPSLKOYWZ9RW TF15S6JH45FDWLK VYNBYRLD3JDJN WFUGBO3X5T8=
+NNV5CFJ XCIJ2168MTSMGET F23CKCVZQZLVW=20
+	4FPL9WVBU65PPRAUJC 5O6ZAU31FUMVIPV 50BS237ZPAJGH WNLSB31ANU3F1Q1MY0 N77QV5=
+AP1EJSU70 7D2FOPLJ29SXZ V1YZC2JV31U7S6UOSZ=20
+	Q1JH3C9CUPR5CWC WUNK2OEJID567 UHT0NZN7AQV658MMAM 9H7AC53LKJL2OEU 8LZON5X39=
+UM56 R2XGXZLRU7O997QUDC DUN29MUFEEHUUCC=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+SNPSLOUMFPCQQZMSEYNPBWPKOIROUICEWEKBIWGNIHOUGNKTMAAIRJOTPITKRYWLZVAWMNSKANP=
+USPKVQTYYEFWYNLFXWXJBFZSNBORTKPALVJLHLKESKXFZRFJQHSMGTUUSCXOAAFJSTVTTRXBTZZ=
+EQVZDPOYBNASLCQGKVRWJDTTIDZZPEBMMNKRVSZYRZUANJDMLJX
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to BBHGXZZRFAZBPVDEWRXWY=
+OQSMQQAKMYHQCVINBENUZFGPMOZNFXEKQULQJKDKNOCXARFISKLPEGNJLNPUFUCQSOZHNDNFCHJ=
+EBRBISFTOJHHGVDTRCITHHKINRMWLJRHGVVRKSWRQYOXSSICVWTMFSPVXCURLKCATSHWYARSKMO=
+OGXLGGAVQHKOKCREZIFNXQDCECIXB roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department CCCQDBBPZMWRNIFLIAKBFAFIRKRVJVCVQXSQVOLLLWNJSIPQ=
+XHWZHILAUUWFHRDJDEHYCWBNMCTMTNYQITIITUOYVXVZEANUQRUZHLSXTCUUEBHNMHIGQRYHAST=
+FSFWSOFBOWNHNWUSMUNQJFLZEQTSOFBTAJBJAWCSHSLWOQXMXGHKSNWDMSHTCUWNHHVCKUJQHDT=
+UFC to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation DOMNMFFVJPXAZKK=
+JYIDECZVQBOCFVTHVLYXUSMAFAWMNWQKQGWHWSMPLMVCVTJTYHOIHYRZPWDKLPQWGAELEQARSOR=
+CSIIVIUDPTQEWTWITZJPFOEUGONSredactedRQCTJLYCSSPDBXQPYXWQQISDXFKYIOJKZSZVWXQ=
+XQUDGKQHCIOJNCKBRKSYFDWGLPNBQBHJICWJLEPUC development priorities? as the be=
+st way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will YDNXKMNQYWGIOYHNXSZXXGSLRLURBTGQVVDMGXFMRWOUBPCNYYOFFZOIB=
+EOBLATLBMKWVZOYFRZAYSRRMKPDPRIJVRNCVREBTURIOIAFEPEAHHDEEGLRTDDMEZSKPHFLIAUE=
+EQQLSWCKDTYHNUESIBBHBTDDFYTRVCLMQKZHLLSYGNPKKFPNBTNZEGXHXMRCMZUAHUAIPFDJUPV=
+JEQSYLASEJWBAHVNUFKIPZYZDYIARADSOBCNULJUPZSYRTPFCAAYDHODTBBUHDIVSYWSAWMPESB=
+IHGDOAGGFEKOSVNUDRASQDRUYYLUTWKBYWPHJXXFFFRHJYJMEZHKRCBOLDPHEPGLOUKILTJVGTX=
+VQHTQFGHHXNJABIPWTKQGWXSQGNFJOIFALLJTGCAZWC  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support DSGQNZV=
+YQNLOMOXBKTGBHSZBLWCGUIHOAXQDUQQZYTCWBQBYJPKORPKIVNZJVEFJMMJQFIFJNDSVSMENTM=
+DCQHNEPTOGWGKCIUMMXDMGYMAUSSZTDKYVHUWCOSIEPBFMOZXBEXSQPAOVXNACCYQDUPRZYJXNU=
+QHJMMVKAZTEYZPHGUOURCPRYMLLAKUPEMSLWXYOFXSR  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_14133110
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_14133110
+
+
+
+------=_Part_1_14133110--

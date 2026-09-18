@@ -1,0 +1,1049 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789696507; cv=none;
+        d=google.com; s=arc-20260327;
+        b=nMe4b0eFx8Iz1H/9o5v+1vVtxOpA2Cp1v5aZAchJ0YIfgUnv1VnXODIn/1Dqk15Gqj
+         X6GwbNKSSK4rHQH2WRSKpD/IaJM8gBw3QuSTa72Amb66DyImNYP1xIYZsjZniOuNH0Lf
+         Ps7mYcMY0yQ0Rvwu7ZUw9KwJO5/7EpUCO1GCqvCSIHxps50DfeJdBDSdAlGWSTYjsd+P
+         oYBTHUPM4YVTC+BdfcvIRDUkaXz4gLZBC1vHpQ3WL6vbSKSQH7LGPhlnvSVKiiGDAaXe
+         A9a+XI+hYbzhQdPXZ2+cqDGdth+V5DQJN1hPniQ1ShcvDdBLIbDRO7lqjpe1ogWo2oap
+         pGSA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=IL8+gKM5mh8vbUPKOOxoaApKebXqT5Ye90GuCX2cy7s=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=he8lcifb41oLOxfgje4S/tdQSIaseUaTo3CxYFsXknCSgut78GowxMClw8nqRUQKN8
+         xP19QMKpMlxcigvT/FTIHePa2ZHt8Q0NhasdAuj+EghNkrfb/JYtUnk+4EShUF/CHg6W
+         QaiIP2up5g8K5AZhBL4hm53Pc+Hu4gotDNKF/OfpiBEMKOeg2etHx5UUKRyWHG354HYg
+         HWdgMSSPmOEbMRxjSHQxhy//h78fLJ/9R8I1Pvm7crYFG0ugimhpVGcNnEbBDthuqaAY
+         fGyC/P5dHpqN7Kcj7cC5ZmG7ij2PV6P1sPcDx6hyzyz7uXXoHOD9HAwvn40Z3qjeCfmT
+         OZSg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@wmiolcgb.yaxaa.afternic.eu.com header.s=smtp
+ header.b=NU6i4tt7;
+       spf=pass (google.com: domain of vbwjnndjnrqrh@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=vbwjnndjnrqrh@yaxaa.afternic.eu.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@wmiolcgb.yaxaa.afternic.eu.com header.s=smtp
+ header.b=NU6i4tt7;
+       spf=pass (google.com: domain of vbwjnndjnrqrh@yaxaa.afternic.eu.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=vbwjnndjnrqrh@yaxaa.afternic.eu.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=wmiolcgb.yaxaa.afternic.eu.com;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=sndfjmoespehvxjuaukny@wmiolcgb.yaxaa.afternic.eu.com;
+ bh=xGjVHMDMFeQG510Kqxvgrqmfa3I=;
+ b=NU6i4tt7/Zzx+iefOHKBZ9cQPTGNGp9MEci0SOPPAclNGXlDRwXUsq8PFv0aB5zv/j1CyKTKqxjV
+   0QwdnHU+BdXxk7PeN6R64NinnWawLI79ob9YsRTfj9MdHsr4QyyhaHjVlN0LxwpQSpaWnZ8jJShc
+   6wRtaW4R9CxwlscpWAFiXWvQVHnOFIMT/EL1BwDzqgGyw8sFtsGgTy3Pvj59K1JJ1CBmC29pQ5qV
+   4YATqoquisxx1VXJJoL2gypH58giwXRFLZVLzVvU4ADLWVHobli2I2JS2F+vrZT3VoMx/VbP9t97
+   9Fd4ppZBatzuWcVMPyAkfv/pUkm08QzE47C+bw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=wmiolcgb.yaxaa.afternic.eu.com;
+ b=NItbzqjf6knXv5hcZG750FP+h4313Bq7MAj1sRZHYGBquyii/OaZ3s3MfAPVCGS6UDHsyAyBju01
+   mYgKX21RNm962+EriDvXx8agUoweFzxBFS9bN9Fc6ywkJjXh+HzEXGTrUVAyv8rvB3HcWJze2YcH
+   Os+XS6oa5lmh61glJrfaik2qL6mThUtyQhQmycbLXbukBIj7uk5HU0nNb/OuzZ9A7GavakcXViL5
+   rNcZbp4cj/OwHwTO5XM65L3bdIJ1iYsDiVZo+tA87+lckpap/T9HsSwpiKagVcpjzWK/V2DsRXSr
+   ei8PZANF4urAu+sT98r5L5loeNptUfKLyP6ymw==;
+Subject: Watch before deleted: The 3-ingredient home hack ending ED fast 
+From: AlphaSteel   <ycjwrdg.32.195982@wmiolcgb.yaxaa.afternic.eu.com>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.3.247.121
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <tlhjammmebjvykhluooygpqwokewpm@t4o4rc8nps6onhnlsv>
+List-Unsubscribe: <http://ravino.pro/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_67921016"
+Date: Fri, 18 Sep 2026 01:54:35 +0000
+Sender: sndfjmoespehvxjuaukny@wmiolcgb.yaxaa.afternic.eu.com
+
+------=_Part_1_67921016
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_67921016
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#nIdo=
+CrKYFhvwZgzIVGiIBjYPWFyqkv&4YbHkgKctbU&266636/1422/ltvopieyqw[.]home[.]php?=
+sq=3D32-195982&lk=3D40872-7&page=3D348" style=3D"text-decoration:none; colo=
+r:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>Special Report: AlphaSteel</title>
+    <style type=3D"text/css">
+        /* Mobile Optimization */
+        @media only screen and (max-width: 620px) {
+            .main-table {
+                width: 100% !important;
+            }
+
+            .mobile-headline {
+                font-size: 24px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-body {
+                font-size: 16px !important;
+                line-height: 1.6 !important;
+            }
+
+            .btn-cta {
+                width: 100% !important;
+                padding: 16px 15px !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .responsive-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .product-jar-img {
+                width: 220px !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #FFFFFF; -webkit-fo=
+nt-smoothing: antialiased;">
+
+    <!-- Outer Table -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 40px 15px;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"600">
+                    <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"600">
+                    <![endif]-->
+
+                    <!-- Main Container Table -->
+                    <table class=3D"main-table" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FFFFF=
+F;">
+                        <tbody>
+
+                            <!-- Top Header (News Bar) -->
+                            <tr>
+                                <td style=3D"padding-bottom: 15px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"left">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#BSgtbLeGvNsvEDJyoChlRwDCXJs=
+Bli&4NFQUbgUzOG&266636/1422/jisxvvucqr[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D546" target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none;">
+                                                       =20
+                                                    </a>
+                                                </td>
+                                               =20
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style=3D"padding-bottom: 25px;">
+                                    <h1 class=3D"mobile-headline"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 30px; font-weight: normal; color: #111111;=
+ margin: 0; line-height: 1.3;">
+                                        The 5-Minute "Hydrogen Peroxide Hac=
+k" That Makes Men Rock-Hard and Thick as a
+                                        Log =E2=80=94 Without Viagra or Cia=
+lis
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td class=3D"mobile-body"
+                                    style=3D"font-family: Georgia, 'Times N=
+ew Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        If you've spent years dealing with =
+embarrassing softness, losing your firmness
+                                        mid-session, or fearing that your p=
+eak years are behind you, there is a simple
+                                        home breakthrough that changes ever=
+ything.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        By combining a tiny amount of
+                                        <strong>hydrogen peroxide with a pi=
+nch of two common household ingredients</strong>,
+                                        researchers discovered how to trigg=
+er an immediate surge of oxygenated blood
+                                        flow directly into the smooth muscl=
+e chambers =E2=80=94 producing rock-solid, pulsating
+                                        firmness in less than 5 minutes.
+                                    </p>
+
+                                    <!-- HERO IMAGE (Main Hook / Video Prev=
+iew) -->
+                                    <div style=3D"margin-bottom: 25px; text=
+-align: center; position: relative;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#gbCQqAVPzjwUKgvcnVHLwbvYakAkAh&4uiOaOzZ=
+LPD&266636/1422/paclnhpmix[.]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D=
+703" target=3D"_blank"
+                                            style=3D"text-decoration: none;=
+ display: block;">
+                                            <img src=3D"hxxps://i[.]imgur[.=
+]com/V25ItO6[.]png"
+                                             alt=3D"Watch Hydrogen Peroxide=
+ Hack Presentation"
+                                             width=3D"100%" class=3D"respon=
+sive-img" style=3D"display: block; max-width: 100%; border: 0px solid #e0e0=
+e0;">
+
+                                            <!-- Play Button Overlay -->
+                                            <div
+                                                style=3D"position: absolute=
+; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; heigh=
+t: 70px; background-color: rgba(255, 80, 60, 0.85); border-radius: 50%; bor=
+der: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div
+                                                    style=3D"width: 0; heig=
+ht: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent;=
+ border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div
+                                        style=3D"text-align: center; margin=
+-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div
+                                            style=3D"color: #888888; font-s=
+ize: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercas=
+e; margin-bottom: 10px;">
+                                            AS SEEN ON CBS NEWS & MEN'S HEA=
+LTH INVESTIGATIONS
+                                        </div>
+                                    </div>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        "After years of stress and fatigue,=
+ my performance was completely gone,"
+                                        confessed one viewer. "I tried this=
+ 5-minute hack and got harder and thicker
+                                        than when I was 20. My girlfriend w=
+as stunned, and my heart didn't race once
+                                        like it used to on prescription pil=
+ls."
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        Men over 50, 60, and 70 are reporti=
+ng instant results: maximum expansion,
+                                        unrelenting stamina that lasts thro=
+ugh multiple sessions, and completely
+                                        banishing performance anxiety for g=
+ood.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        You simply pair this simple home pr=
+otocol with <strong>AlphaSteel</strong> to
+                                        flood your chambers with essential =
+nitric oxide precursors and lock in maximum
+                                        rigidity whenever you need it.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 30px 0;">
+                                        Watch the unedited presentation bel=
+ow before it is taken down. This short video
+                                        reveals the exact 3 ingredients and=
+ how you can do it at home starting tonight.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT BOTTLE / JAR PLACEHOLDER (Centered=
+ directly above bottom CTA) -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 25px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#cRmioOaCzfIwfChJCbCDiFlLVCt=
+tVb&4QksEpZWLqW&266636/1422/wikpgjdlyk[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D580" target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none; display: inline-block;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/Xl4Rb8y[.]png"
+                                                             alt=3D"AlphaSt=
+eel Potency Protocol"
+                                                             width=3D"250"
+                                                             class=3D"produ=
+ct-jar-img"
+                                                             style=3D"displ=
+ay: block; width: 250px; max-width: 100%; height: auto; border: none; margi=
+n: 0 auto;">
+                                                    </a>
+                                                    <div
+                                                        style=3D"font-famil=
+y: Arial, sans-serif; font-size: 12px; color: #777777; margin-top: 10px; fo=
+nt-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                                                        Official AlphaSteel=
+=E2=84=A2 Virility Protocol
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- BOTTOM CTA Button -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 45px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center"
+                                                    style=3D"background-col=
+or: #FF503C; border-radius: 3px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#RiPEDINpWaSLFEKtVXnIxvJOqsK=
+DzT&4yPzWaUnXjj&266636/1422/cwsxepjzft[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D561" target=3D"_blank" class=3D"btn-cta"
+                                                        style=3D"font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-we=
+ight: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; disp=
+lay: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        CLAIM ALPHASTEEL & =
+WATCH THE VIDEO
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style=3D"border-top: 1px solid #eeeeee;=
+ padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align=3D"center"
+                                    style=3D"font-family: 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; line-height=
+: 1.6;">
+                                    You are receiving this email because yo=
+u opted in to receive men's vitality and
+                                    health news.<br>
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/smalbus/salaminka[.]html#uRujfeJdHYPalRAGvbOFLNokNPXasB&5qFHqqsSziB&=
+266636/1422/bhyzkfokve[.]home[.]php?sq=3D32-195982&lk=3D40872-7&page=3D032"
+                                        style=3D"color: #999999; text-decor=
+ation: underline;">Unsubscribe from future
+                                        emails</a><br><br>
+                                =C2=A9 AlphaSteel Research 2026. All Rights=
+ Reserved.
+								<br><br><br><center>Unsubscribe
+								<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]h=
+tml#ehJwYKpHLBachkNtuiuWJtivZxeDgr&6jEqKZMmsNR&266636/1422/uqgqpkyvyf[.]hom=
+e[.]php?sq=3D32-195982&lk=3D40872-7&page=3D744">click here</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object NIQKEJYFQWFXGUSQXOOLTDGVCEIIHCERTOEFUJKVKZXTIYFMTBQJJUNPZFKQ>
+
+Dear TXYCPIBAADWFFWAWCBGMDC ruewnvcjmgmtlgxxlbffhl,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is nlhayyohhjyaijbebcgmibz=
+sopvg.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi vsvqumzfefrjnojmav,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi elogqkpnbwmfsltieabctfok,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: qfcgejmbliobyzaqfomqzvheho
+ Site ID: xlbwedmswbzdzxpnbcxyqsgjv
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team SNFIFGDAAFKIHYSOTGDNOA
+
+Powered by CVYBKPTMYCAISKJIUWVGOO=20
+
+</title>
+
+Dear JFTSXGIDDCOSJRLDLFTQQMOIH qpcvtgdzrsqhluxfeutccfxxrz,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is jhpcceweewibrykrdjsoaen=
+cs.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood GALENWLUDFWPPTAPSFOBTL,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+LQESOEWRBOHDBCKIRVLCGMVYEUZNJLGSIVAXNHAHSNEQNXLXDUISZLXDHYBXNAPSHXDBVAOUQWB=
+BMVSRZWQURVXWXQVFWTKSHIJFRRSOOOPETUKOXMGFDEEIOWORVBRGBRTUTIVHMAKEHMOGIBCWSN=
+GOEISKTJSWNCBDDNUXBVLCKVPLYTMHNHSTEGCVXNSJDTWKTNTE
+
+ Hi TOSJTNQUGXFNXHHXDHPJRJ,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+lzlualdjacdlpvngxkrqfkiylhtagymxufwdcpjzonzwobffjqpdntfkshvmgdcjmqjrbnsupxt=
+xcwedonwbslrveurbebxwdsvxrwljbbluiqjdlausrkjrvjdcdiweactsofkqzunthfzhkaeqmg=
+qjfrzxtkvilrdhkimjruvanbnygqiisgujqrpynovaysoefwst
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi AVMZ32RK0RPSEWFMY8QFHJOF4,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team LGRMBQHIMZWOLBPDOOXEZN
+Powered by UOGYXEJKRTXQFXHGJCFLYH
+
+Login Name: WNMADHFSMFDUSXHAYEOPTY
+Password: TGEGYQOLQDVZACYEBKYOEH
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: HAK
+Password: OCYAKRQUIFEJFBYGAHBSUG
+
+	VXXKARL3I6D81FTQP1 UAWMMVOHUWZFOOB 0KXFMAC3DWG97 G8GGF3Y59NEX0Q51Q8 4WVS0F=
+54C634N34 9UCMCF5F3URZ6 TR16P4U03Y4SYJANDM=20
+	6N67XMO3PK4UD8NTDW YFBZL44J417R4SP 4X0H622815P8V 4BZIUI3V9DERFRUDDX MWWS1F=
+9BC2DNHWT 7AUD6DSLXLSTT 7GLR6SP8UPQ1R8C9RY=20
+	YMPAOM70XXMS1BD Z4MQ4OXWOKCF2 GRR6CEI2GRPSTLZWCC LSF9IL7A3A6IZI2 UHD9AC14S=
+7CHW UBUVG48Y110AB2N9KO OR2MVTQB40N0A6G
+	ERCV8PVQNJV8Z 6N05LECJBUKVCQQYQJ AZ1PGPBBC1I3E8K R1JEG8H22EWWA 9CLF81LYXT7=
+TY9IQ1A 90CCUT1VB8PH3RI MNBKBHB2OBTDM=20
+	YFAREEA4VLQ6E2B1LH 2T0O8TI30UUNCQ8 73AM5QIR1U94T P57ZF9HKHR600AIDVM YV8JLU=
+MENHT29FP ML8RO9Z8JXDCI 4AVW1L6F23S6K6A2R4=20
+	OW1TVOPG67GZXLY WP3K7A4PT4C54 NWLM5RZ47Q5WCRZ8LK K4WAX5QNC765OLP SVCQBWD3L=
+31RK 235XZ79ETG8BOJP1H4 IR0F7BYUOZKH3YW=20
+	6Q2YUP3EXG6B8 JNT335GJMOI7FXKAXJ LO3UTS4627UACZ8 DH327WFX7H0OX M5EAKTN02JD=
+ELB9YUT 56E6XWVWWOZHJR9 OIKP2O57XW9BA=20
+	G9VHJH25GPFFV6IYGX 12PHJMNWPFLE8Y6 X0GFON8PM3CPR 1AQSTF3DY4FFEXSDXM ZRBDJP=
+QGDQ0OZSR JI9NVIEU0GA0S 5RWMYROSSQF9ITCM5U=20
+	UYL9MFHFMZLNV3D UO7VFP017K5J2 YOZG3NEM06YEUD4LO6 KN5RZPLOLPIN9UW 5H5ET4A1M=
+ZZ33 HXLJ1IJHI2XZ5XCTHI 8Q95SZTH8ZCC1ID=20
+	JFEU7VEM9ALJB 0P8611YGJHP0XC7LE9 23S4GZB0EOGWKOS DWW68O6MWCPYB SRJGIHYHJTE=
+X3IDFY7 A4X3PYXSG23VM97 0J3QF3SBBOC27=20
+	XLA6E88IK1XO9E0IM3 CKX90EPHLNESMZQ TG32YC7BD46PN J0CC1IEGC98COUS8FF LRGO62=
+XUIFXLDUK NXI0Q3WTL464J HP6Z81H0UOHMMAENIZ=20
+	UXX80X17S6WGFIP 2XY51UFRR0PB5 DQLHQC4VL1AP7MVL13 B6Y1OF3VA46GC6P J0NZG5A18=
+MLTB XDAAWSO5NJ6FR90W92 QUY1N428N1TSN64=20
+	E6LZ3U9D87RIX XSYGT3UGEH90I7FPOW V687KVD5K7OR0R3 LBWTI2W5B7WU8 HLSUUWQWDID=
+FCG2EKD 6XS66N4VN238OVB 093J4W2BSE310=20
+	FPYCLKY35THGEU4PIR U5DE176EMN31CMN 0KRTM9FBTTGCD BNCGLJO0DP39ZSZDR6 NFN0CJ=
+501K9X6T3 P34K169E9X7GG RYG751UMZM5INJUNGS=20
+	T2Y3AI4POEHTPP5 WOZZIWJBQ90P8 XGIJ9VW6SF2HPHQMEM FTEHM6E1B1IJMOB SC45BZO9B=
+DGIY ZXMTWLXWTGEOT93344 JNDBLFKMVJLSRLH=20
+	SXORC6VLY6PW4 R3Z5LI4BBBDV3OT9YZ 9PZWKF9GV25DSKM YDJ7UNPAM04BO 8M2S7A147ZL=
+1GN8245 XB9L4H58Y3SLS28 BS1KJRFPBQSRR=20
+	N3XEFXKTBM83A14SYO 24TBZ0TJK069U11 FMNV901L937UL CGCZ1REJGYET1OSZ0R EQZC6P=
+26QKC3F7P 52ATE27ETRPF3 ZA68Q4Y2TBWQ1CXV6E=20
+	Y3JMQP2LTYW52EC 4MS1RLLEW85QN H24UAK6GIEAZ1XCTD6 FUD1P1H53R6IEBO EW81RK8Q8=
+NZA5 T3IKT3ZXIQOOF1NIJ1 YR6PQAZH9TGHERU=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+MBDZIGAYTLISUTDIKFGWKIOWYJHWIGGEBDGNGWIRIOJHRUWYLVSLBKGCUSMALZQQKFBEVXYZAPX=
+YNRVMOQTBITKIJKAQOLRUDBPXMGBNDTOFRERYOATLTHQEYNURGYICLAMPLPLRTUBJUNRNIXUOYT=
+INYMTMGNFJNIRHELCJDBFWOUISVRQWUDUIOSXMZMEKHIHCXWYVJ
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to DUEFYFVZCVCQOPTCBOBFA=
+WERMCOIFEEDLMLXTKEVAOYKVEBKIYMVFRQINFVCYFRYRTKHNTUQLJAXUAFJERSSRCGQMYDPHNGR=
+MIQZCUCPQVYAXYNTLGDGDBGPJQNVVCOQAZDEICADPWKWZBXNKVYVPJTWTKAWILBENGGEOVWQHXL=
+GXNQBILAJQXDKNXXGSZJTMMHNVBTN roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department LYCCSOJSTUWOWGKYQRDZZMQZTUSEBVQARHCXHDZFWZWHEVUK=
+IISCDGZNMIRYOKKKJNLOJEYDPVFCVXCMQWLXZZWSXMMNBVCSARSLFFJVKMJMESROPUQQQLVWSWL=
+SPJJDZTFTKTLBDGEQWVINEEZDTXRZKBHWNPXZFQYTWMKGAMSYUTMIEDPKGELZOVWKBPZGMHGMQW=
+IHJ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation DGAGLREXILGJNPJ=
+QRKIKAHLWLWYNTVCSPSJMBUXBJHRJXNKSZAJZCWJLZLYYHXHCXXILTKRGDDFOQZXAGLUSULQJXL=
+AUSEILWDJIPIECVNVCDREPTJRSUFQVCGFNZCEODIWHTSWJMARNIYLQWVJGUDYUETPMLYBFEWWBG=
+JJPVMPGXPAJFBTERDNBCIFNLDMIIILBCFQRU development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will YNXWFWYDPXPREWOJWIXRZVUNBSGDZXKTUBIVQYZMYGOUVKVLZFOMZVTAC=
+WOIAJJNCPKZPDNUJRISGUBTYYBAGHOYQBDYBSQKOCWPETJLBUAQWMXWVTPCZXQIQBAYLYFLMYQE=
+GFEIBKJBQJRPVMRSCIWFJBRCFTHQHXOVIOSCGYOALDLYKKGVTCQNYKFYZBNPDJOFIVSUCMMNPDF=
+PJVGRYBTHWNFYSLEHRIUIUTCIIACSVQDUETOSPHMGPKALJJKSBQZXMSZQKOBQOSWMJEQBOMHXYK=
+LROMIBFROJJCLDJWEZEFLIIRUGNRIARGEDHOPGMMVXAYBCSGXHSAHUOUQILWYEOFNAQZLQNNYWZ=
+REQNSQKQUFAWUXTLTCSPSXQMHVUBKPICXMXEZQXSPYE  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support EXAHQKR=
+IVVALVNIRSFQLDOKFQCYMNEIPDQWQKFSDWXRDMWEDHRSZIEOBJDBDQKJFPPRJNUBLHBMKKQQHEL=
+NQDDCLJRECUUWBWDBYLCOVUISKRTZZYXYZEQXNJCTMUJGWARLVKZAXXARJOCYISSICGVTUMNHGE=
+LFCTREFUAVCCIIWRZMVTNTVHVEXHTNSFKRESRMLELOY  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_67921016
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_67921016
+
+
+
+------=_Part_1_67921016--
