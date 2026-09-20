@@ -1,0 +1,887 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789870333; cv=none;
+        d=google.com; s=arc-20260327;
+        b=GfrN+QtOQB8FPSGxPN69SoLa70qd2I1m4GuOwL3XGoWweRfbu+iPnAO5IXctej94/q
+         ra7gZD4BV1rbEOtue+PZT2LvysKWgQ1eCZJrlCjN+WhSlI3eVcgnScwdZrHXtBZpr/LA
+         TW2CmWW4nau2/mKWVf+gKPtJbjs/lxUcpHTflSONBPRUll8Un/JwBWPixRLBjMpPGVIU
+         Ba9SUiv1gCUZ1dMraieyzqzgIsFKQAgWbh8G1c8gNDwVRFn8mcx3jRHS/FMGzE2t/9MM
+         WFJwC19tZGJQgkIUzs/1/vqLyrK0zzeuWrMljHg/WbI9+UovlTQM0sfk1XwiN2tRTlAF
+         L/Iw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=fgdiaHSKp8E7A+ieBrESBQR5MvuuvrRYL54nk9Vw8dw=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=YeJTz41wvwXiEBnxOU9KvuW4lqVzuqtIxiLf9r7ByEYy/7SVDki0Tl55RNvgillyan
+         4UwSEBpIkxXOnAOboBrqc9gmXAG6x215dhnoOBptlexE4ksgnr3yIlnNsY3XZS4qdxIk
+         ZrFWDREOzED9YJBVXLPQhB7DXnQ7rnAnpFp++5zGBZBn9CGM57OEponsdLaoIBAkdBFC
+         YbRBaTMX00HL5kU/0NeorvqEzXGUR5ndRLXIbfMHxBjr+W+IhlpKGAADhMCFPYlDoW/C
+         2d4Gtc7/ftTdB3U4vw01RE1b8vPq4Z6UBHlVZhAxZaxqimD8WVgVn6s9352pUIDCtKw3
+         cFEw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bgrdfsll.luminaryx.cloudbinary.biz.id header.s=smtp
+ header.b=n8DQroy8;
+       spf=pass (google.com: domain of
+ zdbvlaafwqheo@luminaryx.cloudbinary.biz.id designates 159.195.224.111 as
+ permitted sender) smtp.mailfrom=zdbvlaafwqheo@luminaryx.cloudbinary.biz.id
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bgrdfsll.luminaryx.cloudbinary.biz.id header.s=smtp
+ header.b=n8DQroy8;
+       spf=pass (google.com: domain of
+ zdbvlaafwqheo@luminaryx.cloudbinary.biz.id designates 159.195.224.111 as
+ permitted sender) smtp.mailfrom=zdbvlaafwqheo@luminaryx.cloudbinary.biz.id
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=bgrdfsll.luminaryx.cloudbinary.biz.id;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=zkosyzuoveudagctdhoip@bgrdfsll.luminaryx.cloudbinary.biz.id;
+ bh=3WmdzYkS29EaItR5JfEdhzoAMdk=;
+ b=n8DQroy88aNk1157RIw7k4ba/Rley8+jGoj8X9s94AyZa49TC1kFWSqmgffhYwMSl6EBFxPg1ugW
+   htx+KNrmTAL86+ph2JsD30f8SRVbZv+fQhw0ALh1al8e/PvTzjF4qPeXnuUfjtHMMs2yDUklvZpI
+   4fDumx5rWQw8MRT/LLfbMlqTpC1FveyJnyv8L3Be6rY7c2brV7DZTnA/zu8Yc2aDJX0CV9ac0rrW
+   pBLSIRCviEn+HE7CxMPE6muTdcXjfI58ctBKf9DNjl79DWIak/XBYZelsWoQ0j/0uSKkqGTsGvcc
+   YTjL97sySg3C8kTytf2T4Ma3MGnsOHZBKxRAPw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=bgrdfsll.luminaryx.cloudbinary.biz.id;
+ b=qVQhqbrPIG87eubqI+yxOmKgTmPFJe8iB00eOQHT30FqZBOm4sq/e2eZTVrLk7A5Yb+ZxIQ9u+GB
+   102fx5tKREHJrSpAgOlwzd/Ef5IB6zZqMMfEJj74JyRR4qJwCaAiz2KT6Rd8o8mxPSXatwVaF09E
+   xNYSKrsQIbawVGVkH0qepv15R+3c+XHg8YR8vJzYApt225hPWLQIuXu01HKY5DdqRVjMMh1BTZIy
+   2BDEWdmxKmAEx1vdFU4ATQQEAziI9sN4Op7hfLIxL14MxqORd24h0G71cT6AI6GcHLLqPA3hk5mw
+   +fmnhOEQ8GWENIKsAIbvGdW/CAeeMWa+14H2fQ==;
+Subject: Your UltaBeauty Liquid Botox Reward Is Ready
+From: UltaBeauty_Rewards
+  <kqqybap.32.195982@bgrdfsll.luminaryx.cloudbinary.biz.id>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 159.195.224.111
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <qghlanovrefmyvdfeoyovzhlxhphsl@qilyauiv8s5qw0cy45>
+List-Unsubscribe: <http://oletina.fi.eu.org/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_26862568"
+Date: Sun, 20 Sep 2026 02:09:21 +0000
+Sender: zkosyzuoveudagctdhoip@bgrdfsll.luminaryx.cloudbinary.biz.id
+
+------=_Part_1_26862568
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_26862568
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+
+
+
+
+
+</br></br></br><center>
+<a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#mTjDyYKnQuUuQqsRcjyfgTttpQSsTp&4qNUJiFtMHy&268453/1451/gwivwaxoxy[.]home[.]php?sq=32-195982&lk=45398-7&page=865" style="text-decoration:none; color:black">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltaBeauty Loyalty Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .email-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border: 3px solid #E85601;
+            padding: 0;
+        }
+
+        .header {
+            text-align: left;
+            padding: 20px 25px 10px;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px 30px 30px;
+            color: #333333;
+        }
+
+        .greeting {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #E85601;
+        }
+
+        .paragraph {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .bold-text {
+            font-weight: bold;
+            color: #E85601;
+        }
+
+        .cta-link {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #E85601;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .cta-link:hover {
+            background-color: #c74800;
+        }
+
+        .signature {
+            font-size: 13px;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .author-section {
+            background-color: #E85601;
+            padding: 25px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #ffffff;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #ffffff;
+            overflow: hidden;
+        }
+
+        .author-bio {
+            flex: 1;
+            color: #FFFFFF;
+        }
+
+        .author-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .bio-text {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .website {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+            color: #E85601;
+            background-color: #FFFFFF;
+            padding: 8px 14px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        .website:hover {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 20px 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #E85601;
+            text-decoration: none;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .footer-text {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #666666;
+            margin-bottom: 12px;
+        }
+
+        .company-info {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .acknowledgment {
+            font-size: 9px;
+            line-height: 1.3;
+            color: #666666;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 5px;
+            }
+
+            .email-container {
+                border-width: 1px;
+                border-top-width: 4px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .author-section {
+                flex-direction: column;
+                padding: 20px 15px;
+                text-align: center;
+            }
+
+            .footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="hxxps://i[.]imgur[.]com/KWvxC45[.]png" width="130px" alt="UltaBeauty">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <p class="greeting">Dear UltaBeauty Shopper,</p>
+
+            <p class="paragraph">
+                Get ready for a beauty breakthrough! UltaBeauty has officially launched their incredible
+                <span class="bold-text">Liquid Botox Giveaway</span>. Don't miss your chance to experience youthful,
+                radiant skin.
+            </p>
+
+            <p class="paragraph">
+                Today, you've been handpicked to take part in a quick survey. It only takes a minute
+                and you could walk away with a premium prize: the <span class="bold-text">New Liquid Botox</span>,
+                personally featured in UltaBeauty's exclusive summer pack!
+            </p>
+
+            <p class="paragraph">
+                Supplies are extremely limited and available on a first-come, first-served basis.
+            </p>
+
+            <p class="paragraph">
+                Click below to begin:
+                <br/>
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#EMTbujkMAjblpktBOcjFeqTWMxzQhp&4uIWagzmgQS&268453/1451/ymjjmszwge[.]home[.]php?sq=32-195982&lk=45398-7&page=233" class="cta-link">START SURVEY</a>
+            </p>
+
+        </div>
+        <!-- Product Highlight Section -->
+        <div class="wave-divider"></div>
+        <div class="author-section">
+            <div class="author-image">
+                <img src="hxxps://i[.]imgur[.]com/vKxzHFD[.]png" style="width: 85%; height: auto;" alt="Liquid Botox">
+            </div>
+            <div class="author-bio">
+                <div class="author-title">New Liquid Botox</div>
+                <p class="bio-text">
+                    Instantly smooths fine lines and wrinkles while delivering a youthful, refreshed glow. Feels like
+                    pure magic in a bottle!
+                </p>
+                <p class="bio-text">
+                    Featured in UltaBeauty's exclusive pack for shoppers who complete our quick survey today.
+                </p>
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#mvfnlcMXhWioqCjzNgDWSLpmnBBeOE&4NRoJUAtkFW&268453/1451/moijethkyy[.]home[.]php?sq=32-195982&lk=45398-7&page=692" class="website">CLAIM PRIZE NOW</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#SmUhZVGPlESaFEKlSCzoihprvXLDHm&4BhOWrPturp&268453/1451/bjxizslqbv[.]home[.]php?sq=32-195982&lk=45398-7&page=798" class="footer-link">Privacy Policy</a>
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#LjptbHcRwiDAyLRIJbDZLFEeUuzhLY&4krrEEpjywK&268453/1451/rohaohobve[.]home[.]php?sq=32-195982&lk=45398-7&page=546" class="footer-link">Terms &amp; Conditions</a>
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#AgcaBjkLsNFtVnzkcKiZViSAFrlUXG&4kByjJYheLQ&268453/1451/ppnwtuhuce[.]home[.]php?sq=32-195982&lk=45398-7&page=629" class="footer-link">Contact Support</a>
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#RqxDMfJqJsOoPUChPVZBvpxEXjuvFB&4ieTieDtSFG&268453/1451/gzpzvequcb[.]home[.]php?sq=32-195982&lk=45398-7&page=126" class="footer-link">Help Center</a>
+            </div>
+
+            <p class="footer-text">
+                * redactedple products shown on the final page may require shipping and handling fees. Please refer to the manufacturer's website for exact terms and conditions, which may vary depending on the offer. Be sure to read the important terms and conditions related to this survey, website, and advertisement carefully.
+            </p>
+
+            <div class="company-info">
+                &copy; 2026 Customer Feedback Panel. All rights reserved.
+            </div>
+
+            <p class="acknowledgment">
+                <a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#fCFqTmLjhkyaYuCtPNmLwJnXuFzYmL&5AgQFHVjGin&268453/1451/svjwjtmlfd[.]home[.]php?sq=32-195982&lk=45398-7&page=476" style="color: #46474a; text-decoration: underline;">Unsubscribe here</a>
+				<br><br><br><br><center>Unsubscribe
+				<a href="hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#lLmytFZvLGyHBTzOUjMwFPcWYTCGUJ&6insYIxWZQA&268453/1451/jcabeqedwt[.]home[.]php?sq=32-195982&lk=45398-7&page=243">click here</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<table style="display:none;"><HEaD/>
+
+<div style="display:none;"><HEaD/>
+	
+<object QCLNDIDOSFSEJRZEOKQSDYMKOWWPULKYGNFFFVHRDNSTCYPBMLOLNLHVCWFL>
+
+Dear TXPRTXMYSRKOGUNUOSSHKQ mgffueprheujnwceomaopq,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is mqzrepzavuetjfkjcvgufczptloq.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+<title>
+
+emd 
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi bgqlgbmxmpapifljhu,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again: 
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi pzusjdqergtwbfkjmcvlxgvw,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: qrobhzqeqssvafwletshtvaome
+ Site ID: wujusqkoranprimyfgbvojodt
+
+=== Your Account Console ===
+
+Thanks again!
+Team MAFDKTGYKHMKHZLKUFUYUA
+
+Powered by DUAIHVSPFHQMUYDSJQKNFL 
+
+</title>
+
+Dear XPORBSMLWBCMKPIBQCMAEPYAY ugyxsrbgvwdydttloluxkzaani,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is jzmcggyqejiajhpdefycjjyrr.
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+== You need a budget, and your email needs confirmation. ==
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood BRUGIGLPVEDMHDYNWGVVBN,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free Rental Days after you activate your rewards. Please allow 24 hours for system updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rental experience more rewarding.
+
+LWPHNZQFMJZKJGMQQSVDEIRVTUBXWWQQGLTZTRTNBMRTSKQSBZCQMRRVBULUTSBGXDEBHWQLOEOWHEVWGATHRJJBUGTMLCRJPENGNPWFKMVULPDRLKNIZDZVXCPQFXKQMOFURAKOECLJPZCSJXMVFCWQLKEIPJCLLIBDXFFYTMGHUVIELLTBYJGYVHGLACXRRSRHTSWP
+
+ Hi JMDAZELTBLCIKMKMNPCDQD,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+znqhsjffdzzjuzwdlzqdchmdnhkzjbaqqnsuvhqfblfuwtttuhwqfhinquwlzcjrrpwwmeqckywarermbrdwnrkqibuuxjyzklmjtvmyrqhkpldfecdxfrasxzsqiyfcgckkonyfwtelkpqgfxgwurcjldiareapkpdzjxmamvxvxiyyhgazowolmzufgmopwbysqymd
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi YRU4C13SQ1TRH8NJAPSK1EAP4,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=== Account Information ===
+ Username: ktrt
+ Site ID: bmfn
+
+=== Your Account Console ===
+
+Thanks again!
+
+Team LOASCVCYTOSKXRNJNIQZAA
+Powered by EYEKHHIMAOJTKYNHNFTDLP
+
+Login Name: FKWGGSUTCGIBDXLIFLXTEJ
+Password: WPMVDRONVYWSDVYJNYSHZU
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: AKM
+Password: LTQSYWMXDQQQXIATOHYCZB
+
+	TDYDGK1J3HRIAZ2D3S 8B4DXKOXQPPN67U MJ283GRLHKF7L 0B01PHDGTJHII2IYCD M8HF8D38S2YLG7U MJZHEJUBYQB6W 1QRD9L46OHXPQND21G 
+	YIHQAJU2TM1RYJ6LP8 RT0F7N9BPLFYFMM 70Z3B2UMR0TOE A1U4TLJ487Q3NWOBV6 B4WQCK03YK21FHY HS51AS1ORA3MQ A87GAL7TA2ZNM4KU7N 
+	TQMDNQIQGX8ZIPT Q4QXRY9UPNKWV LYJONFTHM0P2RLFBPP C673UZ8ER2UIKMJ ACW4H8IGVCQQJ 0S8YLCDKUFQ0ZQO1XN D8XMMRI61PD7NRH
+	T1J9JRSAWA2TN LOGJSGGEVUQKTV6CC8 YCF6SNBQCH1XI87 RA0CX58179WO4 GH886BY9IYR9FXGO3P R4NXPVLH2JXUXGS N1AH1MKMVVMJO 
+	KWNQ08VBEU6QAFFFGY WTYG3D7MQ0DTLGT 4KNTJLK0JXKVO Q3CJK4PF9J302YDV2J 80BDKOK5YDDRT2S UQVTYQ9KFJGFT IJRUA1BDRDVTF0F7XT 
+	HPRGCLTPB6X5XDV UWRA2UFH7W64K HKG6VCYOQ5KEKK49AJ J9GKD5DPQ0IEKWM 2YWX7Q13HSJBR L3E1WG6UKLRYI0ZY4D N0F6HEH6DLM28E3 
+	23AA175IAMHCR 0ZIPRGRJ9EUXYS7N89 PR65QZ3ET8IVOGU TMWNI57PPPNEK H63UM1YF7ERRMOSIRK JXVOD1AML0HQMTE 42F5U7UE24YA5 
+	8EXDATBM3XAO4OB28L Y5MZ0FDDC0CZUDY NBLBMYSU11BEX H1R3TED6FI7RK9HNNO KHRRO1HX19AGWM1 9DS7J4CWBQ63H NFV00BD2XH8L00OR3L 
+	3VF9QWC1D47J0R5 A46A2ULEQNCQ0 O5E9EORN324HBK69I2 1KYQU8QX3O71SMB NWUBRFBMZY3VZ 8A56BYS96MAV4GMBQB KJF0B7ZLGQKJS37 
+	527N9KKRTTE60 NW0VQ3VP3RNN90G2CG UC6ZB0YV19M7CYC 3XOQJWNCLED6L S0Z8G8HL2OLY4YTOJH 8ZR5S8HIPL38OCT 6U6WT89PXTL8J 
+	SX5E1XTGYENV9UTQU9 WLBEDY6OP1FKSHS KYZTNS7DHWVT8 OJD6G7FBLSS892L3GH T6A5WIFKY204X70 PAWMC1BCOJYJG 2UWCDA9I20J3AAT5NK 
+	ZWSJ8MXY7HGUTZ7 TW1ER7HJEOV3O RTICPONJGEBORYU6DS 3ROVU1XD1IARVAF BOL69QJDFRGWE ZZVAFOWURO69FXURUR M43XVCS1H6672O8 
+	75AKOKLFEMX7G T1XJBIFHJF9HAZ33A9 T7LPH0PJDZG8UT0 OWW6GAD4K7IYZ 14B2Y76GLWY4DA1SFS 3S5SA6H7S22I01Z LZ3IBNBR8D5AQ 
+	XWXWKMFPBNTWIZJQSZ OU23XXXXV09V88J DE87ZBIAN5ONR 4JX0I5UGE2KMTM0UM3 4T4W0X44K2X29XE NN2NI8RFQ5IT2 8MAX6SE8ESIG9QSANO 
+	42IT17CXI7DZHJQ FWV3LJI3XL9SP 8E2S3WUTJMJBZ29BLG JH3C8QBKAT6AVKW 3PDWNYGUZKEVQ 89A8YWE32UZS1D01IO DD1BAER3SQ09UXO 
+	C7VTV6I6H4NSO YEIT44SCSJ5O42CAHZ GJF3C0X4PFEAXYX NC9HG2NBZ9PMH I7K05IMPVFNZPAKT64 0LJ6Q2A520VXZZM LI4U9VU0YWWU7 
+	Z2OTII0FX95C420QZB QQFRN3U3KKLIDJF 9WB7QQ2IXW2YK U3SON6JHEBECQVNZU1 VYW45FLAB3TR0RD ZGELTHWQP9PXB FKWQPX7H7XKBSUJG4D 
+	Q7EP4M3ZQ654WO3 R6ZP1GET87659 1QTARQHE4NCSXNYXYF KHRUDEBHHALLA2N OM5850P376XAW VSXFXD260EPWY1BUB9 T9RKOI0KHVAUIJT 
+
+More than a quarter of Europeans surveyed believe Jews have too much influence in business and finance. One in five say they have too much influence in media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play from anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most needed, according to a study that found levels of assistance had dropped for the second year running.
+
+The EU and its member states remain the biggest development donor group in the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid ? but its contribution was 5.8% lower than in 2017, the European NGO network, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income on aid, laid down in 1970, has gone into reverse, said the group. Their research showed that aid decreased to 0.47% of the EU?s combined GNI last year, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid target.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? decreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable development],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the target in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the world, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to you
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more aid and ensure it is used effectively to ?make the biggest difference to people who are most marginalised, excluded or discriminated against and the poorest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some countries had included domestic spending on students, refugees or security in official figures. But such costs ? like debt relief, interest repayments on loans, or assistance ?tied? to the donor country ? are categorised as ?inflated aid?, since they do not necessarily contribute to development and are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee costs decreased by approximately 35% and the use of aid for debt relief dropped by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Debt and Development, said he was concerned that the commission is overestimating the potential for ?blended finance? (linking aid with loans from publicly-owned institutions or commercial lenders) to help achieve the sustainable development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported contracts were still awarded to firms in the donor country. ?Donors not only need to untie all aid, but also make sure that their procurement practices are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, the UK development network, praised the Department for International Development (DfID) for maintaining the 0.7% pledge and ensuring that the majority of its aid reached the people who need it the most. She added that other EU countries needed to ?step up to the plate?.
+NQNMYMDJYZXMVBRAHWOSMDCAUTFCQFVTQDWFCHJYYBAUYHMNRSVNVBFOCLBGXUHDQAXAEFWFVNFZKEKGSVABFJTEAAFURVPRYKSYGKKTNRCUGORTCFNCUAUZQWRLMXZTEEKGANKCRWHWRQARQGHEAZNASGRBDAZAAXAGTNVKGEZLAJUDLOCOQHDGENBKVBDJIBISFYJFS
+Godfrey said DfID would ideally have oversight of all UK aid, rather than multiple departments, since this would ?ensure not a single penny is diverted away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal Democrats have all stated their commitment to retaining the 0.7% aid target, equating to roughly ?14bn, while the Green party said they would raise it to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development held by ActionAid UK and the Overseas Development Institute on Monday, Lord Ray Collins pledged that Labour would triple funding to FZMZFPDNRNBETWADFXZEESRYNYRCBEQFCSVQXSRVEUXHSOSDIHPELDUWCRIFATFQMXFEMPJPKMRBPMRMSJNILQOBCAHFHUVHULALCWEARPCLGOWXYGUGMWBIIMOOPWNYQXXOCMNCDGDAYIMCXZKADLVYZXZJZZXPHSGCMROJETYTEMQQBOZABCWZKLNOYPNDEEQGQPYA roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but restated its commitment to the 0.7% target in the House of Commons earlier this month. It stopped short, however, of committing to the retention of DfID as a separate department JWKOSPIRGOWJLNNXCHYRVZWXDVBHCJBHZYSXLCKDXGWKJSIVUPSUYSSXMAGOWAQMWUGXHRHXNHMIVQRYGZNHVYZOAMYFMBZHJYBJWCGMJDNHSTMQRAYNFBKOINNCHCFCMXSRNDKQSWCVUBDIAXUXCZWUMJIBEKEQTAEARQNNNFANWWUCXFMWKFHJEMTBUYXIVNNSUUXWT to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries report, also published this week, called on the world?s poorest nations to ensure external finance from all sources is ?directed to nation OVVEUDCFKQZPHSPLWACWECKXXYTLQJMXYWAFYNXQIPODHMYGXEVRCYWBIBWSMHYJCZBLOSDDFQPPKYBWJXNQADLUFUCOUXAKHFSQBLPQSKXCXCRIBVFQPMCDSKLUDYHNCCHDGWALDQOPKLAYBULLEXZODBZVEMYSEJHZTYMGRTUIIPYPKGTFUGYLKXZPQEOMXLVWPSXAC development priorities? as the best way to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and supporting the Guardian?s independent, investigative journalism than ever before. And unlike many news organisations, we made the choice to keep our reporting open for all, regardless of where they live or what they can afford to pay.
+
+The Guardian will NZKJRFNNNCLZXTKBGNFOCMLSVVDYUHERBPNSMKTNNCXVNOQHITMXADHOKZRGVQGTRHJCRRGXRSKLZKZVQQCFXQKGDZLISMIGXHBAWVFDWDWJPDYXXQQMUQMHELJGCNBBIADDAGQWDAISOPMXNBOHXTSQEOBEFZLCAHYUNLRPAAHGAKJCZDJEFPHWKAHMSZSZDJPOGMJSQVDTWSZGEEOTJJWTFSXOPUABJVLOFODHRPMOKLXMJXDHOGLHQFETACZOAMCOTYJQENPIKCLFQJBLITFPOGEPINFWYEGPTTILJCZKZMAYUZAQDIWSRTFKLXQVIVFSZRDVSRJFTONHVKBLNMQTNXNUHMXQSEMDBERHFUWYXBJAPGQUHMRTKUUFEKSCQQZSIXIRBUCNZXRD  ? 
+from the escalating climate catastrophe to widespread inequality to the influence of big tech on our lives. At a time when factual information is a necessity, we believe that each of us, around the world, deserves access to accurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own opinions. Guardian journalism is free from commercial and political bias and not influenced by billionaire owners or shareholders. This means we can give a voice to those less heard, explore where others turn away, and rigorously challenge those in power.
+
+We hope you will consider supporting us today. We need your support BIFPZFLLFVBXDSQTMWJMMRXFPRHDOJXHIHWWLTKTSHQFGDLKXPEEHYTEAWXQDNRODVIOQMSAIHKMORJPGJLYXUWKZJSAUCDKNKQWAOCMMYROMNQWNJKPEXXSKLHTSKZQIHHGHFMTPMYBHQDQMHWLZEHUOTXAUGOFSZLOGGEXNEAPRISQKBABZDVBURPHAJBSWRVIIBKV  to keep delivering quality journalism that?s open and independent. Every reader contribution, however big or small, is so valuable. Support The Guardian from as little as $1 ? and it only takes a minute. Thank you.       
+
+Parsec Cloud, Inc. 
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_26862568
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_26862568
+
+
+
+------=_Part_1_26862568--
