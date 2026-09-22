@@ -1,0 +1,338 @@
+Authentication-Results: spf=softfail (sender IP is 34.148.11.179)
+ smtp.mailfrom=cvous.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=cvous.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:D1A36B3536C513D15116F1BCD4C9E1BCF910954E3D4995F7EBB74EA6AFEE3C19;UpperCasedChecksum:78A3A2ABB185E9E0F8961BD0306231AD6A7FABABCB4FBBE55D2AE58219E2D693;SizeAsReceived:311;Count:7
+From: Storage Services <support@cvous.com>
+To: <redacted@redacted.com>
+Subject: Your cloud storage might be full and your account may need an upgrade
+Message-ID: <5dcab34a20b64049ab12b58cb28e0648@cvous.com>
+Date: Sat, 19 Sep 2026 19:45:29 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Sep 2026 19:45:29.6092
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ d666d58f-f910-4e50-c841-08df16868f55
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS2PEPF000061C7:EE_|LV3P220MB1438:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/19/2026 3:40:10 PM
+X-MS-Office365-Filtering-Correlation-Id: d666d58f-f910-4e50-c841-08df16868f55
+X-Sender-IP: 34.148.11.179
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|46080799009|22090799003|51300799024|32020799003|9400799043|87000799021|21090799003|10300799038|58200799025|13020799009|46110799015|9000799056|48050799012|1290799033|34130799006|970799063|5139299004|32080799009|3069299007|47200799027|2700799033|3025599003|84100799006|60050799012|1680799066|6100799021|260826003000599003|18040799006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Sep 2026 19:45:29.4843
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ d666d58f-f910-4e50-c841-08df16868f55
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV3P220MB1438
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6922933
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0428.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd"><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Warning</title>
+    <style type="text/css">
+        /* Reset and Base */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F2F2F7;
+            /* Apple System Gray Background */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            width: 100%;
+            padding: 40px 0;
+            background-color: #F2F2F7;
+        }
+
+        /* The Main "Card" */
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 20px;
+            /* iOS Card Radius */
+            padding: 30px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Header */
+        .header-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 19px;
+            font-weight: 600;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+        }
+
+        /* NEW: Alert Text Styles */
+        .alert-section {
+            margin-bottom: 25px;
+            text-align: center;
+            /* Centered for the title */
+        }
+
+        .alert-headline {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+
+        .alert-body {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #424245;
+            text-align: left;
+            /* Left align body text for readability */
+            margin-bottom: 12px;
+        }
+
+        .alert-urgent {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #1d1d1f;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        /* Hero / Info Box */
+        .info-box {
+            background-color: #f5f5f7;
+            border-radius: 16px;
+            padding: 24px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .plan-title {
+            font-size: 11px;
+            color: #86868b;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .plan-size {
+            font-size: 52px;
+            color: #1d1d1f;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 8px;
+            letter-spacing: -1.5px;
+        }
+
+        .plan-sub {
+            font-size: 15px;
+            color: #1d1d1f;
+            line-height: 1.4;
+        }
+
+        /* iOS Style List/Grid */
+        .grid-container {
+            border: 1px solid #e5e5ea;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .grid-header {
+            background-color: #f9f9fa;
+            padding: 12px 16px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #86868b;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .grid-row {
+            display: flex;
+            padding: 16px;
+            background-color: #fff;
+            align-items: center;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .grid-row:last-child {
+            border-bottom: none;
+        }
+
+        .col-label {
+            width: 40%;
+            font-size: 15px;
+            font-weight: 500;
+            color: #1d1d1f;
+        }
+
+        .col-curr {
+            width: 30%;
+            font-size: 15px;
+            color: #86868b;
+            text-decoration: line-through;
+            text-align: center;
+        }
+
+        .col-new {
+            width: 30%;
+            font-size: 15px;
+            color: #0071E3;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        /* Apple "Pill" Button */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: #0071E3;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 50px;
+            /* Pill Shape */
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0077ed;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .footer a {
+            color: #86868b;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- Header -->
+            <table class="header-table">
+                <tr>
+                    <td width="40" valign="middle">
+                        <img src="hxxps://upload[.]wikimedia[.]org/wikipedia/commons/thumb/1/1c/ICloud_logo[.]svg/3840px-ICloud_logo[.]svg[.]png?utm_source=ru[.]wikipedia[.]org&amp;utm_campaign=index&amp;utm_content=thumbnail" width="36" height="auto" alt="Cloud" style="display:block;">
+                    </td>
+                    <td valign="middle">
+                        <div class="logo-text">Cloud Storage</div>
+                    </td>
+                    <td align="right" valign="middle">
+                        <img src="hxxps://tampabayscouting[.]org/wp-content/uploads/2020/04/red-exclamation-point-png-16[.]png" width="22" height="auto" alt="Alert" style="display:block;">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- INSERTED ALERT TEXT -->
+            <div class="alert-section">
+                <div class="alert-headline">Warning! Your Cloud Storage Is Full.</div>
+                <div class="alert-body">
+                    Because you've exceeded your storage plan, your documents, contacts, and device data are no longer
+                    backing up to Cloud and your photos and videos are not uploading to Cloud Photos. Cloud Drive and
+                    Cloud-enabled apps are not updating across your devices.
+                </div>
+                <div class="alert-urgent">
+                    Your data will be lost without security protection if no urgent action is taken.
+                </div>
+            </div>
+            <!-- END INSERTED ALERT TEXT -->
+
+            <!-- Hero Box -->
+            <div class="info-box">
+                <div class="plan-title">Recommendation</div>
+                <div class="plan-size">250 GB</div>
+                <div class="plan-sub">Unlock space for <strong>10,000+ Photos</strong></div>
+            </div>
+
+            <!-- Comparison Grid (iOS Style) -->
+            <div class="grid-container">
+                <div class="grid-header">
+                    <span style="width:40%">Feature</span>
+                    <span style="width:30%; text-align:center">Current</span>
+                    <span style="width:30%; text-align:right">New</span>
+                </div>
+                <div class="grid-row">
+                    <div class="col-label">Total Space</div>
+                    <div class="col-curr">5 GB</div>
+                    <div class="col-new">250 GB</div>
+                </div>
+                <div class="grid-row">
+                    <div class="col-label">Photo Sync</div>
+                    <div class="col-curr">Paused</div>
+                    <div class="col-new">Active</div>
+                </div>
+                <div class="grid-row">
+                    <div class="col-label">Protection</div>
+                    <div class="col-curr">Standard</div>
+                    <div class="col-new">Pro</div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <a href="hxxps://storage[.]googleapis[.]com/jmtocldallg/m" class="btn-primary">Activate Upgrade</a>
+
+            <div class="footer">
+                <a href="hxxps://storage[.]googleapis[.]com/jmmcdlgounsb/m">Unsubscribe</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

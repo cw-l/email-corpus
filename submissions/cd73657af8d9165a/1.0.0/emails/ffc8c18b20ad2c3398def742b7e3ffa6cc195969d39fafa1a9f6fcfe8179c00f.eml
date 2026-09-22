@@ -1,0 +1,574 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1789964905; cv=none;
+        d=google.com; s=arc-20260327;
+        b=gKqZwFfu6sy0RGP8lrGmmO6UPh0qy3SvLWll+2EqhPM6AJiTUeMSVpKHNDWDT4rjAY
+         utKClP1FcpS17E6XRLE/UmmPrjRlRtGPTRXIQYiTbRi6eSzYhifEX6YQcQgin8fDjwrp
+         A6DdOKav+I0RyZXLxup5OUSbixq06SBQ6/QgALHw3tza4C515LyIfHdq2TTZHiNb71yu
+         Lu8W2dPh6aFAt4GFSrnVSV8fLXVOgfRqKtDcgaiq0T+T9LoYlQk22EttWLgEn/lCP9NH
+         o6JjAycvZ7JPJRTViCz1LTi+EUYF+jLWX1mYAZHgwG+p3Eg+BKMjLf9xesGqx6t54/qa
+         l56Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=mime-version:subject:to:message-id:from:date:domainkey-signature
+         :dkim-signature;
+        bh=P9pTHbut8lUVgWOenXElEjDdtwZ47QoT7T9hKn3GyNw=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=Wp7Fked0gp5rzvKnMNXW3ed9y7WBXlfAVxc07TcR2WtJ+MfJK5EX7u0ML17YPtwN7l
+         HkSSSKnGT4qxcq/G6yr/VoecjhqT0kLPgMAT34aFdSlW4ZLxgbQpiHB8SENhNapMyWqR
+         MjsE+sT6G8c965nqflswXzAExg+X3Of602E80dw20uDuiDQiSXij0mJrWxqPWj2BDeSw
+         w3Pc274oXQxn4KU8nyOUMTyv1l3rNU08T9IbERedghC6jpn8EX07LqkgWmUv3OJzAHyq
+         rtpsFv0hEqL/KvkDmxFo1psIkT+kwYWyvPDuwX9FxzTaDXXwYKFBGYm0A9CnQDTXsAhu
+         3ftA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=permerror (no key for signature) header.i=@2ghuj7.2ghuj7.igryzu.us
+ header.s=smtp header.b=OYGafS9H;
+       spf=pass (google.com: domain of
+ return@finetune-eystem2e.aivault.com.proutionathe.com designates
+ 192.236.246.75 as permitted sender)
+ smtp.mailfrom=return@finetune-eystem2e.aivault.com.proutionathe.com
+Authentication-Results: mx.google.com;
+       dkim=permerror (no key for signature) header.i=@2ghuj7.2ghuj7.igryzu.us
+ header.s=smtp header.b=OYGafS9H;
+       spf=pass (google.com: domain of
+ return@finetune-eystem2e.aivault.com.proutionathe.com designates
+ 192.236.246.75 as permitted sender)
+ smtp.mailfrom=return@finetune-eystem2e.aivault.com.proutionathe.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=2ghuj7.2ghuj7.igryzu.us;
+ h=Date:From:Message-ID:To:Subject:MIME-Version:Content-Type;
+ i=ylrwncyhzayuok.06749627686688@2ghuj7.2ghuj7.igryzu.us;
+ bh=AlNvZ2tssTrXvlhJqu8bwjECW60=;
+ b=OYGafS9Hxi9WgeR4S/Xi6ogwmUwKqmO2pIcERjZ1dIcZO+N56RrSwguRQstlYl/5R1L9B8TC/2uY
+   v5hJl0ekIVq5WfFN50W/pvOQT7P78o6wggON89q6AK8yROHZcryrMiXRXy6QtcsCZy0RVTWfxEMj
+   oZX3E6kfzmWG0UaHHPOqP5WZWoyUuB7gx0OvPoewbFNNmn7SUIfuLDYWMAZPru7ANHbFr43/+XS+
+   UI06eKksUN2+c2w7f7LFoVvzDIOZvA+11Ths2W+ZU0CQcsfPBXhXdyjmAVT13X6nSlysExFdW19i
+   JSDWpiLZsPufII2ITp7Io6qXCqVnN7z94jGIpA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=2ghuj7.2ghuj7.igryzu.us;
+ b=FDgZ2QOMef41jMytMghiCROoRjHlEsPLMSMYaMDfGzohewmDsfLktYET6etKGRIhDF+lXVF9p69L
+   KA7b9lR5CFCAhGci7xhv5B2db8K28Ia76psuRYbNPmXD9f4hsFpf04cR8p7E1vhSnDPzDzNO6T1S
+   qBfzQAOPfFG/I2Ylu1wdCK1gIDR4BVjTNd0sHSFZuVeQRSyP6IO7qIrVJNJKUDnCpQFp6qRpUgcw
+   BiibpvZtbVypZj3Z74e1FES+mLrv3fOFaLZEctvK97ZR1pe44k0k9dSej42AWEaHlOc+nMoIWH0o
+   tv/GU+N8lONowznVHI9LPubCNX64+wnF97X52A==;
+Date: Mon, 21 Sep 2026 04:28:24 +0000
+From: "Cloud_Storage" <ylrwncyhzayuok.06749627686688@2ghuj7.2ghuj7.igryzu.us>
+Message-ID: <npq1qxro.v8fb0220.2ghuj7.v8fbSMTPIN_ADDED_MISSING@mx.google.com>
+To: redacted@redacted.com
+Subject: 
+ =?utf-8?b?77+977+977+977+977+977+977+977+977+977+977+977+977+977+977+977+9?=
+ =?utf-8?b?77+977+977+977+977+977+977+977+9IO+/ve+/ve+/ve+/ve+/ve+/ve+/vQ==?=
+ =?utf-8?b?77+977+977+977+977+977+977+977+977+977+977+977+977+977+977+977+9?=
+ =?utf-8?b?77+977+977+977+977+977+977+977+977+9OiDvv73vv73vv73vv73vv73vv70=?=
+ =?utf-8?b?77+977+977+977+977+977+977+977+977+977+977+977+977+977+977+977+9?=
+ =?utf-8?b?77+977+977+977+977+977+9IO+/ve+/ve+/ve+/ve+/ve+/ve+/ve+/ve+/vQ==?=
+ =?utf-8?b?77+977+977+9JSDvv73vv73vv73vv73vv73vv73vv73vv73vv73vv73vv73vv70=?=
+ =?utf-8?b?77+977+977+977+9?=
+MIME-Version: 1.0
+Content-Type: multipart/report; boundary="000000000000S__Uniqid";
+ report-type=delivery-status
+
+--000000000000S__Uniqid
+Content-Type: multipart/related; boundary="000000000000B__Uniqid"
+
+--000000000000B__Uniqid
+Content-Type: multipart/alternative; boundary="000000000000C__Uniqid"
+
+--000000000000C__Uniqid
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Top Stories of the Day: 09-21-2026
+
+086713057047986114876562064604230246867718279098877264897858
+-----
+qepsjogihtyxvyqaotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhsqepsjogihtyxvyq=
+aotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhs
+qepsjogihtyxvyqaotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhsqepsjogihtyxvyq=
+aotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhs
+qepsjogihtyxvyqaotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhsqepsjogihtyxvyq=
+aotntcuthqesvlvbqdzlkhpzrxikqtlhbcmdexnoylmhs
+
+If you believe this has been sent to you in error, please safely unsubscrib=
+e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit+
+
+If you believe this has been sent to you in error, please safely unsubscrib=e
+
+--000000000000C__Uniqid
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<center><center>
+<center>
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+<meta charset=3D"UTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Cloud Storage Notification</title>
+</head>
+
+<body style=3D"margin:0;padding:0;background:#ffffff;font-family:Arial,Helv=
+etica,sans-serif;">
+
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff">
+<tr>
+<td align=3D"center">
+
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d268662&ppyjm=3D4-32&lm=3D195982YRXR42450&sd=3D11&page=
+=3DJQA5czU26XJAjrD" target=3D"_blank" style=3D"display:block;text-decoratio=
+n:none;color:inherit;">
+
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"max-width:600px;background:#ffffff;">
+
+<!-- Logo -->
+<tr>
+<td align=3D"center" style=3D"padding:28px 20px 10px 20px;">
+
+<div style=3D"width:46px;height:46px;border-radius:50%;background:conic-gra=
+dient(#4285f4 0 25%,#34a853 25% 50%,#fbbc05 50% 75%,#ea4335 75% 100%);margi=
+n:auto;position:relative;">
+<div style=3D"position:absolute;left:8px;top:8px;width:30px;height:30px;bac=
+kground:#ffffff;border-radius:50%;"></div>
+<div style=3D"position:absolute;left:15px;top:7px;font-size:34px;font-weigh=
+t:bold;color:#4285f4;font-family:Arial,Helvetica,sans-serif;">G</div>
+</div>
+
+</td>
+</tr>
+
+<!-- Title -->
+<tr>
+<td align=3D"center" style=3D"padding:10px 25px 6px 25px;">
+
+<div style=3D"font-size:26px;color:#333333;line-height:36px;">
+Your Cloud Storage is full
+</div>
+
+<div style=3D"padding-top:8px;font-size:14px;color:#666666;">
+Storage management for your connected account
+</div>
+
+</td>
+</tr>
+
+<!-- Usage -->
+<tr>
+<td align=3D"center" style=3D"padding:20px 20px 10px 20px;">
+
+<div style=3D"font-size:14px;color:#555555;">
+Usage: 5 GB / 5 GB
+<span style=3D"color:#ea4335;font-weight:bold;padding-left:8px;">100% Full<=
+/span>
+</div>
+
+<table role=3D"presentation" width=3D"84%" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"margin-top:12px;">
+<tr>
+<td width=3D"30%" bgcolor=3D"#4285f4" height=3D"12"></td>
+<td width=3D"20%" bgcolor=3D"#34a853"></td>
+<td width=3D"30%" bgcolor=3D"#fbbc05"></td>
+<td width=3D"20%" bgcolor=3D"#ea4335"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<!-- Legend -->
+<tr>
+<td align=3D"center" style=3D"padding:12px 20px 24px 20px;">
+
+<table role=3D"presentation" width=3D"80%" cellpadding=3D"6" cellspacing=3D=
+"0" border=3D"0">
+
+<tr>
+<td style=3D"font-size:14px;color:#444444;">
+<span style=3D"color:#4285f4;font-size:20px;">=E2=97=8F</span> Cloud Drive:=
+ 1.5 GB
+</td>
+
+<td style=3D"font-size:14px;color:#444444;">
+<span style=3D"color:#fbbc05;font-size:20px;">=E2=97=8F</span> Photos: 2.1 =
+GB
+</td>
+</tr>
+
+<tr>
+<td style=3D"font-size:14px;color:#444444;">
+<span style=3D"color:#ea4335;font-size:20px;">=E2=97=8F</span> Documents: 1=
+.2 GB
+</td>
+
+<td style=3D"font-size:14px;color:#444444;">
+<span style=3D"color:#34a853;font-size:20px;">=E2=97=8F</span> System: 0.2 =
+GB
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<!-- Notice -->
+<tr>
+<td align=3D"center" style=3D"padding:0 20px 30px 20px;">
+
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"border:1px solid #f2c75c;border-radius:8px;bac=
+kground:#fff8e7;">
+
+<tr>
+<td align=3D"center" style=3D"padding:42px 34px;">
+
+<div style=3D"font-size:17px;line-height:32px;color:#333333;">
+You can't upload new files or receive emails because your storage is full. =
+Your contacts and device data are no longer backing up.
+</div>
+
+<div style=3D"padding-top:20px;font-size:16px;font-weight:bold;color:#33333=
+3;line-height:28px;">
+Special Offer: Upgrade today and get 250 GB storage.
+</div>
+
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" style=3D"margin:26px auto 0 auto;">
+<tr>
+
+<td align=3D"center">
+
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0">
+<tr>
+<td bgcolor=3D"#1a73e8" style=3D"border-radius:4px;">
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d268662&ligvj=3D4-32&lm=3D195982KJIR42450&sd=3D11&page=
+=3DthbZ38aM2iqwNOq" target=3D"_blank" style=3D"display:block;padding:14px 2=
+4px;font-size:16px;font-weight:bold;color:#ffffff;text-decoration:none;">
+Upgrade Storage
+</a>
+</td>
+</tr>
+</table>
+
+</td>
+
+<td width=3D"14"></td>
+
+<td align=3D"center">
+
+<table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0">
+<tr>
+<td bgcolor=3D"#ffffff" style=3D"border:1px solid #cfcfcf;border-radius:4px=
+;">
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d268662&pmfkq=3D4-32&lm=3D195982PLXM42450&sd=3D11&page=
+=3DJt58ayJAs4yREdr" target=3D"_blank" style=3D"display:block;padding:14px 2=
+4px;font-size:16px;font-weight:bold;color:#1a73e8;text-decoration:none;">
+Clean Up Space
+</a>
+</td>
+</tr>
+</table>
+
+</td>
+
+</tr>
+</table>
+
+<div style=3D"padding-top:16px;font-size:13px;color:#b27700;">
+Files in "Sync Pending" may be lost if not resolved.
+</div>
+
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<!-- Footer -->
+<tr>
+<td align=3D"center" style=3D"padding:18px 30px 10px 30px;">
+
+<div style=3D"font-size:12px;color:#666666;line-height:22px;">
+This message was sent to you because your account storage limit has been ex=
+ceeded.
+</div>
+
+<div style=3D"font-size:12px;color:#666666;line-height:20px;">
+=C2=A9 2026 Cloud Storage Systems Inc.
+</div>
+
+</td>
+</tr>
+
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D4&d268662&hngzf=3D4-32&lm=3D195982EWXC42450&sd=3D11&page=
+=3DlHdr0T42zloVppA" >
+			<img src=3D"">
+		</a>
+		<br />
+		<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+ =20
+<a href=3D"hxxps://storage[.]googleapis[.]com/whilewait/brightway[.]html#in=
+dex[.]php?search=3D6&d268662&fapir=3D4-32&lm=3D195982DDRR42450&sd=3D11&page=
+=3DJPhNZpDKTECu30K">Unsubscribe</a><br>
+ </center>
+		<br />
+	</center>
+</body>
+</html>
+</html>
+</body></html>
+
+
+
+<div style=3D"display:none;">
+=20
+<body dir=3D"ltr" class=3D"generic" bgcolor=3D"#FFFFFF" style=3D"background=
+-color: #FFFFFF;">
+
+  <div class=3D"preheader" style=3D"display: none; max-width: 0; max-height=
+: 600; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opa=
+city: 0;">
+    Updates to OpenAI=E2=80=99s Privacy Policy
+   =20
+  </div>
+
+  <!-- start body -->
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" di=
+r=3D"ltr" class=3D"wrapperMod" bgcolor=3D"#FFFFFF" style=3D"background-colo=
+r: #FFFFFF;">
+    <!-- start body block -->
+    <tr>
+      <td align=3D"center">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"360">
+        <tr>
+        <td align=3D"center" valign=3D"top" width=3D"360">
+        <![endif]-->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"email-shell heroMod03" bgcolor=3D"#FFFFFF" style=3D"width: 100=
+%; max-width: 600px; background-color:#FFFFFF;">
+         =20
+                        <!-- header image -->
+           =20
+           =20
+            <tr>
+                <td valign=3D"top" class=3D"header-td email-header-td" bgco=
+lor=3D"#FFFFFF" style=3D"padding: 42px 24px 42px 24px; background-color:#FF=
+FFFF;">
+                    <table align=3D"center" width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"email-header-surface" style=3D"mi=
+n-width:100%; background-color:transparent;">
+                        <tbody><tr>
+                            <td valign=3D"top" align=3D"center" class=3D"em=
+ail-header-inner" style=3D"padding-top: 0; padding-bottom: 0;">
+	                                <a href=3D"" target=3D"_blank" class=3D"em=
+ail-logo-pill email-header-logo-pill" style=3D"display:inline-block; backgr=
+ound-color:#ffffff; background-image:linear-gradient(#ffffff,#ffffff); bord=
+er-radius:12px; padding:4px;">
+                                  <img alt=3D"" src=3D"" width=3D"103" styl=
+e=3D"display:block; margin:0 auto; width:103px; height:auto; max-width:100%=
+; border:0; background-color:#ffffff; background-image:linear-gradient(#fff=
+fff,#ffffff); border-radius:10px;">
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+         =20
+
+         =20
+  <tr>
+    <td align=3D"center" bgcolor=3D"#ffffff" class=3D"content-td" style=3D"=
+padding: 24px 24px 32px 24px;">
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"center" width=3D"100%" style=3D"max-width: 552px; width: =
+100%;">
+        <tr>
+          <td align=3D"left" style=3D"padding:0; color:#000000;">
+            <p style=3D"font-family:'OpenAI Sans', Helvetica, Arial, sans-s=
+erif; font-weight:400; line-height:24px;">Hi JD,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">We=E2=80=99re u=
+pdating our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketin=
+g-update-link" style=3D"color:#000000; text-decoration:underline;">Privacy =
+Policy</a> to include information about ads in ChatGPT, including how they =
+work and how you can control your experience.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Ads may appear =
+on Free and Go plans. Plus, Pro, Enterprise, Business and Education plans d=
+o not have ads. Ads do not influence the answers ChatGPT gives you. When yo=
+u see an ad, it is always clearly labeled as sponsored and visually separat=
+ed from the organic answer. You=E2=80=99ll get relevant and personalized ad=
+s using information that stays only on ChatGPT, such as ads you've interact=
+ed with, or context from your chats. You can manage ad personalization anyt=
+ime in <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-upd=
+ate-link" style=3D"color:#000000; text-decoration:underline;">settings</a>.=
+</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Your personal d=
+etails and conversations with ChatGPT are private and are not shared with a=
+dvertisers. Advertisers do not have access to your chats, chat history, mem=
+ories, or personal details. Advertisers only receive overall information ab=
+out how their ads perform, such as total views or clicks.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Learn more abou=
+t <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-update-l=
+ink" style=3D"color:#000000; text-decoration:underline;">ads in ChatGPT</a>=
+ and our <a href=3D"" target=3D"_blank" class=3D"privacy-policy-marketing-u=
+pdate-link" style=3D"color:#000000; text-decoration:underline;">privacy con=
+trols</a>, including how we protect your data.</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">Thanks,</p>
+
+            <p style=3D"margin-top: 16px; font-family:'OpenAI Sans', Helvet=
+ica, Arial, sans-serif; font-weight:400; line-height:24px;">The OpenAI Team=
+</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+         =20
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+    <!-- end body block -->
+
+        <!-- start footer -->
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+   =20
+     =20
+     =20
+   =20
+    <tr>
+      <td align=3D"center" class=3D"email-footer-row" style=3D"padding:12px=
+ 0;">
+        <!--[if mso]>
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"600"><tr><td>
+        <![endif]-->
+        <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"max-width:600px;">
+          <tr>
+            <td align=3D"center" class=3D"footer-td email-footer-surface" s=
+tyle=3D"background-color:#ededed; border-radius:12px; padding:24px;">
+              <table role=3D"presentation" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                <tr>
+                 =20
+                    <td align=3D"left" class=3D"email-footer-logo-cell" sty=
+le=3D"padding-bottom:12px;">
+	                      <a href=3D"" target=3D"_blank" style=3D"display:inli=
+ne-block;">
+                        <img src=3D"" width=3D"88" height=3D"23" alt=3D"Cha=
+tGPT Logo" class=3D"email-footer-logo-img" style=3D"display:block;border:0;=
+">
+                      </a>
+                    </td>
+                 =20
+                </tr>
+                <tr>
+                  <td>
+                    <table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+                      <tr class=3D"footer-row">
+                        <td valign=3D"bottom" align=3D"left" class=3D"email=
+-footer-copy" style=3D"font-size:10px; line-height:1.8; color:#000; width:1=
+00%; padding-right:0; vertical-align: bottom; padding-left: 0;">
+                          OpenAI<br/>
+                         =20
+                            1455 3rd Street<br/>San Francisco, CA 94158<br/=
+>
+                         =20
+                         =20
+                          <a href=3D"" target=3D"_blank" style=3D"color:#89=
+8A8D; text-decoration:underline;">Privacy</a> &middot; <a href=3D"" target=
+=3D"_blank" style=3D"color:#898A8D; text-decoration:underline;">Terms</a><b=
+r/>
+                          <span class=3D"email-footer-copyright" style=3D"c=
+olor:#888; display:block; margin-top: 1.8em;">OpenAI =C2=A9 2015=E2=80=9320=
+26</span>
+                        </td>
+                       =20
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+    <!-- end footer -->
+
+  </table>
+  <!-- end body -->
+
+<img src=3D"" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heigh=
+t:1px !important;width:1px !important;border-width:0 !important;margin-top:=
+0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-le=
+ft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddin=
+g-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+--000000000000C__Uniqid--
+
+--000000000000B__Uniqid--
+
+--000000000000S__Uniqid--
