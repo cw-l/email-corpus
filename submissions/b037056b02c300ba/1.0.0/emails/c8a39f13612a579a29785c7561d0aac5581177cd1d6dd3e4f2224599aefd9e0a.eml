@@ -1,0 +1,191 @@
+Authentication-Results: spf=softfail (sender IP is 104.196.186.213)
+ smtp.mailfrom=luccalive.com; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=none header.from=luccalive.com;compauth=fail
+ reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:372938C63909C68B418440048EFC5A99A4881777E1C245BAE532DB5661D90615;UpperCasedChecksum:162E88952507B9C30A49D4461DA1E2A9EE49E5200D24CAD8D4E6907CFCA57C46;SizeAsReceived:300;Count:7
+From: CNN Medical Report <support@luccalive.com>
+To: <redacted@redacted.com>
+Subject: Watch: Harvard's Groundbreaking Knee Pain Report
+Message-ID: <da832100e74b4e9883de591197d208da@luccalive.com>
+Date: Tue, 22 Sep 2026 19:29:48 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Sep 2026 19:29:48.7848
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 52ef43ad-e49b-436e-a098-08df18dfddcc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ BN3PEPF00022BCF:EE_|LV8P220MB1447:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ BN3PEPF00022BCF.namprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/22/2026 6:12:06 PM
+X-MS-Office365-Filtering-Correlation-Id: 52ef43ad-e49b-436e-a098-08df18dfddcc
+X-Sender-IP: 104.196.186.213
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 5
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|9000799056|1680799066|3069299007|3025599003|9400799043|10300799038|2700799033|970799063|6100799021|46080799009|6099299003|5149299006|5139299004|60050799012|260826003000599003|1290799033|34130799006|32020799003|29130799009|18040799006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Sep 2026 19:29:48.6649
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 52ef43ad-e49b-436e-a098-08df18dfddcc
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ BN3PEPF00022BCF.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV8P220MB1447
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3328195
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0428.008
+X-Microsoft-Antispam-Mailbox-Delivery: 
+	ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html xmlns="hxxp://www[.]w3[.]org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Report: CoreRelief</title>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #FFFFFF; -webkit-font-smoothing: antialiased;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align="center" style="padding: 40px 15px;">
+
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #FFFFFF;">
+                        <tbody>
+
+                            <!-- Top Header (News Logo) -->
+                            <tr>
+                                <td style="padding-bottom: 15px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                    <a href="hxxps://storage[.]googleapis[.]com/abdsjointsgo/m" target="_blank" style="text-decoration: none;">
+                                                        <img src="hxxps://upload[.]wikimedia[.]org/wikipedia/commons/b/b1/CNN[.]svg" alt="CoreRelief" width="90" style="display: block; border: none; max-width: 100%;">
+                                                    </a><br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style="padding-bottom: 30px;">
+                                    <h1 style="font-family: Georgia, 'Times New Roman', serif; font-size: 32px; font-weight: normal; color: #111111; margin: 0; line-height: 1.3;">
+                                        Harvard Researcher Reveals the Simple Recipe That's Saving Americans From Knee
+                                        Surgery
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td style="font-family: Georgia, 'Times New Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style="margin: 0 0 20px 0;">
+                                        In a groundbreaking CNN investigative report, a Harvard researcher has revealed
+                                        a simple morning honey recipe that is saving thousands of seniors across the
+                                        country from painful, expensive knee replacement surgery.
+                                    </p>
+
+                                    <p style="margin: 0 0 25px 0;">
+                                        Instead of blaming simple &quot;wear and tear,&quot; new clinical research shows that
+                                        severe joint pain and bone-on-bone grinding are driven by a hidden joint
+                                        toxin\u2014which this natural honey blend flushes out in weeks.
+                                    </p>
+
+                                    <!-- IMAGE 1 (Main Hook) -->
+                                    <div style="margin-bottom: 25px; text-align: center; position: relative;">
+                                        <a href="hxxps://storage[.]googleapis[.]com/abdsjointsgo/m" style="text-decoration: none; display: block;">
+                                            <img src="hxxps://i[.]8upload[.]com/image/e03cfa19ef4400e5/scr-20260805-qyjt[.]png" alt="CoreRelief" width="100%" style="display: block; max-width: 100%; border: px solid #e0e0e0;">
+
+                                            <!-- Fake Play Button Overlay -->
+                                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background-color: rgba(167, 12, 12, 0.8); border-radius: 50%; border: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div style="width: 0; height: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div style="text-align: center; margin-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div style="color: #888888; font-size: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+                                            AS FEATURED IN
+                                        </div>
+                                        <img src="hxxps://i[.]8upload[.]com/image/df1160e9576856bc/news-logos-19cced4b2b60[.]webp" alt="As Seen On Media" width="350" style="max-width: 100%; height: auto; display: inline-block;">
+                                    </div>
+
+                                    <p style="margin: 0 0 20px 0;">
+                                        According to the researchers behind CoreRelief, joint degradation accelerates
+                                        when toxic accumulation prevents natural cartilage lubrication. This daily honey
+                                        recipe targets that exact root cause without prescriptions or physical therapy.
+                                    </p>
+
+                                    <p style="margin: 0 0 25px 0;">
+                                        Real users are experiencing life-changing mobility. Robert Mitchell shared, &quot;My
+                                        doctor wanted to schedule knee surgery. I asked him to wait 60 days. After using
+                                        this honey recipe, he looked at my new X-ray and couldn't believe it!&quot;
+                                    </p>
+
+                                    <p style="margin: 0 0 20px 0;">
+                                        Other seniors report walking without canes or walkers for the first time in
+                                        years, getting up from chairs effortlessly, and taking their spouses dancing
+                                        again without bone-on-bone pain.
+                                    </p>
+
+                                    <p style="margin: 0 0 35px 0;">
+                                        Watch the complete broadcast right now to learn the exact morning honey recipe
+                                        and discover how CoreRelief can help protect your knees today.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- CTA Button -->
+                            <tr>
+                                <td align="center" style="padding-bottom: 45px;">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="background-color: #A70C0C; border-radius: 3px;">
+                                                    <a href="hxxps://storage[.]googleapis[.]com/abdsjointsgo/m" target="_blank" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; display: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        WATCH THE FULL PRESENTATION NOW
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style="border-top: 1px solid #eeeeee; padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; line-height: 1.6;">
+                                    The information provided is for educational purposes only and is not intended as
+                                    medical advice. Individual results may vary.<br>
+                                    &lt;a href=&quot;
