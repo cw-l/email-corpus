@@ -1,0 +1,1153 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1790387478; cv=none;
+        d=google.com; s=arc-20260327;
+        b=YfMShXieDG43joUwrKXwyysdZCkzTTfeH5Wz+LCwQhkOKX3iYn+O30UQ0CtspM/k18
+         lBvvCaCBit+sU8ZpwbRg1+sKUjEeMY0swb7OseHNB48gvHnhd3WE3jlxsHjBA9w111sA
+         NBmpwx2B8g+KOyccyX57ChPrY3VWSFinMQFsVggzSJhhOBtdTNn0xveXEey3FlEQQT0t
+         G6u30maLVRW4hW62lqFrArp+fNoWBCiyZw/Ub1oF0h54y3wKzAEJNZZ39ZYGeSvFq5lu
+         H/679WSV/43trq1Te8FqbFjrgj9bHRUUDyJfYwTF7KS7XLpdTEqzNVlKX5MG2buDRS83
+         kWVg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=RJ37boT73T/I1Did9cim+lSN86C1INp5R4WR1di1Llk=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=nLJq5DdPdNOk6pPDgGHQLSm5UoG7Iu7zNChD+EBp42QgHt0rV8u3+COWyUoBiivS/x
+         o/qxuigZP2wd97BTv55wnlSiIyTHF5AagZqZ3hlYV/vAd24V9WmTze3zWQ71k5hnPPqj
+         vLd6jT13kb82nGXZJW1+kqmdMWkTG+sRdI+lMhFyiUdRYnyZHtnSvsdFlIH7gcjv+LoU
+         L0h06BctDYHgWyxrdDONxMsSW7B2GOkFdgzavemsRr2Fk9vaBut0JA31RQJz8G+ErCyv
+         OqJ1gic6XjWg8LRYUOp9zUhUvwlK2+VjVjC9SQJA84oT4m56Qswc1pvt9mDO6RLvggsP
+         UUvQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rlwibtwk.yaxaa.waze.uk.com header.s=smtp
+ header.b=XiZvPE5b;
+       spf=pass (google.com: domain of uacrlhehmpisz@yaxaa.waze.uk.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=uacrlhehmpisz@yaxaa.waze.uk.com
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rlwibtwk.yaxaa.waze.uk.com header.s=smtp
+ header.b=XiZvPE5b;
+       spf=pass (google.com: domain of uacrlhehmpisz@yaxaa.waze.uk.com
+ designates 192.3.247.121 as permitted sender)
+ smtp.mailfrom=uacrlhehmpisz@yaxaa.waze.uk.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=rlwibtwk.yaxaa.waze.uk.com;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=zhptisirsbzmxqlpvtmye@rlwibtwk.yaxaa.waze.uk.com;
+ bh=2mXrv9aeFefxU92k6soLgadwNwg=;
+ b=XiZvPE5bfnNMFc7SGF4Dopjh6wR3xOE8zeyvvwhfI009cLn7hKz/4Fq2qKps+Q/6JcWwO5azvCy1
+   uu7Xm7a78pWY1eiUE8U9oPcanbR+detByk+7NvcHVWwcvTkqlUFEDyGIsjrlRefUFq493geJVZBA
+   avp6grLI2SYbpShKSXIALCEACxIlPCFfP2GtGP803VcGN7+B3Mv/S2QDtGyToRQI5izgvmivOabn
+   5T0flXJy4/mgsjBHmP6ciHC6o+eoG3YL9qoo6bGYVGFW24e1PZnzEgUdcLFqyuDjx5PQHswMo3C9
+   rdiP6o3uFVwGBUbAEHHnWo1TR/kW3XghMGIobA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=rlwibtwk.yaxaa.waze.uk.com;
+ b=kPV/URXk6XvydDPqtFi3DJfruCtjvCd56yrmCTzhc2iv9JSqfmTDtCARa6AiwKnI+LAfmWSptQSo
+   yDJ1Eq81q48PgnARNyS4Rec8QlJb3QaYfw9YfLmSvhzA5dBq5I1TPWn1REgvgqbc1h3m5LjTIEVT
+   9I5ZdKvCjDbYvO+8EYvGrNYwuRBIm12bjh6pkPgiPnqNuL6NvsVLA174lilkbo85ksDEKYZ2slCw
+   RoG0TSBQ2MEZqqsYgvGViZszPEvD4zPu6dSbhtBweXTXLH6Si+G9rVwOXg0Z6LY4zDAhccA56NB5
+   kQBXOpBKB3vxtNuOYQaBrE3/7GM/myvbkpkjRw==;
+Subject: The 15-second kitchen trick waking up dead erections in minutes
+From: Vigorus  <shiknrt.32.195982@rlwibtwk.yaxaa.waze.uk.com>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 192.3.247.121
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <njtexqyinslqbkvcxgeltauikhmprg@tdjc6adsnzyglffb5f>
+List-Unsubscribe: <http://ravino.pro/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_54709757"
+Date: Sat, 26 Sep 2026 01:50:30 +0000
+Sender: zhptisirsbzmxqlpvtmye@rlwibtwk.yaxaa.waze.uk.com
+
+------=_Part_1_54709757
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_54709757
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#uqdU=
+HviBPJOkefscAGGnRYSjkGFudg&4PPyhtnwhmJ&274958/1525/xnrvftcour[.]home[.]php?=
+sq=3D32-195982&lk=3D40872-7&page=3D949" style=3D"text-decoration:none; colo=
+r:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>ABC News Executive Report</title>
+    <style type=3D"text/css">
+        /* Client-Specific Resets */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #EFECE6;
+            font-family: Georgia, 'Times New Roman', serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Mobile Optimization */
+        @media only screen and (max-width: 620px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .pad {
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .paper-h {
+                font-size: 25px !important;
+                line-height: 1.25 !important;
+            }
+
+            .paper-body {
+                font-size: 16px !important;
+                line-height: 1.65 !important;
+            }
+
+            .paper-btn {
+                width: 100% !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .footer-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #EFECE6;">
+
+    <!-- Hidden Preheader -->
+    <div
+        style=3D"display: none; font-size: 1px; color: #EFECE6; line-height=
+: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-h=
+ide: all;">
+        ABC News: The 15-second Vic hack triggering 3 extra inches and 3 ho=
+urs of stamina...
+        &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &sh=
+y; &#847; &zwnj; &nbsp; &#8199; &shy;
+    </div>
+
+    <!-- Outer Canvas Wrapper -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #EFECE6;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 30px 10px;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"600">
+                    <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"600">
+                    <![endif]-->
+
+                    <!-- Main Newspaper Card -->
+                    <table class=3D"container" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FCFAF=
+6; border: 1px solid #D5CEBE; border-radius: 2px; overflow: hidden; box-sha=
+dow: 0 4px 12px rgba(0,0,0,0.05);">
+                        <tbody>
+
+                            <!-- Classical Newspaper Masthead -->
+                            <tr>
+                                <td class=3D"pad"
+                                    style=3D"padding: 24px 30px 14px 30px; =
+text-align: center; border-bottom: 3px double #2D3748;">
+
+                                    <!-- Kicker -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 2px; te=
+xt-transform: uppercase; color: #64748B; margin-bottom: 12px;">
+                                        SPECIAL EDITION =E2=80=A2 EXECUTIVE=
+ INTELLIGENCE BRIEF
+                                    </div>
+
+                                    <!-- Logo -->
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"center"
+                                        style=3D"margin: 0 auto;">
+                                        <tr>
+                                            <td align=3D"center">
+                                                <a href=3D"hxxps://storage[=
+.]googleapis[.]com/smalbus/salaminka[.]html#GTKNPqjYPsIwSauQwlVIsUBaVRumok&=
+4OvYUkJoVZi&274958/1525/nglsdrjqsn[.]home[.]php?sq=3D32-195982&lk=3D40872-7=
+&page=3D983" target=3D"_blank"
+                                                    style=3D"text-decoratio=
+n: none; display: inline-block;">
+                                                    <img src=3D"hxxps://i[.=
+]imgur[.]com/JPlTwul[.]png"
+                                                         alt=3D"ABC News"
+                                                         width=3D"110"
+                                                         style=3D"display: =
+block; width: 110px; max-width: 100%; height: auto; border: 0; outline: non=
+e; margin: 0 auto;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Date & Meta Divider -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 11px; color: #718096; margin-top: 12px; border-=
+top: 1px solid #E2E8F0; padding-top: 8px;">
+                                        Thursday, September 24, 2026 =E2=80=
+=A2 Medical &amp; Vitality Column
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Article Body -->
+                            <tr>
+                                <td class=3D"pad" style=3D"padding: 30px 32=
+px 20px 32px;">
+
+                                    <!-- Headline -->
+                                    <h1 class=3D"paper-h"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 29px; font-weight: bold; color: #111111; m=
+argin: 0 0 14px 0; line-height: 1.25; text-align: left;">
+                                        ABC News Special: The 15-Second "Vi=
+c Hack" That Gives Men Jackhammer Firmness
+                                        and 3 Hours of Non-Stop Stamina
+                                    </h1>
+
+                                    <!-- Byline -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 12px; color: #718096; margin-bottom: 24px; font=
+-style: italic; border-bottom: 1px solid #EAE5D9; padding-bottom: 12px;">
+                                        An investigative report by the ABC =
+News Medical Desk =E2=80=A2 For Adults Only
+                                    </div>
+
+                                    <!-- Body Copy with Drop Cap -->
+                                    <div class=3D"paper-body"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 17px; color: #2D3748; line-height: 1.7;">
+
+                                        <p style=3D"margin: 0 0 20px 0;">
+                                            <span style=3D"float: left; fon=
+t-size: 48px; line-height: 40px; padding-top: 4px; padding-right: 10px; fon=
+t-family: Georgia, serif; color: #8B0000; font-weight: bold;">I</span>t
+                                            is being described as the singl=
+e most explosive male enhancement
+                                            breakthrough of the decade: a s=
+imple 15-second kitchen protocol that
+                                            completely outperforms prescrip=
+tion ED medications without side effects.
+                                        </p>
+
+                                        <p style=3D"margin: 0 0 22px 0;">
+                                            When combined with a common hou=
+sehold ingredient, this <a
+                                                href=3D"hxxps://storage[.]g=
+oogleapis[.]com/smalbus/salaminka[.]html#ALEJmLRGvBWDskZbVsesEhXbCmTXoy&4sO=
+ZVJtLtyA&274958/1525/eczlzyfvki[.]home[.]php?sq=3D32-195982&lk=3D40872-7&pa=
+ge=3D412" target=3D"_blank"
+                                                style=3D"color: #8B0000; te=
+xt-decoration: underline; font-weight: bold;">15-second
+                                                Vic mixture</a> forces oxyg=
+enated blood into smooth muscle tissue,
+                                            unlocking verified size gains o=
+f up to 3 extra inches while providing
+                                            rock-hard, jackhammer firmness =
+that lasts for over 3 hours on command.
+                                        </p>
+
+                                        <!-- Clean Framed Image Unit -->
+                                        <div
+                                            style=3D"margin: 0 0 25px 0; te=
+xt-align: center; border: 1px solid #D5CEBE; padding: 4px; background-color=
+: #ffffff;">
+                                            <a href=3D"hxxps://storage[.]go=
+ogleapis[.]com/smalbus/salaminka[.]html#ehSQbmIHaVEMWljpGdtzxODBKdMRFi&4nHz=
+jiTJQNA&274958/1525/bwpqltcavt[.]home[.]php?sq=3D32-195982&lk=3D40872-7&pag=
+e=3D555" target=3D"_blank"
+                                                style=3D"display: block; te=
+xt-decoration: none;">
+                                                <img src=3D"hxxps://i[.]img=
+ur[.]com/ozLtdgg[.]png"
+                                                     alt=3D"Watch ABC News =
+Potency Presentation"
+                                                     width=3D"520"
+                                                     style=3D"display: bloc=
+k; width: 100%; height: auto; border: 0; margin: 0 auto;">
+                                            </a>
+                                        </div>
+
+                                        <!-- Editorial Boxed Quote -->
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%"
+                                            style=3D"border-top: 1px solid =
+#D5CEBE; border-bottom: 1px solid #D5CEBE; margin-bottom: 24px; background-=
+color: #F8F5EE;">
+                                            <tr>
+                                                <td style=3D"padding: 16px =
+14px; text-align: center;">
+                                                    <p
+                                                        style=3D"margin: 0;=
+ font-family: Georgia, serif; font-size: 15px; font-style: italic; color: #=
+8B0000; line-height: 1.6;">
+                                                        "We had already gon=
+e three rounds in a row and I was still hard
+                                                        as a jackhammer. It=
+ gave me three extra inches and stamina for
+                                                        over three hours st=
+raight. No blue pill on earth compares to
+                                                        this."
+                                                    </p>
+                                                    <div
+                                                        style=3D"font-famil=
+y: Arial, sans-serif; font-size: 11px; font-weight: bold; color: #718096; m=
+argin-top: 6px; text-transform: uppercase;">
+                                                        =E2=80=94 Verified =
+Viewer Case Report (Age 60)
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <p style=3D"margin: 0 0 22px 0;">
+                                            By combining this simple daily =
+routine with <strong>Vigorus</strong>, men
+                                            over 50 and 60 are permanently =
+ending performance anxiety, clearing arterial
+                                            resistance, and enjoying relent=
+less, commanding vigor anytime.
+                                        </p>
+
+                                        <p style=3D"margin: 0 0 28px 0;">
+                                            <a href=3D"hxxps://storage[.]go=
+ogleapis[.]com/smalbus/salaminka[.]html#YnQyTWdDkHvBitVmZHLNbGRHMuFBsT&4tRg=
+cZnMkeB&274958/1525/obdbeukfyu[.]home[.]php?sq=3D32-195982&lk=3D40872-7&pag=
+e=3D663" target=3D"_blank"
+                                                style=3D"color: #8B0000; te=
+xt-decoration: underline; font-weight: bold;">Watch
+                                                the unedited presentation b=
+elow</a> before the pharmaceutical industry
+                                            succeeds in taking this broadca=
+st down.
+                                        </p>
+
+                                    </div>
+
+                                    <!-- Conservative Newspaper CTA -->
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%"
+                                        style=3D"margin-bottom: 28px;">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#qJzuQydSHXvGGaMYCKETsSwACOA=
+bfx&4GOHguPtGrp&274958/1525/uqvokjkdun[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D592" target=3D"_blank" class=3D"paper-btn"
+                                                        style=3D"background=
+-color: #8B0000; color: #ffffff; font-family: Arial, Helvetica, sans-serif;=
+ font-size: 16px; font-weight: bold; text-decoration: none; padding: 16px 3=
+6px; border-radius: 2px; display: inline-block; letter-spacing: 0.5px; text=
+-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+                                                        Watch The Full Inve=
+stigation &gt;&gt;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                            <!-- Classical Newspaper Footer with Inverted L=
+ogo -->
+                            <tr>
+                                <td
+                                    style=3D"background-color: #1A202C; bor=
+der-top: 1px solid #D5CEBE; padding: 25px 30px; color: #CBD5E0;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <!-- Inverted White Logo --=
+>
+                                                <td class=3D"footer-col" va=
+lign=3D"middle"
+                                                    style=3D"width: 140px; =
+padding-bottom: 12px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#qValeSkYNiYpQAkqyVlPQfcBUzV=
+HIQ&4ELiyWqUCNP&274958/1525/qbzusaesem[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D988" target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none; display: inline-block;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/NywE8BW[.]png"
+                                                             alt=3D"ABC New=
+s"
+                                                             width=3D"90"
+                                                             style=3D"displ=
+ay: block; width: 90px; max-width: 100%; height: auto; border: 0; filter: b=
+rightness(0) invert(1); -webkit-filter: brightness(0) invert(1);">
+                                                    </a>
+                                                </td>
+
+                                                <!-- Meta Links -->
+                                                <td class=3D"footer-col" va=
+lign=3D"middle"
+                                                    style=3D"padding-left: =
+12px; font-family: Arial, sans-serif; text-align: right;">
+                                                    <div
+                                                        style=3D"font-size:=
+ 11px; color: #A0AEC0; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        ABC News HealthDesk=
+ =E2=80=A2 Special Investigation
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Divider Line -->
+                                            <tr>
+                                                <td colspan=3D"2"
+                                                    style=3D"border-top: 1p=
+x solid #2D3748; padding-top: 14px;"></td>
+                                            </tr>
+
+                                            <!-- Legal Navigation & Unsubsc=
+ribe -->
+                                            <tr>
+                                                <td colspan=3D"2" align=3D"=
+center"
+                                                    style=3D"font-family: A=
+rial, sans-serif; font-size: 11px; color: #A0AEC0; line-height: 1.6;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#IqLPtsxDyMgxhHmgFtNKpopgWCt=
+biO&4LuUyUqZqHB&274958/1525/dfyfvjwyml[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D333" target=3D"_blank"
+                                                        style=3D"color: #FF=
+FFFF; text-decoration: none; font-weight: bold;">Privacy
+                                                        Policy</a> &nbsp;|&=
+nbsp;
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#ivMsTLLewlyeJHjkKmnaRrDuhbq=
+TfE&4AlAcAiWgJa&274958/1525/zmqikewxzw[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D299" target=3D"_blank"
+                                                        style=3D"color: #FF=
+FFFF; text-decoration: none; font-weight: bold;">Terms
+                                                        of Use</a> &nbsp;|&=
+nbsp;
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#HtPvXOsrUKeLeqbxOFdvlcBhEYl=
+eRv&5bogcCeBfIG&274958/1525/xewkncujbs[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D338" target=3D"_blank"
+                                                        style=3D"color: #FC=
+8181; text-decoration: underline; font-weight: bold;">Unsubscribe</a>=20
+ <br><br> <br><br> <br><br> <br><center>Unsubscribe to=20
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#tgKhcOipEmkzbhisIFnMuleBdQV=
+bbS&6BtNNNnbzVN&274958/1525/izgkqtmoek[.]home[.]php?sq=3D32-195982&lk=3D408=
+72-7&page=3D246" target=3D"_blank"
+                                                        style=3D"color: #A0=
+AEC0; text-decoration: underline;">click here</a>
+                                                    <br><br>
+                                                    =C2=A9 2026 ABC News In=
+c. All rights reserved. Vigorus Research.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object WQRCGNXLKRWILTCQLFWGAJWUPDLBUPLAPIMQYLRIYTWXFHQIIBYKXRMMDVJR>
+
+Dear GPJUTHKKHIALRMLXPTAHCT bqredpotvzakzfkvecbbzf,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is wnurrovlcznneqjakbtseft=
+nolpv.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi gewlxoqowoihhmazcd,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi slbvheftbsjruneqtyatpbkn,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: raqfjdtxhbrfusowbcmancjyou
+ Site ID: bcezcouhueefuvfqmgzjzdrxd
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team JALUPLZLCEIRFVRZMLKFEN
+
+Powered by BZBTPMCIKTQTYNLMFJSPZZ=20
+
+</title>
+
+Dear AOESQBNQQIDSPBGLROFETRZJO irjylwapmzyldzciahhgepbgmc,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is pibvakscxhpnprrfbltgrph=
+an.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood DEZNOVFQOFKAERNCDLKROR,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+TYEVUIQWPNKRLCNFGGXBLDTOFFAPAKGDGCXZENABENVBNEPYHKLGVIUJFKIOWRFQXNEIDSSOVMW=
+NAXISIMDFBQEAFBGWCMPAMUPVAZROHFNQJQPBOMGYTXAUSCAAMTKONECSNCZGWZOSBXBLLKLNXB=
+VEHRPCTHIMCBAUOFEYGREEMHZBLVROYWHBHQZYAHNPCYVAJNHA
+
+ Hi FOGEQSCKTVQQDAJYKUTOUM,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+kopmvmqlcouqjoruwlbbmvewgyeuknmtgyebpbeeqhfbrzpaohnhofsislfklzjwazczujlixad=
+vnmgnlgatytmiutxobxyajggcgxotctzygzxclvdgadnevuakfcsvjhfryznnfbrzuhaceaugtd=
+hgobmzkyhpekilvcsjuiroiojmvaxqloqyfodqosaqvgynjekq
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi EX5CJ7RDWC9A3U355TADGBJ1Q,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team YERHEWTOOHRMGBPUYMWBKG
+Powered by TCTRCXMABDNHUCGWGADJGQ
+
+Login Name: PBJOEGBZTYFWTQFCIFCQYN
+Password: YNZHUJQKYPESVYBTQDBKVC
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: PQD
+Password: MDRMGTLFGMKRCYQZVYODRN
+
+	2GSORXQ5DLHUEMIZ2U FUTDE7JW4IQHTE3 GJ9E9J0V0CIQ9 4GJXPSH2E4AGF8RYMM YGB1AJ=
+HGBA5M5K4 KM4QRH7YR2RD5 MCJ33GBROMS1X6I8U1=20
+	GH7DMY1SVTTVL0428Y G95710WPCUX7TGB SM63VENK9OMX2 1GJO2P2ZSFAI81Y264 76OOMH=
+LT2UPL9N0 4CCXAO1CIY4YL L5Y7WKLUDKPIO0IZZQ=20
+	5MBDLV3P5MWXBBK 8N7HWPPKJRTIQ 6RF22OTJEIIWBP74UC 0GTBRY7W068ODPX BD0VFGYDW=
+OC82 U3JSSZLUCTWIB8C3AX 1RL2FTIJSHYA7NF
+	HEZ8ASJHTSH1U BVFXS2VUMA4HBQ1UWM DXEIISGIP45KB3K DDPSYM0P8I1LP 61VXGERB271=
+ZO7W27D QABKKW62S9KG3QN CD476DP6FP7P1=20
+	5XHIH7P9Z36QJEW8XZ 7TO89XYMU3C5K55 9JNV0E4T2DOW3 EDAJ7I8H7MV3IKN5A8 7FBVPG=
+4VR13EDHJ 1WBOSW977F5LC HTHC5K51RPQOZ6JRDJ=20
+	SX4PZYLG01W4OI9 T5TG3F3XCXEAK EFQ0I9X97RACBGXO9I OK18EIU1MY00V89 NEPW27621=
+P9NA NF5S1SU87G5MQ2RUUV 4N9N54CCQL1V0U1=20
+	BIPZNDV4A5MUG LHHS87O0O9ZAG3FLW8 6Z0GVKB5PRNMSM3 3XJMJLFUZ7B6B CV02N1VAU6B=
+VJQVAOI DEPWSY6SKIFNBK5 OASJZPAB67BXY=20
+	7CHC2SQ5RNRW8JC54V 2JU5SJTB1BJH8PB 8Y0G1NT2NAZSQ 6LBOIZ6MYWTB21VGCJ GN79GZ=
+426LW1DIH DGRTAMLD8790E A9AO6A9KJFIJC3R7MB=20
+	2U7D5V4C1P5FLAU MT4EIDLV3EIW5 OD5JU315BNP4YIZWQI TDWCUDCVRZKBZ60 ZDQ0F0M4P=
+3TXJ D53B25NQID12Y1L4D3 AMPGR355QZ1J07P=20
+	KHLI52SR8XES5 P90964OX38U216E59T 3RN594PMTUBAVK0 LQSD3GIZSVGIW 60R3TNTWVDX=
+SJL4FAC 6Z25SQHRGP6A5QH L4U571TJK1ZE0=20
+	70OQ6SRA5K67NKNHBY REUBCUWXRRQ8CX5 F3R35ZLAGE7AV 1TSR9DLUJPFL1G9T8T TXVUG2=
+QK3PZ8Y1O 70YIIZFI0CT33 ZUC5Z460V62ZPH2F5U=20
+	HQ2SS9AEK39G2K0 I8PEAQ6RAWVGR 5FYGEWAGWXQPEJZ907 IZBKEQMV9UFVQUH 1TMRWUHQR=
+GW76 4K1JDCBINQIBECCEVM VZOM3JEGXT1MK3C=20
+	K6ODF0ACTBP3Q KQFGM3CBXT3VVWPO5D L4ED4BEVN1NRX7B XL1U0REM7BIBF FOYDXNY6AFJ=
+SAYNEFT WAMVQPY0WZQKLF2 4PFMQ9XH1ZKBQ=20
+	XLJSKO95VOH1WJJJM2 OMVGVCJ49B6YX48 PTS7Q3NE25OYJ QD4UYALLP3AQXVWWP1 CNPMXA=
+LR4EM4AA0 SYHP2MTFMO6YW QXIO4UYUBKI6QJA0CV=20
+	RL6LPMTOOM4CAHK 7MP7TZNWGMENY U9UNBOKJ9PNM9H1LDE 90H2RCARA03LW9W 3CCF7WIJD=
+3B4U N31W45AWHMNIAPOVBH THMPMVMGE0I826P=20
+	FO1AL3GZ237AJ N65FSO0J5M1IKDS7W0 BC8NY11EBCHG09F VAQVPXI3TO3IG W0VSV3344WH=
+ELL2TBF CD3QVUXY3IRB6FE TPBVN2JFZCHGV=20
+	LJQCD299X3P6GFXS0G YDZYTCNB7BDPKZQ RBE6IC5A4QFOY IRZ9WS0CURHF43SRDN PTWRWI=
+4TP40QMGF 8X1EMRUZVKA5P AM008LQGSWTRE7E08V=20
+	OCO71K75E6H1STI ZO47GSD9WBYI6 O2L98ZB1F1EFO32A9O S0YFOCB157EKGRH 226NCKU6G=
+XE9W 08CAKB565ASLC2WGM7 3I3Z4MEA72OH7WU=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+MIYHQGDQLBRDGPXSSPVWSKHXWSEIYNMJQXSJPKSCEWXAZPCBLYCMZEXYAOEBSDBBIXIQKYTEEBV=
+PZZKPLCQEPXXOCLIVBDFSTEUALNNWBHSEOAWXVEEGGTEECRIIQECLRZMOTWMTNKBTETFKLDEFYS=
+CGCNDYYHZCAUVKMELTVPXYTCHDEEQMDXCGUMRKCXZMVYMULGPOQ
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to DDYEBSTAEGNLVPWSBFFAB=
+QECKEYWOHESTZPREOUJZMMPZBJJKECXPARMALMPYHQOMJSPVCXACPPYKFZDFLEXSNICFWDSCNRW=
+IOCRHVMCFCDSUQZFEYIQZPBCSDXJZMTCKFHZLNBHRONJABSRKNBUTGWMIPVMFYECHCPHNKZPCOG=
+XKAYALFFOOLTSFMPBCFFRCSJPVLRP roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department KLABJJWLJQANSNRUOQQTGYRISBANWOUWUYSTYBXGVAVAHSDH=
+NYDVARSTGWCVSPJUKINAFHCUPGKEPYHVPMNTJRZRVVSIQHFRWPMFLADRCQHSGVPFXWTWYYFWTJR=
+QDZLWOAJFBZJKODOPEYJXUWDYXJBGRSSAFRUFPLWGNPYMZTKAVQDTUGKRBAVQBPSAAOMGTDAVMP=
+TLR to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation KRNGFTWIUIYINNK=
+LLOSTVOYDQHHOEGETYLFWCECXEKTGCSJXYAWCYXKBCUOPBRIOBBYDQZBCMNOIMGLPMBFMSMKYRN=
+ELGMWMNENONRNELEHCKWPSNDZFPAQMHQROWLJWKCPEYSBDMUAGWZVTAMOTUULBVXSJECDLMDBNP=
+VLYTYZTFRSLYHXVKWKXCUQPEJSKRVDQRILOF development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will NLBAZDTSTEJAACSLNULEKGQEXVHSNIHOYGWMIPXQTBEIHRNCUZNEMPXQE=
+KBSNFDDWCXFTVCAAFZVBTQQIMICDPGQYFJALFFRUVJWGPHOPDLTUZEFQIVJUUKPKGEABWBRXDWE=
+SQHAFHCRYOVWEYTZAXYKBJMPVPGSULEFMHAGEDCAZTHYNCJBSVHJSMXYCEVSJMADORKTOUDPNQT=
+MXPXJJKDMYPSVLJVFRBEJTAOLFURCVQPLORUUKFPYHYSGOWJMNCCMDKVMMHDXOHDCZZJKBHESKZ=
+VTCXDMFHMWWMBOGWMPNKFMDWZMOSYLDHEBJFHAHCBWKQYVPHUFVORBROYKFTNVGIRHMBQDEJUYL=
+YIOMSRZTLBFGWWIOQYBDIIEZHOWFXMXRLXZDRDPGESF  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support FQMVOBJ=
+WTPGNXYZNDYIORYAIQCEFAIIRHLIPWVKNZPRNPIYSBILSMEPXVULSSHXHXYJVTWSEEOLONAQUQG=
+VCWCQBMJJOGNZSYFBTSNEIAMXDSLSJZCJFROPHZMTWGQBCUZXSBDJIZRKLLOZNLIIEFXLLGUOOZ=
+AYLPFEWSXVAGCXMACXEXAFXFAGNDCFWJMNNLXTVQHRG  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_54709757
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_54709757
+
+
+
+------=_Part_1_54709757--

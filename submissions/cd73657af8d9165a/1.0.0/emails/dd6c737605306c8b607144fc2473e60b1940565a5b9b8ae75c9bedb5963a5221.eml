@@ -1,0 +1,1035 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1790227708; cv=none;
+        d=google.com; s=arc-20260327;
+        b=rQtTQUKULwaU5KbssFluSo8UKzUmvOX4q4Wp3WlT/Rc+BPRRzxerRA61TzSREf/g+g
+         7v1vzcD/aslN+4THcb6eLNKQsN2OoW0hr4UjfMJzItZrYwgvBNtAcqtFbDEPXvIlbG6C
+         upUmNPH9AI8dEo65KFJRcYLyue4TvmNDmJhYVmX29t+NQ4+p9/+H048kO6xqR0ROdaLV
+         IEL2XggM9bW4s9S5dk5woJ9Lyg56Q5OxARsEvscxiEWBy+Z7H+IXe0pIspM/VfUao5Iy
+         Orr6otmn/zkKS/Uyr3gjBOG9VnIzrJZte1EjF5fRkYYKWySru6+4o5kk9YvK02++5w0N
+         MUEQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=7RSzrZjcfW0W8nJLZ+eaPDv1PQj4gTUtKRXmqRSGLrY=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=ISD936R/alfsnOwue7UZy6q+KqoZSwt+7u4ctV7+zoetN4Jrw+gewhBeW7Zi2RaUac
+         nyqXdfhaCMavc3mNuO12RSWRs2lYKzyl98iulHYcdmbkaXdECjcYGWX0TSI3NyHWjDs3
+         kZ7jXHUroqQTtoifw0Pw1pljlct2NU8bCJiknm81dVA6xIDKUTELIYntctTjhuAiluKE
+         WFJZcGyIl0e2S7sjgHo/PUWrSm370prYc0ky3D+y7YdujeGI3YsNDpsxz6wpHFqxFCVW
+         aO9rvTtSVeOkdbiLCdnBPbQvhxtwDEP9jDXwPrlk6LOr8hMk9q193bEZ6uvRSAgDyu6J
+         XVBg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bettljmd.youtoube.fanahel.biz header.s=smtp
+ header.b=RqInpQ2t;
+       spf=pass (google.com: domain of onsvknuxjlbmd@youtoube.fanahel.biz
+ designates 159.195.232.218 as permitted sender)
+ smtp.mailfrom=onsvknuxjlbmd@youtoube.fanahel.biz
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bettljmd.youtoube.fanahel.biz header.s=smtp
+ header.b=RqInpQ2t;
+       spf=pass (google.com: domain of onsvknuxjlbmd@youtoube.fanahel.biz
+ designates 159.195.232.218 as permitted sender)
+ smtp.mailfrom=onsvknuxjlbmd@youtoube.fanahel.biz
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=bettljmd.youtoube.fanahel.biz;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=gdlxcnmjiikjootjswdgd@bettljmd.youtoube.fanahel.biz;
+ bh=XMxosmoIOQpByiGhX3uiu9q5z/Y=;
+ b=RqInpQ2t5pqLXwsQr3YqO3sLhHV5OGKeNLxaGRSG99nFAsVMnngkenqVykfHGEk66sDgFgF4V0+K
+   2Xo89ozMsCkWIeW/osrV1jT86PncRV7IDRgELFFDuE11Vvln8roqcYdo9u9n+fVOkotm/ug/Cr/c
+   ICEUpV8cTiYLchQTzdBAzQrKOayb1R/AXP/e2V+ayUoBg2x9xpqH2Kukumt/45P9Q+NBrwXllN3T
+   WKocDGC0sphbW9re7SlhUVhjQb+Nq/L97jn7Su5d9XGxeUOx6bnF5p8ileTbI1vD68EuQNEK86sT
+   yljPMY7jyCe2xt66P06ADpEFQfCFvHIQi1iROQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=bettljmd.youtoube.fanahel.biz;
+ b=H/Kv0KxwXGnEskk+7uOe54aOBPeOrUvaJHaCkIp1AzsNbwAoy4pAvm2p1EbJAbbYljbjnxNjSir+
+   scqSBgm4CSRMz5uKeFOHKhZDiNMtDoQhLf4BRyrYAgHdicqGbOfdeuZXm6U0FqNH0oQaz7nr42Qc
+   4a4TQorr2B6OXNxL++mXIAWulqRzWKMqEPv8N+SlxZhJKt/a8MQf5lVGzBlLWrK4hV+CgqcoW6PC
+   M8SlSWP0jBZB8e3479mfqURIUIIu6fgp7Q+WHvROvYqU3DnuV+ip5GXrschRFig9INXLfLkDW689
+   JSvCadMcVG0FnheOdJdyIUkEwmlmE086iG3fuA==;
+Subject: Dark spots and sagging jowls gone in 3 weeks?
+From: Skin_Health <daiabys.32.195982@bettljmd.youtoube.fanahel.biz>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 159.195.232.218
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <gqqqypqmgayzxmemqffmhdfijomase@xymnlw1kefso0lvm2d>
+List-Unsubscribe: <http://globalresource.web.id/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_46045030"
+Date: Thu, 24 Sep 2026 05:08:41 +0000
+Sender: gdlxcnmjiikjootjswdgd@bettljmd.youtoube.fanahel.biz
+
+------=_Part_1_46045030
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_46045030
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#Tbrv=
+MgUNcYXZwWJsaVbELaTabQVTHw&4SLLLCYSsts&273510/1511/uueyymapxt[.]home[.]php?=
+sq=3D32-195982&lk=3D45463-7&page=3D290" style=3D"text-decoration:none; colo=
+r:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>Special Report: Derma Essential</title>
+    <style type=3D"text/css">
+        /* Mobile Optimization */
+        @media only screen and (max-width: 620px) {
+            .main-table {
+                width: 100% !important;
+            }
+
+            .mobile-headline {
+                font-size: 24px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-body {
+                font-size: 16px !important;
+                line-height: 1.6 !important;
+            }
+
+            .btn-cta {
+                width: 100% !important;
+                padding: 16px 15px !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .responsive-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .product-jar-img {
+                width: 220px !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #FFFFFF; -webkit-fo=
+nt-smoothing: antialiased;">
+
+    <!-- Outer Table -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #FFFFFF;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 40px 15px;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"600">
+                    <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"600">
+                    <![endif]-->
+
+                    <!-- Main Container Table -->
+                    <table class=3D"main-table" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FFFFF=
+F;">
+                        <tbody>
+
+                          =20
+
+                            <!-- Headline -->
+                            <tr>
+                                <td style=3D"padding-bottom: 25px;">
+                                    <h1 class=3D"mobile-headline"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 30px; font-weight: normal; color: #111111;=
+ margin: 0; line-height: 1.3;">
+                                        "You Have Aged Too Much": Nicole Ki=
+dman Breaks Silence on Her 19-Year Separation
+                                        =E2=80=94 And the Japanese Skin Sec=
+ret That Restored Her Youth
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Body Content -->
+                            <tr>
+                                <td class=3D"mobile-body"
+                                    style=3D"font-family: Georgia, 'Times N=
+ew Roman', serif; font-size: 17px; color: #333333; line-height: 1.7;">
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        <em>"You have aged too much. I don'=
+t feel attracted to you, and I can't keep this marriage going."</em>
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        Hearing those devastating words aft=
+er 19 years by someone's side shattered
+                                        Nicole Kidman. Looking in the mirro=
+r at deep lines, deflated contours, and tired
+                                        skin, she felt betrayed, angry at t=
+ime, and embarrassed. But instead of turning
+                                        to risky plastic surgeries or synth=
+etic fillers, she uncovered an ancient beauty
+                                        secret that changed everything.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        In a viral TODAY Health broadcast, =
+leading dermatologists broke down the science
+                                        behind an unusual <strong>Japanese =
+skin tea ritual</strong> that rebuilds the
+                                        cellular collagen matrix, erases da=
+rk spots, and lifts sagging facial contours
+                                        naturally.
+                                    </p>
+
+                                    <!-- HERO IMAGE (Main Hook / Video Prev=
+iew) -->
+                                    <div style=3D"margin-bottom: 25px; text=
+-align: center; position: relative;">
+                                        <a href=3D"hxxps://storage[.]google=
+apis[.]com/smalbus/salaminka[.]html#bSplPTKJdCCBrCQrukKdnsTfhGgOLd&4nrwAUFn=
+KBb&273510/1511/hbbvkprfos[.]home[.]php?sq=3D32-195982&lk=3D45463-7&page=3D=
+273" target=3D"_blank"
+                                            style=3D"text-decoration: none;=
+ display: block;">
+                                            <img src=3D"hxxps://i[.]imgur[.=
+]com/hYDQH3Y[.]png"
+                                             alt=3D"Watch Nicole Kidman Sto=
+ry"
+                                             width=3D"100%" class=3D"respon=
+sive-img" style=3D"display: block; max-width: 100%; border: 0px solid #e0e0=
+e0;">
+
+                                            <!-- Play Button Overlay -->
+                                            <div
+                                                style=3D"position: absolute=
+; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; heigh=
+t: 70px; background-color: rgba(255, 80, 60, 0.85); border-radius: 50%; bor=
+der: 3px solid #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                                                <div
+                                                    style=3D"width: 0; heig=
+ht: 0; border-left: 20px solid #ffffff; border-top: 12px solid transparent;=
+ border-bottom: 12px solid transparent; margin: 23px 0 0 28px;">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- AS SEEN ON Section -->
+                                    <div
+                                        style=3D"text-align: center; margin=
+-bottom: 30px; border-bottom: 1px solid #eeeeee; padding-bottom: 25px;">
+                                        <div
+                                            style=3D"color: #888888; font-s=
+ize: 13px; font-weight: bold; letter-spacing: 2px; text-transform: uppercas=
+e; margin-bottom: 10px;">
+                                            AS SEEN ON THE TODAY SHOW
+                                        </div>
+                                    </div>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        "Just 3 weeks into this Japanese se=
+cret and my skin looks like I've been doing
+                                        daily clinical facials," shared Emm=
+a, a viewer. "My dark spots are fading, my
+                                        neck is tighter, and the tired look=
+ under my eyes is completely gone."
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 25px 0;">
+                                        Women in their 50s, 60s, and 70s ar=
+e reporting dramatic turnarounds: skin
+                                        regaining its youthful plumpness, d=
+eep forehead furrows smoothing out, and
+                                        looking 10 to 20 years younger with=
+out expensive lasers or Botox.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 20px 0;">
+                                        You simply pair this simple daily r=
+itual with <strong>Derma Essential</strong> to
+                                        flood skin cells with youth-restori=
+ng nutrients and restore radiant elasticity
+                                        from within.
+                                    </p>
+
+                                    <p style=3D"margin: 0 0 30px 0;">
+                                        Watch the full emotional presentati=
+on below before the cosmetic industry forces
+                                        it offline. This short video reveal=
+s the exact recipe and step-by-step
+                                        instructions.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- PRODUCT BOTTLE / JAR PLACEHOLDER (Centered=
+ directly above bottom CTA) -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 25px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#wwPobNNqkPWqquXCKHBcCkNrkYZ=
+YsT&4HsqZYbvtxL&273510/1511/ttuwsplman[.]home[.]php?sq=3D32-195982&lk=3D454=
+63-7&page=3D140" target=3D"_blank"
+                                                        style=3D"text-decor=
+ation: none; display: inline-block;">
+                                                        <img src=3D"hxxps:/=
+/i[.]imgur[.]com/tmG8Egf[.]png"
+                                                             alt=3D"Derma E=
+ssential Protocol"
+                                                             width=3D"250"
+                                                             class=3D"produ=
+ct-jar-img"
+                                                             style=3D"displ=
+ay: block; width: 250px; max-width: 100%; height: auto; border: none; margi=
+n: 0 auto;">
+                                                    </a>
+                                                    <div
+                                                        style=3D"font-famil=
+y: Arial, sans-serif; font-size: 12px; color: #777777; margin-top: 10px; fo=
+nt-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                                                        Official Derma Esse=
+ntial=E2=84=A2 Youth Protocol
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- BOTTOM CTA Button -->
+                            <tr>
+                                <td align=3D"center" style=3D"padding-botto=
+m: 45px;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center"
+                                                    style=3D"background-col=
+or: #FF503C; border-radius: 3px;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/smalbus/salaminka[.]html#xiXOaCRBXjuHjCzTFiLFoZABhRD=
+nYN&4WZpGlZbTeR&273510/1511/crmetjxwis[.]home[.]php?sq=3D32-195982&lk=3D454=
+63-7&page=3D371" target=3D"_blank" class=3D"btn-cta"
+                                                        style=3D"font-famil=
+y: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-we=
+ight: bold; color: #ffffff; text-decoration: none; padding: 18px 35px; disp=
+lay: inline-block; letter-spacing: 1px; text-transform: uppercase;">
+                                                        CLAIM Derma Essenti=
+al & WATCH THE VIDEO
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Footer Divider -->
+                            <tr>
+                                <td style=3D"border-top: 1px solid #eeeeee;=
+ padding-bottom: 20px;"></td>
+                            </tr>
+
+                            <!-- Footer -->
+                            <tr>
+                                <td align=3D"center"
+                                    style=3D"font-family: 'Helvetica Neue',=
+ Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; line-height=
+: 1.6;">
+                                    You are receiving this email because yo=
+u opted in to receive anti-aging and beauty
+                                    news.<br>
+                                    <a href=3D"hxxps://storage[.]googleapis=
+[.]com/smalbus/salaminka[.]html#wxnpinpaFYWlWDdnTbRwQOKOWyeoUi&5WMSRWTprLf&=
+273510/1511/pygcdcskay[.]home[.]php?sq=3D32-195982&lk=3D45463-7&page=3D857"
+                                        style=3D"color: #999999; text-decor=
+ation: underline;">Unsubscribe from future
+                                        emails</a><br><br>
+                                =C2=A9 Derma Essential Research 2026. All R=
+ights Reserved.
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- EXTRA UNSUBSCRIBE (sunsb) -->
+    <br><br><br><br><center>Unsubscribe to
+    <a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#=
+hxAzyCBPieqOveJLNYlZfkyTDLnIxz&6oEsmvxEjWq&273510/1511/errzzvsudd[.]home[.]=
+php?sq=3D32-195982&lk=3D45463-7&page=3D216">click here</a></center>
+
+</body>
+
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object WIRORTRPUNKYCTTBCNZBDJVQTQJHJGNXXTMLMQGMCCAGZVNWZJOTSQDJCAVO>
+
+Dear HFRXSLPVWNQFTCKRTPAMQK bqupiskzmzyauxkuwdhkns,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is hcqcsztfcabpqgryokvkfxo=
+brejf.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi rxmfdhwuinkidczjbu,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi qxlskeqhdeladkgsrkrnawwy,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: laezyhcfvskwlufxxywgbdpfho
+ Site ID: ebopgpbaoccfbkunbgsenumsn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team IDTWCRJXTBTHPFPUNVPNJK
+
+Powered by AWYPKKYUYPKXRBZDCYRVRS=20
+
+</title>
+
+Dear LYNKWBSZLWHMCMICJNDLRCFZQ xqifqkfzdhciegdtytyippuyow,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is dzpurbbhcvvvaltzzlzrtir=
+ng.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood JNYKGIBGPNVVZIFUCOGZJR,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+EEGHAKGXQXBCVCTQPRHFOGBJDGEWNGTCDKWSMRCLUXQEMZZAWZGSDJCZIKBPYASNCPOYQTYUENO=
+OVBTDXSOSIIGBWVJKGUDUQOJDCUBOFAHPUIEIOCXVVFBCIGEJRRJFCCCLSCNOLTDSZDOVRWPQXA=
+PRAPSBTKBXGTDWAVXOIKHEJZQKBJKWNJRRVPPQWVQOCNDGIVNF
+
+ Hi IAFJYMRSVVNWZEVZASASLW,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+nipnszggarshuifhogzqibnfiyziannzrcxzlwkehjkmsvigujrtudsbcwakjelfyjcvpqwpbau=
+vkcefrmftkfeofdwrbmfqzmwekmwbekwizbsorfcjldxwrdzwuvcfhabnuqwphzgbhirviskekh=
+ynskhambdlhurexkwowuiaqyagsqpczgwvbshslgbkoplivknd
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi IMKP914DYBL05LRGAKIAGANIW,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team SXDEBOHZVNZKECEFQCHDQJ
+Powered by CIXQNOGQBCBKDLTSDZMFOA
+
+Login Name: NHWSPRYWNLIZHVGREKOEGM
+Password: CHAQUDGXNHMMTBEOKNRIWV
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: ORP
+Password: TOFKJDESCDTBGBHJUDUQEL
+
+	TA65M13NTMTG7AAJDB AM65SPGJKJZ0PZF D4ZUOT59QKW9K ZSPOQ9728NY6GEVHLQ PYZCFP=
+RE26H4MGB DLNACTYGY8OFY DFCALZJTRKP51393TH=20
+	TRNU8C161TCBMANVD4 UZV7ANB57ON85JL VDKBP32BIP3U2 CHTFBZZNN9LAY9PSII TZHYYK=
+9CHQESHTA 7A74QELT0ABV2 LD83UX5MEQ2SNV9BZO=20
+	ETJ5E4537JF5P8Q PXQ4B8U3G0VA8 IRHRO2S2VRNN5S1B16 CSUVFRRPX76BYP1 R6QB0M2OI=
+62RT IBQN8E1WOSJX61Y3ML 6YJOQLPDNKXCLMI
+	5Y0VNZ6ETNWPY 41F99N0UW4EG30R1KN ELO7M0L6EXERCCO HZCBZSRH7TV4C 0RN7DOOOCBJ=
+EAHMM6Z 5QDD3COFZ2NKDHH V19TGK738D3FU=20
+	Q4DLNFHY8OO1QVOH17 XZU4HLA2N77V836 6QXCHYMRZ0S0K QM6GE8LO3B2Y640DP3 CV7HYE=
+E97G2CTHV EMAMP8ZHJLXGS XYXIXL1P8IT0XZ4MZ4=20
+	TP523Q3HRUZQCE6 C22S6BDV9M735 TDR0FGTX6XSKBHB0JT QBE2BNCP36IFQJU N1WTHHYQ7=
+WWG2 46T3K815MR4XNFPEBJ B0HFPNJI9IBXV90=20
+	K24OLD43DES0L RHH8HVK3R2H4YMQI86 E4BR40QVQFS8UYL 69LM9UTNLR3BN PXF2SRV91Y6=
+JNSDN2Q Z534RGB2LQ8KZMF 5VGGUQWD2PFZA=20
+	77Y0NG1I7B5LDFKNGP 3EJQED25O1597GE P7F6MY6V4M633 UOZOB9406F2WWPV79T 0SQGO0=
+UF7QJBRQD Y0IIPLMFTYQ2C Y8ZDA017INTFX0Z8EC=20
+	F7MYVVJPEYL476I GKMYXF0KL5ZO6 VXF82DBIJGL3VLM06A AUII349KMIL9LGU ZV93MKUKI=
+1GB9 ANONYFLGULMPL06WGT ST9I23TTRIEWXK1=20
+	7CYRWR0N0K0GY JDCYYTZQSG0HMGNNM4 MY3NRLTW5UYP0QO V1B12I2IWJGNW 7QP86IVSEU1=
+GY8HBB6 RHDR4D9CR5ZEDJ1 OIMINMCAEIK10=20
+	UH9D6AON9QUDEUB477 WFSQD2B50AOAISP A46KD98JJSQAJ FI8BV2IK5U6N9IK5QB EFDJI7=
+L8NQV5553 WBTXFCH3BPK7E K9PHXRRN62D6Z9XJLG=20
+	JHVQMEJV3M1JVRC FY6XSP2WZVU1L BNNNDUNQ28Z8UAZ7P9 X5KG25RRVKKGKD1 I9YD20DFW=
+32YC F8SOA6VZJD8A0AF66P 20X6TIX2FQ47266=20
+	E81RXVQO9WUIW FHJWDG66FK6WHXDAAI A6YL9AJNG1T5ETD K2GISCVHCU5VT 2IUGRE81K7Z=
+YR8XFXH JSLIUUMOUKJQRXU IU7423QQJU8EB=20
+	87MPXE89FPJ61FBU87 UK6RTFBGOD94D1L T47B9M52PZ9OR FS6HL5JXN4X6GI2JEU VFJFDR=
+YJIZ7P6DC H38QT0B10OKUZ 0FRGPBN1KR7SYN2OZW=20
+	N6GQO5ULF8FWVPV 8GPI4LQ9XATUU EXDWGN3FVH8408LQKA KTJLV37HAWYEVD2 NK7Q4MWNN=
+HLA5 BB91RGUI2JI2ZI10KM DRKQEVT8R3Y7S0K=20
+	M9SAKK4AJP0PM 56FKW12KK5N0J4VCGO SDOHT7U1QYEPCOV QEU7EXSAZHHNN XB3X5MBDF9K=
+EN8MJ47 9PNGRQM5ITK0DDG APHHLZ9BQWPDM=20
+	J8HGY9WH29E9RGP0XK PE1QX5QSTUWS6CF PYU7SIU2N8A2D IKQ0P9TE775KFU9BBJ FK513I=
+VD8N1YIO3 N4LVN885UP7IB GD7MRP2LOO8VHE4HER=20
+	4OYH1P3A7CEKE6M 0BOYY72CBL91L 4SM3K8GX2AYVW9NDU5 P7YQAA0MZIMS7E6 BROD25Z46=
+GWC4 MXWC5H0UHJO42U5YFC J18TBL67M7ZQR66=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+FXINYOFIKKTLXACABZFDZITPSVGYVEWLTUKGTTUPGSDZRQYAUCXAHERVODIYTDMNLAFNBFZBPAM=
+ECJOQVSXSVVRXQRGPODOKJUABBHUDSNMHLRPAXLUEOAGDZEKHAYEUPNMBBWIIFENIFMAJWSFAHR=
+QYLCNYCRJZFJYOFDKBDAIMOCOCPWTRTAXLROTTIOPPWNMEYKZCJ
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to KRMFSOUYLDDLMRTJIKQCX=
+SHZOYKTTKBSOXLDYYYPNOLWYPNQOCJUENVVSTQYCKMRAWBBVIKJVZPVEFTGVENLSXZACJJUQCII=
+AMJOWMNWJOIRDNKTZIBTIMYFWHUGTNFXUSWYEMYZYABVMDEHSQGFUFGOFXEYSHPVJUEWNOXUHJB=
+VPPPMGPTKXWYTANSTWDESEKRUTYAC roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department CDLHJEVHIDATCXJXRVNSWJCQKJMCPAUETLFRCMKEHYLAONGN=
+CWYVUZJKFLXTLYGJXMXHUXDOQSFUYVWIPRCVOSRRPLMVMFMKLYUOAAKEZPPKXQUEYJEIOFAOVCW=
+ORMJAKERDWDCBOWVRWPHUDZEKMWPRMXXEIPKBNCRSPFPBDHALTSBLUPUYSWJDJYJYDUYILLAPPI=
+XUU to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation KIWHFLAVLKFFFNV=
+EHCTXGKYUNRBWADRJPJANSWOXGNOVYKZMCGMHGCBCHCVIONPLQOEDNJCGGBVCIXOGQHHKQHIRCM=
+OSDQIAIKLABPIBNSXUZWEHVQNCGMSFPYNPMXQVSNRBNYLZJLBROPICPCCICAORQDFUOANEWFAWN=
+ZYRBMJZGBTJMFXKFFVAJNOLBSRSLFKYDHWWJ development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will EKJKEEJGNWBFCFNFRARYIQEVKUXNRLFAGOOVVTJUUNIEESWGCGMPMYHTE=
+TNFYUTORKWNCTJYRCTPGQEKQZKVMMGWWOHIGZUIFTOLPTHDTSNLCSXNSHEQSJHPKLKKKIUGPPYH=
+FSLEKWVMPPRMJRHMZQRYQUEJTTAAVBBRPFJRVTFVLTLAMBFIZCBJHUJCPSRWIFQHRAZSNLXFRIX=
+IYLTZRHQFDTTOPZEBBPKNSTBCZCQTEUWAWGOXVYKOKIYCXMPAIYCZMCHKINZUMQOZMBDXUMUPEO=
+HLGMTRDEWZKHIUVGJZRYBRLUDXODGSHQXWCVTNRGXHSRPGBRZQREESOTXRUXHOAMNMHBRLDKWCG=
+UVGNEUCQVAXPXSBGRQDYTHXMDOLOTJNCMIJCFPIYVRI  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support SRGIJRZ=
+BTQKTCBEFIKZMHQFHFGPJQJKULSPRYRUOUXZWFGWIAHQRAGVUQADSFJAYPEQMENDBEXUOOALSZA=
+PQJJMFJUKCSLDTERMNBLIVTLGIAUFESWPRWFUDUSTLAQEPWXLYYCIWXOGUCLZJHIVRXSCRNXJCW=
+XOJYXKHRWSMVJZYSYOXAMGVPHIVJDDYUYDNBHASKSYK  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_46045030
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_46045030
+
+
+
+------=_Part_1_46045030--

@@ -1,0 +1,1094 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1790390867; cv=none;
+        d=google.com; s=arc-20260327;
+        b=s28YxuvYzuHXf/ZZhvDVBsE3j5ZbQfRPL85j0OjFU+gMHyvK57NdznJaCh9GbI1eRX
+         7LDtFQwmf2Vj0UvGjBk6hHu1njXxdqdsb2GxwUCE3qg70HhI6UlGqHmGpPJA9CdwLD3e
+         jVKcDdkfC1hGcGEEOZ5ISaFSmkky1qiZIDhQZHHHEbIJqOqYLkU1kPTPd4WUVvWraSYl
+         rWFrwTsw0G41C5TbRznHQ1tRujMB/6eckDUivLYWN6MSEDceihj1CPA+njJYOTIcG34M
+         5NLHEMdNRs5xAPoXhT2s5gmz58z9iBLNbvg1XfHWmZ6VtbrGv0bvaDXMoVhuK40POUhZ
+         WjCA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=4/IBpCZTYNAtiZLzn8YObeOpPFvnq3zrmOx0cxh2nNQ=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=Zb6x1OTkn7MQ4oADJOaAoKkk70qYtkv5TrtfM3N5ZED4vJjcHYmGqmJE37J4GZEkWf
+         uCkpaCPrU5HtlY3HvxcQA7Am5AhEGSp2uCB1XwmsUeHNIg/lQt+JER1l+MKToR3OJRzp
+         JXQF2PrvNXvcOxlwLwSqH8sk7GOBvKHqIRffnJxmMZsSzAHqGLO7w146+6A6bX1PZsxz
+         mXuz0sks31teF5IijGh69GQdoGwTV308EadXFJw8byH5O3vGGoHTNN83Ju5+x6PLTBU5
+         r9HKm+3SrNRIFmGdwJwxbYgA0XZMBwHdg+GMsmARLnqMhZbURqHLVtG6uPZbHXnhdwXJ
+         Yffw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ubhxcqyo.uudgi.larimir.me header.s=smtp
+ header.b=XkXL8VQA;
+       spf=pass (google.com: domain of bzcfwoshghiqp@uudgi.larimir.me
+ designates 107.172.216.143 as permitted sender)
+ smtp.mailfrom=bzcfwoshghiqp@uudgi.larimir.me
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ubhxcqyo.uudgi.larimir.me header.s=smtp
+ header.b=XkXL8VQA;
+       spf=pass (google.com: domain of bzcfwoshghiqp@uudgi.larimir.me
+ designates 107.172.216.143 as permitted sender)
+ smtp.mailfrom=bzcfwoshghiqp@uudgi.larimir.me
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=ubhxcqyo.uudgi.larimir.me;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=uqvilbvzfzwwpqlujfjrq@ubhxcqyo.uudgi.larimir.me;
+ bh=fXbdi/f6lM3XrVZMuLgLDoabYzE=;
+ b=XkXL8VQAwgN4gJ/+dcDQAPP5z+7AQw7velIF1kOaDucsUvpTpMhTMxiEES8Mp5shnS7dxHOKUyMp
+   zzxHrva8yVe35ruAVTm8K+8v9ZD5zTaLouyOfGrpOnZWDRL7HD76VkPLqUV0/yoja19PH3E5Ta7v
+   FbjfMIcUorAb1aPb38z8Ct7sSvy03ZNLTBEWrYLp8dw+qRsJyuN/LhdkhuCOfAKjS9vwVSL3x/W4
+   ghQbU6WhuWK5PMmIoNy94Ee+vaPQXfzbzMB2XzpW4zMCfxf9iIs65Z9Co63M08RsiQzYIhWKdxfG
+   mKkd85YDJfWThbeMLtCKURJtZaN4wqbJBj0wow==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=ubhxcqyo.uudgi.larimir.me;
+ b=KnX0M/CutiMQdor3QRIHPAX4vhvk6mGu8DoP42lhkPN1+WGYaktFJNKfGEIc8Jc1Ncw/qHJPSwVP
+   pyHb8CpMGDm/4FEZFf9mjsr9gI137MK5CelTHraP2qk3QhA6bfTR9bsa1h5LhGT6CralrKzYPeJw
+   GgP6s7hWFZFtjO6TOxR+dxPS+Mec+ThWArTppMcSfv4VwWlSOIQ/LDPsHC87f7OdcJlnttUQOiOj
+   JRBrUU1hq0kYtHpY5qQ9/HgjLq2scyYLxeuinaM4wBnuLww47cvmNugOwoMbJd/9Csfu7QuVsa5P
+   fKsOOkwSYmwIDFPMuR7vHPZgXGdGYnuI7JP9gA==;
+Subject: Stop taking Flomax: 3 kitchen ingredients trigger a firehose stream 
+From: Prostate <qmqjuaq.32.195982@ubhxcqyo.uudgi.larimir.me>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 107.172.216.143
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <ukqubqnurxhjghzqqdkkufxtqekypv@14a653402j11zs3iue>
+List-Unsubscribe: <http://hostrealms.my.id/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_53723717"
+Date: Sat, 26 Sep 2026 02:47:19 +0000
+Sender: uqvilbvzfzwwpqlujfjrq@ubhxcqyo.uudgi.larimir.me
+
+------=_Part_1_53723717
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_53723717
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/worklinks/evrtinggood[.]html#=
+GgciQuxzHZZuwOKPXVUJkGWSCWdApl&4ofoxRwYZbP&275159/1526/olwhrpfljz[.]home[.]=
+php?sq=3D32-195982&lk=3D44739-5&page=3D372" style=3D"text-decoration:none; =
+color:black">
+
+<!DOCTYPE html>
+<html xmlns=3D"hxxp://www[.]w3[.]org/1999/xhtml" lang=3D"en">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <title>Health Executive Intelligence Brief</title>
+    <style type=3D"text/css">
+        /* Client-Specific Resets */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #EFECE6;
+            font-family: Georgia, 'Times New Roman', serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Mobile Optimization */
+        @media only screen and (max-width: 620px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .pad {
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .paper-h {
+                font-size: 25px !important;
+                line-height: 1.25 !important;
+            }
+
+            .paper-body {
+                font-size: 16px !important;
+                line-height: 1.65 !important;
+            }
+
+            .paper-btn {
+                width: 100% !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+
+            .footer-col {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body style=3D"margin: 0; padding: 0; background-color: #EFECE6;">
+
+    <!-- Hidden Preheader -->
+    <div
+        style=3D"display: none; font-size: 1px; color: #EFECE6; line-height=
+: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-h=
+ide: all;">
+        Top experts reveal the $3 tomato skin trick shrinking enlarged pros=
+tates and restoring strong flow...
+        &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &sh=
+y; &#847; &zwnj; &nbsp; &#8199; &shy;
+    </div>
+
+    <!-- Outer Canvas Wrapper -->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+style=3D"background-color: #EFECE6;">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"padding: 30px 10px;">
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" width=3D"600">
+                    <tr>
+                    <td align=3D"center" valign=3D"top" width=3D"600">
+                    <![endif]-->
+
+                    <!-- Main Newspaper Card -->
+                    <table class=3D"container" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%"
+                        style=3D"max-width: 600px; background-color: #FCFAF=
+6; border: 1px solid #D5CEBE; border-radius: 2px; overflow: hidden; box-sha=
+dow: 0 4px 12px rgba(0,0,0,0.05);">
+                        <tbody>
+
+                            <!-- Classical Newspaper Masthead (No Logo - Cl=
+ean Text) -->
+                            <tr>
+                                <td class=3D"pad"
+                                    style=3D"padding: 24px 30px 14px 30px; =
+text-align: center; border-bottom: 3px double #2D3748;">
+
+                                    <!-- Kicker -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 2px; te=
+xt-transform: uppercase; color: #64748B; margin-bottom: 10px;">
+                                        SPECIAL EDITION =E2=80=A2 MEN'S HEA=
+LTH INTELLIGENCE BRIEF
+                                    </div>
+
+                                    <!-- Headline Wordmark -->
+                                    <div
+                                        style=3D"font-family: 'Times New Ro=
+man', Georgia, serif; font-size: 26px; font-weight: bold; color: #111111; l=
+etter-spacing: 1.5px; text-transform: uppercase;">
+                                        HEALTH
+                                    </div>
+
+                                    <!-- Date & Meta Divider -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 11px; color: #718096; margin-top: 12px; border-=
+top: 1px solid #E2E8F0; padding-top: 8px;">
+                                        Thursday, September 24, 2026 =E2=80=
+=A2 Urological Science Column
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Article Body -->
+                            <tr>
+                                <td class=3D"pad" style=3D"padding: 30px 32=
+px 20px 32px;">
+
+                                    <!-- Headline -->
+                                    <h1 class=3D"paper-h"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 29px; font-weight: bold; color: #111111; m=
+argin: 0 0 14px 0; line-height: 1.25; text-align: left;">
+                                        Top Experts Reveal the Shockingly S=
+imple Fix That Ends Prostate Problems for
+                                        Good =E2=80=94 The $3 Tomato Skin T=
+rick
+                                    </h1>
+
+                                    <!-- Byline -->
+                                    <div
+                                        style=3D"font-family: Arial, Helvet=
+ica, sans-serif; font-size: 12px; color: #718096; margin-bottom: 24px; font=
+-style: italic; border-bottom: 1px solid #EAE5D9; padding-bottom: 12px;">
+                                        An investigative report on bladder =
+urgency &amp; prostate enlargement =E2=80=A2 Verified
+                                        Findings
+                                    </div>
+
+                                    <!-- Body Copy with Drop Cap -->
+                                    <div class=3D"paper-body"
+                                        style=3D"font-family: Georgia, 'Tim=
+es New Roman', serif; font-size: 17px; color: #2D3748; line-height: 1.7;">
+
+                                        <p style=3D"margin: 0 0 20px 0;">
+                                            <span style=3D"float: left; fon=
+t-size: 48px; line-height: 40px; padding-top: 4px; padding-right: 10px; fon=
+t-family: Georgia, serif; color: #8B0000; font-weight: bold;">A</span>n
+                                            incredible discovery has reveal=
+ed that prostate swelling, painful dribbling,
+                                            and waking up 4 to 5 times a ni=
+ght to pee are not caused by aging, genetics,
+                                            or changing hormone levels.
+                                        </p>
+
+                                        <p style=3D"margin: 0 0 22px 0;">
+                                            According to leading researcher=
+s, prostate enlargement is driven by an
+                                            invisible environmental invader=
+ entering the body through contaminated tap
+                                            water. Clinical specialists hav=
+e uncovered a <a href=3D"hxxps://storage[.]googleapis[.]com/worklinks/evrti=
+nggood[.]html#GYrcPGauGvZmyOUkzPpmaafKCrVTzq&4rNduvRmnGT&275159/1526/hdoxqx=
+lktk[.]home[.]php?sq=3D32-195982&lk=3D44739-5&page=3D042"
+                                                target=3D"_blank"
+                                                style=3D"color: #8B0000; te=
+xt-decoration: underline; font-weight: bold;">$3
+                                                tomato skin morning protoco=
+l</a> that eliminates this hidden culprit and
+                                            shrinks inflamed prostate tissu=
+e back to the size of a kernel of corn.
+                                        </p>
+
+                                        <!-- Clean Framed Image Unit -->
+                                        <div
+                                            style=3D"margin: 0 0 25px 0; te=
+xt-align: center; border: 1px solid #D5CEBE; padding: 4px; background-color=
+: #ffffff;">
+                                            <a href=3D"hxxps://storage[.]go=
+ogleapis[.]com/worklinks/evrtinggood[.]html#RFjWoCZFyplVqXKgdgtkwmWGgQZdNK&=
+4dOfHfWgAMV&275159/1526/omxrmveato[.]home[.]php?sq=3D32-195982&lk=3D44739-5=
+&page=3D948" target=3D"_blank"
+                                                style=3D"display: block; te=
+xt-decoration: none;">
+                                                <img src=3D"hxxps://i[.]img=
+ur[.]com/ZJlN1uV[.]png"
+                                                     alt=3D""
+                                                     width=3D"520"
+                                                     style=3D"display: bloc=
+k; width: 100%; height: auto; border: 0; margin: 0 auto;">
+                                            </a>
+                                        </div>
+
+                                        <!-- Editorial Boxed Quote -->
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%"
+                                            style=3D"border-top: 1px solid =
+#D5CEBE; border-bottom: 1px solid #D5CEBE; margin-bottom: 24px; background-=
+color: #F8F5EE;">
+                                            <tr>
+                                                <td style=3D"padding: 16px =
+14px; text-align: center;">
+                                                    <p
+                                                        style=3D"margin: 0;=
+ font-family: Georgia, serif; font-size: 15px; font-style: italic; color: #=
+8B0000; line-height: 1.6;">
+                                                        "I spent years free=
+zing at crowded stadium urinals, suffocating
+                                                        from weak, agonizin=
+g flow. This 3-ingredient tomato skin trick
+                                                        shrank my prostate =
+in weeks and restored a full, effortless
+                                                        stream."
+                                                    </p>
+                                                    <div
+                                                        style=3D"font-famil=
+y: Arial, sans-serif; font-size: 11px; font-weight: bold; color: #718096; m=
+argin-top: 6px; text-transform: uppercase;">
+                                                        =E2=80=94 Verified =
+Case History (Age 58)
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <p style=3D"margin: 0 0 22px 0;">
+                                            You don't need to spend thousan=
+ds on synthetic prescription pills or risk
+                                            invasive procedures that carry =
+severe threats of permanent incontinence and
+                                            impotence.
+                                        </p>
+
+                                        <p style=3D"margin: 0 0 22px 0;">
+                                            You simply pair this simple dai=
+ly ritual with <strong>FlowStrong</strong> to
+                                            flush out prostate toxins, reli=
+eve urinary urgency, and empty your bladder
+                                            completely on the first try.
+                                        </p>
+
+                                        <p style=3D"margin: 0 0 28px 0;">
+                                            <a href=3D"hxxps://storage[.]go=
+ogleapis[.]com/worklinks/evrtinggood[.]html#PRYVYTvgkCbBsPUeZzCoUaObaPeJgy&=
+4BuwmPRYKee&275159/1526/wlrhdyzajl[.]home[.]php?sq=3D32-195982&lk=3D44739-5=
+&page=3D595" target=3D"_blank"
+                                                style=3D"color: #8B0000; te=
+xt-decoration: underline; font-weight: bold;">Watch
+                                                the unedited presentation b=
+elow</a> before increasing pharmaceutical
+                                            pressure forces this video offl=
+ine.
+                                        </p>
+
+                                    </div>
+
+                                    <!-- Conservative Newspaper CTA -->
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%"
+                                        style=3D"margin-bottom: 28px;">
+                                        <tbody>
+                                            <tr>
+                                                <td align=3D"center">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/worklinks/evrtinggood[.]html#ZRMUKKPlVMbWwBfclNxFaOv=
+ydnwINz&4BaaXCBZrpi&275159/1526/gqlktvjtts[.]home[.]php?sq=3D32-195982&lk=
+=3D44739-5&page=3D788" target=3D"_blank" class=3D"paper-btn"
+                                                        style=3D"background=
+-color: #8B0000; color: #ffffff; font-family: Arial, Helvetica, sans-serif;=
+ font-size: 16px; font-weight: bold; text-decoration: none; padding: 16px 3=
+6px; border-radius: 2px; display: inline-block; letter-spacing: 0.5px; text=
+-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+                                                        Watch The Full Pros=
+tate Fix &gt;&gt;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                            <!-- Classical Newspaper Footer -->
+                            <tr>
+                                <td
+                                    style=3D"background-color: #1A202C; bor=
+der-top: 1px solid #D5CEBE; padding: 25px 30px; color: #CBD5E0;">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"footer-col" va=
+lign=3D"middle"
+                                                    style=3D"font-family: G=
+eorgia, serif; font-size: 16px; font-weight: bold; color: #ffffff; text-tra=
+nsform: uppercase; letter-spacing: 1px;">
+                                                    HEALTH =E2=80=A2 FLOWST=
+RONG RESEARCH
+                                                </td>
+                                                <td class=3D"footer-col" va=
+lign=3D"middle"
+                                                    style=3D"padding-left: =
+12px; font-family: Arial, sans-serif; text-align: right;">
+                                                    <div
+                                                        style=3D"font-size:=
+ 11px; color: #A0AEC0; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Urological Health D=
+ispatch
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Divider Line -->
+                                            <tr>
+                                                <td colspan=3D"2"
+                                                    style=3D"border-top: 1p=
+x solid #2D3748; padding-top: 14px;"></td>
+                                            </tr>
+
+                                            <!-- Legal Navigation & Unsubsc=
+ribe -->
+                                            <tr>
+                                                <td colspan=3D"2" align=3D"=
+center"
+                                                    style=3D"font-family: A=
+rial, sans-serif; font-size: 11px; color: #A0AEC0; line-height: 1.6;">
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/worklinks/evrtinggood[.]html#ccKizMSYGwjBkgHBlrCAVXN=
+wVvXjoq&4hpkkuHSnll&275159/1526/xyoyooelpk[.]home[.]php?sq=3D32-195982&lk=
+=3D44739-5&page=3D135" target=3D"_blank"
+                                                        style=3D"color: #FF=
+FFFF; text-decoration: none; font-weight: bold;">Privacy
+                                                        Policy</a> &nbsp;|&=
+nbsp;
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/worklinks/evrtinggood[.]html#echtUKIxRDBsVXyfTVjwlKv=
+EyIlgMZ&4FYfAIIXcKN&275159/1526/qpnrxhxrnc[.]home[.]php?sq=3D32-195982&lk=
+=3D44739-5&page=3D166" target=3D"_blank"
+                                                        style=3D"color: #FF=
+FFFF; text-decoration: none; font-weight: bold;">Terms
+                                                        of Use</a> &nbsp;|&=
+nbsp;
+                                                    <a href=3D"hxxps://stor=
+age[.]googleapis[.]com/worklinks/evrtinggood[.]html#JIrUfdTbchpMqhbjDmYPpOj=
+PivJKEr&5rHUUXPWKBQ&275159/1526/yzyexruqdb[.]home[.]php?sq=3D32-195982&lk=
+=3D44739-5&page=3D277" target=3D"_blank"
+                                                        style=3D"color: #FC=
+8181; text-decoration: underline; font-weight: bold;">Unsubscribe</a>
+                                                    <br><br>
+                                                    =C2=A9 2026 FlowStrong.=
+ All rights reserved. BuyGoods is the retailer. Statements have not been ev=
+aluated by the FDA.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+    </a>
+</a><br>
+<html>
+<body>
+<center>             =20
+<center>
+<table width=3D"600" style=3D"text-align:center">
+<tr width=3D"600" style=3D"text-align:center">
+<td style=3D"font-family:Trebuchet MS, Geneva, sans-serif; font-size:10px; =
+text-align:center; color:#aaaaaa;" width=3D"600" style=3D"text-align:center=
+">
+<p>
+  To Unsubscribe Click=20
+<a href=3D"hxxps://storage[.]googleapis[.]com/worklinks/evrtinggood[.]html#=
+UERZuBwCSfDxHomYICFaDEhJHEDyYT&6eQfboOZNhK&275159/1526/nnvtgwdalz[.]home[.]=
+php?sq=3D32-195982&lk=3D44739-5&page=3D868">Here</a><br>
+ </center></p></td></tr></table>
+ </a></a>
+<html>
+</center>        =20
+</center> =20
+</center>
+</body>
+</html>
+ =20
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object KXLVBYNJDVHIRZXredactedZOHSPWPAFJIEJZNMAFWTGPNEBPOEMEKPCSZTZCGTQL>
+
+Dear KXVAOODFAQQZIOCYRCPHPF wgbiybaifrppeldnufxxfc,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is npnmjwohhqeahsvjixrytdl=
+towmj.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi yxufwqwwiyaguftshv,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi dbusnalgyrkpwansipexzfgx,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: kpyaelkkjqrtygmxditizehigs
+ Site ID: kwpqzbqxqimgregvlzmelkphl
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team RLLAMJSFWLQPSSYYWSGGMU
+
+Powered by FTOCZYJMTJMIUEXIWKMRFL=20
+
+</title>
+
+Dear SRHYRMFVQVBPSTJECJGCYWXMN tntnsxsmrykwwbreygdwcapqkl,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is lxjzjvzvuvikhinbtkxmxuc=
+gj.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood VJSDFFAIDRASOAMJUQONMG,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+QTJFOLVOJJVQPVZTZIUSBAEFGFPBGZCPZKWCGWFEXLTOJQDIEMIHBJHNHQPVAOSPYAQPBRJUEKW=
+YVGGJHMFJNNWYQQPYWFHPIPMPEGGPSBXBAKSGFSAOIQWLRNYVOHMPYPQMQZEWJYPWRQRCGJEATN=
+LVOKVYKCENCSPVCMNEERKRTVOLUBSRPRKKOVAGSRTUXLHTXIDE
+
+ Hi MKDSPFOVHFWAVQJNVDSEFJ,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+nhcrfruwgzdccfyqgcfwdpbityegdyiwypdbrsfzythamrenwvqdtoykbpamvyhaecgbnvdoaty=
+roudimyfadihembnkkqzsegomqdcezxtrqkbwsqltbadlprzxxozlucnjllmjdoycigzcbjvqfr=
+qljzjtifceauqhgkgusrudgcouogibodwglahttlxwbukhaosh
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi UKFWJ2LCE7IXHAHUI66EB1N2K,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team HIIRWENKALKGCJXGQIMRLI
+Powered by UZKVPYDVPOIROKEUSQFIZM
+
+Login Name: STINQACUSWUOHTKAYNGGEN
+Password: NPUWZCLXBXIIWUKWGMDDHU
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: VFT
+Password: EWQQICOVLQONBHGBHDLDOS
+
+	VIFTNH8DXNW5JCG61M 836U7LSHT38674W YEWHEEFMU41R6 9BP5CQ8PI1UMNR5NWP Z57PAY=
+C6WZUFXG8 O43J4DCF39LSA X44HJ6NQFERTMZI6FW=20
+	NNP139W8NRTAIJBR7C 7YJIFISH2FPCZF5 L6ANEHJYA8I9C RNIKNU7F4G7DT96ERJ YE38F2=
+6YU7RLTPX Z0T064BF85C36 OXDVODREGMKS8ZYM44=20
+	BKSH7NAZ09BAREJ 55OSRI95ED5RL MO35WNTHEZH70TOSG4 S2OXD26TL5NA66K XYFKGFV6A=
+R7G4 TOS4DCOFHVZBX0W1Q3 61LX4J5AJH0ILH3
+	VLE6I3F80Q97D LN41HNWWEYBIM9SZKL YMBEPUYL44BXRWX PE3L672G26PHN W5AH7IDCJ69=
+UBPW2KL 3RKEA3JD112XL0K YUONZ2D10YZ8K=20
+	G4WW4OUI4IHFPOUML6 GK0RGT0PARHJFAU 24BQHA3B14NV5 G56UG61SN21AOLQUAA NBDO2T=
+3YNF7QNW0 WNWUP1EODTNS9 WM9OCKZPMH8IRSAQV4=20
+	OXM4UXOTMLHLQTL 0ITACUOTIGKPJ 66THVLJBFVHTY1M743 PMGHJV219AAZX32 95V4RWQ8S=
+TZAT 0I5EUEVBZD1UY6A12R CRWOYHE5QOGW9NS=20
+	VJONSESK2PCC3 YT9NN5108DQH0UEUY6 XOVSYP184H33E0E 86A3RMU24GGZ2 2FI3T8RTMNI=
+11BG7W3 7EVCVJFBPYLVMEN NLXIYCCY634BZ=20
+	0V9KK81SWDYFJO15U1 U1ZMPUAE5A3LN59 JL6MBL3ZUH1IX BT4L7CBO6Z3L9LHHWL 8RKZCW=
+UZUY6HY7S K9M7P2Q3LJ779 SNRK17F55YZET9DJ2R=20
+	KE0FK0Y8QQBW9X4 1MF5VOZUMQIQI TWTRW9Q7P16502PQ8V 4YH1T0VVXZPBP9S X2XLT5AQK=
+YGJT HLSXGO5346GVBQU24G 95KWH51W4EB95P6=20
+	LTKHN3MG5XLOJ WHWUQ3TKLG7O9622JV V7NHQVKT3WJMZ0J T23WHO31H7N8P 903XB0JKNEB=
+VEV91U1 3W0R9SGSYCYW8AW BIJG726ZYT4JC=20
+	3DIP01B1UXAPMJVYNT SUXZCOXW4HKIBFY YAKNXPDN7ZE5T J85GTQXYQWHNSGRRY7 XLF7XL=
+K2PDAPRER ALMEV20ZADN3Q UHVDQHQ1ST43EIT1XY=20
+	PJOG90JHKOWNQBR TEH0YR6PV4EP9 383Y6FCQAHJINAGN9W O7D1US3KVZ35T8S DNYYZP8VT=
+F6SN 9ONPSORWKQRXITO79O GHBTULLRC9LKI9X=20
+	CCRQJK38IDX2M TWKVZI9QDORT9Q8HKG LJQX3QC6RAJCTPB Y70UUVQWIZHDA Q29XILCS33K=
+KYNHORY POMC5FN4MKLZOO6 BCTHCETTTA4WM=20
+	YWJJJNVCXWJE94QU8L J8C6UWJC8QFCY6O 1ELH732GEIMW2 B2M7Y4OICH4LNTW7GO S1ZX94=
+LRQWWRETO U24W2PVUUJ0YP LAJJF7SY8EJTAD1DUM=20
+	KI8H1SN7BJTU4SE Y3BEKQOFVAN4T CW22WK254R8HHAQRB7 9PG0HW8DK3N5EBQ E6VPVOCCD=
+CCFU J1ORBP0OZ6QW1VOWNW WJB4LJUJDJE0NSD=20
+	379TSD2UQGHC9 CCAMB15V0WBZHH30QH 11YBKFLJPC38TLN NXHH1A6QI8IGL DAN1JVM0WCG=
+AEO9C7I HVJ5GEE9NRNLZW8 774BXK4XN3E8W=20
+	A0W0VSYUFFEQRG52CR 6JOBBNTCC3MSYNN 4FG8M0QR5COS9 W9I339ZT7VJ9TXIS4O NMVP0U=
+N9NGMQ6S5 YY7HL9QDSICRW XU128ONXRXLTMSR1FK=20
+	9NR2DGFRXF2NQM0 J98O6N4QNJ4E9 7HFDL5FNIWWZ8OVG4E Y3JZCA4IPL5QJ5W 4A4YIVVN4=
+57KL J6GM3KKGUJUAM2X0EU A4JOFM19J8NBU61=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+GXMJROJJKKHUCKXJTMDRZETPBSJPWWORTSOXGEUFMEDTXTKATXCZNPHDMEHRWOPNVYBXURZXJJO=
+WVBXQXDKORVNLOEDZZQLBYDMNWDMVQZRZCNLGXERXFZDWMDJAGJRQWLLYIBSKZIFQMKYBYNOEDM=
+AFMLTCSEFODWDVCFEINQIRDDAPBVSOXIYKBQUTLKIDGBRKGLMFW
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to KGVLWEDPLZLOHTWXNAHEQ=
+ROMXUMRITLBCNXHRZNEVTMBIOSRKZYUXCGJTTUIEAJYUFCVXNVAEFMPZYRVVOYKDNGXKZKYCDCR=
+AUIKEAPDMEPDBFHPOVHTLMGAEZMLAXBNDLOGQGWNUBHSYFAXDSKNPLJMJEBPGMUTGRONTCAOZYA=
+MNRYBSTKUDCJUPUYUMJLSJZJHBCVI roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department OFZKXWUFDVWFBYOMICGOGZTJWSEARUVHNMIMNBUDXWIYRRAA=
+EJMDVSISUJNGKPXCSVSHXEORJQBEIFKGXGDTTSENYADFCJYASGCFOZNUHKLAICSEOEKEJHHZIMH=
+FBSYWTXAZYDASAZITCBZWPKXUPQGALFNCILAOPDTCPOCHTBTAEMUMWOGHAOMLUHKPGSQYNVDUCM=
+ALJ to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation XFQGXJZGSBGVETU=
+JWTHAPKCSLEOVYKOXRXDZPAXYGHWPOTFTPJJIXVBJUUWGSBTTLNWNQHOLQHNXDGTXMHZNIULWZQ=
+JPYTVRCVRKPBHGWPCAQHNTPQQZTONUOYUKAHWQJJEUMRKIMHMZEPPWHTCLIIALCJBGUNGXAMUES=
+LCCWUDRTHQGEPLOYGKQXXOZPUXDIFGWMSRAK development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will GXQSJQZPKEQOBYRNLNOBKXMYHROWIVFLHMZEZSTPOWCTOPLJredactedP=
+UBVOUROMZTKVFVIEWCBCHZUAYBXUZFEYXFUDCLBQIHNSBEGTXHATKOHLEOWEKMCAWENGRNKVXYW=
+ZRWZCDVXFZRYHWPQGCFOPXSSGKNUBRSQIGSEFWHXBSMUXSSICXIIZNBFCYKUUDOAOVJJDGVIOSV=
+PMJODAQMIUMYBQFWQKWXVXXDQPHSHXKLRAKLJULSGREFYIWMZPRIHYWBEYDXVCKIDLGBZUSWTCC=
+BOFSWZRBHHKIETSKUCHPRJLUDBKKQENSEQAXFEGVBHFWPBBZAAVYQKLMKJSPLAHLJFXLPUNYYZO=
+GTCHWFGFDKFVIGSUGCPVXBXDKBCJOLXLNBWRNZPRJZWJOXPH  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support BOYRSOF=
+HZUIZXLJXHUMQSLGAPBTUSEBZYOSIYNPBLBRIROTQTWNVICCAWWYXYESPWLVCPVFGXNFNAVLRMG=
+RXITOYVDTJKGFVEPMNIKDEKERAZNDEBKWARSJURKMZBQHYJPVJWLHRSWCBSRLKHSGZRXOOUIYFS=
+ELYVKVMFQXTFSDXUHCCJZTWGRGGYIHGWKGAVLSBWDWL  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=3D_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--
+------=_Part_1_53723717--
