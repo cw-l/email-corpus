@@ -1,0 +1,203 @@
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 209.85.214.231) smtp.mailfrom=plugandplay.co.id; dkim=pass (signature was
+ verified) header.d=plugandplay.co.id;dmarc=pass action=none
+ header.from=plugandplay.co.id;compauth=pass reason=100
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:F97906EDE7CACF5D6F8E4722141F5A94447E7F53111B354D3A3DEDECAE1B3949;UpperCasedChecksum:1F8C9AC8296B09868B9B2CF1E832145440CA9DD9A0C59C0816E72756571541DF;SizeAsReceived:3274;Count:16
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=plugandplay.co.id; s=google; t=1790561556; x=1791166356;
+ darn=hotmail.sg;
+        h=message-id:date:mime-version:content-type:to:subject:from:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=AGtMtRI9fbsDn5clysFDmBcHucYN9ZkBOeNJon2Mrr0=;
+        b=J0vUzKkNJRXviV+Gd15dOXdb3bgdkEP4lo6knzp1XbhSWRrM4+lB51qa57fLVMyDJJ
+         UvT+WK/Q2+qr0JLaHKlchrc00yBO5AmZlGbJJWRq+F8p0w6vj2ws5NmklRNYDVPg00/g
+         eOCyqRulRClxhWYiDVRIwH4eJcWHdyLn/9NpR/SdwTRtdD5jn/OLdveVMW74tSviUhgy
+         IRSYKulNmUKD5QsGT2Jhm9apQPtcMLk98yDq8GTRbxhX/uH+Kibn1mylQl7cme+7NV+f
+         nHHNlkZw6VJfT7q1v5nT/cdb+8ZMcOy/d4QVYb8prPv8wn+rmiP7d6DJuQkqM2yEqjc2
+         5q2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20260707; t=1790561556; x=1791166356;
+        h=message-id:date:mime-version:content-type:to:subject:from:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=AGtMtRI9fbsDn5clysFDmBcHucYN9ZkBOeNJon2Mrr0=;
+        b=il+CQlU6jqmMYLTzsKzuDOLtFWhG9RiG8NGxXq/5q5bR+mjEP3FB+UItUYLYXf8teH
+         Arxu3hv99JV2+0g468O1qhgZbxsTuMDREOlI0g77PEEBfcx5R9HzLKxLek9l5SFkI3gD
+         OWGGhGBU9u148MrPMcxzhwsABIkL7zJGR1Hz+YE38czjMilDEqm1c4wRmiltDr35ElEn
+         UqP5xpUp+MfCihI2XSMEFzmnoLoTZ4xkmlMi2C24JzFfm01Uxfm3fHXEigm8BpOrvCQ1
+         vzhPVftK6WEeJ319D+47lLeJi4iAr33XE+hWWjzhTbG/v2WRpO0HXa5CUAcg1wptpinV
+         4sWg==
+X-Gm-Message-State: AFuF++lWfv5jvUxgj533r+KSoYO0zn8r40uidaQ/vcpyRIuJmsVFoDVG
+	A21EkcdZO/jhY/f+aSHGdzSw2vUpUH+vPgPOpim70dDlf1JkzkeLzZPNPKuFVvH9wz1l/eOSUHy
+	jW4nOICQm0aAKd2tLcvUqYtLaUFH/swXjsSH//4fLP/C70pQ=
+X-Gm-Gg: AYBFou1i0Yqj5x+FkpZDlS9H/Eb9jLW0WpNI3XR75IdHXHqqK5ARlXGM4T3tScIk4UR
+	doxmqra8PdJoJ84NOkUrso9J1isbwzUDbQ6uLwBAh9fFNxdWaoUTEx+CaLkK+4SbkDvMzi2ptwk
+	Dl9MGwBUiOSEdUka8bsJ7H2VfziWRDJCXXUyA8a8Mg+Py41iAgBkPq2vJ1YzLo+2NYt/abzH1cH
+	bBwrBwE/uP6zMTJyQX/dYm9j/4cO+wWvhDaQW7Z6BaCVHG5sDIZBee7c2fU0MWAb5jBY+WmLzFa
+	oIY43M4N4t1LQjj3mPnYi4a0SDAsBI3AiE3MATPmC0A2oqLtiTgtxBbLlPS6h5MK4SojpvuhOok
+	77aX8L+ou0Fg=
+X-Relaying-Domain: plugandplay.co.id
+From: "Maintenance support" <redacted@plugandplay.co.id>
+Subject: Action Required : Login Authentication Expires Soon Sunday,
+ September 27, 2026
+To: <redacted@redacted.com>
+Content-Type: multipart/alternative;
+ boundary="8uAsJ3Fm=_mL5RR1yRadaZmHWe78oL762W"
+Date: Sun, 27 Sep 2026 19:12:35 -0700
+Message-Id: <202627091912353D04074E76$737CB2549E@plugandplay.co.id>
+X-IncomingHeaderCount: 16
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Sep 2026 02:12:36.3912
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 222eeefc-1e44-4380-76fb-08df1d05f6e1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ DS2PEPF000061C7:EE_|PH0P220MB0680:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/28/2026 12:11:45 AM
+X-MS-Office365-Filtering-Correlation-Id: 222eeefc-1e44-4380-76fb-08df1d05f6e1
+X-Sender-IP: 209.85.214.231
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: PASS
+X-MS-Exchange-Organization-SCL: 9
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|22402599018|3151999006|260826003000599003|39010799015|13020799009|12002599018|23130799006|46080799009|29040799003|5101999024|58200799025|2700799033|9400799043|9020799019|970799063|32020799003|940799038|47200799027|34130799006|7009299003|30041999003|2607281247196008|33101999003|1370799030|1380799030|1360799030|440099028|3412199025|34101999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Sep 2026 02:12:36.3739
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 222eeefc-1e44-4380-76fb-08df1d05f6e1
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ DS2PEPF000061C7.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0P220MB0680
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7782295
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(9610028)(9525003)(10140023)(9320005)(9245025)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+--8uAsJ3Fm=_mL5RR1yRadaZmHWe78oL762W
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Microsoft Outlook
+
+=A0
+
+Dear Customer,
+
+Your password seccurite info has expired.
+
+To avoid any disruptions, Please review your account settings to proceed.
+
+Click below to verify and update.=A0
+
+=A0
+
+Password Manage hxxps://www[.]google[.]com/url?q=3Dhttps%3A%2F%2F360o[.]biz=
+%2F[.]GH6%2F&sa=3DD&sntz=3D1&usg=3DAOvVaw39HzrWveNSE4xF_G05q0et#?90bGVlLmNo=
+ZW5nd2VpQGhvdG1haWwuc2c=3D
+
+=A0
+
+=A0
+
+##DOMAIN0## Support Team
+
+=A0
+
+This is a system generated message. Do not reply to this message.
+
+=A0
+
+The information contained in this e-mail message and any files/attachment t=
+ransmitted with it is confidential and for the sole use of the intended rec=
+ipient(s) or entity identified. If you are not the intended recipient, Any =
+unauthorized review, use, disclosure, dissemination, forwarding, printing o=
+r copying of this email or any action taken in reliance on this e-mail is s=
+trictly prohibited and is unlawful. The recipient acknowledges that Greytip=
+ Software Private Limited or its subsidiaries and associated companies are =
+unable to exercise control or ensure or guarantee the integrity of/over the=
+ contents of the information contained in e-mail transmissions. Before open=
+ing any attachments please check
+
+--8uAsJ3Fm=_mL5RR1yRadaZmHWe78oL762W
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><p class=3D"MsoNormal"><span style=3D"font-family: &quot;Verdana&quot;,s=
+ans-serif; font-size: 14pt;"><b>Microsoft Outlook</b><o:p></o:p></span></p>=
+<p class=3D"MsoNormal"><span style=3D"font-size: 11pt; mso-fareast-language=
+: EN-US;"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span style=3D=
+"color: rgb(0, 112, 192); font-family: &quot;Arial-RoundedLight&quot;,sans-=
+serif; font-size: 11pt;"><o:p></o:p></span></p><p class=3D"MsoNormal"><span=
+ style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;">De=
+ar Customer,<o:p></o:p></span></p> </div> <div> <p class=3D"MsoNormal"><spa=
+n style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;">Y=
+our password seccurite info has expired.<o:p></o:p></span></p> </div> <div>=
+ <p class=3D"MsoNormal"><span style=3D"font-family: &quot;Verdana&quot;,san=
+s-serif; font-size: 10pt;">To avoid any disruptions, Please review your acc=
+ount settings to proceed.<o:p></o:p></span></p> </div> <div> <p class=3D"Ms=
+oNormal"><span style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-s=
+ize: 10pt;">Click below to verify and update.&nbsp;<o:p></o:p></span></p><p=
+ class=3D"MsoNormal"><span style=3D"font-family: &quot;Verdana&quot;,sans-s=
+erif; font-size: 10pt;"><o:p>&nbsp;</o:p></span></p> </div> <div> <p class=
+=3D"MsoNormal"><span class=3D"colour"><b><span style=3D"color: rgb(0, 101, =
+204); font-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;"> </spa=
+n></b></span><a href=3D"hxxps://www[.]google[.]com/url?q=3Dhttps%3A%2F%2F36=
+0o[.]biz%2F[.]GH6%2F&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAOvVaw39HzrWveNSE4xF=
+_G05q0et#?90bGVlLmNoZW5nd2VpQGhvdG1haWwuc2c=3D"><span style=3D"margin: 0px;=
+ padding: 12px 18px; border-radius: 2px; border: 1px solid rgb(40, 170, 222=
+); border-image: none; color: rgb(255, 255, 255); font-size: 14px; font-wei=
+ght: bold; text-decoration: none; display: inline-block; cursor: pointer; b=
+ox-sizing: border-box; -ms-text-size-adjust: 100%; background-color: rgb(40=
+, 170, 222); -webkit-text-size-adjust: 100%;">Password Manage</span></a><sp=
+an style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;">=
+<o:p></o:p> </div> <div> <p class=3D"MsoNormal"><span style=3D"font-family:=
+ &quot;Verdana&quot;,sans-serif; font-size: 10pt;"><o:p>&nbsp;</o:p></span>=
+</p><p class=3D"MsoNormal"><span style=3D"font-family: &quot;Verdana&quot;,=
+sans-serif; font-size: 10pt;"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNo=
+rmal"><span style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-size=
+: 10pt;">##DOMAIN0## Support Team<o:p></o:p></span></p> </div> <div> <p cla=
+ss=3D"MsoNormal"><span style=3D"font-family: &quot;Verdana&quot;,sans-serif=
+; font-size: 10pt;"><o:p>&nbsp;</o:p></span></p> </div> <div> <div> <div> <=
+p class=3D"MsoNormal"><span class=3D"colour"><b><span style=3D"color: rgb(0=
+, 101, 204); font-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;"=
+>This is a system generated message. Do not reply to this message.</span></=
+b></span><span style=3D"font-family: &quot;Verdana&quot;,sans-serif; font-s=
+ize: 10pt;"><o:p></o:p></span></p><p class=3D"MsoNormal"><span style=3D"fon=
+t-family: &quot;Verdana&quot;,sans-serif; font-size: 10pt;"><o:p>&nbsp;</o:=
+p></span></p> </div> <div> <p class=3D"MsoNormal"><span class=3D"colour"><b=
+><span style=3D"color: rgb(0, 101, 204); font-family: &quot;Verdana&quot;,s=
+ans-serif; font-size: 10pt;"></span></b></span><span style=3D"font-family: =
+&quot;Verdana&quot;,sans-serif; font-size: 10pt;">The information contained=
+ in this e-mail message and any files/attachment transmitted with it is con=
+fidential and for the sole use of the intended recipient(s) or entity ident=
+ified. If you are not the intended recipient, Any unauthorized review, use,=
+ disclosure, dissemination, forwarding, printing or copying of this email o=
+r any action taken in reliance on this e-mail is strictly prohibited and is=
+ unlawful. The recipient acknowledges that Greytip Software Private Limited=
+ or its subsidiaries and associated companies are unable to exercise contro=
+l or ensure or guarantee the integrity of/over the contents of the informat=
+ion contained in e-mail transmissions. Before opening any attachments pleas=
+e check<o:p></o:p></span></p>
+
+--8uAsJ3Fm=_mL5RR1yRadaZmHWe78oL762W--

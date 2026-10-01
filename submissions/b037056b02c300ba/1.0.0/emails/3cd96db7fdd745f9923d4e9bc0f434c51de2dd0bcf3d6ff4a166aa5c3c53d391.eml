@@ -1,0 +1,225 @@
+Authentication-Results: mx.microsoft.com 1; spf=fail (sender IP is
+ 35.198.237.47) smtp.mailfrom=advisorwebsite.com; dkim=none (message not
+ signed) header.d=none;dmarc=fail action=none
+ header.from=advisorwebsite.com;compauth=fail reason=001
+X-IncomingTopHeaderMarker: 
+ OriginalChecksum:F049009BC0306F6DCFE00C24A3355AF755ACBF613B502279D3952DD41A899506;UpperCasedChecksum:5600EDD7A4A3394043FA4582FBFBA84F68734DCAC13556781AED950BD46DF9E1;SizeAsReceived:293;Count:7
+From: Digital Services <support@advisorwebsite.com>
+To: <redacted@redacted.com>
+Subject: We could not process your payment
+Message-ID: <44fc6501e08e4984b7c7fcc66e56efaa@advisorwebsite.com>
+Date: Wed, 30 Sep 2026 19:10:47 +0000
+Content-Type: text/html; charset="utf-8"
+X-IncomingHeaderCount: 7
+X-MS-Exchange-Organization-ExpirationStartTime: 30 Sep 2026 19:10:48.9254
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 
+ 6d7016aa-c1df-49a5-e40c-08df1f2689b1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+ AM2PEPF00070CF5:EE_|CO6P220MB0651:EE_|LV8P220MB1356:EE_
+X-MS-Exchange-Organization-AuthSource: 
+ AM2PEPF00070CF5.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/30/2026 9:46:25 AM
+X-MS-Office365-Filtering-Correlation-Id: 6d7016aa-c1df-49a5-e40c-08df1f2689b1
+X-Sender-IP: 35.198.237.47
+X-MS-Exchange-EOPDirect: true
+X-SID-Result: FAIL
+X-MS-Exchange-Organization-SCL: 6
+X-Microsoft-Antispam: 
+ BCL:0;ARA:1444111002|60050799012|260826003000599003|3025599003|260928210016899003|6019299003|2700799033|1290799033|34130799006|46080799009|970799063|32020799003|46110799015|9400799043|18040799006;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Sep 2026 19:10:48.4381
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ 6d7016aa-c1df-49a5-e40c-08df1f2689b1
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: 
+ AM2PEPF00070CF5.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO6P220MB0651
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7625610
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0451.014
+X-Microsoft-Antispam-Mailbox-Delivery: 
+ ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000311)(920221119095)(90000117)(920221120095)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(2008001181)(2008121020)(4810010)(4910033)(10010005)(10005027)(9610028)(9540006)(10103005)(9320005)(9215007)(120001);RF:JunkEmail;
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info: 
+ 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
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Support: Payment Declined</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .email-container {
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border-top: 6px solid #FF4C4C;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 20px 10px;
+        }
+
+        .header-title {
+            color: #FF4C4C;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #111;
+        }
+
+        .content {
+            padding: 20px 40px;
+            color: #444;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .alert-text {
+            background-color: #fff5f5;
+            border-left: 4px solid #FF4C4C;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        .invoice-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .invoice-table td:nth-child(2) {
+            text-align: right;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #FF4C4C;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn-secondary {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            text-decoration: none;
+            padding: 16px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #999;
+            background-color: #fafafa;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container">
+        <div class="header">
+            <div class="header-title">Final Attempt</div>
+            <h1>Your Payment Was Declined.</h1>
+        </div>
+
+        <div class="content">
+            <p>Your antivirus &amp; privacy protection's subscription payment has <strong>FAILED more than 3 times</strong>.
+                We have attempted to renew your annual subscription using your default payment method, but the
+                transaction was unsuccessful.</p>
+
+            <div class="alert-text">
+                <strong>Warning:</strong> Your device is currently exposed to hackers, scammers, data theft, and
+                improper session handling.
+            </div>
+
+            <table class="invoice-table">
+                <tr>
+                    <td>Service</td>
+                    <td>Privacy Protection Pro</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td style="color: #FF4C4C;">Declined (3 Attempts)</td>
+                </tr>
+                <tr>
+                    <td>Action Required</td>
+                    <td>Update Billing Info</td>
+                </tr>
+            </table>
+
+            <p style="font-size: 13px; color: #666; text-align: center; margin-bottom: 25px;">
+                Failure to resolve this billing issue will result in a high risk of being hacked, data loss, and money
+                loss.
+            </p>
+
+            <a href="hxxps://storage[.]googleapis[.]com/yuhjdvhjsdjfgqsdfghqsdfqghsd/lis" class="btn-primary">Secure My Account Now</a>
+            <a href="hxxps://storage[.]googleapis[.]com/yuhjdvhjsdjfgqsdfghqsdfqghsd/lis" class="btn-secondary">Update Billing</a>
+        </div>
+
+        <div class="footer"><p>Notification from Security Billing Center.<br>
+            <p>You can unsubscribe from such notifications at any time by clicking <a href="hxxps://www[.]powerscawebly[.]com/o-dpzx-d21-0b7ff00d88ddfa8982d6c4aaae80b223">here[.]</a></p>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
