@@ -1,0 +1,2709 @@
+ARC-Seal: i=1; a=rsa-sha256; t=1790975087; cv=none;
+        d=google.com; s=arc-20260327;
+        b=fqf+rCmWvx3bHC4UTb71ksaL4ZU/tQzU7IieuVcweHoQ9BrFl3xwk6xUrARHPazKAJ
+         lGBKGUGiBBJFncMVdJnaLymCoXrg9gdly3dPemkBL8aqNXc6J2c2tSSY6gCwCbYxDTTU
+         RLxijKtJaKnyOh73Ekg/oLEdmLglNIQTlMtFLyKwjkw0UWMiO6VRoaE5ZGZwRQx7DXTW
+         NvgfD8L4DBbChb1j9nYRU3BgZ9qqSWbUZBclDLPmRTWSdfkJ/KEEMmqXesY82dyzZ7p7
+         eL+9FP40gW43btlzc1WkkMcAhdiSA0Bw1eDR/+YTOc8d5El+Sqnt+a0UuPNZ9hwrGzo3
+         lulg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20260327;
+        h=sender:date:list-unsubscribe:message-id:envelope-to:precedence
+         :mime-version:to:from:subject:delivered-to:domainkey-signature
+         :dkim-signature;
+        bh=5/QnWoyqhhgnKMGmJr+AyzuA0aa5bl4H7KSH3+IOeb4=;
+        fh=5mDISkEnApbHbeyplF34/W/bGeiyjRLMmd/AgjlFR1Y=;
+        b=MjfcaoVANfATmbGIsnJfJexQyRFRUHR17qUSazwXpuTmTPs4tQPVW8HkjS9kVfKZtP
+         mNSOsdDWpQmJD0jvbfC6U2tAtLPNcxPUcZNnpdSGoE3YN+ubuv2LuJ09sLYAYbHJy6aV
+         DMHEDP4nzRxlPi949q48kbv25v6VlPMHhVGDpQMqpam7PABJ7GIUJ8145RlCQTBJNy4l
+         pymjiFWUxmxQKuxub0gyC7rCiKooCE9k0KWvpCES8dr+JQfUhL1Kgb0hTn6edK4nZqEq
+         4FdKeQyVuEC7rueomGSyrQw6dhQeGqJsa/dBaUkZWSwW0RuZq6aJb3i7d7mqdl1973Mo
+         7TuQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@vuublifd.outlook.verulin.me header.s=smtp
+ header.b=cxwp5nGa;
+       spf=pass (google.com: domain of lclotgizvgtxq@outlook.verulin.me
+ designates 89.58.24.211 as permitted sender)
+ smtp.mailfrom=lclotgizvgtxq@outlook.verulin.me
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@vuublifd.outlook.verulin.me header.s=smtp
+ header.b=cxwp5nGa;
+       spf=pass (google.com: domain of lclotgizvgtxq@outlook.verulin.me
+ designates 89.58.24.211 as permitted sender)
+ smtp.mailfrom=lclotgizvgtxq@outlook.verulin.me
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp;
+ d=vuublifd.outlook.verulin.me;
+ h=Subject:From:To:MIME-Version:Message-Id:List-Unsubscribe:Content-Type:Date:Sender;
+ i=fufxnecwdgbdrpjyxhjzf@vuublifd.outlook.verulin.me;
+ bh=tMHP8DEGxCG7DO7BO0S9i7SymAI=;
+ b=cxwp5nGa20++XUwBB9DJe7DA2zcBjNGVi2J4r6aJr9sr5CwNVVehT6GlkRJvKOdyJiJvlXY34+j6
+   cEfGCqkFmj2W3Cw8EkpfKImHyZIcgVb2mCryrZDv55vkOjY4UOL02okeKHRyO77/Ixv3ekvzhAKn
+   FUzWpMDPS6e+m3CoFDEnH5Gnf3d7df1Ed/cuHnYipBH1aJAPFVbrxdR6z/uCMAat7xAh06QAQ6TR
+   4zUSOaV9nqUvUlOYqvHxwp/SxchuccywJkdY8H7sXexAYn0Bh/kq6/VVF36UNKdK8rFkmBYnsqMR
+   MvW5eLTb6gEcKGOt+l0aKiCA4k+Al/zqzIdGOw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp;
+ d=vuublifd.outlook.verulin.me;
+ b=wAAedKm5qlu0uA/6HJTQyHARN/RaSkNX4XauGSNPecuw9sAzNj1+1fJMfMZiDJPXmNwVnTNjeyNJ
+   WVK3oLb3S8GPzklIqAxuqM+uVS5OA80CFEBIT3+PI0yaGSS9va98lffPySa43WBgYfUKgO3+AWBL
+   5J29FRwLEoz4neOnb+aUfbgwBlTqVhv/cnouP0ZhDHdMc5yN2GUo9E+9pZj2UUk8fehfU9HzVM9v
+   uIWxKqX5R92gmqFKjjJ9hvalSKt07X82AsJQn43n0pm6vNnf5WqHc5cAyNOQFi0r3u37p9wC20dh
+   mRi9STCE6DJivoK8WysEu5VtJGieWaEB6pXIDA==;
+Subject: 
+ =?utf-8?b?RHJvcCBXZWlnaHQgRmFzdCDvv73vv73vv70gU2VtYWdsdXRpZGUgV29ya3MgV2hl?=
+ =?utf-8?b?biBEaWV0cyBEb27vv73vv73vv710?=
+From: WeightLoss<zrnwmth.32.195982@vuublifd.outlook.verulin.me>
+To: redacted@redacted.com
+MIME-Version: 1.0
+Precedence: bulk
+X-Originating-IP: 89.58.24.211
+X-Google-Original-Message-ID: <-@vevida.net>
+Message-Id: <samconulhbtwotljyitjaevemeczgw@2yzwy3ixkl8867z3zq>
+List-Unsubscribe: <http://premiumcenter.biz.id/LEAVE=To>
+Content-Type: multipart/digest; boundary="----=_Part_1_27602313"
+Date: Fri, 02 Oct 2026 06:25:40 +0000
+Sender: fufxnecwdgbdrpjyxhjzf@vuublifd.outlook.verulin.me
+
+------=_Part_1_27602313
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_Part_1_27602313
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+</br></br></br><center>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#inde=
+x[.]php?search=3D4&d282450&ydzgm=3D1500-32&lm=3D195982TJQD45645&sd=3D7&page=
+=3Df0I7C86qzlS9Ani" style=3D"text-decoration:none; color:black">
+<!DOCTYPE html>
+
+<html lang=3D"en" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns=
+:v=3D"urn:schemas-microsoft-com:vml">
+
+<head>
+    <title></title>
+    <meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type=
+" />
+    <meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"vie=
+wport" />
+    <!--[if mso]>
+<xml><w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com:office:word"><w:D=
+ontUseAdvancedTypographyReadingMail/></w:WordDocument>
+<o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/=
+></o:OfficeDocumentSettings></xml>
+<![endif]-->
+    <!--[if !mso]><!-->
+    <link href=3D"hxxps://fonts[.]googleapis[.]com/css?family=3DCabin" rel=
+=3D"stylesheet" type=3D"text/css" />
+    <link href=3D"hxxps://fonts[.]googleapis[.]com/css2?family=3DLato:wght@=
+100;200;300;400;500;600;700;800;900" rel=3D"stylesheet"
+        type=3D"text/css" />
+    <!--<![endif]-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: inherit !important;
+        }
+
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p {
+            line-height: inherit
+        }
+
+        .desktop_hide,
+        .desktop_hide table {
+            mso-hide: all;
+            display: none;
+            max-height: 0px;
+            overflow: hidden;
+        }
+
+        .image_block img+div {
+            display: none;
+        }
+
+        sup,
+        sub {
+            font-size: 75%;
+            line-height: 0;
+        }
+
+        #converted-body .list_block ul,
+        #converted-body .list_block ol,
+        .body [class~=3D"x_list_block"] ul,
+        .body [class~=3D"x_list_block"] ol,
+        u+.body .list_block ul,
+        u+.body .list_block ol {
+            padding-left: 20px;
+        }
+
+        @media (max-width:620px) {
+            .image_block div.fullWidth {
+                max-width: 100% !important;
+            }
+
+            .mobile_hide {
+                display: none;
+            }
+
+            .row-content {
+                width: 100% !important;
+            }
+
+            .stack .column {
+                width: 100%;
+                display: block;
+            }
+
+            .mobile_hide {
+                min-height: 0;
+                max-height: 0;
+                max-width: 0;
+                overflow: hidden;
+                font-size: 0px;
+            }
+
+            .desktop_hide,
+            .desktop_hide table {
+                display: table !important;
+                max-height: none !important;
+            }
+
+            .row-1 .column-1 .block-1.spacer_block {
+                height: 10px !important;
+            }
+
+            .row-2 .column-1 .block-4.image_block td.pad {
+                padding: 0 !important;
+            }
+
+            .row-2 .column-1 .block-3.heading_block td.pad {
+                padding: 30px 10px 20px !important;
+            }
+
+            .row-2 .column-1 .block-3.heading_block h1 {
+                font-size: 38px !important;
+            }
+
+            .row-11 .column-1 .block-1.heading_block td.pad,
+            .row-2 .column-1 .block-5.button_block td.pad,
+            .row-6 .column-1 .block-1.heading_block td.pad {
+                padding: 30px 10px 10px !important;
+            }
+
+            .row-11 .column-1 .block-4.button_block span,
+            .row-15 .column-1 .block-1.button_block span,
+            .row-2 .column-1 .block-5.button_block span,
+            .row-4 .column-1 .block-2.button_block span,
+            .row-9 .column-1 .block-1.button_block span {
+                line-height: 28px !important;
+            }
+
+            .row-4 .column-1 .block-1.image_block td.pad {
+                padding: 0 10px !important;
+            }
+
+            .row-3 .column-1 .block-1.heading_block td.pad {
+                padding: 20px !important;
+            }
+
+            .row-3 .column-1 .block-1.heading_block h1 {
+                font-size: 24px !important;
+            }
+
+            .row-4 .column-1 .block-3.paragraph_block td.pad {
+                padding: 0 10px 25px !important;
+            }
+
+            .row-3 .column-1 .block-2.list_block td.pad {
+                padding: 0 30px 0 0 !important;
+            }
+
+            .row-3 .column-1 .block-2.list_block ul {
+                line-height: auto !important;
+            }
+
+            .row-4 .column-1 .block-2.button_block td.pad,
+            .row-9 .column-1 .block-1.button_block td.pad {
+                padding: 10px 10px 30px !important;
+            }
+
+            .row-11 .column-1 .block-1.heading_block h1,
+            .row-6 .column-1 .block-1.heading_block h1 {
+                font-size: 32px !important;
+            }
+
+            .row-11 .column-1 .block-2.image_block td.pad,
+            .row-6 .column-1 .block-2.paragraph_block td.pad {
+                padding: 10px !important;
+            }
+
+            .row-7 .column-2 .block-2.heading_block td.pad {
+                padding: 10px 10px 20px !important;
+            }
+
+            .row-11 .column-1 .block-3.paragraph_block td.pad>div {
+                text-align: center !important;
+                font-size: 16px !important;
+            }
+
+            .row-11 .column-1 .block-3.paragraph_block td.pad {
+                padding: 10px 25px 20px !important;
+            }
+
+            .row-11 .column-1 .block-4.button_block td.pad {
+                padding: 5px 10px 30px !important;
+            }
+
+            .row-13 .column-1 .block-1.heading_block h1 {
+                text-align: center !important;
+                font-size: 32px !important;
+            }
+
+            .row-13 .column-1 .block-1.heading_block td.pad {
+                padding: 20px 10px 10px !important;
+            }
+
+            .row-13 .column-1 .block-2.heading_block td.pad {
+                padding: 10px 10px 15px !important;
+            }
+
+            .row-14 .column-1 .block-1.image_block td.pad,
+            .row-14 .column-2 .block-1.image_block td.pad {
+                padding: 10px 0 !important;
+            }
+
+            .row-15 .column-1 .block-1.button_block td.pad {
+                padding: 5px 10px 35px !important;
+            }
+
+            .row-15 .column-1,
+            .row-4 .column-1 {
+                padding: 10px 0 5px !important;
+            }
+
+            .row-8 .column-1 {
+                padding: 5px 0 !important;
+            }
+
+            .row-11 .column-1 {
+                padding: 5px 0 0 !important;
+            }
+
+            .row-13 .column-1,
+            .row-14 .column-1 {
+                padding: 20px 0 0 !important;
+            }
+        }
+    </style>
+    <!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso=
+-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]-->
+    <!--[if true]><style>.forceBgColor{background-color: white !important}<=
+/style><![endif]-->
+</head>
+
+<body class=3D"body forceBgColor"
+    style=3D"background-color: transparent; margin: 0; padding: 0; -webkit-=
+text-size-adjust: none; text-size-adjust: none;">
+    <div class=3D"preheader"
+        style=3D"display:none;font-size:1px;color:#333333;line-height:1px;m=
+ax-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+        Online weight management programs with prescription GLP-1 medicatio=
+ns.</div>
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"nl-con=
+tainer" role=3D"presentation"
+        style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-c=
+olor: transparent;" width=3D"100%">
+        <tbody>
+            <tr>
+                <td>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-1"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin:=
+ 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <div class=3D"spacer_bl=
+ock block-1 desktop_hide"
+                                                        style=3D"mso-hide: =
+all; display: none; max-height: 0; overflow: hidden; height: 20px; line-hei=
+ght: 20px; font-size: 1px;">
+                                                        =E2=80=8A</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-2"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; background-size: auto;"
+                        width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #edf2ef; color: #000000; background-s=
+ize: auto; border-radius: 25px 25px 0 0; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertica=
+l-align: top;"
+                                                    width=3D"100%">
+                                                    <div class=3D"spacer_bl=
+ock block-1"
+                                                        style=3D"height:30p=
+x;line-height:30px;font-size:1px;">=E2=80=8A</div>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"wi=
+dth:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 120px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&lxahm=3D1500-32&lm=3D195982NQEM45645&sd=3D7&page=
+=3D8AZ7pD73uEeKCsZ"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%;" title=3D"" width=3D"120"/></=
+a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:15px;padding-left:30px;padding-right:30px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #779d7c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 45px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 54px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">The Change W=
+e've All Been Waiting For.</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-4" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"wi=
+dth:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div cl=
+ass=3D"fullWidth" style=3D"max-width: 600px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&pvcqf=3D1500-32&lm=3D195982MZMH45645&sd=3D7&page=
+=3D51aRS8iU4ElecAU"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%; border-radius: 25px 25px 25px=
+ 25px;" title=3D"" width=3D"600"/></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"button_blo=
+ck block-5" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:20px;tex=
+t-align:center;">
+                                                                <div align=
+=3D"center" class=3D"alignment"><a
+                                                                        hre=
+f=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[.]ph=
+p?search=3D4&d282450&bdufo=3D1500-32&lm=3D195982ADAU45645&sd=3D7&page=3DcdD=
+ymxXmO3bGT4j"
+                                                                        sty=
+le=3D"color:#ffffff;text-decoration:none;"
+                                                                        tar=
+get=3D"_blank">
+                                                                        <!-=
+-[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word"  href=3D"hxxps://storage[.]googleapis[.]com/s=
+malbus/salaminka[.]html#index[.]php?search=3D4&d282450&shiaq=3D1500-32&lm=
+=3D195982OGBY45645&sd=3D7&page=3DMs4vlCUlNQofM5G"  style=3D"height:48px;wid=
+th:200px;v-text-anchor:middle;" arcsize=3D"63%" fillcolor=3D"#38312c">
+<v:stroke dashstyle=3D"Solid" weight=3D"0px" color=3D"#38312c"/>
+<w:anchorlock/>
+<v:textbox inset=3D"0px,0px,0px,0px">
+<center dir=3D"false" style=3D"color:#ffffff;font-family:Tahoma, Verdana, s=
+ans-serif;font-size:14px">
+<![endif]--><span class=3D"button" style=3D"background-color: #38312c; bord=
+er-bottom: 0px solid transparent; border-left: 0px solid transparent; borde=
+r-radius: 30px; border-right: 0px solid transparent; border-top: 0px solid =
+transparent; color: #ffffff; display: inline-block; font-family: 'Lato', Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; font-weight: 400; mso-bo=
+rder-alt: none; padding-bottom: 10px; padding-top: 10px; padding-left: 50px=
+; padding-right: 50px; text-align: center; width: auto; word-break: keep-al=
+l; letter-spacing: 1px;"><span style=3D"word-break: break-word; line-height=
+: 28px;">GET STARTED</span></span>
+                                                                        <!-=
+-[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                    </a></d=
+iv>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-3"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #edf2ef; color: #000000; border-radiu=
+s: 0; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:30px;padding-right:30px;padding-top:20px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 28px; font-weight: 400; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 34px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Finally seri=
+ous about weight loss? So are we. Fat loss made easy with personalized care=
+ and GLP-1 medication.</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"list_block=
+ block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; color: #38312c;=
+ direction: ltr; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; f=
+ont-size: 16px; font-weight: 400; letter-spacing: 0px; line-height: 1.8; te=
+xt-align: center; mso-line-height-alt: 29px;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-left:20px;padding-right:20px;padding-top:10px;">
+                                                                <div style=
+=3D"margin-left:-20px">
+                                                                    <ul
+                                                                        sty=
+le=3D"margin-top: 0; margin-bottom: 0; list-style-type: revert; list-style-=
+position: inside;">
+                                                                        <di=
+v style=3D"margin-left:-10px">
+                                                                           =
+ <ul
+                                                                           =
+     style=3D"margin-top: 0; margin-bottom: 0; list-style-type: revert; lis=
+t-style-position: inside;">
+                                                                           =
+     <li style=3D"Margin: 0px 0 0 0;">Lose
+                                                                           =
+         pounds of fat every week</li>
+                                                                           =
+     <li style=3D"Margin: 0 0 0 0;">
+                                                                           =
+         Personalized Care: Highly effective
+                                                                           =
+         weight loss medications</li>
+                                                                           =
+     <li style=3D"Margin: 0 0 0 0;">No
+                                                                           =
+         membership fees! Everything you need
+                                                                           =
+         is included</li>
+                                                                           =
+     <li style=3D"Margin: 0 0 0 0;">Start for
+                                                                           =
+         just $179, no insurance required +
+                                                                           =
+         free shipping</li>
+                                                                           =
+ </ul>
+                                                                        </d=
+iv>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-4"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #edf2ef; color: #000000; border-radiu=
+s: 0 0 25px 25px; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertica=
+l-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"wi=
+dth:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div cl=
+ass=3D"fullWidth" style=3D"max-width: 480px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&ejhzn=3D1500-32&lm=3D195982ATEJ45645&sd=3D7&page=
+=3D14ZZn5juIMISmIT"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%; border-radius: 25px;" title=
+=3D"" width=3D"480"/></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"button_blo=
+ck block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:30px;padding-left:10px;padding-right:10px;text-align:center;">
+                                                                <div align=
+=3D"center" class=3D"alignment"><a
+                                                                        hre=
+f=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[.]ph=
+p?search=3D4&d282450&munvv=3D1500-32&lm=3D195982MXUP45645&sd=3D7&page=3Dcsv=
+OTkAp3Yv2gxN"
+                                                                        sty=
+le=3D"color:#ffffff;text-decoration:none;"
+                                                                        tar=
+get=3D"_blank">
+                                                                        <!-=
+-[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word"  href=3D"hxxps://storage[.]googleapis[.]com/s=
+malbus/salaminka[.]html#index[.]php?search=3D4&d282450&czliu=3D1500-32&lm=
+=3D195982EOAV45645&sd=3D7&page=3DB47CuRMo4x9HSLn"  style=3D"height:48px;wid=
+th:200px;v-text-anchor:middle;" arcsize=3D"63%" fillcolor=3D"#38312c">
+<v:stroke dashstyle=3D"Solid" weight=3D"0px" color=3D"#38312c"/>
+<w:anchorlock/>
+<v:textbox inset=3D"0px,0px,0px,0px">
+<center dir=3D"false" style=3D"color:#ffffff;font-family:Tahoma, Verdana, s=
+ans-serif;font-size:14px">
+<![endif]--><span class=3D"button" style=3D"background-color: #38312c; bord=
+er-bottom: 0px solid transparent; border-left: 0px solid transparent; borde=
+r-radius: 30px; border-right: 0px solid transparent; border-top: 0px solid =
+transparent; color: #ffffff; display: inline-block; font-family: 'Lato', Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; font-weight: 400; mso-bo=
+rder-alt: none; padding-bottom: 10px; padding-top: 10px; padding-left: 50px=
+; padding-right: 50px; text-align: center; width: auto; word-break: keep-al=
+l; letter-spacing: 1px;"><span style=3D"word-break: break-word; line-height=
+: 28px;">GET STARTED</span></span>
+                                                                        <!-=
+-[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                    </a></d=
+iv>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"paragraph_=
+block block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:30px;padding-left:30px;padding-right:30px;padding-top:10px;">
+                                                                <div
+                                                                    style=
+=3D"color:#38312c;direction:ltr;font-family:Cabin, Arial, Helvetica Neue, H=
+elvetica, sans-serif;font-size:9px;font-weight:400;letter-spacing:0px;line-=
+height:1.2;text-align:center;mso-line-height-alt:11px;">
+                                                                    <p styl=
+e=3D"margin: 0;">* Based on the average weight
+                                                                        los=
+s in three 68-week clinical trials of
+                                                                        pat=
+ients without diabetes who reached and
+                                                                        mai=
+ntained a dose of 2.4 mg/week of GLP-1
+                                                                        tre=
+atment, along with a reduced- calorie diet
+                                                                        and=
+ increased physical activity.</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-5"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin:=
+ 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertica=
+l-align: top;"
+                                                    width=3D"100%">
+                                                    <div class=3D"spacer_bl=
+ock block-1"
+                                                        style=3D"height:15p=
+x;line-height:15px;font-size:1px;">=E2=80=8A</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-6"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #f7f4f0; border-radius: 25px 25px 0 0=
+; color: #000000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:30px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 36px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 43px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Why are so m=
+any patients signing up for MEDVI? It works.</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"10" cellspacing=3D"0"
+                                                        class=3D"paragraph_=
+block block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d">
+                                                                <div
+                                                                    style=
+=3D"color:#779d7c;direction:ltr;font-family:'Lato', Tahoma, Verdana, Segoe,=
+ sans-serif;font-size:16px;font-weight:700;letter-spacing:0px;line-height:1=
+.2;text-align:center;mso-line-height-alt:19px;">
+                                                                    <p styl=
+e=3D"margin: 0;">On average, patients in the
+                                                                        MED=
+VI program lose 15-20% of their body weight.
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-7"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content"
+                                        role=3D"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #f7f4f0; border-bottom: 10px solid tr=
+ansparent; border-left: 10px solid transparent; border-radius: 0; border-ri=
+ght: 10px solid transparent; border-top: 10px solid transparent; color: #00=
+0000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #c6a673; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 12px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #ffffff; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 45px; font-weight: 900; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 54px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">18%</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:50px;padding-left:10px;padding-right:10px;padding-top:10px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #ffffff; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 18px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 22px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Average weig=
+ht loss</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column gap"
+                                                    style=3D"vertical-align=
+: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text=
+-align: left;">
+                                                    <table height=3D"10"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 10px; height: 10px;"
+                                                        width=3D"10"></tabl=
+e>
+                                                </td>
+                                                <td class=3D"column column-=
+2"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #edf2ef; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 12px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #779d7c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 45px; font-weight: 900; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 54px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">9/10</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:50px;padding-left:10px;padding-right:10px;padding-top:10px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 18px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 22px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Patients cal=
+l it the most effective treatment to date</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-8"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"row-content"
+                                        role=3D"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #f7f4f0; border-bottom: 10px solid tr=
+ansparent; border-left: 10px solid transparent; border-radius: 0; border-ri=
+ght: 10px solid transparent; border-top: 10px solid transparent; color: #00=
+0000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #ffffff; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 12px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #779d7c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 45px; font-weight: 900; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 54px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">6.5"</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:50px;padding-left:10px;padding-right:10px;padding-top:10px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #0a0021; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 18px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 22px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Potential wa=
+ist reduction</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column gap"
+                                                    style=3D"vertical-align=
+: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text=
+-align: left;">
+                                                    <table height=3D"10"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 10px; height: 10px;"
+                                                        width=3D"10"></tabl=
+e>
+                                                </td>
+                                                <td class=3D"column column-=
+2"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #779d7c; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 12px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #ffffff; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 45px; font-weight: 900; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 54px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">93%</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:50px;padding-left:10px;padding-right:10px;padding-top:10px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #ffffff; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 18px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 22px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Kept the wei=
+ght off</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-9"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #f7f4f0; border-radius: 0 0 25px 25px=
+; color: #000000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"button_blo=
+ck block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:30px;padding-left:10px;padding-right:10px;padding-top:10px;tex=
+t-align:center;">
+                                                                <div align=
+=3D"center" class=3D"alignment"><a
+                                                                        hre=
+f=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[.]ph=
+p?search=3D4&d282450&pabxt=3D1500-32&lm=3D195982BWDN45645&sd=3D7&page=3DmR8=
+Qf2ruUuwbVDz"
+                                                                        sty=
+le=3D"color:#ffffff;text-decoration:none;"
+                                                                        tar=
+get=3D"_blank">
+                                                                        <!-=
+-[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word"  href=3D"hxxps://storage[.]googleapis[.]com/s=
+malbus/salaminka[.]html#index[.]php?search=3D4&d282450&aulyl=3D1500-32&lm=
+=3D195982ZDIQ45645&sd=3D7&page=3D6OuNcJcxOxp7Ggg"  style=3D"height:48px;wid=
+th:200px;v-text-anchor:middle;" arcsize=3D"63%" fillcolor=3D"#38312c">
+<v:stroke dashstyle=3D"Solid" weight=3D"0px" color=3D"#38312c"/>
+<w:anchorlock/>
+<v:textbox inset=3D"0px,0px,0px,0px">
+<center dir=3D"false" style=3D"color:#ffffff;font-family:Tahoma, Verdana, s=
+ans-serif;font-size:14px">
+<![endif]--><span class=3D"button" style=3D"background-color: #38312c; bord=
+er-bottom: 0px solid transparent; border-left: 0px solid transparent; borde=
+r-radius: 30px; border-right: 0px solid transparent; border-top: 0px solid =
+transparent; color: #ffffff; display: inline-block; font-family: 'Lato', Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; font-weight: 400; mso-bo=
+rder-alt: none; padding-bottom: 10px; padding-top: 10px; padding-left: 50px=
+; padding-right: 50px; text-align: center; width: auto; word-break: keep-al=
+l; letter-spacing: 1px;"><span style=3D"word-break: break-word; line-height=
+: 28px;">GET STARTED</span></span>
+                                                                        <!-=
+-[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                    </a></d=
+iv>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-10"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin:=
+ 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertica=
+l-align: top;"
+                                                    width=3D"100%">
+                                                    <div class=3D"spacer_bl=
+ock block-1"
+                                                        style=3D"height:15p=
+x;line-height:15px;font-size:1px;">=E2=80=8A</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-11"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #c6a673; border-radius: 25px; color: =
+#000000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:40px;padding-right:40px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 36px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 43px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">It's about b=
+iology, not willpower.</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:10px;wid=
+th:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 560px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&gwqfe=3D1500-32&lm=3D195982YRPG45645&sd=3D7&page=
+=3DZAPKqSaShuB7sIL"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%; border-radius: 25px;" title=
+=3D"" width=3D"560"/></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"paragraph_=
+block block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:40px;padding-right:40px;padding-top:15px;">
+                                                                <div
+                                                                    style=
+=3D"color:#38312c;direction:ltr;font-family:'Lato', Tahoma, Verdana, Segoe,=
+ sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:1=
+.5;text-align:center;mso-line-height-alt:24px;">
+                                                                    <p id=
+=3D"la-6-1-1" style=3D"margin: 0;">
+                                                                        <st=
+rong>Traditional diets don't work because nearly 70% of weight is genetical=
+ly determined.=C2=A0</strong>Through
+                                                                        med=
+ication you can work with your body rather
+                                                                        tha=
+n against it - to create safe and
+                                                                        lon=
+g-lasting weight loss results</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"button_blo=
+ck block-4" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:30px;padding-left:10px;padding-right:10px;text-align:center;">
+                                                                <div align=
+=3D"center" class=3D"alignment"><a
+                                                                        hre=
+f=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[.]ph=
+p?search=3D4&d282450&jbxed=3D1500-32&lm=3D195982MNRR45645&sd=3D7&page=3D8n6=
+YRvdX7DMbA7l"
+                                                                        sty=
+le=3D"color:#ffffff;text-decoration:none;"
+                                                                        tar=
+get=3D"_blank">
+                                                                        <!-=
+-[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word"  href=3D"hxxps://storage[.]googleapis[.]com/s=
+malbus/salaminka[.]html#index[.]php?search=3D4&d282450&ezrrr=3D1500-32&lm=
+=3D195982RWNK45645&sd=3D7&page=3DKtzb7SCaXFOY6rq"  style=3D"height:48px;wid=
+th:200px;v-text-anchor:middle;" arcsize=3D"63%" fillcolor=3D"#38312c">
+<v:stroke dashstyle=3D"Solid" weight=3D"0px" color=3D"#38312c"/>
+<w:anchorlock/>
+<v:textbox inset=3D"0px,0px,0px,0px">
+<center dir=3D"false" style=3D"color:#ffffff;font-family:Tahoma, Verdana, s=
+ans-serif;font-size:14px">
+<![endif]--><span class=3D"button" style=3D"background-color: #38312c; bord=
+er-bottom: 0px solid transparent; border-left: 0px solid transparent; borde=
+r-radius: 30px; border-right: 0px solid transparent; border-top: 0px solid =
+transparent; color: #ffffff; display: inline-block; font-family: 'Lato', Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; font-weight: 400; mso-bo=
+rder-alt: none; padding-bottom: 10px; padding-top: 10px; padding-left: 50px=
+; padding-right: 50px; text-align: center; width: auto; word-break: keep-al=
+l; letter-spacing: 1px;"><span style=3D"word-break: break-word; line-height=
+: 28px;">GET STARTED</span></span>
+                                                                        <!-=
+-[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                    </a></d=
+iv>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-12"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin:=
+ 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertica=
+l-align: top;"
+                                                    width=3D"100%">
+                                                    <div class=3D"spacer_bl=
+ock block-1"
+                                                        style=3D"height:15p=
+x;line-height:15px;font-size:1px;">=E2=80=8A</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-13"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #edf2ef; border-radius: 25px 25px 0 0=
+; color: #000000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 5px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:40px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 36px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 43px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">There's a re=
+ason people are raving about us.</span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:15px;padding-left:20px;padding-right:20px;padding-top:10px;tex=
+t-align:center;width:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #779d7c; direction: ltr; font-family: 'Lato', Tahoma,=
+ Verdana, Segoe, sans-serif; font-size: 16px; font-weight: 700; letter-spac=
+ing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bo=
+ttom: 0; mso-line-height-alt: 19px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">Join the tho=
+usands of people who have trusted MEDVi to help change their lives.=C2=A0</=
+span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-14"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;" width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-color: #edf2ef; border-radius: 0; color: #00=
+0000; padding: 10px; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #ffffff; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 25px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-left:20px;padding-right:20px;padding-top:10px;width:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 90px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&iolsq=3D1500-32&lm=3D195982QFWQ45645&sd=3D7&page=
+=3DLVESaYSB8Kal6Gy"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%; border-radius: 50px;" title=
+=3D"" width=3D"90"/></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"wi=
+dth:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 112px;"><img alt=3D"" height=3D"auto" src=3D"" style=3D"d=
+isplay: block; height: auto; border: 0; width: 100%;" title=3D"" width=3D"1=
+12"/>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"paragraph_=
+block block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:15px;padding-right:15px;">
+                                                                <div
+                                                                    style=
+=3D"color:#101112;direction:ltr;font-family:Cabin, Arial, Helvetica Neue, H=
+elvetica, sans-serif;font-size:14px;font-weight:400;letter-spacing:0px;line=
+-height:1.5;text-align:left;mso-line-height-alt:21px;">
+                                                                    <p styl=
+e=3D"margin: 0;">"I was ready to give up. Wow.
+                                                                        I w=
+ould pay 10x as much if I had to. Dieting
+                                                                        day=
+s are over. Thanks to the guys at medvi for
+                                                                        the=
+ metabolic fix - game changer."</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-4" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;text-align:center;wi=
+dth:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: Cabin, Arial, H=
+elvetica Neue, Helvetica, sans-serif; font-size: 16px; font-weight: 700; le=
+tter-spacing: normal; line-height: 1.2; text-align: center; margin-top: 0; =
+margin-bottom: 0; mso-line-height-alt: 19px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">~ Greg</span=
+>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class=3D"column gap"
+                                                    style=3D"vertical-align=
+: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text=
+-align: left;">
+                                                    <table height=3D"10"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; width: 10px; height: 10px;"
+                                                        width=3D"10"></tabl=
+e>
+                                                </td>
+                                                <td class=3D"column column-=
+2"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; backgro=
+und-color: #ffffff; padding-bottom: 5px; padding-top: 5px; vertical-align: =
+top; border-radius: 25px;"
+                                                    width=3D"50%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-left:20px;padding-right:20px;padding-top:10px;width:100%;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 90px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&ltojw=3D1500-32&lm=3D195982FPYC45645&sd=3D7&page=
+=3DhJaDxy8iOkFfD1d"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%; border-radius: 50px;" title=
+=3D"" width=3D"90"/></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"wi=
+dth:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 112px;"><img alt=3D"" height=3D"auto" src=3D"" style=3D"d=
+isplay: block; height: auto; border: 0; width: 100%;" title=3D"" width=3D"1=
+12"/>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"paragraph_=
+block block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:15px;padding-right:15px;">
+                                                                <div
+                                                                    style=
+=3D"color:#101112;direction:ltr;font-family:Cabin, Arial, Helvetica Neue, H=
+elvetica, sans-serif;font-size:14px;font-weight:400;letter-spacing:0px;line=
+-height:1.5;text-align:left;mso-line-height-alt:21px;">
+                                                                    <p styl=
+e=3D"margin: 0;">"Everything was quick and
+                                                                        con=
+cise. I was treated professionally and given
+                                                                        the=
+ opportunity to ask questions and have my
+                                                                        que=
+stions answered thoroughly."</p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"heading_bl=
+ock block-4" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:10px;padding-right:10px;text-align:center;wi=
+dth:100%;">
+                                                                <h1
+                                                                    style=
+=3D"margin: 0; color: #38312c; direction: ltr; font-family: Cabin, Arial, H=
+elvetica Neue, Helvetica, sans-serif; font-size: 16px; font-weight: 700; le=
+tter-spacing: normal; line-height: 1.2; text-align: center; margin-top: 0; =
+margin-bottom: 0; mso-line-height-alt: 19px;">
+                                                                    <span c=
+lass=3D"tinyMce-placeholder" style=3D"word-break: break-word;">~ Alexandra<=
+/span>
+                                                                </h1>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"row row-15"
+                        role=3D"presentation" style=3D"mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; background-size: auto;"
+                        width=3D"100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0"
+                                        class=3D"row-content stack" role=3D=
+"presentation"
+                                        style=3D"mso-table-lspace: 0pt; mso=
+-table-rspace: 0pt; background-size: auto; background-color: #edf2ef; borde=
+r-radius: 0 0 25px 24px; color: #000000; width: 600px; margin: 0 auto;"
+                                        width=3D"600">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"column column-=
+1"
+                                                    style=3D"mso-table-lspa=
+ce: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding=
+-bottom: 5px; padding-top: 25px; vertical-align: top;"
+                                                    width=3D"100%">
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"button_blo=
+ck block-1" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:40px;padding-left:10px;padding-right:10px;text-align:center;">
+                                                                <div align=
+=3D"center" class=3D"alignment"><a
+                                                                        hre=
+f=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[.]ph=
+p?search=3D4&d282450&moxgc=3D1500-32&lm=3D195982YYAK45645&sd=3D7&page=3D2sc=
+X9rVLtH7vbwt"
+                                                                        sty=
+le=3D"color:#ffffff;text-decoration:none;"
+                                                                        tar=
+get=3D"_blank">
+                                                                        <!-=
+-[if mso]>
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schem=
+as-microsoft-com:office:word"  href=3D"hxxps://storage[.]googleapis[.]com/s=
+malbus/salaminka[.]html#index[.]php?search=3D4&d282450&twugv=3D1500-32&lm=
+=3D195982ACHI45645&sd=3D7&page=3D1OjbHK4b4HkVaxm"  style=3D"height:48px;wid=
+th:253px;v-text-anchor:middle;" arcsize=3D"63%" fillcolor=3D"#38312c">
+<v:stroke dashstyle=3D"Solid" weight=3D"0px" color=3D"#38312c"/>
+<w:anchorlock/>
+<v:textbox inset=3D"0px,0px,0px,0px">
+<center dir=3D"false" style=3D"color:#ffffff;font-family:Tahoma, Verdana, s=
+ans-serif;font-size:14px">
+<![endif]--><span class=3D"button" style=3D"background-color: #38312c; bord=
+er-bottom: 0px solid transparent; border-left: 0px solid transparent; borde=
+r-radius: 30px; border-right: 0px solid transparent; border-top: 0px solid =
+transparent; color: #ffffff; display: inline-block; font-family: 'Lato', Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; font-weight: 400; mso-bo=
+rder-alt: none; padding-bottom: 10px; padding-top: 10px; padding-left: 40px=
+; padding-right: 40px; text-align: center; width: auto; word-break: keep-al=
+l; letter-spacing: 1px;"><span style=3D"word-break: break-word; line-height=
+: 28px;">TAKE THE ASSESSMENT</span></span>
+                                                                        <!-=
+-[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                    </a></d=
+iv>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"image_bloc=
+k block-2" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-top:10px;width:100%;padding-right:0px;padding-left:0px;">
+                                                                <div align=
+=3D"center" class=3D"alignment">
+                                                                    <div st=
+yle=3D"max-width: 120px;"><a
+                                                                           =
+ href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#index[=
+.]php?search=3D4&d282450&qfjbf=3D1500-32&lm=3D195982SUQS45645&sd=3D7&page=
+=3DxiNjxgjcJY6cdQM"
+                                                                           =
+ style=3D"outline:none" tabindex=3D"-1"
+                                                                           =
+ target=3D"_blank"><img alt=3D"" height=3D"auto" src=3D"" style=3D"display:=
+ block; height: auto; border: 0; width: 100%;" title=3D"" width=3D"120"/></=
+a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"
+                                                        class=3D"text_block=
+ block-3" role=3D"presentation"
+                                                        style=3D"mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                                                        width=3D"100%">
+                                                        <tr>
+                                                            <td class=3D"pa=
+d"
+                                                                style=3D"pa=
+dding-bottom:20px;padding-left:5px;padding-right:5px;padding-top:5px;">
+                                                                <div style=
+=3D"font-family: sans-serif">
+                                                                    <div cl=
+ass=3D""
+                                                                        sty=
+le=3D"font-size: 12px; font-family: Cabin, Arial, Helvetica Neue, Helvetica=
+, sans-serif; mso-line-height-alt: 14.399999999999999px; color: #38312c; li=
+ne-height: 1.2;">
+                                                                        <p
+                                                                           =
+ style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-a=
+lt: 16.8px;">
+                                                                           =
+ <span style=3D"word-break: break-word; font-size: 12px;">=C2=A9 2025. All =
+Rights Reserved.<br/>
+                                                                        </p=
+>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table><!-- End -->
+</body>
+<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/salaminka[.]html#inde=
+x[.]php?search=3D5&d282450&nzajr=3D1500-32&lm=3D195982VPJN45645&sd=3D7&page=
+=3DgyiBLLbAFxsH057" rel=3D"noopener" style=3D"text-decoration: underline; c=
+olor: #c6a673;" target=3D"_blank">Unsubscribe Here</a></span>
+																	=09
+                                                                        </p=
+>
+                                                                        <p
+                                                                           =
+ style=3D"margin: 0; font-size: 14px; text-align: center; mso-line-height-a=
+lt: 16.8px;">
+                                                                           =
+ <span style=3D"word-break: break-word; font-size: 12px;">Or write to:=C2=
+=A0131 Continental Dr. Ste 305, Newark, DE 19713.</span>
+																			<br><br><br><br><center>Unsubscribe to=20
+																		=09
+																			<a href=3D"hxxps://storage[.]googleapis[.]com/smalbus/sa=
+laminka[.]html#index[.]php?search=3D6&d282450&zfndp=3D1500-32&lm=3D195982YO=
+TR45645&sd=3D7&page=3D8MN6XPVAvGN0K2s">click here </a>
+</html>
+<table style=3D"display:none;"><HEaD/>
+
+<div style=3D"display:none;"><HEaD/>
+=09
+<object JJPDNBCZPGTXMTLZIBENISZDFVDIINENVWJLRHWXUOFSMFKISCYZUOAHHNPS>
+
+Dear DRJYRIGGBDKJCSMECQTTGB hvldbbojmhxdlphvyabdan,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is nbskexalrmitlckiwddpnmv=
+mqlnz.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+<title>
+
+emd=20
+added
+to
+newsletterGet
+and
+ask
+childrenShare
+this
+ExperimentSegregation
+Americaxs
+report
+United
+May
+ETPerhaps
+going
+wants
+In
+federal
+that
+says
+plan
+boasted
+unemployment
+lowest
+everSo
+rightWhile
+down
+remained
+last
+this
+does
+communities
+to
+land
+opportunityOne
+Americans
+suffer
+opposed
+white
+inequality
+in
+while
+step
+inequality
+will
+that
+looks
+housing
+disparities
+on
+For
+more
+of
+on
+resources
+their
+childrens
+care
+going
+on
+cities
+on
+nation
+Shortly
+still
+have
+evidence
+doesnt
+decades
+expanding
+emerged
+of
+failed
+laws
+about
+and
+people
+housewives
+at
+Franz
+in
+New
+Orleans
+poverty
+public
+which
+to
+of
+we
+has
+failed
+chronicled
+deregulation
+Who
+children
+has
+work
+direct
+former
+have
+has
+of
+And
+as
+Professor
+documented
+more
+than
+problem
+Commission
+commission
+there
+with
+this
+was
+urban
+ideology
+without
+policy
+resulted
+be
+has
+hard
+students
+provides
+model
+graders
+salute
+flag
+of
+school
+atrisk
+will
+to
+of
+creates
+race
+to
+Brookings
+or
+integrate
+government
+to
+for
+potential
+enforcement
+The
+privatesector
+effect
+intentional
+with
+racial
+and
+make
+housing
+will
+access
+housing
+access
+Act
+making
+and
+integration
+poor
+developers
+lowincome
+lower
+half
+and
+by
+University
+college
+than
+children
+had
+and
+We
+need
+that
+but
+living
+Robert
+observed
+Bernard
+Why
+never
+ask
+and
+America
+Eisenhower
+Foundation
+Kerner
+Commission
+Violence
+senator
+at
+Healing
+America
+Years
+After
+
+<title/>
+
+Hi bjqxlznyrtadbbfzcz,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:=20
+
+If not, just let me know and we'll find something else.
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi kvhwhfrpwqzvohdxtjyouloq,
+
+Thanks for signing up, and congratulations
+on your new mis fgybgmsiqvuqdhrcid account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: hdmmqlhhwedliksbewfphwxehq
+ Site ID: jzijickczmlodkqqcwbeuretu
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+Team RVIMITVHAAYXHRPVBKSTJL
+
+Powered by JVMHIZMCRAOHZWRYJXIROK=20
+
+</title>
+
+Dear WXNYDLDDXBDIPLRJHNADNRFYM tbpxqajfelmrjqcffpnkzylycl,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is kugqvedpoaosmidqealffda=
+fg.
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+=3D=3D You need a budget, and your email needs confirmation. =3D=3D
+
+ Hello! Quick note to let you know that your email needs to be confirmed
+before all sorts of great things happen. Like your being able to use YNAB
+all along your road to budgeting glory. Please confirm by clicking the link
+below:
+
+ Confirm your email
+
+ Thank you!
+
+ And we're serious about budgeting glory. It's a real thing, and you will
+bask in it.
+
+ Regards,
+
+ The YNAB Team
+
+
+Dear Dalewoowood TVBCLFVISWPWYISJIIHEOC,
+
+Welcome to the Enterprise Plus? membership experience.
+
+Your Enterprise Plus member number and user name is __Random_com[17,17,u].
+
+Your membership delivers faster reservations and rentals, a special members=
+-only line at major airport locations and exclusive discounts.
+
+In addition, you'll be able to start earning points you can redeem for Free=
+ Rental Days after you activate your rewards. Please allow 24 hours for sys=
+tem updates before activating.
+
+To get the most from your next rental, simply go to http:// and log in with=
+ your member number.
+
+Thank you for choosing Enterprise. We look forward to making your next rent=
+al experience more rewarding.
+
+LYDMXYVVJIBKMDJAVJHVKDLPTAAJMZOUYDRVUGRMIAJEUJNMEDKTLKEHPUIVAMAVMVTMTFBHCKV=
+HLQSYDOYHTKOIEQQILNBIIGFQBCNBNAAQBGWCSADGCZDROAJVXFIKLROSGZCROUBKHNCUEAFLTR=
+YNQRENMSPCRODCIZRCUUSVVMNPRJZDJDCJPYBWTYETFVCFXZER
+
+ Hi QUXJFASUFFRFENAJIWRCQJ,
+
+My name's Dylan Basile and I work at Event Temple. Nice to meet you and
+thanks for requesting a demo.
+
+Joining me for a quick demo will be the fastest and most efficient way for
+you to see what the software is capable of.
+
+Did any of the times on our website work for you and if so, were you able
+to schedule a demo okay?
+Here they are again:
+
+If not, just let me know and we'll find something else.
+
+umbzjskfxpwnznntuvxpusnlsjrjckadopfbqeomhejoyijwkdxgzudevwrimxqfafhzygadpgp=
+nghbdcjkexullsfcuvlnghflebttntjshndyftsdduwkzgtwppllwhvqmpmlorocepfjgtnmwtb=
+vgxggmfnnuhmmaxyzefbeakgfkehamckiehstwpygrfljlamcd
+--
+Dylan Basile
+
+*Book a demo with me here:*
+
+Hi 0X0MEJXVA3LIQY2D2UMSD6SHF,
+
+Thanks for signing up, and congratulations
+on your new misiuumqymehkehfaptsv account! You'll find
+everything you need to get started below, and
+if you need additional help there's a link to
+our support forum at the bottom.
+
+=3D=3D=3D Account Information =3D=3D=3D
+ Username: ktrt
+ Site ID: bmfn
+
+=3D=3D=3D Your Account Console =3D=3D=3D
+
+Thanks again!
+
+Team NEMOEGXEHWUQBSTCUTAKXZ
+Powered by BOMTQAULHYRWYLHNCTCQCM
+
+Login Name: IRVSZQOVUSIJLVFMQVENCJ
+Password: DCNUXYLSVOZTQDJGAQBHIU
+
+How do I become a tester for the XT 808 flashlight?
+
+Login Name: BGX
+Password: BLVYBNITHZNTTRIKHESUAV
+
+	TGS25DIHKKRIDU71FW 6HUV3C3SO139EO4 J22AANUZKXDCJ G4ES0FO2T004OGZK30 BCWSZ1=
+TFIZQABCG 375NN56FRSEY8 NS19D45NRO4PFNFRNI=20
+	NH74KD16O4DIEFYL0Z LTYA58ZBUSP9OQV ZOR731O4ZN9RK MU0B0MW5RNFB00PX9W 38D9LP=
+8BRFGNXLZ ON7CAEITI7SK1 LUQA0S8QCLVQOETQIS=20
+	X37AZ8M3VUW5XTD LNSHRTCY30GKM P6XQABJNIC757LJFP8 G7CUSHC6QPQ59GI 1ARJT2U0P=
+FA7A 8PFHK2CV91I4WERVK3 MI8HZQ090QJS4Z3
+	RRHK26BO2M0FQ OG87V8PB9LJV3QALUE Z332Z99MP78GSWW UKFARHQQC5QAE LJ7DHNX69R3=
+L4QRU21 5FGZQKI0ADLTDNF SF28KHBCCKWI5=20
+	ICCEA3GNC82C07LCQF HZFZMU1LO2D0ZQ9 QFSB7LFU7E3DI WTTCUKMBE7IQKS3QSY UH0KF1=
+XQVHS6DA0 1YNKQ2PBX5B6B RLC04SWR8QN1L3GVF2=20
+	SEN9S92F932PQG6 8I78LCE5EYJRU HA4NV55E7JO4W7BRN2 2SVNCYJH7THKQYZ 9S71J7K6I=
+YE21 DRTS1TY5J6ZN8YKF95 LVTD3QACZRT44X5=20
+	I6CHS2Y05UGE0 6ADW2E637JL2X5RLUE BG1J3D3QAXD21YJ V8RQ3CSH47UZZ 0UJZELM7K03=
+MBTV5VL 4WMS9JKN88K196S Y0VAX9BM7X4GB=20
+	9JZMP792K0MGYLDXT2 4Y2D70DC7UD4DX6 T7VK7GPZAC6DF CIUQRQNMDZSE3K132N 8SBG5T=
+DAQ7UL16O JT5JDLCEA1ZUY 6DTWQ7YTQNWMT0RQ0B=20
+	H9VDS5VD3C9Y6PY JA9ZZOHSE34OU JUVPMD7ZNKIPHN9T7J QMU4F6HTZWT4HSO JRBFTJRDF=
+4P31 L1ACDP7B1Q8I3R5RK5 UUBW9I5QMLW0GPO=20
+	QITCR12T332Z9 J9DJUQILXRULUMTPEX CEUBC9ZX3VVMG9N W6K6FWE2VD4BY EWJRJYYR8N1=
+K9T1JCY CF6013NSDDPNL2A 1MEN1MBAAASFK=20
+	G5X7WECQLIS8RYZR5U 79RIGNWIXY7G68E DHMJ57K44ODOB H198CIWOGT5CL99VHC LP1UZI=
+6W2W5GOSK 6JBVDBDZJJ3WR YRPMY9HF9H9CSYF8DG=20
+	6VWGN2ASVF97K5P 3I0HLAKQ3C7N5 XFTR48ZTYEYZ46BIN4 JURKX51VL20AS5R MY1T1UUFE=
+WDDZ YLWXQAHU6ZOKKA6DOI 8FW56WQY1VFMWSJ=20
+	G549KTCD6KYAU FZ11J1VD29BVHH69DZ 1TMBOARFLLJWM5Q 6YUQFAIMMHE3T COT0EAOY7DU=
+OWNBUCS ZLNLET0T92CRM9C 909CYUDVKOUS8=20
+	WYISJKD45GFKS4YVDC 9LX7KNMSQHZFFGG 5OW5IIW8FH8ZN S53LWNHR72AZOG5JGG 7YMK12=
+MYG75MHYX 2ECYR8RBRC41A LOZOB5FK0YNLS2B9B8=20
+	DPLHMCVYAI5GZUE M4E3FYUFDG3LK DJYQ4NTC8JTA4XTMFS EAWENGW9HMUFT30 J9PODF2U9=
+H075 XR38R2WCL19MLARHA4 XXBS4FHCZAUXK67=20
+	99PHG11ACKZXZ 9IJ5MIR8HFBQG5FEMB SHDGWAH3FD0BZVR DYWOY3KSZE9TI 1HIP4XIPYFP=
+A0Q7W8Y 5G70YHKWURQ8V5I 9M228WQJ9YFMX=20
+	O44ISI9QTREU8AMH1Z 5IZ4C2D1Y87JSGB MF8RMKBE2IKV0 HO48PMUJUNWYDFSXZ9 F3TLC8=
+25HZJ5RT9 BIGF7NN13PC25 YXFIIFBMJ3HJF0PQXO=20
+	UV3ROV6JMWVBQXU 30R6N4AKZMLB8 QF4ECQVTO4MVGAVSIR 4QEA7FW29JU2RTR H2QK36IBA=
+T1KD 7Y9W118H6LW6E3GN04 5UHFILU1CYSDR9A=20
+
+More than a quarter of Europeans surveyed believe Jews have too much influe=
+nce in business and finance. One in five say they have too much influence i=
+n media and politics. In individual
+1. Download Parsec for your device
+
+2. Set up Parsec on your PC to invite friends to game with you or to play f=
+rom anywhere
+
+3. Connect with your friends on Parsec
+
+4. If you don't have a gaming PC to co-op with friends, build one on Parsec
+
+5. Join our Discord for support, updates, and finding friends to game with
+
+       Less than 10% of EU aid money reaches the countries where it is most=
+ needed, according to a study that found levels of assistance had dropped f=
+or the second year running.
+
+The EU and its member states remain the biggest development donor group in =
+the world ? investing ?71.9bn ($61bn) in 2018, more than half of global aid=
+ ? but its contribution was 5.8% lower than in 2017, the European NGO netwo=
+rk, Concord, found in its AidWatch report.
+
+Progress on meeting the UN target of spending 0.7% of gross national income=
+ on aid, laid down in 1970, has gone into reverse, said the group. Their re=
+search showed that aid decreased to 0.47% of the EU?s combined GNI last yea=
+r, compared with 0.49% in 2017 and 0.51% in 2016.
+
+Advertisement
+
+Only Sweden, Luxembourg, Denmark and the UK met the 0.7% commitment.
+
+The UK?s three main political parties have committed to retaining the aid t=
+arget.
+
+Aid from five countries ? Italy, Greece, Finland, Austria and Lithuania ? d=
+ecreased by 10%.
+
+?We are moving further away from the 2030 Agenda [for sustainable developme=
+nt],? said Luca De Fraia of ActionAid Italy. ?Not only are we missing the t=
+arget in terms of quantity, but also the quality of aid is lagging behind.?
+
+Despite a marginal rise in aid going to the least developed countries (from=
+ 0.11% in 2017 to 0.12% in 2018), 16 countries, among the poorest in the wo=
+rld, currently receive only 8% of EU funding, AidWatch found.
+
+Guardian Today: the headlines, the analysis, the debate - sent direct to yo=
+u
+ Read more
+?sa Thomasson, from Concord Sweden, called on EU leaders to provide more ai=
+d and ensure it is used effectively to ?make the biggest difference to peop=
+le who are most marginalised, excluded or discriminated against and the poo=
+rest and most financially challenged countries?.
+
+The report noted progress on what can legitimately be recorded as aid. Some=
+ countries had included domestic spending on students, refugees or security=
+ in official figures. But such costs ? like debt relief, interest repayment=
+s on loans, or assistance ?tied? to the donor country ? are categorised as =
+?inflated aid?, since they do not necessarily contribute to development and=
+ are often funds that never leave the EU.
+
+This year?s report shows a 25% reduction in inflated aid, while refugee cos=
+ts decreased by approximately 35% and the use of aid for debt relief droppe=
+d by 66%.
+
+Jan van de Poel, policy and advocacy manager at the European Network on Deb=
+t and Development, said he was concerned that the commission is overestimat=
+ing the potential for ?blended finance? (linking aid with loans from public=
+ly-owned institutions or commercial lenders) to help achieve the sustainabl=
+e development goals.
+
+He pointed out that, as recently as 2016, more than half of all reported co=
+ntracts were still awarded to firms in the donor country. ?Donors not only =
+need to untie all aid, but also make sure that their procurement practices =
+are tailored towards the private sector in developing countries,? he said.
+
+Claire Godfrey, interim director of policy, advocacy and research at Bond, =
+the UK development network, praised the Department for International Develo=
+pment (DfID) for maintaining the 0.7% pledge and ensuring that the majority=
+ of its aid reached the people who need it the most. She added that other E=
+U countries needed to ?step up to the plate?.
+MUJYCDBBSGZMESAUJYKIQZSMSLAKWHGXYQDPTMMTHLJMOXKVUDYBTZEVRWJRPQFWIMNMLGUITPX=
+CGCSUTCVSWYDIPHBAQZVKGEGQGXOBYNYIJKRUMBAPCCJYYTYQFOFFTQDYACAKLPIOTSMVRLLOXO=
+AMAWBLPCFGJUTCQEQFMVXHIATGPAQAKUCFMJDZLRLPELHZHSYKL
+Godfrey said DfID would ideally have oversight of all UK aid, rather than m=
+ultiple departments, since this would ?ensure not a single penny is diverte=
+d away from the poorest, most vulnerable and most marginalised?.
+
+With a general election looming, Labour, the Conservatives and the Liberal =
+Democrats have all stated their commitment to retaining the 0.7% aid target=
+, equating to roughly ?14bn, while the Green party said they would raise it=
+ to 1% ? in line with Sweden.
+
+
+Two-thirds of British people see overseas aid as 'a major priority'
+ Read more
+At a joint hustings event on women?s rights and sustainable development hel=
+d by ActionAid UK and the Overseas Development Institute on Monday, Lord Ra=
+y Collins pledged that Labour would triple funding to PXCIGJXZLHWQQDIKJCOJY=
+DFMQEZOFTPVTOHNCFWQJCNJPWYHVNSYNQVAXTIRXUHUMUPLUYLCEZCPNWIJMWHRYFIQAJPCVXPP=
+VYTFUODHJJAIUGQZHUBCHVGPSRJHGNVNFUMGZHKSUBPXGKRFHYJWDNVBKHJHRPRFZLLVGTVGJMJ=
+EOCSQVCQGEAXUKIXJKYMQGIJTLHWK roots women?s groups in the global south.
+
+Elizabeth Babade, candidate for the Brexit party in Warrington North, said =
+her party would cut the foreign aid budget but declined to say by how much.
+
+The Conservative party did not put forward a candidate for the event, but r=
+estated its commitment to the 0.7% target in the House of Commons earlier t=
+his month. It stopped short, however, of committing to the retention of DfI=
+D as a separate department PTDHXLZUOEPIINBNJLZBUKKSSMYRTOLOQYAPTABYOXYPPSLM=
+NKSCCNGQPDBEXNZMCCGUZFXXUWBZPYSLJBIYEBICAGQPQPNCQWQYVUKAFBEGPSPBKTUMIZSETMU=
+LEKZDXMRFBOCHQRredactedMMWCMMBTJSZESJWSGEAYADWYWMOALPQJCBFWFDITAGBQJNABJVFJ=
+UTUMMQMT to the Foreign and Commonwealth Office.
+
+The UN Conference on Trade and Development?s Least developed countries repo=
+rt, also published this week, called on the world?s poorest nations to ensu=
+re external finance from all sources is ?directed to nation HZZVXYCPEZMNAKZ=
+ZNTNHCJPQYZYKKYVVWRZCOLDZPRWHZOCCIZIYCIAVTMITUGLULNSOSJPOMXABZVOXEPVXINSSQX=
+ELBPDIRLBVDLOBQIUYUUIOZYMKDHUQAAKSJDDJQMPGXJHKVWLJKJAQIILVMRTJZZTQFMGSXVSYB=
+MUNWVBYBDCZBTUPGBJVOSXNPQPLLNPIGAYYW development priorities? as the best wa=
+y to ?manage their aid dependency and eventually escape it?.
+
+Since you?re here?
+? we have a small favour to ask. More people, like you, are reading and sup=
+porting the Guardian?s independent, investigative journalism than ever befo=
+re. And unlike many news organisations, we made the choice to keep our repo=
+rting open for all, regardless of where they live or what they can afford t=
+o pay.
+
+The Guardian will HHGCDCSVUNKXAUANTQWURAGJLBOUHXGTHUDSYCLOSYFIAVZACYAQTOXNB=
+JFBPZJRQTAXFPIVOTHTXOALXWWVHCBZRLBIDRPBJYJSKXLCMHXBEBAMNPYBQCJTBWQZGOHXZUJF=
+GFNWIDHCFTXEDHJEDQYDFHQEBCLSVQBZTBPYKKDQHFXHFSKJXSONYJBWGVCEMBUCYQXUACPSAAO=
+XHZMWPPECMNPTLYABJVZHUOUWEIPZVUDSKWTIAJYKQWBQXNUUTDFHEMJFYNAXKBKOMCIDPDFZID=
+KHEAKMMLLSNYVGRHJXOKBHWXFLZGRTYMPLQRKUFTONCEIMHTXBDKNWAHERBETNDYRUELCGWAGZB=
+JIILLRDPXPZZVOLUURYOUXXJJVTPYAGLJLJGKWAWITT  ?=20
+from the escalating climate catastrophe to widespread inequality to the inf=
+luence of big tech on our lives. At a time when factual information is a ne=
+cessity, we believe that each of us, around the world, deserves access to a=
+ccurate reporting with integrity at its heart.
+
+Our editorial independence means we set our own agenda and voice our own op=
+inions. Guardian journalism is free from commercial and political bias and =
+not influenced by billionaire owners or shareholders. This means we can giv=
+e a voice to those less heard, explore where others turn away, and rigorous=
+ly challenge those in power.
+
+We hope you will consider supporting us today. We need your support VYRSDSE=
+WEBJJRDMNGTVRHXNBIBQXHHHPTZQKMJWBHDHWYONRSMGDNBJAHBHQFUEZOZVPNSFNSQIVXFMWGM=
+BKRLTJAEEQMNDZEOXHCRLHJNFLKKJHGLDFSYOHRSXRWBKCZPPIWRZXCSGHUCFFKICJYLPQLVHLL=
+LWKXDFTWBZNRTSEIVGARNAXEYKRZNUSOKMCIYUXGXMD  to keep delivering quality jou=
+rnalism that?s open and independent. Every reader contribution, however big=
+ or small, is so valuable. Support The Guardian from as little as $1 ? and =
+it only takes a minute. Thank you.      =20
+
+Parsec Cloud, Inc.=20
+115 Broadway, Fifth Floor, New York, NY 10006, USA
+
+</object>
+
+------=_Part_1_27602313
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<object style=3D"display:none;">
+This message was sent from a trusted sender
+<div style=3D"font-size:1px;color:#333333;line-height:1px;max-height:0px;ma=
+x-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0</div>
+She tried to explain that love wasn't like pie. There wasn't a set number o=
+f slices to be given out. There wasn't less to be given to one person if yo=
+u wanted to give more to another. That after a set amount was given out it =
+would all disappear. She tried to explain this, but it fell on deaf ears.
+I've rented a car in Las Vegas and have reserved a hotel in Twentynine Palm=
+s which is just north of Joshua Tree. We'll drive from Las Vegas through Mo=
+jave National Preserve and possibly do a short hike on our way down. Then s=
+pend all day on Monday at Joshua Tree. We can decide the next morning if we=
+ want to do more in Joshua Tree or Mojave before we head back.
+Symptoms of acute mountain sickness, or AMS as it=E2=80=99s known, include =
+trouble sredactedping, nausea, loss of appetite, and fatigue. If you keep g=
+oing higher and ignore signals from your body, you could develop HAPE, high=
+ altitude pulmonary edema, or HACE, high altitude cerebral edema, both of w=
+hich are very serious.
+They had no proof. He knew that they knew he had done it but they didn't ha=
+ve any proof. It was a huge distinction and it was the difference between h=
+im keeping his freedom or being locked away for decades. They continued to =
+question him, probing him for information that they could use against him o=
+r find the proof they needed to put him away. He smiled and continued to bl=
+ock their every inquiry by feigning his innocence for a crime they all knew=
+ he committed.
+</div><object><div style=3D"font-size:1px;color:#333333;line-height:1px;max=
+-height:0px;max-width:0px;opacity:0;overflow:hidden"> ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0=
+ ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=
+=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=A0 ?=C2=
+=A0 ?=C2=A0 ?=C2=A0</div> </body></html>
+
+------=_Part_1_27602313
+
+
+
+------=_Part_1_27602313--
